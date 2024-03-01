@@ -1,8 +1,8 @@
 # DBCode - Preview Release
 
-Welcome to the preview release of DBCode, a powerful extension designed to integrate seamless database management capabilities directly into your Visual Studio Code environment. As we continue to develop and refine DBCode, we invite you to explore its current features, provide feedback, and help us shape its future. Your insights are invaluable as we strive to create a tool that meets the needs of developers worldwide.
+Welcome to the preview release of DBCode, a powerful extension designed to integrate seamless database management capabilities directly into your Visual Studio Code environment. 
 
-![screenshot](/public/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/dbcodeio/public/main/public/screenshot.png)
 
 ## Key Features
 
