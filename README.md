@@ -1,12 +1,12 @@
 # DBCode - Preview Release
 
-Welcome to the preview release of DBCode, a powerful extension designed to integrate seamless database management capabilities directly into your Visual Studio Code environment. 
+Welcome to the preview release of DBCode, a powerful extension designed to integrate seamless database management capabilities directly into your Visual Studio Code environment.
 
 ![screenshot](https://raw.githubusercontent.com/dbcodeio/public/main/public/screenshot.png)
 
 ## Key Features
 
-- **Database Integration**: Connect to a wide range of databases directly from VS Code. Currently supporting PostgreSQL, SQL Server, Azure SQL.
+- **Database Integration**: Connect to a wide range of databases directly from VS Code. Currently supporting Azure SQL, CockroachDB, MariaDB, MySQL, PostgreSQL, Microsoft SQL Server, and more.
 - **Intuitive Query Editor**: Write, execute, and save queries with the familiar VS Code editor.
 - **Hover Help Available**: Get instant help with syntax and function descriptions by simply hovering over code elements, making learning and reference faster and more intuitive.
 - **Schema Browsing**: Navigate your database's schema directly from within VS Code. Jump to tables, views, or other procedures/functions for a holistic view of your database logic.
