@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 0.8.1 - 2024-04-09
+
+### Changed
+
+- Added SSH Tunnels. Tunnels are automatically detected from ssh.config and can also be manually created.
+- Introduced a table icon to the results tab; clicking on this icon will pin the tab for easy access.
+
+### Fixed
+
+- Postgres: Ensure columns in indexes are displayed in the correct order, even when they differ from the table order.
+
 ## 0.8.0 - 2024-03-29
 
 ### Changed

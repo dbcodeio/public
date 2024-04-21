@@ -13,6 +13,7 @@ Welcome to the preview release of DBCode, a powerful extension designed to integ
 - **Stored Procedures and Functions Editing:** Seamlessly create, edit, and manage your stored procedures and functions directly within VS Code, bringing advanced database scripting into your coding environment.
 - **Tabbed Results Interface**: Effortlessly navigate through query results in a tabbed interface, allowing for organized and efficient data analysis within VS Code.
 - **Advanced Results Display**: Enjoy a sophisticated results display with comprehensive grid capabilities, enabling intuitive sorting, filtering, and searching of query outcomes for enhanced data interaction.
+- **Tunnel over SSH**: Tunnels are automatically detected from ssh.config and can also be manually created.
 
 ## Areas Under Development
 
