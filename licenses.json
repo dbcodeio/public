@@ -1,0 +1,148 @@
+[
+    {
+        "name": "@vscode-elements/elements",
+        "license": "MIT",
+        "repository": "https://github.com/bendera/vscode-webview-elements",
+        "publisher": "bendera"
+    },
+    {
+        "name": "@vscode/codicons",
+        "license": "CC-BY-4.0",
+        "repository": "https://github.com/microsoft/vscode-codicons",
+        "publisher": "Microsoft Corporation"
+    },
+    {
+        "name": "@vscode/l10n",
+        "license": "MIT",
+        "repository": "https://github.com/Microsoft/vscode-l10n",
+        "publisher": "Microsoft Corporation"
+    },
+    {
+        "name": "chevrotain",
+        "license": "Apache-2.0",
+        "repository": "https://github.com/Chevrotain/chevrotain",
+        "publisher": "Shahar Soel"
+    },
+    {
+        "name": "date-fns",
+        "license": "MIT",
+        "repository": "https://github.com/date-fns/date-fns"
+    },
+    {
+        "name": "html-escaper",
+        "license": "MIT",
+        "repository": "https://github.com/WebReflection/html-escaper",
+        "publisher": "Andrea Giammarchi"
+    },
+    {
+        "name": "immer",
+        "license": "MIT",
+        "repository": "https://github.com/immerjs/immer",
+        "publisher": "Michel Weststrate"
+    },
+    {
+        "name": "json2md",
+        "license": "MIT",
+        "repository": "https://github.com/IonicaBizau/json2md",
+        "publisher": "Ionică Bizău",
+        "url": "https://ionicabizau.net"
+    },
+    {
+        "name": "lit",
+        "license": "BSD-3-Clause",
+        "repository": "https://github.com/lit/lit",
+        "publisher": "Google LLC"
+    },
+    {
+        "name": "lodash-es",
+        "license": "MIT",
+        "repository": "https://github.com/lodash/lodash",
+        "publisher": "John-David Dalton"
+    },
+    {
+        "name": "mariadb",
+        "license": "LGPL-2.1-or-later",
+        "repository": "https://github.com/mariadb-corporation/mariadb-connector-nodejs",
+        "publisher": "Diego Dupin"
+    },
+    {
+        "name": "mssql",
+        "license": "MIT",
+        "repository": "https://github.com/tediousjs/node-mssql",
+        "publisher": "Patrik Simek",
+        "url": "https://patriksimek.cz"
+    },
+    {
+        "name": "postgres",
+        "license": "Unlicense",
+        "repository": "https://github.com/porsager/postgres",
+        "publisher": "Rasmus Porsager",
+        "url": "https://www.porsager.com"
+    },
+    {
+        "name": "posthog-node",
+        "license": "MIT",
+        "repository": "https://github.com/PostHog/posthog-js-lite",
+        "publisher": "PostHog",
+        "url": "https://posthog.com"
+    },
+    {
+        "name": "pretty-ms",
+        "license": "MIT",
+        "repository": "https://github.com/sindresorhus/pretty-ms",
+        "publisher": "Sindre Sorhus",
+        "url": "https://sindresorhus.com"
+    },
+    {
+        "name": "query-string",
+        "license": "MIT",
+        "repository": "https://github.com/sindresorhus/query-string",
+        "publisher": "Sindre Sorhus",
+        "url": "https://sindresorhus.com"
+    },
+    {
+        "name": "ssh-config",
+        "license": "MIT",
+        "repository": "https://github.com/cyjake/ssh-config",
+        "publisher": "Chen Yangjian",
+        "url": "https://www.cyj.me"
+    },
+    {
+        "name": "sshpk",
+        "license": "MIT",
+        "repository": "https://github.com/joyent/node-sshpk",
+        "publisher": "Joyent, Inc"
+    },
+    {
+        "name": "tunnel-ssh",
+        "license": "MIT",
+        "repository": "https://github.com/agebrock/tunnel-ssh",
+        "publisher": "Christoph Hagenbrock"
+    },
+    {
+        "name": "typed-emitter",
+        "license": "MIT",
+        "repository": "https://github.com/andywer/typed-emitter",
+        "publisher": "Andy Wermke",
+        "url": "https://github.com/andywer"
+    },
+    {
+        "name": "uuid",
+        "license": "MIT",
+        "repository": "https://github.com/uuidjs/uuid"
+    },
+    {
+        "name": "vscode-messenger-webview",
+        "license": "MIT",
+        "repository": "https://github.com/TypeFox/vscode-messenger",
+        "publisher": "TypeFox",
+        "url": "https://www.typefox.io"
+    },
+    {
+        "name": "vscode-messenger",
+        "license": "MIT",
+        "repository": "https://github.com/TypeFox/vscode-messenger",
+        "publisher": "TypeFox",
+        "url": "https://www.typefox.io"
+    }
+]
