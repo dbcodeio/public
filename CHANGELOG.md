@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.8.8 - 2024-04-25
+
+### Changed
+
+- Clicking on a table or view in the explorer now loads its data in a new tab.
+- Added setting _dbcode.maxRowsToFetch_ to control the maximum number of rows fetched when opening a table.
+
 ## 0.8.1 - 2024-04-09
 
 ### Changed
