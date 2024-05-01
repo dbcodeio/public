@@ -1,9 +1,15 @@
 # CHANGELOG
+ 
+## 0.8.4 - 2024-05-01
+
+### Changed
+
+- Data within a table can now be edited, added, or deleted, with changes saved directly back to the database.
 
 ### Fixed
 
 - Opening a table sometimes did not render the data.
-- SQL Server reporting incorrect length for nvarchar and nchar datatypes
+- SQL Server displayed incorrect lengths for nvarchar and nchar datatype columns.
 
 ## 0.8.2 - 2024-04-25
 
