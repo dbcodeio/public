@@ -1,5 +1,10 @@
 # CHANGELOG
 
+### Fixed
+
+- Opening a table sometimes did not render the data.
+- SQL Server reporting incorrect length for nvarchar and nchar datatypes
+
 ## 0.8.2 - 2024-04-25
 
 ### Changed

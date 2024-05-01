@@ -1,4 +1,6 @@
 # DBCode - Preview Release
+ 
+## 0.8.3 - 2024-05-01
 
 Welcome to the preview release of DBCode, a powerful extension designed to integrate seamless database management capabilities directly into your Visual Studio Code environment.
 
