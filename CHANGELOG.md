@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.9.1 - 2024-05-02
+
+### Fixed
+
+- Tables now always open with the maximum row limit configured in settings (100,000). Right-clicking on a table provides an option to open it with a different limit.
+- SQL Server connections failed unless the user account had the sysadmin role assigned.
+
 ## 0.9.0 - 2024-05-01
 
 ### Changed
