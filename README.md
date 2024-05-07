@@ -2,7 +2,11 @@
 
 Welcome to the preview release of DBCode, a powerful extension designed to integrate seamless database management capabilities directly into your Visual Studio Code environment.
 
-![screenshot](https://raw.githubusercontent.com/dbcodeio/public/main/public/screenshot.png)
+
+
+https://github.com/dbcodeio/public/assets/1918994/fcda5677-62c5-4fab-b633-e5e1a6a381ba
+
+
 
 Note: This extension will transition to a paid model once it exits the preview stage. We are currently finalizing the feature set and pricing. During the preview, the extension is available at no cost. Users who install the extension in the preview will receive an extended trial once pricing is established.
 
