@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 0.9.2 - 2024-05-08
+
+### Changed
+
+- Automatically generate entity relationship diagrams to visually map out your database structures. Simply right-click on the tables folder of a database and select the "Entity Relationship Diagram" option.
+
+### Fixed
+
+- Light themes were not showing the correct database icons for MariaDB in the connection picker.
+
 ## 0.9.1 - 2024-05-02
 
 ### Fixed
