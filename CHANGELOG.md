@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 0.9.3 - 2024-05-10
+
+# Changed
+
+- Added a key binding (Ctrl/Cmd+d Ctrl/Cmd+c) to select/change connection of the current file
+
+### Fixed
+
+- Improved the rendering performance for large result sets (1M+ rows)
+- MySQL/Maria was showing undefined in the statusbar for schema.
+- MySQL/Maria was not showing correct number of rows updated for insert, update and delete statements
+- Geometry and Geography data types in results caused the results not to show.
+- Dates with timezones are now displayed with timezone indicators to reflect their true format in the database.
+
 ## 0.9.2 - 2024-05-08
 
 ### Changed
