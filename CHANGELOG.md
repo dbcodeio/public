@@ -1,8 +1,17 @@
 # CHANGELOG
 
+## 0.10.0 - 2024-05-16
+
+### Changed
+
+- MongoDB support added (table loading, data editing completed, work continues on executing arbitrary statements).
+- Added data type to column headers.
+- Trimmed large data in binary cells to show first 50 characters, and total size.
+- Added output channel and logging of connection and tunnel events.
+
 ## 0.9.3 - 2024-05-10
 
-# Changed
+### Changed
 
 - Added a key binding (Ctrl/Cmd+d Ctrl/Cmd+c) to select/change connection of the current file
 
