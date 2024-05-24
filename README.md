@@ -8,37 +8,7 @@ Note: This extension will transition to a paid model once it exits the preview s
 
 ## Supported Databases
 
-<div>
-	<div class="flex-container">
-		<div class="flex-item">
-			<img  alt="PostgresSQL" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/postgresql.png">
-		</div>
-		<div class="flex-item">
-			<img alt="MySQL" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/mysql.png">
-		</div>
-		<div class="flex-item">
-			<img  alt="SQL Server" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/sqlserver.png">
-		</div>
-		<div class="flex-item">
-			<img  alt="MariaDB" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/mariadb.png">
-		</div>
-	</div>
-	<br/>
-	<div class="flex-container">
-		<div class="flex-item">
-			<img  alt="PostgresSQL" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/azure.png">
-		</div>
-		<div class="flex-item">
-			<img  alt="Cockroach" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/cockroach.png">
-		</div>
-		<div class="flex-item">
-			<img  alt="MongoDB" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/mongodb.png">
-		</div>
-		<div class="flex-item" style="align:right;">
-			<p class="large"><a href="https://dbcode.io" target="_blank">See More...</a></p>
-		</div>
-	</div>
-</div>
+<img width="100%" alt="supported databases" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/logo_panel.png">
 <br><br>
 
 ## View and Edit
@@ -48,12 +18,12 @@ Note: This extension will transition to a paid model once it exits the preview s
 	<li>Create, Read, Update and Delete - Without writing SQL</li>
 	<li>Changes verified before being applied - No more mistakes</li>
 </ul>
-<img width="80%" alt="data-editor" src="https://github.com/dbcodeio/public/assets/1918994/a11d0b3b-d72a-4aa6-90c1-3f9614515f7d">
+<img width="100%" alt="data-editor" src="https://github.com/dbcodeio/public/assets/1918994/a11d0b3b-d72a-4aa6-90c1-3f9614515f7d">
 
 ## Custom SQL
 
 <p>Run your own SQL queries directly within VS Code.</p>
-<img width="80%" alt="custom SQL" src="https://github.com/dbcodeio/public/assets/1918994/650632b0-da26-4b98-9f66-5138a7db1e7e">
+<img width="100%" alt="custom SQL" src="https://github.com/dbcodeio/public/assets/1918994/650632b0-da26-4b98-9f66-5138a7db1e7e">
 
 ## Inline SQL Help
 
@@ -61,27 +31,27 @@ Note: This extension will transition to a paid model once it exits the preview s
 	<li>SQL Keywords - specific to each database engine</li>
 	<li>Tables, views and procedures - data types, default values</li>
 </ul>
-<img width="80%" alt="signature" src="https://github.com/dbcodeio/public/assets/1918994/1efd912b-7750-47d0-a2e9-7aaaff0b0c52">
+<img width="100%" alt="signature" src="https://github.com/dbcodeio/public/assets/1918994/1efd912b-7750-47d0-a2e9-7aaaff0b0c52">
 
 ## Entity Relationship Diagrams
 
 <p>Automatically generate entity relationship diagrams to visually map out your database structures.</p>
-<img width="80%" alt="erd" src="https://github.com/dbcodeio/public/assets/1918994/acf34018-25d2-4ccd-b97f-5ea5c6cb1e77">
+<img width="100%" alt="erd" src="https://github.com/dbcodeio/public/assets/1918994/acf34018-25d2-4ccd-b97f-5ea5c6cb1e77">
 
 ## Notebooks
 
 <p>Full support for VS Code Notebooks, allowing you to execute queries and view results within your notebooks.</p>
-<img width="80%" alt="notebook" src="https://github.com/dbcodeio/public/assets/1918994/6295585e-f13f-46b7-98e1-80e850485db1">
+<img width="100%" alt="notebook" src="https://github.com/dbcodeio/public/assets/1918994/6295585e-f13f-46b7-98e1-80e850485db1">
 
 ## Stored Procedures and Functions
 
 <p>Edit stored procedures and functions directly within VS Code.</p>
-<img width="80%" alt="stored-procedure" src="https://github.com/dbcodeio/public/assets/1918994/dae92d32-13b7-4f90-8bcb-67116a5468cd">
+<img width="100%" alt="stored-procedure" src="https://github.com/dbcodeio/public/assets/1918994/dae92d32-13b7-4f90-8bcb-67116a5468cd">
 
 ## Visualize
 
 <p>Graphically represent your data with a variety of chart types, including line, bar, and pie charts. Customize your charts with a range of options.</p>
-<img width="80%" alt="chart" src="https://github.com/dbcodeio/public/assets/1918994/d1d33ee9-9b3b-408f-9477-f208cf2adf87">
+<img width="100%" alt="chart" src="https://github.com/dbcodeio/public/assets/1918994/d1d33ee9-9b3b-408f-9477-f208cf2adf87">
 
 ### Many More:
 

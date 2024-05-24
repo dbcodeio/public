@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 0.11.0 - 2024-05-24
+
+### Changed
+
+- SQLite support added.
+- Added option to explore with a sample database.
+
+### Fixed
+
+- The results table now better aligns with the VS Code theme.
+- Fixed an issue where editing stored procedures incorrectly indicated an error had occurred.
+- MySQL did not correctly handle integers bigger than the javascript limit.
+
 ## 0.10.0 - 2024-05-16
 
 ### Changed
@@ -13,13 +26,13 @@
 
 ### Changed
 
-- Added a key binding (Ctrl/Cmd+d Ctrl/Cmd+c) to select/change connection of the current file
+- Added a key binding (Ctrl/Cmd+d Ctrl/Cmd+c) to select/change connection of the current file.
 
 ### Fixed
 
-- Improved the rendering performance for large result sets (1M+ rows)
+- Improved the rendering performance for large result sets (1M+ rows).
 - MySQL/Maria was showing undefined in the statusbar for schema.
-- MySQL/Maria was not showing correct number of rows updated for insert, update and delete statements
+- MySQL/Maria was not showing correct number of rows updated for insert, update and delete statements.
 - Geometry and Geography data types in results caused the results not to show.
 - Dates with timezones are now displayed with timezone indicators to reflect their true format in the database.
 
