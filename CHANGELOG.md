@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.11.1 - 2024-05-25
+
+### Fixed
+
+- Marketplace listing colors.
+- Number rounding on tab badges.
+
 ## 0.11.0 - 2024-05-24
 
 ### Changed
