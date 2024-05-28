@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 0.11.2 - 2024-05-28
+
+### Changed
+
+- Binary fields containing images now display thumbnails in the results.
+- String fields exceeding 500 characters are trimmed, displaying the total size at the end.
+- Tooltips added for all result columns with values longer than 200 characters/bytes.
+- Options to export all results, a selection, or selected rows.
+- Export results in various formats: CSV, Excel, SQL insert statements, JSON, XML, Markdown, or HTML.
+- Copy a selection or selected rows as text, CSV, SQL insert statements, SQL In Clause, JSON, XML, Markdown, or HTML.
+- Added the ability to duplicate rows when editing results.
+- Context menu includes options to add, duplicate, and delete rows if the results are editable.
+
 ## 0.11.1 - 2024-05-25
 
 ### Fixed
