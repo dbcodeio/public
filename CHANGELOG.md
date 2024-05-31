@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 0.12.0 - 2024-05-31
+
+### Changed
+
+- Added option to securely share reports.
+- Added an Account view to enable authentication via VSCode authentication providers, necessary for secure report sharing.
+- Added image preview when hovering over image in binary field.
+
+### Fixed
+
+- Mongo protocol was not correctly saved when editing a connection.
+- Editing connections in groups would cause them to ungroup.
+
 ## 0.11.2 - 2024-05-28
 
 ### Changed

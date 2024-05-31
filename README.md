@@ -38,6 +38,11 @@ Note: This extension will transition to a paid model once it exits the preview s
 <p>Automatically generate entity relationship diagrams to visually map out your database structures.</p>
 <img width="100%" alt="erd" src="https://github.com/dbcodeio/public/assets/1918994/acf34018-25d2-4ccd-b97f-5ea5c6cb1e77">
 
+## Secure Report Sharing
+
+<p>Share reports securely - encrypted and linked, not attached in emails.</p>
+<img  height="300" alt="share" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/share.png">
+
 ## Notebooks
 
 <p>Full support for VS Code Notebooks, allowing you to execute queries and view results within your notebooks.</p>
