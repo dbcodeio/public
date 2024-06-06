@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 0.12.1 - 2024-06-06
+
+### Changed
+
+- Added license information, customer portal and license purchasing to Account view.
+
 ## 0.12.0 - 2024-05-31
 
 ### Changed

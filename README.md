@@ -1,6 +1,4 @@
-# DBCode
-
-Data where you code.
+# DBCode - Data Beside Code
 
 ![intro](https://raw.githubusercontent.com/dbcodeio/public/main/public/intro.gif)
 
