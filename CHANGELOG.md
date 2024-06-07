@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 0.12.2 - 2024-06-07
+
+### Fixed
+
+- Updated Microsoft Authentication to use common tenant.
+
 ## 0.12.1 - 2024-06-06
 
 ### Changed
