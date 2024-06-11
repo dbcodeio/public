@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 0.12.4 - 2024-06-11
+
+
+### Fixed
+
+- Fixed domain authentication bug in SQL Server, new option to be specific about authentication type added to connection.
+- Fixed PostgreSQL not using right port when first adding a connection.
+
 ## 0.12.3 - 2024-06-11
 
 ### Changed
