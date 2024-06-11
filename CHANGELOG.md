@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 0.12.3 - 2024-06-11
+
+### Changed
+
+- Added an option to import from a connection string when adding or editing connections.
+- Added zero-config functionality to automatically detect connections in .env and web.config files. ([more details](https://dbcode.io/features/zero-config))
+- Added compass (discovered) icons to the tunnels and connections that are automatically discovered.
+
+### Fixed
+
+- Fixed an issue where SQLite connections would not store the file path when edited in some cases.
+- PostgreSQL is the default connection type when adding a new connection.
+
 ## 0.12.2 - 2024-06-07
 
 ### Fixed
