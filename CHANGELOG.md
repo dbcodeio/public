@@ -2,7 +2,6 @@
 
 ## 0.12.4 - 2024-06-11
 
-
 ### Fixed
 
 - Fixed domain authentication bug in SQL Server, new option to be specific about authentication type added to connection.
