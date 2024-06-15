@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 0.12.5 - 2024-06-15
+
+### Changed
+
+- Open a table cells content in the VS Code editor.
+- Connection tree view items are now cached for faster initial loading and refreshed in the background.
+- The connection tree view will reopen previously expanded items on VS Code restart.
+- Files assigned to a connection are now restored to that connection upon reopening VS Code.
+
+### Fixed
+
+- Consistency with delete confirmations between connections, tunnels, history.
+
 ## 0.12.4 - 2024-06-11
 
 ### Fixed
