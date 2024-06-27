@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 0.12.6 - 2024-06-27
+
+### Changed
+
+- Assign a color to a connection and specify which sections: the editor tab, status bar, and command center should display that color when active.
+
+### Fixed
+
+- Codelens does not get hidden above the visible area.
+- A race condition restoring previously open connections caused multiple connections to the same database to open.
+
 ## 0.12.5 - 2024-06-15
 
 ### Changed
