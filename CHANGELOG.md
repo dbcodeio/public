@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 0.13.0 - 2024-06-29
+
+### Changed
+
+- Added libSQL support (local file and Turso URL).
+
+### Fixed
+
+- Changes to an open connection that affect the connection (e.g., host, port, username, etc) will now prompt you to close and reopen the connection.
+- Color changes will be removed when the window loses focus and reapplied when the window regains focus to prevent them from appearing in other VS Code windows.
+
 ## 0.12.6 - 2024-06-27
 
 ### Changed
