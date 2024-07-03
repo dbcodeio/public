@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 0.14.0 - 2024-07-03
+
+### Changed
+
+- Cloud providers support added. ([more details](https://dbcode.io/docs/cloud-providers))
+
 ## 0.13.0 - 2024-06-29
 
 ### Changed
