@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.14.1 - 2024-07-05
+
+### Fixed
+
+- Codelens now indicates whether you are executing a selection or the entire document.
+- libSQL now supports encrypted local files.
+
 ## 0.14.0 - 2024-07-03
 
 ### Changed
