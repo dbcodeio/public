@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 0.15.0 - 2024-07-12
+
+### Changed
+
+- Relationships: Browse foreign key relationships in data to view related data in other tables.
+- Edit data and access relationships for your select queries.
+- Aiven cloud provider added.
+
+### Fixed
+
+- PostgreSQL showed duplicate columns in the foreign key when a foreign key had multiple columns.
+- SQLite did not show columns in the explorer whose names matched the table name.
+
 ## 0.14.1 - 2024-07-05
 
 ### Fixed
