@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.15.1 - 2024-07-15
+
+### Changed
+
+- Added support for MySQL 5.7.
+- Added a filter option to connections to filter schemas and databases in the explorer.
+
 ## 0.15.0 - 2024-07-12
 
 ### Changed
