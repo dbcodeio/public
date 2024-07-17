@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.16.0 - 2024-07-17
+
+### Changed
+
+- Added Azure cloud provider, supports Azure SQL,  Azure Postgres and Azure MySQL via Microsoft Entra ID authentication.
+- Added support for Microsoft Entra authentication to Azure SQL connections.
+
 ## 0.15.1 - 2024-07-15
 
 ### Changed
