@@ -2,7 +2,7 @@
 
 ![intro](https://raw.githubusercontent.com/dbcodeio/public/main/public/intro.gif)
 
-Note: This extension will transition to a paid model once it exits the preview stage. We are currently finalizing the feature set and pricing. During the preview, the extension is available at no cost. Users who install the extension in the preview will receive an extended trial once pricing is established.
+This extension's essential features will remain free forever. Some features will require a subscription. Currently, all features are free while we finalize our pricing model.
 
 ## Supported Databases
 
