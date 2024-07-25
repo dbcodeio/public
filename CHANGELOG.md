@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 0.16.2 - 2024-07-25
+
+### Changed
+
+- Added support for removing a group of connections from the explorer, as well as removing a single connection from a group in the explorer.
+- Switched to a universal build. Binary packages will be downloaded as needed instead of being included in the extension.
+- Added cloud providers to the connection picker.
+
+### Fixed
+
+- Postgres databases in some cases were not displaying results.
+
 ## 0.16.1 - 2024-07-22
 
 ### Changed
@@ -100,7 +112,7 @@
 ### Changed
 
 - Added an option to import from a connection string when adding or editing connections.
-- Added zero-config functionality to automatically detect connections in .env and web.config files. ([more details](https://dbcode.io/features/zero-config))
+- Added zero-config functionality to automatically detect connections in .env and web.config files. ([more details](https://dbcode.io/docs/connections/zero-config))
 - Added compass (discovered) icons to the tunnels and connections that are automatically discovered.
 
 ### Fixed
