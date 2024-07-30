@@ -1,6 +1,20 @@
 # CHANGELOG
 
-## 0.16.4 - 2024-07-26
+## 0.17.0 - 2024-07-30
+
+### Changed
+
+- @dbcode has been added as a chat participant if you have the Github Copilot extension installed. 
+- You can right-click on a supported database file (.db) and choose to open it in DBCode.
+- Autocomplete now works in notebook cells.
+
+### Fixed
+
+- The data grid now uses the editor font for cell values.
+- Data grid column widths are now limited to prevent excessive length when the table has many columns.
+- Data grid charts now correctly display numeric values for series data.
+
+## 0.16.2 - 2024-07-25
 
 ### Changed
 
