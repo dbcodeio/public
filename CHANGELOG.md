@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.17.1 - 2024-08-01
+
+### Fixed
+
+- Icon added for Notebooks.
+- SQLite/libSQL now shows row counts for tables in the explorer.
+
 ## 0.17.0 - 2024-07-30
 
 ### Changed
