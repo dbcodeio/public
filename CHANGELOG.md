@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0.0 - 2024-08-07
+
+### Changed
+
+- Subscription required for some features, 14 day trial created upon signing in. See our [Pricing](https://dbcode.io/pricing) page for details.
+
 ## 0.17.1 - 2024-08-01
 
 ### Fixed

@@ -2,7 +2,7 @@
 
 ![intro](https://raw.githubusercontent.com/dbcodeio/public/main/public/intro.gif)
 
-This extension's essential features will remain free forever. Some features will require a subscription. Currently, all features are free while we finalize our pricing model.
+Core features will be free forever. Additional features require a subscription; see our [Pricing](https://dbcode.io/pricing) page for details.
 
 ## Supported Databases
 
