@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.1.0 - 2024-08-07
+
+### Changed
+
+- Added Cloudflare as a cloud provider.
+- Added support for Cloudflare D1.
+
+### Fixed
+
+- Previous result tabs sometimes failed to display data when revisited.
+- SQLite/libSQL would not display the primary key correctly if it was not a sequence.
+
 ## 1.0.0 - 2024-08-07
 
 ### Changed

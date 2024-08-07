@@ -71,25 +71,3 @@ Core features will be free forever. Additional features require a subscription; 
 ## Telemetry
 
 In order to continuously improve our product, we gather non-personally identifiable data concerning your engagement with the Extension, encompassing but not limited to the types of databases you access, the functionalities you employ, and instances of error occurrence. Telemetry follows the VS Code Telemetry setting. You can review our [privacy policy](https://dbcode.io/legal/privacy-policy/).
-
-<style>
-.flex-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-    align-items: center;
-}
-.flex-item {
-	width:100%;
-	padding:20px;
-}
-
-.bold {
-	font-weight: bold;
-	font-size: 20px;
-}
-
-.large {
-	font-size: 18px;
-}
-</style>
