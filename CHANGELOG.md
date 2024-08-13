@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.1.1 - 2024-08-13
+
+### Changed
+
+- Added DDEV as a zero config source.
+
 ## 1.1.0 - 2024-08-07
 
 ### Changed

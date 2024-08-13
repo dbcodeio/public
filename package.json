@@ -1,0 +1,1954 @@
+{
+    "name": "dbcode",
+    "displayName": "DBCode",
+    "pricing": "Free",
+    "description": "Database management in Visual Studio Code",
+    "publisher": "dbcode",
+    "version": "1.1.1",
+    "icon": "out/resources/logos/logo.png",
+    "galleryBanner": {
+        "color": "#e4ddff",
+        "theme": "light"
+    },
+    "homepage": "https://dbcode.io",
+    "qna": "https://github.com/orgs/dbcodeio/discussions",
+    "license": "SEE LICENSE IN LICENSE",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dbcodeio/public"
+    },
+    "private": true,
+    "engines": {
+        "vscode": "^1.90.0"
+    },
+    "keywords": [
+        "SQL",
+        "MySQL",
+        "Postgresql",
+        "Postgres",
+        "SQL Server",
+        "Database Management",
+        "database client",
+        "database tool",
+        "Database",
+        "MongoDB",
+        "Cockroach",
+        "MariaDB",
+        "DB",
+        "D1"
+    ],
+    "categories": [
+        "AI",
+        "Chat",
+        "Data Science",
+        "Programming Languages"
+    ],
+    "activationEvents": [
+        "onRenderer:dbcode-notebook",
+        "onNotebook:dbcode-notebook",
+        "onLanguage:sql",
+        "onChatParticipant:dbcode"
+    ],
+    "main": "./out/extension/extension.js",
+    "l10n": "./l10n",
+    "contributes": {
+        "chatParticipants": [
+            {
+                "id": "dbcode",
+                "name": "dbcode",
+                "fullName": "DBCode",
+                "description": "%Ask about your database%",
+                "isSticky": true
+            }
+        ],
+        "commands": [
+            {
+                "command": "dbcode.auth.signin",
+                "title": "%Sign In%",
+                "category": "DBCode",
+                "icon": "$(sign-in)"
+            },
+            {
+                "command": "dbcode.auth.signout",
+                "title": "%Sign Out%",
+                "category": "DBCode",
+                "icon": "$(sign-out)"
+            },
+            {
+                "command": "dbcode.account.portal",
+                "title": "%Edit License%",
+                "category": "DBCode",
+                "icon": "$(edit)"
+            },
+            {
+                "command": "dbcode.account.seatEdit",
+                "title": "%Edit%",
+                "category": "DBCode",
+                "icon": "$(edit)"
+            },
+            {
+                "command": "dbcode.account.seatAdd",
+                "title": "%Add Seat%",
+                "category": "DBCode",
+                "icon": "$(add)"
+            },
+            {
+                "command": "dbcode.account.seatDelete",
+                "title": "%Delete%",
+                "category": "DBCode",
+                "icon": "$(trash)"
+            },
+            {
+                "command": "dbcode.account.purchase",
+                "title": "%Purchase License%",
+                "category": "DBCode",
+                "icon": "$(add)"
+            },
+            {
+                "command": "dbcode.chat.changeModel",
+                "title": "%Change Chat Model%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.notebookNew",
+                "title": "%Create a new DBCode Notebook%",
+                "icon": "$(notebook)",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.connections.sqlFile",
+                "title": "%Create a new sql file%",
+                "icon": "$(new-file)",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.editor.open",
+                "title": "%Load%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.discovery.manual",
+                "title": "%Open with DBCode%",
+                "category": "DBCode",
+                "icon": "$(plug)"
+            },
+            {
+                "command": "dbcode.connections.connect",
+                "title": "%Connect%",
+                "category": "DBCode",
+                "icon": "$(plug)"
+            },
+            {
+                "command": "dbcode.connections.disconnect",
+                "title": "%Disconnect%",
+                "category": "DBCode",
+                "icon": "$(debug-disconnect)"
+            },
+            {
+                "command": "dbcode.connections.treeRefresh",
+                "title": "%Refresh%",
+                "category": "DBCode",
+                "icon": "$(refresh)"
+            },
+            {
+                "command": "dbcode.connections.treeRefreshing",
+                "title": "%Refresh%",
+                "category": "DBCode",
+                "icon": "$(loading~spin)"
+            },
+            {
+                "command": "dbcode.connections.add",
+                "title": "%Add Connection%",
+                "category": "DBCode",
+                "icon": "$(add)"
+            },
+            {
+                "command": "dbcode.connections.sample",
+                "title": "%Explore With a Sample Database%",
+                "category": "DBCode",
+                "icon": "$(add)"
+            },
+            {
+                "command": "dbcode.connections.remove",
+                "title": "%Delete Connection%",
+                "category": "DBCode",
+                "icon": "$(trash)"
+            },
+            {
+                "command": "dbcode.connections.ungroup",
+                "title": "%Remove from Group%",
+                "category": "DBCode",
+                "icon": "$(trash)"
+            },
+            {
+                "command": "dbcode.connections.group.remove",
+                "title": "%Delete Group%",
+                "category": "DBCode",
+                "icon": "$(trash)"
+            },
+            {
+                "command": "dbcode.providers.remove",
+                "title": "%Delete Provider%",
+                "category": "DBCode",
+                "icon": "$(trash)"
+            },
+            {
+                "command": "dbcode.providers.edit",
+                "title": "%Edit Provider%",
+                "category": "DBCode",
+                "icon": "$(edit)"
+            },
+            {
+                "command": "dbcode.tunnels.edit",
+                "title": "%Edit Tunnel%",
+                "category": "DBCode",
+                "icon": "$(edit)"
+            },
+            {
+                "command": "dbcode.tunnels.add",
+                "title": "%Add Tunnel%",
+                "category": "DBCode",
+                "icon": "$(add)"
+            },
+            {
+                "command": "dbcode.tunnels.delete",
+                "title": "%Delete Tunnel%",
+                "category": "DBCode",
+                "icon": "$(trash)"
+            },
+            {
+                "command": "dbcode.connections.edit",
+                "title": "%Edit Connection%",
+                "category": "DBCode",
+                "icon": "$(edit)"
+            },
+            {
+                "command": "dbcode.connections.select",
+                "title": "%Select Connection%",
+                "category": "DBCode",
+                "icon": "${edit}"
+            },
+            {
+                "command": "dbcode.editor.execute",
+                "title": "%Execute with DBCode%",
+                "category": "DBCode",
+                "icon": "$(run)"
+            },
+            {
+                "command": "dbcode.editor.execute#selection",
+                "title": "%Execute selection with DBCode%",
+                "category": "DBCode",
+                "icon": "$(run)"
+            },
+            {
+                "command": "dbcode.editor.apply",
+                "title": "%Apply to Database%",
+                "category": "DBCode",
+                "icon": "$(run)"
+            },
+            {
+                "command": "dbcode.connections.group",
+                "title": "%Group%",
+                "category": "DBCode",
+                "icon": "$(group-by-ref-type)"
+            },
+            {
+                "command": "dbcode.history.enable",
+                "title": "%Enable%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.history.copysql",
+                "title": "%Copy SQL%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.history.delete",
+                "title": "%Delete%",
+                "category": "DBCode",
+                "icon": "$(trash)"
+            },
+            {
+                "command": "dbcode.history.loadQuery",
+                "title": "%Load query%",
+                "category": "DBCode",
+                "icon": "$(new-file)"
+            },
+            {
+                "command": "dbcode.history.showAllQueries",
+                "title": "%Queries only%",
+                "category": "DBCode",
+                "icon": "$(list-unordered)"
+            },
+            {
+                "command": "dbcode.history.showTreeView",
+                "title": "%Show structured view%",
+                "category": "DBCode",
+                "icon": "$(list-tree)"
+            },
+            {
+                "command": "dbcode.history.filterQueries",
+                "title": "%Filter queries%",
+                "category": "DBCode",
+                "icon": "$(extensions-filter)"
+            },
+            {
+                "command": "dbcode.history.clearFilter",
+                "title": "%Clear filter%",
+                "category": "DBCode",
+                "icon": "$(extensions-clear-search-results)"
+            },
+            {
+                "command": "dbcode.history.expandAll",
+                "title": "%Expand all%",
+                "category": "DBCode",
+                "icon": "$(search-expand-results)",
+                "enablement": "!dbcode.history.treeView"
+            },
+            {
+                "command": "dbcode.history.collapseAll",
+                "title": "%Collapse all%",
+                "category": "DBCode",
+                "icon": "$(search-collapse-results)",
+                "enablement": "!dbcode.history.treeView"
+            },
+            {
+                "command": "dbcode.table.open",
+                "title": "%Open Table%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.table.openLimit",
+                "title": "%Open with limit...%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.diagram.open",
+                "title": "%Entity Relationship Diagram%",
+                "category": "DBCode"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "dbcode.editor.execute",
+                "key": "ctrl+d ctrl+e",
+                "mac": "cmd+d cmd+e",
+                "when": "editorTextFocus && (editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode"
+            },
+            {
+                "command": "dbcode.editor.apply",
+                "key": "ctrl+d ctrl+e",
+                "mac": "cmd+d cmd+e",
+                "when": "editorTextFocus && resourceScheme == dbcode"
+            },
+            {
+                "command": "dbcode.connections.select",
+                "key": "ctrl+d ctrl+c",
+                "mac": "cmd+d cmd+c",
+                "when": "editorTextFocus && (editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode"
+            }
+        ],
+        "notebooks": [
+            {
+                "type": "dbcode-notebook",
+                "displayName": "%DBCode Notebook%",
+                "priority": "default",
+                "selector": [
+                    {
+                        "filenamePattern": "*.dbcode"
+                    }
+                ]
+            }
+        ],
+        "notebookRenderer": [
+            {
+                "id": "dbcode-notebook-renderer",
+                "displayName": "%DBCode Book Renderer%",
+                "entrypoint": "./out/webview/notebook.js",
+                "requiresMessaging": "always",
+                "mimeTypes": [
+                    "x-application/dbcode"
+                ]
+            }
+        ],
+        "views": {
+            "dbcodeActivitybarContainer": [
+                {
+                    "id": "dbcode.connections.view",
+                    "name": "%Connections%"
+                },
+                {
+                    "id": "dbcode.tunnels.view",
+                    "name": "%Tunnels%"
+                },
+                {
+                    "id": "dbcode.history.view",
+                    "name": "%History%"
+                },
+                {
+                    "id": "dbcode.account.view",
+                    "name": "%Account%"
+                }
+            ],
+            "dbcodePanelContainer": [
+                {
+                    "type": "webview",
+                    "id": "dbcode.panelView",
+                    "name": "DBCode"
+                }
+            ]
+        },
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "dbcodeActivitybarContainer",
+                    "icon": "out/resources/logos/icon.svg",
+                    "title": "DBCode"
+                }
+            ],
+            "panel": [
+                {
+                    "id": "dbcodePanelContainer",
+                    "icon": "",
+                    "title": "DBCode"
+                }
+            ]
+        },
+        "viewsWelcome": [
+            {
+                "view": "dbcode.connections.view",
+                "contents": "%No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n%"
+            },
+            {
+                "view": "dbcode.tunnels.view",
+                "contents": "%No tunnels created.\n[Add New Tunnel](command:dbcode.tunnels.add)%"
+            },
+            {
+                "view": "dbcode.history.view",
+                "contents": "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)",
+                "when": "!config.dbcode.history.enabled"
+            }
+        ],
+        "menus": {
+            "file/newFile": [
+                {
+                    "command": "dbcode.notebookNew",
+                    "group": "notebook"
+                }
+            ],
+            "view/title": [
+                {
+                    "command": "dbcode.connections.add",
+                    "when": "view == dbcode.connections.view",
+                    "group": "navigation"
+                },
+                {
+                    "command": "dbcode.connections.treeRefresh",
+                    "when": "view == dbcode.connections.view && dbcode.connections.refreshing == false",
+                    "group": "navigation"
+                },
+                {
+                    "command": "dbcode.connections.treeRefreshing",
+                    "when": "view == dbcode.connections.view && dbcode.connections.refreshing == true",
+                    "group": "navigation"
+                },
+                {
+                    "command": "dbcode.connections.group",
+                    "when": "view == dbcode.connections.view",
+                    "group": "navigation"
+                },
+                {
+                    "command": "dbcode.history.showAllQueries",
+                    "when": "view == dbcode.history.view && config.dbcode.history.enabled && !dbcode.history.treeView",
+                    "group": "navigation"
+                },
+                {
+                    "command": "dbcode.history.showTreeView",
+                    "when": "view == dbcode.history.view && config.dbcode.history.enabled && dbcode.history.treeView",
+                    "group": "navigation"
+                },
+                {
+                    "command": "dbcode.history.filterQueries",
+                    "when": "view == dbcode.history.view && config.dbcode.history.enabled && dbcode.history.filter",
+                    "group": "navigation"
+                },
+                {
+                    "command": "dbcode.history.clearFilter",
+                    "when": "view == dbcode.history.view && config.dbcode.history.enabled && !dbcode.history.filter",
+                    "group": "navigation"
+                },
+                {
+                    "command": "dbcode.history.expandAll",
+                    "when": "view == dbcode.history.view && dbcode.history.expanded == false && config.dbcode.history.enabled",
+                    "group": "navigation@1"
+                },
+                {
+                    "command": "dbcode.history.collapseAll",
+                    "when": "view == dbcode.history.view && dbcode.history.expanded == true && config.dbcode.history.enabled",
+                    "group": "navigation@1"
+                },
+                {
+                    "command": "dbcode.tunnels.add",
+                    "when": "view == dbcode.tunnels.view",
+                    "group": "navigation"
+                },
+                {
+                    "command": "dbcode.auth.signout",
+                    "when": "view == dbcode.account.view && dbcode.auth.signedin === true",
+                    "group": "navigation"
+                },
+                {
+                    "command": "dbcode.auth.signin",
+                    "when": "view == dbcode.account.view && dbcode.auth.signedin === false",
+                    "group": "navigation"
+                }
+            ],
+            "view/item/context": [
+                {
+                    "command": "dbcode.account.portal",
+                    "when": "view == dbcode.account.view && viewItem === license-active",
+                    "group": "inline"
+                },
+                {
+                    "command": "dbcode.account.purchase",
+                    "when": "view == dbcode.account.view && viewItem === license",
+                    "group": "inline"
+                },
+                {
+                    "command": "dbcode.account.seatAdd",
+                    "when": "view == dbcode.account.view && viewItem === seats",
+                    "group": "inline"
+                },
+                {
+                    "command": "dbcode.account.seatEdit",
+                    "when": "view == dbcode.account.view && viewItem === seat",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.account.seatDelete",
+                    "when": "view == dbcode.account.view && viewItem === seat",
+                    "group": "inline@2"
+                },
+                {
+                    "command": "dbcode.tunnels.edit",
+                    "when": "view == dbcode.tunnels.view",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.tunnels.delete",
+                    "when": "view == dbcode.tunnels.view",
+                    "group": "inline@2"
+                },
+                {
+                    "command": "dbcode.history.loadQuery",
+                    "when": "view == dbcode.history.view && viewItem == query",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.history.copysql",
+                    "when": "view == dbcode.history.view && viewItem == query"
+                },
+                {
+                    "command": "dbcode.history.delete",
+                    "when": "view == dbcode.history.view && (viewItem == query || viewItem == database || viewItem == connection)",
+                    "group": "inline@2"
+                },
+                {
+                    "command": "dbcode.notebookNew",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^database-/",
+                    "group": "inline@2"
+                },
+                {
+                    "command": "dbcode.connections.group.remove",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^group-/ && viewItem =~ /~remove~/",
+                    "group": "inline@3"
+                },
+                {
+                    "command": "dbcode.connections.sqlFile",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^database-/",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.connections.connect",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~connect~/",
+                    "group": "1"
+                },
+                {
+                    "command": "dbcode.connections.connect",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~connect~/",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.connections.disconnect",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~disconnect~/",
+                    "group": "1"
+                },
+                {
+                    "command": "dbcode.connections.disconnect",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~disconnect~/",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.connections.remove",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~remove~/",
+                    "group": "inline@3"
+                },
+                {
+                    "command": "dbcode.connections.edit",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~edit~/",
+                    "group": "inline@2"
+                },
+                {
+                    "command": "dbcode.connections.ungroup",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~ungroup~/",
+                    "group": "3"
+                },
+                {
+                    "command": "dbcode.providers.remove",
+                    "when": "view == dbcode.connections.view && viewItem == provider",
+                    "group": "inline@2"
+                },
+                {
+                    "command": "dbcode.providers.edit",
+                    "when": "view == dbcode.connections.view && viewItem == provider",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.table.openLimit",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~openlimit~/"
+                },
+                {
+                    "command": "dbcode.diagram.open",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^tables-/ && viewItem =~ /~diagram~/"
+                }
+            ],
+            "explorer/context": [
+                {
+                    "command": "dbcode.discovery.manual",
+                    "when": "resourceFilename =~ /.db$/",
+                    "group": "navigation"
+                }
+            ],
+            "editor/title": [
+                {
+                    "command": "dbcode.editor.execute",
+                    "when": "(editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode",
+                    "group": "navigation"
+                },
+                {
+                    "command": "dbcode.editor.apply",
+                    "when": "editorLangId == sql && resourceScheme == dbcode",
+                    "group": "navigation"
+                }
+            ],
+            "editor/context": [
+                {
+                    "when": "resourceLangId == sql && editorHasSelection",
+                    "command": "dbcode.editor.execute#selection",
+                    "group": "navigation"
+                },
+                {
+                    "when": "resourceLangId == sql && !editorHasSelection && resourceScheme != dbcode",
+                    "command": "dbcode.editor.execute",
+                    "group": "navigation"
+                },
+                {
+                    "when": "resourceLangId == sql && !editorHasSelection && resourceScheme == dbcode",
+                    "command": "dbcode.editor.apply",
+                    "group": "navigation"
+                }
+            ]
+        },
+        "colors": [
+            {
+                "id": "dbcode.highlight",
+                "description": "Highlight color",
+                "defaults": {
+                    "dark": "#7655FF",
+                    "light": "#7655FF"
+                }
+            }
+        ],
+        "languages": [
+            {
+                "id": "dbcode-notebook",
+                "aliases": [
+                    "DBCode Notebook"
+                ],
+                "extensions": [
+                    ".dbcode"
+                ],
+                "icon": {
+                    "light": "out/resources/logos/icon_color.svg",
+                    "dark": "out/resources/logos/icon_color.svg"
+                }
+            }
+        ],
+        "icons": {
+            "dbcode-access-control-list": {
+                "description": "Access Control List",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea01"
+                }
+            },
+            "dbcode-alter": {
+                "description": "Alter",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea02"
+                }
+            },
+            "dbcode-analytics": {
+                "description": "Analytics",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea03"
+                }
+            },
+            "dbcode-audit": {
+                "description": "Audit",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea04"
+                }
+            },
+            "dbcode-authentication": {
+                "description": "Authentication",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea05"
+                }
+            },
+            "dbcode-availability": {
+                "description": "Availability",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea06"
+                }
+            },
+            "dbcode-azure": {
+                "description": "Azure",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea07"
+                }
+            },
+            "dbcode-backup": {
+                "description": "Backup",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea08"
+                }
+            },
+            "dbcode-binary": {
+                "description": "Binary",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea09"
+                }
+            },
+            "dbcode-bit": {
+                "description": "Bit",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea0a"
+                }
+            },
+            "dbcode-boolean": {
+                "description": "Boolean",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea0b"
+                }
+            },
+            "dbcode-bottleneck": {
+                "description": "Bottleneck",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea0c"
+                }
+            },
+            "dbcode-cache": {
+                "description": "Cache",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea0d"
+                }
+            },
+            "dbcode-cascade": {
+                "description": "Cascade",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea0e"
+                }
+            },
+            "dbcode-change-data-capture": {
+                "description": "Change Data Capture",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea0f"
+                }
+            },
+            "dbcode-checkpoint": {
+                "description": "Checkpoint",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea10"
+                }
+            },
+            "dbcode-cluster": {
+                "description": "Cluster",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea11"
+                }
+            },
+            "dbcode-cockroach": {
+                "description": "Cockroach",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea12"
+                }
+            },
+            "dbcode-collation": {
+                "description": "Collation",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea13"
+                }
+            },
+            "dbcode-collection": {
+                "description": "Collection",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea14"
+                }
+            },
+            "dbcode-column": {
+                "description": "Column",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea15"
+                }
+            },
+            "dbcode-commit": {
+                "description": "Commit",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea16"
+                }
+            },
+            "dbcode-consistency": {
+                "description": "Consistency",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea17"
+                }
+            },
+            "dbcode-constraint": {
+                "description": "Constraint",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea18"
+                }
+            },
+            "dbcode-crash-recovery": {
+                "description": "Crash Recovery",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea19"
+                }
+            },
+            "dbcode-crud": {
+                "description": "Crud",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea1a"
+                }
+            },
+            "dbcode-cursor": {
+                "description": "Cursor",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea1b"
+                }
+            },
+            "dbcode-d1": {
+                "description": "D1",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea1c"
+                }
+            },
+            "dbcode-data-source": {
+                "description": "Data Source",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea1d"
+                }
+            },
+            "dbcode-date-time-tz": {
+                "description": "Date Time Tz",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea1e"
+                }
+            },
+            "dbcode-date-time": {
+                "description": "Date Time",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea1f"
+                }
+            },
+            "dbcode-date": {
+                "description": "Date",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea20"
+                }
+            },
+            "dbcode-ddl": {
+                "description": "Ddl",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea21"
+                }
+            },
+            "dbcode-deadlock": {
+                "description": "Deadlock",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea22"
+                }
+            },
+            "dbcode-dependency": {
+                "description": "Dependency",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea23"
+                }
+            },
+            "dbcode-deployment": {
+                "description": "Deployment",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea24"
+                }
+            },
+            "dbcode-durability": {
+                "description": "Durability",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea25"
+                }
+            },
+            "dbcode-encryption": {
+                "description": "Encryption",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea26"
+                }
+            },
+            "dbcode-enum-member": {
+                "description": "Enum Member",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea27"
+                }
+            },
+            "dbcode-enum": {
+                "description": "Enum",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea28"
+                }
+            },
+            "dbcode-failure": {
+                "description": "Failure",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea29"
+                }
+            },
+            "dbcode-foreign-data-wrapper": {
+                "description": "Foreign Data Wrapper",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea2a"
+                }
+            },
+            "dbcode-foreign-key": {
+                "description": "Foreign Key",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea2b"
+                }
+            },
+            "dbcode-function": {
+                "description": "Function",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea2c"
+                }
+            },
+            "dbcode-geography": {
+                "description": "Geography",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea2d"
+                }
+            },
+            "dbcode-geometry": {
+                "description": "Geometry",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea2e"
+                }
+            },
+            "dbcode-hierarchy": {
+                "description": "Hierarchy",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea2f"
+                }
+            },
+            "dbcode-hint": {
+                "description": "Hint",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea30"
+                }
+            },
+            "dbcode-index": {
+                "description": "Index",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea31"
+                }
+            },
+            "dbcode-insert": {
+                "description": "Insert",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea32"
+                }
+            },
+            "dbcode-ip-address": {
+                "description": "Ip Address",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea33"
+                }
+            },
+            "dbcode-isolation": {
+                "description": "Isolation",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea34"
+                }
+            },
+            "dbcode-issue": {
+                "description": "Issue",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea35"
+                }
+            },
+            "dbcode-json": {
+                "description": "Json",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea36"
+                }
+            },
+            "dbcode-key": {
+                "description": "Key",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea37"
+                }
+            },
+            "dbcode-libsql": {
+                "description": "Libsql",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea38"
+                }
+            },
+            "dbcode-license": {
+                "description": "License",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea39"
+                }
+            },
+            "dbcode-mainteance": {
+                "description": "Mainteance",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea3a"
+                }
+            },
+            "dbcode-mariadb": {
+                "description": "Mariadb",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea3b"
+                }
+            },
+            "dbcode-merge": {
+                "description": "Merge",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea3c"
+                }
+            },
+            "dbcode-microsoft": {
+                "description": "Microsoft",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea3d"
+                }
+            },
+            "dbcode-migration": {
+                "description": "Migration",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea3e"
+                }
+            },
+            "dbcode-mongodb": {
+                "description": "Mongodb",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea3f"
+                }
+            },
+            "dbcode-mssql": {
+                "description": "Mssql",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea40"
+                }
+            },
+            "dbcode-mysql": {
+                "description": "Mysql",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea41"
+                }
+            },
+            "dbcode-network-card": {
+                "description": "Network Card",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea42"
+                }
+            },
+            "dbcode-normalization": {
+                "description": "Normalization",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea43"
+                }
+            },
+            "dbcode-null": {
+                "description": "Null",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea44"
+                }
+            },
+            "dbcode-number": {
+                "description": "Number",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea45"
+                }
+            },
+            "dbcode-odbc": {
+                "description": "Odbc",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea46"
+                }
+            },
+            "dbcode-olap": {
+                "description": "Olap",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea47"
+                }
+            },
+            "dbcode-oltp": {
+                "description": "Oltp",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea48"
+                }
+            },
+            "dbcode-optimizer": {
+                "description": "Optimizer",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea49"
+                }
+            },
+            "dbcode-parameters": {
+                "description": "Parameters",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea4a"
+                }
+            },
+            "dbcode-postgres": {
+                "description": "Postgres",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea4b"
+                }
+            },
+            "dbcode-primary-key": {
+                "description": "Primary Key",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea4c"
+                }
+            },
+            "dbcode-procedure": {
+                "description": "Procedure",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea4d"
+                }
+            },
+            "dbcode-query": {
+                "description": "Query",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea4e"
+                }
+            },
+            "dbcode-read": {
+                "description": "Read",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea4f"
+                }
+            },
+            "dbcode-recovery": {
+                "description": "Recovery",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea50"
+                }
+            },
+            "dbcode-relational-database": {
+                "description": "Relational Database",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea51"
+                }
+            },
+            "dbcode-replication": {
+                "description": "Replication",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea52"
+                }
+            },
+            "dbcode-return": {
+                "description": "Return",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea53"
+                }
+            },
+            "dbcode-rollback": {
+                "description": "Rollback",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea54"
+                }
+            },
+            "dbcode-schema": {
+                "description": "Schema",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea55"
+                }
+            },
+            "dbcode-select": {
+                "description": "Select",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea56"
+                }
+            },
+            "dbcode-server": {
+                "description": "Server",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea57"
+                }
+            },
+            "dbcode-sort": {
+                "description": "Sort",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea58"
+                }
+            },
+            "dbcode-split": {
+                "description": "Split",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea59"
+                }
+            },
+            "dbcode-sql": {
+                "description": "Sql",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea5a"
+                }
+            },
+            "dbcode-sqlite": {
+                "description": "Sqlite",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea5b"
+                }
+            },
+            "dbcode-string": {
+                "description": "String",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea5c"
+                }
+            },
+            "dbcode-table": {
+                "description": "Table",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea5d"
+                }
+            },
+            "dbcode-time": {
+                "description": "Time",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea5e"
+                }
+            },
+            "dbcode-timescale": {
+                "description": "Timescale",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea5f"
+                }
+            },
+            "dbcode-timetz": {
+                "description": "Timetz",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea60"
+                }
+            },
+            "dbcode-trigger": {
+                "description": "Trigger",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea61"
+                }
+            },
+            "dbcode-type": {
+                "description": "Type",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea62"
+                }
+            },
+            "dbcode-unique-constraint": {
+                "description": "Unique Constraint",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea63"
+                }
+            },
+            "dbcode-unique": {
+                "description": "Unique",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea64"
+                }
+            },
+            "dbcode-update": {
+                "description": "Update",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea65"
+                }
+            },
+            "dbcode-vector": {
+                "description": "Vector",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea66"
+                }
+            },
+            "dbcode-view": {
+                "description": "View",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea67"
+                }
+            },
+            "dbcode-void": {
+                "description": "Void",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea68"
+                }
+            },
+            "dbcode-xml": {
+                "description": "Xml",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea69"
+                }
+            },
+            "dbcode-yugabyte": {
+                "description": "Yugabyte",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea6a"
+                }
+            }
+        },
+        "configuration": [
+            {
+                "type": "object",
+                "title": "DBCode",
+                "properties": {
+                    "dbcode.connections": {
+                        "type": "array",
+                        "markdownDescription": "%Connections%",
+                        "default": [],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "connectionId": {
+                                    "type": "string",
+                                    "description": "%Connection ID%"
+                                },
+                                "tunnelId": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "description": "%Tunnel ID to connect through%"
+                                },
+                                "connectionType": {
+                                    "type": "string",
+                                    "enum": [
+                                        "host",
+                                        "socket"
+                                    ],
+                                    "description": "%Connection Type%"
+                                },
+                                "group": {
+                                    "type": "string",
+                                    "description": "%Group name%"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "%Connection name%"
+                                },
+                                "host": {
+                                    "type": "string",
+                                    "description": "%Server address%",
+                                    "default": "127.0.0.1"
+                                },
+                                "port": {
+                                    "type": "number",
+                                    "description": "%Port%"
+                                },
+                                "database": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "description": "%Database name%"
+                                },
+                                "username": {
+                                    "type": "string",
+                                    "description": "%Username%"
+                                },
+                                "password": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "description": "%Password%"
+                                },
+                                "salt": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "description": "%The key to encrypt the password with when saving%"
+                                },
+                                "ssl": {
+                                    "type": [
+                                        "boolean",
+                                        "null"
+                                    ],
+                                    "description": "%Enable SSL%"
+                                },
+                                "sslTrustCertificate": {
+                                    "type": [
+                                        "boolean",
+                                        "null"
+                                    ],
+                                    "description": "%Trust server certificate%"
+                                },
+                                "savePassword": {
+                                    "type": "string",
+                                    "description": "%Save password%",
+                                    "default": "no",
+                                    "enum": [
+                                        "null",
+                                        "no",
+                                        "session",
+                                        "yes",
+                                        "encrypted",
+                                        "secretStorage"
+                                    ],
+                                    "enumDescriptions": [
+                                        "%It will not be saved, you will be prompted for it when connecting each time.%",
+                                        "%It will not be saved, you will be prompted for it ONCE when connecting each time VSCode starts.%",
+                                        "%It will be saved in settings as plain text (not recommended).%",
+                                        "%It will be encrypted and saved in settings using an encryption string. You will be prompted to enter an encryption string which will encrypt the password.%",
+                                        "%It will be saved in VS Code secret storage%"
+                                    ]
+                                },
+                                "driver": {
+                                    "type": "string",
+                                    "markdownDescription": "%Driver used for connection%",
+                                    "enum": [
+                                        "postgres",
+                                        "mysql",
+                                        "mariadb",
+                                        "mssql",
+                                        "azure",
+                                        "cockroach",
+                                        "yugabyte",
+                                        "timescale",
+                                        "mongodb",
+                                        "sqlite",
+                                        "libsql",
+                                        "d1"
+                                    ]
+                                },
+                                "connectionTimeout": {
+                                    "type": "number",
+                                    "description": "%Connection timeout in seconds%",
+                                    "default": 30
+                                },
+                                "filterSchemas": {
+                                    "type": "string",
+                                    "description": "%Filter schemas%",
+                                    "default": ""
+                                },
+                                "filterDatabases": {
+                                    "type": "string",
+                                    "description": "%Filter databases%",
+                                    "default": ""
+                                },
+                                "color": {
+                                    "type": "string",
+                                    "description": "%Color for the database%",
+                                    "default": "",
+                                    "enum": [
+                                        "#F00019",
+                                        "#00A6FF",
+                                        "#7655FF",
+                                        "#F632CD",
+                                        "#FF4A91",
+                                        "#FF8A62",
+                                        "#FFC54F",
+                                        "#F9F871",
+                                        "#009670",
+                                        "#67BAA7",
+                                        "#3B8EA2",
+                                        "#B2A0D5"
+                                    ],
+                                    "enumDescriptions": [
+                                        "#F00019",
+                                        "#00A6FF",
+                                        "#7655FF",
+                                        "#F632CD",
+                                        "#FF4A91",
+                                        "#FF8A62",
+                                        "#FFC54F",
+                                        "#F9F871",
+                                        "#009670",
+                                        "#67BAA7",
+                                        "#3B8EA2",
+                                        "#B2A0D5"
+                                    ]
+                                },
+                                "driverOptions": {
+                                    "type": "object",
+                                    "markdownDescription": "%Connection options specific to the driver%",
+                                    "properties": {}
+                                }
+                            }
+                        }
+                    },
+                    "dbcode.tunnels": {
+                        "type": "array",
+                        "markdownDescription": "%Tunnels%",
+                        "default": [],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "description": "%Tunnel ID%"
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "enum": [
+                                        "ssh"
+                                    ],
+                                    "enumDescriptions": [
+                                        "SSH Connection"
+                                    ],
+                                    "description": "%Tunnel Type%"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "%Tunnel Name%"
+                                },
+                                "host": {
+                                    "type": "string",
+                                    "description": "%Tunnel Host%"
+                                },
+                                "port": {
+                                    "type": "number",
+                                    "description": "%Tunnel Port%"
+                                },
+                                "authType": {
+                                    "type": "string",
+                                    "enum": [
+                                        "password",
+                                        "key",
+                                        "agent"
+                                    ],
+                                    "enumDescription": [
+                                        "%Password authentication%",
+                                        "%Key file authentication%",
+                                        "%SSH Agent authentication%"
+                                    ],
+                                    "description": "%Tunnel Authentication Type%"
+                                },
+                                "savePassword": {
+                                    "type": "string",
+                                    "description": "%Save password%",
+                                    "default": "no",
+                                    "enum": [
+                                        "no",
+                                        "session",
+                                        "yes",
+                                        "encrypted",
+                                        "secretStorage"
+                                    ],
+                                    "enumDescriptions": [
+                                        "%It will not be saved, you will be prompted for it when connecting each time.%",
+                                        "%It will not be saved, you will be prompted for it ONCE when connecting each time VSCode starts.%",
+                                        "%It will be saved in settings as plain text (not recommended).%",
+                                        "%It will be encrypted and saved in settings using an encryption string. You will be prompted to enter an encryption string which will encrypt the password.%",
+                                        "%It will be saved in VS Code secret storage%"
+                                    ]
+                                },
+                                "password": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "description": "%Tunnel Password (for password or key authentication%"
+                                },
+                                "privateKeyPath": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "description": "%Tunnel private key path%"
+                                }
+                            }
+                        }
+                    },
+                    "dbcode.maxTabs": {
+                        "type": "number",
+                        "default": 3,
+                        "markdownDescription": "%Limit the number of tabs saved in the results%"
+                    },
+                    "dbcode.warnBeforeExecuteFullDoc": {
+                        "type": "boolean",
+                        "default": true,
+                        "markdownDescription": "%Warn before executing the full content of the document%"
+                    },
+                    "dbcode.warnBeforePreApply": {
+                        "type": "boolean",
+                        "default": true,
+                        "markdownDescription": "%Warn before running pre apply SQL when applying a file%"
+                    },
+                    "dbcode.maxRowsToFetch": {
+                        "type": "number",
+                        "default": 100000,
+                        "markdownDescription": "%Maximum number of rows to fetch when opening a table or view%"
+                    }
+                }
+            },
+            {
+                "title": "%Cloud Providers%",
+                "order": 1,
+                "type": "object",
+                "properties": {
+                    "dbcode.cloudProviders": {
+                        "type": "array",
+                        "markdownDescription": "%Cloud Providers%",
+                        "default": [],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "description": "%Cloud Provider ID%"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "%Cloud Provider name%"
+                                },
+                                "provider": {
+                                    "type": "string",
+                                    "markdownDescription": "%Cloud Provider%",
+                                    "enum": [
+                                        "aiven",
+                                        "azure",
+                                        "cloudflare",
+                                        "turso",
+                                        "neon",
+                                        "supabase"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "title": "%History%",
+                "order": 2,
+                "type": "object",
+                "properties": {
+                    "dbcode.history.enabled": {
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "%Record query history%"
+                    },
+                    "dbcode.history.recordsPerDatabase": {
+                        "type": "number",
+                        "default": 2000,
+                        "markdownDescription": "%Number of records to store per database%"
+                    }
+                }
+            },
+            {
+                "title": "%Chat%",
+                "order": 2,
+                "type": "object",
+                "properties": {
+                    "dbcode.chat.modelId": {
+                        "type": "string",
+                        "default": "",
+                        "markdownDescription": "%Chat model ID%"
+                    }
+                }
+            },
+            {
+                "title": "%Connection Color%",
+                "order": 3,
+                "type": "object",
+                "properties": {
+                    "dbcode.color.applyToActiveTabBorder": {
+                        "order": 1,
+                        "default": true,
+                        "markdownDescription": "%Apply connection color to the active editor tab lower border%",
+                        "type": "boolean"
+                    },
+                    "dbcode.color.applyToActiveTabBorderTop": {
+                        "order": 2,
+                        "default": false,
+                        "markdownDescription": "%Apply connection color to the active editor tab top border%",
+                        "type": "boolean"
+                    },
+                    "dbcode.color.applyToActiveEditorTabBackground": {
+                        "order": 3,
+                        "default": false,
+                        "markdownDescription": "%Apply connection color to the active editor tab background%",
+                        "type": "boolean"
+                    },
+                    "dbcode.color.applyToStatusBarBackground": {
+                        "order": 4,
+                        "default": false,
+                        "markdownDescription": "%Apply connection color to the Status Bar background%",
+                        "type": "boolean"
+                    },
+                    "dbcode.color.applyToCommandCenterBackground": {
+                        "order": 5,
+                        "default": false,
+                        "markdownDescription": "%Apply connection color to the Command Center background%",
+                        "type": "boolean"
+                    }
+                }
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "npm run esbuild -- --minify",
+        "lint": "eslint src --ext ts",
+        "watch": "npm run esbuild -- --sourcemap --watch",
+        "test": "vitest",
+        "test-e2e": "wdio run ./wdio.conf.ts",
+        "esbuild": "node -r esbuild-runner/register ./scripts/build.ts",
+        "prepare": "husky install",
+        "postinstall": "patch-package",
+        "version": "tsx ./scripts/changelog.ts && git add CHANGELOG.md"
+    },
+    "devDependencies": {
+        "@azure-rest/ai-translation-text": "^1.0.0-beta.1",
+        "@biomejs/biome": "^1.8.3",
+        "@chevrotain/types": "^11.0.3",
+        "@testcontainers/mssqlserver": "^10.10.4",
+        "@testcontainers/mysql": "^10.10.4",
+        "@testcontainers/postgresql": "^10.10.4",
+        "@types/glob": "^8.1.0",
+        "@types/html-escaper": "^3.0.2",
+        "@types/json-diff": "^1.0.3",
+        "@types/json2md": "^1.5.4",
+        "@types/jstoxml": "^2.0.4",
+        "@types/lodash-es": "^4.17.12",
+        "@types/mocha": "^10.0.7",
+        "@types/node": "^20.14.11",
+        "@types/picomatch": "^3.0.0",
+        "@types/postcss-url": "^10.0.4",
+        "@types/sshpk": "^1.17.4",
+        "@types/tar": "^6.1.13",
+        "@types/validator": "^13.12.0",
+        "@types/vscode": "^1.90.0",
+        "@types/vscode-notebook-renderer": "^1.72.3",
+        "@vitest/coverage-v8": "^2.0.4",
+        "@vscode/l10n-dev": "^0.0.35",
+        "@wdio/cli": "^8.39.1",
+        "@wdio/local-runner": "^8.39.1",
+        "@wdio/mocha-framework": "^8.39.0",
+        "@wdio/spec-reporter": "^8.39.0",
+        "big.js": "^6.2.1",
+        "esbuild": "^0.23.0",
+        "esbuild-plugin-copy": "^2.1.1",
+        "esbuild-runner": "^2.2.2",
+        "expect": "^29.7.0",
+        "git-pull-run": "^1.4.0",
+        "glob": "^11.0.0",
+        "husky": "^9.1.1",
+        "json5": "^2.2.3",
+        "license-checker": "^25.0.1",
+        "limiter": "^2.1.0",
+        "mocha": "^10.7.0",
+        "openai": "^4.53.0",
+        "patch-package": "^8.0.0",
+        "svgtofont": "^4.2.2",
+        "testcontainers": "^10.10.4",
+        "titleize": "^4.0.0",
+        "ts-node": "^10.9.2",
+        "tsx": "^4.16.2",
+        "wdio-vscode-service": "^6.1.0",
+        "wdio-wait-for": "^3.0.11"
+    },
+    "dependencies": {
+        "@ag-grid-community/client-side-row-model": "^31.3.2",
+        "@ag-grid-community/core": "^31.3.2",
+        "@ag-grid-community/styles": "^31.3.2",
+        "@ag-grid-enterprise/advanced-filter": "^31.3.2",
+        "@ag-grid-enterprise/charts": "^31.3.2",
+        "@ag-grid-enterprise/charts-enterprise": "^31.3.2",
+        "@ag-grid-enterprise/clipboard": "^31.3.2",
+        "@ag-grid-enterprise/column-tool-panel": "^31.3.2",
+        "@ag-grid-enterprise/excel-export": "^31.3.2",
+        "@ag-grid-enterprise/filter-tool-panel": "^31.3.2",
+        "@ag-grid-enterprise/master-detail": "^31.3.2",
+        "@ag-grid-enterprise/menu": "^31.3.2",
+        "@ag-grid-enterprise/multi-filter": "^31.3.2",
+        "@ag-grid-enterprise/range-selection": "^31.3.2",
+        "@ag-grid-enterprise/set-filter": "^31.3.2",
+        "@ag-grid-enterprise/status-bar": "^31.3.2",
+        "@joint/layout-directed-graph": "^4.0.3",
+        "@libsql/client": "^0.7.0",
+        "@types/mssql": "^9.1.5",
+        "@vscode-elements/elements": "^1.3.0",
+        "@vscode/codicons": "^0.0.36",
+        "@vscode/l10n": "^0.0.18",
+        "@vscode/prompt-tsx": "^0.2.6-alpha",
+        "another-json-xml": "^2.0.7",
+        "base64-js": "^1.5.1",
+        "better-sqlite3-multiple-ciphers": "^11.1.2",
+        "cbor": "^9.0.2",
+        "cbor-web": "^9.0.2",
+        "chevrotain": "^11.0.3",
+        "date-fns": "^3.6.0",
+        "debounce": "^2.1.0",
+        "detect-libc": "^2.0.3",
+        "dotenv": "^16.4.5",
+        "fast-xml-parser": "^4.4.0",
+        "file-type": "^19.3.0",
+        "generate-password": "^1.7.1",
+        "html-escaper": "^3.0.3",
+        "immer": "^10.1.1",
+        "json-diff": "^1.0.6",
+        "json2md": "^2.0.1",
+        "jwt-decode": "^4.0.0",
+        "lit": "^3.1.4",
+        "lodash-es": "^4.17.21",
+        "mariadb": "^3.3.1",
+        "mongodb": "^6.8.0",
+        "mssql": "^11.0.1",
+        "p-queue": "^8.0.1",
+        "panzoom": "^9.4.3",
+        "picomatch": "^4.0.2",
+        "postgres": "^3.4.4",
+        "posthog-node": "^4.0.1",
+        "pretty-ms": "^9.0.0",
+        "query-string": "^9.1.0",
+        "shiki": "^1.11.0",
+        "sql-query-identifier": "^2.7.0",
+        "ssh-config": "^4.4.4",
+        "sshpk": "^1.18.0",
+        "tablemark": "^3.1.0",
+        "tar": "^7.4.1",
+        "tinycolor2": "^1.6.0",
+        "tunnel-ssh": "^5.1.2",
+        "typed-emitter": "^2.1.0",
+        "undo-manager": "^1.1.1",
+        "validator": "^13.12.0",
+        "vitest": "^2.0.4",
+        "vscode-messenger": "^0.4.5",
+        "vscode-messenger-webview": "^0.4.5",
+        "wkx": "^0.5.0"
+    }
+}
