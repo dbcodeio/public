@@ -1,60 +1,85 @@
 # DBCode - Data Beside Code
 
-![intro](https://raw.githubusercontent.com/dbcodeio/public/main/public/intro.gif)
-
-Core features will be free forever. Additional features require a subscription; see our [Pricing](https://dbcode.io/pricing) page for details.
-
-## Supported Databases
+## Major Supported Databases
 
 <img width="100%" alt="supported databases" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/logo_panel.png">
-<br><br>
+
+[See More](https://dbcode.io)
 
 ## View and Edit
+
+<img width="100%" alt="data-editor" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/editing.gif">
 
 <ul>
 	<li>Filter, Sort, and Group data - In a few clicks</li>
 	<li>Create, Read, Update and Delete - Without writing SQL</li>
 	<li>Changes verified before being applied - No more mistakes</li>
 </ul>
-<img width="100%" alt="data-editor" src="https://github.com/dbcodeio/public/assets/1918994/a11d0b3b-d72a-4aa6-90c1-3f9614515f7d">
+
+
+## Copilot Integration
+
+<img width="100%" alt="copilot" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/copilot.gif">
+
+<p>Query your data with Copilot. Ask schema-specific questions, generate queries, create new tables, and more.</p>
+
+
+## Entity Relationship Diagrams
+
+<img width="100%" alt="erd" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/erd.gif">
+
+
+<p>Automatically generate entity relationship diagrams to visually map out your database structures.</p>
+
+## Effortless data exploration
+
+<img width="100%" alt="erd" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/relationships.gif">
+
+<p>Open foreign key relationships from within your data, no matter how many levels deep, no query required.</p>
 
 ## Custom SQL
 
-<p>Run your own SQL queries directly within VS Code.</p>
 <img width="100%" alt="custom SQL" src="https://github.com/dbcodeio/public/assets/1918994/650632b0-da26-4b98-9f66-5138a7db1e7e">
 
+<p>Run your own SQL queries directly within VS Code.</p>
+
+
 ## Inline SQL Help
+
+<img width="100%" alt="signature" src="https://github.com/dbcodeio/public/assets/1918994/1efd912b-7750-47d0-a2e9-7aaaff0b0c52">
 
 <ul>
 	<li>SQL Keywords - specific to each database engine</li>
 	<li>Tables, views and procedures - data types, default values</li>
 </ul>
-<img width="100%" alt="signature" src="https://github.com/dbcodeio/public/assets/1918994/1efd912b-7750-47d0-a2e9-7aaaff0b0c52">
 
-## Entity Relationship Diagrams
-
-<p>Automatically generate entity relationship diagrams to visually map out your database structures.</p>
-<img width="100%" alt="erd" src="https://github.com/dbcodeio/public/assets/1918994/acf34018-25d2-4ccd-b97f-5ea5c6cb1e77">
 
 ## Secure Report Sharing
 
-<p>Share reports securely - encrypted and linked, not attached in emails.</p>
 <img  height="300" alt="share" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/share.png">
+
+
+<p>Share reports securely - encrypted and linked, not attached in emails.</p>
 
 ## Notebooks
 
-<p>Full support for VS Code Notebooks, allowing you to execute queries and view results within your notebooks.</p>
 <img width="100%" alt="notebook" src="https://github.com/dbcodeio/public/assets/1918994/6295585e-f13f-46b7-98e1-80e850485db1">
+
+<p>Full support for VS Code Notebooks, allowing you to execute queries and view results within your notebooks.</p>
 
 ## Stored Procedures and Functions
 
-<p>Edit stored procedures and functions directly within VS Code.</p>
 <img width="100%" alt="stored-procedure" src="https://github.com/dbcodeio/public/assets/1918994/dae92d32-13b7-4f90-8bcb-67116a5468cd">
+
+<p>Edit stored procedures and functions directly within VS Code.</p>
+
 
 ## Visualize
 
-<p>Graphically represent your data with a variety of chart types, including line, bar, and pie charts. Customize your charts with a range of options.</p>
 <img width="100%" alt="chart" src="https://github.com/dbcodeio/public/assets/1918994/d1d33ee9-9b3b-408f-9477-f208cf2adf87">
+
+<p>Graphically represent your data with a variety of chart types, including line, bar, and pie charts. Customize your charts with a range of options.</p>
+
 
 ### Many More:
 
@@ -68,6 +93,11 @@ Core features will be free forever. Additional features require a subscription; 
 
 - **[See More](https://dbcode.io/features/)**
 
+## Core Features - Free Forever
+
+Core features will be free forever. Some features require a subscription; see our [Pricing](https://dbcode.io/pricing) page for details.
+
+
 ## Telemetry
 
-In order to continuously improve our product, we gather non-personally identifiable data concerning your engagement with the Extension, encompassing but not limited to the types of databases you access, the functionalities you employ, and instances of error occurrence. Telemetry follows the VS Code Telemetry setting. You can review our [privacy policy](https://dbcode.io/legal/privacy-policy/).
+To continuously improve our product, we collect non-personally identifiable data when telemetry is enabled in VSCode. This includes information about the types of databases accessed, features used, and instances of error occurrence. Telemetry follows the VS Code Telemetry setting, and if it is disabled, no data is collected. You can review our [privacy policy](https://dbcode.io/legal/privacy-policy/).
