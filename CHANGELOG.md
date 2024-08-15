@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.1.2 - 2024-08-15
+
+### Changed
+
+- Updated README.
+
 ## 1.1.1 - 2024-08-13
 
 ### Changed
