@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.1.3 - 2024-08-29
+
+### Fixed
+
+- MySQL and MariaDB no longer require root user privileges to connect.
+- MariaDB 11.2.5 bug with introspection fixed.
+
 ## 1.1.2 - 2024-08-15
 
 ### Changed
