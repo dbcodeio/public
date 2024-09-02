@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.1.4 - 2024-09-02
+
+### Changed
+
+- Added schema aware inline completions for the SQL language, using AI (GitHub Copilot if available, or llama-3.1).
+
 ## 1.1.3 - 2024-08-29
 
 ### Fixed
