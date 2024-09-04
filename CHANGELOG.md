@@ -1,10 +1,17 @@
 # CHANGELOG
 
+## 1.1.6 - 2024-09-04
+
+### Fixed
+
+- Token counts for AI completions are now correctly calculated.
+- Mongo driver does not show the new SQL file/notebook options in the DB Explorer.
+
 ## 1.1.5 - 2024-09-02
 
 ### Changed
 
-- Added schema aware inline completions for the SQL language, using AI (GitHub Copilot if available, or llama-3.1).
+- Added schema aware AI code completions for the SQL language, using GitHub Copilot if available or llama-3.1.
 
 ## 1.1.3 - 2024-08-29
 

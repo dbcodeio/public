@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Database management in Visual Studio Code",
 	"publisher": "dbcode",
-	"version": "1.1.5",
+	"version": "1.1.6",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -554,19 +554,19 @@
 					"group": "inline@2"
 				},
 				{
+					"command": "dbcode.connections.sqlFile",
+					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newnotebook~/",
+					"group": "inline@1"
+				},
+				{
 					"command": "dbcode.notebookNew",
-					"when": "view == dbcode.connections.view && viewItem =~ /^database-/",
+					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newfile~/",
 					"group": "inline@2"
 				},
 				{
 					"command": "dbcode.connections.group.remove",
 					"when": "view == dbcode.connections.view && viewItem =~ /^group-/ && viewItem =~ /~remove~/",
 					"group": "inline@3"
-				},
-				{
-					"command": "dbcode.connections.sqlFile",
-					"when": "view == dbcode.connections.view && viewItem =~ /^database-/",
-					"group": "inline@1"
 				},
 				{
 					"command": "dbcode.connections.connect",
@@ -1904,9 +1904,9 @@
 		"@ag-grid-enterprise/range-selection": "^31.3.2",
 		"@ag-grid-enterprise/set-filter": "^31.3.2",
 		"@ag-grid-enterprise/status-bar": "^31.3.2",
-		"@anthropic-ai/tokenizer": "^0.0.4",
 		"@joint/layout-directed-graph": "^4.0.3",
 		"@libsql/client": "^0.7.0",
+		"@logsnag/node": "^1.0.1",
 		"@types/mssql": "^9.1.5",
 		"@vscode-elements/elements": "^1.3.1",
 		"@vscode/codicons": "^0.0.36",
@@ -1925,6 +1925,7 @@
 		"fast-xml-parser": "^4.4.0",
 		"file-type": "^19.3.0",
 		"generate-password": "^1.7.1",
+		"gpt-tokenizer": "^2.2.1",
 		"html-escaper": "^3.0.3",
 		"immer": "^10.1.1",
 		"json-diff": "^1.0.6",
