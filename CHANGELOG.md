@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.2.0 - 2024-09-10
+
+### Changed
+
+- Redshift support added.
+- Selecting a database when creating a connection is now optional for supported types.
+
+### Fixed
+
+- Server verions are now shown in the DB Explorer when connected, an expanded version is shown in the tooltip.
+
 ## 1.1.6 - 2024-09-04
 
 ### Fixed
