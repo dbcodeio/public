@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.2.1 - 2024-09-11
+
+### Changed
+
+- Published to the Open VSX marketplace.
+
+### Fixed
+
+- Authentication was not working in the Cursor version of VS Code.
+
 ## 1.2.0 - 2024-09-10
 
 ### Changed
@@ -9,7 +19,7 @@
 
 ### Fixed
 
-- Server verions are now shown in the DB Explorer when connected, an expanded version is shown in the tooltip.
+- Server versions are now shown in the DB Explorer when connected, an expanded version is shown in the tooltip.
 
 ## 1.1.6 - 2024-09-04
 
