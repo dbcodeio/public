@@ -1,10 +1,20 @@
 # CHANGELOG
 
+## 1.2.2 - 2024-09-13
+
+### Changed
+
+- Data relationships are now navigated using an icon in the cell when mousing over, instead of the expand icon in the first column.
+
+### Fixed
+
+- Postgres (and derivatives like Redshift) would show duplicate tables in the DB Explorer if the table name was in multiple schemas.
+
 ## 1.2.1 - 2024-09-11
 
 ### Changed
 
-- Published to the Open VSX marketplace.
+- Published to the Open VSIX marketplace.
 
 ### Fixed
 
