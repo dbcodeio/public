@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Database management in Visual Studio Code",
 	"publisher": "dbcode",
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -667,6 +667,102 @@
 				"defaults": {
 					"dark": "#7655FF",
 					"light": "#7655FF"
+				}
+			},
+			{
+				"id": "dbcode.F00019",
+				"description": "Color #F00019",
+				"defaults": {
+					"dark": "#F00019",
+					"light": "#F00019"
+				}
+			},
+			{
+				"id": "dbcode.00A6FF",
+				"description": "Color #00A6FF",
+				"defaults": {
+					"dark": "#00A6FF",
+					"light": "#00A6FF"
+				}
+			},
+			{
+				"id": "dbcode.7655FF",
+				"description": "Color #7655FF",
+				"defaults": {
+					"dark": "#7655FF",
+					"light": "#7655FF"
+				}
+			},
+			{
+				"id": "dbcode.F632CD",
+				"description": "Color #F632CD",
+				"defaults": {
+					"dark": "#F632CD",
+					"light": "#F632CD"
+				}
+			},
+			{
+				"id": "dbcode.FF4A91",
+				"description": "Color #FF4A91",
+				"defaults": {
+					"dark": "#FF4A91",
+					"light": "#FF4A91"
+				}
+			},
+			{
+				"id": "dbcode.FF8A62",
+				"description": "Color #FF8A62",
+				"defaults": {
+					"dark": "#FF8A62",
+					"light": "#FF8A62"
+				}
+			},
+			{
+				"id": "dbcode.FFC54F",
+				"description": "Color #FFC54F",
+				"defaults": {
+					"dark": "#FFC54F",
+					"light": "#FFC54F"
+				}
+			},
+			{
+				"id": "dbcode.F9F871",
+				"description": "Color #F9F871",
+				"defaults": {
+					"dark": "#F9F871",
+					"light": "#F9F871"
+				}
+			},
+			{
+				"id": "dbcode.009670",
+				"description": "Color #009670",
+				"defaults": {
+					"dark": "#009670",
+					"light": "#009670"
+				}
+			},
+			{
+				"id": "dbcode.67BAA7",
+				"description": "Color #67BAA7",
+				"defaults": {
+					"dark": "#67BAA7",
+					"light": "#67BAA7"
+				}
+			},
+			{
+				"id": "dbcode.3B8EA2",
+				"description": "Color #3B8EA2",
+				"defaults": {
+					"dark": "#3B8EA2",
+					"light": "#3B8EA2"
+				}
+			},
+			{
+				"id": "dbcode.B2A0D5",
+				"description": "Color #B2A0D5",
+				"defaults": {
+					"dark": "#B2A0D5",
+					"light": "#B2A0D5"
 				}
 			}
 		],
@@ -1579,7 +1675,7 @@
 								},
 								"color": {
 									"type": "string",
-									"description": "%Color for the database%",
+									"description": "%Color for the connection%",
 									"default": "",
 									"enum": [
 										"#F00019",

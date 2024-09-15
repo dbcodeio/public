@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.2.3 - 2024-09-15
+
+### Changed
+
+- Relationships now support multi key relationships, and the expanded relationship icon will be highlighted and stay visible when the relationship is selected.
+- Added a connection option to disable public key retrieval for MySQL and MariaDB, which is enabled by default.
+- If a connection has a color, it will be used for the highlight color (e.g., primary keys, active icons) instead of the default purple.
+
 ## 1.2.2 - 2024-09-13
 
 ### Changed
