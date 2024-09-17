@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.2.4 - 2024-09-17
+
+### Changed
+
+- Charts now appear beside the results, not on top of them.
+
+### Fixed
+
+- Inline code completions via Copilot now work correctly.
+- Download chart button now works correctly.
+- Redshift was not showing all columns in a view in the DB Explorer.
+
 ## 1.2.3 - 2024-09-15
 
 ### Changed
