@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.2.5 - 2024-09-19
+
+### Changed
+
+- Added support for DigitalOcean cloud provider.
+- Added option to open a GitHub issue when connection and introspection errors occur.
+
+### Fixed
+
+- Added a check to ensure duplicate connection IDs are not present in settings.json if edited manually.
+
 ## 1.2.4 - 2024-09-17
 
 ### Changed
