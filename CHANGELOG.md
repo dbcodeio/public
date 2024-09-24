@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.2.6 - 2024-09-24
+
+### Changed
+
+- Added a Help + Suggestions panel to the sidebar.
+
+### Fixed
+
+- MySQL 5.7 introspection error when user does not have create permissions on the database.
+- Redshift was not showing columns in late binding views.
+- If introspection fails, the connection will still be allowed to be opened.
+
 ## 1.2.5 - 2024-09-19
 
 ### Changed

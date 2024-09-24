@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Database management in Visual Studio Code",
 	"publisher": "dbcode",
-	"version": "1.2.5",
+	"version": "1.2.6",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -389,6 +389,10 @@
 				{
 					"id": "dbcode.account.view",
 					"name": "%Account%"
+				},
+				{
+					"id": "dbcode.help.view",
+					"name": "%Help + Suggestions%"
 				}
 			],
 			"dbcodePanelContainer": [
@@ -428,6 +432,10 @@
 				"view": "dbcode.history.view",
 				"contents": "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)",
 				"when": "!config.dbcode.history.enabled"
+			},
+			{
+				"view": "dbcode.help.view",
+				"contents": "%Looking for something else, or found a bug?\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n[Email Mike](command:dbcode.email.mike)\n%"
 			}
 		],
 		"menus": {
