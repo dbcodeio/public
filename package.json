@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Database management in Visual Studio Code",
 	"publisher": "dbcode",
-	"version": "1.2.6",
+	"version": "1.2.7",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
