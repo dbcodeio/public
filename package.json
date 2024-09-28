@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Database management in Visual Studio Code",
 	"publisher": "dbcode",
-	"version": "1.2.7",
+	"version": "1.2.8",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -224,10 +224,34 @@
 				"icon": "$(edit)"
 			},
 			{
+				"command": "dbcode.connections.copy",
+				"title": "%Copy Connection%",
+				"category": "DBCode",
+				"icon": "$(copy)"
+			},
+			{
 				"command": "dbcode.connections.select",
 				"title": "%Select Connection%",
 				"category": "DBCode",
-				"icon": "${edit}"
+				"icon": "$(edit)"
+			},
+			{
+				"command": "dbcode.database.create",
+				"title": "%Create Database%",
+				"category": "DBCode",
+				"icon": "$(add)"
+			},
+			{
+				"command": "dbcode.database.rename",
+				"title": "%Rename Database%",
+				"category": "DBCode",
+				"icon": "$(edit)"
+			},
+			{
+				"command": "dbcode.database.drop",
+				"title": "%Drop Database%",
+				"category": "DBCode",
+				"icon": "$(trash)"
 			},
 			{
 				"command": "dbcode.editor.execute",
@@ -435,7 +459,7 @@
 			},
 			{
 				"view": "dbcode.help.view",
-				"contents": "%Looking for something else, or found a bug?\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n[Email Mike](command:dbcode.email.mike)\n%"
+				"contents": "%Looking for something else, or found a bug?\n[Docs](https://dbcode.io/docs)\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n[Email Mike](command:dbcode.email.mike)\n%"
 			}
 		],
 		"menus": {
@@ -573,6 +597,31 @@
 					"group": "inline@2"
 				},
 				{
+					"command": "dbcode.connections.sqlFile",
+					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newnotebook~/",
+					"group": "1open@1"
+				},
+				{
+					"command": "dbcode.notebookNew",
+					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newfile~/",
+					"group": "1open@2"
+				},
+				{
+					"command": "dbcode.database.create",
+					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~create~/",
+					"group": "8create@2"
+				},
+				{
+					"command": "dbcode.database.rename",
+					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~rename~/",
+					"group": "9destructive@1"
+				},
+				{
+					"command": "dbcode.database.drop",
+					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~drop~/",
+					"group": "9destructive@2"
+				},
+				{
 					"command": "dbcode.connections.group.remove",
 					"when": "view == dbcode.connections.view && viewItem =~ /^group-/ && viewItem =~ /~remove~/",
 					"group": "inline@3"
@@ -581,6 +630,21 @@
 					"command": "dbcode.connections.connect",
 					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~connect~/",
 					"group": "1"
+				},
+				{
+					"command": "dbcode.connections.edit",
+					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~edit~/",
+					"group": "2"
+				},
+				{
+					"command": "dbcode.connections.copy",
+					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~edit~/",
+					"group": "3"
+				},
+				{
+					"command": "dbcode.connections.remove",
+					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~remove~/",
+					"group": "4"
 				},
 				{
 					"command": "dbcode.connections.connect",
@@ -600,6 +664,11 @@
 				{
 					"command": "dbcode.connections.remove",
 					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~remove~/",
+					"group": "inline@4"
+				},
+				{
+					"command": "dbcode.connections.copy",
+					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~edit~/",
 					"group": "inline@3"
 				},
 				{
@@ -613,6 +682,11 @@
 					"group": "3"
 				},
 				{
+					"command": "dbcode.providers.edit",
+					"when": "view == dbcode.connections.view && viewItem == provider",
+					"group": "inline@1"
+				},
+				{
 					"command": "dbcode.providers.remove",
 					"when": "view == dbcode.connections.view && viewItem == provider",
 					"group": "inline@2"
@@ -620,7 +694,12 @@
 				{
 					"command": "dbcode.providers.edit",
 					"when": "view == dbcode.connections.view && viewItem == provider",
-					"group": "inline@1"
+					"group": "1"
+				},
+				{
+					"command": "dbcode.providers.remove",
+					"when": "view == dbcode.connections.view && viewItem == provider",
+					"group": "2"
 				},
 				{
 					"command": "dbcode.table.openLimit",

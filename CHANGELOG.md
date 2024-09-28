@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.2.8 - 2024-09-28
+
+### Changed
+
+- Added a Copy Connection option to the DB Explorer.
+- Added Create, Rename and Drop database for supported databases to the DB Explorer context menu.
+
+### Fixed
+
+- Added an option to allow self-signed certificates in chain to be accepted.
+- Added Docs option to Help + Suggestions.
+- Added more options to the context menu in the DB Explorer.
+
 ## 1.2.7 - 2024-09-25
 
 ### Changed
