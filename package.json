@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Database management in Visual Studio Code",
 	"publisher": "dbcode",
-	"version": "1.2.10",
+	"version": "1.2.11",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -36,7 +36,8 @@
 		"MariaDB",
 		"DB",
 		"D1",
-		"Redshift"
+		"Redshift",
+		"Oracle"
 	],
 	"categories": [
 		"AI",
@@ -2080,6 +2081,7 @@
 		"@types/oracledb": "^6.5.1",
 		"@types/picomatch": "^3.0.0",
 		"@types/postcss-url": "^10.0.4",
+		"@types/semver": "^7.5.8",
 		"@types/sshpk": "^1.17.4",
 		"@types/tar": "^6.1.13",
 		"@types/validator": "^13.12.0",
@@ -2173,6 +2175,7 @@
 		"posthog-node": "^4.0.1",
 		"pretty-ms": "^9.0.0",
 		"query-string": "^9.1.0",
+		"semver": "^7.6.3",
 		"shiki": "^1.11.0",
 		"sql-query-identifier": "^2.7.0",
 		"ssh-config": "^4.4.4",
