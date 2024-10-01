@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.2.9 - 2024-10-01
+
+### Changed
+
+- Added a Show Only Discovered Connections option to the DB Explorer.
+- Preliminary support for Oracle, including Instant Client.
+
+### Fixed
+
+- Tunnel creation and editing can now select files from the .ssh folder when it's hidden by the OS.
+
 ## 1.2.8 - 2024-09-28
 
 ### Changed
