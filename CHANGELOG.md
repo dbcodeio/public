@@ -1,11 +1,12 @@
 # CHANGELOG
 
-## 1.2.12 - 2024-10-01
+## 1.2.13 - 2024-10-02
 
 ### Changed
 
 - Added a Show Only Discovered Connections option to the DB Explorer.
 - Preliminary support for Oracle, including Instant Client.
+- Formatting provider for SQL files and notebook cells now added.
 
 ### Fixed
 
