@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Database management in Visual Studio Code",
 	"publisher": "dbcode",
-	"version": "1.2.13",
+	"version": "1.2.14",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -2133,6 +2133,7 @@
 		"@ag-grid-enterprise/menu": "^31.3.2",
 		"@ag-grid-enterprise/multi-filter": "^31.3.2",
 		"@ag-grid-enterprise/range-selection": "^31.3.2",
+		"@ag-grid-enterprise/rich-select": "^31.3.2",
 		"@ag-grid-enterprise/set-filter": "^31.3.2",
 		"@ag-grid-enterprise/status-bar": "^31.3.2",
 		"@joint/layout-directed-graph": "^4.0.3",

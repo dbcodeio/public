@@ -1,15 +1,19 @@
 # CHANGELOG
 
-## 1.2.13 - 2024-10-02
+## 1.2.14 - 2024-10-04
 
 ### Changed
 
 - Added a Show Only Discovered Connections option to the DB Explorer.
 - Preliminary support for Oracle, including Instant Client.
 - Formatting provider for SQL files and notebook cells now added.
+- Added a Copy Name option to the context menu when clicking on a column header.
+- Added CURRENT_TIMESTAMP as a valid value for date columns when editing data.
+- Added support for organizations in Neon.
 
 ### Fixed
 
+- Autocomplete correctly escapes identifiers, and does not suggest columns from other tables.
 - Tunnel creation and editing can now select files from the .ssh folder when it's hidden by the OS.
 
 ## 1.2.8 - 2024-09-28
@@ -191,7 +195,7 @@
 
 ### Fixed
 
-- MySQL/MairaDB connections were not using the connection timeout setting.
+- MySQL/MariaDB connections were not using the connection timeout setting.
 - MySQL/MariaDB connections would not show the correct error message when the connection failed.
 - MySQL/MariaDB connections show better SQL errors.
 
