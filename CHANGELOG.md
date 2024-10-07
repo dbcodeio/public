@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.2.16 - 2024-10-07
+
+### Fixed
+
+- Numeric data types were not being correctly displayed in the grid, preventing charting and other features.
+- Refresh and Edit features now work correctly in Notebooks.
+- Tables and views in the DB Explorer now show in alphabetical order for MySQL/MariaDB.
+
 ## 1.2.14 - 2024-10-04
 
 ### Changed
