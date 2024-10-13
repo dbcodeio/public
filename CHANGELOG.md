@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 1.3.0 - 2024-10-13
+
+### Changed
+
+- Added a Create Table, Alter Table, Rename Table, Truncate Table and Drop Table commands to the DB Explorer (Create/Alter are just preview for now, changes wont be saved!).
+- Notebooks now use the extension .dbcnb rather than .dbcode.
+- Identity/Autoincrement columns now show that in the default value in the DB Explorer.
+- Data editing now supports enum fields with a dropdown list of the values.
+- Execute keyboard shortcut changed to Ctrl/Cmd+Enter.
+- DB Explorer now has a filter to search for for strings on connected databases. #42
+
+### Fixed
+
+- SQL Server and Azure now show comments for tables, views and columns
+- Fixed Postgres tables with " in the name not being recognized as editable in the table.
+- Autocomplete now suggests views where appropriate.
+- Autocomplete now suggests schemas where appropriate.
+
 ## 1.2.16 - 2024-10-07
 
 ### Fixed
