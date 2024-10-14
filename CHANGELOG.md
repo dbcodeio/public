@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.3.1 - 2024-10-14
+
+### Fixed
+
+- Autocomplete ignores case when matching tables and views. #51
+- History filter now works correctly in flat view.
+- History from cloud providers now shows the correct name of the connection and provider in the history.
+- History is limited to 5 records per database in core edition.
+- SQLite now works on code-server and other non electron based environments.
+
 ## 1.3.0 - 2024-10-13
 
 ### Changed
