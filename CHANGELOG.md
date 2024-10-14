@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.3.2 - 2024-10-14
+
+### Changed
+
+- MongoDB now supports user code in the editor. #55
+
+### Fixed
+
+- DB Explorer filtering now expands items correctly, and works with cloud providers. #42
+- Autocomplete now works again in Notebooks. #56
+- Trimmed long column comments in the Hover help. #50
+
 ## 1.3.1 - 2024-10-14
 
 ### Fixed
