@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.3.3 - 2024-10-15
+
+### Changed
+
+- Added (null) to the drop down menus when editing a field that allows null.
+- Added a Set Value menu item to the context menu for editable cells. #47
+
+### Fixed
+
+- Fixed Oracle introspection to use all_x and work with user level privileges. #58
+- Added string and number to D1 data types. #64
+
 ## 1.3.2 - 2024-10-14
 
 ### Changed
