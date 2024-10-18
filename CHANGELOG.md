@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.3.6 - 2024-10-18
+
+### Changed
+
+- Table creation and editing is now working, with change preview.
+
 ## 1.3.3 - 2024-10-15
 
 ### Changed
