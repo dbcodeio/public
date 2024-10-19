@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.3.7 - 2024-10-19
+
+### Changed
+
+- Changes preview in the table editor now matches the VSCode theme for the built in themes.
+
+### Fixed
+
+- Retrying a failed connection in the DB Explorer now works.
+- Applying table changes now works.
+
 ## 1.3.6 - 2024-10-18
 
 ### Changed
