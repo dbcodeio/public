@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.3.8 - 2024-10-21
+
+### Changed
+
+- Custom theme extensions are now supported for syntax highlighting in the table editor.
+
+### Fixed
+
+- MongoDB connections can now be created without a username. #70
+- MariaDB 10.5 or higher is required.
+
 ## 1.3.7 - 2024-10-19
 
 ### Changed
