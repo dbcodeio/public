@@ -1,9 +1,10 @@
 # CHANGELOG
 
-## 1.3.9 - 2024-10-21
+## 1.3.10 - 2024-10-21
 
 ### Changed
 
+- Table DDL editing now uses transactions where appropriate.
 - Custom theme extensions are now supported for syntax highlighting in the table editor.
 
 ### Fixed
