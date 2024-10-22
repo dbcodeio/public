@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.3.11 - 2024-10-22
+
+### Changed
+
+- Groups can now be renamed in the DBExplorer. #73
+
+### Fixed
+
+- D1 now shows views.
+- Introspection is now supported on MariaDB 10.0 and above. #74 and #71
+
 ## 1.3.10 - 2024-10-21
 
 ### Changed
