@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.3.13 - 2024-10-25
+
+### Changed
+
+- Data can now be changed without signing in/purchasing a subscription, however changes are not verified before applying them when not signed in/subscribed.
+- Updated the new connection UI.
+- Add the count of items in each "folder" in the DB Explorer.
+
+### Fixed
+
+- Introspection is now supported on MariaDB 10.3 and above. 
+
 ## 1.3.11 - 2024-10-22
 
 ### Changed

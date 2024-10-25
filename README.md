@@ -97,6 +97,12 @@
 
 Core features will be free forever. Some features require a subscription; see our [Pricing](https://dbcode.io/pricing) page for details.
 
+## Contributors
+
+The following people have graciously contributed their time to assist with the creation of this extension:
+
+- [Pradeep Kumar](https://www.linkedin.com/in/pradeep-kumar-1722b6123/): Docs, Testing
+- Nontas Ravazoulas: Design
 
 ## Telemetry
 
