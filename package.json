@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Database management in Visual Studio Code",
 	"publisher": "dbcode",
-	"version": "1.3.14",
+	"version": "1.3.15",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -380,6 +380,16 @@
 			{
 				"command": "dbcode.tables.create",
 				"title": "%Create Table%",
+				"category": "DBCode"
+			},
+			{
+				"command": "dbcode.tables.import",
+				"title": "%Import Data%",
+				"category": "DBCode"
+			},
+			{
+				"command": "dbcode.table.import",
+				"title": "%Import Data%",
 				"category": "DBCode"
 			},
 			{
@@ -810,9 +820,14 @@
 					"group": "1create@1"
 				},
 				{
+					"command": "dbcode.tables.import",
+					"when": "view == dbcode.connections.view && viewItem =~ /^tables-/ && viewItem =~ /~import~/",
+					"group": "2action@1"
+				},
+				{
 					"command": "dbcode.tables.diagram",
 					"when": "view == dbcode.connections.view && viewItem =~ /^tables-/ && viewItem =~ /~diagram~/",
-					"group": "2info@1"
+					"group": "3info@1"
 				},
 				{
 					"command": "dbcode.table.openLimit",
@@ -820,24 +835,29 @@
 					"group": "1open@1"
 				},
 				{
+					"command": "dbcode.table.import",
+					"when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~import~/",
+					"group": "2actoin@1"
+				},
+				{
 					"command": "dbcode.table.alter",
 					"when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~alter~/",
-					"group": "2modify@1"
+					"group": "3modify@1"
 				},
 				{
 					"command": "dbcode.table.rename",
 					"when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~rename~/",
-					"group": "2modify@2"
+					"group": "3modify@2"
 				},
 				{
 					"command": "dbcode.table.truncate",
 					"when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~truncate~/",
-					"group": "3destructive@2"
+					"group": "4destructive@2"
 				},
 				{
 					"command": "dbcode.table.drop",
 					"when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~drop~/",
-					"group": "3destructive@3"
+					"group": "4destructive@3"
 				}
 			],
 			"explorer/context": [
@@ -2173,7 +2193,7 @@
 		"@azure-rest/ai-translation-text": "^1.0.0-beta.1",
 		"@azure/app-configuration": "^1.7.0",
 		"@azure/keyvault-secrets": "^4.8.0",
-		"@biomejs/biome": "^1.9.3",
+		"@biomejs/biome": "^1.9.4",
 		"@chevrotain/types": "^11.0.3",
 		"@testcontainers/mssqlserver": "^10.13.2",
 		"@testcontainers/mysql": "^10.13.2",
@@ -2226,27 +2246,12 @@
 		"wdio-wait-for": "^3.0.11"
 	},
 	"dependencies": {
-		"@ag-grid-community/client-side-row-model": "^31.3.2",
-		"@ag-grid-community/core": "^31.3.2",
-		"@ag-grid-community/styles": "^31.3.2",
-		"@ag-grid-enterprise/advanced-filter": "^31.3.2",
-		"@ag-grid-enterprise/charts": "^31.3.2",
-		"@ag-grid-enterprise/charts-enterprise": "^31.3.2",
-		"@ag-grid-enterprise/clipboard": "^31.3.2",
-		"@ag-grid-enterprise/column-tool-panel": "^31.3.2",
-		"@ag-grid-enterprise/excel-export": "^31.3.2",
-		"@ag-grid-enterprise/filter-tool-panel": "^31.3.2",
-		"@ag-grid-enterprise/master-detail": "^31.3.2",
-		"@ag-grid-enterprise/menu": "^31.3.2",
-		"@ag-grid-enterprise/multi-filter": "^31.3.2",
-		"@ag-grid-enterprise/range-selection": "^31.3.2",
-		"@ag-grid-enterprise/rich-select": "^31.3.2",
-		"@ag-grid-enterprise/set-filter": "^31.3.2",
-		"@ag-grid-enterprise/status-bar": "^31.3.2",
+		"@ag-grid-community/core": "^32.3.0",
+		"@ag-grid-community/styles": "^32.3.0",
 		"@joint/layout-directed-graph": "^4.0.3",
 		"@libsql/client": "^0.14.0",
 		"@types/mssql": "^9.1.5",
-		"@vscode-elements/elements": "^1.7.0",
+		"@vscode-elements/elements": "^1.7.1",
 		"@vscode/codicons": "^0.0.36",
 		"@vscode/l10n": "^0.0.18",
 		"@vscode/prompt-tsx": "^0.3.0-alpha.5",
@@ -2263,7 +2268,7 @@
 		"fast-xml-parser": "^4.5.0",
 		"file-type": "^19.6.0",
 		"generate-password": "^1.7.1",
-		"gpt-tokenizer": "^2.5.0",
+		"gpt-tokenizer": "^2.5.1",
 		"html-escaper": "^3.0.3",
 		"immer": "^10.1.1",
 		"json-diff": "^1.0.6",
@@ -2271,20 +2276,20 @@
 		"jwt-decode": "^4.0.0",
 		"lit": "^3.2.1",
 		"lodash-es": "^4.17.21",
-		"mariadb": "^3.3.2",
-		"mongodb": "^6.9.0",
+		"mariadb": "^3.4.0",
+		"mongodb": "^6.10.0",
 		"mssql": "^11.0.1",
 		"oracledb": "^6.6.0",
 		"p-queue": "^8.0.1",
 		"panzoom": "^9.4.3",
 		"picomatch": "^4.0.2",
-		"postgres": "^3.4.4",
+		"postgres": "^3.4.5",
 		"posthog-node": "^4.2.1",
 		"pretty-ms": "^9.1.0",
 		"query-string": "^9.1.1",
 		"semver": "^7.6.3",
-		"shiki": "^1.22.0",
-		"sql-formatter": "^15.4.3",
+		"shiki": "^1.22.1",
+		"sql-formatter": "^15.4.5",
 		"sql-query-identifier": "^2.7.0",
 		"ssh-config": "^5.0.0",
 		"sshpk": "^1.18.0",

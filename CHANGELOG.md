@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.3.15 - 2024-10-27
+
+### Changed
+
+- New Charts added to the chart menu.
+- Option to expand/shrink the chart. #37
+
+### Fixed
+
+- Selecting MySQL for a MariaDB could lead to incorrect introspection being used, this is now fixed.
+- Tables named after SQL Keywords (eg user) were not editable.
+- Grid lines now show when enabled in a chart. #34
+- Autocomplete now suggests operators and multiple condition where clauses.
+
 ## 1.3.14 - 2024-10-27
 
 ### Fixed
