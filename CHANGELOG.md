@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.3.14 - 2024-10-27
+
+### Fixed
+
+- SQL Server 2016 now works with the DB Explorer.
+
 ## 1.3.13 - 2024-10-25
 
 ### Changed
