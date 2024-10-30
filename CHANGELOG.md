@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.3.16 - 2024-10-30
+
+### Fixed
+
+- Autocomplete now works with more complex Select statements (nested selects, alaised tables, etc).
+- Autocomplete now works with Delete statements.
+- Autocomplete now works with Insert statements, including nested selects.
+
 ## 1.3.15 - 2024-10-27
 
 ### Changed
