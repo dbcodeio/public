@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.3.17 - 2024-10-31
+
+### Fixed
+
+- Parser error when loading tables from DB Explorer. #90
+
 ## 1.3.16 - 2024-10-30
 
 ### Fixed
