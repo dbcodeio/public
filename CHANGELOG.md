@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.3.18 - 2024-11-01
+
+### Fixed
+
+- SQL Server tables were not editable. #93
+- MariaDB 10.4 and below connections did not work if the driver was set to MySQL. #86
+
+
 ## 1.3.17 - 2024-10-31
 
 ### Fixed

@@ -102,7 +102,7 @@ Core features will be free forever. Some features require a subscription; see ou
 The following people have graciously contributed their time to assist with the creation of this extension:
 
 - [Pradeep Kumar](https://www.linkedin.com/in/pradeep-kumar-1722b6123/): Docs, Testing
-- Nontas Ravazoulas: Design
+- [Nontas Ravazoulas](https://cubeweb.gr/): Design
 
 ## Telemetry
 
