@@ -1,109 +1,127 @@
-# DBCode - Data Beside Code
+c94e1b34d88de3a581bf7f77927ca6c55b6a997e Pazartesi Eylül 17 00:00:00 2001
+Gönderen: Recepxx34486 <aesmanur9002@gmail.com>
+Tarih: Pzr, 3 Kas 2024 13:31:04 +0300
+Konu: [PATCH] =?UTF-8?q?Yeniden Adlandır=20README.md=20to=20Veri=20Taban=C4=B1=20?=
+ =?UTF-8?q?kodu?=
+MIME-Sürüm: 1.0
+İçerik Türü: text/plain; karakter kümesi=UTF-8
+İçerik Aktarım Kodlaması: 8bit
 
-## Major Supported Databases
+# DBCode - Kodun Yanındaki Veri
 
-<img width="100%" alt="supported databases" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/logo_panel.png">
+## Desteklenen Başlıca Veritabanları
 
-[See More](https://dbcode.io)
+<img width="100%" alt="desteklenen veritabanları" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/logo_panel.png">
 
-## View and Edit
+[Daha Fazlasını Gör](https://dbcode.io)
 
-<img width="100%" alt="data-editor" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/editing.gif">
+## Görüntüle ve Düzenle
+
+<img width="100%" alt="veri-düzenleyici" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/editing.gif">
 
 <ul>
-	<li>Filter, Sort, and Group data - In a few clicks</li>
-	<li>Create, Read, Update and Delete - Without writing SQL</li>
-	<li>Changes verified before being applied - No more mistakes</li>
+	<li>Verileri Filtreleyin, Sıralayın ve Gruplayın - Birkaç tıklamayla</li>
+	<li>Oluştur, Oku, Güncelle ve Sil - SQL yazmadan</li>
+	<li>Uygulanmadan önce doğrulanan değişiklikler - Artık hata yok</li>
 </ul>
 
 
-## Copilot Integration
+## Copilot Entegrasyonu
 
-<img width="100%" alt="copilot" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/copilot.gif">
+<img width="100%" alt="yardımcı pilot" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/copilot.gif">
 
-<p>Query your data with Copilot. Ask schema-specific questions, generate queries, create new tables, and more.</p>
+<p>Copilot ile verilerinizi sorgulayın. Şemaya özgü sorular sorun, sorgular oluşturun, yeni tablolar oluşturun ve daha fazlasını yapın.</p>
 
 
-## Entity Relationship Diagrams
+## Varlık İlişki Diyagramları
 
 <img width="100%" alt="erd" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/erd.gif">
 
 
-<p>Automatically generate entity relationship diagrams to visually map out your database structures.</p>
+<p>Veritabanı yapılarınızı görsel olarak haritalamak için varlık ilişki diyagramlarını otomatik olarak oluşturun.</p>
 
-## Effortless data exploration
+## Zahmetsiz veri keşfi
 
 <img width="100%" alt="erd" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/relationships.gif">
 
-<p>Open foreign key relationships from within your data, no matter how many levels deep, no query required.</p>
+<p>Verilerinizin içinden, ne kadar derin olursa olsun, yabancı anahtar ilişkilerini açın, sorgu gerekmez.</p>
 
-## Custom SQL
+## Özel SQL
 
-<img width="100%" alt="custom SQL" src="https://github.com/dbcodeio/public/assets/1918994/650632b0-da26-4b98-9f66-5138a7db1e7e">
+<img width="100%" alt="özel SQL" src="https://github.com/dbcodeio/public/assets/1918994/650632b0-da26-4b98-9f66-5138a7db1e7e">
 
-<p>Run your own SQL queries directly within VS Code.</p>
+<p>Kendi SQL sorgularınızı doğrudan VS Code içinde çalıştırın.</p>
 
 
-## Inline SQL Help
+## Satır içi SQL Yardımı
 
-<img width="100%" alt="signature" src="https://github.com/dbcodeio/public/assets/1918994/1efd912b-7750-47d0-a2e9-7aaaff0b0c52">
+<img width="100%" alt="imza" src="https://github.com/dbcodeio/public/assets/1918994/1efd912b-7750-47d0-a2e9-7aaaff0b0c52">
 
 <ul>
-	<li>SQL Keywords - specific to each database engine</li>
-	<li>Tables, views and procedures - data types, default values</li>
+	<li>SQL Anahtar Sözcükleri - her veritabanı motoruna özgü</li>
+	<li>Tablolar, görünümler ve prosedürler - veri türleri, varsayılan değerler</li>
 </ul>
 
 
-## Secure Report Sharing
+## Güvenli Rapor Paylaşımı
 
-<img  height="300" alt="share" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/share.png">
-
-
-<p>Share reports securely - encrypted and linked, not attached in emails.</p>
-
-## Notebooks
-
-<img width="100%" alt="notebook" src="https://github.com/dbcodeio/public/assets/1918994/6295585e-f13f-46b7-98e1-80e850485db1">
-
-<p>Full support for VS Code Notebooks, allowing you to execute queries and view results within your notebooks.</p>
-
-## Stored Procedures and Functions
-
-<img width="100%" alt="stored-procedure" src="https://github.com/dbcodeio/public/assets/1918994/dae92d32-13b7-4f90-8bcb-67116a5468cd">
-
-<p>Edit stored procedures and functions directly within VS Code.</p>
+<img height="300" alt="paylaş" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/share.png">
 
 
-## Visualize
+<p>Raporları güvenli bir şekilde paylaşın - şifrelenmiş ve bağlantılı, e-postalara eklenmemiş.</p>
 
-<img width="100%" alt="chart" src="https://github.com/dbcodeio/public/assets/1918994/d1d33ee9-9b3b-408f-9477-f208cf2adf87">
+## Defterler
 
-<p>Graphically represent your data with a variety of chart types, including line, bar, and pie charts. Customize your charts with a range of options.</p>
+<img width="100%" alt="not defteri" src="https://github.com/dbcodeio/public/assets/1918994/6295585e-f13f-46b7-98e1-80e850485db1">
+
+<p>VS Code Not Defterleri için tam destek, not defterlerinizde sorguları yürütmenize ve sonuçları görüntülemenize olanak tanır.</p>
+
+## Saklı Prosedürler ve Fonksiyonlar
+
+<img width="100%" alt="depolanmış-prosedür" src="https://github.com/dbcodeio/public/assets/1918994/dae92d32-13b7-4f90-8bcb-67116a5468cd">
+
+<p>Saklanan prosedürleri ve işlevleri doğrudan VS Code içinde düzenleyin.</p>
 
 
-### Many More:
+## Görselleştir
 
-- **SSL Auto Configuration**: SSL is automatically configured for [known hosts](https://dbcode.io/features/ssl-auto-configuration/).
+<img width="100%" alt="grafik" src="https://github.com/dbcodeio/public/assets/1918994/d1d33ee9-9b3b-408f-9477-f208cf2adf87">
 
-- **SSH Tunnels**: Manually configure your tunnels or automatically discovered from your SSH config.
+<p>Çizgi, çubuk ve pasta grafikleri gibi çeşitli grafik türleriyle verilerinizi grafiksel olarak gösterin. Grafiklerinizi çeşitli seçeneklerle özelleştirin.</p>
 
-- **Theme Support**: Fully supports VS Code themes.
 
-- **Localized in all languages supported by VS Code**
+### Daha Fazlası:
 
-- **[See More](https://dbcode.io/features/)**
+- **SSL Otomatik Yapılandırması**: SSL, [bilinen ana bilgisayarlar](https://dbcode.io/features/ssl-auto-configuration/) için otomatik olarak yapılandırılır.
 
-## Core Features - Free Forever
+- **SSH Tünelleri**: Tünellerinizi manuel olarak yapılandırın veya SSH yapılandırmanızdan otomatik olarak keşfedin.
 
-Core features will be free forever. Some features require a subscription; see our [Pricing](https://dbcode.io/pricing) page for details.
+- **Tema Desteği**: VS Code temalarını tam olarak destekler.
 
-## Contributors
+- **VS Code tarafından desteklenen tüm dillerde yerelleştirildi**
 
-The following people have graciously contributed their time to assist with the creation of this extension:
+- **[Daha Fazlasını Gör](https://dbcode.io/features/)**
 
-- [Pradeep Kumar](https://www.linkedin.com/in/pradeep-kumar-1722b6123/): Docs, Testing
-- [Nontas Ravazoulas](https://cubeweb.gr/): Design
+## Temel Özellikler - Sonsuza Kadar Ücretsiz
 
-## Telemetry
+Temel özellikler sonsuza dek ücretsiz olacak. Bazı özellikler abonelik gerektirir; ayrıntılar için [Fiyatlandırma](https://dbcode.io/pricing) sayfamıza bakın.
 
-To continuously improve our product, we collect non-personally identifiable data when telemetry is enabled in VSCode. This includes information about the types of databases accessed, features used, and instances of error occurrence. Telemetry follows the VS Code Telemetry setting, and if it is disabled, no data is collected. You can review our [privacy policy](https://dbcode.io/legal/privacy-policy/).
+## Katkıda Bulunanlar
+
+Aşağıdaki kişiler bu uzantının oluşturulmasına yardımcı olmak için nezaketle zamanlarını ayırmışlardır:
+
+- [Pradeep Kumar](https://www.linkedin.com/in/pradeep-kumar-1722b6123/): Belgeler, Testler
+- [Nontas Ravazoulas](https://cubeweb.gr/): Tasarım
+
+## Telemetri
+
+Ürünümüzü sürekli olarak iyileştirmek için, VSCode'da telemetri etkinleştirildiğinde kişisel olarak tanımlanamayan verileri topluyoruz. Bu, erişilen veritabanlarının türleri, kullanılan özellikler ve hata oluşum örnekleri hakkında bilgi içerir. Telemetri, VS Code Telemetri ayarını takip eder ve devre dışı bırakılırsa hiçbir veri toplanmaz. [Gizlilik politikamızı](https://dbcode.io/legal/privacy-policy/) inceleyebilirsiniz.
+---
+ README.md => "Veri Taban\304\261 kodu" | 0
+ 1 dosya değiştirildi, 0 ekleme(+), 0 silme(-)
+ README.md => "Veri Taban\304\261 kodu" (100%) olarak yeniden adlandırın
+
+diff --git a/README.md "b/Veri Taban\304\261 kodu"
+benzerlik endeksi %100
+README.md'den yeniden adlandırma
+"Veri Taban\304\261 kodu" olarak yeniden adlandırın
