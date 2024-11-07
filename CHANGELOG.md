@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.4.1 - 2024-11-07
+
+### Fixed
+
+- SSH Config that failed parsing would cause the extension to crash.
+- Creating tables with single primary key column is now inlined in the DDL.
+- LibSQL was not showing the table structure for empty tables.
+- Creating tables in Cassandra with dual primary keys was producing invalid DDL.
+- Creating tables in Oracle with identity columns and single primary keys was producing invalid DDL.
+
 ## 1.4.0 - 2024-11-07
 
 ### Changed
