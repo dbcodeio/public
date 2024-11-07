@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.4.0 - 2024-11-07
+
+### Changed
+
+- Added Cassandra as a NoSQL database. #83
+- Added DuckDB as a SQL database. #106
+
+### Fixed
+
+- Fixed introspection query for MySQL 8 that was breaking the SQL parser in MySQL. #100
+- Boolean field editing caused an error. #102
+
 ## 1.3.18 - 2024-11-01
 
 ### Fixed
