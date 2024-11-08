@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.4.2 - 2024-11-08
+
+### Changed
+
+- Binary cells can now have files loaded directly into them when editable. #104
+- More values are present in the Set Value menu for editable cells. #76
+
 ## 1.4.1 - 2024-11-07
 
 ### Fixed
