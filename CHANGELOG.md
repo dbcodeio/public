@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.4.4 - 2024-11-08
+
+### Fixed
+
+- Postgres better detection of users access to databases when connecting. #105
+- Postgres errors not being raised when unable to connect to the server.
+
 ## 1.4.3 - 2024-11-08
 
 ### Changed
