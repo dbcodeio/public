@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.4.6 - 2024-11-10
+
+### Changed
+
+- Diagrams now show the primary key icon as highlighted.
+- Diagrams can now be saved as PDFs or PNGs. #38
+
 ## 1.4.4 - 2024-11-08
 
 ### Fixed
