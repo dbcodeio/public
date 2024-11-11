@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.4.7 - 2024-11-11
+
+### Changed
+
+- Added cmd+f and ctrl+f hotkeys to search the grid. #106
+- Added support for JOIN, GROUP BY, HAVING, and ORDER BY to autocomplete. #59
+
+### Fixed
+
+- Azure Entra ID authentication was not refreshing the token.
+
 ## 1.4.6 - 2024-11-10
 
 ### Changed
