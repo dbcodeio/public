@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.4.8 - 2024-11-14
+
+
+### Changed
+
+- Added cmd+d,cmd+b and ctrl+d,ctrl+b hotkeys to show the DB Explorer. #106
+- Improved autocomplete suggestions, including support for update, and common table expressions.
+- Added autocomplete support for EXEC procedure statements.
+- Autocomplete will work if statements are not seperated by a semi-colon. #46
+
 ## 1.4.7 - 2024-11-11
 
 ### Changed
