@@ -1,7 +1,18 @@
 # CHANGELOG
 
-## 1.4.8 - 2024-11-14
+## 1.4.9 - 2024-11-17
 
+### Changed
+
+- Prevented autocomplete from suggesting a lot of syntax, single character tokens.
+
+### Fixed
+
+- Tables with foreign keys across schemas would not open correctly in the grid detail feature.
+- Tables with foreign keys to tables in other schemas which the user did not have access to caused an error. #118
+- Change MongoDB to use direct connection when not using SVR protocol. #119
+
+## 1.4.8 - 2024-11-14
 
 ### Changed
 
