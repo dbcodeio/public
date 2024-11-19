@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.4.10 - 2024-11-19
+
+
+### Changed
+
+- Added a fallback autocomplete to use when parser cannot parse the SQL.
+
 ## 1.4.9 - 2024-11-17
 
 ### Changed

@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Database management in Visual Studio Code",
 	"publisher": "dbcode",
-	"version": "1.4.9",
+	"version": "1.4.10",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -62,7 +62,26 @@
 				"name": "dbcode",
 				"fullName": "DBCode",
 				"description": "%Ask about your database%",
-				"isSticky": true
+				"isSticky": true,
+				"disambiguation": [
+					{
+						"category": "dbcode",
+						"description": "The user wants to generate queries for their database.",
+						"examples": [
+							"Find all the users who were created in the last month",
+							"Write a query to find out information about the users in the database",
+							"Can you help me write a query to find out information from the database",
+							"I want to write a query to find out information from the database",
+							"Can you help me find out information from the database",
+							"I want to find out information in the database",
+							"I need a query to find out information from the database",
+							"Find out information from the database",
+							"Find out information in the database",
+							"Write a query to find out information from the database",
+							"Write a query to find out information in the database"
+						]
+					}
+				]
 			}
 		],
 		"commands": [
@@ -1869,7 +1888,7 @@
 										"string",
 										"null"
 									],
-									"description": "%The key to encrypt the password with when saving%"
+									"description": "%The key to encrypt the password with when saving.%"
 								},
 								"ssl": {
 									"type": [
@@ -1929,7 +1948,7 @@
 								},
 								"connectionTimeout": {
 									"type": "number",
-									"description": "%Connection timeout in seconds%",
+									"description": "%Connection timeout in seconds.%",
 									"default": 30
 								},
 								"filterSchemas": {
@@ -1977,7 +1996,7 @@
 								},
 								"driverOptions": {
 									"type": "object",
-									"markdownDescription": "%Connection options specific to the driver%",
+									"markdownDescription": "%Connection options specific to the driver.%",
 									"properties": {}
 								}
 							}
@@ -2054,7 +2073,7 @@
 										"string",
 										"null"
 									],
-									"description": "%Tunnel Password (for password or key authentication%"
+									"description": "%Tunnel Password (for password or key authentication.%"
 								},
 								"privateKeyPath": {
 									"type": [
@@ -2069,22 +2088,22 @@
 					"dbcode.maxTabs": {
 						"type": "number",
 						"default": 3,
-						"markdownDescription": "%Limit the number of tabs saved in the results%"
+						"markdownDescription": "%Limit the number of tabs saved in the results.%"
 					},
 					"dbcode.warnBeforeExecuteFullDoc": {
 						"type": "boolean",
 						"default": true,
-						"markdownDescription": "%Warn before executing the full content of the document%"
+						"markdownDescription": "%Warn before executing the full content of the document.%"
 					},
 					"dbcode.warnBeforePreApply": {
 						"type": "boolean",
 						"default": true,
-						"markdownDescription": "%Warn before running pre apply SQL when applying a file%"
+						"markdownDescription": "%Warn before running pre apply SQL when applying a file.%"
 					},
 					"dbcode.maxRowsToFetch": {
 						"type": "number",
 						"default": 100000,
-						"markdownDescription": "%Maximum number of rows to fetch when opening a table or view%"
+						"markdownDescription": "%Maximum number of rows to fetch when opening a table or view.%"
 					}
 				}
 			},
@@ -2139,7 +2158,7 @@
 					"dbcode.history.recordsPerDatabase": {
 						"type": "number",
 						"default": 2000,
-						"markdownDescription": "%Number of records to store per database%"
+						"markdownDescription": "%Number of records to store per database.%"
 					}
 				}
 			},
@@ -2149,15 +2168,16 @@
 				"type": "object",
 				"properties": {
 					"dbcode.ai.modelId": {
-						"title": "%Model ID%",
+						"title": "%Copilot Model ID%",
 						"type": "string",
-						"default": ""
+						"default": "",
+						"description": "%The model used with the Copilot extension, when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model.%"
 					},
 					"dbcode.ai.inlineCompletion": {
 						"title": "%Inline Completion%",
 						"type": "boolean",
 						"default": true,
-						"markdownDescription": "%show inline completions using AI%"
+						"description": "%Generate inline completions using AI (Uses Copilot if installed/enabled, otherwise DBCode's hosted llama 3).%"
 					}
 				}
 			},
@@ -2169,31 +2189,31 @@
 					"dbcode.color.applyToActiveTabBorder": {
 						"order": 1,
 						"default": true,
-						"markdownDescription": "%Apply connection color to the active editor tab lower border%",
+						"markdownDescription": "%Apply connection color to the active editor tab lower border.%",
 						"type": "boolean"
 					},
 					"dbcode.color.applyToActiveTabBorderTop": {
 						"order": 2,
 						"default": false,
-						"markdownDescription": "%Apply connection color to the active editor tab top border%",
+						"markdownDescription": "%Apply connection color to the active editor tab top border.%",
 						"type": "boolean"
 					},
 					"dbcode.color.applyToActiveEditorTabBackground": {
 						"order": 3,
 						"default": false,
-						"markdownDescription": "%Apply connection color to the active editor tab background%",
+						"markdownDescription": "%Apply connection color to the active editor tab background.%",
 						"type": "boolean"
 					},
 					"dbcode.color.applyToStatusBarBackground": {
 						"order": 4,
 						"default": false,
-						"markdownDescription": "%Apply connection color to the Status Bar background%",
+						"markdownDescription": "%Apply connection color to the Status Bar background.%",
 						"type": "boolean"
 					},
 					"dbcode.color.applyToCommandCenterBackground": {
 						"order": 5,
 						"default": false,
-						"markdownDescription": "%Apply connection color to the Command Center background%",
+						"markdownDescription": "%Apply connection color to the Command Center background.%",
 						"type": "boolean"
 					}
 				}
