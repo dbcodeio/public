@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Database management in Visual Studio Code",
 	"publisher": "dbcode",
-	"version": "1.4.10",
+	"version": "1.4.11",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -333,7 +333,7 @@
 			},
 			{
 				"command": "dbcode.connections.group",
-				"title": "%Group%",
+				"title": "%Add to Group%",
 				"category": "DBCode",
 				"icon": "$(group-by-ref-type)"
 			},
@@ -696,11 +696,6 @@
 					"group": "inline@1"
 				},
 				{
-					"command": "dbcode.connections.sqlFile",
-					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newnotebook~/",
-					"group": "inline@1"
-				},
-				{
 					"command": "dbcode.history.copysql",
 					"when": "view == dbcode.history.view && viewItem == query",
 					"group": "inline@2"
@@ -711,24 +706,24 @@
 					"group": "inline@3"
 				},
 				{
-					"command": "dbcode.notebookNew",
+					"command": "dbcode.connections.sqlFile",
 					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newfile~/",
+					"group": "inline@1"
+				},
+				{
+					"command": "dbcode.notebookNew",
+					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newnotebook~/",
 					"group": "inline@2"
 				},
 				{
 					"command": "dbcode.connections.sqlFile",
-					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newnotebook~/",
+					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newfile~/",
 					"group": "1open@1"
 				},
 				{
 					"command": "dbcode.notebookNew",
-					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newfile~/",
+					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newnotebook~/",
 					"group": "1open@2"
-				},
-				{
-					"command": "dbcode.database.create",
-					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~create~/",
-					"group": "8create@2"
 				},
 				{
 					"command": "dbcode.database.rename",
@@ -746,14 +741,19 @@
 					"group": "1"
 				},
 				{
+					"command": "dbcode.database.create",
+					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/  && viewItem =~ /~disconnect~/ && viewItem =~ /~databaseCreate~/",
+					"group": "2"
+				},
+				{
 					"command": "dbcode.connections.edit",
 					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~edit~/",
-					"group": "2"
+					"group": "2edit@1"
 				},
 				{
 					"command": "dbcode.connections.copy",
 					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~edit~/",
-					"group": "3"
+					"group": "2edit@2"
 				},
 				{
 					"command": "dbcode.connections.remove",
@@ -781,9 +781,9 @@
 					"group": "inline@1"
 				},
 				{
-					"command": "dbcode.connections.remove",
-					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~remove~/",
-					"group": "inline@4"
+					"command": "dbcode.connections.edit",
+					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~edit~/",
+					"group": "inline@2"
 				},
 				{
 					"command": "dbcode.connections.copy",
@@ -791,13 +791,18 @@
 					"group": "inline@3"
 				},
 				{
-					"command": "dbcode.connections.edit",
-					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~edit~/",
-					"group": "inline@2"
+					"command": "dbcode.connections.remove",
+					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~remove~/",
+					"group": "inline@4"
 				},
 				{
 					"command": "dbcode.connections.ungroup",
 					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~ungroup~/",
+					"group": "3"
+				},
+				{
+					"command": "dbcode.connections.group",
+					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~group~/",
 					"group": "3"
 				},
 				{

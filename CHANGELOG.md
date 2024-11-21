@@ -1,7 +1,18 @@
 # CHANGELOG
 
-## 1.4.10 - 2024-11-19
+## 1.4.11 - 2024-11-21
 
+### Changed
+
+- Moved create database context menu item to the Connection in the DB Explorer.
+- Added context menu item to add a connection to a group.
+
+### Fixed
+
+- Connection error with MariaDB 10.5 through 10.6.10.
+- Added OUTPUT clause to procedure parameters.
+
+## 1.4.10 - 2024-11-19
 
 ### Changed
 
