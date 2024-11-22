@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.4.12 - 2024-11-22
+
+
+### Fixed
+
+- SQL Server was not handling UTF strings correctly in data changes.
+- Checkbox removed from the table editor.
+
 ## 1.4.11 - 2024-11-21
 
 ### Changed
