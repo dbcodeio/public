@@ -1,7 +1,13 @@
 # CHANGELOG
 
-## 1.4.12 - 2024-11-22
+## 1.4.13 - 2024-12-02
 
+- Keybinding to show DB Explorer does not break find next (cmd/ctrl+d). #121
+- Executing tabs can be closed, will prompt to cancel execution. #125
+- Potential fix for Postgres queries not returning. #125
+- Bit fields handled correctly in the data editor.
+
+## 1.4.12 - 2024-11-22
 
 ### Fixed
 
