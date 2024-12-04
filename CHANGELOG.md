@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.4.14 - 2024-12-04
+
+### Changed
+
+- Datetime columns with timezone information now show in the local time. #85
+- Datetime columns now display in the locale/region format of the computer. #85
+- Editing a datetime column will highlight the cell in red if the value does not parse.
+- Datetime columns that are edited are converted to ISO format when sent to the database. 
+
+### Fixed
+
+- Tab did not set the cell value when editing data and the cell contained a drop down.
+
+
 ## 1.4.13 - 2024-12-02
 
 - Keybinding to show DB Explorer does not break find next (cmd/ctrl+d). #121
