@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.4.15 - 2024-12-06
+
+### Changed
+
+- Added a setting to control the date/time format. #85
+- Added a setting to control if dates should be shown in your computers local time, or UTC when timezone information is present. #85
+- Changed Postgres supported version to 9.5 or higher. #129
+
+### Fixed
+
+- Maria text fields were showing as binary.
+- Postgres introspection error on version 9.5 through 10. #129
+
 ## 1.4.14 - 2024-12-04
 
 ### Changed
@@ -12,7 +25,6 @@
 ### Fixed
 
 - Tab did not set the cell value when editing data and the cell contained a drop down.
-
 
 ## 1.4.13 - 2024-12-02
 
