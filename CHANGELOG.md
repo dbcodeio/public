@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.5.0 - 2024-12-07
+
+### Changed
+
+- Added support for MotherDuck. #136
+
+### Fixed
+
+- Fixed Snowflake schema to default to public.
+
 ## 1.4.17 - 2024-12-07
 
 ### Changed
