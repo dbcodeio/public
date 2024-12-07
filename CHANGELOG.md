@@ -1,6 +1,12 @@
 # CHANGELOG
 
-## 1.4.16 - 2024-12-07
+## 1.4.17 - 2024-12-07
+
+### Changed
+
+- Preview of Snowflake support. #113
+
+## 1.4.15 - 2024-12-06
 
 ### Changed
 
