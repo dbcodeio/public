@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.5.2 - 2024-12-10
+
+- Added preview support for IBM DB2
+- Added a completion item to include all fields in a table when typing table.* 
+
+### Fixed
+
+- Result columns are now resized sooner to avoid the flash of resizing on initial loading.
+- Result columns can now be dragged as wide as needed. 
+
 ## 1.5.1 - 2024-12-07
 
 ### Changed
