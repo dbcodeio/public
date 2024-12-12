@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.5.3 - 2024-12-12
+
+### Fixed
+
+- MySQL/Maria null dates (0000-00-00) were causing a results not to render. #137
+- Notebook results windows were incorrectly sized. #144
+
 ## 1.5.2 - 2024-12-10
 
 - Added preview support for IBM DB2

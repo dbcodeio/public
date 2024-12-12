@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Database Management in Visual Studio Code",
 	"publisher": "dbcode",
-	"version": "1.5.2",
+	"version": "1.5.3",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -40,7 +40,8 @@
 		"Oracle",
 		"DuckDB",
 		"Cassandra",
-		"Snowflake"
+		"Snowflake",
+		"DB2"
 	],
 	"categories": [
 		"AI",
