@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.5.4 - 2024-12-12
+
+
+### Changed
+
+- Updated MySQL/MariaDB to new introspection model. #145 #132 #122
+
 ## 1.5.3 - 2024-12-12
 
 ### Fixed
