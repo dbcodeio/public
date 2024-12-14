@@ -1,7 +1,13 @@
 # CHANGELOG
 
-## 1.5.4 - 2024-12-12
+## 1.5.5 - 2024-12-14
 
+### Changed
+
+- Updated Snowflake connections to support SSO, Warehouse, and Secondary Roles. #113
+- Updated Redshift to the new introspection model. #146
+
+## 1.5.4 - 2024-12-12
 
 ### Changed
 
