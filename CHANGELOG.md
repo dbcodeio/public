@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.5.6 - 2024-12-17
+
+### Changed
+
+- Snowflake supports full introspection, and procedures are now supported.
+
+### Fixed
+
+- Handle urls that cannot be parsed in autodisovery and manual discovery. #152
+
 ## 1.5.5 - 2024-12-14
 
 ### Changed
