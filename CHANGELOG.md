@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.5.7 - 2024-12-17
+
+### Fixed
+
+- Snowflake now supports Key Pair Auth  #113
+- CoPilot will now quote identifiers in case sensitive dialects #154
+
 ## 1.5.6 - 2024-12-17
 
 ### Changed
