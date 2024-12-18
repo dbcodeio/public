@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.5.8 - 2024-12-18
+
+### Changed
+
+- Added Entity Relationship Diagram option to the context menu of individual tables, filters the initial display to that table and it's related tables. #134
+
+### Fixed
+
+- Revised URL handling for file paths on auto discovery. #152 #156
+- ERD was not loading when a column type was not matched to a type from the schema. #153
+
 ## 1.5.7 - 2024-12-17
 
 ### Fixed
