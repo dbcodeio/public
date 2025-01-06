@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
 	"publisher": "dbcode",
-	"version": "1.5.8",
+	"version": "1.5.9",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -136,7 +136,7 @@
 			},
 			{
 				"command": "dbcode.notebookNew",
-				"title": "%Create a new DBCode Notebook%",
+				"title": "%Create New DBCode Notebook%",
 				"shortTitle": "%DBCode Notebook%",
 				"icon": "$(notebook)",
 				"category": "DBCode"
@@ -149,9 +149,14 @@
 			},
 			{
 				"command": "dbcode.connections.sqlFile",
-				"title": "%Create a new sql file%",
-				"shortTitle": "%SQL File%",
+				"title": "%Create New SQL File%",
+				"shortTitle": "%New SQL File%",
 				"icon": "$(new-file)",
+				"category": "DBCode"
+			},
+			{
+				"command": "dbcode.connections.execfile",
+				"title": "%Execute SQL File%",
 				"category": "DBCode"
 			},
 			{
@@ -738,6 +743,11 @@
 					"command": "dbcode.notebookNew",
 					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newnotebook~/",
 					"group": "1open@2"
+				},
+				{
+					"command": "dbcode.connections.execfile",
+					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~execfile~/",
+					"group": "1operation@1"
 				},
 				{
 					"command": "dbcode.database.rename",
@@ -1807,53 +1817,60 @@
 					"fontCharacter": "\\ea6a"
 				}
 			},
+			"dbcode-unknown": {
+				"description": "Unknown",
+				"default": {
+					"fontPath": "out/resources/icons.woff",
+					"fontCharacter": "\\ea6b"
+				}
+			},
 			"dbcode-update": {
 				"description": "Update",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea6b"
+					"fontCharacter": "\\ea6c"
 				}
 			},
 			"dbcode-uuid": {
 				"description": "Uuid",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea6c"
+					"fontCharacter": "\\ea6d"
 				}
 			},
 			"dbcode-vector": {
 				"description": "Vector",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea6d"
+					"fontCharacter": "\\ea6e"
 				}
 			},
 			"dbcode-view": {
 				"description": "View",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea6e"
+					"fontCharacter": "\\ea6f"
 				}
 			},
 			"dbcode-void": {
 				"description": "Void",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea6f"
+					"fontCharacter": "\\ea70"
 				}
 			},
 			"dbcode-xml": {
 				"description": "Xml",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea70"
+					"fontCharacter": "\\ea71"
 				}
 			},
 			"dbcode-yugabyte": {
 				"description": "Yugabyte",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea71"
+					"fontCharacter": "\\ea72"
 				}
 			}
 		},

@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.5.9 - 2025-01-06
+
+### Changed
+
+- Added a new command to the database context menu to execute SQL files on a database. #162
+- Reduced logo size in activity bar.
+
+### Fixed
+
+- Fixed error with hovering a procedure name in the editor that does not have parameters. #184
+- Postgres: Added the pseudo types to introspection. #163 
+- Postgres: Added support for composite types. #164
+
 ## 1.5.8 - 2024-12-18
 
 ### Changed
