@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.5.10 - 2025-01-09
+
+### Changed
+
+- Added right click open in DBCode option for .sqlite and .sqlite3 files. #171
+- Added ability to resize the grid in the notebook. #191
+
+### Fixed
+
+- Changed Chinese translation for Save. #192
+- Fixed connection form elements from not showing their translations. #192
+- Postgres: Fixed array data types. #167
+
 ## 1.5.9 - 2025-01-06
 
 ### Changed

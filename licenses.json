@@ -640,6 +640,13 @@
         "publisher": "Google Inc."
     },
     {
+        "name": "@interactjs/types",
+        "direct": false,
+        "license": "MIT",
+        "licenseTxt": "Copyright (c) 2012-present Taye Adeyemi <dev@taye.me>\n\nPermission is hereby granted, free of charge, to any person \nobtaining a copy of this software and associated \ndocumentation files (the \"Software\"), to deal in the Software \nwithout restriction, including without limitation the rights \nto use, copy, modify, merge, publish, distribute, sublicense, \nand/or sell copies of the Software, and to permit persons to \nwhom the Software is furnished to do so, subject to the \nfollowing conditions:\n\nThe above copyright notice and this permission notice shall \nbe included in all copies or substantial portions of the \nSoftware.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY \nKIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE \nWARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR \nPURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR \nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER \nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR \nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE \nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+        "repository": "https://github.com/taye/interact.js"
+    },
+    {
         "name": "@isaacs/cliui",
         "direct": false,
         "license": "ISC",
@@ -3081,6 +3088,13 @@
         "repository": "https://github.com/isaacs/ini",
         "publisher": "Isaac Z. Schlueter",
         "url": "http://blog.izs.me/"
+    },
+    {
+        "name": "interactjs",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "Copyright (c) 2012-present Taye Adeyemi <dev@taye.me>\n\nPermission is hereby granted, free of charge, to any person \nobtaining a copy of this software and associated \ndocumentation files (the \"Software\"), to deal in the Software \nwithout restriction, including without limitation the rights \nto use, copy, modify, merge, publish, distribute, sublicense, \nand/or sell copies of the Software, and to permit persons to \nwhom the Software is furnished to do so, subject to the \nfollowing conditions:\n\nThe above copyright notice and this permission notice shall \nbe included in all copies or substantial portions of the \nSoftware.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY \nKIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE \nWARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR \nPURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR \nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER \nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR \nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE \nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+        "repository": "https://github.com/taye/interact.js"
     },
     {
         "name": "ip-address",
