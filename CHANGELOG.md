@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.5.11 - 2025-01-11
+
+### Changed
+
+- Added a row number column to the results, which also now provides row selection interface like a spreadsheet (ctrl/cmd and shift support for ranges). #138
+
+### Fixed
+
+- Context menu on editable results was missing add and duplicate row option.
+
 ## 1.5.10 - 2025-01-09
 
 ### Changed
