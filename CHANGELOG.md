@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.5.12 - 2025-01-13
+
+### Changed
+
+- Added support for storing connections in the workspace. #200
+- Added right click context menu to folders to recursively discover connections.
+
+### Fixed
+
+- Postgres: Version detection has been improved to handle cases like 12.6dbup. #201
+
 ## 1.5.11 - 2025-01-11
 
 ### Changed

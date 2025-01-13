@@ -1,5 +1,10 @@
 # DBCode - Data Beside Code
 
+<p align="center">
+	<a href="https://dbcode.io/docs">DOCS</a> | <a href="https://dbcode.io/roadmap">ROADMAP</a> | <a href="https://dbcode.io/changelog">CHANGELOG</a>  | <a href="https://discord.gg/FvAzEAHb9w">DISCORD</a>
+</p>
+
+
 ## Major Supported Databases
 
 <img width="100%" alt="supported databases" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/logo_panel.png">

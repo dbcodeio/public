@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
 	"publisher": "dbcode",
-	"version": "1.5.11",
+	"version": "1.5.12",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -167,6 +167,12 @@
 			{
 				"command": "dbcode.discovery.manual",
 				"title": "%Open with DBCode%",
+				"category": "DBCode",
+				"icon": "$(plug)"
+			},
+			{
+				"command": "dbcode.discovery.folder",
+				"title": "%Discover Connections with DBCode%",
 				"category": "DBCode",
 				"icon": "$(plug)"
 			},
@@ -918,8 +924,13 @@
 			"explorer/context": [
 				{
 					"command": "dbcode.discovery.manual",
-					"when": "resourceFilename =~ /\\.(db|duckdb|ddb|sqlite|sqlite3)$/",
+					"when": "isFileSystemResource === true && resourceFilename =~ /\\.(db|duckdb|ddb|sqlite|sqlite3)$/",
 					"group": "navigation"
+				},
+				{
+					"command": "dbcode.discovery.folder",
+					"when": "isFileSystemResource === true && explorerResourceIsFolder === true",
+					"group": "find"
 				}
 			],
 			"editor/title": [
