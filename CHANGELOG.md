@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.6.0 - 2025-01-17
+
+### Changed
+
+- Added BigQuery support (in Beta). #159
+- Added cmd/ctrl+s to save all changes in the grid. #215
+- Added the connection color to tab icons where applicable. #72
+
+### Fixed
+
+- Result saving was being incorrectly enabled if a single change was made, and then another change made which resulted in the original value. #210
+- Undo/Redo keyboard shortcuts when multiple result tabs were visible in the DBCode panel where applying to all result tabs.
+
 ## 1.5.12 - 2025-01-13
 
 ### Changed

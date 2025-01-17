@@ -1,7 +1,7 @@
 # DBCode - Data Beside Code
 
 <p align="center">
-	<a href="https://dbcode.io/docs">DOCS</a> | <a href="https://dbcode.io/roadmap">ROADMAP</a> | <a href="https://dbcode.io/changelog">CHANGELOG</a>  | <a href="https://discord.gg/FvAzEAHb9w">DISCORD</a>
+	<a href="https://dbcode.io/docs" target="_blank">DOCS</a> | <a href="https://dbcode.io/roadmap" target="_blank">ROADMAP</a> | <a href="https://dbcode.io/changelog" target="_blank">CHANGELOG</a>  | <a href="https://discord.gg/FvAzEAHb9w" target="_blank">DISCORD</a>
 </p>
 
 
