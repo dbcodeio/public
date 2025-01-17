@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.6.1 - 2025-01-17
+
+### Changed
+
+- Added support for materialized views (Postgres and BigQuery). #214
+- Added cmd/ctrl+r to refresh the results (if enabled). #250
+- BigQuery: Added support for editing functions, ADC authentication
+
+### Fixed
+
+- Fixed a bug when the file system could not be read. #218
+- Show correct icons when opening views and materialized views. 
+
 ## 1.6.0 - 2025-01-17
 
 ### Changed
