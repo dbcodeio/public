@@ -1,7 +1,16 @@
 # CHANGELOG
 
-## 1.6.2 - 2025-01-22
+## 1.6.3 - 2025-01-22
 
+### Changed
+
+- SQL files now show the statement boundaries in the editor. By default the execute icon/keybinding will execute the statement in the boundary. #143
+
+### Fixed
+
+- DBCode panel now aware of changes to pagination setting.
+
+## 1.6.2 - 2025-01-22
 
 ### Changed
 
