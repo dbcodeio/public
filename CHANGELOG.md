@@ -1,12 +1,30 @@
 # CHANGELOG
 
+## 1.6.2 - 2025-01-22
+
+
+### Changed
+
+- Settings: Added a setting to enable pagination in the results, along with icon to turn it on per result set (bottom right of the result table).
+- BigQuery: Metadata from the executions (Cache hit, bytes processed) are now shown in the status bar. #159
+- Removed Apply Changes button from the status bar, save icon is still in the toolbar, keyboard shortcut was added.
+- Fixed result editing of boolean fields to use the checkbox, and handle null values for boolean fields correctly.
+- Added cmd/ctrl+n to add a new row in the results. #228
+- Added cmd+delete ctrl+backspace to delete rows in the results. #228
+- Added cmd/ctrl+d to duplicate rows in the results. #228
+- Added a filter option to tables, preview of the functionality to replace schema/database filter. #115
+
+### Fixed
+
+- Applying a value to a selection of cells was not appling to all the cells in the selection.
+
 ## 1.6.1 - 2025-01-17
 
 ### Changed
 
 - Added support for materialized views (Postgres and BigQuery). #214
 - Added cmd/ctrl+r to refresh the results (if enabled). #250
-- BigQuery: Added support for editing functions, ADC authentication
+- BigQuery: Added support for editing functions, ADC authentication. #159
 
 ### Fixed
 
