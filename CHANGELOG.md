@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.6.4 - 2025-01-25
+
+### Changed
+
+- Moved to perpetual license model.
+- Setting: Order By Primary Key: Will order by the primary key if present when opening a table. #220
+- Notebook: The connection is now persisted in the notebook file, and the notebook will show an error if the connection cannot be found on re opening the file. #44
+
 ## 1.6.3 - 2025-01-22
 
 ### Changed
