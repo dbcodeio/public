@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.6.5 - 2025-01-26
+
+### Changed
+
+- When results are returned that hit the max row limit, sorting will now re request the data from the server. #170
+- SQLite: Added support for loading extensions, currently only sqlite-vec. #249
+- Notebooks: Changed file format to YAML for better Git readability.
+
+### Fixed
+
+- SQLite: Added real mapping (changed float to be the alias). #246
+- Result column filters were not working for date columns correctly.
+
 ## 1.6.4 - 2025-01-25
 
 ### Changed
