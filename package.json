@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
 	"publisher": "dbcode",
-	"version": "1.6.6",
+	"version": "1.6.7",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -263,6 +263,11 @@
 			{
 				"command": "dbcode.connections.filterItems",
 				"title": "%Filter%",
+				"category": "DBCode"
+			},
+			{
+				"command": "dbcode.connections.filterItemsClear",
+				"title": "%Clear Filter%",
 				"category": "DBCode"
 			},
 			{
@@ -903,8 +908,13 @@
 				},
 				{
 					"command": "dbcode.connections.filterItems",
-					"when": "view == dbcode.connections.view && viewItem =~ /^tables-/",
-					"group": "display@1"
+					"when": "view == dbcode.connections.view && viewItem =~ /~filter~/",
+					"group": "zdisplay@1"
+				},
+				{
+					"command": "dbcode.connections.filterItemsClear",
+					"when": "view == dbcode.connections.view && viewItem =~ /~filtered~/",
+					"group": "zdisplay@2"
 				},
 				{
 					"command": "dbcode.table.openLimit",
@@ -2207,14 +2217,9 @@
 									"description": "%Connection timeout in seconds.%",
 									"default": 30
 								},
-								"filterSchemas": {
-									"type": "string",
-									"description": "%Filter schemas%",
-									"default": ""
-								},
-								"filterDatabases": {
-									"type": "string",
-									"description": "%Filter databases%",
+								"filters": {
+									"type": "object",
+									"description": "%Filters%",
 									"default": ""
 								},
 								"color": {

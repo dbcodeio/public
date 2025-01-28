@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.6.7 - 2025-01-28
+
+### Changed
+
+- DB Explorer context menu now has filtering for any set of items (tables, views, etc). This replaces the previous filtering of databases and schemas configured per connection. #115
+
+### Fixed
+
+- Exports no longer includes the row number column.
+- CockroachDB: Fixed error when trying to connect to local instance, and a typo. #253
+
 ## 1.6.6 - 2025-01-28
 
 ### Changed
