@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
 	"publisher": "dbcode",
-	"version": "1.6.5",
+	"version": "1.6.6",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -1933,10 +1933,10 @@
 						"default": 3,
 						"markdownDescription": "%Limit the number of tabs shown.%"
 					},
-					"dbcode.maxRowsToFetch": {
+					"dbcode.rowsToLoad": {
 						"type": "number",
-						"default": 100000,
-						"markdownDescription": "%Maximum number of rows to fetch when opening a table or view.%"
+						"default": 100,
+						"markdownDescription": "%Number of rows to load when opening a table or view.%"
 					},
 					"dbcode.pagination": {
 						"type": "boolean",

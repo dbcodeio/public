@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.6.6 - 2025-01-28
+
+### Changed
+
+- If a table has more rows than rowsToLoad setting (default 100) filtering, paging and scrolling will fetch rows from the database as needed. #170
+- Added warning if refreshing results with unsaved changes.
+- Setting: Removed maxRowsToFetch
+- Setting: Added rowsToLoad (default 100). Controls number of initial rows loaded when opening a table or view. #170
+
+### Fixed
+
+- Exporting insert statements will use the tables name (if present). #250
+
 ## 1.6.5 - 2025-01-26
 
 ### Changed
