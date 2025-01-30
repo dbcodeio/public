@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.6.8 - 2025-01-30
+
+### Changed
+
+- Notebooks: Tabs have been removed from output. #247
+- Notebooks: The option to save output in a notebook has been added (under active development). #44
+
+### Fixed
+
+- Range highlighting better handling new lines after semicolons
+- MySQL/MariaDB: Fixed issue with unicode enum values.
+- CockroachDB: Fixed issues with default database and introspection differences with Postgres. #258
+- Tunnels: Fixed issue with private keys without passwords prompting for passwords. #257
+
 ## 1.6.7 - 2025-01-28
 
 ### Changed

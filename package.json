@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
 	"publisher": "dbcode",
-	"version": "1.6.7",
+	"version": "1.6.8",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -135,10 +135,20 @@
 				"category": "DBCode"
 			},
 			{
-				"command": "dbcode.notebookNew",
+				"command": "dbcode.notebook.new",
 				"title": "%Create New DBCode Notebook%",
 				"shortTitle": "%DBCode Notebook%",
 				"icon": "$(notebook)",
+				"category": "DBCode"
+			},
+			{
+				"command": "dbcode.notebook.saveOutputOff",
+				"title": "%Save Output: On%",
+				"category": "DBCode"
+			},
+			{
+				"command": "dbcode.notebook.saveOutputOn",
+				"title": "%Save Output: Off%",
 				"category": "DBCode"
 			},
 			{
@@ -594,7 +604,7 @@
 		"menus": {
 			"file/newFile": [
 				{
-					"command": "dbcode.notebookNew",
+					"command": "dbcode.notebook.new",
 					"group": "notebook"
 				}
 			],
@@ -742,7 +752,7 @@
 					"group": "inline@1"
 				},
 				{
-					"command": "dbcode.notebookNew",
+					"command": "dbcode.notebook.new",
 					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newnotebook~/",
 					"group": "inline@2"
 				},
@@ -757,7 +767,7 @@
 					"group": "1open@1"
 				},
 				{
-					"command": "dbcode.notebookNew",
+					"command": "dbcode.notebook.new",
 					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newnotebook~/",
 					"group": "1open@2"
 				},
@@ -986,6 +996,18 @@
 					"when": "resourceLangId == sql && !editorHasSelection && resourceScheme == dbcode",
 					"command": "dbcode.editor.apply",
 					"group": "navigation"
+				}
+			],
+			"notebook/toolbar": [
+				{
+					"when": "notebookType == dbcode-notebook && dbcode.notebook.saveOutput == true",
+					"command": "dbcode.notebook.saveOutputOff",
+					"group": "navigation@1"
+				},
+				{
+					"when": "notebookType == dbcode-notebook && dbcode.notebook.saveOutput == false",
+					"command": "dbcode.notebook.saveOutputOn",
+					"group": "navigation@1"
 				}
 			]
 		},
@@ -2172,19 +2194,20 @@
 									"description": "%Save password%",
 									"default": "no",
 									"enum": [
-										"null",
 										"no",
 										"session",
 										"yes",
 										"encrypted",
-										"secretStorage"
+										"secretStorage",
+										"na"
 									],
 									"enumDescriptions": [
 										"%It will not be saved, you will be prompted for it when connecting each time.%",
 										"%It will not be saved, you will be prompted for it ONCE when connecting each time VSCode starts.%",
 										"%It will be saved in settings as plain text (not recommended).%",
 										"%It will be encrypted and saved in settings using an encryption string. You will be prompted to enter an encryption string which will encrypt the password.%",
-										"%It will be saved in VS Code secret storage%"
+										"%It will be saved in VS Code secret storage%",
+										"%Password not required%"
 									]
 								},
 								"driver": {
