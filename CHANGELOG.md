@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.6.9 - 2025-01-31
+
+### Changed
+
+- Notebooks: Saved output can now be restored. #44
+
+### Fixed
+
+- Notebooks: Background color was not being applied. #260
+- Cassandra: Was forcing a username. #261
+
 ## 1.6.8 - 2025-01-30
 
 ### Changed
