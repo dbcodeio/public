@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.6.10 - 2025-02-04
+
+
+### Changed
+
+- Query Parameters are now supported. #262
+- Keybinding on Mac for executing a statement has been changed to ctrl+enter (was cmd+enter), consistent in both notebooks and editor now.
+
+### Fixed
+
+- Error highlighting was not working with the active range.
+- Tables starting with an underscore where not editable when opened.
+- Cassandra tables would not load as it did not support Order By or Offset.
+- When using a row limited table, could not remove a second column filter.
+- When adding a row to a row limited table, you could not scroll/page to get more records without saving the pending row change.
+
 ## 1.6.9 - 2025-01-31
 
 ### Changed
