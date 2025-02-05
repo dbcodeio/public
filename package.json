@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
 	"publisher": "dbcode",
-	"version": "1.6.11",
+	"version": "1.6.12",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -2199,7 +2199,8 @@
 										"yes",
 										"encrypted",
 										"secretStorage",
-										"na"
+										"na",
+										"cmd"
 									],
 									"enumDescriptions": [
 										"%It will not be saved, you will be prompted for it when connecting each time.%",
@@ -2207,7 +2208,8 @@
 										"%It will be saved in settings as plain text (not recommended).%",
 										"%It will be encrypted and saved in settings using an encryption string. You will be prompted to enter an encryption string which will encrypt the password.%",
 										"%It will be saved in VS Code secret storage%",
-										"%Password not required%"
+										"%It is not required%",
+										"%The command will be executed and the output will be the password%"
 									]
 								},
 								"driver": {
@@ -2338,6 +2340,7 @@
 									"description": "%Save password%",
 									"default": "no",
 									"enum": [
+										"na",
 										"no",
 										"session",
 										"yes",
@@ -2345,6 +2348,7 @@
 										"secretStorage"
 									],
 									"enumDescriptions": [
+										"%It is not required.%",
 										"%It will not be saved, you will be prompted for it when connecting each time.%",
 										"%It will not be saved, you will be prompted for it ONCE when connecting each time VSCode starts.%",
 										"%It will be saved in settings as plain text (not recommended).%",
@@ -2365,6 +2369,10 @@
 										"null"
 									],
 									"description": "%Tunnel private key path%"
+								},
+								"debug": {
+									"type": "boolean",
+									"description": "%Enable debug logging for the tunnel.%"
 								}
 							}
 						}
@@ -2528,13 +2536,13 @@
 		"snowflake-sdk": "^1.15.0",
 		"sql-formatter": "^15.4.5",
 		"sql-query-identifier": "^2.7.0",
-		"ssh-config": "^5.0.0",
+		"ssh-config": "^5.0.3",
 		"sshpk": "^1.18.0",
 		"svg2pdf.js": "^2.2.4",
 		"tablemark": "^3.1.0",
 		"tar": "^7.4.3",
 		"tinycolor2": "^1.6.0",
-		"tunnel-ssh": "^5.1.2",
+		"tunnel-ssh": "^5.2.0",
 		"typed-emitter": "^2.1.0",
 		"undo-manager": "^1.1.1",
 		"validator": "^13.12.0",

@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.6.12 - 2025-02-05
+
+
+### Changed
+
+- Added support for executing a command to get the password for a connection. #269
+
+### Fixed
+
+- MySQL/MariaDB: Changed introspection to not use information_schema for procs. #273 #265
+- Added more checks for connections with configuration issues (invalid drivers). #231
+- Added a configuration option to debug tunnels. #257
+- Notebooks: Fixed a bug with saving outputs when output id's started with a number. #272
+
 ## 1.6.11 - 2025-02-05
 
 ### Changed
