@@ -1,7 +1,14 @@
 # CHANGELOG
 
-## 1.6.10 - 2025-02-04
+## 1.6.11 - 2025-02-05
 
+### Changed
+
+- Notebook tabs have been restored. #270
+- File based drivers (SQLite, DuckDB, etc) now store the path as a relative path when the config is saved in a work space. #268
+- File based drivers (SQLite, DuckDB, etc) can use ${workspaceFolder} in the path. #268
+
+## 1.6.10 - 2025-02-04
 
 ### Changed
 
