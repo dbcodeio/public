@@ -1,7 +1,19 @@
 # CHANGELOG
 
-## 1.6.12 - 2025-02-05
+## 1.6.13 - 2025-02-06
 
+### Changed
+
+- Setting: Notebook max tabs now controls the number of tabs per output cell in a notebook. #270
+- Changing the max tabs setting to 0 will remove the output tabs from the ui. #270
+- Tabs now shrink properly when there are more than can be displayed on the tab bar. #270
+- Tab icon changes to pin on hover indicating tabs can be pinned. #270
+
+### Fixed
+
+- Postgres: Fixed issue with query parameters picking up Postgres replacement values. #262
+
+## 1.6.12 - 2025-02-05
 
 ### Changed
 

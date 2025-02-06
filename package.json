@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
 	"publisher": "dbcode",
-	"version": "1.6.12",
+	"version": "1.6.13",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -142,13 +142,15 @@
 				"category": "DBCode"
 			},
 			{
-				"command": "dbcode.notebook.saveOutputOff",
-				"title": "%Save Output: On%",
+				"command": "dbcode.notebook.saveOutputOn",
+				"title": "%Save Output: Off%",
+				"icon": "$(error)",
 				"category": "DBCode"
 			},
 			{
-				"command": "dbcode.notebook.saveOutputOn",
-				"title": "%Save Output: Off%",
+				"command": "dbcode.notebook.saveOutputOff",
+				"title": "%Save Output: On%",
+				"icon": "$(pass)",
 				"category": "DBCode"
 			},
 			{
@@ -1963,7 +1965,12 @@
 					"dbcode.maxTabs": {
 						"type": "number",
 						"default": 3,
-						"markdownDescription": "%Limit the number of tabs shown.%"
+						"markdownDescription": "%Number of tabs to keep per connection in the results panel (set to 0 for no tabs).%"
+					},
+					"dbcode.notebook.maxTabs": {
+						"type": "number",
+						"default": 3,
+						"markdownDescription": "%Number of tabs to keep per notebook output cell (set to 0 for no tabs).%"
 					},
 					"dbcode.rowsToLoad": {
 						"type": "number",
@@ -1994,7 +2001,7 @@
 			},
 			{
 				"title": "%Data Formats%",
-				"order": 2,
+				"order": 3,
 				"type": "object",
 				"properties": {
 					"dbcode.format.dateLocalTimezone": {
@@ -2019,19 +2026,19 @@
 			},
 			{
 				"title": "%Warnings%",
-				"order": 3,
+				"order": 4,
 				"type": "object",
 				"properties": {
 					"dbcode.warnBeforePreApply": {
 						"type": "boolean",
 						"default": true,
-						"markdownDescription": "%Warn before running pre apply SQL when applying a file.%"
+						"markdownDescription": "%Warn before running pre apply SQL when applying a a change to a database object (table, view, procedure, function, etc.).%"
 					}
 				}
 			},
 			{
 				"title": "%AI%",
-				"order": 2,
+				"order": 5,
 				"type": "object",
 				"properties": {
 					"dbcode.ai.modelId": {
@@ -2050,7 +2057,7 @@
 			},
 			{
 				"title": "%History%",
-				"order": 3,
+				"order": 6,
 				"type": "object",
 				"properties": {
 					"dbcode.history.enabled": {
@@ -2067,7 +2074,7 @@
 			},
 			{
 				"title": "%Connection Color%",
-				"order": 4,
+				"order": 7,
 				"type": "object",
 				"properties": {
 					"dbcode.color.applyToActiveTabBorder": {
@@ -2490,7 +2497,7 @@
 		"@joint/layout-directed-graph": "^4.0.3",
 		"@libsql/client": "^0.14.0",
 		"@types/mssql": "^9.1.5",
-		"@vscode-elements/elements": "^1.11.0",
+		"@vscode-elements/elements": "^1.12.0",
 		"@vscode/codicons": "^0.0.36",
 		"@vscode/l10n": "^0.0.18",
 		"@vscode/prompt-tsx": "^0.3.0-alpha.5",
