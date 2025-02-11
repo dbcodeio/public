@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.6.15 - 2025-02-11
+
+### Fixed
+
+- MSSQL: Fixed issue with introspection when user only had read only access. #280
+- DuckDB: Added support for enums.
+- Notebook: Prevent keyboard events from propagating to the notebook. #281
+
 ## 1.6.14 - 2025-02-11
 
 ### Changed
