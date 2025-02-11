@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.6.14 - 2025-02-11
+
+### Changed
+
+- Improved refresh feature and tab naming for SQL statements, including better handling of multiple result sets. #197
+- Notebooks: Query parameters values are now shared across cells, and persisted on save. #262
+- DuckDB: File search path set to the folder of the database file, to enable relative paths in load commands.
+- DuckDB: Changed to new DuckDB supported driver, upgraded to new introspection model.
+
+### Fixed
+
+- Cassandra: Added support for multiple statements in a single string.
+- MongoDB: Don't require a port when connecting via mongodb+srv:// #276
+- MongoDB: A new script file will contain example commands and link to the quick reference. #276
+- Notebooks: Scrolling is now captured when scrolling the results grid, within in a scrollable notebook.
+
 ## 1.6.13 - 2025-02-06
 
 ### Changed

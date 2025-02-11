@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
 	"publisher": "dbcode",
-	"version": "1.6.13",
+	"version": "1.6.14",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -2429,7 +2429,8 @@
 		"esbuild": "npx tsx ./scripts/build.ts",
 		"prepare": "husky install",
 		"postinstall": "patch-package",
-		"version": "tsx ./scripts/changelog.ts && git add CHANGELOG.md"
+		"version": "tsx ./scripts/changelog.ts && git add CHANGELOG.md",
+		"check-types": "tsc --noEmit"
 	},
 	"devDependencies": {
 		"@azure-rest/ai-translation-text": "^1.0.0-beta.1",
@@ -2493,6 +2494,7 @@
 		"@ag-grid-community/core": "^32.3.0",
 		"@ag-grid-community/styles": "^32.3.0",
 		"@date-fns/utc": "^2.1.0",
+		"@duckdb/node-api": "^1.2.0-alpha.13",
 		"@google-cloud/bigquery": "^7.9.1",
 		"@joint/layout-directed-graph": "^4.0.3",
 		"@libsql/client": "^0.14.0",
@@ -2512,7 +2514,6 @@
 		"debounce": "^2.2.0",
 		"detect-libc": "^2.0.3",
 		"dotenv": "^16.4.5",
-		"duckdb-async": "^1.1.1",
 		"fast-xml-parser": "^4.5.0",
 		"file-type": "^19.6.0",
 		"generate-password": "^1.7.1",

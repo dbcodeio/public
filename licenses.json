@@ -585,6 +585,27 @@
         "publisher": "Sasha Koss"
     },
     {
+        "name": "@duckdb/node-api",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "Copyright 2018-2025 Stichting DuckDB Foundation\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+        "repository": "https://github.com/duckdb/duckdb-node-neo"
+    },
+    {
+        "name": "@duckdb/node-bindings-linux-x64",
+        "direct": false,
+        "license": "MIT",
+        "licenseTxt": "Copyright 2018-2025 Stichting DuckDB Foundation\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+        "repository": "https://github.com/duckdb/duckdb-node-neo"
+    },
+    {
+        "name": "@duckdb/node-bindings",
+        "direct": false,
+        "license": "MIT",
+        "licenseTxt": "Copyright 2018-2025 Stichting DuckDB Foundation\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+        "repository": "https://github.com/duckdb/duckdb-node-neo"
+    },
+    {
         "name": "@esbuild/linux-x64",
         "direct": false,
         "license": "MIT",
@@ -598,14 +619,6 @@
         "licenseTxt": "Difflib.js\n==========\n\nA JavaScript module which provides classes and functions for comparing sequences. It can be used for example, for comparing files, and can produce difference information in various formats, including context and unified diffs. Ported from Python's [difflib](http://docs.python.org/library/difflib.html) module.\n\nInstallation\n------------\n\n#### Browser\n\nTo use it in the browser, you may download the [minified js file](https://github.com/qiao/difflib.js/raw/master/dist/difflib-browser.js) and include it in your webpage.\n\n```html\n<script type=\"text/javascript\" src=\"./difflib-browser.js\"></script>\n```\n\n#### Node.js\n\nFor Node.js, you can install it using Node Package Manager (npm):\n\n```bash\nnpm install difflib\n```\n\nThen, in your script:\n\n```js\nvar difflib = require('difflib');\n```\n\nQuick Examples\n--------------\n\n1. contextDiff\n\n    ```js\n    >>> s1 = ['bacon\\n', 'eggs\\n', 'ham\\n', 'guido\\n']\n    >>> s2 = ['python\\n', 'eggy\\n', 'hamster\\n', 'guido\\n']\n    >>> difflib.contextDiff(s1, s2, {fromfile:'before.py', tofile:'after.py'})\n    [ '*** before.py\\n',\n      '--- after.py\\n',\n      '***************\\n',\n      '*** 1,4 ****\\n',\n      '! bacon\\n',\n      '! eggs\\n',\n      '! ham\\n',\n      '  guido\\n',\n      '--- 1,4 ----\\n',\n      '! python\\n',\n      '! eggy\\n',\n      '! hamster\\n',\n      '  guido\\n' ]\n    ```\n\n2. unifiedDiff\n\n    ```js\n    >>> difflib.unifiedDiff('one two three four'.split(' '),\n    ...                     'zero one tree four'.split(' '), {\n    ...                       fromfile: 'Original'\n    ...                       tofile: 'Current',\n    ...                       fromfiledate: '2005-01-26 23:30:50',\n    ...                       tofiledate: '2010-04-02 10:20:52',\n    ...                       lineterm: ''\n    ...                     })\n    [ '--- Original\\t2005-01-26 23:30:50',\n      '+++ Current\\t2010-04-02 10:20:52',\n      '@@ -1,4 +1,4 @@',\n      '+zero',\n      ' one',\n      '-two',\n      '-three',\n      '+tree',\n      ' four' ]\n    ```\n\n\n3. ndiff\n\n    ```js\n    >>> a = ['one\\n', 'two\\n', 'three\\n']\n    >>> b = ['ore\\n', 'tree\\n', 'emu\\n']\n    >>> difflib.ndiff(a, b)\n    [ '- one\\n',\n      '?  ^\\n',\n      '+ ore\\n',\n      '?  ^\\n',\n      '- two\\n',\n      '- three\\n',\n      '?  -\\n',\n      '+ tree\\n',\n      '+ emu\\n' ]\n    ```\n\n4. ratio\n\n    ```js\n    >>> s = new difflib.SequenceMatcher(null, 'abcd', 'bcde');\n    >>> s.ratio();\n    0.75\n    >>> s.quickRatio();\n    0.75\n    >>> s.realQuickRatio();\n    1.0\n    ```\n\n5. getOpcodes\n\n    ```js\n    >>> s = new difflib.SequenceMatcher(null, 'qabxcd', 'abycdf');\n    >>> s.getOpcodes();\n    [ [ 'delete'  , 0 , 1 , 0 , 0 ] ,\n      [ 'equal'   , 1 , 3 , 0 , 2 ] ,\n      [ 'replace' , 3 , 4 , 2 , 3 ] ,\n      [ 'equal'   , 4 , 6 , 3 , 5 ] ,\n      [ 'insert'  , 6 , 6 , 5 , 6 ] ]\n    ```\n\n6. getCloseMatches\n\n    ```js\n    >>> difflib.getCloseMatches('appel', ['ape', 'apple', 'peach', 'puppy'])\n    ['apple', 'ape']\n    ```\n\nDocumentation\n-------------\n\n* [SequenceMatcher](#SequenceMatcher)\n\n    * [setSeqs](#setSeqs)\n    * [setSeq1](#setSeq1)\n    * [setSeq2](#setSeq2)\n    * [findLongestMatch](#findLongestMatch)\n    * [getMatchingBlocks](#getMatchingBlocks)\n    * [getOpcodes](#getOpcodes)\n    * [getGroupedOpcodes](#getGroupedOpcodes)\n    * [ratio](#ratio)\n    * [quickRatio](#quickRatio)\n    * [realQuickRatio](#realQuickRatio)\n\n* [Differ](#Differ)\n\n    * [compare](#compare)\n\n* [contextDiff](#contextDiff)\n* [getCloseMatches](#getCloseMatches)\n* [ndiff](#ndiff)\n* [restore](#restore)\n* [unifiedDiff](#unifiedDiff)\n* [IS_LINE_JUNK](#IS_LINE_JUNK)\n* [IS_CHARACTER_JUNK](#IS_CHARACTER_JUNK)\n\n\n<a name=\"SequenceMatcher\" />\n### *class* difflib.**SequenceMatcher**([isjunk[, a[, b[, autojunk=true]]]])\n\nThis is a flexible class for comparing pairs of sequences of any type.\n\nOptional argument *isjunk* must be **null** (the default) or a one-argument function\nthat takes a sequence element and returns true if and only if the element is\n\"junk\" and should be ignored. \n\nPassing **null** for *isjunk* is equivalent to passing\n\n```js\nfunction(x) { return false; }; \n```\n\nin other words, no elements are ignored. \n\nFor example, pass:\n\n```js\nfunction(x) { return x == ' ' || x == '\\t'; }\n```\n\nif you're comparing lines as sequences of characters, \nand don’t want to synch up on blanks or hard tabs.\n\nThe optional arguments *a* and *b* are sequences to be compared;\nboth default to empty strings.\n\nThe optional argument *autojunk* can be used to disable the \nautomatic junk heuristic, which automatically treats certain sequence items as junk.\n\n\n<a name=\"setSeqs\" />\n#### setSeqs(a, b)\n\nSet the two sequences to be compared.\n\nSequenceMatcher computes and caches detailed information about the second\nsequence, so if you want to compare one sequence against many sequences,\nuse [setSeq2()](#setSeq2) to set the commonly used sequence once and call \n[setSeq1()](#setSeq1) repeatedly, once for each of the other sequences.\n\n<a name=\"setSeq1\" />\n#### setSeq1(a)\n\nSet the first sequence to be compared. The second sequence to be compared is not changed.\n\n<a name=\"setSeq2\" />\n#### setSeq2(a)\n\nSet the second sequence to be compared. The first sequence to be compared is not changed.\n\n<a name=\"findLongestMatch\" />\n#### findLongestMatch(alo, ahi, blo, bhi)\n\nFind longest matching block in `a[alo:ahi]` and `b[blo:bhi]`.\n\nIf *isjunk* was omitted or null, *findLongestMatch()* returns `[i, j, k]` such that \n`a[i:i+k]` is equal to `b[j:j+k]`, where `alo <= i <= i+k <= ahi` and \n`blo <= j <= j+k <= bhi`. \nFor all `[i', j', k']` meeting those conditions, the additional conditions `k >= k'`, \n`i <= i'`, and if `i == i'`, `j <= j'` are also met. \nIn other words, of all maximal matching blocks, return one that starts earliest in *a*,\nand of all those maximal matching blocks that start earliest in *a*, \nreturn the one that starts earliest in *b*.\n\n```js\n>>> s = new difflib.SequenceMatcher(null, \" abcd\", \"abcd abcd\");\n>>> s.findLongestMatch(0, 5, 0, 9);\n[0, 4, 5]\n```\n\nIf *isjunk* was provided, first the longest matching block is determined\nas above, but with the additional restriction that no junk element appears\nin the block. \nThen that block is extended as far as possible by matching (only) junk \nelements on both sides. So the resulting block never matches on junk \nexcept as identical junk happens to be adjacent to an interesting match.\n\nHere's the same example as before, but considering blanks to be junk. \nThat prevents `' abcd'` from matching the `' abcd'` at the tail end of \nthe second sequence directly. \nInstead only the `'abcd'` can match, and matches the leftmost `'abcd'` \nin the second sequence:\n\n```js\n>>> s = new difflib.SequenceMatcher(function(x) {return x == ' ';}, \" abcd\", \"abcd abcd\")\n>>> s.findLongestMatch(0, 5, 0, 9)\n[1, 0, 4]\n```\n\nIf no blocks match, this returns `[alo, blo, 0]`.\n\n\n<a name=\"getMatchingBlocks\" />\n#### getMatchingBlocks()\n\nReturn list of triples describing matching subsequences. \nEach triple is of the form `[i, j, n]`, and means that `a[i:i+n] == b[j:j+n]`. \nThe triples are monotonically increasing in *i* and *j*.\n\nThe last triple is a dummy, and has the value `[a.length, b.length, 0]`.\nIt is the only triple with `n == 0`. If `[i, j, n]` and `[i', j', n']` \nare adjacent triples in the list, and the second is not the last triple \nin the list, then `i+n != i'` or `j+n != j'`; \nin other words, adjacent triples always describe non-adjacent equal blocks.\n\n```js\n>>> s = new difflib.SequenceMatcher(null, \"abxcd\", \"abcd\")\n>>> s.getMatchingBlocks()\n[ [0, 0, 2], [3, 2, 2], [5, 4, 0] ]\n```\n\n<a name=\"getOpcodes\" />\n#### getOpcodes()\n\nReturn list of 5-tuples describing how to turn a into b. \nEach tuple is of the form `[tag, i1, i2, j1, j2]`. \nThe first tuple has `i1 == j1 == 0`, and remaining tuples \nhave *i1* equal to the *i2* from the preceding tuple, \nand, likewise, *j1* equal to the previous *j2*.\n\nThe tag values are strings, with these meanings:\n\n    Value       Meaning\n\n    'replace'   a[i1:i2] should be replaced by b[j1:j2].\n    'delete'    a[i1:i2] should be deleted. Note that j1 == j2 in this case.\n    'insert'    b[j1:j2] should be inserted at a[i1:i1]. Note that i1 == i2 in this case.\n    'equal'     a[i1:i2] == b[j1:j2] (the sub-sequences are equal).\n\n```js\n>>> s = new difflib.SequenceMatcher(null, 'qabxcd', 'abycdf');\n>>> s.getOpcodes();\n[ [ 'delete'  , 0 , 1 , 0 , 0 ] ,\n  [ 'equal'   , 1 , 3 , 0 , 2 ] ,\n  [ 'replace' , 3 , 4 , 2 , 3 ] ,\n  [ 'equal'   , 4 , 6 , 3 , 5 ] ,\n  [ 'insert'  , 6 , 6 , 5 , 6 ] ]\n```\n\n<a name=\"getGroupedOpcodes\" />\n#### getGroupedOpcodes([n])\n\nReturn a list groups with upto n (default is 3) lines of context.\nEach group is in the same format as returned by [getOpcodes()](#getOpcodes).\n\n<a name=\"ratio\" />\n#### ratio()\n\nReturn a measure of the sequences’ similarity as a float in the range [0, 1].\n\nWhere T is the total number of elements in both sequences, \nand M is the number of matches, this is 2.0*M / T. \nNote that this is `1.0` if the sequences are identical, \nand `0.0` if they have nothing in common.\n\nThis is expensive to compute if [getMatchingBlocks()](#getMatchingBlocks) or \n[getOpcodes()](#getOpcodes) hasn’t already been called, in which case \nyou may want to try [quickRatio()](#quickRatio) or \n[realQuickRatio()](#realQuickRatio) first to get an upper bound.\n\n<a name=\"quickRatio\" />\n#### quickRatio()\n\nReturn an upper bound on ratio() relatively quickly.\n\n<a name=\"realQuickRatio\" />\n#### realQuickRatio()\n\nReturn an upper bound on ratio() very quickly.\n\n```js\n>>> s = new difflib.SequenceMatcher(null, 'abcd', 'bcde');\n>>> s.ratio();\n0.75\n>>> s.quickRatio();\n0.75\n>>> s.realQuickRatio();\n1.0\n```\n\n<a name=\"Differ\" />\n### *class* difflib.**Differ**([linejunk[, charjunk]])\n\nThis is a class for comparing sequences of lines of text, \nand producing human-readable differences or deltas. \nDiffer uses [SequenceMatcher](#SequenceMatcher) both to compare \nsequences of lines, and to compare sequences of characters within \nsimilar (near-matching) lines.\n\nEach line of a Differ delta begins with a two-letter code:\n\n    Code    Meaning\n    '- '    line unique to sequence 1\n    '+ '    line unique to sequence 2\n    '  '    line common to both sequences\n    '? '    line not present in either input sequence\n\nLines beginning with `?` attempt to guide the eye to intraline differences, \nand were not present in either input sequence. \nThese lines can be confusing if the sequences contain tab characters.\n\nOptional parameters *linejunk* and *charjunk* are for filter functions (or **null**):\n\n*linejunk*: A function that accepts a single string argument, \nand returns true if the string is junk. \nThe default is **null**, meaning that no line is considered junk.\n\n*charjunk*: A function that accepts a single character argument \n(a string of length 1), and returns true if the character is junk. \nThe default is *null*, meaning that no character is considered junk.\n\n<a name=\"compare\" />\n#### compare(a, b)\n\nCompare two sequences of lines, and generate the delta (a sequence of lines).\n\nEach sequence must contain individual single-line strings ending with newlines.\n\n```js\n>>> d = new difflib.Differ()\n>>> d.compare(['one\\n', 'two\\n', 'three\\n'],\n...           ['ore\\n', 'tree\\n', 'emu\\n'])\n[ '- one\\n',\n  '?  ^\\n',\n  '+ ore\\n',\n  '?  ^\\n',\n  '- two\\n',\n  '- three\\n',\n  '?  -\\n',\n  '+ tree\\n',\n  '+ emu\\n' ]\n```\n\n<a name=\"contextDiff\" />\n### difflib.**contextDiff**(a, b, options)\n\nCompare *a* and *b* (lists of strings); \nreturn the delta lines in context diff format.\n\noptions:\n\n* fromfile\n* tofile\n* fromfiledate\n* tofiledate\n* n\n* lineterm\n\nContext diffs are a compact way of showing just the lines that \nhave changed plus a few lines of context. The changes are shown in a \nbefore/after style. \nThe number of context lines is set by n which defaults to three.\n\nBy default, the diff control lines (those with `***` or `---`) are created \nwith a trailing newline. \n\nFor inputs that do not have trailing newlines, set the lineterm argument \nto `\"\"` so that the output will be uniformly newline free.\n\nThe context diff format normally has a header for filenames and modification\ntimes. Any or all of these may be specified using strings for *fromfile*, \n*tofile*, *fromfiledate*, and *tofiledate*. \nThe modification times are normally expressed in the ISO 8601 format. \nIf not specified, the strings default to blanks.\n\n```js\n>>> var s1 = ['bacon\\n', 'eggs\\n', 'ham\\n', 'guido\\n']\n>>> var s2 = ['python\\n', 'eggy\\n', 'hamster\\n', 'guido\\n']\n>>> difflib.contextDiff(s1, s2, {fromfile:'before.py', tofile:'after.py'})\n[ '*** before.py\\n',\n  '--- after.py\\n',\n  '***************\\n',\n  '*** 1,4 ****\\n',\n  '! bacon\\n',\n  '! eggs\\n',\n  '! ham\\n',\n  '  guido\\n',\n  '--- 1,4 ----\\n',\n  '! python\\n',\n  '! eggy\\n',\n  '! hamster\\n',\n  '  guido\\n' ]\n```\n\n<a name=\"getCloseMatches\" />\n### difflib.*getCloseMatches*(word, possibilities\\[, n\\]\\[, cutoff\\])\n\nReturn a list of the best “good enough” matches. \n*word* is a sequence for which close matches are desired \n(typically a string), and *possibilities* is a list of sequences against \nwhich to match word (typically a list of strings).\n\nOptional argument *n* (default 3) is the maximum number of close \nmatches to return; *n* must be greater than 0.\n\nOptional argument *cutoff* (default 0.6) is a float in the range \n[0, 1]. \nPossibilities that don’t score at least that similar to word are ignored.\n\nThe best (no more than n) matches among the possibilities are \nreturned in a list, sorted by similarity score, most similar first.\n\n```js\n>>> difflib.getCloseMatches('appel', ['ape', 'apple', 'peach', 'puppy'])\n['apple', 'ape']\n```\n\n<a name=\"ndiff\" />\n### difflib.**ndiff**(a, b\\[, linejunk\\]\\[, charjunk\\])\n\nCompare *a* and b (lists of strings); \nreturn Differ-style delta lines\n\nOptional keyword parameters *linejunk* and *charjunk* are for \nfilter functions (or **null**):\n\n*linejunk*: A function that accepts a single string argument, \nand returns true if the string is junk, or false if not. \nThe default is (*null*).\n\n*charjunk*: A function that accepts a character (a string of length 1),\nand returns if the character is junk, or false if not. The default is \nmodule-level function [IS_CHARACTER_JUNK()](#IS_CHARACTER_JUNK), \nwhich filters out whitespace characters (a blank or tab; note: \nbad idea to include newline in this!).\n\n```js\n>>> a = ['one\\n', 'two\\n', 'three\\n']\n>>> b = ['ore\\n', 'tree\\n', 'emu\\n']\n>>> difflib.ndiff(a, b)\n[ '- one\\n',\n  '?  ^\\n',\n  '+ ore\\n',\n  '?  ^\\n',\n  '- two\\n',\n  '- three\\n',\n  '?  -\\n',\n  '+ tree\\n',\n  '+ emu\\n' ]\n```\n\n<a name=\"restore\" />\n### difflib.**restore**(sequence, which)\n\nReturn one of the two sequences that generated a delta.\n\nGiven a sequence produced by Differ.compare() or ndiff(), \nextract lines originating from file 1 or 2 (parameter which), stripping off line prefixes.\n\n```js\n>>> a = ['one\\n', 'two\\n', 'three\\n']\n>>> b = ['ore\\n', 'tree\\n', 'emu\\n']\n>>> diff = difflib.ndiff(a, b)\n>>> difflib.restore(diff, 1)\n[ 'one\\n',\n  'two\\n',\n  'three\\n' ]\n>>> restore(diff, 2)\n[ 'ore\\n',\n  'tree\\n',\n  'emu\\n' ]\n```\n\n<a name=\"unifiedDiff\" />\n### difflib.**unifiedDiff**(a, b, options)\n\nCompare a and b (lists of strings); \nreturn delta lines in unified diff format.\n\noptions:\n\n* fromfile\n* tofile\n* fromfiledate\n* tofiledate\n* n\n* lineterm\n\nUnified diffs are a compact way of showing just the lines that have \nchanged plus a few lines of context. \nThe changes are shown in a inline style (instead of separate before/after \nblocks). \nThe number of context lines is set by n which defaults to three.\n\nBy default, the diff control lines (those with `---`, `+++`, or `@@`) are \ncreated with a trailing newline. \n\nFor inputs that do not have trailing newlines, set the lineterm argument \nto `\"\"` so that the output will be uniformly newline free.\n\nThe context diff format normally has a header for filenames and modification\ntimes. Any or all of these may be specified using strings for *fromfile*, \n*tofile*, *fromfiledate*, and *tofiledate*. \nThe modification times are normally expressed in the ISO 8601 format.\nIf not specified, the strings default to blanks.\n\n```js\n>>> difflib.unifiedDiff('one two three four'.split(' '),\n...                     'zero one tree four'.split(' '), {\n...                       fromfile: 'Original'\n...                       tofile: 'Current',\n...                       fromfiledate: '2005-01-26 23:30:50',\n...                       tofiledate: '2010-04-02 10:20:52',\n...                       lineterm: ''\n...                     })\n[ '--- Original\\t2005-01-26 23:30:50',\n  '+++ Current\\t2010-04-02 10:20:52',\n  '@@ -1,4 +1,4 @@',\n  '+zero',\n  ' one',\n  '-two',\n  '-three',\n  '+tree',\n  ' four' ]\n```\n\n\n<a name=\"IS_LINE_JUNK\" />\n### difflib.**IS\\_LINE\\_JUNK**(line)\n\nReturn true for ignorable lines. The line line is ignorable if *line* is \nblank or contains a single `'#'`, otherwise it is not ignorable.\n\n<a name=\"IS_CHARACTER_JUNK\" />\n### difflib.**IS\\_CHARACTER\\_JUNK**(ch)\n\nReturn true for ignorable characters. The character *ch* is ignorable if ch\nis a space or tab, otherwise it is not ignorable. \nUsed as a default for parameter charjunk in [ndiff()](#ndiff).\n\n\nChange Log\n----------\n * 0.1.0 Use Map instead of Object to hold values being diffed -- fixes the bug where e.g. \"true\" and true, or \"0\" and 0 compare as identical (forked from Qiao's 2012-04-22 commit: e11553ba3e303e2db206d04c95f8e51c5692ca28)\n\n\nLicense\n-------\n\nPorted by Xueqiao Xu &lt;xueqiaoxu@gmail.com&gt;\n\nPSF LICENSE AGREEMENT FOR PYTHON 2.7.2\n\n1. This LICENSE AGREEMENT is between the Python Software Foundation (“PSF”), and the Individual or Organization (“Licensee”) accessing and otherwise using Python 2.7.2 software in source or binary form and its associated documentation.\n2. Subject to the terms and conditions of this License Agreement, PSF hereby grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce, analyze, test, perform and/or display publicly, prepare derivative works, distribute, and otherwise use Python 2.7.2 alone or in any derivative version, provided, however, that PSF’s License Agreement and PSF’s notice of copyright, i.e., “Copyright © 2001-2012 Python Software Foundation; All Rights Reserved” are retained in Python 2.7.2 alone or in any derivative version prepared by Licensee.\n3. In the event Licensee prepares a derivative work that is based on or incorporates Python 2.7.2 or any part thereof, and wants to make the derivative work available to others as provided herein, then Licensee hereby agrees to include in any such work a brief summary of the changes made to Python 2.7.2.\n4. PSF is making Python 2.7.2 available to Licensee on an “AS IS” basis. PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON 2.7.2 WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.\n5. PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON 2.7.2 FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON 2.7.2, OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.\n6. This License Agreement will automatically terminate upon a material breach of its terms and conditions.\n7. Nothing in this License Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between PSF and Licensee. This License Agreement does not grant permission to use PSF trademarks or trade name in a trademark sense to endorse or promote products or services of Licensee, or any third party.\n8. By copying, installing or otherwise using Python 2.7.2, Licensee agrees to be bound by the terms and conditions of this License Agreement.",
         "repository": "https://github.com/ewoudenberg/difflib.js",
         "publisher": "Eric Woudenberg"
-    },
-    {
-        "name": "@gar/promisify",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "The MIT License (MIT)\n\nCopyright © 2020-2022 Michael Garvin\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/wraithgar/gar-promisify",
-        "publisher": "Gar"
     },
     {
         "name": "@google-cloud/bigquery",
@@ -787,14 +800,6 @@
         "publisher": "Google LLC"
     },
     {
-        "name": "@mapbox/node-pre-gyp",
-        "direct": false,
-        "license": "BSD-3-Clause",
-        "licenseTxt": "Copyright (c), Mapbox\n\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n    * Redistributions of source code must retain the above copyright notice,\n      this list of conditions and the following disclaimer.\n    * Redistributions in binary form must reproduce the above copyright notice,\n      this list of conditions and the following disclaimer in the documentation\n      and/or other materials provided with the distribution.\n    * Neither the name of node-pre-gyp nor the names of its contributors\n      may be used to endorse or promote products derived from this software\n      without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR\nCONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
-        "repository": "https://github.com/mapbox/node-pre-gyp",
-        "publisher": "Dane Springmeyer"
-    },
-    {
         "name": "@mongodb-js/saslprep",
         "direct": false,
         "license": "MIT",
@@ -809,22 +814,6 @@
         "licenseTxt": "The MIT License (MIT)\n\nCopyright (c) 2023 David Herman\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
         "repository": "https://github.com/dherman/neon-rs",
         "publisher": "Dave Herman"
-    },
-    {
-        "name": "@npmcli/fs",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "<!-- This file is automatically added by @npmcli/template-oss. Do not edit. -->\n\nISC License\n\nCopyright npm, Inc.\n\nPermission to use, copy, modify, and/or distribute this\nsoftware for any purpose with or without fee is hereby\ngranted, provided that the above copyright notice and this\npermission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND NPM DISCLAIMS ALL\nWARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO\nEVENT SHALL NPM BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE\nUSE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/npm/fs",
-        "publisher": "GitHub Inc."
-    },
-    {
-        "name": "@npmcli/move-file",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "MIT License\n\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)\nCopyright (c) npm, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the \"Software\"),\nto deal in the Software without restriction, including without limitation\nthe rights to use, copy, modify, merge, publish, distribute, sublicense,\nand/or sell copies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\nDEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/npm/move-file",
-        "publisher": "GitHub Inc."
     },
     {
         "name": "@opentelemetry/api",
@@ -1624,14 +1613,6 @@
         "publisher": "Microsoft Corporation"
     },
     {
-        "name": "abbrev",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "This software is dual-licensed under the ISC and MIT licenses.\nYou may use this software under EITHER of the following licenses.\n\n----------\n\nThe ISC License\n\nCopyright (c) Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n\n----------\n\nCopyright Isaac Z. Schlueter and Contributors\nAll rights reserved.\n\nPermission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \"Software\"), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/isaacs/abbrev-js",
-        "publisher": "Isaac Z. Schlueter"
-    },
-    {
         "name": "abort-controller",
         "direct": false,
         "license": "MIT",
@@ -1667,24 +1648,6 @@
         "url": "http://n8.io/"
     },
     {
-        "name": "agentkeepalive",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "The MIT License\n\nCopyright(c) node-modules and other contributors.\nCopyright(c) 2012 - 2015 fengmk2 <fengmk2@gmail.com>\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/node-modules/agentkeepalive",
-        "publisher": "fengmk2",
-        "url": "https://github.com/fengmk2"
-    },
-    {
-        "name": "aggregate-error",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "MIT License\n\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/sindresorhus/aggregate-error",
-        "publisher": "Sindre Sorhus",
-        "url": "sindresorhus.com"
-    },
-    {
         "name": "amator",
         "direct": false,
         "license": "MIT",
@@ -1717,22 +1680,6 @@
         "repository": "https://github.com/chalk/ansi-styles",
         "publisher": "Sindre Sorhus",
         "url": "sindresorhus.com"
-    },
-    {
-        "name": "aproba",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "Copyright (c) 2015, Rebecca Turner <me@re-becca.org>\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\nOR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/iarna/aproba",
-        "publisher": "Rebecca Turner"
-    },
-    {
-        "name": "are-we-there-yet",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "ISC License\n\nCopyright npm, Inc.\n\nPermission to use, copy, modify, and/or distribute this\nsoftware for any purpose with or without fee is hereby\ngranted, provided that the above copyright notice and this\npermission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND NPM DISCLAIMS ALL\nWARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO\nEVENT SHALL NPM BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE\nUSE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/npm/are-we-there-yet",
-        "publisher": "GitHub Inc."
     },
     {
         "name": "argparse",
@@ -2042,14 +1989,6 @@
         "publisher": "egoist"
     },
     {
-        "name": "cacache",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "ISC License\n\nCopyright (c) npm, Inc.\n\nPermission to use, copy, modify, and/or distribute this software for\nany purpose with or without fee is hereby granted, provided that the\nabove copyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE COPYRIGHT HOLDER DISCLAIMS\nALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR\nCONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE\nOR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE\nUSE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/npm/cacache",
-        "publisher": "GitHub Inc."
-    },
-    {
         "name": "canvg",
         "direct": false,
         "license": "MIT",
@@ -2142,15 +2081,6 @@
         "url": "http://blog.izs.me/"
     },
     {
-        "name": "clean-stack",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "MIT License\n\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/sindresorhus/clean-stack",
-        "publisher": "Sindre Sorhus",
-        "url": "sindresorhus.com"
-    },
-    {
         "name": "color-convert",
         "direct": false,
         "license": "MIT",
@@ -2173,15 +2103,6 @@
         "licenseTxt": "Copyright (c) 2011 Heather Arthur <fayearthur@gmail.com>\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
         "repository": "https://github.com/Qix-/color-string",
         "publisher": "Heather Arthur"
-    },
-    {
-        "name": "color-support",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/isaacs/color-support",
-        "publisher": "Isaac Z. Schlueter",
-        "url": "http://blog.izs.me/"
     },
     {
         "name": "color",
@@ -2231,24 +2152,6 @@
         "licenseTxt": "(The MIT License)\n\nCopyright (c) 2011 TJ Holowaychuk <tj@vision-media.ca>\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
         "repository": "https://github.com/tj/commander.js",
         "publisher": "TJ Holowaychuk"
-    },
-    {
-        "name": "concat-map",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "This software is released under the MIT license:\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/substack/node-concat-map",
-        "publisher": "James Halliday",
-        "url": "http://substack.net"
-    },
-    {
-        "name": "console-control-strings",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "Copyright (c) 2014, Rebecca Turner <me@re-becca.org>\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\nOR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/iarna/console-control-strings",
-        "publisher": "Rebecca Turner",
-        "url": "http://re-becca.org/"
     },
     {
         "name": "core-js",
@@ -2396,13 +2299,6 @@
         "url": "http://debuggable.com/"
     },
     {
-        "name": "delegates",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "Copyright (c) 2015 TJ Holowaychuk <tj@vision-media.ca>\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/visionmedia/node-delegates"
-    },
-    {
         "name": "denque",
         "direct": false,
         "license": "Apache-2.0",
@@ -2468,21 +2364,6 @@
         "licenseTxt": "Command-Line Parser With Readable Syntax From Your Sweetest Dreams\n==================================================================\n\nEver wrote crap code to deal with parsing command-line options? No more. Here's how it should look like (in CoffeeScript):\n\n    options = require('dreamopt') [\n      \"Usage: myscript [options] <source> [<destination>]\"\n\n      \"  <source>           Source file to compile into css #required\"\n      \"  <destination>      Destination file (defaults to source file with .css extension)\", (value, options) ->\n        if !value\n          return options.source.replace(/\\.mess/, '') + '.css'\n\n      \"Processing options:\"\n      \"  -n, --dry-run    Don't write anything to disk\"\n      \"  -m, --mode MODE  Set execution mode: easy, medium, hard (defaults to medium)\"\n\n      \"Connection options:\"\n      \"  -p, --port PORT  Port to connect to (default: 80)\"\n      \"  -h, --host HOST  Host to connect to (default is localhost)\"\n\n      \"Getting useful information:\"\n      \"  --reporters      Print a list of reporters and exit\", ->\n        console.log \"Reporters: foo, bar, boz\"\n        process.exit 0\n    ]\n\n    console.log JSON.stringify(options, null, 2)\n\nTry to run it as `node examples/foo.js`:\n\n    Error: Missing required argument #1: source\n\nNow run it as `node examples/foo.js myfile.mess`:\n\n    {\n      \"mode\": \"medium\",\n      \"port\": 80,\n      \"host\": \"localhost\",\n      \"source\": \"myfile.mess\",\n      \"destination\": \"myfile.css\",\n      \"argv\": [\n        \"myfile.mess\",\n        \"myfile.css\"\n      ]\n    }\n\n\nInstallation\n------------\n\n    npm install dreamopt\n\n\nFeatures\n--------\n\nOverview:\n\n* readable option specification with no extra punctuation\n* comprehensive test suite (221 tests so far)\n* returns a simple hash with predicable contents and coerced data types\n* mandatory and optional arguments/options\n* commands, subcommands, subsubcommands, with command-specific options and per-command help/usage\n* default values\n* optional callback functions\n* custom tags and coercion rules\n* automatic `--help`\n\nOption syntax details:\n\n* long options always start with double dashes (`--long`), short options with a single dash (`-s`)\n* a single dash by itself (`-`) is considered a positional argument rather than an option (and usually signifies reading from stdin)\n* `--` ends option processing\n* option value can be specified as `-sVAL`, `-s VAL`, `--long=VAL` or `--long VAL`\n* short options can be combined (`-xc`)\n* short option that requires a value consumes the remainder of the combined option if any (`-xcfMYFILE`, `-pi.tmp`)\n\n\nUsage\n-----\n\nThis module can called with up to three arguments:\n\n    options = require('dreamopt')(spec, [options])\n\nwhere:\n\n* `spec` is a required array of strings\n* `options` is an optional hash (i.e. a JavaScript object)\n\nThe following options can be specified:\n\n* `options.argv` is an array of command-line arguments, defaults to `process.argv.slice(2)`\n* `options.customTags` is a hash with custom tag handlers\n* `options.error(err)` is a function that handles syntax error, the default one prints `err.message` and exits\n* `options.help(usage)` is a function that handles `--help`, the default one prints `usage` and exits\n* `options.loadCommandSyntax(command)` is a function that returns the subcommand syntax for the given command\n\n\nSpecification format\n--------------------\n\nEach line of `spec` can be:\n\n* `Usage: blah blag` — a banner, it is displayed at the very top of the usage info\n* `Something:` — a header, it is displayed verbatim with appropriate spacing; if you don't define any headers, dreamopt will add the default ones as needed (“Arguments:” and “Options:”)\n* `-s, --long <value>  Description #tag1 #tag2(val2)` — option definition; must start with at least one space; if description or tags are specified, they must be separated from the option itself by at least two spaces; tags must be in the end and may have optional values\n* `-s, --long VALUE  Description #tag1 #tag2(val2)` — can use `VALUE` instead of `<value>`\n* `<arg>  Description #tag1 #tag2` — positional argument definition, same format as options\n* `ARG  Description #tag1 #tag2` — can use `ARG` instead of `<arg>`\n* after an option or an argument, you can include a function to be invoked when the option/argument is encountered\n* `command  Description` followed by a handler function (optional) and an array (required unless you provide `options.loadCommandSyntax`) — subcommand definition\n\nAny other lines that don't start with whitespace are output verbatim, as a paragraph of text. (Lines that start with whitespace must conform to option, argument or subcommand syntax.)\n\n\nCommands\n--------\n\nSyntax:\n\n    options = require('dreamopt') [\n      \"Commands:\"\n      \"  init             Create a new repository in the current folder\", []\n      \"  commit           Commit the staged changes\", []\n\n      \"Common options:\"\n      \"  -v, --verbose    Print tons of useless info\"\n    ]\n\n    switch options.command\n      when 'init'\n        ...\n      when 'commit'\n        ...\n\nYou can specify a function to run for each command:\n\n    doInit = (options) ->\n      ...\n\n    doCommit = (options) ->\n      ...\n\n    options = require('dreamopt') [\n      \"Commands:\"\n      \"  init             Create a new repository in the current folder\", [], doInit\n      \"  commit           Commit the staged changes\", [], doCommit\n    ]\n\nCommand-specific options and help:\n\n    INIT_SYNTAX = [\n      \"Create a new repository in the current folder.\"\n\n      \"  -b, --bare     Create a bare repository\"\n    ]\n\n    COMMIT_SYNTAX = [\n      \"Commit the staged changes.\"\n\n      \"Usage: git commit [options] [<file>...]\"\n\n      \"  -a, --all      Auto-add all changes\"\n      \"<file>           The file to commit #list\"\n    ]\n\n    options = require('dreamopt') [\n      \"Commands:\"\n      \"  init\", doInit, INIT_SYNTAX\n      \"  commit\", doCommit, COMMIT_SYNTAX\n\n      \"Common options:\"\n      \"  -v, --verbose    Print tons of useless info\"\n    ]\n\nModularizing your code:\n\n    # main.coffee:\n    options = require('dreamopt') [\n      \"Commands:\n      \"  init\"\n      \"  commit\"\n\n      \"Common options:\"\n      \"  -v, --verbose    Print tons of useless info\"\n    ], {\n      loadCommandSyntax: (command) -> require(\"./commands/#{command}\").usage\n    }\n\n    require(\"./commands/#{options.command}\").run(options)\n\n    # commands/commit.coffee:\n    exports.usage = [\n      \"Commit the staged changes.\"\n\n      \"Usage: git commit [options] [<file>...]\"\n\n      \"  -a, --all      Auto-add all changes\"\n      \"<file>           The file to commit #list\"\n    ]\n\n    exports.run = (options) ->\n      ...\n\nCommands can be nested, which results in `options.command`, `options.subcommand`, `options.subsubcommand` etc; loadCommandSyntax is called with a space-separated command name for nested commands.\n\n\nCoercion, validation and custom tags\n------------------------------------\n\nArgument values are automatically coerced to numbers if possible, otherwise they are provided as strings. You can specify one of the following tags to change coercion rules:\n\n* `#string` disables coercion and always returns a string\n* `#int` always coerces to int, giving an error if that's impossible\n\nYou can define custom tags to handle coercion, validation or any other processing. For example, to parse a simple YYYY-MM-DD date format, you can do:\n\n    options = require('../lib/dreamopt') [\n      \"-f, --from DATE  Only process records from the given date #date\"\n    ], {\n      date: (value, options, optionName) ->\n        if isNaN(new Date(value))\n          throw new Error(\"Invalid date for option #{optionName}\")\n        new Date(value)\n    }\n\n    console.log \"Year: \" + options.from?.getFullYear()\n\nTag functions are invoked with four arguments `(value, options, optionName, tagValue)`:\n\n* `value` is the value of the current option\n* `options` is the options hash built so far\n* `optionName` is useful when referring to the current option in an error message\n* `tagValue` is the value of the tag if any; for example, for `#date(today)` the tagValue would be `'today'`\n\n\nMagic tags\n----------\n\n* `#required` marks a required option or argument\n* `#var(fieldName)` overrides the options field for this option (i.e. the value is stored into `options.fieldName`)\n* `#default(value)` specifies a default value\n* `#list` marks an option that may be used multiple times; the final value is a JavaScript array\n* `#fancydefault` forces the callback function associated with the current option to be called even when an argument is not provided and no default is set; in this case, the original value will be `null` and your function is expected to return a better one\n* `#delayfunc` delays invocation of the callback function until all other options and arguments are processed; this is useful for options like `--help` or `--print-reporters`, when you want all normal options to be handled and validated before the callback is invoked; the return value of such callback functions is ignored\n\nAdditionally, you may encounter the following internal tags in the source code:\n\n* `#flag` denotes a no-values option (which is always treated as boolean)\n* `#acceptsno` is set for options which use `--[no-]something` in their definition; all boolean option accept --no-option variant to turn them off, but only options explicitly specified as such are documented as accepting --no variants in usage info\n\n\nAutomatic usage info\n--------------------\n\nIf you don't define a `--help` option, it is provided for you automatically and prints a usage info like this:\n\n    Usage: myscript [options] <source.mess> [<destination.css>]\n\n    Arguments:\n      <source>              Source file to compile into css\n      <destination>         Destination file (defaults to source file with .css extension)\n\n    Processing options:\n      -n, --dry-run         Don't write anything to disk\n      -m, --mode MODE       Set execution mode: easy, medium, hard (defaults to medium)\n\n    Connection options:\n      -p, --port PORT       Port to connect to (default: 80)\n      -h, --host HOST       Host to connect to (default is localhost)\n\n    Getting useful information:\n          --reporters       Print a list of reporters and exit\n      -h, --help            Display this usage information\n\nYou can provide `options.help(usageText)` function to customize the way this usage info is printed; the default implementation outputs the argument via `process.stdout.write` and executes `process.exit(0)`.",
         "repository": "https://github.com/andreyvit/dreamopt.js",
         "publisher": "Andrey Tarantsov"
-    },
-    {
-        "name": "duckdb-async",
-        "direct": true,
-        "license": "MIT",
-        "licenseTxt": "MIT License\n\nCopyright (c) 2022 MotherDuck\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
-        "repository": "https://github.com/motherduckdb/duckdb-async"
-    },
-    {
-        "name": "duckdb",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "Copyright 2018-2024 Stichting DuckDB Foundation\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/duckdb/duckdb-node",
-        "publisher": "Hannes Mühleisen"
     },
     {
         "name": "duplexify",
@@ -2551,24 +2432,6 @@
         "publisher": "Mathias Buus"
     },
     {
-        "name": "env-paths",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "MIT License\n\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/sindresorhus/env-paths",
-        "publisher": "Sindre Sorhus",
-        "url": "sindresorhus.com"
-    },
-    {
-        "name": "err-code",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "# err-code\n\n[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency status][david-dm-image]][david-dm-url] [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url] [![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]\n\n[npm-url]:https://npmjs.org/package/err-code\n[downloads-image]:http://img.shields.io/npm/dm/err-code.svg\n[npm-image]:http://img.shields.io/npm/v/err-code.svg\n[travis-url]:https://travis-ci.org/IndigoUnited/js-err-code\n[travis-image]:http://img.shields.io/travis/IndigoUnited/js-err-code/master.svg\n[david-dm-url]:https://david-dm.org/IndigoUnited/js-err-code\n[david-dm-image]:https://img.shields.io/david/IndigoUnited/js-err-code.svg\n[david-dm-dev-url]:https://david-dm.org/IndigoUnited/js-err-code?type=dev\n[david-dm-dev-image]:https://img.shields.io/david/dev/IndigoUnited/js-err-code.svg\n[greenkeeper-image]:https://badges.greenkeeper.io/IndigoUnited/js-err-code.svg\n[greenkeeper-url]:https://greenkeeper.io/\n\nCreate new error instances with a code and additional properties.\n\n\n## Installation\n\n```console\n$ npm install err-code\n// or\n$ bower install err-code\n```\n\nThe browser file is named index.umd.js which supports CommonJS, AMD and globals (errCode).\n\n\n## Why\n\nI find myself doing this repeatedly:\n\n```js\nvar err = new Error('My message');\nerr.code = 'SOMECODE';\nerr.detail = 'Additional information about the error';\nthrow err;\n```\n\n\n## Usage\n\nSimple usage.\n\n```js\nvar errcode = require('err-code');\n\n// fill error with message + code\nthrow errcode(new Error('My message'), 'ESOMECODE');\n// fill error with message + code + props\nthrow errcode(new Error('My message'), 'ESOMECODE', { detail: 'Additional information about the error' });\n// fill error with message + props\nthrow errcode(new Error('My message'), { detail: 'Additional information about the error' });\n```\n\n## Pre-existing fields\n\nIf the passed `Error` already has a `.code` field, or fields specified in the third argument to `errcode` they will be overwritten, unless the fields are read only or otherwise throw during assignment in which case a new object will be created that shares a prototype chain with the original `Error`. The `.stack` and `.message` properties will be carried over from the original error and `.code` or any passed properties will be set on it.\n\n\n## Tests\n\n`$ npm test`\n\n\n## License\n\nReleased under the [MIT License](http://www.opensource.org/licenses/mit-license.php).",
-        "repository": "https://github.com/IndigoUnited/js-err-code",
-        "publisher": "IndigoUnited",
-        "url": "http://indigounited.com"
-    },
-    {
         "name": "esbuild",
         "direct": false,
         "license": "MIT",
@@ -2624,14 +2487,6 @@
         "repository": "https://github.com/jonschlinkert/expand-tilde",
         "publisher": "Jon Schlinkert",
         "url": "https://github.com/jonschlinkert"
-    },
-    {
-        "name": "exponential-backoff",
-        "direct": false,
-        "license": "Apache-2.0",
-        "licenseTxt": "Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright [yyyy] [name of copyright owner]\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.",
-        "repository": "https://github.com/coveo/exponential-backoff",
-        "publisher": "Sami Sayegh"
     },
     {
         "name": "extend",
@@ -2781,32 +2636,6 @@
         "publisher": "JP Richardson"
     },
     {
-        "name": "fs-minipass",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/npm/fs-minipass",
-        "publisher": "Isaac Z. Schlueter",
-        "url": "http://blog.izs.me/"
-    },
-    {
-        "name": "fs.realpath",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n\n----\n\nThis library bundles a version of the `fs.realpath` and `fs.realpathSync`\nmethods from Node.js v0.10 under the terms of the Node.js MIT license.\n\nNode's license follows, also included at the header of `old.js` which contains\nthe licensed code:\n\n  Copyright Joyent, Inc. and other Node contributors.\n\n  Permission is hereby granted, free of charge, to any person obtaining a\n  copy of this software and associated documentation files (the \"Software\"),\n  to deal in the Software without restriction, including without limitation\n  the rights to use, copy, modify, merge, publish, distribute, sublicense,\n  and/or sell copies of the Software, and to permit persons to whom the\n  Software is furnished to do so, subject to the following conditions:\n\n  The above copyright notice and this permission notice shall be included in\n  all copies or substantial portions of the Software.\n\n  THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\n  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\n  DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/isaacs/fs.realpath",
-        "publisher": "Isaac Z. Schlueter",
-        "url": "http://blog.izs.me/"
-    },
-    {
-        "name": "gauge",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "Copyright (c) 2014, Rebecca Turner <me@re-becca.org>\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\nOR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/iarna/gauge",
-        "publisher": "Rebecca Turner"
-    },
-    {
         "name": "gaxios",
         "direct": false,
         "license": "Apache-2.0",
@@ -2915,14 +2744,6 @@
         "publisher": "Google, LLC"
     },
     {
-        "name": "has-unicode",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "Copyright (c) 2014, Rebecca Turner <me@re-becca.org>\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\nOR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/iarna/has-unicode",
-        "publisher": "Rebecca Turner"
-    },
-    {
         "name": "hast-util-to-html",
         "direct": false,
         "license": "MIT",
@@ -3000,15 +2821,6 @@
         "url": "https://hertzen.com"
     },
     {
-        "name": "http-cache-semantics",
-        "direct": false,
-        "license": "BSD-2-Clause",
-        "licenseTxt": "Copyright 2016-2018 Kornel Lesiński\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
-        "repository": "https://github.com/kornelski/http-cache-semantics",
-        "publisher": "Kornel Lesiński",
-        "url": "https://kornel.ski/"
-    },
-    {
         "name": "http-proxy-agent",
         "direct": false,
         "license": "MIT",
@@ -3025,15 +2837,6 @@
         "repository": "https://github.com/TooTallNate/node-https-proxy-agent",
         "publisher": "Nathan Rajlich",
         "url": "http://n8.io/"
-    },
-    {
-        "name": "humanize-ms",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
-        "repository": "https://github.com/node-modules/humanize-ms",
-        "publisher": "dead-horse",
-        "url": "http://deadhorse.me"
     },
     {
         "name": "ibm_db",
@@ -3061,24 +2864,6 @@
         "url": "https://feross.org"
     },
     {
-        "name": "imurmurhash",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "iMurmurHash.js\n==============\n\nAn incremental implementation of the MurmurHash3 (32-bit) hashing algorithm for JavaScript based on [Gary Court's implementation](https://github.com/garycourt/murmurhash-js) with [kazuyukitanimura's modifications](https://github.com/kazuyukitanimura/murmurhash-js).\n\nThis version works significantly faster than the non-incremental version if you need to hash many small strings into a single hash, since string concatenation (to build the single string to pass the non-incremental version) is fairly costly. In one case tested, using the incremental version was about 50% faster than concatenating 5-10 strings and then hashing.\n\nInstallation\n------------\n\nTo use iMurmurHash in the browser, [download the latest version](https://raw.github.com/jensyt/imurmurhash-js/master/imurmurhash.min.js) and include it as a script on your site.\n\n```html\n<script type=\"text/javascript\" src=\"/scripts/imurmurhash.min.js\"></script>\n<script>\n// Your code here, access iMurmurHash using the global object MurmurHash3\n</script>\n```\n\n---\n\nTo use iMurmurHash in Node.js, install the module using NPM:\n\n```bash\nnpm install imurmurhash\n```\n\nThen simply include it in your scripts:\n\n```javascript\nMurmurHash3 = require('imurmurhash');\n```\n\nQuick Example\n-------------\n\n```javascript\n// Create the initial hash\nvar hashState = MurmurHash3('string');\n\n// Incrementally add text\nhashState.hash('more strings');\nhashState.hash('even more strings');\n\n// All calls can be chained if desired\nhashState.hash('and').hash('some').hash('more');\n\n// Get a result\nhashState.result();\n// returns 0xe4ccfe6b\n```\n\nFunctions\n---------\n\n### MurmurHash3 ([string], [seed])\nGet a hash state object, optionally initialized with the given _string_ and _seed_. _Seed_ must be a positive integer if provided. Calling this function without the `new` keyword will return a cached state object that has been reset. This is safe to use as long as the object is only used from a single thread and no other hashes are created while operating on this one. If this constraint cannot be met, you can use `new` to create a new state object. For example:\n\n```javascript\n// Use the cached object, calling the function again will return the same\n// object (but reset, so the current state would be lost)\nhashState = MurmurHash3();\n...\n\n// Create a new object that can be safely used however you wish. Calling the\n// function again will simply return a new state object, and no state loss\n// will occur, at the cost of creating more objects.\nhashState = new MurmurHash3();\n```\n\nBoth methods can be mixed however you like if you have different use cases.\n\n---\n\n### MurmurHash3.prototype.hash (string)\nIncrementally add _string_ to the hash. This can be called as many times as you want for the hash state object, including after a call to `result()`. Returns `this` so calls can be chained.\n\n---\n\n### MurmurHash3.prototype.result ()\nGet the result of the hash as a 32-bit positive integer. This performs the tail and finalizer portions of the algorithm, but does not store the result in the state object. This means that it is perfectly safe to get results and then continue adding strings via `hash`.\n\n```javascript\n// Do the whole string at once\nMurmurHash3('this is a test string').result();\n// 0x70529328\n\n// Do part of the string, get a result, then the other part\nvar m = MurmurHash3('this is a');\nm.result();\n// 0xbfc4f834\nm.hash(' test string').result();\n// 0x70529328 (same as above)\n```\n\n---\n\n### MurmurHash3.prototype.reset ([seed])\nReset the state object for reuse, optionally using the given _seed_ (defaults to 0 like the constructor). Returns `this` so calls can be chained.\n\n---\n\nLicense (MIT)\n-------------\nCopyright (c) 2013 Gary Court, Jens Taylor\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/jensyt/imurmurhash-js",
-        "publisher": "Jens Taylor",
-        "url": "https://github.com/homebrewing"
-    },
-    {
-        "name": "indent-string",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "MIT License\n\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/sindresorhus/indent-string",
-        "publisher": "Sindre Sorhus",
-        "url": "sindresorhus.com"
-    },
-    {
         "name": "indento",
         "direct": false,
         "license": "MIT",
@@ -3086,24 +2871,6 @@
         "repository": "https://github.com/IonicaBizau/indento",
         "publisher": "Ionică Bizău",
         "url": "https://ionicabizau.net"
-    },
-    {
-        "name": "infer-owner",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) npm, Inc. and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/npm/infer-owner",
-        "publisher": "Isaac Z. Schlueter",
-        "url": "https://izs.me"
-    },
-    {
-        "name": "inflight",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) Isaac Z. Schlueter\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/npm/inflight",
-        "publisher": "Isaac Z. Schlueter",
-        "url": "http://blog.izs.me/"
     },
     {
         "name": "inherits",
@@ -3163,15 +2930,6 @@
         "repository": "https://github.com/sindresorhus/is-fullwidth-code-point",
         "publisher": "Sindre Sorhus",
         "url": "sindresorhus.com"
-    },
-    {
-        "name": "is-lambda",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "The MIT License (MIT)\n\nCopyright (c) 2016-2017 Thomas Watson Steen\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
-        "repository": "https://github.com/watson/is-lambda",
-        "publisher": "Thomas Watson Steen",
-        "url": "https://twitter.com/wa7son"
     },
     {
         "name": "is-stream",
@@ -3491,23 +3249,6 @@
         "publisher": "Rich Harris"
     },
     {
-        "name": "make-dir",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "MIT License\n\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/sindresorhus/make-dir",
-        "publisher": "Sindre Sorhus",
-        "url": "sindresorhus.com"
-    },
-    {
-        "name": "make-fetch-happen",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "ISC License\n\nCopyright 2017-2022 (c) npm, Inc.\n\nPermission to use, copy, modify, and/or distribute this software for\nany purpose with or without fee is hereby granted, provided that the\nabove copyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE COPYRIGHT HOLDER DISCLAIMS\nALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR\nCONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE\nOR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE\nUSE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/npm/make-fetch-happen",
-        "publisher": "GitHub Inc."
-    },
-    {
         "name": "mariadb",
         "direct": true,
         "license": "LGPL-2.1-or-later",
@@ -3621,7 +3362,7 @@
         "name": "minimatch",
         "direct": false,
         "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+        "licenseTxt": "The ISC License\n\nCopyright (c) 2011-2023 Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
         "repository": "https://github.com/isaacs/minimatch",
         "publisher": "Isaac Z. Schlueter",
         "url": "http://blog.izs.me"
@@ -3636,52 +3377,10 @@
         "url": "http://substack.net"
     },
     {
-        "name": "minipass-collect",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "publisher": "Isaac Z. Schlueter",
-        "url": "https://izs.me"
-    },
-    {
-        "name": "minipass-fetch",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "The MIT License (MIT)\n\nCopyright (c) Isaac Z. Schlueter and Contributors\nCopyright (c) 2016 David Frank\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n---\n\nNote: This is a derivative work based on \"node-fetch\" by David Frank,\nmodified and distributed under the terms of the MIT license above.\nhttps://github.com/bitinn/node-fetch",
-        "repository": "https://github.com/npm/minipass-fetch",
-        "publisher": "GitHub Inc."
-    },
-    {
-        "name": "minipass-flush",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/isaacs/minipass-flush",
-        "publisher": "Isaac Z. Schlueter",
-        "url": "https://izs.me"
-    },
-    {
-        "name": "minipass-pipeline",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "publisher": "Isaac Z. Schlueter",
-        "url": "https://izs.me"
-    },
-    {
-        "name": "minipass-sized",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/isaacs/minipass-sized",
-        "publisher": "Isaac Z. Schlueter",
-        "url": "https://izs.me"
-    },
-    {
         "name": "minipass",
         "direct": false,
         "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) 2017-2022 npm, Inc., Isaac Z. Schlueter, and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+        "licenseTxt": "The ISC License\n\nCopyright (c) 2017-2023 npm, Inc., Isaac Z. Schlueter, and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
         "repository": "https://github.com/isaacs/minipass",
         "publisher": "Isaac Z. Schlueter",
         "url": "http://blog.izs.me/"
@@ -3690,7 +3389,7 @@
         "name": "minizlib",
         "direct": false,
         "license": "MIT",
-        "licenseTxt": "Minizlib was created by Isaac Z. Schlueter.\nIt is a derivative work of the Node.js project.\n\n\"\"\"\nCopyright Isaac Z. Schlueter and Contributors\nCopyright Node.js contributors. All rights reserved.\nCopyright Joyent, Inc. and other Node contributors. All rights reserved.\n\nPermission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the \"Software\"),\nto deal in the Software without restriction, including without limitation\nthe rights to use, copy, modify, merge, publish, distribute, sublicense,\nand/or sell copies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\"\"\"",
+        "licenseTxt": "Minizlib was created by Isaac Z. Schlueter.\nIt is a derivative work of the Node.js project.\n\n\"\"\"\nCopyright (c) 2017-2023 Isaac Z. Schlueter and Contributors\nCopyright (c) 2017-2023 Node.js contributors. All rights reserved.\nCopyright (c) 2017-2023 Joyent, Inc. and other Node contributors. All rights reserved.\n\nPermission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the \"Software\"),\nto deal in the Software without restriction, including without limitation\nthe rights to use, copy, modify, merge, publish, distribute, sublicense,\nand/or sell copies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\"\"\"",
         "repository": "https://github.com/isaacs/minizlib",
         "publisher": "Isaac Z. Schlueter",
         "url": "http://blog.izs.me/"
@@ -3810,13 +3509,6 @@
         "publisher": "Hardmath123"
     },
     {
-        "name": "negotiator",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "(The MIT License)\n\nCopyright (c) 2012-2014 Federico Romero\nCopyright (c) 2012-2014 Isaac Z. Schlueter\nCopyright (c) 2014-2015 Douglas Christopher Wilson\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/jshttp/negotiator"
-    },
-    {
         "name": "ngraph.events",
         "direct": false,
         "license": "BSD-3-Clause",
@@ -3842,13 +3534,6 @@
         "publisher": "Lukas Geiger"
     },
     {
-        "name": "node-addon-api",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "The MIT License (MIT)\n\nCopyright (c) 2017 [Node.js API collaborators](https://github.com/nodejs/node-addon-api#collaborators)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/nodejs/node-addon-api"
-    },
-    {
         "name": "node-domexception",
         "direct": false,
         "license": "MIT",
@@ -3865,48 +3550,12 @@
         "publisher": "David Frank"
     },
     {
-        "name": "node-gyp",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "(The MIT License)\n\nCopyright (c) 2012 Nathan Rajlich <nathan@tootallnate.net>\n\nPermission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \"Software\"), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/nodejs/node-gyp",
-        "publisher": "Nathan Rajlich",
-        "url": "http://tootallnate.net"
-    },
-    {
         "name": "nofilter",
         "direct": false,
         "license": "MIT",
         "licenseTxt": "The MIT License (MIT)\n\nCopyright (c) 2021 Joe Hildebrand\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
         "repository": "https://github.com/hildjj/nofilter",
         "publisher": "Joe Hildebrand"
-    },
-    {
-        "name": "nopt",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/npm/nopt",
-        "publisher": "Isaac Z. Schlueter",
-        "url": "http://blog.izs.me/"
-    },
-    {
-        "name": "npmlog",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/npm/npmlog",
-        "publisher": "Isaac Z. Schlueter",
-        "url": "http://blog.izs.me/"
-    },
-    {
-        "name": "object-assign",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "The MIT License (MIT)\n\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
-        "repository": "https://github.com/sindresorhus/object-assign",
-        "publisher": "Sindre Sorhus",
-        "url": "sindresorhus.com"
     },
     {
         "name": "once",
@@ -3955,15 +3604,6 @@
         "license": "MIT",
         "licenseTxt": "MIT License\n\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
         "repository": "https://github.com/sindresorhus/p-limit",
-        "publisher": "Sindre Sorhus",
-        "url": "https://sindresorhus.com"
-    },
-    {
-        "name": "p-map",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "MIT License\n\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/sindresorhus/p-map",
         "publisher": "Sindre Sorhus",
         "url": "https://sindresorhus.com"
     },
@@ -4017,15 +3657,6 @@
         "repository": "https://github.com/doowb/parse-passwd",
         "publisher": "Brian Woodward",
         "url": "https://github.com/doowb"
-    },
-    {
-        "name": "path-is-absolute",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "The MIT License (MIT)\n\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
-        "repository": "https://github.com/sindresorhus/path-is-absolute",
-        "publisher": "Sindre Sorhus",
-        "url": "sindresorhus.com"
     },
     {
         "name": "path-key",
@@ -4154,30 +3785,12 @@
         "publisher": "Roman Shtylman"
     },
     {
-        "name": "promise-inflight",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "Copyright (c) 2017, Rebecca Turner <me@re-becca.org>\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\nOR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/iarna/promise-inflight",
-        "publisher": "Rebecca Turner",
-        "url": "http://re-becca.org/"
-    },
-    {
         "name": "promise-limit",
         "direct": false,
         "license": "ISC",
         "licenseTxt": "promise-limit  [![npm version](https://img.shields.io/npm/v/promise-limit.svg)](https://www.npmjs.com/package/promise-limit) [![npm](https://img.shields.io/npm/dm/promise-limit.svg)](https://www.npmjs.com/package/promise-limit) [![Build Status](https://travis-ci.org/featurist/promise-limit.svg?branch=master)](https://travis-ci.org/featurist/promise-limit)\n===\n\nLimit outstanding calls to promise returning functions, or a semaphore for promises. You might want to do this to reduce load on external services, or reduce memory usage when processing large batches of jobs.\n\n```sh\nnpm install promise-limit\n```\n\n```js\nvar promiseLimit = require('promise-limit')\n\nvar limit = promiseLimit(2)\n\nvar jobs = ['a', 'b', 'c', 'd', 'e']\n\nPromise.all(jobs.map((name) => {\n  return limit(() => job(name))\n})).then(results => {\n  console.log()\n  console.log('results:', results)\n})\n\nfunction job (name) {\n  var text = `job ${name}`\n  console.log('started', text)\n\n  return new Promise(function (resolve) {\n    setTimeout(() => {\n      console.log('       ', text, 'finished')\n      resolve(text)\n    }, 100)\n  })\n}\n```\n\nwill output:\n\n```\nstarted job a\nstarted job b\n        job a finished\n        job b finished\nstarted job c\nstarted job d\n        job c finished\n        job d finished\nstarted job e\n        job e finished\n\nresults: [ 'job a', 'job b', 'job c', 'job d', 'job e' ]\n```\n\nAPI\n---\n\n```js\nvar promiseLimit = require('promise-limit')\n\npromiseLimit(concurrency?: Number) -> limit\n```\n\nReturns a function that can be used to wrap promise returning functions, limiting them to `concurrency` outstanding calls.\n\n- `concurrency` the concurrency, i.e. 1 will limit calls to one at a time, effectively in sequence or serial. 2 will allow two at a time, etc. 0 or `undefined` specify no limit, and all calls will be run in parallel.\n\nlimit\n=====\n\n```js\nlimit(fn: () -> Promise<T>) -> Promise<T>\n```\n\nA function that limits calls to `fn`, based on `concurrency` above. Returns a promise that resolves or rejects the same value or error as `fn`. All functions are executed in the same order in which they were passed to `limit`. `fn` must return a promise.\n\n* `fn` a function that is called with no arguments and returns a promise. You can pass arguments to your function by putting it inside another function, i.e. `() -> myfunc(a, b, c)`.\n\nlimit.map\n=========\n\n```js\nlimit.map(items: [T], mapper: (T) -> Promise<R>) -> Promise<[R]>\n```\n\nMaps an array of items using `mapper`, but limiting the number of concurrent calls to `mapper` with the `concurrency` of `limit`. If at least one call to `mapper` returns a rejected promise, the result of `map` is a the same rejected promise, and no further calls to `mapper` are made.\n\nlimit.queue\n===========\n\n```js\nlimit.queue: Number\n```\n\nReturns the queue length, the number of jobs that are waiting to be started. You could use this to throttle incoming jobs, so the queue doesn't overwhealm the available memory - for e.g. `pause()` a stream.\n\n## We're Hiring!\nFeaturist provides full stack, feature driven development teams. Want to join us? Check out [our career opportunities](https://www.featurist.co.uk/careers/).",
         "repository": "https://github.com/featurist/promise-limit",
         "publisher": "Tim Macfarlane"
-    },
-    {
-        "name": "promise-retry",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "Copyright (c) 2014 IndigoUnited\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is furnished\nto do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
-        "repository": "https://github.com/IndigoUnited/node-promise-retry",
-        "publisher": "IndigoUnited",
-        "url": "http://indigounited.com"
     },
     {
         "name": "property-information",
@@ -4344,7 +3957,7 @@
         "name": "rimraf",
         "direct": false,
         "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+        "licenseTxt": "The ISC License\n\nCopyright (c) 2011-2023 Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
         "repository": "https://github.com/isaacs/rimraf",
         "publisher": "Isaac Z. Schlueter",
         "url": "http://blog.izs.me/"
@@ -4426,14 +4039,6 @@
         "url": "http://blakeembrey.me"
     },
     {
-        "name": "set-blocking",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "Copyright (c) 2016, Contributors\n\nPermission to use, copy, modify, and/or distribute this software\nfor any purpose with or without fee is hereby granted, provided\nthat the above copyright notice and this permission notice\nappear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES\nOF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE\nLIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,\nARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/yargs/set-blocking",
-        "publisher": "Ben Coe"
-    },
-    {
         "name": "shebang-command",
         "direct": false,
         "license": "MIT",
@@ -4471,7 +4076,7 @@
         "name": "signal-exit",
         "direct": false,
         "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) 2015, Contributors\n\nPermission to use, copy, modify, and/or distribute this software\nfor any purpose with or without fee is hereby granted, provided\nthat the above copyright notice and this permission notice\nappear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES\nOF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE\nLIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,\nARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+        "licenseTxt": "The ISC License\n\nCopyright (c) 2015-2023 Benjamin Coe, Isaac Z. Schlueter, and Contributors\n\nPermission to use, copy, modify, and/or distribute this software\nfor any purpose with or without fee is hereby granted, provided\nthat the above copyright notice and this permission notice\nappear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES\nOF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE\nLIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,\nARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
         "repository": "https://github.com/tapjs/signal-exit",
         "publisher": "Ben Coe"
     },
@@ -4526,15 +4131,6 @@
         "repository": "https://github.com/snowflakedb/snowflake-connector-nodejs",
         "publisher": "Snowflake Computing, Inc.",
         "url": "https://www.snowflake.com/"
-    },
-    {
-        "name": "socks-proxy-agent",
-        "direct": false,
-        "license": "MIT",
-        "licenseTxt": "socks-proxy-agent\n================\n### A SOCKS proxy `http.Agent` implementation for HTTP and HTTPS\n[![Build Status](https://github.com/TooTallNate/node-socks-proxy-agent/workflows/Node%20CI/badge.svg)](https://github.com/TooTallNate/node-socks-proxy-agent/actions?workflow=Node+CI)\n\nThis module provides an `http.Agent` implementation that connects to a\nspecified SOCKS proxy server, and can be used with the built-in `http`\nand `https` modules.\n\nIt can also be used in conjunction with the `ws` module to establish a WebSocket\nconnection over a SOCKS proxy. See the \"Examples\" section below.\n\nInstallation\n------------\n\nInstall with `npm`:\n\n``` bash\nnpm install socks-proxy-agent\n```\n\n\nExamples\n--------\n\n#### TypeScript example\n\n```ts\nimport https from 'https';\nimport { SocksProxyAgent } from 'socks-proxy-agent';\n\nconst info = {\n\thostname: 'br41.nordvpn.com',\n\tuserId: 'your-name@gmail.com',\n\tpassword: 'abcdef12345124'\n};\nconst agent = new SocksProxyAgent(info);\n\nhttps.get('https://ipinfo.io', { agent }, (res) => {\n\tconsole.log(res.headers);\n\tres.pipe(process.stdout);\n});\n```\n\n#### `http` module example\n\n```js\nvar url = require('url');\nvar http = require('http');\nvar { SocksProxyAgent } = require('socks-proxy-agent');\n\n// SOCKS proxy to connect to\nvar proxy = process.env.socks_proxy || 'socks://127.0.0.1:1080';\nconsole.log('using proxy server %j', proxy);\n\n// HTTP endpoint for the proxy to connect to\nvar endpoint = process.argv[2] || 'http://nodejs.org/api/';\nconsole.log('attempting to GET %j', endpoint);\nvar opts = url.parse(endpoint);\n\n// create an instance of the `SocksProxyAgent` class with the proxy server information\nvar agent = new SocksProxyAgent(proxy);\nopts.agent = agent;\n\nhttp.get(opts, function (res) {\n\tconsole.log('\"response\" event!', res.headers);\n\tres.pipe(process.stdout);\n});\n```\n\n#### `https` module example\n\n```js\nvar url = require('url');\nvar https = require('https');\nvar { SocksProxyAgent } = require('socks-proxy-agent');\n\n// SOCKS proxy to connect to\nvar proxy = process.env.socks_proxy || 'socks://127.0.0.1:1080';\nconsole.log('using proxy server %j', proxy);\n\n// HTTP endpoint for the proxy to connect to\nvar endpoint = process.argv[2] || 'https://encrypted.google.com/';\nconsole.log('attempting to GET %j', endpoint);\nvar opts = url.parse(endpoint);\n\n// create an instance of the `SocksProxyAgent` class with the proxy server information\nvar agent = new SocksProxyAgent(proxy);\nopts.agent = agent;\n\nhttps.get(opts, function (res) {\n\tconsole.log('\"response\" event!', res.headers);\n\tres.pipe(process.stdout);\n});\n```\n\n#### `ws` WebSocket connection example\n\n``` js\nvar WebSocket = require('ws');\nvar { SocksProxyAgent } = require('socks-proxy-agent');\n\n// SOCKS proxy to connect to\nvar proxy = process.env.socks_proxy || 'socks://127.0.0.1:1080';\nconsole.log('using proxy server %j', proxy);\n\n// WebSocket endpoint for the proxy to connect to\nvar endpoint = process.argv[2] || 'ws://echo.websocket.org';\nconsole.log('attempting to connect to WebSocket %j', endpoint);\n\n// create an instance of the `SocksProxyAgent` class with the proxy server information\nvar agent = new SocksProxyAgent(proxy);\n\n// initiate the WebSocket connection\nvar socket = new WebSocket(endpoint, { agent: agent });\n\nsocket.on('open', function () {\n\tconsole.log('\"open\" event!');\n\tsocket.send('hello world');\n});\n\nsocket.on('message', function (data, flags) {\n\tconsole.log('\"message\" event! %j %j', data, flags);\n\tsocket.close();\n});\n```\n\nLicense\n-------\n\n(The MIT License)\n\nCopyright (c) 2013 Nathan Rajlich &lt;nathan@tootallnate.net&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-        "repository": "https://github.com/TooTallNate/node-socks-proxy-agent",
-        "publisher": "Nathan Rajlich",
-        "url": "http://n8.io/"
     },
     {
         "name": "socks",
@@ -4641,14 +4237,6 @@
         "licenseTxt": "Copyright Joyent, Inc. All rights reserved.\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to\ndeal in the Software without restriction, including without limitation the\nrights to use, copy, modify, merge, publish, distribute, sublicense, and/or\nsell copies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS\nIN THE SOFTWARE.",
         "repository": "https://github.com/joyent/node-sshpk",
         "publisher": "Joyent, Inc"
-    },
-    {
-        "name": "ssri",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "ISC License\n\nCopyright 2021 (c) npm, Inc.\n\nPermission to use, copy, modify, and/or distribute this software for\nany purpose with or without fee is hereby granted, provided that the\nabove copyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE COPYRIGHT HOLDER DISCLAIMS\nALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR\nCONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE\nOR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE\nUSE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/npm/ssri",
-        "publisher": "GitHub Inc."
     },
     {
         "name": "stack-trace",
@@ -4830,7 +4418,7 @@
         "license": "ISC",
         "licenseTxt": "The ISC License\n\nCopyright (c) Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
         "repository": "https://github.com/isaacs/node-tar",
-        "publisher": "GitHub Inc."
+        "publisher": "Isaac Z. Schlueter"
     },
     {
         "name": "targz",
@@ -5054,22 +4642,6 @@
         "url": "http://visiblearea.com"
     },
     {
-        "name": "unique-filename",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "Copyright npm, Inc\n\nPermission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/npm/unique-filename",
-        "publisher": "GitHub Inc."
-    },
-    {
-        "name": "unique-slug",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright npm, Inc\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/npm/unique-slug",
-        "publisher": "GitHub Inc."
-    },
-    {
         "name": "unist-util-is",
         "direct": false,
         "license": "MIT",
@@ -5285,15 +4857,6 @@
         "url": "@mafintosh"
     },
     {
-        "name": "wide-align",
-        "direct": false,
-        "license": "ISC",
-        "licenseTxt": "Copyright (c) 2015, Rebecca Turner <me@re-becca.org>\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\nOR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-        "repository": "https://github.com/iarna/wide-align",
-        "publisher": "Rebecca Turner",
-        "url": "http://re-becca.org/"
-    },
-    {
         "name": "winston-transport",
         "direct": false,
         "license": "MIT",
@@ -5381,8 +4944,8 @@
     {
         "name": "yallist",
         "direct": false,
-        "license": "ISC",
-        "licenseTxt": "The ISC License\n\nCopyright (c) Isaac Z. Schlueter and Contributors\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+        "license": "BlueOak-1.0.0",
+        "licenseTxt": "All packages under `src/` are licensed according to the terms in\ntheir respective `LICENSE` or `LICENSE.md` files.\n\nThe remainder of this project is licensed under the Blue Oak\nModel License, as follows:\n\n-----\n\n# Blue Oak Model License\n\nVersion 1.0.0\n\n## Purpose\n\nThis license gives everyone as much permission to work with\nthis software as possible, while protecting contributors\nfrom liability.\n\n## Acceptance\n\nIn order to receive this license, you must agree to its\nrules.  The rules of this license are both obligations\nunder that agreement and conditions to your license.\nYou must not do anything with this software that triggers\na rule that you cannot or will not follow.\n\n## Copyright\n\nEach contributor licenses you to do everything with this\nsoftware that would otherwise infringe that contributor's\ncopyright in it.\n\n## Notices\n\nYou must ensure that everyone who gets a copy of\nany part of this software from you, with or without\nchanges, also gets the text of this license or a link to\n<https://blueoakcouncil.org/license/1.0.0>.\n\n## Excuse\n\nIf anyone notifies you in writing that you have not\ncomplied with [Notices](#notices), you can keep your\nlicense by taking all practical steps to comply within 30\ndays after the notice.  If you do not do so, your license\nends immediately.\n\n## Patent\n\nEach contributor licenses you to do everything with this\nsoftware that would otherwise infringe any patent claims\nthey can license or become able to license.\n\n## Reliability\n\nNo contributor can revoke this license.\n\n## No Liability\n\n***As far as the law allows, this software comes as is,\nwithout any warranty or condition, and no contributor\nwill be liable to anyone for any damages related to this\nsoftware or this license, under any kind of legal claim.***",
         "repository": "https://github.com/isaacs/yallist",
         "publisher": "Isaac Z. Schlueter",
         "url": "http://blog.izs.me/"
