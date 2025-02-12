@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.6.16 - 2025-02-12
+
+### Changed
+
+- Added auto refresh option to results.
+- Added option to script data changes, rather than applying them.
+
+### Fixed
+
+- MSSQL: Fixed issue with introspection when user only had read only access. #280
+- Notebook: Prevent keyboard events from propagating to the notebook. #281
+
+
 ## 1.6.15 - 2025-02-11
 
 ### Fixed
