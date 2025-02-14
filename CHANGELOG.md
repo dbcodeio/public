@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.6.17 - 2025-02-14
+
+### Fixed
+
+- DuckDB: Date filters in results not working correctly. #290
+- Notebooks: Copied cells broke the notebook render. #293
+
 ## 1.6.16 - 2025-02-12
 
 ### Changed
