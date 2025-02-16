@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 1.6.18 - 2025-02-16
+
+
+### Fixed
+
+- Cassandra: Added tunnel option to the config.
+- Changed to a filestore for introspection cache, and mapped formats to a version. #291
+- SQL Server: Show if a database is offline. #296
+
 ## 1.6.17 - 2025-02-14
 
 ### Fixed

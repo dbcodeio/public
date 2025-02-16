@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
 	"publisher": "dbcode",
-	"version": "1.6.17",
+	"version": "1.6.18",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -2491,8 +2491,7 @@
 		"wdio-wait-for": "^3.0.11"
 	},
 	"dependencies": {
-		"@ag-grid-community/core": "^32.3.0",
-		"@ag-grid-community/styles": "^32.3.0",
+		"@ag-grid-community/styles": "^33.0.3",
 		"@date-fns/utc": "^2.1.0",
 		"@duckdb/node-api": "^1.2.0-alpha.13",
 		"@google-cloud/bigquery": "^7.9.1",
@@ -2503,6 +2502,7 @@
 		"@vscode/codicons": "^0.0.36",
 		"@vscode/l10n": "^0.0.18",
 		"@vscode/prompt-tsx": "^0.3.0-alpha.5",
+		"ag-grid-enterprise": "^33.1.0",
 		"another-json-xml": "^2.0.7",
 		"base64-js": "^1.5.1",
 		"better-sqlite3-multiple-ciphers": "11.3.0",
