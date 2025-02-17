@@ -1,7 +1,13 @@
 # CHANGELOG
 
-## 1.6.18 - 2025-02-16
+## 1.6.19 - 2025-02-17
 
+### Fixed
+
+- Prevent saving a connection in a workspace, when one is not open. #301
+- MongoDB: Fixed issue with refreshing the results.
+
+## 1.6.18 - 2025-02-16
 
 ### Fixed
 
