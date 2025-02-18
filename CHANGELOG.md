@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 1.6.20 - 2025-02-18
+
+### Fixed
+
+- MySQL/MariaDB: Added binary data type. #305
+- Added debug command to output additional debugging.
+- MongoDB: Improved connection performance, filtering, data type detection. #276
+
+
 ## 1.6.19 - 2025-02-17
 
 ### Fixed
