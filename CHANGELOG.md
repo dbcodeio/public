@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.6.21 - 2025-02-20
+
+### Fixed
+
+- AI: Added comment to the context provided to the AI model.
+- Query Parameters: No longer trigger for % unless followed by ( or { #309
+- SQL Server: Fixed issue with default cschema returning null. #291
+
 ## 1.6.20 - 2025-02-18
 
 ### Fixed
