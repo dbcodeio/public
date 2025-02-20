@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.6.22 - 2025-02-20
+
+### Fixed
+
+- MariaDB: Added support for 10.0 #306
+- MongoDB: Sorted collections and views in the schema, fixed queries that return single values. #276
+
 ## 1.6.21 - 2025-02-20
 
 ### Fixed
