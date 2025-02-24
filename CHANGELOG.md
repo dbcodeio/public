@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.7.0 - 2025-02-24
+
+### Changed
+
+- Redis: Preview support for Redis, browsing works, not much else at the moment. #39
+- Added item to the header context menu of results to clear one or all column filters. #315
+
+### Fixed
+
+- UUID icon rendering issue when it was a primary key in the ERD.
+- A single column will start no wider than 1/3 rendering space for the results. #314
+- Disconnecting a connection was not correctly showing it disconnected in the explorer. #222
+
 ## 1.6.22 - 2025-02-20
 
 ### Fixed
