@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.7.1 - 2025-02-27
+
+### Changed
+
+- Entity Relationship Diagrams will now only show the filtered tables if a filter is applied in the explorer. #322
+
+### Fixed
+
+- SQL Server: Fix introspection issue on servers with case sensitive collation. #318
+- Export: SQL Insert statements now include the schema if applicable. #321
+- MySQL/MariaDB: Fixed issue with editing triggers. 
+- MySQL/MariaDB: Fixed issue with socket connections.
+- Postgres: Fixed issue with current_schema returning a schema that does not exist.
+
 ## 1.7.0 - 2025-02-24
 
 ### Changed
