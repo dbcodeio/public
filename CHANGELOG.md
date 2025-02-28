@@ -1,9 +1,10 @@
 # CHANGELOG
 
-## 1.7.2 - 2025-02-28
+## 1.7.3 - 2025-02-28
 
 ### Changed
 
+- Added a go to definition link on tables, views and materialized Views (ctrl/cmd + click or f12 when hovering a table, view or materialized view in a query).
 - Connections: Added common default socket paths, and changed it to a text input since VS Code prevents selecting locked files.
 
 ### Fixed
