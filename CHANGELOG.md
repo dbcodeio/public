@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.7.2 - 2025-02-28
+
+### Changed
+
+- Connections: Added common default socket paths, and changed it to a text input since VS Code prevents selecting locked files.
+
+### Fixed
+
+- Editing a value to the default did not correctly save the change. #331 #299
+- Postgres: Adding vector datatype. #330
+- Chart: Tooltips were not showing on the chart, right clicking caused the chart to disappear. #30
+
 ## 1.7.1 - 2025-02-27
 
 ### Changed
