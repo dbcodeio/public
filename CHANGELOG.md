@@ -1,10 +1,22 @@
 # CHANGELOG
 
+## 1.7.4 - 2025-03-03
+
+### Changed
+
+- Hover: Layout has changed, now includes a icon to open the item where applicable (eg, table, view, materialized view, procedure, function).
+
+### Fixed
+
+- Hover: Now works with dotted and escaped identifiers. #333
+- Hover: Now works with materialized views.
+- Go to Definition: Works with dotted and escaped identifiers. #333
+
 ## 1.7.3 - 2025-02-28
 
 ### Changed
 
-- Added a go to definition link on tables, views and materialized Views (ctrl/cmd + click or f12 when hovering a table, view or materialized view in a query).
+- Added a go to definition link on tables, views and materialized Views (ctrl/cmd + click or f12 when hovering a table, view or materialized view in a query). #333
 - Connections: Added common default socket paths, and changed it to a text input since VS Code prevents selecting locked files.
 
 ### Fixed
