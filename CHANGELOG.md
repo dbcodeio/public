@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 1.8.0 - 2025-03-05
+
+### Changed
+
+- Inline Completion: Will now suggest databases when appropriate, and supports dotted notation for databases, eg database.schema.table. #157 
+- When VSCode is restarted only connections for any open files will be re created. #328
+- Explorer: Support multiple selections for truncating and dropping tables.. be careful! #344
+- Explorer: Added refresh to the database context menu. #343
+- Explorer: Added option to copy item name to the clipboard.
+- StarRocks: Added support for StarRocks. #340
+- Doris: Added support for Apache Doris. #199 #228
+- Setting: Added setting for pagination size to control rows per page (auto or 10, 20, 50, 100, 200, 500). #342
+
+### Fixed
+
+- SQL Server: Added system views to introspection. #336
+- DuckDB: Fixed array fields reporting unknown type. #346
+
 ## 1.7.4 - 2025-03-03
 
 ### Changed
