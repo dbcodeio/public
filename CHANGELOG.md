@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.8.1 - 2025-03-06
+
+### Changed
+
+- Excel and CSV Support: Support for opening .xlsx and .csv files as databases to query (preview). #263
+
+### Fixed
+
+- SQLite: Fixed SQL generation when only an offset was used, without a limit. #335
+- Redis: Username defaults to default as the default.
+- HTTP: Added support for the vscode proxy setting to network requests, as well as the https_proxy enviroment variable. #326
+
+
 ## 1.8.0 - 2025-03-05
 
 ### Changed
@@ -10,7 +23,7 @@
 - Explorer: Added refresh to the database context menu. #343
 - Explorer: Added option to copy item name to the clipboard.
 - StarRocks: Added support for StarRocks. #340
-- Doris: Added support for Apache Doris. #199 #228
+- Doris: Added support for Apache Doris. #199 #267
 - Setting: Added setting for pagination size to control rows per page (auto or 10, 20, 50, 100, 200, 500). #342
 
 ### Fixed
