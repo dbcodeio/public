@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.8.2 - 2025-03-09
+
+
+### Changed
+
+- Editor: If the cursor is in a insert statement column, the corresponding value will be highlighted. #352
+- SQLite/D1/LibSQL: Moved to new introspection model, added triggers support. #355
+- Results: Open in editor icon only shows when editing a cell, option to open editor added to the context menu when right clicking on a cell. #357
+
+### Fixed
+
+- Hover: Bug in JSON to MD library. #350
+- DuckDB: Added struct and map types. #351
+- MariaDB: If MySQL is selected but Database is Maria, will switch to MariaDB silently. #354
+- Inline completion: Fixed cross database not suggesting columns in select. #157 
+
 ## 1.8.1 - 2025-03-06
 
 ### Changed
