@@ -1,7 +1,21 @@
 # CHANGELOG
 
-## 1.8.2 - 2025-03-09
+## 1.8.3 - 2025-03-11
 
+### Changed
+
+- Setting: Result font size. #356
+- Keybindings: cmd+enter and windows+enter for pc are now the command bindings for executing a sql statement in the editor, or applying changes to objects like triggers, procs, etc. #304
+- Excel and CSV Support: Warning about DML statements (update, insert, delete) not being applied to the file system for now.
+
+### Fixed
+
+- Editor: Insert statement values were not being highlighted correctly when in parenthesis. #352
+- Keybindings: The keybindings for executing a sql statement in the editor, or applying changes to objects like triggers, procs, etc.
+- Keybindings: The ctrl+d keybinding was breaking the terminal ctrl+d keybinding.
+- Zero Config: Don't discover file formats (Excel, CSV, etc) on the initial load. #359
+
+## 1.8.2 - 2025-03-09
 
 ### Changed
 
@@ -13,7 +27,7 @@
 
 - Hover: Bug in JSON to MD library. #350
 - DuckDB: Added struct and map types. #351
-- MariaDB: If MySQL is selected but Database is Maria, will switch to MariaDB silently. #354
+- MariaDB: If MySQL is selected but database is Maria, will switch to MariaDB silently. #354
 - Inline completion: Fixed cross database not suggesting columns in select. #157 
 
 ## 1.8.1 - 2025-03-06
