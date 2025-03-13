@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.9.0 - 2025-03-13
+
+### Changed
+
+- Connections: Added more color options. #245
+- Connections: Added read only option to connections where supported by the driver. #183
+- Connections: Added role option to enable permissions for statement execution. #183
+- SingleStore: Added support for SingleStore. #369
+- Settings: New settings to configure connection role permissions.
+- Settings: Removed warn before pre apply on procedure editing (replaced with role support).
+- CSV: Now supports specifying the delimiter, quote, escape characters and header row. #367
+
 ## 1.8.4 - 2025-03-13
 
 ### Changed

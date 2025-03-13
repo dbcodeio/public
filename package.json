@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
 	"publisher": "dbcode",
-	"version": "1.8.4",
+	"version": "1.9.0",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -1037,6 +1037,14 @@
 				}
 			},
 			{
+				"id": "dbcode.BD0014",
+				"description": "Color #BD0014",
+				"defaults": {
+					"dark": "#BD0014",
+					"light": "#BD0014"
+				}
+			},
+			{
 				"id": "dbcode.F00019",
 				"description": "Color #F00019",
 				"defaults": {
@@ -1045,11 +1053,195 @@
 				}
 			},
 			{
+				"id": "dbcode.F33246",
+				"description": "Color #F33246",
+				"defaults": {
+					"dark": "#F33246",
+					"light": "#F33246"
+				}
+			},
+			{
+				"id": "dbcode.F66675",
+				"description": "Color #F66675",
+				"defaults": {
+					"dark": "#F66675",
+					"light": "#F66675"
+				}
+			},
+			{
+				"id": "dbcode.F999A3",
+				"description": "Color #F999A3",
+				"defaults": {
+					"dark": "#F999A3",
+					"light": "#F999A3"
+				}
+			},
+			{
+				"id": "dbcode.FCCCD1",
+				"description": "Color #FCCCD1",
+				"defaults": {
+					"dark": "#FCCCD1",
+					"light": "#FCCCD1"
+				}
+			},
+			{
+				"id": "dbcode.FF5116",
+				"description": "Color #FF5116",
+				"defaults": {
+					"dark": "#FF5116",
+					"light": "#FF5116"
+				}
+			},
+			{
+				"id": "dbcode.FF642F",
+				"description": "Color #FF642F",
+				"defaults": {
+					"dark": "#FF642F",
+					"light": "#FF642F"
+				}
+			},
+			{
+				"id": "dbcode.FF7749",
+				"description": "Color #FF7749",
+				"defaults": {
+					"dark": "#FF7749",
+					"light": "#FF7749"
+				}
+			},
+			{
+				"id": "dbcode.FF8A62",
+				"description": "Color #FF8A62",
+				"defaults": {
+					"dark": "#FF8A62",
+					"light": "#FF8A62"
+				}
+			},
+			{
+				"id": "dbcode.FF9D7C",
+				"description": "Color #FF9D7C",
+				"defaults": {
+					"dark": "#FF9D7C",
+					"light": "#FF9D7C"
+				}
+			},
+			{
+				"id": "dbcode.FFB095",
+				"description": "Color #FFB095",
+				"defaults": {
+					"dark": "#FFB095",
+					"light": "#FFB095"
+				}
+			},
+			{
+				"id": "dbcode.FFC3AF",
+				"description": "Color #FFC3AF",
+				"defaults": {
+					"dark": "#FFC3AF",
+					"light": "#FFC3AF"
+				}
+			},
+			{
+				"id": "dbcode.004A37",
+				"description": "Color #004A37",
+				"defaults": {
+					"dark": "#004A37",
+					"light": "#004A37"
+				}
+			},
+			{
+				"id": "dbcode.00634A",
+				"description": "Color #00634A",
+				"defaults": {
+					"dark": "#00634A",
+					"light": "#00634A"
+				}
+			},
+			{
+				"id": "dbcode.007D5D",
+				"description": "Color #007D5D",
+				"defaults": {
+					"dark": "#007D5D",
+					"light": "#007D5D"
+				}
+			},
+			{
+				"id": "dbcode.009670",
+				"description": "Color #009670",
+				"defaults": {
+					"dark": "#009670",
+					"light": "#009670"
+				}
+			},
+			{
+				"id": "dbcode.00B083",
+				"description": "Color #00B083",
+				"defaults": {
+					"dark": "#00B083",
+					"light": "#00B083"
+				}
+			},
+			{
+				"id": "dbcode.00E3A9",
+				"description": "Color #00E3A9",
+				"defaults": {
+					"dark": "#00E3A9",
+					"light": "#00E3A9"
+				}
+			},
+			{
+				"id": "dbcode.0074B3",
+				"description": "Color #0074B3",
+				"defaults": {
+					"dark": "#0074B3",
+					"light": "#0074B3"
+				}
+			},
+			{
+				"id": "dbcode.0085CC",
+				"description": "Color #0085CC",
+				"defaults": {
+					"dark": "#0085CC",
+					"light": "#0085CC"
+				}
+			},
+			{
+				"id": "dbcode.0095E6",
+				"description": "Color #0095E6",
+				"defaults": {
+					"dark": "#0095E6",
+					"light": "#0095E6"
+				}
+			},
+			{
 				"id": "dbcode.00A6FF",
 				"description": "Color #00A6FF",
 				"defaults": {
 					"dark": "#00A6FF",
 					"light": "#00A6FF"
+				}
+			},
+			{
+				"id": "dbcode.1AAFFF",
+				"description": "Color #1AAFFF",
+				"defaults": {
+					"dark": "#1AAFFF",
+					"light": "#1AAFFF"
+				}
+			},
+			{
+				"id": "dbcode.33B8FF",
+				"description": "Color #33B8FF",
+				"defaults": {
+					"dark": "#33B8FF",
+					"light": "#33B8FF"
+				}
+			},
+			{
+				"id": "dbcode.4DC1FF",
+				"description": "Color #4DC1FF",
+				"defaults": {
+					"dark": "#4DC1FF",
+					"light": "#4DC1FF"
 				}
 			},
 			{
@@ -1077,14 +1269,6 @@
 				}
 			},
 			{
-				"id": "dbcode.FF8A62",
-				"description": "Color #FF8A62",
-				"defaults": {
-					"dark": "#FF8A62",
-					"light": "#FF8A62"
-				}
-			},
-			{
 				"id": "dbcode.FFC54F",
 				"description": "Color #FFC54F",
 				"defaults": {
@@ -1101,11 +1285,19 @@
 				}
 			},
 			{
-				"id": "dbcode.009670",
-				"description": "Color #009670",
+				"id": "dbcode.D5B2A0",
+				"description": "Color #D5B2A0",
 				"defaults": {
-					"dark": "#009670",
-					"light": "#009670"
+					"dark": "#D5B2A0",
+					"light": "#D5B2A0"
+				}
+			},
+			{
+				"id": "dbcode.71F9F8",
+				"description": "Color #71F9F8",
+				"defaults": {
+					"dark": "#71F9F8",
+					"light": "#71F9F8"
 				}
 			},
 			{
@@ -1130,6 +1322,14 @@
 				"defaults": {
 					"dark": "#B2A0D5",
 					"light": "#B2A0D5"
+				}
+			},
+			{
+				"id": "dbcode.8EA23B",
+				"description": "Color #8EA23B",
+				"defaults": {
+					"dark": "#8EA23B",
+					"light": "#8EA23B"
 				}
 			}
 		],
@@ -1857,57 +2057,57 @@
 					"fontCharacter": "\\ea65"
 				}
 			},
+			"dbcode-singlestore": {
+				"description": "Singlestore",
+				"default": {
+					"fontPath": "out/resources/icons.woff",
+					"fontCharacter": "\\ea66"
+				}
+			},
 			"dbcode-snowflake": {
 				"description": "Snowflake",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea66"
+					"fontCharacter": "\\ea67"
 				}
 			},
 			"dbcode-sort": {
 				"description": "Sort",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea67"
+					"fontCharacter": "\\ea68"
 				}
 			},
 			"dbcode-split": {
 				"description": "Split",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea68"
+					"fontCharacter": "\\ea69"
 				}
 			},
 			"dbcode-sql": {
 				"description": "Sql",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea69"
+					"fontCharacter": "\\ea6a"
 				}
 			},
 			"dbcode-sqlite": {
 				"description": "Sqlite",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea6a"
+					"fontCharacter": "\\ea6b"
 				}
 			},
 			"dbcode-starrocks": {
 				"description": "Starrocks",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea6b"
+					"fontCharacter": "\\ea6c"
 				}
 			},
 			"dbcode-string": {
 				"description": "String",
-				"default": {
-					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea6c"
-				}
-			},
-			"dbcode-table-import": {
-				"description": "Table Import",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
 					"fontCharacter": "\\ea6d"
@@ -2123,18 +2323,6 @@
 				}
 			},
 			{
-				"title": "%Warnings%",
-				"order": 4,
-				"type": "object",
-				"properties": {
-					"dbcode.warnBeforePreApply": {
-						"type": "boolean",
-						"default": true,
-						"markdownDescription": "%Warn before running pre apply SQL when applying a a change to a database object (table, view, procedure, function, etc.).%"
-					}
-				}
-			},
-			{
 				"title": "%AI%",
 				"order": 5,
 				"type": "object",
@@ -2171,8 +2359,495 @@
 				}
 			},
 			{
-				"title": "%Connection Color%",
+				"title": "%Connection Roles%",
 				"order": 7,
+				"type": "object",
+				"properties": {
+					"dbcode.connection.role.development": {
+						"order": 1,
+						"type": "object",
+						"markdownDescription": "%Permissions for the development role.%",
+						"properties": {
+							"select": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"insert": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"update": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"delete": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"truncate": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"execute": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"create": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"alter": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"drop": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"other": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							}
+						},
+						"additionalProperties": false,
+						"default": {
+							"select": "allow",
+							"insert": "allow",
+							"update": "allow",
+							"delete": "allow",
+							"truncate": "allow",
+							"execute": "allow",
+							"create": "allow",
+							"alter": "allow",
+							"drop": "allow",
+							"other": "allow"
+						}
+					},
+					"dbcode.connection.role.testing": {
+						"type": "object",
+						"order": 2,
+						"markdownDescription": "%Permissions for the testing role.%",
+						"properties": {
+							"select": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"insert": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"update": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"delete": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"truncate": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"execute": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"create": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"alter": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"drop": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"other": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							}
+						},
+						"additionalProperties": false,
+						"default": {
+							"select": "allow",
+							"insert": "allow",
+							"update": "allow",
+							"delete": "allow",
+							"truncate": "allow",
+							"execute": "allow",
+							"create": "ask",
+							"alter": "ask",
+							"drop": "ask",
+							"other": "ask"
+						}
+					},
+					"dbcode.connection.role.production": {
+						"type": "object",
+						"order": 3,
+						"markdownDescription": "%Permissions for the production role.%",
+						"properties": {
+							"select": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"insert": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"update": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"delete": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"truncate": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"execute": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"create": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"alter": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"drop": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"other": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							}
+						},
+						"additionalProperties": false,
+						"default": {
+							"select": "allow",
+							"insert": "ask",
+							"update": "ask",
+							"delete": "ask",
+							"truncate": "deny",
+							"execute": "ask",
+							"create": "deny",
+							"alter": "deny",
+							"drop": "deny",
+							"other": "ask"
+						}
+					}
+				}
+			},
+			{
+				"title": "%Connection Color%",
+				"order": 8,
 				"type": "object",
 				"properties": {
 					"dbcode.color.applyToActiveTabBorder": {
@@ -2342,6 +3017,7 @@
 										"db2",
 										"redis",
 										"starrocks",
+										"singlestore",
 										"doris",
 										"bigquery",
 										"excel"
