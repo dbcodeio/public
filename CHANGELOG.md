@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.8.4 - 2025-03-13
+
+### Changed
+
+- Import: First release, functions, some rough UX/UI edges. #53
+
 ## 1.8.3 - 2025-03-11
 
 ### Changed
