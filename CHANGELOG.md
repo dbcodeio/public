@@ -1,11 +1,12 @@
 # CHANGELOG
 
-## 1.9.1 - 2025-03-16
-
+## 1.9.2 - 2025-03-16
 
 ### Fixed
 
 - Cloudflare: Added support for using Account API Tokens.
+- Copilot Chat: Removed disambiguation. #373
+- Copilot inline chat: Fixed copy prompting to provide schema, disabled it from asking multiple times. #373
 
 ## 1.9.0 - 2025-03-13
 

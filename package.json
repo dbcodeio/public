@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
 	"publisher": "dbcode",
-	"version": "1.9.1",
+	"version": "1.9.2",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -19,7 +19,7 @@
 	},
 	"private": true,
 	"engines": {
-		"vscode": "^1.90.0"
+		"vscode": "^1.95.0"
 	},
 	"keywords": [
 		"SQL",
@@ -66,27 +66,170 @@
 				"id": "dbcode",
 				"name": "dbcode",
 				"fullName": "DBCode",
-				"description": "%Ask about your database%",
-				"isSticky": true,
-				"disambiguation": [
-					{
-						"category": "dbcode",
-						"description": "The user wants to generate queries for their database.",
-						"examples": [
-							"Find all the users who were created in the last month",
-							"Write a query to find out information about the users in the database",
-							"Can you help me write a query to find out information from the database",
-							"I want to write a query to find out information from the database",
-							"Can you help me find out information from the database",
-							"I want to find out information in the database",
-							"I need a query to find out information from the database",
-							"Find out information from the database",
-							"Find out information in the database",
-							"Write a query to find out information from the database",
-							"Write a query to find out information in the database"
-						]
-					}
-				]
+				"description": "%Chat with your Database%",
+				"isSticky": true
+			}
+		],
+		"languageModelTools": [
+			{
+				"name": "dbcode-get-connections",
+				"tags": [
+					"editors",
+					"dbcode",
+					"vscode-editing"
+				],
+				"toolReferenceName": "dbcode-getConnections",
+				"canBeReferencedInPrompt": true,
+				"displayName": "Retrieve Connections",
+				"modelDescription": "Retrieve available connections. Returns a list of connections, including the name, id, type. The connection id and connection name values are required to access the other dbcode tools.",
+				"inputSchema": {
+					"type": "object",
+					"properties": {}
+				}
+			},
+			{
+				"name": "dbcode-get-databases",
+				"tags": [
+					"editors",
+					"dbcode",
+					"vscode-editing"
+				],
+				"toolReferenceName": "dbcode-getDatabases",
+				"canBeReferencedInPrompt": true,
+				"displayName": "Retrieve Databases",
+				"modelDescription": "Retrieve all available databases for a specified connection.",
+				"inputSchema": {
+					"type": "object",
+					"properties": {
+						"connectionId": {
+							"type": "string",
+							"description": "The unique random connection id, obtained from the dbcode-get-connections tool."
+						},
+						"connectionName": {
+							"type": "string",
+							"description": "The name of the connection, obtained from the dbcode-get-connections tool."
+						}
+					},
+					"required": [
+						"connectionId",
+						"connectionName"
+					]
+				}
+			},
+			{
+				"name": "dbcode-get-schemas",
+				"tags": [
+					"editors",
+					"dbcode",
+					"vscode-editing"
+				],
+				"toolReferenceName": "dbcode-getSchemas",
+				"canBeReferencedInPrompt": true,
+				"displayName": "Retrieve Schemas",
+				"modelDescription": "Retrieve the schema names for a database, if the database supports schemas.",
+				"inputSchema": {
+					"type": "object",
+					"properties": {
+						"connectionId": {
+							"type": "string",
+							"description": "The unique random connection id, obtained from the dbcode-get-connections tool."
+						},
+						"connectionName": {
+							"type": "string",
+							"description": "The name of the connection."
+						},
+						"databaseName": {
+							"type": "string",
+							"description": "The name of the database."
+						}
+					},
+					"required": [
+						"connectionId",
+						"connectionName",
+						"databaseName"
+					]
+				}
+			},
+			{
+				"name": "dbcode-get-tables",
+				"tags": [
+					"editors",
+					"dbcode",
+					"vscode-editing"
+				],
+				"toolReferenceName": "dbcode-getTables",
+				"canBeReferencedInPrompt": true,
+				"displayName": "Retrieve Tables",
+				"modelDescription": "Retrieve all tables, along with their columns, foreign keys, primary keys and index information for a specified database connection.",
+				"inputSchema": {
+					"type": "object",
+					"properties": {
+						"connectionId": {
+							"type": "string",
+							"description": "The unique random connection id, obtained from the dbcode-get-connections tool."
+						},
+						"connectionName": {
+							"type": "string",
+							"description": "The name of the connection."
+						},
+						"databaseName": {
+							"type": "string",
+							"description": "The name of the database."
+						},
+						"schemaName": {
+							"type": "string",
+							"description": "The name of the schema (only needed when the database supports schemas)."
+						}
+					},
+					"required": [
+						"connectionId",
+						"connectionName",
+						"databaseName"
+					]
+				}
+			},
+			{
+				"name": "dbcode-execute-query",
+				"tags": [
+					"editors",
+					"dbcode",
+					"vscode-editing"
+				],
+				"toolReferenceName": "dbcode-executeQuery",
+				"canBeReferencedInPrompt": true,
+				"displayName": "Execute query",
+				"modelDescription": "Executes a query in the specified database and optional schema.",
+				"inputSchema": {
+					"type": "object",
+					"properties": {
+						"connectionId": {
+							"type": "string",
+							"description": "The unique random connection id, obtained from the dbcode-get-connections tool."
+						},
+						"connectionName": {
+							"type": "string",
+							"description": "The name of the connection."
+						},
+						"databaseName": {
+							"type": "string",
+							"description": "The name of the database."
+						},
+						"schemaName": {
+							"type": "string",
+							"description": "The name of the schema (only needed when the database supports schemas)."
+						},
+						"query": {
+							"type": "string",
+							"description": "The query to execute."
+						}
+					},
+					"required": [
+						"connectionId",
+						"connectionName",
+						"databaseName",
+						"query"
+					]
+				}
 			}
 		],
 		"commands": [
@@ -492,6 +635,26 @@
 			{
 				"command": "dbcode.tables.diagram",
 				"title": "%Entity Relationship Diagram%",
+				"category": "DBCode"
+			},
+			{
+				"command": "dbcode.mcp.start",
+				"title": "%MCP Start Server%",
+				"category": "DBCode"
+			},
+			{
+				"command": "dbcode.mcp.stop",
+				"title": "%MCP Stop Server%",
+				"category": "DBCode"
+			},
+			{
+				"command": "dbcode.mcp.generateToken",
+				"title": "%MCP Generate Authorization Token%",
+				"category": "DBCode"
+			},
+			{
+				"command": "dbcode.mcp.copyToken",
+				"title": "%MCP Copy Authorization Token to Clipboard%",
 				"category": "DBCode"
 			}
 		],
@@ -2327,6 +2490,34 @@
 				"order": 5,
 				"type": "object",
 				"properties": {
+					"dbcode.ai.mcp.autoStart": {
+						"title": "%MCP Auto Start%",
+						"type": "boolean",
+						"default": false,
+						"markdownDescription": "%Automatically start the MCP Server when the extension is loaded.%"
+					},
+					"dbcode.ai.mcp.port": {
+						"title": "%MCP Port%",
+						"type": "number",
+						"default": 5002,
+						"markdownDescription": "%Port to use for the MCP Server.%"
+					},
+					"dbcode.ai.mcp.authorization": {
+						"title": "%MCP Authorization Method%",
+						"markdownDescription": "%The authorization method for the MCP Server. [more information](https://dbcode.io/docs/ai/mcp)%",
+						"type": "string",
+						"default": "Bearer",
+						"enum": [
+							"Bearer",
+							"Querystring",
+							"None"
+						],
+						"enumDescriptions": [
+							"%Bearer token authentication.%",
+							"%Authorization using query string parameter 'auth'.%",
+							"%No authorization required.%"
+						]
+					},
 					"dbcode.ai.modelId": {
 						"title": "%Copilot Model ID%",
 						"type": "string",
@@ -3238,7 +3429,7 @@
 		"@types/sshpk": "^1.17.4",
 		"@types/tar": "^6.1.13",
 		"@types/validator": "^13.12.2",
-		"@types/vscode": "^1.90.0",
+		"@types/vscode": "^1.95.0",
 		"@types/vscode-notebook-renderer": "^1.72.3",
 		"@vitest/coverage-v8": "^3.0.7",
 		"@vscode/l10n-dev": "^0.0.35",
@@ -3280,9 +3471,10 @@
 		"@libsql/client": "^0.14.0",
 		"@types/mssql": "^9.1.7",
 		"@vscode-elements/elements": "^1.13.1",
+		"@vscode/chat-extension-utils": "^0.0.0-alpha.5",
 		"@vscode/codicons": "^0.0.36",
 		"@vscode/l10n": "^0.0.18",
-		"@vscode/prompt-tsx": "^0.3.0-alpha.5",
+		"@vscode/prompt-tsx": "^0.3.0-alpha.21",
 		"ag-charts-enterprise": "^11.1.1",
 		"ag-grid-enterprise": "^33.1.1",
 		"another-json-xml": "^2.0.7",
@@ -3296,11 +3488,13 @@
 		"detect-libc": "^2.0.3",
 		"dotenv": "^16.4.7",
 		"fast-xml-parser": "^5.0.8",
+		"fastmcp": "^1.20.5",
 		"file-type": "^20.4.0",
 		"generate-password": "^1.7.1",
 		"gpt-tokenizer": "^2.8.1",
 		"hotkeys-js": "^3.13.9",
 		"html-escaper": "^3.0.3",
+		"i": "^0.3.7",
 		"ibm_db": "^3.3.0",
 		"interactjs": "^1.10.27",
 		"json-diff": "^1.0.6",
@@ -3312,6 +3506,7 @@
 		"mariadb": "^3.4.0",
 		"mongodb": "^6.14.0",
 		"mssql": "^11.0.1",
+		"npm": "^11.2.0",
 		"oracledb": "^6.8.0",
 		"p-queue": "^8.1.0",
 		"panzoom": "^9.4.3",
@@ -3341,6 +3536,7 @@
 		"vscode-messenger-webview": "^0.4.5",
 		"wkx": "^0.5.0",
 		"xlsx": "^0.18.5",
-		"yaml": "^2.7.0"
+		"yaml": "^2.7.0",
+		"zod": "^3.24.2"
 	}
 }
