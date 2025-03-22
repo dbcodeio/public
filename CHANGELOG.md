@@ -1,5 +1,151 @@
 # CHANGELOG
 
+## 1.9.2 - 2025-03-16
+
+### Fixed
+
+- Cloudflare: Added support for using Account API Tokens.
+- Copilot Chat: Removed disambiguation. #373
+- Copilot inline chat: Fixed copy prompting to provide schema, disabled it from asking multiple times. #373
+
+## 1.9.0 - 2025-03-13
+
+### Changed
+
+- Connections: Added more color options. #245
+- Connections: Added read only option to connections where supported by the driver. #183
+- Connections: Added role option to enable permissions for statement execution. #183
+- SingleStore: Added support for SingleStore. #369
+- Settings: New settings to configure connection role permissions.
+- Settings: Removed warn before pre apply on procedure editing (replaced with role support).
+- CSV: Now supports specifying the delimiter, quote, escape characters and header row. #367
+
+## 1.8.4 - 2025-03-13
+
+### Changed
+
+- Import: First release, functions, some rough UX/UI edges. #53
+
+## 1.8.3 - 2025-03-11
+
+### Changed
+
+- Setting: Result font size. #356
+- Keybindings: cmd+enter and windows+enter for pc are now the command bindings for executing a sql statement in the editor, or applying changes to objects like triggers, procs, etc. #304
+- Excel and CSV Support: Warning about DML statements (update, insert, delete) not being applied to the file system for now.
+
+### Fixed
+
+- Editor: Insert statement values were not being highlighted correctly when in parenthesis. #352
+- Keybindings: The keybindings for executing a sql statement in the editor, or applying changes to objects like triggers, procs, etc.
+- Keybindings: The ctrl+d keybinding was breaking the terminal ctrl+d keybinding.
+- Zero Config: Don't discover file formats (Excel, CSV, etc) on the initial load. #359
+
+## 1.8.2 - 2025-03-09
+
+### Changed
+
+- Editor: If the cursor is in a insert statement column, the corresponding value will be highlighted. #352
+- SQLite/D1/LibSQL: Moved to new introspection model, added triggers support. #355
+- Results: Open in editor icon only shows when editing a cell, option to open editor added to the context menu when right clicking on a cell. #357
+
+### Fixed
+
+- Hover: Bug in JSON to MD library. #350
+- DuckDB: Added struct and map types. #351
+- MariaDB: If MySQL is selected but database is Maria, will switch to MariaDB silently. #354
+- Inline completion: Fixed cross database not suggesting columns in select. #157 
+
+## 1.8.1 - 2025-03-06
+
+### Changed
+
+- Excel and CSV Support: Support for opening .xlsx and .csv files as databases to query (preview). #263
+
+### Fixed
+
+- SQLite: Fixed SQL generation when only an offset was used, without a limit. #335
+- Redis: Username defaults to default as the default.
+- HTTP: Added support for the vscode proxy setting to network requests, as well as the https_proxy enviroment variable. #326
+
+
+## 1.8.0 - 2025-03-05
+
+### Changed
+
+- Inline Completion: Will now suggest databases when appropriate, and supports dotted notation for databases, eg database.schema.table. #157 
+- When VSCode is restarted only connections for any open files will be re created. #328
+- Explorer: Support multiple selections for truncating and dropping tables.. be careful! #344
+- Explorer: Added refresh to the database context menu. #343
+- Explorer: Added option to copy item name to the clipboard.
+- StarRocks: Added support for StarRocks. #340
+- Doris: Added support for Apache Doris. #199 #267
+- Setting: Added setting for pagination size to control rows per page (auto or 10, 20, 50, 100, 200, 500). #342
+
+### Fixed
+
+- SQL Server: Added system views to introspection. #336
+- DuckDB: Fixed array fields reporting unknown type. #346
+
+## 1.7.4 - 2025-03-03
+
+### Changed
+
+- Hover: Layout has changed, now includes a icon to open the item where applicable (eg, table, view, materialized view, procedure, function).
+
+### Fixed
+
+- Hover: Now works with dotted and escaped identifiers. #333
+- Hover: Now works with materialized views.
+- Go to Definition: Works with dotted and escaped identifiers. #333
+
+## 1.7.3 - 2025-02-28
+
+### Changed
+
+- Added a go to definition link on tables, views and materialized Views (ctrl/cmd + click or f12 when hovering a table, view or materialized view in a query). #333
+- Connections: Added common default socket paths, and changed it to a text input since VS Code prevents selecting locked files.
+
+### Fixed
+
+- Editing a value to the default did not correctly save the change. #331 #299
+- Postgres: Adding vector datatype. #330
+- Chart: Tooltips were not showing on the chart, right clicking caused the chart to disappear. #30
+
+## 1.7.1 - 2025-02-27
+
+### Changed
+
+- Entity Relationship Diagrams will now only show the filtered tables if a filter is applied in the explorer. #322
+
+### Fixed
+
+- SQL Server: Fix introspection issue on servers with case sensitive collation. #318
+- Export: SQL Insert statements now include the schema if applicable. #321
+- MySQL/MariaDB: Fixed issue with editing triggers. 
+- MySQL/MariaDB: Fixed issue with socket connections.
+- Postgres: Fixed issue with current_schema returning a schema that does not exist.
+
+## 1.7.0 - 2025-02-24
+
+### Changed
+
+- Redis: Preview support for Redis, browsing works, not much else at the moment. #39
+- Added item to the header context menu of results to clear one or all column filters. #315
+
+### Fixed
+
+- UUID icon rendering issue when it was a primary key in the ERD.
+- A single column will start no wider than 1/3 rendering space for the results. #314
+- Disconnecting a connection was not correctly showing it disconnected in the explorer. #222
+
+## 1.6.22 - 2025-02-20
+
+### Fixed
+
+- MariaDB: Added support for 10.0 #306
+- MongoDB: Sorted collections and views in the schema, fixed queries that return single values. #276
+
 ## 1.6.21 - 2025-02-20
 
 ### Fixed

@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
 	"publisher": "dbcode",
-	"version": "1.6.21",
+	"version": "1.9.2",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -19,7 +19,7 @@
 	},
 	"private": true,
 	"engines": {
-		"vscode": "^1.90.0"
+		"vscode": "^1.95.0"
 	},
 	"keywords": [
 		"SQL",
@@ -41,7 +41,10 @@
 		"DuckDB",
 		"Cassandra",
 		"Snowflake",
-		"DB2"
+		"DB2",
+		"Redis",
+		"BigQuery",
+		"StarRocks"
 	],
 	"categories": [
 		"AI",
@@ -63,27 +66,170 @@
 				"id": "dbcode",
 				"name": "dbcode",
 				"fullName": "DBCode",
-				"description": "%Ask about your database%",
-				"isSticky": true,
-				"disambiguation": [
-					{
-						"category": "dbcode",
-						"description": "The user wants to generate queries for their database.",
-						"examples": [
-							"Find all the users who were created in the last month",
-							"Write a query to find out information about the users in the database",
-							"Can you help me write a query to find out information from the database",
-							"I want to write a query to find out information from the database",
-							"Can you help me find out information from the database",
-							"I want to find out information in the database",
-							"I need a query to find out information from the database",
-							"Find out information from the database",
-							"Find out information in the database",
-							"Write a query to find out information from the database",
-							"Write a query to find out information in the database"
-						]
-					}
-				]
+				"description": "%Chat with your Database%",
+				"isSticky": true
+			}
+		],
+		"languageModelTools": [
+			{
+				"name": "dbcode-get-connections",
+				"tags": [
+					"editors",
+					"dbcode",
+					"vscode-editing"
+				],
+				"toolReferenceName": "dbcode-getConnections",
+				"canBeReferencedInPrompt": true,
+				"displayName": "Retrieve Connections",
+				"modelDescription": "Retrieve available connections. Returns a list of connections, including the name, id, type. The connection id and connection name values are required to access the other dbcode tools.",
+				"inputSchema": {
+					"type": "object",
+					"properties": {}
+				}
+			},
+			{
+				"name": "dbcode-get-databases",
+				"tags": [
+					"editors",
+					"dbcode",
+					"vscode-editing"
+				],
+				"toolReferenceName": "dbcode-getDatabases",
+				"canBeReferencedInPrompt": true,
+				"displayName": "Retrieve Databases",
+				"modelDescription": "Retrieve all available databases for a specified connection.",
+				"inputSchema": {
+					"type": "object",
+					"properties": {
+						"connectionId": {
+							"type": "string",
+							"description": "The unique random connection id, obtained from the dbcode-get-connections tool."
+						},
+						"connectionName": {
+							"type": "string",
+							"description": "The name of the connection, obtained from the dbcode-get-connections tool."
+						}
+					},
+					"required": [
+						"connectionId",
+						"connectionName"
+					]
+				}
+			},
+			{
+				"name": "dbcode-get-schemas",
+				"tags": [
+					"editors",
+					"dbcode",
+					"vscode-editing"
+				],
+				"toolReferenceName": "dbcode-getSchemas",
+				"canBeReferencedInPrompt": true,
+				"displayName": "Retrieve Schemas",
+				"modelDescription": "Retrieve the schema names for a database, if the database supports schemas.",
+				"inputSchema": {
+					"type": "object",
+					"properties": {
+						"connectionId": {
+							"type": "string",
+							"description": "The unique random connection id, obtained from the dbcode-get-connections tool."
+						},
+						"connectionName": {
+							"type": "string",
+							"description": "The name of the connection."
+						},
+						"databaseName": {
+							"type": "string",
+							"description": "The name of the database."
+						}
+					},
+					"required": [
+						"connectionId",
+						"connectionName",
+						"databaseName"
+					]
+				}
+			},
+			{
+				"name": "dbcode-get-tables",
+				"tags": [
+					"editors",
+					"dbcode",
+					"vscode-editing"
+				],
+				"toolReferenceName": "dbcode-getTables",
+				"canBeReferencedInPrompt": true,
+				"displayName": "Retrieve Tables",
+				"modelDescription": "Retrieve all tables, along with their columns, foreign keys, primary keys and index information for a specified database connection.",
+				"inputSchema": {
+					"type": "object",
+					"properties": {
+						"connectionId": {
+							"type": "string",
+							"description": "The unique random connection id, obtained from the dbcode-get-connections tool."
+						},
+						"connectionName": {
+							"type": "string",
+							"description": "The name of the connection."
+						},
+						"databaseName": {
+							"type": "string",
+							"description": "The name of the database."
+						},
+						"schemaName": {
+							"type": "string",
+							"description": "The name of the schema (only needed when the database supports schemas)."
+						}
+					},
+					"required": [
+						"connectionId",
+						"connectionName",
+						"databaseName"
+					]
+				}
+			},
+			{
+				"name": "dbcode-execute-query",
+				"tags": [
+					"editors",
+					"dbcode",
+					"vscode-editing"
+				],
+				"toolReferenceName": "dbcode-executeQuery",
+				"canBeReferencedInPrompt": true,
+				"displayName": "Execute query",
+				"modelDescription": "Executes a query in the specified database and optional schema.",
+				"inputSchema": {
+					"type": "object",
+					"properties": {
+						"connectionId": {
+							"type": "string",
+							"description": "The unique random connection id, obtained from the dbcode-get-connections tool."
+						},
+						"connectionName": {
+							"type": "string",
+							"description": "The name of the connection."
+						},
+						"databaseName": {
+							"type": "string",
+							"description": "The name of the database."
+						},
+						"schemaName": {
+							"type": "string",
+							"description": "The name of the schema (only needed when the database supports schemas)."
+						},
+						"query": {
+							"type": "string",
+							"description": "The query to execute."
+						}
+					},
+					"required": [
+						"connectionId",
+						"connectionName",
+						"databaseName",
+						"query"
+					]
+				}
 			}
 		],
 		"commands": [
@@ -205,6 +351,12 @@
 				"title": "%Refresh%",
 				"category": "DBCode",
 				"icon": "$(refresh)"
+			},
+			{
+				"command": "dbcode.connections.copyElementLabel",
+				"title": "%Copy Name%",
+				"category": "DBCode",
+				"icon": "$(copy)"
 			},
 			{
 				"command": "dbcode.connections.treeRefreshing",
@@ -446,11 +598,6 @@
 				"category": "DBCode"
 			},
 			{
-				"command": "dbcode.tables.import",
-				"title": "%Import Data%",
-				"category": "DBCode"
-			},
-			{
 				"command": "dbcode.table.import",
 				"title": "%Import Data%",
 				"category": "DBCode"
@@ -491,21 +638,36 @@
 				"category": "DBCode"
 			},
 			{
-				"command": "dbcode.debug.toggle",
-				"title": "%Toggle Debug Output%",
+				"command": "dbcode.mcp.start",
+				"title": "%MCP Start Server%",
+				"category": "DBCode"
+			},
+			{
+				"command": "dbcode.mcp.stop",
+				"title": "%MCP Stop Server%",
+				"category": "DBCode"
+			},
+			{
+				"command": "dbcode.mcp.generateToken",
+				"title": "%MCP Generate Authorization Token%",
+				"category": "DBCode"
+			},
+			{
+				"command": "dbcode.mcp.copyToken",
+				"title": "%MCP Copy Authorization Token to Clipboard%",
 				"category": "DBCode"
 			}
 		],
 		"keybindings": [
 			{
 				"command": "dbcode.editor.execute",
-				"key": "ctrl+enter",
-				"mac": "ctrl+enter",
+				"key": "windows+enter",
+				"mac": "cmd+enter",
 				"when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode"
 			},
 			{
 				"command": "dbcode.editor.apply",
-				"key": "ctrl+enter",
+				"key": "windows+enter",
 				"mac": "cmd+enter",
 				"when": "editorTextFocus && resourceScheme == dbcode"
 			},
@@ -513,7 +675,7 @@
 				"command": "dbcode.connections.view.focus",
 				"key": "ctrl+d ctrl+b",
 				"mac": "cmd+d cmd+b",
-				"when": "(!editorHasSelection && !editorHasMultipleSelections) || ((editorHasSelection || editorHasMultipleSelections) && !editorTextFocus)"
+				"when": "(!editorHasSelection && !editorHasMultipleSelections && !terminalFocusInAny) || ((editorHasSelection || editorHasMultipleSelections) && !editorTextFocus && !terminalFocusInAny)"
 			}
 		],
 		"notebooks": [
@@ -779,9 +941,14 @@
 					"group": "1open@2"
 				},
 				{
+					"command": "dbcode.connections.refresh",
+					"when": "view == dbcode.connections.view && viewItem =~ /^database-/",
+					"group": "2connection@1"
+				},
+				{
 					"command": "dbcode.connections.execfile",
 					"when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~execfile~/",
-					"group": "1operation@1"
+					"group": "3operation@2"
 				},
 				{
 					"command": "dbcode.database.rename",
@@ -830,7 +997,7 @@
 				},
 				{
 					"command": "dbcode.connections.refresh",
-					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~disconnect~/",
+					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && (viewItem =~ /~disconnect~/ || viewItem =~ /~shallow~/) ",
 					"group": "1connected@1"
 				},
 				{
@@ -914,7 +1081,7 @@
 					"group": "1create@1"
 				},
 				{
-					"command": "dbcode.tables.import",
+					"command": "dbcode.table.import",
 					"when": "view == dbcode.connections.view && viewItem =~ /^tables-/ && viewItem =~ /~import~/",
 					"group": "2action@1"
 				},
@@ -932,6 +1099,11 @@
 					"command": "dbcode.connections.filterItemsClear",
 					"when": "view == dbcode.connections.view && viewItem =~ /~filtered~/",
 					"group": "zdisplay@2"
+				},
+				{
+					"command": "dbcode.connections.copyElementLabel",
+					"when": "view == dbcode.connections.view",
+					"group": "zzzommon@1"
 				},
 				{
 					"command": "dbcode.table.openLimit",
@@ -967,7 +1139,7 @@
 			"explorer/context": [
 				{
 					"command": "dbcode.discovery.manual",
-					"when": "isFileSystemResource === true && resourceFilename =~ /\\.(db|duckdb|ddb|sqlite|sqlite3)$/",
+					"when": "isFileSystemResource === true && resourceFilename =~ /\\.(db|duckdb|ddb|sqlite|sqlite3|csv|xlsx)$/",
 					"group": "navigation"
 				},
 				{
@@ -1028,6 +1200,14 @@
 				}
 			},
 			{
+				"id": "dbcode.BD0014",
+				"description": "Color #BD0014",
+				"defaults": {
+					"dark": "#BD0014",
+					"light": "#BD0014"
+				}
+			},
+			{
 				"id": "dbcode.F00019",
 				"description": "Color #F00019",
 				"defaults": {
@@ -1036,11 +1216,195 @@
 				}
 			},
 			{
+				"id": "dbcode.F33246",
+				"description": "Color #F33246",
+				"defaults": {
+					"dark": "#F33246",
+					"light": "#F33246"
+				}
+			},
+			{
+				"id": "dbcode.F66675",
+				"description": "Color #F66675",
+				"defaults": {
+					"dark": "#F66675",
+					"light": "#F66675"
+				}
+			},
+			{
+				"id": "dbcode.F999A3",
+				"description": "Color #F999A3",
+				"defaults": {
+					"dark": "#F999A3",
+					"light": "#F999A3"
+				}
+			},
+			{
+				"id": "dbcode.FCCCD1",
+				"description": "Color #FCCCD1",
+				"defaults": {
+					"dark": "#FCCCD1",
+					"light": "#FCCCD1"
+				}
+			},
+			{
+				"id": "dbcode.FF5116",
+				"description": "Color #FF5116",
+				"defaults": {
+					"dark": "#FF5116",
+					"light": "#FF5116"
+				}
+			},
+			{
+				"id": "dbcode.FF642F",
+				"description": "Color #FF642F",
+				"defaults": {
+					"dark": "#FF642F",
+					"light": "#FF642F"
+				}
+			},
+			{
+				"id": "dbcode.FF7749",
+				"description": "Color #FF7749",
+				"defaults": {
+					"dark": "#FF7749",
+					"light": "#FF7749"
+				}
+			},
+			{
+				"id": "dbcode.FF8A62",
+				"description": "Color #FF8A62",
+				"defaults": {
+					"dark": "#FF8A62",
+					"light": "#FF8A62"
+				}
+			},
+			{
+				"id": "dbcode.FF9D7C",
+				"description": "Color #FF9D7C",
+				"defaults": {
+					"dark": "#FF9D7C",
+					"light": "#FF9D7C"
+				}
+			},
+			{
+				"id": "dbcode.FFB095",
+				"description": "Color #FFB095",
+				"defaults": {
+					"dark": "#FFB095",
+					"light": "#FFB095"
+				}
+			},
+			{
+				"id": "dbcode.FFC3AF",
+				"description": "Color #FFC3AF",
+				"defaults": {
+					"dark": "#FFC3AF",
+					"light": "#FFC3AF"
+				}
+			},
+			{
+				"id": "dbcode.004A37",
+				"description": "Color #004A37",
+				"defaults": {
+					"dark": "#004A37",
+					"light": "#004A37"
+				}
+			},
+			{
+				"id": "dbcode.00634A",
+				"description": "Color #00634A",
+				"defaults": {
+					"dark": "#00634A",
+					"light": "#00634A"
+				}
+			},
+			{
+				"id": "dbcode.007D5D",
+				"description": "Color #007D5D",
+				"defaults": {
+					"dark": "#007D5D",
+					"light": "#007D5D"
+				}
+			},
+			{
+				"id": "dbcode.009670",
+				"description": "Color #009670",
+				"defaults": {
+					"dark": "#009670",
+					"light": "#009670"
+				}
+			},
+			{
+				"id": "dbcode.00B083",
+				"description": "Color #00B083",
+				"defaults": {
+					"dark": "#00B083",
+					"light": "#00B083"
+				}
+			},
+			{
+				"id": "dbcode.00E3A9",
+				"description": "Color #00E3A9",
+				"defaults": {
+					"dark": "#00E3A9",
+					"light": "#00E3A9"
+				}
+			},
+			{
+				"id": "dbcode.0074B3",
+				"description": "Color #0074B3",
+				"defaults": {
+					"dark": "#0074B3",
+					"light": "#0074B3"
+				}
+			},
+			{
+				"id": "dbcode.0085CC",
+				"description": "Color #0085CC",
+				"defaults": {
+					"dark": "#0085CC",
+					"light": "#0085CC"
+				}
+			},
+			{
+				"id": "dbcode.0095E6",
+				"description": "Color #0095E6",
+				"defaults": {
+					"dark": "#0095E6",
+					"light": "#0095E6"
+				}
+			},
+			{
 				"id": "dbcode.00A6FF",
 				"description": "Color #00A6FF",
 				"defaults": {
 					"dark": "#00A6FF",
 					"light": "#00A6FF"
+				}
+			},
+			{
+				"id": "dbcode.1AAFFF",
+				"description": "Color #1AAFFF",
+				"defaults": {
+					"dark": "#1AAFFF",
+					"light": "#1AAFFF"
+				}
+			},
+			{
+				"id": "dbcode.33B8FF",
+				"description": "Color #33B8FF",
+				"defaults": {
+					"dark": "#33B8FF",
+					"light": "#33B8FF"
+				}
+			},
+			{
+				"id": "dbcode.4DC1FF",
+				"description": "Color #4DC1FF",
+				"defaults": {
+					"dark": "#4DC1FF",
+					"light": "#4DC1FF"
 				}
 			},
 			{
@@ -1068,14 +1432,6 @@
 				}
 			},
 			{
-				"id": "dbcode.FF8A62",
-				"description": "Color #FF8A62",
-				"defaults": {
-					"dark": "#FF8A62",
-					"light": "#FF8A62"
-				}
-			},
-			{
 				"id": "dbcode.FFC54F",
 				"description": "Color #FFC54F",
 				"defaults": {
@@ -1092,11 +1448,19 @@
 				}
 			},
 			{
-				"id": "dbcode.009670",
-				"description": "Color #009670",
+				"id": "dbcode.D5B2A0",
+				"description": "Color #D5B2A0",
 				"defaults": {
-					"dark": "#009670",
-					"light": "#009670"
+					"dark": "#D5B2A0",
+					"light": "#D5B2A0"
+				}
+			},
+			{
+				"id": "dbcode.71F9F8",
+				"description": "Color #71F9F8",
+				"defaults": {
+					"dark": "#71F9F8",
+					"light": "#71F9F8"
 				}
 			},
 			{
@@ -1121,6 +1485,14 @@
 				"defaults": {
 					"dark": "#B2A0D5",
 					"light": "#B2A0D5"
+				}
+			},
+			{
+				"id": "dbcode.8EA23B",
+				"description": "Color #8EA23B",
+				"defaults": {
+					"dark": "#8EA23B",
+					"light": "#8EA23B"
 				}
 			}
 		],
@@ -1337,627 +1709,676 @@
 					"fontCharacter": "\\ea1c"
 				}
 			},
+			"dbcode-csv": {
+				"description": "Csv",
+				"default": {
+					"fontPath": "out/resources/icons.woff",
+					"fontCharacter": "\\ea1d"
+				}
+			},
 			"dbcode-cursor": {
 				"description": "Cursor",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea1d"
+					"fontCharacter": "\\ea1e"
 				}
 			},
 			"dbcode-d1": {
 				"description": "D1",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea1e"
+					"fontCharacter": "\\ea1f"
 				}
 			},
 			"dbcode-data-source": {
 				"description": "Data Source",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea1f"
+					"fontCharacter": "\\ea20"
 				}
 			},
 			"dbcode-date": {
 				"description": "Date",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea20"
+					"fontCharacter": "\\ea21"
 				}
 			},
 			"dbcode-datetime": {
 				"description": "Datetime",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea21"
+					"fontCharacter": "\\ea22"
 				}
 			},
 			"dbcode-datetimetz": {
 				"description": "Datetimetz",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea22"
+					"fontCharacter": "\\ea23"
 				}
 			},
 			"dbcode-db2": {
 				"description": "Db2",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea23"
+					"fontCharacter": "\\ea24"
 				}
 			},
 			"dbcode-ddl": {
 				"description": "Ddl",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea24"
+					"fontCharacter": "\\ea25"
 				}
 			},
 			"dbcode-deadlock": {
 				"description": "Deadlock",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea25"
+					"fontCharacter": "\\ea26"
 				}
 			},
 			"dbcode-dependency": {
 				"description": "Dependency",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea26"
+					"fontCharacter": "\\ea27"
 				}
 			},
 			"dbcode-deployment": {
 				"description": "Deployment",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea27"
+					"fontCharacter": "\\ea28"
+				}
+			},
+			"dbcode-doris": {
+				"description": "Doris",
+				"default": {
+					"fontPath": "out/resources/icons.woff",
+					"fontCharacter": "\\ea29"
 				}
 			},
 			"dbcode-duckdb": {
 				"description": "Duckdb",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea28"
+					"fontCharacter": "\\ea2a"
 				}
 			},
 			"dbcode-durability": {
 				"description": "Durability",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea29"
+					"fontCharacter": "\\ea2b"
 				}
 			},
 			"dbcode-encryption": {
 				"description": "Encryption",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea2a"
+					"fontCharacter": "\\ea2c"
 				}
 			},
 			"dbcode-enum-member": {
 				"description": "Enum Member",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea2b"
+					"fontCharacter": "\\ea2d"
 				}
 			},
 			"dbcode-enum": {
 				"description": "Enum",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea2c"
+					"fontCharacter": "\\ea2e"
+				}
+			},
+			"dbcode-excel": {
+				"description": "Excel",
+				"default": {
+					"fontPath": "out/resources/icons.woff",
+					"fontCharacter": "\\ea2f"
 				}
 			},
 			"dbcode-failure": {
 				"description": "Failure",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea2d"
+					"fontCharacter": "\\ea30"
 				}
 			},
 			"dbcode-foreign-data-wrapper": {
 				"description": "Foreign Data Wrapper",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea2e"
+					"fontCharacter": "\\ea31"
 				}
 			},
 			"dbcode-foreign-key": {
 				"description": "Foreign Key",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea2f"
+					"fontCharacter": "\\ea32"
 				}
 			},
 			"dbcode-function": {
 				"description": "Function",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea30"
+					"fontCharacter": "\\ea33"
 				}
 			},
 			"dbcode-geography": {
 				"description": "Geography",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea31"
+					"fontCharacter": "\\ea34"
 				}
 			},
 			"dbcode-geometry": {
 				"description": "Geometry",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea32"
+					"fontCharacter": "\\ea35"
 				}
 			},
 			"dbcode-hierarchy": {
 				"description": "Hierarchy",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea33"
+					"fontCharacter": "\\ea36"
 				}
 			},
 			"dbcode-hint": {
 				"description": "Hint",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea34"
+					"fontCharacter": "\\ea37"
+				}
+			},
+			"dbcode-import": {
+				"description": "Import",
+				"default": {
+					"fontPath": "out/resources/icons.woff",
+					"fontCharacter": "\\ea38"
 				}
 			},
 			"dbcode-index": {
 				"description": "Index",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea35"
+					"fontCharacter": "\\ea39"
 				}
 			},
 			"dbcode-insert": {
 				"description": "Insert",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea36"
+					"fontCharacter": "\\ea3a"
 				}
 			},
 			"dbcode-ip": {
 				"description": "Ip",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea37"
+					"fontCharacter": "\\ea3b"
 				}
 			},
 			"dbcode-isolation": {
 				"description": "Isolation",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea38"
+					"fontCharacter": "\\ea3c"
 				}
 			},
 			"dbcode-issue": {
 				"description": "Issue",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea39"
+					"fontCharacter": "\\ea3d"
 				}
 			},
 			"dbcode-json": {
 				"description": "Json",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea3a"
+					"fontCharacter": "\\ea3e"
 				}
 			},
 			"dbcode-key": {
 				"description": "Key",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea3b"
+					"fontCharacter": "\\ea3f"
 				}
 			},
 			"dbcode-libsql": {
 				"description": "Libsql",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea3c"
+					"fontCharacter": "\\ea40"
 				}
 			},
 			"dbcode-license": {
 				"description": "License",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea3d"
+					"fontCharacter": "\\ea41"
 				}
 			},
 			"dbcode-mac": {
 				"description": "Mac",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea3e"
+					"fontCharacter": "\\ea42"
 				}
 			},
 			"dbcode-mainteance": {
 				"description": "Mainteance",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea3f"
+					"fontCharacter": "\\ea43"
 				}
 			},
 			"dbcode-mariadb": {
 				"description": "Mariadb",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea40"
+					"fontCharacter": "\\ea44"
 				}
 			},
 			"dbcode-materialized-view": {
 				"description": "Materialized View",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea41"
+					"fontCharacter": "\\ea45"
 				}
 			},
 			"dbcode-merge": {
 				"description": "Merge",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea42"
+					"fontCharacter": "\\ea46"
 				}
 			},
 			"dbcode-microsoft": {
 				"description": "Microsoft",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea43"
+					"fontCharacter": "\\ea47"
 				}
 			},
 			"dbcode-migration": {
 				"description": "Migration",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea44"
+					"fontCharacter": "\\ea48"
 				}
 			},
 			"dbcode-mongodb": {
 				"description": "Mongodb",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea45"
+					"fontCharacter": "\\ea49"
 				}
 			},
 			"dbcode-motherduck": {
 				"description": "Motherduck",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea46"
+					"fontCharacter": "\\ea4a"
 				}
 			},
 			"dbcode-mssql": {
 				"description": "Mssql",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea47"
+					"fontCharacter": "\\ea4b"
 				}
 			},
 			"dbcode-mysql": {
 				"description": "Mysql",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea48"
+					"fontCharacter": "\\ea4c"
 				}
 			},
 			"dbcode-normalization": {
 				"description": "Normalization",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea49"
+					"fontCharacter": "\\ea4d"
 				}
 			},
 			"dbcode-null": {
 				"description": "Null",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea4a"
+					"fontCharacter": "\\ea4e"
 				}
 			},
 			"dbcode-number": {
 				"description": "Number",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea4b"
+					"fontCharacter": "\\ea4f"
 				}
 			},
 			"dbcode-odbc": {
 				"description": "Odbc",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea4c"
+					"fontCharacter": "\\ea50"
 				}
 			},
 			"dbcode-olap": {
 				"description": "Olap",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea4d"
+					"fontCharacter": "\\ea51"
 				}
 			},
 			"dbcode-oltp": {
 				"description": "Oltp",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea4e"
+					"fontCharacter": "\\ea52"
 				}
 			},
 			"dbcode-optimizer": {
 				"description": "Optimizer",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea4f"
+					"fontCharacter": "\\ea53"
 				}
 			},
 			"dbcode-oracle": {
 				"description": "Oracle",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea50"
+					"fontCharacter": "\\ea54"
 				}
 			},
 			"dbcode-parameters": {
 				"description": "Parameters",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea51"
+					"fontCharacter": "\\ea55"
 				}
 			},
 			"dbcode-pivot": {
 				"description": "Pivot",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea52"
+					"fontCharacter": "\\ea56"
 				}
 			},
 			"dbcode-postgres": {
 				"description": "Postgres",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea53"
+					"fontCharacter": "\\ea57"
 				}
 			},
 			"dbcode-primary-key": {
 				"description": "Primary Key",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea54"
+					"fontCharacter": "\\ea58"
 				}
 			},
 			"dbcode-procedure": {
 				"description": "Procedure",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea55"
+					"fontCharacter": "\\ea59"
 				}
 			},
 			"dbcode-query": {
 				"description": "Query",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea56"
+					"fontCharacter": "\\ea5a"
 				}
 			},
 			"dbcode-read": {
 				"description": "Read",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea57"
+					"fontCharacter": "\\ea5b"
 				}
 			},
 			"dbcode-recovery": {
 				"description": "Recovery",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea58"
+					"fontCharacter": "\\ea5c"
+				}
+			},
+			"dbcode-redis": {
+				"description": "Redis",
+				"default": {
+					"fontPath": "out/resources/icons.woff",
+					"fontCharacter": "\\ea5d"
 				}
 			},
 			"dbcode-redshift": {
 				"description": "Redshift",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea59"
+					"fontCharacter": "\\ea5e"
 				}
 			},
 			"dbcode-relational-database": {
 				"description": "Relational Database",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea5a"
+					"fontCharacter": "\\ea5f"
 				}
 			},
 			"dbcode-replication": {
 				"description": "Replication",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea5b"
+					"fontCharacter": "\\ea60"
 				}
 			},
 			"dbcode-return": {
 				"description": "Return",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea5c"
+					"fontCharacter": "\\ea61"
 				}
 			},
 			"dbcode-rollback": {
 				"description": "Rollback",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea5d"
+					"fontCharacter": "\\ea62"
 				}
 			},
 			"dbcode-schema": {
 				"description": "Schema",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea5e"
+					"fontCharacter": "\\ea63"
 				}
 			},
 			"dbcode-select": {
 				"description": "Select",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea5f"
+					"fontCharacter": "\\ea64"
 				}
 			},
 			"dbcode-server": {
 				"description": "Server",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea60"
+					"fontCharacter": "\\ea65"
+				}
+			},
+			"dbcode-singlestore": {
+				"description": "Singlestore",
+				"default": {
+					"fontPath": "out/resources/icons.woff",
+					"fontCharacter": "\\ea66"
 				}
 			},
 			"dbcode-snowflake": {
 				"description": "Snowflake",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea61"
+					"fontCharacter": "\\ea67"
 				}
 			},
 			"dbcode-sort": {
 				"description": "Sort",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea62"
+					"fontCharacter": "\\ea68"
 				}
 			},
 			"dbcode-split": {
 				"description": "Split",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea63"
+					"fontCharacter": "\\ea69"
 				}
 			},
 			"dbcode-sql": {
 				"description": "Sql",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea64"
+					"fontCharacter": "\\ea6a"
 				}
 			},
 			"dbcode-sqlite": {
 				"description": "Sqlite",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea65"
+					"fontCharacter": "\\ea6b"
+				}
+			},
+			"dbcode-starrocks": {
+				"description": "Starrocks",
+				"default": {
+					"fontPath": "out/resources/icons.woff",
+					"fontCharacter": "\\ea6c"
 				}
 			},
 			"dbcode-string": {
 				"description": "String",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea66"
+					"fontCharacter": "\\ea6d"
 				}
 			},
 			"dbcode-table": {
 				"description": "Table",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea67"
+					"fontCharacter": "\\ea6e"
 				}
 			},
 			"dbcode-time": {
 				"description": "Time",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea68"
+					"fontCharacter": "\\ea6f"
 				}
 			},
 			"dbcode-timescale": {
 				"description": "Timescale",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea69"
+					"fontCharacter": "\\ea70"
 				}
 			},
 			"dbcode-timetz": {
 				"description": "Timetz",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea6a"
+					"fontCharacter": "\\ea71"
 				}
 			},
 			"dbcode-trigger": {
 				"description": "Trigger",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea6b"
+					"fontCharacter": "\\ea72"
 				}
 			},
 			"dbcode-type": {
 				"description": "Type",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea6c"
+					"fontCharacter": "\\ea73"
 				}
 			},
 			"dbcode-unique-constraint": {
 				"description": "Unique Constraint",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea6d"
+					"fontCharacter": "\\ea74"
 				}
 			},
 			"dbcode-unknown": {
 				"description": "Unknown",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea6e"
+					"fontCharacter": "\\ea75"
 				}
 			},
 			"dbcode-update": {
 				"description": "Update",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea6f"
+					"fontCharacter": "\\ea76"
 				}
 			},
 			"dbcode-uuid": {
 				"description": "Uuid",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea70"
+					"fontCharacter": "\\ea77"
 				}
 			},
 			"dbcode-vector": {
 				"description": "Vector",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea71"
+					"fontCharacter": "\\ea78"
 				}
 			},
 			"dbcode-view": {
 				"description": "View",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea72"
+					"fontCharacter": "\\ea79"
 				}
 			},
 			"dbcode-void": {
 				"description": "Void",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea73"
+					"fontCharacter": "\\ea7a"
 				}
 			},
 			"dbcode-xml": {
 				"description": "Xml",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea74"
+					"fontCharacter": "\\ea7b"
 				}
 			},
 			"dbcode-yugabyte": {
 				"description": "Yugabyte",
 				"default": {
 					"fontPath": "out/resources/icons.woff",
-					"fontCharacter": "\\ea75"
+					"fontCharacter": "\\ea7c"
 				}
 			}
 		},
@@ -1968,26 +2389,55 @@
 				"type": "object",
 				"properties": {
 					"dbcode.maxTabs": {
+						"order": 1,
 						"type": "number",
 						"default": 3,
 						"markdownDescription": "%Number of tabs to keep per connection in the results panel (set to 0 for no tabs).%"
 					},
 					"dbcode.notebook.maxTabs": {
+						"order": 2,
 						"type": "number",
 						"default": 3,
 						"markdownDescription": "%Number of tabs to keep per notebook output cell (set to 0 for no tabs).%"
 					},
 					"dbcode.rowsToLoad": {
+						"order": 3,
 						"type": "number",
 						"default": 100,
 						"markdownDescription": "%Number of rows to load when opening a table or view.%"
 					},
 					"dbcode.pagination": {
+						"order": 4,
 						"type": "boolean",
 						"default": false,
 						"markdownDescription": "%Paginate results.%"
 					},
+					"dbcode.paginationSize": {
+						"order": 5,
+						"type": "string",
+						"default": "Auto",
+						"enum": [
+							"Auto",
+							"10",
+							"20",
+							"50",
+							"100",
+							"200",
+							"500"
+						],
+						"enumDescriptions": [
+							"%Fit the number of results per page to the number of rows that can be displayed without scrolling.%",
+							"%Show 10 results per page.%",
+							"%Show 20 results per page.%",
+							"%Show 50 results per page.%",
+							"%Show 100 results per page.%",
+							"%Show 200 results per page.%",
+							"%Show 500 results per page.%"
+						],
+						"markdownDescription": "%Number of rows to show per page when paginating results.%"
+					},
 					"dbcode.orderByPrimaryKey": {
+						"order": 6,
 						"type": "string",
 						"default": "No",
 						"enum": [
@@ -2001,6 +2451,12 @@
 							"%Order by the primary key in descending order.%"
 						],
 						"markdownDescription": "%When opening a table, order by the primary key if present.%"
+					},
+					"dbcode.fontSize": {
+						"order": 7,
+						"type": "string",
+						"default": "",
+						"markdownDescription": "%Controls the font size of the results in pixels. If empty, the font size will be the same as the editor font size.%"
 					}
 				}
 			},
@@ -2030,22 +2486,38 @@
 				}
 			},
 			{
-				"title": "%Warnings%",
-				"order": 4,
-				"type": "object",
-				"properties": {
-					"dbcode.warnBeforePreApply": {
-						"type": "boolean",
-						"default": true,
-						"markdownDescription": "%Warn before running pre apply SQL when applying a a change to a database object (table, view, procedure, function, etc.).%"
-					}
-				}
-			},
-			{
 				"title": "%AI%",
 				"order": 5,
 				"type": "object",
 				"properties": {
+					"dbcode.ai.mcp.autoStart": {
+						"title": "%MCP Auto Start%",
+						"type": "boolean",
+						"default": false,
+						"markdownDescription": "%Automatically start the MCP Server when the extension is loaded.%"
+					},
+					"dbcode.ai.mcp.port": {
+						"title": "%MCP Port%",
+						"type": "number",
+						"default": 5002,
+						"markdownDescription": "%Port to use for the MCP Server.%"
+					},
+					"dbcode.ai.mcp.authorization": {
+						"title": "%MCP Authorization Method%",
+						"markdownDescription": "%The authorization method for the MCP Server. [more information](https://dbcode.io/docs/ai/mcp)%",
+						"type": "string",
+						"default": "Bearer",
+						"enum": [
+							"Bearer",
+							"Querystring",
+							"None"
+						],
+						"enumDescriptions": [
+							"%Bearer token authentication.%",
+							"%Authorization using query string parameter 'auth'.%",
+							"%No authorization required.%"
+						]
+					},
 					"dbcode.ai.modelId": {
 						"title": "%Copilot Model ID%",
 						"type": "string",
@@ -2078,8 +2550,495 @@
 				}
 			},
 			{
-				"title": "%Connection Color%",
+				"title": "%Connection Roles%",
 				"order": 7,
+				"type": "object",
+				"properties": {
+					"dbcode.connection.role.development": {
+						"order": 1,
+						"type": "object",
+						"markdownDescription": "%Permissions for the development role.%",
+						"properties": {
+							"select": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"insert": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"update": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"delete": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"truncate": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"execute": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"create": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"alter": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"drop": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"other": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							}
+						},
+						"additionalProperties": false,
+						"default": {
+							"select": "allow",
+							"insert": "allow",
+							"update": "allow",
+							"delete": "allow",
+							"truncate": "allow",
+							"execute": "allow",
+							"create": "allow",
+							"alter": "allow",
+							"drop": "allow",
+							"other": "allow"
+						}
+					},
+					"dbcode.connection.role.testing": {
+						"type": "object",
+						"order": 2,
+						"markdownDescription": "%Permissions for the testing role.%",
+						"properties": {
+							"select": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"insert": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"update": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"delete": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"truncate": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"execute": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"create": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"alter": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"drop": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"other": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							}
+						},
+						"additionalProperties": false,
+						"default": {
+							"select": "allow",
+							"insert": "allow",
+							"update": "allow",
+							"delete": "allow",
+							"truncate": "allow",
+							"execute": "allow",
+							"create": "ask",
+							"alter": "ask",
+							"drop": "ask",
+							"other": "ask"
+						}
+					},
+					"dbcode.connection.role.production": {
+						"type": "object",
+						"order": 3,
+						"markdownDescription": "%Permissions for the production role.%",
+						"properties": {
+							"select": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"insert": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"update": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"delete": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"truncate": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"execute": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"create": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"alter": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"drop": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							},
+							"other": {
+								"type": "string",
+								"default": "allow",
+								"enum": [
+									"allow",
+									"ask",
+									"deny"
+								],
+								"enumDescriptions": [
+									"%Allow the statement to be executed.%",
+									"%Ask if the statement should be executed.%",
+									"%Deny the statement from being executed.%"
+								]
+							}
+						},
+						"additionalProperties": false,
+						"default": {
+							"select": "allow",
+							"insert": "ask",
+							"update": "ask",
+							"delete": "ask",
+							"truncate": "deny",
+							"execute": "ask",
+							"create": "deny",
+							"alter": "deny",
+							"drop": "deny",
+							"other": "ask"
+						}
+					}
+				}
+			},
+			{
+				"title": "%Connection Color%",
+				"order": 8,
 				"type": "object",
 				"properties": {
 					"dbcode.color.applyToActiveTabBorder": {
@@ -2246,7 +3205,13 @@
 										"cassandra",
 										"snowflake",
 										"motherduck",
-										"db2"
+										"db2",
+										"redis",
+										"starrocks",
+										"singlestore",
+										"doris",
+										"bigquery",
+										"excel"
 									]
 								},
 								"connectionTimeout": {
@@ -2438,8 +3403,8 @@
 		"check-types": "tsc --noEmit"
 	},
 	"devDependencies": {
-		"@azure-rest/ai-translation-text": "^1.0.0-beta.1",
-		"@azure/app-configuration": "^1.7.0",
+		"@azure-rest/ai-translation-text": "^1.0.1",
+		"@azure/app-configuration": "^1.8.0",
 		"@azure/keyvault-secrets": "^4.8.0",
 		"@biomejs/biome": "^1.9.4",
 		"@chevrotain/types": "^11.0.3",
@@ -2452,105 +3417,114 @@
 		"@types/ibm_db": "^3.2.0",
 		"@types/json-diff": "^1.0.3",
 		"@types/json2md": "^1.5.4",
-		"@types/jstoxml": "^2.0.4",
+		"@types/jstoxml": "^5.0.0",
 		"@types/lodash-es": "^4.17.12",
 		"@types/mocha": "^10.0.9",
 		"@types/node": "^20.14.11",
 		"@types/oracledb": "^6.5.1",
 		"@types/picomatch": "^3.0.1",
 		"@types/postcss-url": "^10.0.4",
+		"@types/redis-info": "^3.0.3",
 		"@types/semver": "^7.5.8",
 		"@types/sshpk": "^1.17.4",
 		"@types/tar": "^6.1.13",
 		"@types/validator": "^13.12.2",
-		"@types/vscode": "^1.90.0",
+		"@types/vscode": "^1.95.0",
 		"@types/vscode-notebook-renderer": "^1.72.3",
-		"@vitest/coverage-v8": "^2.1.3",
+		"@vitest/coverage-v8": "^3.0.7",
 		"@vscode/l10n-dev": "^0.0.35",
 		"@wdio/cli": "^9.2.1",
 		"@wdio/local-runner": "^9.2.1",
 		"@wdio/mocha-framework": "^9.1.3",
 		"@wdio/spec-reporter": "^9.1.3",
 		"big.js": "^6.2.2",
-		"esbuild": "^0.24.0",
+		"esbuild": "^0.25.0",
 		"esbuild-plugin-copy": "^2.1.1",
 		"expect": "^29.7.0",
-		"git-pull-run": "^1.4.0",
-		"glob": "^11.0.0",
-		"husky": "^9.1.6",
+		"git-pull-run": "^1.5.0",
+		"glob": "^11.0.1",
+		"husky": "^9.1.7",
 		"json5": "^2.2.3",
 		"license-checker": "^25.0.1",
-		"mocha": "^10.7.3",
-		"oci-common": "^2.96.0",
-		"oci-objectstorage": "^2.96.0",
-		"oci-secrets": "^2.96.0",
-		"openai": "^4.67.3",
+		"mocha": "^11.1.0",
+		"oci-common": "^2.103.0",
+		"oci-objectstorage": "^2.103.0",
+		"oci-secrets": "^2.103.0",
+		"openai": "^4.86.1",
 		"patch-package": "^8.0.0",
 		"source-map": "^0.7.4",
-		"svgtofont": "^6.0.0",
+		"svgtofont": "^6.3.1",
 		"testcontainers": "^10.13.2",
 		"titleize": "^4.0.0",
 		"ts-node": "^10.9.2",
-		"tsx": "^4.19.1",
+		"tsx": "^4.19.3",
+		"vitest": "^3.0.7",
 		"wdio-vscode-service": "^6.1.2",
 		"wdio-wait-for": "^3.0.11"
 	},
 	"dependencies": {
 		"@ag-grid-community/styles": "^33.0.3",
 		"@date-fns/utc": "^2.1.0",
-		"@duckdb/node-api": "^1.2.0-alpha.13",
-		"@google-cloud/bigquery": "^7.9.1",
+		"@duckdb/node-api": "^1.2.0-alpha.15",
+		"@google-cloud/bigquery": "^7.9.2",
 		"@joint/layout-directed-graph": "^4.0.3",
 		"@libsql/client": "^0.14.0",
-		"@types/mssql": "^9.1.5",
-		"@vscode-elements/elements": "^1.12.0",
+		"@types/mssql": "^9.1.7",
+		"@vscode-elements/elements": "^1.13.1",
+		"@vscode/chat-extension-utils": "^0.0.0-alpha.5",
 		"@vscode/codicons": "^0.0.36",
 		"@vscode/l10n": "^0.0.18",
-		"@vscode/prompt-tsx": "^0.3.0-alpha.5",
-		"ag-grid-enterprise": "^33.1.0",
+		"@vscode/prompt-tsx": "^0.3.0-alpha.21",
+		"ag-charts-enterprise": "^11.1.1",
+		"ag-grid-enterprise": "^33.1.1",
 		"another-json-xml": "^2.0.7",
 		"base64-js": "^1.5.1",
 		"better-sqlite3-multiple-ciphers": "11.3.0",
-		"cassandra-driver": "^4.7.2",
+		"cassandra-driver": "^4.8.0",
 		"cbor-x": "^1.6.0",
 		"chevrotain": "^11.0.3",
 		"date-fns": "^4.1.0",
 		"debounce": "^2.2.0",
 		"detect-libc": "^2.0.3",
-		"dotenv": "^16.4.5",
-		"fast-xml-parser": "^4.5.0",
-		"file-type": "^19.6.0",
+		"dotenv": "^16.4.7",
+		"fast-xml-parser": "^5.0.8",
+		"fastmcp": "^1.20.5",
+		"file-type": "^20.4.0",
 		"generate-password": "^1.7.1",
-		"gpt-tokenizer": "^2.5.1",
-		"hotkeys-js": "^3.13.7",
+		"gpt-tokenizer": "^2.8.1",
+		"hotkeys-js": "^3.13.9",
 		"html-escaper": "^3.0.3",
+		"i": "^0.3.7",
 		"ibm_db": "^3.3.0",
 		"interactjs": "^1.10.27",
 		"json-diff": "^1.0.6",
-		"json2md": "^2.0.1",
-		"jspdf": "^2.5.2",
+		"json2md": "^2.0.2",
+		"jspdf": "^3.0.0",
 		"jwt-decode": "^4.0.0",
 		"lit": "^3.2.1",
 		"lodash-es": "^4.17.21",
 		"mariadb": "^3.4.0",
-		"mongodb": "^6.10.0",
+		"mongodb": "^6.14.0",
 		"mssql": "^11.0.1",
-		"oracledb": "^6.6.0",
-		"p-queue": "^8.0.1",
+		"npm": "^11.2.0",
+		"oracledb": "^6.8.0",
+		"p-queue": "^8.1.0",
 		"panzoom": "^9.4.3",
 		"picomatch": "^4.0.2",
 		"postgres": "^3.4.5",
-		"posthog-node": "^4.2.1",
-		"pretty-ms": "^9.1.0",
+		"posthog-node": "^4.8.1",
+		"pretty-ms": "^9.2.0",
 		"query-string": "^9.1.1",
-		"semver": "^7.6.3",
-		"shiki": "^1.22.1",
-		"snowflake-sdk": "^1.15.0",
-		"sql-formatter": "^15.4.5",
-		"sql-query-identifier": "^2.7.0",
+		"redis": "^4.7.0",
+		"redis-info": "^3.1.0",
+		"semver": "^7.7.1",
+		"shiki": "^3.1.0",
+		"snowflake-sdk": "^2.0.2",
+		"sql-formatter": "^15.4.11",
+		"sql-query-identifier": "^2.8.0",
 		"ssh-config": "^5.0.3",
 		"sshpk": "^1.18.0",
-		"svg2pdf.js": "^2.2.4",
+		"svg2pdf.js": "^2.4.0",
 		"tablemark": "^3.1.0",
 		"tar": "^7.4.3",
 		"tinycolor2": "^1.6.0",
@@ -2558,10 +3532,11 @@
 		"typed-emitter": "^2.1.0",
 		"undo-manager": "^1.1.1",
 		"validator": "^13.12.0",
-		"vitest": "^2.1.3",
 		"vscode-messenger": "^0.4.5",
 		"vscode-messenger-webview": "^0.4.5",
 		"wkx": "^0.5.0",
-		"yaml": "^2.7.0"
+		"xlsx": "^0.18.5",
+		"yaml": "^2.7.0",
+		"zod": "^3.24.2"
 	}
 }
