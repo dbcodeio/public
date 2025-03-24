@@ -1,6 +1,19 @@
 # CHANGELOG
 
+## 1.9.3 - 2025-03-24
+
+### Fixed
+
+- SQL Server: Table creation/editing was not picking up length on fields with max value support. #377
+- Zero Config: When a sqlite connection was configured in .env and in the root folder it errored. #380
+- Postgres: Prepend the schema to the search path, rather than replace it. #384
+
 ## 1.9.2 - 2025-03-16
+
+### Changed
+
+- MCP: Added MCP Server. #374
+- Copilot: Added Copilot tools. #373
 
 ### Fixed
 
