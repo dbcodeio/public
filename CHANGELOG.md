@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.9.4 - 2025-03-25
+
+### Changed
+
+- Advanced Filter: Tables now have an advanced filter icon in the toolbar, which exposes a SQL "like" interface for filtering.
+- Column Filters: now support multiple conditions.
+- Column Filters: now supports is blank/null. #388
+- Column Filters: now has specific apply/reset buttons.
+
+### Fixed
+
+- SQL: Escape all SQL identifiers to cover any keywords, rather than just non alpha strings. #385
+- Azure: Store the last successful tenant ID with the connection. #327
+- Azure: Fixed token expiry issues. #324
+- Supabase: Fixed cloud provider to use session pooler rather than direct connection. #386
+
 ## 1.9.3 - 2025-03-24
 
 ### Fixed
