@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.9.5 - 2025-03-26
+
+### Changed
+
+- Added toolbar icon to open current SQL in the editor (including applied filters/sorting).
+- Added separators to the toolbar for better visual separation.
+
+### Fixed
+
+- Advanced Filter: Use equals and not equals symbols, rather than words.
+- Editor: Insert statement parameters are now highlighted if the cursor is in a value. #352
+- Autocomplete: Was not working with escaped identifiers in dot notation. #391
+- .vscode folder: Wont be created unless connections are stored in the workspace. #391
+
 ## 1.9.4 - 2025-03-25
 
 ### Changed
