@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.10.0 - 2025-03-27
+
+### Changed
+
+- Greenplum: Added support for Greenplum. #392
+- Postgres: Moved to new introspection model, improves performance, added support for table partitions and row level security. #278 #165 #378
+- Postgres: Support versions 9.2 and above.
+
+### Fixed
+
+- Inline completion: Fixed cross database not suggesting columns in select again. #157
+- MongoDB: Was not working with the advanced filter.
+- MongoDB: Fixed mixed datatype. #393
+
 ## 1.9.5 - 2025-03-26
 
 ### Changed
