@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.10.1 - 2025-03-28
+
+### Fixed
+
+- Reduced bundle size, increased loading performance slightly.
+- Postgres: Regression on data type handling. #396 #397
+- package.json: Updated configuration schema. #395
+
 ## 1.10.0 - 2025-03-27
 
 ### Changed
