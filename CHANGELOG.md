@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 1.10.3 - 2025-03-28
+
+### Fixed
+
+- Relationships: Browsing across relationships now work correctly with binary foreign key fields.
+- SQL: Added more keywords to the escape list for identifiers. #385
+- Results: Insert file on binary field only shows when editing the cell.
+- Postgres: Performance regression with large number of schemas. #378
+
 ## 1.10.2 - 2025-03-28
 
 ### Fixed
