@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.10.4 - 2025-03-30
+
+### Changed
+
+- Notebook: Cells can be now be locked to specific connections, different to the other cells in the noteboook. #308
+- DB Picker: Added path details, back button, made sticky while loading.
+
+### Fixed
+ 
+- Notebook: Failed to render in some cases.
+
 ## 1.10.3 - 2025-03-28
 
 ### Fixed
