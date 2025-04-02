@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.10.5 - 2025-04-02
+
+### Changed
+
+- Results: Added an Inspector to the right hand tools. #341
+- Results: Removed Filters from the right hand tools.
+- Results: Filter or exclude selected values via context menu. #401
+- Setting: Result Location. Control where results are shown (panel, beside editor, below). #77
+
+### Fixed
+
+- Azure: Insufficient permissions to system views/columns. #361
+
 ## 1.10.4 - 2025-03-30
 
 ### Changed
