@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.10.7 - 2025-04-03
+
+### Fixed
+
+- Postgres: Inherited tables now show in the table list. #406
+- Postgres: Databases sizes are now fetched in the background. #405
+- Postgres: Improved introspection speed on foreign keys. #378
+- Trae: Fixed loading in TRAE VSCode fork. #404
+- Results: Fixed theme color mapping in the inspector. #341
+- Notebooks: Failed to save outputs when results still executing. #381
+
 ## 1.10.6 - 2025-04-02
 
 ### Changed
