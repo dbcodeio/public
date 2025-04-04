@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.11.0 - 2025-04-04
+
+### Changed
+
+- ClickHouse: Preview support released. #111
+
+### Fixed
+
+- Zero Config: Handle drive paths on windows correctly. #408
+- SQL Server: Detect unicode characters before N quoting. #409
+- DB Explorer: Don't fetch databases if we already have them on another connection. #405
+- Timescale: Filtered out internal timescale schema. #378
+- Postgres: Improved types discovered on introspection. #378
+
 ## 1.10.7 - 2025-04-03
 
 ### Fixed
