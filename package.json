@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
 	"publisher": "dbcode",
-	"version": "1.11.0",
+	"version": "1.11.1",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -82,7 +82,8 @@
 				],
 				"toolReferenceName": "dbcode-getConnections",
 				"canBeReferencedInPrompt": true,
-				"displayName": "Retrieve Connections",
+				"displayName": "%Retrieve Connections%",
+				"icon": "out/resources/logos/icon_color.svg",
 				"modelDescription": "Retrieve available connections. Returns a list of connections, including the name, id, type. The connection id and connection name values are required to access the other dbcode tools.",
 				"inputSchema": {
 					"type": "object",
@@ -98,8 +99,9 @@
 				],
 				"toolReferenceName": "dbcode-getDatabases",
 				"canBeReferencedInPrompt": true,
-				"displayName": "Retrieve Databases",
+				"displayName": "%Retrieve Databases%",
 				"modelDescription": "Retrieve all available databases for a specified connection.",
+				"icon": "out/resources/logos/icon_color.svg",
 				"inputSchema": {
 					"type": "object",
 					"properties": {
@@ -127,7 +129,8 @@
 				],
 				"toolReferenceName": "dbcode-getSchemas",
 				"canBeReferencedInPrompt": true,
-				"displayName": "Retrieve Schemas",
+				"displayName": "%Retrieve Schemas%",
+				"icon": "out/resources/logos/icon_color.svg",
 				"modelDescription": "Retrieve the schema names for a database, if the database supports schemas.",
 				"inputSchema": {
 					"type": "object",
@@ -161,7 +164,8 @@
 				],
 				"toolReferenceName": "dbcode-getTables",
 				"canBeReferencedInPrompt": true,
-				"displayName": "Retrieve Tables",
+				"displayName": "%Retrieve Tables%",
+				"icon": "out/resources/logos/icon_color.svg",
 				"modelDescription": "Retrieve all tables, along with their columns, foreign keys, primary keys and index information for a specified database connection.",
 				"inputSchema": {
 					"type": "object",
@@ -199,8 +203,10 @@
 				],
 				"toolReferenceName": "dbcode-executeQuery",
 				"canBeReferencedInPrompt": true,
-				"displayName": "Execute query",
+				"displayName": "%Execute Query%",
+				"icon": "out/resources/logos/icon_color.svg",
 				"modelDescription": "Executes a query in the specified database and optional schema.",
+				"userDescription": "%Executes a query in the specified database and optional schema.%",
 				"inputSchema": {
 					"type": "object",
 					"properties": {
@@ -353,6 +359,11 @@
 				"title": "%Refresh%",
 				"category": "DBCode",
 				"icon": "$(refresh)"
+			},
+			{
+				"command": "dbcode.connections.quickOpen",
+				"title": "%Quick Open%",
+				"category": "DBCode"
 			},
 			{
 				"command": "dbcode.connections.copyElementLabel",
@@ -672,6 +683,11 @@
 				"key": "windows+enter",
 				"mac": "cmd+enter",
 				"when": "editorTextFocus && resourceScheme == dbcode"
+			},
+			{
+				"command": "dbcode.connections.quickOpen",
+				"key": "ctrl+windows+o",
+				"mac": "ctrl+cmd+o"
 			},
 			{
 				"command": "dbcode.connections.view.focus",
