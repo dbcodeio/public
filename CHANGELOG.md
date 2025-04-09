@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.11.2 - 2025-04-09
+
+### Changed
+
+- Welcome Panel: Re designed.
+- Connection: Re designed the add and edit screens.
+- Tunnel: Re designed the add and edit screens.
+
+### Fixed
+
+- Editor: Looses focus when executing statements. #420
+
 ## 1.11.1 - 2025-04-07
 
 ### Changed
