@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 1.11.3 - 2025-04-09
+## 1.11.4 - 2025-04-09
 
 ### Changed
 
@@ -12,6 +12,7 @@
 - Results: Reduced size of quick search to allow more tab space, added visual tab separators.
 - Quick Open: Remembers last used connection, shows path, shows all items once inside a connection level and user starts typing. #237
 - SQL Server: Updated databases to show when the user account does not have access. #421
+- Snowflake: Fixed introspection issue. #422
 
 ## 1.11.2 - 2025-04-09
 
