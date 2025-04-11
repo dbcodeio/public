@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.11.5 - 2025-04-11
+
+### Changed
+
+- Passwords: Expose the config key values as environment variables to the password command. #428
+
+### Fixed
+
+- Results: Adding rows would not work with null values. #430
+
 ## 1.11.4 - 2025-04-09
 
 ### Changed
