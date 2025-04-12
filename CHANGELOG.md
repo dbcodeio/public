@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.11.6 - 2025-04-12
+
+### Fixed
+
+- Improved filter icon showing toggled state, and key column data type icons when toggling filter.
+- SQL statements not being added to the tabs. #418
+- Improved simplified Chinese translation. #427
+- Better handling of databases with no access for configured authentication. #421
+- Snowflake: Fixed introspection issue. #422
+
 ## 1.11.5 - 2025-04-11
 
 ### Changed
