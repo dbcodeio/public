@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.11.7 - 2025-04-14
+
+### Changed
+
+- Setting: Wrap Tabs. Controls if tabs are wrapped or scrolled (default) when there are more than can be displayed.
+
+### Fixed
+
+- Large Schema Performance: Much improved. #425 #378
+- Table Editing: Don't quote the default value. #437
+
 ## 1.11.6 - 2025-04-12
 
 ### Fixed
