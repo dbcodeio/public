@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.11.9 - 2025-04-22
+
+### Fixed
+
+- Connection Add/Edit: Fixed responsive issues on small screens. #447
+- Turso: Removed user_version statement. #446
+- Escaped more SQL Keywords. #444
+- FileStore: Added logging to filestore operations. #440 #425
+- Clickhouse: Enabled request/response compression. #111
+- Postgres: Handle switching to schemas that need escaping. #439
+
 ## 1.11.8 - 2025-04-14
 
 ### Changed
