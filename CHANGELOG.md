@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.11.10 - 2025-04-23
+
+### Fixed
+
+- Race condition on first time initialization. #457
+
 ## 1.11.9 - 2025-04-22
 
 ### Fixed
