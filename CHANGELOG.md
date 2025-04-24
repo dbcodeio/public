@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.11.12 - 2025-04-24
+
+### Changed
+
+- Reuse tabs when opening tables and views. Follows VSCode reuse based on single or double click. #211
+- Connection Add/Edit: Added DNS and Port connection test. 
+
 ## 1.11.11 - 2025-04-24
 
 ### Changed
