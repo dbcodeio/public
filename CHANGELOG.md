@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.11.11 - 2025-04-24
+
+### Changed
+
+- Tunnels: Added support for ProxyCommand in ssh.config. #445
+- Tunnels: Fixed auth methods. #257
+
+### Fixed
+
+- Snowflake: Handle an empty error. #448
+
 ## 1.11.10 - 2025-04-23
 
 ### Fixed
