@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.12.0 - 2025-04-26
+
+### Changed
+
+- Microsoft Dataverse (Power platform): Added support. #458
+- RisingWave: Added Support. #465
+
+### Fixed
+
+- Snowflake: Handle an empty error. #448
+- Azure: Better support for SQL Server variants that don't support system_columns. #460
+
 ## 1.11.12 - 2025-04-24
 
 ### Changed
