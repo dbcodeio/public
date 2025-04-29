@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.12.1 - 2025-04-29
+
+### Changed
+
+- External Tables: Now listed in their own section. #472 
+- Tunnels: Added host and port connection test.
+- DB2: Out of preview #82
+
+### Fixed
+
+- Connection Add/Edit: Disabled connection test if a tunnel was used. 
+- Azure: Better support for Synapse databases. #471
+
 ## 1.12.0 - 2025-04-26
 
 ### Changed

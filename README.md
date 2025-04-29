@@ -4,7 +4,7 @@
 	<a href="https://dbcode.io/docs" target="_blank">DOCS</a> | <a href="https://dbcode.io/roadmap" target="_blank">ROADMAP</a> | <a href="https://dbcode.io/changelog" target="_blank">CHANGELOG</a>  | <a href="https://discord.gg/FvAzEAHb9w" target="_blank">DISCORD</a>
 </p>
 
-Because your database deserves the same love as your codebase. No more context-switching between tools when you're in the flow.
+For devs who'd rather ship than <strike>fumble</strike> alt-tab around.
 
 ## Database Support 
 
