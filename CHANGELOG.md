@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.12.2 - 2025-04-30
+
+### Changed
+
+- Quick Script: Select, Insert, Update, Delete scripts can be generated from the context menu of items like tables, views. #349
+- Item Filter: Now supports SQL like and not like like filter values eg: not like pg_temp%. #461
+
+### Fixed 
+
+- Postgres: Introspection bug. #416
+
 ## 1.12.1 - 2025-04-29
 
 ### Changed
