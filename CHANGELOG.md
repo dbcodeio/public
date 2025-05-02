@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.12.3 - 2025-05-02
+
+### Changed
+
+- SSL: Configurations that are discovered now use the OS ssh command. #445
+- Drop items from the explorer onto the tree to script them. #348
+
 ## 1.12.2 - 2025-04-30
 
 ### Changed
