@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.12.4 - 2025-05-05
+
+### Fixed
+
+- Postgres: Was not handling infinity/-infinity dates. #482
+- Quick Script: Was not setting connection on the new file. #349
+- Open new file: Was not working when executed from the command pallet instead of the tree. #483
+
 ## 1.12.3 - 2025-05-02
 
 ### Changed
