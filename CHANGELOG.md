@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.12.5 - 2025-05-07
+
+### Changed
+
+- Accounts: Added a refresh to the account section to refresh information and not require a logout/in.
+
+### Fixed
+
+- Autocomplete: Fixed issue with alias not always being matched. #484
+- CockroachDB: Error with cluster id caused by SSL configuration in #445
+- Tab Reuse: if workbench.list.openMode is set to doubleClick tabs wont be re used, since no way to track the double click, and without it only one tab can be opened.
+
 ## 1.12.4 - 2025-05-05
 
 ### Fixed

@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.12.4",
+    "version": "1.12.5",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -253,6 +253,12 @@
                 "title": "%Sign Out%",
                 "category": "DBCode",
                 "icon": "$(sign-out)"
+            },
+            {
+                "command": "dbcode.auth.refresh",
+                "title": "%Refresh%",
+                "category": "DBCode",
+                "icon": "$(refresh)"
             },
             {
                 "command": "dbcode.account.portal",
@@ -899,6 +905,11 @@
                 },
                 {
                     "command": "dbcode.auth.signout",
+                    "when": "view == dbcode.account.view && dbcode.auth.signedin === true",
+                    "group": "navigation"
+                },
+                {
+                    "command": "dbcode.auth.refresh",
                     "when": "view == dbcode.account.view && dbcode.auth.signedin === true",
                     "group": "navigation"
                 },
@@ -3715,7 +3726,7 @@
         "jwt-decode": "^4.0.0",
         "lit": "^3.2.1",
         "lodash-es": "^4.17.21",
-        "mariadb": "^3.4.0",
+        "mariadb": "^3.4.2",
         "mongodb": "^6.14.0",
         "mssql": "^11.0.1",
         "npm": "^11.2.0",
