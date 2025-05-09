@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.12.6 - 2025-05-09
+
+### Changed
+
+- Tab Reuse: Changed to follow VSCode enabled limit and limit value, will recycle only if limit editable and tab limit reached. 
+- Output tab: Shows the execution history and output statements for Databases that support them (SQL Server, Postgres).
+- Allow air gapped computers to provide required packages manually. #486
+
+### Fixed
+
+- Clickhouse: Support describe statements
+
 ## 1.12.5 - 2025-05-07
 
 ### Changed
