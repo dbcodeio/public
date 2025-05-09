@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.12.7 - 2025-05-09
+
+### Changed
+
+- Oracle: Moved to new introspection model.
+
+### Fixed
+
+- Oracle: Fixed byte sequence error. #477 #456 
+- Oracle: Use version rather than version_full. #160 
+- Fixed: Sample database no longer includes extension version in the path. #498
+
 ## 1.12.6 - 2025-05-09
 
 ### Changed
