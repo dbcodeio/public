@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.13.0 - 2025-05-11
+
+### Changed
+
+- Trino: Preview support added. #172
+- DuckDB: Supports using a memory only database. #501
+
+### Fixed
+
+- Definition on hover will match schemas regardless of case. #488
+- Clickhouse: Datatypes are better supported. #462 #463
+- Create Database: Was not working in the context menu.
+
 ## 1.12.7 - 2025-05-09
 
 ### Changed
