@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.13.2 - 2025-05-13
+
+### Changed
+
+- New schema storage model.
+- Clickhouse: Now has a request timeout setting in the configuration. #508
+
+### Fixed
+
+- Oracle: Changed compatability to 12.1.0
+- Explorer in some cases could miss map columns to a table.
+
 ## 1.13.1 - 2025-05-13
 
 ### Changed
