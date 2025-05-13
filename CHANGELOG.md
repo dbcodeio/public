@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.13.1 - 2025-05-13
+
+### Changed
+
+- Cassandra: Moved to new introspection model.
+- Mongo: Moved to new introspection model.
+- Files associated to connections will be remembered per workspace. #412
+- Removed the @dbcode Chat Participant in favor of copilot tools and providing context.
+- Setting: Workspace Connection: You can set a workspaces default connection, it will be stored in settings and used in quick open, and Copilot Tools. #237
+- Copilot/MCP: Added a tool that will get the default connection that if configured for a workspace.
+
+### Fixed
+
+- Oracle: Getting support for 12c sorted. #160
+- Right click opening files in windows was incorrectly setting file path.
+
 ## 1.13.0 - 2025-05-11
 
 ### Changed
