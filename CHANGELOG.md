@@ -1,10 +1,21 @@
 # CHANGELOG
 
+## 1.13.4 - 2025-05-15
+
+### Changed
+
+- SQL Server: Included support for SQL Server 2012 and above. #487
+
+### Fixed
+
+- Oracle: 12.1 support fixed, also fixed an error with primary key mapping. #160, #505 #499
+- Output tab: Was too big in notebook output. #513
+
 ## 1.13.3 - 2025-05-15
 
 ### Changed
 
-- DB Explorer: Is now decoupled from connections, should be faster, and be more explicit about when connections are connecting/refreshing. #512
+- DB Explorer: Is now decoupled from connections, should be faster, and be more explicit about when connections are connecting/refreshing.
 
 ### Fixed
 
