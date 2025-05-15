@@ -4,7 +4,7 @@
 	"pricing": "Free",
 	"description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
 	"publisher": "dbcode",
-	"version": "1.13.2",
+	"version": "1.13.3",
 	"icon": "out/resources/logos/logo.png",
 	"galleryBanner": {
 		"color": "#e4ddff",
@@ -359,12 +359,6 @@
 				"icon": "$(plug)"
 			},
 			{
-				"command": "dbcode.connections.connect",
-				"title": "%Connect%",
-				"category": "DBCode",
-				"icon": "$(plug)"
-			},
-			{
 				"command": "dbcode.connections.disconnect",
 				"title": "%Disconnect%",
 				"category": "DBCode",
@@ -372,7 +366,7 @@
 			},
 			{
 				"command": "dbcode.connections.treeRefresh",
-				"title": "%Refresh%",
+				"title": "%Refresh Connected Connections%",
 				"category": "DBCode",
 				"icon": "$(refresh)"
 			},
@@ -386,12 +380,6 @@
 				"title": "%Copy Name%",
 				"category": "DBCode",
 				"icon": "$(copy)"
-			},
-			{
-				"command": "dbcode.connections.treeRefreshing",
-				"title": "%Refresh%",
-				"category": "DBCode",
-				"icon": "$(loading~spin)"
 			},
 			{
 				"command": "dbcode.connections.add",
@@ -854,11 +842,6 @@
 					"group": "navigation@2"
 				},
 				{
-					"command": "dbcode.connections.treeRefreshing",
-					"when": "view == dbcode.connections.view && dbcode.connections.refreshing == true",
-					"group": "navigation@2"
-				},
-				{
 					"command": "dbcode.connections.filter",
 					"when": "view == dbcode.connections.view && !dbcode.connections.filtered",
 					"group": "navigation@3"
@@ -1031,13 +1014,8 @@
 					"group": "9destructive@2"
 				},
 				{
-					"command": "dbcode.connections.connect",
-					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~connect~/",
-					"group": "1"
-				},
-				{
 					"command": "dbcode.database.create",
-					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/  && viewItem =~ /~disconnect~/ && viewItem =~ /~databaseCreate~/",
+					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/  && viewItem =~ /~databaseCreate~/",
 					"group": "2"
 				},
 				{
@@ -1056,18 +1034,13 @@
 					"group": "4"
 				},
 				{
-					"command": "dbcode.connections.connect",
-					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~connect~/",
-					"group": "inline@1"
-				},
-				{
 					"command": "dbcode.connections.disconnect",
 					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~disconnect~/",
 					"group": "1connected@2"
 				},
 				{
 					"command": "dbcode.connections.refresh",
-					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && (viewItem =~ /~disconnect~/ || viewItem =~ /~shallow~/) ",
+					"when": "view == dbcode.connections.view && viewItem =~ /^connection-/",
 					"group": "1connected@1"
 				},
 				{
@@ -2743,17 +2716,17 @@
 							"%No authorization required.%"
 						]
 					},
-					"dbcode.ai.modelId": {
-						"title": "%Copilot Model ID%",
-						"type": "string",
-						"default": "",
-						"description": "%The model used with the Copilot extension, when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model.%"
-					},
 					"dbcode.ai.inlineCompletion": {
 						"title": "%Inline Completion%",
 						"type": "boolean",
 						"default": true,
 						"description": "%Generate inline completions using AI (Uses Copilot if installed/enabled, otherwise DBCode's hosted llama 3).%"
+					},
+					"dbcode.ai.modelId": {
+						"title": "%Inline Completion Model ID%",
+						"type": "string",
+						"default": "",
+						"description": "%The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.%"
 					}
 				}
 			},

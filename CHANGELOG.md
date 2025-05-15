@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.13.3 - 2025-05-15
+
+### Changed
+
+- DB Explorer: Is now decoupled from connections, should be faster, and be more explicit about when connections are connecting/refreshing. #512
+
+### Fixed
+
+- SQLite: Better detection of when to use raw method. #511
+- Results: Inserts cross schema were not reflecting the correct schema. #510
+
 ## 1.13.2 - 2025-05-13
 
 ### Changed
@@ -9,7 +20,7 @@
 
 ### Fixed
 
-- Oracle: Changed compatability to 12.1.0
+- Oracle: Changed compatibility to 12.1.0
 - Explorer in some cases could miss map columns to a table.
 
 ## 1.13.1 - 2025-05-13
