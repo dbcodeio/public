@@ -10,13 +10,7 @@ For devs who'd rather ship than <strike>fumble</strike> alt-tab around.
 
 Connect to 20+ databases including:
 
-**SQL Databases:** MySQL, PostgreSQL, SQL Server, Oracle, SQLite, MariaDB, CockroachDB, DuckDB, StarRocks
-
-**NoSQL:** MongoDB, Redis, Cassandra  
-
-**Cloud:** AWS RDS, Azure SQL, Cloudflare D1, SingleStore, MotherDuck, Timescale
-
-**Big Data:** BigQuery, Redshift, Snowflake
+<img width="100%" alt="data-editor" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/logo_panel.png">
 
 
 [See more](https://dbcode.io)

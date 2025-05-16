@@ -1,5 +1,68 @@
 # CHANGELOG
 
+## 1.13.5 - 2025-05-15
+
+### Changed
+
+- SQL Server: Included support for SQL Server 2012 and above. #487
+
+### Fixed
+
+- Oracle: 12.1 support fixed, also fixed an error with primary key mapping. #160, #505 #499
+- Output tab: Was too big in notebook output. #513
+
+## 1.13.3 - 2025-05-15
+
+### Changed
+
+- DB Explorer: Is now decoupled from connections, should be faster, and be more explicit about when connections are connecting/refreshing.
+
+### Fixed
+
+- SQLite: Better detection of when to use raw method. #511
+- Results: Inserts cross schema were not reflecting the correct schema. #510
+
+## 1.13.2 - 2025-05-13
+
+### Changed
+
+- New schema storage model.
+- Clickhouse: Now has a request timeout setting in the configuration. #508
+
+### Fixed
+
+- Oracle: Changed compatibility to 12.1.0
+- Explorer in some cases could miss map columns to a table.
+
+## 1.13.1 - 2025-05-13
+
+### Changed
+
+- Cassandra: Moved to new introspection model.
+- Mongo: Moved to new introspection model.
+- Files associated to connections will be remembered per workspace. #412
+- Removed the @dbcode Chat Participant in favor of copilot tools and providing context.
+- Setting: Workspace Connection: You can set a workspaces default connection, it will be stored in settings and used in quick open, and Copilot Tools. #237
+- Copilot/MCP: Added a tool that will get the default connection that if configured for a workspace.
+
+### Fixed
+
+- Oracle: Getting support for 12c sorted. #160
+- Right click opening files in windows was incorrectly setting file path.
+
+## 1.13.0 - 2025-05-11
+
+### Changed
+
+- Trino: Preview support added. #172
+- DuckDB: Supports using a memory only database. #501
+
+### Fixed
+
+- Definition on hover will match schemas regardless of case. #488
+- Clickhouse: Datatypes are better supported. #462 #463
+- Create Database: Was not working in the context menu.
+
 ## 1.12.7 - 2025-05-09
 
 ### Changed
