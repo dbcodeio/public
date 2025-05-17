@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.13.6 - 2025-05-17
+
+### Changed
+
+- Notebook: Export feature has been added in preview, cannot save pdf/publish yet, chart rendering is still a work in progress. #206
+- Favorites: Add items from the DB Explorer, files and text to save items as favorites in the current workspace.
+
+### Fixed
+
+- Clickhouse: Delete and insert queries were failing. #518
+- Cloud providers: Fixed issue with expanding some providers. #517
+
 ## 1.13.5 - 2025-05-15
 
 ### Changed
