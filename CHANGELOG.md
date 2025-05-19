@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.13.10 - 2025-05-19
+
+### Changed
+
+- Snowflake: Added support for security role in the connection. #271
+
+### Fixed
+
+- Stored Procedures: Were not editable. #525
+- Clickhouse: Support for passing format null to ignore results, fixing more statements with non standard result returns. #526
+- Definition Provider: Handle database.schema notation, also handle quoted identifiers. #528
+- Redis: Fixed opening All Keys. #522
+
 ## 1.13.9 - 2025-05-19
 
 ### Fixed
