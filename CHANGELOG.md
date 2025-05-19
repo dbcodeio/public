@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.13.9 - 2025-05-19
+
+### Fixed
+
+- Excel: Will now ignore type conversion errors, and make cell null #521
+- Postgres: Don't use information_schema to get tables/views, it was filtering out tables the user did not have permissions for. #512
+
 ## 1.13.8 - 2025-05-18
 
 ### Changed
