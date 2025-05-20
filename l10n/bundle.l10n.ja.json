@@ -26,7 +26,7 @@
   "Length": "長さ",
   "Scale": "スケール",
   "Nullable": "NULL許容",
-  "Identity": "ID",
+  "Identity": "識別子",
   "Default": "デフォルト",
   "No changes to apply": "適用できる変更はありません",
   "Table Name": "テーブル名",
