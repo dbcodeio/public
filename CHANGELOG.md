@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.13.11 - 2025-05-20
+
+### Changed
+
+- Notebook: Export now supports PDF. #206
+
+### Fixed
+
+- SQL: Added from as a reserved word. #531
+- Postgres: Fixed compatibility with 9.2 #530
+
 ## 1.13.10 - 2025-05-19
 
 ### Changed
