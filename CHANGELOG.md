@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.13.12 - 2025-05-21
+
+
+### Fixed
+
+- Oracle: Introspection was hanging on some versions. #160
+- Snowflake: Fixed issue with manual authentication. 
+- Redshift: Fixed issue moving across schemas. #493
+- Notebook: Export code blocks now style correctly. #206
+
 ## 1.13.11 - 2025-05-20
 
 ### Changed
