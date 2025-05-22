@@ -1,7 +1,16 @@
 # CHANGELOG
 
-## 1.13.12 - 2025-05-21
+## 1.13.13 - 2025-05-22
 
+### Changed
+
+- Accounts: Added support for offline/air gapped licenses [More](https://dbcode.io/docs/accounts/offline-license). #486
+
+### Fixed
+
+- BigQuery: Was not handling structs (the driver internally calls them record's as it turns out). #533
+
+## 1.13.12 - 2025-05-21
 
 ### Fixed
 
