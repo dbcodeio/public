@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.13.14 - 2025-05-24
+
+### Fixed
+
+- Postgres: Was not handling search path's with escape characters "\$user". #537
+- Notebooks: Export was incorrectly ordering code blocks. #206
+- Notebooks: Not always restoring output in some cases when output was saved with the notebook. 
+
 ## 1.13.13 - 2025-05-22
 
 ### Changed
