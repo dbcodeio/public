@@ -1,11 +1,12 @@
 # CHANGELOG
 
-## 1.13.15 - 2025-05-27
+## 1.13.16 - 2025-05-27
 
 ### Fixed
 
 - Supabase: Was not correctly switching projects for db account creation. #536
 - Clickhouse: Catch a few more non standard SQL statements that need to run through the command path. #538
+- Redis: Show empty keyspace is none are found. #535
 
 ## 1.13.14 - 2025-05-24
 
