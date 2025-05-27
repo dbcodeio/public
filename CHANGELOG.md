@@ -1,5 +1,64 @@
 # CHANGELOG
 
+## 1.13.16 - 2025-05-27
+
+### Fixed
+
+- Supabase: Was not correctly switching projects for db account creation. #536
+- Clickhouse: Catch a few more non standard SQL statements that need to run through the command path. #538
+- Redis: Show empty keyspace is none are found. #535
+
+## 1.13.14 - 2025-05-24
+
+### Fixed
+
+- Postgres: Was not handling search path's with escape characters "\$user". #537
+- Notebooks: Export was incorrectly ordering code blocks. #206
+- Notebooks: Not always restoring output in some cases when output was saved with the notebook. 
+
+## 1.13.13 - 2025-05-22
+
+### Changed
+
+- Accounts: Added support for offline/air gapped licenses [More](https://dbcode.io/docs/accounts/offline-license). #486
+
+### Fixed
+
+- BigQuery: Was not handling structs (the driver internally calls them record's as it turns out). #533
+
+## 1.13.12 - 2025-05-21
+
+### Fixed
+
+- Oracle: Introspection was hanging on some versions. #160
+- Snowflake: Fixed issue with manual authentication. 
+- Redshift: Fixed issue moving across schemas. #493
+- Notebook: Export code blocks now style correctly. #206
+
+## 1.13.11 - 2025-05-20
+
+### Changed
+
+- Notebook: Export now supports PDF. #206
+
+### Fixed
+
+- SQL: Added from as a reserved word. #531
+- Postgres: Fixed compatibility with 9.2 #530
+
+## 1.13.10 - 2025-05-19
+
+### Changed
+
+- Snowflake: Added support for security role in the connection. #271
+
+### Fixed
+
+- Stored Procedures: Were not editable. #525
+- Clickhouse: Support for passing format null to ignore results, fixing more statements with non standard result returns. #526
+- Definition Provider: Handle database.schema notation, also handle quoted identifiers. #528
+- Redis: Fixed opening All Keys. #522
+
 ## 1.13.9 - 2025-05-19
 
 ### Fixed
