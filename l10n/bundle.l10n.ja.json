@@ -295,7 +295,7 @@
   "Past Due": "支払い遅延",
   "Unpaid": "未払いの",
   "Change connection": "接続の変更",
-  "Change database": "データベースの変更
+  "Change database": "データベースの変更",
   "Change schema": "スキーマの変更",
   "No connection, click to connect": "接続なし、クリックして接続",
   "Failed to parse notebook, error: {0}.": "ノートブックの解析に失敗しました。エラー: {0}。",
@@ -1181,7 +1181,7 @@
   "{0} statements detected. Do you want to execute them?": "{0}ステートメントが検出されました。あなたはそれらを実行しますか?",
   "Execution of {0} statements denied for role {1}": "ロール {1} に対して拒否された {0} ステートメントの実行",
   "Driver does not support read only.": "ドライバーは読み取り専用をサポートしていません。",
-   "Role": "ロール",
+  "Role": "ロール",
   "Development": "開発",
   "Testing": "テスト",
   "Production": "本番",
@@ -1308,7 +1308,7 @@
   "Size: {0}": "サイズ:{0}",
   "Read Only/Roles is Pro feature. They have been disabled on the connection {0}, it is in full access mode.": "読み取り専用/ロールはPro機能です。接続{0}で無効になっており、フルアクセスモードになっています。",
   "SQLite Extensions": "SQLite拡張機能",
-  "User does not have access": "ユーザーにはアクセス権がありません"
+  "User does not have access": "ユーザーにはアクセス権がありません",
   "Configured authentication does not have access to this database": "構成された認証には、このデータベースにアクセスできません",
   "Configured authentication does not have access to the database: {0}": "構成された認証にはデータベースへのアクセス権がありません: {0}",
   "Previous tab": "前のタブ",
