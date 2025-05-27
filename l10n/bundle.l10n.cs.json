@@ -39,7 +39,6 @@
   "NoSQL Databases": "NoSQL databáze",
   "Cloud Databases": "Cloudové databáze",
   "Data Warehouses": "Datové sklady",
-  "from ssh.config ඃෞ": "z ssh.config ඃෞ",
   "Create new tunnel": "Vytvoření nového tunelu",
   "SSL automatically configured for this host.": "Protokol SSL se pro tohoto hostitele automaticky konfiguruje.",
   "Edit Connection: {0}": "Upravit připojení: {0}",
@@ -1426,5 +1425,6 @@
   "License installed successfully": "Licence byla úspěšně nainstalována",
   "Post Executing": "Po provedení",
   "Pre Executing": "Před provedením",
-  "HTML export not yet implemented": "Export HTML zatím není implementován"
+  "HTML export not yet implemented": "Export HTML zatím není implementován",
+  "from ssh.config": "z ssh.config"
 }

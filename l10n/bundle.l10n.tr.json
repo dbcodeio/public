@@ -39,7 +39,6 @@
   "NoSQL Databases": "NoSQL Veritabanları",
   "Cloud Databases": "Bulut Veritabanları",
   "Data Warehouses": "Veri Ambarları",
-  "from ssh.config ඃෞ": "from ssh.config ඃෞ",
   "Create new tunnel": "Yeni tünel oluştur",
   "SSL automatically configured for this host.": "SSL bu ana bilgisayar için otomatik olarak yapılandırılır.",
   "Edit Connection: {0}": "Bağlantıyı Düzenle: {0}",
@@ -1426,5 +1425,6 @@
   "License installed successfully": "Lisans başarıyla yüklendi",
   "Post Executing": "Yürütme Sonrası",
   "Pre Executing": "Ön Yürütme",
-  "HTML export not yet implemented": "HTML dışa aktarma henüz uygulanmadı"
+  "HTML export not yet implemented": "HTML dışa aktarma henüz uygulanmadı",
+  "from ssh.config": "ssh.config sitesinden"
 }

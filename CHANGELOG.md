@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.13.17 - 2025-05-27
+
+### Fixed
+
+- Clickhouse: Re working this to pick up the standard ones as a fallback. #538
+- SQL Server: Introspection performance improvements. #425
+- SQL: Various engines need backslash \ escaped in string literals. #540
+
 ## 1.13.16 - 2025-05-27
 
 ### Fixed

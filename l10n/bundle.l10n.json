@@ -118,7 +118,7 @@
   "Advanced Options": "Advanced Options",
   "Accessible": "Accessible",
   "SSL automatically configured for this host.": "SSL automatically configured for this host.",
-  "from ssh.config ඃෞ": "from ssh.config ඃෞ",
+  "from ssh.config": "from ssh.config",
   "Create new tunnel": "Create new tunnel",
   "Edit Connection: {0}": "Edit Connection: {0}",
   "New Connection": "New Connection",

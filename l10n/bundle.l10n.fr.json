@@ -39,7 +39,6 @@
   "NoSQL Databases": "Bases de données NoSQL",
   "Cloud Databases": "Bases de données cloud",
   "Data Warehouses": "Entrepôts de données",
-  "from ssh.config ඃෞ": "à partir de ssh.config ඃෞ",
   "Create new tunnel": "Créer un nouveau tunnel",
   "SSL automatically configured for this host.": "SSL configuré automatiquement pour cet hôte.",
   "Edit Connection: {0}": "Modifier la connexion : {0}",
@@ -1426,5 +1425,6 @@
   "License installed successfully": "Licence installée avec succès",
   "Post Executing": "Post-exécution",
   "Pre Executing": "Pré-exécution",
-  "HTML export not yet implemented": "L’export HTML n’est pas encore implémenté"
+  "HTML export not yet implemented": "L’export HTML n’est pas encore implémenté",
+  "from ssh.config": "à partir de ssh.config"
 }

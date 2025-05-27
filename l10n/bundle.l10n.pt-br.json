@@ -540,5 +540,6 @@
   "License installed successfully": "Licença instalada com sucesso",
   "Post Executing": "Pós-execução",
   "Pre Executing": "Pré-execução",
-  "HTML export not yet implemented": "Exportação de HTML ainda não implementada"
+  "HTML export not yet implemented": "Exportação de HTML ainda não implementada",
+  "from ssh.config": "de ssh.config"
 }

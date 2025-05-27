@@ -39,7 +39,6 @@
   "NoSQL Databases": "NoSQL 데이터베이스",
   "Cloud Databases": "클라우드 데이터베이스",
   "Data Warehouses": "데이터 웨어하우스",
-  "from ssh.config ඃෞ": "ssh.config ඃෞ에서",
   "Create new tunnel": "새 터널 만들기",
   "SSL automatically configured for this host.": "이 호스트에 대해 SSL이 자동으로 구성됩니다.",
   "Edit Connection: {0}": "연결 편집: {0}",
@@ -1426,5 +1425,6 @@
   "License installed successfully": "라이센스가 성공적으로 설치되었습니다.",
   "Post Executing": "실행 후",
   "Pre Executing": "사전 실행",
-  "HTML export not yet implemented": "HTML 내보내기가 아직 구현되지 않았습니다."
+  "HTML export not yet implemented": "HTML 내보내기가 아직 구현되지 않았습니다.",
+  "from ssh.config": "ssh.config에서"
 }

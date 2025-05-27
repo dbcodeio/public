@@ -39,7 +39,6 @@
   "NoSQL Databases": "NoSQL 資料庫",
   "Cloud Databases": "雲資料庫",
   "Data Warehouses": "數據倉庫",
-  "from ssh.config ඃෞ": "from ssh.config ඃෞ",
   "Create new tunnel": "創建新隧道",
   "SSL automatically configured for this host.": "為此主機自動配置 SSL。",
   "Edit Connection: {0}": "編輯連接：{0}",
@@ -1426,5 +1425,6 @@
   "License installed successfully": "許可證安裝成功",
   "Post Executing": "後執行",
   "Pre Executing": "預執行",
-  "HTML export not yet implemented": "尚未實現 HTML 匯出"
+  "HTML export not yet implemented": "尚未實現 HTML 匯出",
+  "from ssh.config": "從 ssh.config"
 }
