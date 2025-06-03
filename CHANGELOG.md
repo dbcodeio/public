@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.13.18 - 2025-06-03
+
+### Changed
+
+- Query Parameters: Support reuse of parameters.. eg &actorId||1||number can be re used in the same query as just &actorId
+
+### Fixed
+
+- Postgres: Introspection was failing on 9.3 #551
+- SQL Server: Support Microsoft Fabric SQL Servers. #382
+- Query Parameters: Fixed dates with time in them. 
+- Results: Removed contains and other non support filter types on UUID columns.
+
 ## 1.13.17 - 2025-05-27
 
 ### Fixed
