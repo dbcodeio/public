@@ -202,5 +202,11 @@
   "Looking for something else, or found a bug?\n[Docs](https://dbcode.io/docs)\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n": "Cerchi qualcos'altro o trovi un bug?\n[Documenti](https://dbcode.io/docs)\n[Apri il problema GitHub](https://github.com/dbcodeio/public/issues)",
   "Generate Key for License": "Genera chiave per la licenza",
   "Generate License from Key": "Genera licenza dalla chiave",
-  "Install License": "Installa licenza"
+  "Install License": "Installa licenza",
+  "Create Schema": "Crea schema",
+  "Rename Schema": "Rinomina schema",
+  "Drop Schema": "Schema di eliminazione",
+  "Highlight color": "Colore di evidenziazione",
+  "Active statement background": "Sfondo dell'istruzione attiva",
+  "Insert matched parameter background": "Inserisci sfondo parametro corrispondente"
 }

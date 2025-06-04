@@ -202,5 +202,11 @@
   "Looking for something else, or found a bug?\n[Docs](https://dbcode.io/docs)\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n": "다른 것을 찾고 있거나 버그를 발견하셨나요?\n[문서](https://dbcode.io/docs)\n[GitHub 문제 열기](https://github.com/dbcodeio/public/issues)",
   "Generate Key for License": "라이선스에 대한 키 생성",
   "Generate License from Key": "키에서 라이선스 생성",
-  "Install License": "라이선스 설치"
+  "Install License": "라이선스 설치",
+  "Create Schema": "스키마 생성",
+  "Rename Schema": "스키마 이름 바꾸기",
+  "Drop Schema": "스키마 삭제",
+  "Highlight color": "하이라이트 색상",
+  "Active statement background": "능동태 진술 배경",
+  "Insert matched parameter background": "일치하는 매개변수 배경 삽입"
 }

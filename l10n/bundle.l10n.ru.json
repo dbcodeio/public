@@ -1426,5 +1426,8 @@
   "Post Executing": "После выполнения",
   "Pre Executing": "Предварительное выполнение",
   "HTML export not yet implemented": "Экспорт в HTML еще не реализован",
-  "from ssh.config": "из ssh.config"
+  "from ssh.config": "из ssh.config",
+  "Enter a name for the database": "Введите имя базы данных",
+  "Enter a name for the schema": "Введите имя схемы",
+  "Are you sure you want to drop the schema: {0}?": "Вы уверены, что хотите отказаться от схемы: {0}?"
 }

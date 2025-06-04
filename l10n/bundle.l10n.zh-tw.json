@@ -1426,5 +1426,8 @@
   "Post Executing": "後執行",
   "Pre Executing": "預執行",
   "HTML export not yet implemented": "尚未實現 HTML 匯出",
-  "from ssh.config": "從 ssh.config"
+  "from ssh.config": "從 ssh.config",
+  "Enter a name for the database": "輸入資料庫的名稱",
+  "Enter a name for the schema": "輸入架構的名稱",
+  "Are you sure you want to drop the schema: {0}?": "是否確實要刪除 schema： {0}？"
 }

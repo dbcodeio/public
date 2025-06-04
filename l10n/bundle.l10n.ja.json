@@ -1429,5 +1429,8 @@
   "Post Executing": "実行後",
   "Pre Executing": "実行前",
   "HTML export not yet implemented": "HTML エクスポートはまだ実装されていません",
-  "from ssh.config": "ssh.configから"
+  "from ssh.config": "ssh.configから",
+  "Enter a name for the database": "データベースの名前を入力します",
+  "Enter a name for the schema": "スキーマの名前を入力します",
+  "Are you sure you want to drop the schema: {0}?": "スキーマ {0} を削除してもよろしいですか ?"
 }

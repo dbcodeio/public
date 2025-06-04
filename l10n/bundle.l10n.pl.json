@@ -1426,5 +1426,8 @@
   "Post Executing": "Po wykonaniu",
   "Pre Executing": "Wstępne wykonanie",
   "HTML export not yet implemented": "Eksport HTML nie został jeszcze zaimplementowany",
-  "from ssh.config": "z ssh.config"
+  "from ssh.config": "z ssh.config",
+  "Enter a name for the database": "Wprowadź nazwę bazy danych",
+  "Enter a name for the schema": "Wprowadź nazwę schematu",
+  "Are you sure you want to drop the schema: {0}?": "Czy na pewno chcesz usunąć schemat: {0}?"
 }

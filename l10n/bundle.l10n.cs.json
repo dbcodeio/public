@@ -1426,5 +1426,8 @@
   "Post Executing": "Po provedení",
   "Pre Executing": "Před provedením",
   "HTML export not yet implemented": "Export HTML zatím není implementován",
-  "from ssh.config": "z ssh.config"
+  "from ssh.config": "z ssh.config",
+  "Enter a name for the database": "Zadejte název databáze",
+  "Enter a name for the schema": "Zadejte název schématu",
+  "Are you sure you want to drop the schema: {0}?": "Opravdu chcete vypustit schéma: {0}?"
 }

@@ -1426,5 +1426,8 @@
   "Post Executing": "실행 후",
   "Pre Executing": "사전 실행",
   "HTML export not yet implemented": "HTML 내보내기가 아직 구현되지 않았습니다.",
-  "from ssh.config": "ssh.config에서"
+  "from ssh.config": "ssh.config에서",
+  "Enter a name for the database": "데이터베이스의 이름을 입력합니다",
+  "Enter a name for the schema": "스키마의 이름을 입력합니다.",
+  "Are you sure you want to drop the schema: {0}?": "schema: {0}를 삭제하시겠습니까?"
 }

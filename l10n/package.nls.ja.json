@@ -202,5 +202,11 @@
   "Looking for something else, or found a bug?\n[Docs](https://dbcode.io/docs)\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n": "何か他のものを探していますか、それともバグを見つけましたか?\n[ドキュメント](https://dbcode.io/docs)\n[GitHubのイシューを開く](https://github.com/dbcodeio/public/issues)",
   "Generate Key for License": "ライセンスのキーの生成",
   "Generate License from Key": "キーからライセンスを生成",
-  "Install License": "ライセンスのインストール"
+  "Install License": "ライセンスのインストール",
+  "Create Schema": "スキーマの作成",
+  "Rename Schema": "スキーマの名前変更",
+  "Drop Schema": "ドロップスキーマ",
+  "Highlight color": "ハイライト色",
+  "Active statement background": "アクティブステートメントの背景",
+  "Insert matched parameter background": "一致したパラメータの背景を挿入"
 }

@@ -202,5 +202,11 @@
   "Looking for something else, or found a bug?\n[Docs](https://dbcode.io/docs)\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n": "Başka bir şey mi arıyorsunuz veya bir hata mı buldunuz?\n[Dokümanlar](https://dbcode.io/docs)\n[GitHub Sorununu Aç](https://github.com/dbcodeio/public/issues)",
   "Generate Key for License": "Lisans için Anahtar Oluştur",
   "Generate License from Key": "Anahtardan Lisans Oluştur",
-  "Install License": "Lisansı Yükle"
+  "Install License": "Lisansı Yükle",
+  "Create Schema": "Şema Oluştur",
+  "Rename Schema": "Şemayı Yeniden Adlandır",
+  "Drop Schema": "Bırak Şeması",
+  "Highlight color": "Vurgu rengi",
+  "Active statement background": "Aktif deyim arka planı",
+  "Insert matched parameter background": "Eşleşen parametre arka planı ekle"
 }

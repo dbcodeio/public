@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.14.0 - 2025-06-04
+
+### Changed
+
+- Azure Synapse: Added support for Synapse. #544
+- Explorer: Added right click options to create, drop and rename schemas where applicable.
+- Colors: Added dbcode.activeStatementBackground and dbcode.activeStatementBackground. #542
+
+### Fixed
+
+- Postgres: Re worked detection of support for using internal PG functions in introspection. #548
+- Clickhouse: Decode map data types #562 
+
 ## 1.13.18 - 2025-06-03
 
 ### Changed

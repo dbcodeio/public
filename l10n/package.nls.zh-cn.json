@@ -202,5 +202,11 @@
   "Looking for something else, or found a bug?\n[Docs](https://dbcode.io/docs)\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n": "正在寻找其他内容，或发现错误？\n[文档]（https://dbcode.io/docs）\n[打开 GitHub 问题]（https://github.com/dbcodeio/public/issues）",
   "Generate Key for License": "为许可证生成密钥",
   "Generate License from Key": "从密钥生成许可证",
-  "Install License": "安装许可证"
+  "Install License": "安装许可证",
+  "Create Schema": "Create Schema",
+  "Rename Schema": "重命名架构",
+  "Drop Schema": "删除架构",
+  "Highlight color": "高亮颜色",
+  "Active statement background": "Active 语句背景",
+  "Insert matched parameter background": "插入匹配的参数背景"
 }
