@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.14.1 - 2025-06-05
+
+### Changed
+
+- Import: Auto match columns based on name. #555
+
+### Fixed
+
+- SQL Server: Windows Authentication was broken after version 1.13.17. #563
+
 ## 1.14.0 - 2025-06-04
 
 ### Changed
