@@ -105,7 +105,6 @@
   "Loading rows...": "Загрузка рядов...",
   "Success, 1 row affected": "Успех, затронута 1 строка",
   "Success, {0} rows affected": "Успех, затронуто {0} строк",
-  "The number of rows returned is equal to the maximum number of rows setting.": "Количество возвращаемых строк равно заданному параметру maximum number of rows.",
   "Toggle Menu": "Переключить меню",
   "Edit": "Редактировать",
   "Download": "Загружать",
@@ -1035,7 +1034,6 @@
   "Add Payment Method / Manage Trial...": "Добавить способ оплаты / Управление пробной версией...",
   "Failed to find the connection {0} associated with this notebook.": "Не удалось найти {0} подключения, связанные с этой записной книжкой.",
   "SQL or definition not provided": "SQL или определение не предоставлены",
-  "sqlite-vec": "sqlite-vec",
   "Not seeing an extension?": "Не видите расширение?",
   "Fetch all rows": "Получить все строки",
   "Don't Save": "Не экономьте",
@@ -1429,5 +1427,10 @@
   "from ssh.config": "из ssh.config",
   "Enter a name for the database": "Введите имя базы данных",
   "Enter a name for the schema": "Введите имя схемы",
-  "Are you sure you want to drop the schema: {0}?": "Вы уверены, что хотите отказаться от схемы: {0}?"
+  "Are you sure you want to drop the schema: {0}?": "Вы уверены, что хотите отказаться от схемы: {0}?",
+  "Count all rows": "Подсчитайте все строки",
+  "of {0}": "из {0}",
+  "The initial number of rows fetched is equal to the rows to load setting.": "Начальное количество извлекаемых строк равно настройке строк для загрузки.",
+  "Error counting rows: {0}": "Ошибка подсчета строк: {0}",
+  "You are about to execute the entire document. Do you want to continue?": "Вы собираетесь выполнить весь документ. Хотите продолжить?"
 }

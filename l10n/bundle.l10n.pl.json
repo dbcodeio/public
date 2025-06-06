@@ -105,7 +105,6 @@
   "Loading rows...": "Wczytywanie wierszy...",
   "Success, 1 row affected": "Powodzenie, dotyczy 1 wiersza",
   "Success, {0} rows affected": "Powodzenie, dotyczy to {0} wierszy",
-  "The number of rows returned is equal to the maximum number of rows setting.": "Liczba zwracanych wierszy jest równa ustawieniu maksymalnej liczby wierszy.",
   "Toggle Menu": "Przełącz menu",
   "Edit": "Redagować",
   "Download": "Pobierać",
@@ -1035,7 +1034,6 @@
   "Add Payment Method / Manage Trial...": "Dodaj metodę płatności / Zarządzaj wersją próbną...",
   "Failed to find the connection {0} associated with this notebook.": "Nie można odnaleźć połączenia {0} skojarzonego z tym notesem.",
   "SQL or definition not provided": "Nie podano kodu SQL ani definicji",
-  "sqlite-vec": "sqlite-vec",
   "Not seeing an extension?": "Nie widzisz rozszerzenia?",
   "Fetch all rows": "Pobierz wszystkie wiersze",
   "Don't Save": "Nie oszczędzaj",
@@ -1429,5 +1427,10 @@
   "from ssh.config": "z ssh.config",
   "Enter a name for the database": "Wprowadź nazwę bazy danych",
   "Enter a name for the schema": "Wprowadź nazwę schematu",
-  "Are you sure you want to drop the schema: {0}?": "Czy na pewno chcesz usunąć schemat: {0}?"
+  "Are you sure you want to drop the schema: {0}?": "Czy na pewno chcesz usunąć schemat: {0}?",
+  "Count all rows": "Policz wszystkie wiersze",
+  "of {0}": "z {0}",
+  "The initial number of rows fetched is equal to the rows to load setting.": "Początkowa liczba pobranych wierszy jest równa ustawieniu wierszy do załadowania.",
+  "Error counting rows: {0}": "Błąd podczas zliczania wierszy: {0}",
+  "You are about to execute the entire document. Do you want to continue?": "Za chwilę wykonasz cały dokument. Czy chcesz kontynuować?"
 }

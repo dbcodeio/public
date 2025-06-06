@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.14.2 - 2025-06-06
+
+### Changed
+
+- Results: Added option to count all rows when red row count is shown. #509
+- SQLite: Added sqlite-js and sqlean extensions.
+- Editor: If you use the keyboard shortcut, or execute icon without the cursor in an active statement, you will be prompted to confirm executing the whole document. 
+
 ## 1.14.1 - 2025-06-05
 
 ### Changed

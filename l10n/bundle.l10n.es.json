@@ -105,7 +105,6 @@
   "Loading rows...": "Cargando filas...",
   "Success, 1 row affected": "Éxito, 1 fila afectada",
   "Success, {0} rows affected": "Éxito, {0} filas afectadas",
-  "The number of rows returned is equal to the maximum number of rows setting.": "El número de filas devueltas es igual al valor del número máximo de filas.",
   "Toggle Menu": "Menú de alternancia",
   "Edit": "Editar",
   "Download": "Descargar",
@@ -1035,7 +1034,6 @@
   "Add Payment Method / Manage Trial...": "Agregar método de pago / Administrar prueba...",
   "Failed to find the connection {0} associated with this notebook.": "No se pudo encontrar el {0} de conexión asociado a este bloc de notas.",
   "SQL or definition not provided": "SQL o definición no proporcionada",
-  "sqlite-vec": "sqlite-vec",
   "Not seeing an extension?": "¿No ves una extensión?",
   "Fetch all rows": "Capturar todas las filas",
   "Don't Save": "No ahorres",
@@ -1429,5 +1427,10 @@
   "from ssh.config": "de ssh.config",
   "Enter a name for the database": "Introduzca un nombre para la base de datos",
   "Enter a name for the schema": "Introduzca un nombre para el esquema",
-  "Are you sure you want to drop the schema: {0}?": "¿Está seguro de que desea eliminar el esquema: {0}?"
+  "Are you sure you want to drop the schema: {0}?": "¿Está seguro de que desea eliminar el esquema: {0}?",
+  "Count all rows": "Contar todas las filas",
+  "of {0}": "de {0}",
+  "The initial number of rows fetched is equal to the rows to load setting.": "El número inicial de filas recuperadas es igual a la configuración de filas para cargar.",
+  "Error counting rows: {0}": "Error al contar filas: {0}",
+  "You are about to execute the entire document. Do you want to continue?": "Está a punto de ejecutar todo el documento. ¿Quieres continuar?"
 }

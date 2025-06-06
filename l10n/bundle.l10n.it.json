@@ -105,7 +105,6 @@
   "Loading rows...": "Caricamento delle righe...",
   "Success, 1 row affected": "Operazione riuscita, 1 riga interessata",
   "Success, {0} rows affected": "Operazioni riuscite {0} righe interessate",
-  "The number of rows returned is equal to the maximum number of rows setting.": "Il numero di righe restituite è uguale all'impostazione del numero massimo di righe.",
   "Toggle Menu": "Attiva/disattiva menu",
   "Edit": "Redigere",
   "Download": "Scaricare",
@@ -1035,7 +1034,6 @@
   "Add Payment Method / Manage Trial...": "Aggiungi metodo di pagamento / Gestisci prova...",
   "Failed to find the connection {0} associated with this notebook.": "Impossibile trovare il {0} di connessione associato a questo notebook.",
   "SQL or definition not provided": "SQL o definizione non fornita",
-  "sqlite-vec": "sqlite-vec",
   "Not seeing an extension?": "Non vedi un'estensione?",
   "Fetch all rows": "Recupera tutte le righe",
   "Don't Save": "Non salvare",
@@ -1429,5 +1427,10 @@
   "from ssh.config": "da ssh.config",
   "Enter a name for the database": "Immettere un nome per il database",
   "Enter a name for the schema": "Immettere un nome per lo schema",
-  "Are you sure you want to drop the schema: {0}?": "Sei sicuro di voler eliminare lo schema: {0}?"
+  "Are you sure you want to drop the schema: {0}?": "Sei sicuro di voler eliminare lo schema: {0}?",
+  "Count all rows": "Conta tutte le righe",
+  "of {0}": "di {0}",
+  "The initial number of rows fetched is equal to the rows to load setting.": "Il numero iniziale di righe recuperate è uguale all'impostazione delle righe da caricare.",
+  "Error counting rows: {0}": "Errore nel conteggio delle righe: {0}",
+  "You are about to execute the entire document. Do you want to continue?": "Stai per eseguire l'intero documento. Vuoi continuare?"
 }

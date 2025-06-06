@@ -105,7 +105,6 @@
   "Loading rows...": "Načítání řádků...",
   "Success, 1 row affected": "Úspěch, 1 ovlivněný řádek",
   "Success, {0} rows affected": "Úspěch, {0} dotčených řádků",
-  "The number of rows returned is equal to the maximum number of rows setting.": "Počet vrácených řádků se rovná nastavení maximálního počtu řádků.",
   "Toggle Menu": "Přepnout menu",
   "Edit": "Upravit",
   "Download": "Stáhnout",
@@ -1035,7 +1034,6 @@
   "Add Payment Method / Manage Trial...": "Přidat způsob platby / Spravovat zkušební verzi...",
   "Failed to find the connection {0} associated with this notebook.": "Nepodařilo se najít {0} připojení přidruženého k tomuto poznámkovému bloku.",
   "SQL or definition not provided": "SQL nebo definice nejsou k dispozici",
-  "sqlite-vec": "SQLite-vec",
   "Not seeing an extension?": "Nevidíte rozšíření?",
   "Fetch all rows": "Načtení všech řádků",
   "Don't Save": "Neukládejte",
@@ -1429,5 +1427,10 @@
   "from ssh.config": "z ssh.config",
   "Enter a name for the database": "Zadejte název databáze",
   "Enter a name for the schema": "Zadejte název schématu",
-  "Are you sure you want to drop the schema: {0}?": "Opravdu chcete vypustit schéma: {0}?"
+  "Are you sure you want to drop the schema: {0}?": "Opravdu chcete vypustit schéma: {0}?",
+  "Count all rows": "Spočítat všechny řádky",
+  "of {0}": "{0}",
+  "The initial number of rows fetched is equal to the rows to load setting.": "Počáteční počet načtených řádků se rovná nastavení řádků k načtení.",
+  "Error counting rows: {0}": "Řádky počítání chyb: {0}",
+  "You are about to execute the entire document. Do you want to continue?": "Chystáte se spustit celý dokument. Chcete pokračovat?"
 }

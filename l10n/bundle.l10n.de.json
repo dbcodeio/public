@@ -105,7 +105,6 @@
   "Loading rows...": "Reihen werden geladen...",
   "Success, 1 row affected": "Erfolg, 1 Zeile betroffen",
   "Success, {0} rows affected": "Erfolg, {0} Zeilen betroffen sind",
-  "The number of rows returned is equal to the maximum number of rows setting.": "Die Anzahl der zurückgegebenen Zeilen entspricht der Einstellung für die maximale Anzahl von Zeilen.",
   "Toggle Menu": "Menü umschalten",
   "Edit": "Redigieren",
   "Download": "Herunterladen",
@@ -1035,7 +1034,6 @@
   "Add Payment Method / Manage Trial...": "Zahlungsmethode hinzufügen / Testversion verwalten...",
   "Failed to find the connection {0} associated with this notebook.": "Die Verbindung {0}, die diesem Notebook zugeordnet ist, konnte nicht gefunden werden.",
   "SQL or definition not provided": "SQL oder Definition nicht bereitgestellt",
-  "sqlite-vec": "sqlite-vec",
   "Not seeing an extension?": "Sie sehen keine Erweiterung?",
   "Fetch all rows": "Alle Zeilen abrufen",
   "Don't Save": "Nicht speichern",
@@ -1429,5 +1427,10 @@
   "from ssh.config": "von ssh.config",
   "Enter a name for the database": "Geben Sie einen Namen für die Datenbank ein",
   "Enter a name for the schema": "Geben Sie einen Namen für das Schema ein",
-  "Are you sure you want to drop the schema: {0}?": "Sind Sie sicher, dass Sie das Schema löschen möchten: {0}?"
+  "Are you sure you want to drop the schema: {0}?": "Sind Sie sicher, dass Sie das Schema löschen möchten: {0}?",
+  "Count all rows": "Alle Zeilen zählen",
+  "of {0}": "von {0}",
+  "The initial number of rows fetched is equal to the rows to load setting.": "Die anfängliche Anzahl der abgerufenen Zeilen entspricht der Einstellung für die zu ladenden Zeilen.",
+  "Error counting rows: {0}": "Fehler beim Zählen von Zeilen: {0}",
+  "You are about to execute the entire document. Do you want to continue?": "Sie sind im Begriff, das gesamte Dokument auszuführen. Möchten Sie fortfahren?"
 }

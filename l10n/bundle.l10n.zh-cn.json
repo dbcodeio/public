@@ -105,7 +105,6 @@
   "Loading rows...": "正在加载行...",
   "Success, 1 row affected": "成功，影响 1 行",
   "Success, {0} rows affected": "成功，影响 {0} 行",
-  "The number of rows returned is equal to the maximum number of rows setting.": "返回的行数等于最大行数设置。",
   "Toggle Menu": "切换菜单",
   "Edit": "编辑",
   "Download": "下载",
@@ -1035,7 +1034,6 @@
   "Add Payment Method / Manage Trial...": "添加付款方式/管理试用...",
   "Failed to find the connection {0} associated with this notebook.": "未能找到与此笔记本关联的连接 {0}。",
   "SQL or definition not provided": "未提供 SQL 或定义",
-  "sqlite-vec": "sqlite-vec",
   "Not seeing an extension?": "没有看到扩展？",
   "Fetch all rows": "获取所有行",
   "Don't Save": "不保存",
@@ -1429,5 +1427,10 @@
   "from ssh.config": "从 ssh.config",
   "Enter a name for the database": "输入数据库的名称",
   "Enter a name for the schema": "输入架构的名称",
-  "Are you sure you want to drop the schema: {0}?": "是否确实要删除 schema： {0}？"
+  "Are you sure you want to drop the schema: {0}?": "是否确实要删除 schema： {0}？",
+  "Count all rows": "计算所有行数",
+  "of {0}": "{0}",
+  "The initial number of rows fetched is equal to the rows to load setting.": "获取的初始行数等于 rows to load 设置。",
+  "Error counting rows: {0}": "对行进行计数时出错：{0}",
+  "You are about to execute the entire document. Do you want to continue?": "您将要执行整个文档。是否要继续？"
 }

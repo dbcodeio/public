@@ -151,7 +151,6 @@
   "Add Payment Method / Manage Trial...": "Adicionar método de pagamento / Gerenciar avaliação...",
   "Failed to find the connection {0} associated with this notebook.": "Falha ao encontrar a conexão {0} associada a este notebook.",
   "SQL or definition not provided": "SQL ou definição não fornecida",
-  "sqlite-vec": "sqlite-vec",
   "Not seeing an extension?": "Não está vendo uma extensão?",
   "Fetch all rows": "Buscar todas as linhas",
   "Don't Save": "Não salve",
@@ -544,5 +543,10 @@
   "from ssh.config": "de ssh.config",
   "Enter a name for the database": "Insira um nome para o banco de dados",
   "Enter a name for the schema": "Insira um nome para o esquema",
-  "Are you sure you want to drop the schema: {0}?": "Tem certeza de que deseja descartar o esquema: {0}?"
+  "Are you sure you want to drop the schema: {0}?": "Tem certeza de que deseja descartar o esquema: {0}?",
+  "Count all rows": "Contar todas as linhas",
+  "of {0}": "de {0}",
+  "The initial number of rows fetched is equal to the rows to load setting.": "O número inicial de linhas buscadas é igual à configuração de linhas a serem carregadas.",
+  "Error counting rows: {0}": "Erro ao contar linhas: {0}",
+  "You are about to execute the entire document. Do you want to continue?": "Você está prestes a executar o documento inteiro. Você quer continuar?"
 }

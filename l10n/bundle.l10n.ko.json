@@ -105,7 +105,6 @@
   "Loading rows...": "행 불러오는 중...",
   "Success, 1 row affected": "성공, 1개 행 영향 받음",
   "Success, {0} rows affected": "성공, 영향을 받는 행 {0}개",
-  "The number of rows returned is equal to the maximum number of rows setting.": "반환되는 행 수는 최대 행 수 설정과 같습니다.",
   "Toggle Menu": "토글 메뉴",
   "Edit": "편집하다",
   "Download": "다운로드",
@@ -1035,7 +1034,6 @@
   "Add Payment Method / Manage Trial...": "결제 수단 추가 / 평가판 관리...",
   "Failed to find the connection {0} associated with this notebook.": "이 노트북과 연결된 연결 {0} 찾지 못했습니다.",
   "SQL or definition not provided": "SQL 또는 정의가 제공되지 않음",
-  "sqlite-vec": "sqlite-vec",
   "Not seeing an extension?": "확장 프로그램이 보이지 않나요?",
   "Fetch all rows": "모든 행 가져오기",
   "Don't Save": "저장하지 않음",
@@ -1429,5 +1427,10 @@
   "from ssh.config": "ssh.config에서",
   "Enter a name for the database": "데이터베이스의 이름을 입력합니다",
   "Enter a name for the schema": "스키마의 이름을 입력합니다.",
-  "Are you sure you want to drop the schema: {0}?": "schema: {0}를 삭제하시겠습니까?"
+  "Are you sure you want to drop the schema: {0}?": "schema: {0}를 삭제하시겠습니까?",
+  "Count all rows": "모든 행 계산",
+  "of {0}": "{0} 수",
+  "The initial number of rows fetched is equal to the rows to load setting.": "인출된 초기 행 수는 로드할 행 설정과 같습니다.",
+  "Error counting rows: {0}": "행 계산 오류: {0}",
+  "You are about to execute the entire document. Do you want to continue?": "전체 문서를 실행하려고 합니다. 계속하시겠습니까?"
 }

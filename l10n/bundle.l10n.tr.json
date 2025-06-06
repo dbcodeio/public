@@ -105,7 +105,6 @@
   "Loading rows...": "Satırlar yükleniyor...",
   "Success, 1 row affected": "Başarı, 1 satır etkilendi",
   "Success, {0} rows affected": "Başarı, {0} satır etkilendi",
-  "The number of rows returned is equal to the maximum number of rows setting.": "Döndürülen satır sayısı, maksimum satır sayısı ayarına eşittir.",
   "Toggle Menu": "Menüyü Aç/Kapat",
   "Edit": "Düzenlemek",
   "Download": "İndirmek",
@@ -1035,7 +1034,6 @@
   "Add Payment Method / Manage Trial...": "Ödeme Yöntemi Ekle / Deneme Sürümünü Yönet...",
   "Failed to find the connection {0} associated with this notebook.": "Bu not defteriyle ilişkili bağlantı {0} bulunamadı.",
   "SQL or definition not provided": "SQL veya tanım sağlanmadı",
-  "sqlite-vec": "sqlite-vec",
   "Not seeing an extension?": "Bir uzantı görmüyor musunuz?",
   "Fetch all rows": "Tüm satırları getir",
   "Don't Save": "Kaydetme",
@@ -1429,5 +1427,10 @@
   "from ssh.config": "ssh.config sitesinden",
   "Enter a name for the database": "Veritabanı için bir ad girin",
   "Enter a name for the schema": "Şema için bir ad girin",
-  "Are you sure you want to drop the schema: {0}?": "Şemayı bırakmak istediğinizden emin misiniz: {0}?"
+  "Are you sure you want to drop the schema: {0}?": "Şemayı bırakmak istediğinizden emin misiniz: {0}?",
+  "Count all rows": "Tüm satırları sayma",
+  "of {0}": "{0} arasında",
+  "The initial number of rows fetched is equal to the rows to load setting.": "Getirilen ilk satır sayısı, yüklenecek satır sayısı ayarına eşittir.",
+  "Error counting rows: {0}": "Satırları sayma hatası: {0}",
+  "You are about to execute the entire document. Do you want to continue?": "Tüm belgeyi yürütmek üzeresiniz. Devam etmek istiyor musunuz?"
 }

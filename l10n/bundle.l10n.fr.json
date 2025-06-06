@@ -105,7 +105,6 @@
   "Loading rows...": "Chargement des rangées...",
   "Success, 1 row affected": "Succès, 1 rang affecté",
   "Success, {0} rows affected": "Succès, {0} rangs touchés",
-  "The number of rows returned is equal to the maximum number of rows setting.": "Le nombre de lignes renvoyées est égal au paramètre de nombre maximal de lignes.",
   "Toggle Menu": "Basculer le menu",
   "Edit": "Éditer",
   "Download": "Télécharger",
@@ -1035,7 +1034,6 @@
   "Add Payment Method / Manage Trial...": "Ajouter un mode de paiement / Gérer l’essai...",
   "Failed to find the connection {0} associated with this notebook.": "Impossible de trouver le {0} de connexion associé à ce bloc-notes.",
   "SQL or definition not provided": "SQL ou définition non fourni",
-  "sqlite-vec": "sqlite-vec",
   "Not seeing an extension?": "Vous ne voyez pas d’extension ?",
   "Fetch all rows": "Récupérer toutes les lignes",
   "Don't Save": "N’épargnez pas",
@@ -1429,5 +1427,10 @@
   "from ssh.config": "à partir de ssh.config",
   "Enter a name for the database": "Entrez un nom pour la base de données",
   "Enter a name for the schema": "Entrez un nom pour le schéma",
-  "Are you sure you want to drop the schema: {0}?": "Êtes-vous sûr de vouloir supprimer le schéma : {0} ?"
+  "Are you sure you want to drop the schema: {0}?": "Êtes-vous sûr de vouloir supprimer le schéma : {0} ?",
+  "Count all rows": "Compter toutes les rangées",
+  "of {0}": "de {0}",
+  "The initial number of rows fetched is equal to the rows to load setting.": "Le nombre initial de lignes extraites est égal au paramètre de lignes à charger.",
+  "Error counting rows: {0}": "Erreur de comptage des lignes : {0}",
+  "You are about to execute the entire document. Do you want to continue?": "Vous êtes sur le point d’exécuter l’intégralité du document. Voulez-vous continuer ?"
 }

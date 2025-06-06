@@ -105,7 +105,6 @@
   "Loading rows...": "載入行...",
   "Success, 1 row affected": "成功，1 行受到影響",
   "Success, {0} rows affected": "成功，{0}行受到影響",
-  "The number of rows returned is equal to the maximum number of rows setting.": "返回的行數等於最大行數設置。",
   "Toggle Menu": "切換功能表",
   "Edit": "編輯",
   "Download": "下載",
@@ -1035,7 +1034,6 @@
   "Add Payment Method / Manage Trial...": "新增付款條件 / 管理試用...",
   "Failed to find the connection {0} associated with this notebook.": "找不到與此筆記本關聯的連接{0}。",
   "SQL or definition not provided": "未提供 SQL 或定義",
-  "sqlite-vec": "sqlite-vec",
   "Not seeing an extension?": "沒有看到擴展？",
   "Fetch all rows": "獲取所有行",
   "Don't Save": "不保存",
@@ -1429,5 +1427,10 @@
   "from ssh.config": "從 ssh.config",
   "Enter a name for the database": "輸入資料庫的名稱",
   "Enter a name for the schema": "輸入架構的名稱",
-  "Are you sure you want to drop the schema: {0}?": "是否確實要刪除 schema： {0}？"
+  "Are you sure you want to drop the schema: {0}?": "是否確實要刪除 schema： {0}？",
+  "Count all rows": "計算所有行數",
+  "of {0}": "{0}",
+  "The initial number of rows fetched is equal to the rows to load setting.": "獲取的初始行數等於rows to load設置。",
+  "Error counting rows: {0}": "對行進行計數時出錯：{0}",
+  "You are about to execute the entire document. Do you want to continue?": "您將要執行整個文件。是否要繼續？"
 }
