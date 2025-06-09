@@ -208,5 +208,6 @@
   "Drop Schema": "Schema löschen",
   "Highlight color": "Farbe hervorheben",
   "Active statement background": "Hintergrund der aktiven Aussage",
-  "Insert matched parameter background": "Einfügen eines übereinstimmenden Parameterhintergrunds"
+  "Insert matched parameter background": "Einfügen eines übereinstimmenden Parameterhintergrunds",
+  "Wrap cell text in the results.": "Brechen Sie den Zellentext in den Ergebnissen ein."
 }

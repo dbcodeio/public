@@ -1432,5 +1432,10 @@
   "of {0}": "de {0}",
   "The initial number of rows fetched is equal to the rows to load setting.": "Le nombre initial de lignes extraites est égal au paramètre de lignes à charger.",
   "Error counting rows: {0}": "Erreur de comptage des lignes : {0}",
-  "You are about to execute the entire document. Do you want to continue?": "Vous êtes sur le point d’exécuter l’intégralité du document. Voulez-vous continuer ?"
+  "You are about to execute the entire document. Do you want to continue?": "Vous êtes sur le point d’exécuter l’intégralité du document. Voulez-vous continuer ?",
+  "Password Protect?": "Protection par mot de passe ?",
+  "Enter a password to secure the PDF, escape to skip": "Entrez un mot de passe pour sécuriser le PDF, échappez pour sauter",
+  "Note: Password protection can be bypassed, but prevents casual access to the content.": "Remarque : La protection par mot de passe peut être contournée, mais empêche l’accès occasionnel au contenu.",
+  "Unwrap Column Text": "Désencapsuler le texte de la colonne",
+  "Wrap Column Text": "Habiller le texte de la colonne"
 }

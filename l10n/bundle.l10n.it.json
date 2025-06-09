@@ -1432,5 +1432,10 @@
   "of {0}": "di {0}",
   "The initial number of rows fetched is equal to the rows to load setting.": "Il numero iniziale di righe recuperate è uguale all'impostazione delle righe da caricare.",
   "Error counting rows: {0}": "Errore nel conteggio delle righe: {0}",
-  "You are about to execute the entire document. Do you want to continue?": "Stai per eseguire l'intero documento. Vuoi continuare?"
+  "You are about to execute the entire document. Do you want to continue?": "Stai per eseguire l'intero documento. Vuoi continuare?",
+  "Password Protect?": "Proteggi con password?",
+  "Enter a password to secure the PDF, escape to skip": "Inserisci una password per proteggere il PDF, esci per saltare",
+  "Note: Password protection can be bypassed, but prevents casual access to the content.": "Nota: la protezione con password può essere aggirata, ma impedisce l'accesso casuale al contenuto.",
+  "Unwrap Column Text": "Srotolare il testo della colonna",
+  "Wrap Column Text": "Testo della colonna a capo"
 }

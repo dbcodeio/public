@@ -208,5 +208,6 @@
   "Drop Schema": "Upuść schemat",
   "Highlight color": "Kolor podświetlenia",
   "Active statement background": "Tło aktywnej instrukcji",
-  "Insert matched parameter background": "Wstawianie dopasowanego tła parametru"
+  "Insert matched parameter background": "Wstawianie dopasowanego tła parametru",
+  "Wrap cell text in the results.": "Zawijaj tekst komórki w wynikach."
 }

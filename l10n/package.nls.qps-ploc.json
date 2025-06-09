@@ -131,6 +131,7 @@
   "Order by the primary key in descending order.": "ǾǾřḓḗḗř ƀẏ ŧħḗḗ ƥřīḿȧȧřẏ ķḗḗẏ īƞ ḓḗḗşƈḗḗƞḓīƞɠ ǿǿřḓḗḗř.",
   "When opening a table, order by the primary key if present.": "Ẇħḗḗƞ ǿǿƥḗḗƞīƞɠ ȧȧ ŧȧȧƀŀḗḗ, ǿǿřḓḗḗř ƀẏ ŧħḗḗ ƥřīḿȧȧřẏ ķḗḗẏ īƒ ƥřḗḗşḗḗƞŧ.",
   "Controls the font size of the results in pixels. If empty, the font size will be the same as the editor font size.": "Ƈǿǿƞŧřǿǿŀş ŧħḗḗ ƒǿǿƞŧ şīẑḗḗ ǿǿƒ ŧħḗḗ řḗḗşŭŭŀŧş īƞ ƥīẋḗḗŀş. Īƒ ḗḗḿƥŧẏ, ŧħḗḗ ƒǿǿƞŧ şīẑḗḗ ẇīŀŀ ƀḗḗ ŧħḗḗ şȧȧḿḗḗ ȧȧş ŧħḗḗ ḗḗḓīŧǿǿř ƒǿǿƞŧ şīẑḗḗ.",
+  "Wrap cell text in the results.": "Ẇřȧȧƥ ƈḗḗŀŀ ŧḗḗẋŧ īƞ ŧħḗḗ řḗḗşŭŭŀŧş.",
   "Data Formats": "Ḓȧȧŧȧȧ Ƒǿǿřḿȧȧŧş",
   "Show dates in your computers timezone when dates contain a timezone.": "Şħǿǿẇ ḓȧȧŧḗḗş īƞ ẏǿǿŭŭř ƈǿǿḿƥŭŭŧḗḗřş ŧīḿḗḗẑǿǿƞḗḗ ẇħḗḗƞ ḓȧȧŧḗḗş ƈǿǿƞŧȧȧīƞ ȧȧ ŧīḿḗḗẑǿǿƞḗḗ.",
   "YYYY-MM-DD hh:mm:ss - Will include fractional sections and timezone if present.": "ẎẎẎẎ-ḾḾ-ḒḒ ħħ:ḿḿ:şş - Ẇīŀŀ īƞƈŀŭŭḓḗḗ ƒřȧȧƈŧīǿǿƞȧȧŀ şḗḗƈŧīǿǿƞş ȧȧƞḓ ŧīḿḗḗẑǿǿƞḗḗ īƒ ƥřḗḗşḗḗƞŧ.",

@@ -1432,5 +1432,10 @@
   "of {0}": "{0}",
   "The initial number of rows fetched is equal to the rows to load setting.": "獲取的初始行數等於rows to load設置。",
   "Error counting rows: {0}": "對行進行計數時出錯：{0}",
-  "You are about to execute the entire document. Do you want to continue?": "您將要執行整個文件。是否要繼續？"
+  "You are about to execute the entire document. Do you want to continue?": "您將要執行整個文件。是否要繼續？",
+  "Password Protect?": "密碼保護？",
+  "Enter a password to secure the PDF, escape to skip": "輸入密碼以保護 PDF，轉義跳過",
+  "Note: Password protection can be bypassed, but prevents casual access to the content.": "注意：可以繞過密碼保護，但會阻止隨意訪問內容。",
+  "Unwrap Column Text": "展開列文本",
+  "Wrap Column Text": "Wrap Column Text"
 }

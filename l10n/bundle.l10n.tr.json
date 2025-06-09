@@ -1432,5 +1432,10 @@
   "of {0}": "{0} arasında",
   "The initial number of rows fetched is equal to the rows to load setting.": "Getirilen ilk satır sayısı, yüklenecek satır sayısı ayarına eşittir.",
   "Error counting rows: {0}": "Satırları sayma hatası: {0}",
-  "You are about to execute the entire document. Do you want to continue?": "Tüm belgeyi yürütmek üzeresiniz. Devam etmek istiyor musunuz?"
+  "You are about to execute the entire document. Do you want to continue?": "Tüm belgeyi yürütmek üzeresiniz. Devam etmek istiyor musunuz?",
+  "Password Protect?": "Parola Koruması?",
+  "Enter a password to secure the PDF, escape to skip": "PDF'yi güvence altına almak için bir şifre girin, atlamak için kaçın",
+  "Note: Password protection can be bypassed, but prevents casual access to the content.": "Not: Parola koruması atlanabilir, ancak içeriğe rastgele erişimi engeller.",
+  "Unwrap Column Text": "Sütun metnini açma",
+  "Wrap Column Text": "Sütun Metnini Kaydırma"
 }

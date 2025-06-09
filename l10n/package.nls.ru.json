@@ -208,5 +208,6 @@
   "Drop Schema": "Схема удаления",
   "Highlight color": "Цвет выделения",
   "Active statement background": "Предыстория активного заявления",
-  "Insert matched parameter background": "Вставка соответствующего параметра background"
+  "Insert matched parameter background": "Вставка соответствующего параметра background",
+  "Wrap cell text in the results.": "Перенос текста ячейки в результатах."
 }

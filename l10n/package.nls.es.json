@@ -208,5 +208,6 @@
   "Drop Schema": "Descartar esquema",
   "Highlight color": "Color de resaltado",
   "Active statement background": "Antecedentes de la declaración activa",
-  "Insert matched parameter background": "Insertar fondo de parámetro coincidente"
+  "Insert matched parameter background": "Insertar fondo de parámetro coincidente",
+  "Wrap cell text in the results.": "Ajuste el texto de la celda en los resultados."
 }

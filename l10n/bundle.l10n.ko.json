@@ -1432,5 +1432,10 @@
   "of {0}": "{0} 수",
   "The initial number of rows fetched is equal to the rows to load setting.": "인출된 초기 행 수는 로드할 행 설정과 같습니다.",
   "Error counting rows: {0}": "행 계산 오류: {0}",
-  "You are about to execute the entire document. Do you want to continue?": "전체 문서를 실행하려고 합니다. 계속하시겠습니까?"
+  "You are about to execute the entire document. Do you want to continue?": "전체 문서를 실행하려고 합니다. 계속하시겠습니까?",
+  "Password Protect?": "비밀번호로 보호하나요?",
+  "Enter a password to secure the PDF, escape to skip": "PDF를 보호하기 위해 암호를 입력하고 건너뛸 수 있습니다.",
+  "Note: Password protection can be bypassed, but prevents casual access to the content.": "참고: 비밀번호 보호는 우회할 수 있지만 콘텐츠에 대한 정상적인 액세스를 방지합니다.",
+  "Unwrap Column Text": "열 문자 줄바꿈 해제(Unwrap Column Text)",
+  "Wrap Column Text": "Wrap Column Text(열 텍스트 줄바꿈)"
 }

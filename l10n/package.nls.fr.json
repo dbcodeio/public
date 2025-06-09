@@ -208,5 +208,6 @@
   "Drop Schema": "Schéma de dépôt",
   "Highlight color": "Couleur de surbrillance",
   "Active statement background": "Arrière-plan de la déclaration active",
-  "Insert matched parameter background": "Insérer l’arrière-plan du paramètre correspondant"
+  "Insert matched parameter background": "Insérer l’arrière-plan du paramètre correspondant",
+  "Wrap cell text in the results.": "Encapsulez le texte de la cellule dans les résultats."
 }

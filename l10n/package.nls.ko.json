@@ -208,5 +208,6 @@
   "Drop Schema": "스키마 삭제",
   "Highlight color": "하이라이트 색상",
   "Active statement background": "능동태 진술 배경",
-  "Insert matched parameter background": "일치하는 매개변수 배경 삽입"
+  "Insert matched parameter background": "일치하는 매개변수 배경 삽입",
+  "Wrap cell text in the results.": "결과에서 셀 텍스트를 줄 바꿈합니다."
 }

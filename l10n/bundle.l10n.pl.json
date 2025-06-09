@@ -1432,5 +1432,10 @@
   "of {0}": "z {0}",
   "The initial number of rows fetched is equal to the rows to load setting.": "Początkowa liczba pobranych wierszy jest równa ustawieniu wierszy do załadowania.",
   "Error counting rows: {0}": "Błąd podczas zliczania wierszy: {0}",
-  "You are about to execute the entire document. Do you want to continue?": "Za chwilę wykonasz cały dokument. Czy chcesz kontynuować?"
+  "You are about to execute the entire document. Do you want to continue?": "Za chwilę wykonasz cały dokument. Czy chcesz kontynuować?",
+  "Password Protect?": "Ochrona hasłem?",
+  "Enter a password to secure the PDF, escape to skip": "Wprowadź hasło, aby zabezpieczyć plik PDF, escape, aby pominąć",
+  "Note: Password protection can be bypassed, but prevents casual access to the content.": "Uwaga: Ochronę hasłem można obejść, ale uniemożliwia to przypadkowy dostęp do zawartości.",
+  "Unwrap Column Text": "Rozwijaj tekst kolumny",
+  "Wrap Column Text": "Zawijaj tekst w kolumnie"
 }

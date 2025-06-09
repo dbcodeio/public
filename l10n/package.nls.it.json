@@ -208,5 +208,6 @@
   "Drop Schema": "Schema di eliminazione",
   "Highlight color": "Colore di evidenziazione",
   "Active statement background": "Sfondo dell'istruzione attiva",
-  "Insert matched parameter background": "Inserisci sfondo parametro corrispondente"
+  "Insert matched parameter background": "Inserisci sfondo parametro corrispondente",
+  "Wrap cell text in the results.": "Disporre il testo della cella nei risultati."
 }

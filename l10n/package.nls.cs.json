@@ -208,5 +208,6 @@
   "Drop Schema": "Schéma vyřazení",
   "Highlight color": "Barva zvýraznění",
   "Active statement background": "Pozadí aktivního příkazu",
-  "Insert matched parameter background": "Vložit pozadí odpovídajícího parametru"
+  "Insert matched parameter background": "Vložit pozadí odpovídajícího parametru",
+  "Wrap cell text in the results.": "Zalomte text buňky ve výsledcích."
 }

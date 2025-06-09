@@ -1432,5 +1432,10 @@
   "of {0}": "из {0}",
   "The initial number of rows fetched is equal to the rows to load setting.": "Начальное количество извлекаемых строк равно настройке строк для загрузки.",
   "Error counting rows: {0}": "Ошибка подсчета строк: {0}",
-  "You are about to execute the entire document. Do you want to continue?": "Вы собираетесь выполнить весь документ. Хотите продолжить?"
+  "You are about to execute the entire document. Do you want to continue?": "Вы собираетесь выполнить весь документ. Хотите продолжить?",
+  "Password Protect?": "Защита паролем?",
+  "Enter a password to secure the PDF, escape to skip": "Введите пароль для защиты PDF-файла, escape, чтобы пропустить",
+  "Note: Password protection can be bypassed, but prevents casual access to the content.": "Примечание: Защиту паролем можно обойти, но она предотвращает случайный доступ к содержимому.",
+  "Unwrap Column Text": "Развернуть текст столбца",
+  "Wrap Column Text": "Перенос текста столбца"
 }

@@ -208,5 +208,6 @@
   "Drop Schema": "Bırak Şeması",
   "Highlight color": "Vurgu rengi",
   "Active statement background": "Aktif deyim arka planı",
-  "Insert matched parameter background": "Eşleşen parametre arka planı ekle"
+  "Insert matched parameter background": "Eşleşen parametre arka planı ekle",
+  "Wrap cell text in the results.": "Sonuçlarda hücre metnini kaydırın."
 }

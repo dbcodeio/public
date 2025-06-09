@@ -1432,5 +1432,10 @@
   "of {0}": "{0}",
   "The initial number of rows fetched is equal to the rows to load setting.": "Počáteční počet načtených řádků se rovná nastavení řádků k načtení.",
   "Error counting rows: {0}": "Řádky počítání chyb: {0}",
-  "You are about to execute the entire document. Do you want to continue?": "Chystáte se spustit celý dokument. Chcete pokračovat?"
+  "You are about to execute the entire document. Do you want to continue?": "Chystáte se spustit celý dokument. Chcete pokračovat?",
+  "Password Protect?": "Ochrana heslem?",
+  "Enter a password to secure the PDF, escape to skip": "Zadejte heslo pro zabezpečení PDF, escape pro přeskočení",
+  "Note: Password protection can be bypassed, but prevents casual access to the content.": "Poznámka: Ochranu heslem lze obejít, ale brání náhodnému přístupu k obsahu.",
+  "Unwrap Column Text": "Zalomit text sloupce",
+  "Wrap Column Text": "Zalomení textu sloupce"
 }

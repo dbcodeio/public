@@ -208,5 +208,6 @@
   "Drop Schema": "ドロップスキーマ",
   "Highlight color": "ハイライト色",
   "Active statement background": "アクティブステートメントの背景",
-  "Insert matched parameter background": "一致したパラメータの背景を挿入"
+  "Insert matched parameter background": "一致したパラメータの背景を挿入",
+  "Wrap cell text in the results.": "結果でセルのテキストを折り返します。"
 }

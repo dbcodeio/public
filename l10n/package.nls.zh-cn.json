@@ -208,5 +208,6 @@
   "Drop Schema": "删除架构",
   "Highlight color": "高亮颜色",
   "Active statement background": "Active 语句背景",
-  "Insert matched parameter background": "插入匹配的参数背景"
+  "Insert matched parameter background": "插入匹配的参数背景",
+  "Wrap cell text in the results.": "在结果中换行单元格文本。"
 }

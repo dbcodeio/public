@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 1.14.6 - 2025-06-09
+
+### Changed
+
+- Setting: Wrap Cell Text: Control if cell text should be wrapped by default. #565
+- Results: Right click a column heading to select to wrap/unwrap text. #565
+
+### Fixed
+
+- Trino: Used jdbc schema where possible. #571
+- MCP Server: Made query string auth more reliable in Cursor. #567
+- SQLite: Fixed explain plan execution. #570
+- Oracle: Introspection error. #543
+- Notebook Export: Fixed PDF formatting for tables and code blocks, enabled PDF encryption. #206
+
 ## 1.14.5 - 2025-06-06
 
 ### Changed

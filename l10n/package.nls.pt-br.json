@@ -208,5 +208,6 @@
   "Drop Schema": "Descartar esquema",
   "Highlight color": "Cor de destaque",
   "Active statement background": "Plano de fundo da instrução ativa",
-  "Insert matched parameter background": "Inserir plano de fundo de parâmetro correspondente"
+  "Insert matched parameter background": "Inserir plano de fundo de parâmetro correspondente",
+  "Wrap cell text in the results.": "Quebra o texto da célula nos resultados."
 }
