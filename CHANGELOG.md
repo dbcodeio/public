@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.14.7 - 2025-06-11
+
+### Changed
+
+- Notebook: Export UI improved, preview of HTML export in palce, results and charts not hydrated yet. #206
+- Results: Re worked the share panel to include export, and allow custom delimiter for CSV. #547
+- DuckDB: Updated driver to 1.30. #573
+- Oracle: Capturing dbms_output.put_line statements to output tab. #574
+
+### Fixed
+
+- Parameters: Incorrectly picking up parameters in some quoted strings. #575
+
 ## 1.14.6 - 2025-06-09
 
 ### Changed
