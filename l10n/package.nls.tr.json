@@ -193,7 +193,6 @@
   "Refresh Connected Connections": "Bağlı Bağlantıları Yenile",
   "Inline Completion Model ID": "Satır İçi Tamamlama Modeli Kimliği",
   "The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.": "Yüklendiğinde/etkinleştirildiğinde satır içi tamamlama için Copilot uzantısıyla birlikte kullanılan model. Copilot kurulu değilse, DBCode'un barındırılan lama 3 modeli kullanılacaktır.",
-  "Export": "Ihracat",
   "Delete All Favorites": "Tüm Sık Kullanılanları Sil",
   "Delete Favorite": "Sık Kullanılanları Sil",
   "Add to DBCode Favorites": "DBCode Sık Kullanılanlarına Ekle",
@@ -209,5 +208,6 @@
   "Highlight color": "Vurgu rengi",
   "Active statement background": "Aktif deyim arka planı",
   "Insert matched parameter background": "Eşleşen parametre arka planı ekle",
-  "Wrap cell text in the results.": "Sonuçlarda hücre metnini kaydırın."
+  "Wrap cell text in the results.": "Sonuçlarda hücre metnini kaydırın.",
+  "Export / Share": "Dışa Aktar / Paylaş"
 }

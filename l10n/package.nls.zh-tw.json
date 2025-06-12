@@ -193,7 +193,6 @@
   "Refresh Connected Connections": "刷新連接的連接",
   "Inline Completion Model ID": "內聯完成模型ID",
   "The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.": "與 Copilot 擴展一起使用的模型，用於安裝/啟用後內聯完成。如果未安裝 Copilot，則將使用 DBCode 的託管 llama 3 模型。",
-  "Export": "出口",
   "Delete All Favorites": "刪除所有我的最愛",
   "Delete Favorite": "刪除我的最愛",
   "Add to DBCode Favorites": "添加到 DBCode 我的最愛",
@@ -209,5 +208,6 @@
   "Highlight color": "高亮顏色",
   "Active statement background": "Active 語句背景",
   "Insert matched parameter background": "插入匹配的參數背景",
-  "Wrap cell text in the results.": "在結果中換行單元格文本。"
+  "Wrap cell text in the results.": "在結果中換行單元格文本。",
+  "Export / Share": "匯出 / 共用"
 }

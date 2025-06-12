@@ -193,7 +193,6 @@
   "Refresh Connected Connections": "接続された接続の更新",
   "Inline Completion Model ID": "インライン補完モデル ID",
   "The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.": "Copilot 拡張機能と共にインライン補完に使用されるモデル (インストール/有効化されている場合)。Copilot がインストールされていない場合は、DBCode のホスト型 llama 3 モデルが使用されます。",
-  "Export": "輸出",
   "Delete All Favorites": "すべてのお気に入りを削除",
   "Delete Favorite": "お気に入りを削除",
   "Add to DBCode Favorites": "DBCodeのお気に入りに追加",
@@ -209,5 +208,6 @@
   "Highlight color": "ハイライト色",
   "Active statement background": "アクティブステートメントの背景",
   "Insert matched parameter background": "一致したパラメータの背景を挿入",
-  "Wrap cell text in the results.": "結果でセルのテキストを折り返します。"
+  "Wrap cell text in the results.": "結果でセルのテキストを折り返します。",
+  "Export / Share": "エクスポート / 共有"
 }

@@ -193,7 +193,6 @@
   "Refresh Connected Connections": "Aggiorna connessioni connesse",
   "Inline Completion Model ID": "ID modello di completamento in linea",
   "The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.": "Il modello utilizzato con l'estensione Copilot per il completamento in linea quando installato/abilitato. Se Copilot non è installato, verrà utilizzato il modello llama 3 ospitato da DBCode.",
-  "Export": "Esportazione",
   "Delete All Favorites": "Elimina tutti i preferiti",
   "Delete Favorite": "Elimina preferito",
   "Add to DBCode Favorites": "Aggiungi ai preferiti di DBCode",
@@ -209,5 +208,6 @@
   "Highlight color": "Colore di evidenziazione",
   "Active statement background": "Sfondo dell'istruzione attiva",
   "Insert matched parameter background": "Inserisci sfondo parametro corrispondente",
-  "Wrap cell text in the results.": "Disporre il testo della cella nei risultati."
+  "Wrap cell text in the results.": "Disporre il testo della cella nei risultati.",
+  "Export / Share": "Esporta / Condividi"
 }

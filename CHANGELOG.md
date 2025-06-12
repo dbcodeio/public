@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.14.8 - 2025-06-12
+
+### Changed
+
+- Notebook: Export completed. #206
+- Sharing: Support for custom S3 compatible bucket/custom domain name. #207
+- Export / Sharing: Web Page option added allowing to export functional results grid. 
+
 ## 1.14.7 - 2025-06-11
 
 ### Changed
