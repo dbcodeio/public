@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.14.10 - 2025-06-13
+
+### Changed
+
+- Notebook: Export now supports file uploads for images, videos etc, as well as compressing document content.
+
 ## 1.14.9 - 2025-06-13
 
 ### Changed
