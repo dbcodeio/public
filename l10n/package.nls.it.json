@@ -58,7 +58,6 @@
   "History": "Storia",
   "Account": "Conto",
   "Help + Suggestions": "Aiuto + Suggerimenti",
-  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "Nessuna connessione creata.[Aggiungere l'esplorazione della connessione](command:dbcode.connections.add) [con un database di esempio](command:dbcode.connections.sample)",
   "No tunnels created.\n[Add New Tunnel](command:dbcode.tunnels.add)": "Nessun tunnel creato.[Aggiungi nuovo tunnel](command:dbcode.tunnels.add)",
   "Connection ID": "ID connessione",
   "Tunnel ID to connect through": "ID tunnel attraverso il quale connettersi",
@@ -209,5 +208,7 @@
   "Active statement background": "Sfondo dell'istruzione attiva",
   "Insert matched parameter background": "Inserisci sfondo parametro corrispondente",
   "Wrap cell text in the results.": "Disporre il testo della cella nei risultati.",
-  "Export / Share": "Esporta / Condividi"
+  "Export / Share": "Esporta / Condividi",
+  "Import Connections": "Importa connessioni",
+  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "Nessuna connessione creata.\n[Aggiungi connessione](comando:dbcode.connections.add)\n[Importa connessioni](comando:dbcode.connections.import)\n[Esplora con un database di esempio](comando:dbcode.connections.sample)"
 }

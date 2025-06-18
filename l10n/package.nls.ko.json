@@ -58,7 +58,6 @@
   "History": "역사",
   "Account": "계좌",
   "Help + Suggestions": "도움말 + 제안",
-  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "생성된 연결이 없습니다.[샘플 데이터베이스를 사용하여 Connection Explore](command:dbcode.connections.sample) [추가](command:dbcode.connections.add) ",
   "No tunnels created.\n[Add New Tunnel](command:dbcode.tunnels.add)": "터널이 생성되지 않았습니다.[새 터널 추가](command:dbcode.tunnels.add)",
   "Connection ID": "연결 ID",
   "Tunnel ID to connect through": "연결할 터널 ID",
@@ -209,5 +208,7 @@
   "Active statement background": "능동태 진술 배경",
   "Insert matched parameter background": "일치하는 매개변수 배경 삽입",
   "Wrap cell text in the results.": "결과에서 셀 텍스트를 줄 바꿈합니다.",
-  "Export / Share": "수출/공유"
+  "Export / Share": "수출/공유",
+  "Import Connections": "연결 가져오기",
+  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "생성된 연결이 없습니다.\n[연결 추가](명령:dbcode.connections.add)\n[연결 가져오기](명령:dbcode.connections.import)\n[샘플 데이터베이스로 탐색](명령:dbcode.connections.sample)"
 }

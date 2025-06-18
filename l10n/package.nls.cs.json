@@ -58,7 +58,6 @@
   "History": "Historie",
   "Account": "Účet",
   "Help + Suggestions": "Nápověda + návrhy",
-  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "Nejsou vytvořena žádná spojení.[Přidání prozkoumání připojení](command:dbcode.connections.add) [pomocí ukázkové databáze](command:dbcode.connections.sample)",
   "No tunnels created.\n[Add New Tunnel](command:dbcode.tunnels.add)": "Nejsou vytvořeny žádné tunely.[Přidat nový tunel](command:dbcode.tunnels.add)",
   "Connection ID": "ID připojení",
   "Tunnel ID to connect through": "ID tunelu pro připojení přes",
@@ -209,5 +208,7 @@
   "Active statement background": "Pozadí aktivního příkazu",
   "Insert matched parameter background": "Vložit pozadí odpovídajícího parametru",
   "Wrap cell text in the results.": "Zalomte text buňky ve výsledcích.",
-  "Export / Share": "Exportovat / Sdílet"
+  "Export / Share": "Exportovat / Sdílet",
+  "Import Connections": "Importovat připojení",
+  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "Nejsou vytvořena žádná spojení.\n[Přidat připojení](příkaz:dbcode.connections.add)\n[Importovat připojení](příkaz:dbcode.connections.import)\n[Prozkoumat s ukázkovou databází](příkaz:dbcode.connections.sample)"
 }

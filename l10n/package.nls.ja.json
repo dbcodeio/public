@@ -58,7 +58,6 @@
   "History": "歴史",
   "Account": "アカウント",
   "Help + Suggestions": "ヘルプ + 提案",
-  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "接続は作成されません。[サンプル データベースを使用した接続探索](command:dbcode.connections.sample)[の追加](command:dbcode.connections.add) ",
   "No tunnels created.\n[Add New Tunnel](command:dbcode.tunnels.add)": "トンネルは作成されません。[新しいトンネルを追加](command:dbcode.tunnels.add)",
   "Connection ID": "接続 ID",
   "Tunnel ID to connect through": "接続するトンネル ID",
@@ -209,5 +208,7 @@
   "Active statement background": "アクティブステートメントの背景",
   "Insert matched parameter background": "一致したパラメータの背景を挿入",
   "Wrap cell text in the results.": "結果でセルのテキストを折り返します。",
-  "Export / Share": "エクスポート / 共有"
+  "Export / Share": "エクスポート / 共有",
+  "Import Connections": "インポート接続",
+  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "接続は作成されません。\n[接続の追加](コマンド:dbcode.connections.add)\n[接続のインポート](コマンド:dbcode.connections.import)\n[サンプルデータベースを使用した探索](コマンド:dbcode.connections.sample)"
 }

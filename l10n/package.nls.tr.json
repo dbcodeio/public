@@ -58,7 +58,6 @@
   "History": "Tarih",
   "Account": "Hesap",
   "Help + Suggestions": "Yardım + Öneriler",
-  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "Bağlantı oluşturulmadı.[Örnek bir veritabanıyla bağlantı keşfi](command:dbcode.connections.sample) [ekleme](command:dbcode.connections.add) ",
   "No tunnels created.\n[Add New Tunnel](command:dbcode.tunnels.add)": "Tünel oluşturulmadı.[Yeni Tünel Ekle](command:dbcode.tunnels.add)",
   "Connection ID": "Bağlantı Kimliği",
   "Tunnel ID to connect through": "Bağlanmak için tünel kimliği",
@@ -209,5 +208,7 @@
   "Active statement background": "Aktif deyim arka planı",
   "Insert matched parameter background": "Eşleşen parametre arka planı ekle",
   "Wrap cell text in the results.": "Sonuçlarda hücre metnini kaydırın.",
-  "Export / Share": "Dışa Aktar / Paylaş"
+  "Export / Share": "Dışa Aktar / Paylaş",
+  "Import Connections": "Bağlantıları İçe Aktar",
+  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "Bağlantı oluşturulmadı.\n[Bağlantı Ekle](komut:dbcode.connections.add)\n[Bağlantıları İçe Aktar](komut:dbcode.connections.import)\n[Örnek Bir Veritabanıyla Keşfedin](komut:dbcode.connections.sample)"
 }

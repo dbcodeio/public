@@ -58,7 +58,6 @@
   "History": "歷史",
   "Account": "帳戶",
   "Help + Suggestions": "説明 + 建議",
-  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "未建立連接。 使用[範例資料庫](command:dbcode.connections.sample)[添加連接](command:dbcode.connections.add)探索",
   "No tunnels created.\n[Add New Tunnel](command:dbcode.tunnels.add)": "未創建隧道。[添加新隧道](command:dbcode.tunnels.add)",
   "Connection ID": "連接ID",
   "Tunnel ID to connect through": "要連接的隧道ID",
@@ -209,5 +208,7 @@
   "Active statement background": "Active 語句背景",
   "Insert matched parameter background": "插入匹配的參數背景",
   "Wrap cell text in the results.": "在結果中換行單元格文本。",
-  "Export / Share": "匯出 / 共用"
+  "Export / Share": "匯出 / 共用",
+  "Import Connections": "匯入連接",
+  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "未建立連接。\n[添加連接]（命令：dbcode.connections.add）\n[匯入連線]（命令：dbcode.connections.import）\n[使用示例資料庫進行探索]（命令：dbcode.connections.sample）"
 }

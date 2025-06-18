@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 1.14.11 - 2025-06-18
+
+### Changed
+
+- ERD: Supports keyword search, clicking a table to highlight relations, cardinality shown on connections, (sharing a work in progres). #329
+- Connection Import: You can now import connections from Azure Data Studio, pgAdmin or CSV files. #494
+- Autocomplete: Will now offer join syntax when adding joins. #204
+- API: Added an API for other extensions to use. #568
+- Export: Added option to suppress quotes in csv export. #589
+
+### Fixed
+
+- Bigquery: Not filtering columns in the explorer for external tables. #580
+- Notebook: Fix export not rendering charts. #206
+- Parser/Autocomplete: Improved more syntax understanding.
+- MCP: Added required to parameter descriptions where appropriate. #581
+- Postgres: Fixed datatype issue.. #514 #491
+
 ## 1.14.10 - 2025-06-13
 
 ### Changed
