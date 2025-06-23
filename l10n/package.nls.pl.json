@@ -210,5 +210,6 @@
   "Wrap cell text in the results.": "Zawijaj tekst komórki w wynikach.",
   "Export / Share": "Eksport / Udostępnianie",
   "Import Connections": "Importowanie połączeń",
-  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "Nie utworzono żadnych połączeń.\n[Dodaj połączenie](polecenie:dbcode.connections.add)\n[Importuj połączenia](polecenie:dbcode.connections.import)\n[Eksploruj za pomocą przykładowej bazy danych](polecenie:dbcode.connections.sample)"
+  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "Nie utworzono żadnych połączeń.\n[Dodaj połączenie](polecenie:dbcode.connections.add)\n[Importuj połączenia](polecenie:dbcode.connections.import)\n[Eksploruj za pomocą przykładowej bazy danych](polecenie:dbcode.connections.sample)",
+  " The code lense will provide inline actions for executing queries.": " Soczewka kodu zapewni wbudowane akcje do wykonywania zapytań."
 }

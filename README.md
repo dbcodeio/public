@@ -112,8 +112,8 @@ Core features are free, forever. Some advanced features require a subscription. 
 ## Contributors
 
 - [Pradeep Kumar](https://www.linkedin.com/in/pradeep-kumar-1722b6123/): Documentation, Testing
-- [Nontas Ravazoulas](https://cubeweb.gr/): Design
 - [Lanterns](https://github.com/L4nterns): Translation
+- [snickerjp](https://github.com/snickerjp): Translation
 
 A heartfelt thank you to these incredible contributors who have generously donated their time and expertise. DBCode wouldn't be the same without their input.
 
