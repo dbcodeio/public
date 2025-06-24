@@ -256,7 +256,6 @@
   "Error reading CA Certificate {0}, error: {1}": "CA Sertifikası {0} okunurken hata oluştu, hata: {1}",
   "Error reading Client Certificate {0}, error: {1}": "İstemci Sertifikası {0} okunurken hata oluştu, hata: {1}",
   "Error reading Client Key {0}, error: {1}": "İstemci Anahtarı {0} okunurken hata oluştu, hata: {1}",
-  "Failed to get current session, signing out.": "Geçerli oturum alınamadı, oturumu kapatın.",
   "Valid subscription not found.": "Geçerli abonelik bulunamadı.",
   "Select the the provider to sign in with.": "Oturum açmak için kullanacağınız sağlayıcıyı seçin.",
   "Enter the email address of the user to add": "Eklenecek kullanıcının e-posta adresini girin",
@@ -1574,5 +1573,11 @@
   "Table names": "Tablo adları",
   "Search tables or columns": "Tablo veya sütunda arama yapma",
   "tooltipValidationErrorSeparator": ". ",
-  "ariaPendingChange": "Bekleyen Değişiklik"
+  "ariaPendingChange": "Bekleyen Değişiklik",
+  "This document's connection is currently executing another query. Use another connection to execute this query?": "Bu belgenin bağlantısı şu anda başka bir sorgu yürütüyor. Bu sorguyu yürütmek için başka bir bağlantı kullanılsın mı?",
+  "Execution cancelled by user": "Yürütme kullanıcı tarafından iptal edildi",
+  "Are you sure you want to remove the license?": "Lisansı kaldırmak istediğinizden emin misiniz?",
+  "License removed successfully": "Lisans başarıyla kaldırıldı",
+  "Install License...": "Lisansı Yükle...",
+  "Offline License": "Çevrimdışı Lisans"
 }

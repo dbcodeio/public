@@ -256,7 +256,6 @@
   "Error reading CA Certificate {0}, error: {1}": "Ошибка при чтении сертификата ЦС {0}, ошибка: {1}",
   "Error reading Client Certificate {0}, error: {1}": "Ошибка при чтении сертификата клиента {0}, ошибка: {1}",
   "Error reading Client Key {0}, error: {1}": "Ошибка чтения ключа клиента {0}, ошибка: {1}",
-  "Failed to get current session, signing out.": "Не удалось получить текущий сеанс, выйти из системы.",
   "Valid subscription not found.": "Действующая подписка не найдена.",
   "Select the the provider to sign in with.": "Выберите провайдера, с помощью которого нужно войти.",
   "Enter the email address of the user to add": "Введите адрес электронной почты пользователя для добавления",
@@ -1574,5 +1573,11 @@
   "Table names": "Имена таблиц",
   "Search tables or columns": "Поиск таблиц или столбцов",
   "tooltipValidationErrorSeparator": ". ",
-  "ariaPendingChange": "Ожидающие изменения"
+  "ariaPendingChange": "Ожидающие изменения",
+  "This document's connection is currently executing another query. Use another connection to execute this query?": "Подключение к этому документу в настоящее время выполняет другой запрос. Использовать другое соединение для выполнения этого запроса?",
+  "Execution cancelled by user": "Выполнение отменено пользователем",
+  "Are you sure you want to remove the license?": "Вы уверены, что хотите удалить лицензию?",
+  "License removed successfully": "Лицензия успешно удалена",
+  "Install License...": "Установить лицензию...",
+  "Offline License": "Оффлайн лицензия"
 }

@@ -257,7 +257,6 @@
   "Error reading CA Certificate {0}, error: {1}": "CA 証明書 {0} の読み取り中にエラーが発生しました。エラー: {1}",
   "Error reading Client Certificate {0}, error: {1}": "クライアント証明書{0}の読み取りエラー、エラー:{1}",
   "Error reading Client Key {0}, error: {1}": "クライアントキー{0}の読み取りエラー、エラー:{1}",
-  "Failed to get current session, signing out.": "現在のセッションを取得できませんでした。サインアウトしました。",
   "Valid subscription not found.": "有効なサブスクリプションが見つかりません。",
   "Select the the provider to sign in with.": "サインインするプロバイダーを選択してください。",
   "Enter the email address of the user to add": "追加するユーザーのメールアドレスを入力してください",
@@ -1577,5 +1576,11 @@
   "Table names": "テーブル名",
   "Search tables or columns": "テーブルまたは列を検索する",
   "tooltipValidationErrorSeparator": ". ",
-  "ariaPendingChange": "保留中の変更"
+  "ariaPendingChange": "保留中の変更",
+  "This document's connection is currently executing another query. Use another connection to execute this query?": "このドキュメントの接続は現在、別のクエリを実行しています。このクエリを実行するために別の接続を使用しますか?",
+  "Execution cancelled by user": "ユーザーによって実行がキャンセルされました",
+  "Are you sure you want to remove the license?": "ライセンスを削除してもよろしいですか?",
+  "License removed successfully": "ライセンスが正常に削除されました",
+  "Install License...": "ライセンスのインストール...",
+  "Offline License": "オフラインライセンス"
 }

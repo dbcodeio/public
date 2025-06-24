@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.14.13 - 2025-06-24
+
+### Changed
+
+- Editor: Connections are now pinned to the editor for re use. Supporting temp tables, and other temporary objects/commands. (SQL Server only to start with). #578 
+- SQLite: Added memory option for creating a memory only database. #595
+
+### Fixed
+
+- Offline license display in the account section now, including ability to remove the license.
+- Using an offline license is only possible now when not being signed into an account.
+
 ## 1.14.12 - 2025-06-23
 
 ### Changed

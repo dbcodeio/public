@@ -256,7 +256,6 @@
   "Error reading CA Certificate {0}, error: {1}": "Chyba při čtení {0} certifikátu certifikační autority, chyba: {1}",
   "Error reading Client Certificate {0}, error: {1}": "Chyba při čtení {0} klientského certifikátu, chyba: {1}",
   "Error reading Client Key {0}, error: {1}": "Chyba při čtení {0} Klientského klíče, chyba: {1}",
-  "Failed to get current session, signing out.": "Nepodařilo se získat aktuální relaci, odhlašuje se.",
   "Valid subscription not found.": "Platné předplatné nebylo nalezeno.",
   "Select the the provider to sign in with.": "Vyberte poskytovatele, pomocí kterého se chcete přihlásit.",
   "Enter the email address of the user to add": "Zadejte e-mailovou adresu uživatele, kterého chcete přidat",
@@ -1574,5 +1573,11 @@
   "Table names": "Názvy tabulek",
   "Search tables or columns": "Vyhledávání v tabulkách nebo sloupcích",
   "tooltipValidationErrorSeparator": ". ",
-  "ariaPendingChange": "Čekající změna"
+  "ariaPendingChange": "Čekající změna",
+  "This document's connection is currently executing another query. Use another connection to execute this query?": "Připojení tohoto dokumentu právě provádí jiný dotaz. Použít k provedení tohoto dotazu jiné připojení?",
+  "Execution cancelled by user": "Spuštění zrušeno uživatelem",
+  "Are you sure you want to remove the license?": "Opravdu chcete odebrat licenci?",
+  "License removed successfully": "Licence byla úspěšně odebrána",
+  "Install License...": "Instalovat licenci...",
+  "Offline License": "Offline licence"
 }

@@ -256,7 +256,6 @@
   "Error reading CA Certificate {0}, error: {1}": "读取 CA 证书 {0} 时出错，错误: {1}",
   "Error reading Client Certificate {0}, error: {1}": "读取客户端证书 {0} 时出错，错误：{1}",
   "Error reading Client Key {0}, error: {1}": "读取客户端密钥 {0} 时出错，错误：{1}",
-  "Failed to get current session, signing out.": "获取当前会话失败，正在登出。",
   "Valid subscription not found.": "未找到有效订阅。",
   "Select the the provider to sign in with.": "选择要登录的提供商。",
   "Enter the email address of the user to add": "输入要添加的用户的电子邮件地址",
@@ -1574,5 +1573,11 @@
   "Table names": "表名称",
   "Search tables or columns": "搜索表或列",
   "tooltipValidationErrorSeparator": ". ",
-  "ariaPendingChange": "待定更改"
+  "ariaPendingChange": "待定更改",
+  "This document's connection is currently executing another query. Use another connection to execute this query?": "此文档的连接当前正在执行另一个查询。使用其他连接执行此查询？",
+  "Execution cancelled by user": "用户取消了执行",
+  "Are you sure you want to remove the license?": "是否确实要删除许可证？",
+  "License removed successfully": "已成功删除许可证",
+  "Install License...": "安装许可证...",
+  "Offline License": "离线许可证"
 }

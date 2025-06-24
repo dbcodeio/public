@@ -256,7 +256,6 @@
   "Error reading CA Certificate {0}, error: {1}": "Errore durante la lettura del certificato CA {0}, errore: {1}",
   "Error reading Client Certificate {0}, error: {1}": "Errore durante la lettura del certificato client {0}, errore: {1}",
   "Error reading Client Key {0}, error: {1}": "Errore durante la lettura della {0} della chiave client, errore: {1}",
-  "Failed to get current session, signing out.": "Impossibile ottenere la sessione corrente, disconnessione.",
   "Valid subscription not found.": "Abbonamento valido non trovato.",
   "Select the the provider to sign in with.": "Seleziona il provider con cui accedere.",
   "Enter the email address of the user to add": "Inserisci l'indirizzo email dell'utente da aggiungere",
@@ -1574,5 +1573,11 @@
   "Table names": "Nomi delle tabelle",
   "Search tables or columns": "Cercare tabelle o colonne",
   "tooltipValidationErrorSeparator": ". ",
-  "ariaPendingChange": "Modifica in sospeso"
+  "ariaPendingChange": "Modifica in sospeso",
+  "This document's connection is currently executing another query. Use another connection to execute this query?": "La connessione di questo documento sta attualmente eseguendo un'altra query. Utilizzare un'altra connessione per eseguire questa query?",
+  "Execution cancelled by user": "Esecuzione annullata dall'utente",
+  "Are you sure you want to remove the license?": "Sei sicuro di voler rimuovere la licenza?",
+  "License removed successfully": "Licenza rimossa con successo",
+  "Install License...": "Installa licenza...",
+  "Offline License": "Licenza offline"
 }

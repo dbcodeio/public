@@ -256,7 +256,6 @@
   "Error reading CA Certificate {0}, error: {1}": "CA 인증서 {0} 읽는 중 오류가 발생했습니다. 오류: {1}",
   "Error reading Client Certificate {0}, error: {1}": "클라이언트 인증서 {0} 읽는 중 오류가 발생했습니다. 오류: {1}",
   "Error reading Client Key {0}, error: {1}": "클라이언트 키 {0} 읽는 중 오류가 발생했습니다. 오류: {1}",
-  "Failed to get current session, signing out.": "현재 세션을 가져오지 못하여 로그아웃했습니다.",
   "Valid subscription not found.": "유효한 구독을 찾을 수 없습니다.",
   "Select the the provider to sign in with.": "로그인할 공급자를 선택합니다.",
   "Enter the email address of the user to add": "추가할 사용자의 이메일 주소를 입력합니다.",
@@ -1574,5 +1573,11 @@
   "Table names": "테이블 이름",
   "Search tables or columns": "테이블 또는 열 검색",
   "tooltipValidationErrorSeparator": ". ",
-  "ariaPendingChange": "보류 중인 변경 내용"
+  "ariaPendingChange": "보류 중인 변경 내용",
+  "This document's connection is currently executing another query. Use another connection to execute this query?": "이 문서의 연결에서 현재 다른 쿼리를 실행하고 있습니다. 다른 연결을 사용하여 이 쿼리를 실행하시겠습니까?",
+  "Execution cancelled by user": "사용자가 실행을 취소했습니다.",
+  "Are you sure you want to remove the license?": "라이센스를 제거하시겠습니까?",
+  "License removed successfully": "라이선스가 성공적으로 제거되었습니다.",
+  "Install License...": "라이센스 설치...",
+  "Offline License": "오프라인 라이선스"
 }

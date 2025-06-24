@@ -211,5 +211,6 @@
   "Export / Share": "Exportar / Compartir",
   "Import Connections": "Importar conexiones",
   "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "No se han creado conexiones.\n[Agregar conexión](comando:dbcode.connections.add)\n[Importar conexiones](comando:dbcode.connections.import)\n[Explorar con una base de datos de muestra](comando:dbcode.connections.sample)",
-  " The code lense will provide inline actions for executing queries.": " La lente de código proporcionará acciones en línea para ejecutar consultas."
+  " The code lense will provide inline actions for executing queries.": " La lente de código proporcionará acciones en línea para ejecutar consultas.",
+  "Remove License": "Eliminar licencia"
 }

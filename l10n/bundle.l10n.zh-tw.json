@@ -256,7 +256,6 @@
   "Error reading CA Certificate {0}, error: {1}": "讀取 CA 憑證{0}時發生錯誤錯誤：{1}",
   "Error reading Client Certificate {0}, error: {1}": "讀取客戶端憑證 {0} 時發生錯誤錯誤：{1}",
   "Error reading Client Key {0}, error: {1}": "讀取用戶端金鑰 {0} 時發生錯誤錯誤： {1}",
-  "Failed to get current session, signing out.": "無法獲取當前工作階段，正在註銷。",
   "Valid subscription not found.": "未找到有效的訂閱。",
   "Select the the provider to sign in with.": "選擇要用於登錄的供應商。",
   "Enter the email address of the user to add": "輸入要添加的使用者的電子郵件位址",
@@ -1574,5 +1573,11 @@
   "Table names": "表名稱",
   "Search tables or columns": "搜索表或列",
   "tooltipValidationErrorSeparator": ". ",
-  "ariaPendingChange": "待定更改"
+  "ariaPendingChange": "待定更改",
+  "This document's connection is currently executing another query. Use another connection to execute this query?": "此文件的連接目前正在執行另一個查詢。使用其他連接執行此查詢？",
+  "Execution cancelled by user": "使用者取消了執行",
+  "Are you sure you want to remove the license?": "是否確實要刪除許可證？",
+  "License removed successfully": "已成功刪除許可證",
+  "Install License...": "安裝授權...",
+  "Offline License": "離線許可證"
 }

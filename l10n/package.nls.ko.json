@@ -211,5 +211,6 @@
   "Export / Share": "수출/공유",
   "Import Connections": "연결 가져오기",
   "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "생성된 연결이 없습니다.\n[연결 추가](명령:dbcode.connections.add)\n[연결 가져오기](명령:dbcode.connections.import)\n[샘플 데이터베이스로 탐색](명령:dbcode.connections.sample)",
-  " The code lense will provide inline actions for executing queries.": " 코드 lense는 쿼리를 실행하기 위한 인라인 작업을 제공합니다."
+  " The code lense will provide inline actions for executing queries.": " 코드 lense는 쿼리를 실행하기 위한 인라인 작업을 제공합니다.",
+  "Remove License": "라이선스 제거"
 }
