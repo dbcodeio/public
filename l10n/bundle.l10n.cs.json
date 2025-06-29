@@ -1579,5 +1579,6 @@
   "Are you sure you want to remove the license?": "Opravdu chcete odebrat licenci?",
   "License removed successfully": "Licence byla úspěšně odebrána",
   "Install License...": "Instalovat licenci...",
-  "Offline License": "Offline licence"
+  "Offline License": "Offline licence",
+  "Reset table positions": "Resetování pozic v tabulkách"
 }

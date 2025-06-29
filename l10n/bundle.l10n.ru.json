@@ -1579,5 +1579,6 @@
   "Are you sure you want to remove the license?": "Вы уверены, что хотите удалить лицензию?",
   "License removed successfully": "Лицензия успешно удалена",
   "Install License...": "Установить лицензию...",
-  "Offline License": "Оффлайн лицензия"
+  "Offline License": "Оффлайн лицензия",
+  "Reset table positions": "Сброс позиций стола"
 }

@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.14.14 - 2025-06-29
+
+### Changed
+
+- Export: Remember CSV settings for the next export. #599
+- ERD: Will remember the position of tables if they are re arranged.
+
+### Fixed
+
+- MCP: Autostart was not always working.
+- ERD: Improved cardinality display.
+
 ## 1.14.13 - 2025-06-24
 
 ### Changed

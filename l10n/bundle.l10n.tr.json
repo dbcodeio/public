@@ -1579,5 +1579,6 @@
   "Are you sure you want to remove the license?": "Lisansı kaldırmak istediğinizden emin misiniz?",
   "License removed successfully": "Lisans başarıyla kaldırıldı",
   "Install License...": "Lisansı Yükle...",
-  "Offline License": "Çevrimdışı Lisans"
+  "Offline License": "Çevrimdışı Lisans",
+  "Reset table positions": "Tablo konumlarını sıfırla"
 }

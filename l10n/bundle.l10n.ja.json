@@ -1582,5 +1582,6 @@
   "Are you sure you want to remove the license?": "ライセンスを削除してもよろしいですか?",
   "License removed successfully": "ライセンスが正常に削除されました",
   "Install License...": "ライセンスのインストール...",
-  "Offline License": "オフラインライセンス"
+  "Offline License": "オフラインライセンス",
+  "Reset table positions": "テーブル位置のリセット"
 }

@@ -1579,5 +1579,6 @@
   "Are you sure you want to remove the license?": "是否確實要刪除許可證？",
   "License removed successfully": "已成功刪除許可證",
   "Install License...": "安裝授權...",
-  "Offline License": "離線許可證"
+  "Offline License": "離線許可證",
+  "Reset table positions": "重置表位置"
 }

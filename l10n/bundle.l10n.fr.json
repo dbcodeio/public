@@ -1579,5 +1579,6 @@
   "Are you sure you want to remove the license?": "Êtes-vous sûr de vouloir supprimer la licence ?",
   "License removed successfully": "Licence supprimée avec succès",
   "Install License...": "Installer la licence...",
-  "Offline License": "Licence hors ligne"
+  "Offline License": "Licence hors ligne",
+  "Reset table positions": "Réinitialiser les positions des tables"
 }

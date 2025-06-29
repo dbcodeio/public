@@ -1579,5 +1579,6 @@
   "Are you sure you want to remove the license?": "라이센스를 제거하시겠습니까?",
   "License removed successfully": "라이선스가 성공적으로 제거되었습니다.",
   "Install License...": "라이센스 설치...",
-  "Offline License": "오프라인 라이선스"
+  "Offline License": "오프라인 라이선스",
+  "Reset table positions": "테이블 위치 재설정"
 }
