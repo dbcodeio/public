@@ -641,7 +641,7 @@ svg.react-flow__connectionline {
 						<p style="font-size: 12px; margin-top: 10px;">Please ensure React Flow and other dependencies are loaded.</p>
 					</div>
 				</div>
-			`}}};document.addEventListener("DOMContentLoaded",()=>{for(let e of document.querySelectorAll("div[data-diagram-data]")){let t=e.getAttribute("data-diagram-data");if(t){e.removeAttribute("data-diagram-data");try{let n=JSON.parse(decodeURIComponent(t)),r=window;if(r.ERDComponent){let a={tables:n.tables,filterTables:n.filterTables,dataTypes:n.dataTypes||{},mode:"embedded",renderedSvgs:n.renderedSvgs};r.ERDComponent.render(e,a)}else e.innerHTML=`
+			`}}};document.addEventListener("DOMContentLoaded",()=>{for(let e of document.querySelectorAll("div[data-diagram-data]")){let t=e.getAttribute("data-diagram-data");if(t){e.removeAttribute("data-diagram-data");try{let n=JSON.parse(decodeURIComponent(t)),r=window;if(r.ERDComponent){let a={tables:n.tables,filterTables:n.filterTables,dataTypes:n.dataTypes||{},mode:"embedded",renderedSvgs:n.renderedSvgs,positions:n.positions||null};r.ERDComponent.render(e,a)}else e.innerHTML=`
 						<div style="
 							display: flex; 
 							align-items: center; 
