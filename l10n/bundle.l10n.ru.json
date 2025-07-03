@@ -1580,5 +1580,14 @@
   "License removed successfully": "Лицензия успешно удалена",
   "Install License...": "Установить лицензию...",
   "Offline License": "Оффлайн лицензия",
-  "Reset table positions": "Сброс позиций стола"
+  "Reset table positions": "Сброс позиций стола",
+  "advancedFilterReset": "Сброс",
+  "advancedFilterCancel": "Отмена",
+  "advancedFilterClear": "Ясный",
+  "advancedFilterBuilderClear": "Ясный",
+  "advancedFilterBuilderReset": "Сброс",
+  "tooltipMode": "Режим всплывающей подсказки",
+  "tooltipModeSingle": "Единственный",
+  "tooltipModeShared": "Многократный",
+  "tooltipModeCompact": "Компактный"
 }

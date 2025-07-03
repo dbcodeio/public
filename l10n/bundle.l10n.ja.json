@@ -1583,5 +1583,14 @@
   "License removed successfully": "ライセンスが正常に削除されました",
   "Install License...": "ライセンスのインストール...",
   "Offline License": "オフラインライセンス",
-  "Reset table positions": "テーブル位置のリセット"
+  "Reset table positions": "テーブル位置のリセット",
+  "advancedFilterReset": "リセット",
+  "advancedFilterCancel": "キャンセル",
+  "advancedFilterClear": "クリア",
+  "advancedFilterBuilderClear": "クリア",
+  "advancedFilterBuilderReset": "リセット",
+  "tooltipMode": "ツールチップモード",
+  "tooltipModeSingle": "単",
+  "tooltipModeShared": "倍数",
+  "tooltipModeCompact": "コンパクト"
 }

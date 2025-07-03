@@ -1580,5 +1580,14 @@
   "License removed successfully": "Lizenz erfolgreich entfernt",
   "Install License...": "Lizenz installieren...",
   "Offline License": "Offline-Lizenz",
-  "Reset table positions": "Zurücksetzen von Tischpositionen"
+  "Reset table positions": "Zurücksetzen von Tischpositionen",
+  "advancedFilterReset": "Zurücksetzen",
+  "advancedFilterCancel": "Abbrechen",
+  "advancedFilterClear": "Klar",
+  "advancedFilterBuilderClear": "Klar",
+  "advancedFilterBuilderReset": "Zurücksetzen",
+  "tooltipMode": "Tooltip-Modus",
+  "tooltipModeSingle": "Ledig",
+  "tooltipModeShared": "Mehrfach",
+  "tooltipModeCompact": "Kompakt"
 }

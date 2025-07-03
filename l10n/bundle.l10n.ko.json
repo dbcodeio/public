@@ -1580,5 +1580,14 @@
   "License removed successfully": "라이선스가 성공적으로 제거되었습니다.",
   "Install License...": "라이센스 설치...",
   "Offline License": "오프라인 라이선스",
-  "Reset table positions": "테이블 위치 재설정"
+  "Reset table positions": "테이블 위치 재설정",
+  "advancedFilterReset": "재설정",
+  "advancedFilterCancel": "취소",
+  "advancedFilterClear": "맑다",
+  "advancedFilterBuilderClear": "맑다",
+  "advancedFilterBuilderReset": "재설정",
+  "tooltipMode": "툴팁 모드",
+  "tooltipModeSingle": "싱글",
+  "tooltipModeShared": "배수",
+  "tooltipModeCompact": "콤팩트"
 }

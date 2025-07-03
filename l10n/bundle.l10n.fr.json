@@ -1580,5 +1580,14 @@
   "License removed successfully": "Licence supprimée avec succès",
   "Install License...": "Installer la licence...",
   "Offline License": "Licence hors ligne",
-  "Reset table positions": "Réinitialiser les positions des tables"
+  "Reset table positions": "Réinitialiser les positions des tables",
+  "advancedFilterReset": "Réinitialisation",
+  "advancedFilterCancel": "Annuler",
+  "advancedFilterClear": "Clair",
+  "advancedFilterBuilderClear": "Clair",
+  "advancedFilterBuilderReset": "Réinitialisation",
+  "tooltipMode": "Mode infobulle",
+  "tooltipModeSingle": "Célibataire",
+  "tooltipModeShared": "Multiple",
+  "tooltipModeCompact": "Compact"
 }

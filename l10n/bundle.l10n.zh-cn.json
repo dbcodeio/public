@@ -1580,5 +1580,14 @@
   "License removed successfully": "已成功删除许可证",
   "Install License...": "安装许可证...",
   "Offline License": "离线许可证",
-  "Reset table positions": "重置表位置"
+  "Reset table positions": "重置表位置",
+  "advancedFilterReset": "重置",
+  "advancedFilterCancel": "取消",
+  "advancedFilterClear": "清楚",
+  "advancedFilterBuilderClear": "清楚",
+  "advancedFilterBuilderReset": "重置",
+  "tooltipMode": "工具提示模式",
+  "tooltipModeSingle": "单",
+  "tooltipModeShared": "倍数",
+  "tooltipModeCompact": "紧凑的"
 }

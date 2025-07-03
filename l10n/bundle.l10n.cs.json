@@ -1580,5 +1580,14 @@
   "License removed successfully": "Licence byla úspěšně odebrána",
   "Install License...": "Instalovat licenci...",
   "Offline License": "Offline licence",
-  "Reset table positions": "Resetování pozic v tabulkách"
+  "Reset table positions": "Resetování pozic v tabulkách",
+  "advancedFilterReset": "Resetovat",
+  "advancedFilterCancel": "Zrušit",
+  "advancedFilterClear": "Jasný",
+  "advancedFilterBuilderClear": "Jasný",
+  "advancedFilterBuilderReset": "Resetovat",
+  "tooltipMode": "Režim popisku nástroje",
+  "tooltipModeSingle": "Jednotlivý",
+  "tooltipModeShared": "Mnohonásobný",
+  "tooltipModeCompact": "Kompaktní"
 }

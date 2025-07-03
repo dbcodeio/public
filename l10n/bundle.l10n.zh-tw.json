@@ -1580,5 +1580,14 @@
   "License removed successfully": "已成功刪除許可證",
   "Install License...": "安裝授權...",
   "Offline License": "離線許可證",
-  "Reset table positions": "重置表位置"
+  "Reset table positions": "重置表位置",
+  "advancedFilterReset": "重置",
+  "advancedFilterCancel": "取消",
+  "advancedFilterClear": "清楚",
+  "advancedFilterBuilderClear": "清楚",
+  "advancedFilterBuilderReset": "重置",
+  "tooltipMode": "工具提示模式",
+  "tooltipModeSingle": "單",
+  "tooltipModeShared": "倍數",
+  "tooltipModeCompact": "緊湊的"
 }

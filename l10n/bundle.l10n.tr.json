@@ -1580,5 +1580,14 @@
   "License removed successfully": "Lisans başarıyla kaldırıldı",
   "Install License...": "Lisansı Yükle...",
   "Offline License": "Çevrimdışı Lisans",
-  "Reset table positions": "Tablo konumlarını sıfırla"
+  "Reset table positions": "Tablo konumlarını sıfırla",
+  "advancedFilterReset": "Sıfırlama",
+  "advancedFilterCancel": "İptal",
+  "advancedFilterClear": "Berrak",
+  "advancedFilterBuilderClear": "Berrak",
+  "advancedFilterBuilderReset": "Sıfırlama",
+  "tooltipMode": "Araç ipucu modu",
+  "tooltipModeSingle": "Tek",
+  "tooltipModeShared": "Çoklu",
+  "tooltipModeCompact": "Kompakt"
 }

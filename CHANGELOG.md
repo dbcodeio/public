@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.14.15 - 2025-07-03
+
+### Changed
+
+- ERD: Added option to change the connecting line style, and remember the choice.
+- API: Updated connections will run change detection and re connect if details like port, password, etc change. #568
+
+### Fixed
+
+- Postgres: Fixed issue with introspection not getting default values.
+- Postgres: Fixed issue with introspection not getting foreign key columns.
+- Yugabyte: Fixed introspection issue. #591
+- Editor: Fixed parsing create package statements.
+
 ## 1.14.14 - 2025-06-29
 
 ### Changed
