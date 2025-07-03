@@ -1,10 +1,51 @@
 # CHANGELOG
 
+## 1.14.14 - 2025-06-29
+
+### Changed
+
+- Export: Remember CSV settings for the next export. #599
+- ERD: Will remember the position of tables if they are re arranged.
+
+### Fixed
+
+- MCP: Autostart was not always working.
+- ERD: Improved cardinality display.
+
+## 1.14.13 - 2025-06-24
+
+### Changed
+
+- Editor: Connections are now pinned to the editor for re use. Supporting temp tables, and other temporary objects/commands. (SQL Server only to start with). #578 
+- SQLite: Added memory option for creating a memory only database. #595
+
+### Fixed
+
+- Offline license display in the account section now, including ability to remove the license.
+- Using an offline license is only possible now when not being signed into an account.
+
+## 1.14.12 - 2025-06-23
+
+### Changed
+
+- Setting: Added a setting (useExecuteCodeLens) to control if the execute code lens is shown in the editor. #358 #586
+- DuckDB: Updated driver to 1.3.1. #592
+- ERD: Any open diagrams will automatically update on changes to related schema/database. #383
+- ERD: Hovering over a table will show its relationships.
+- ERD: Added option to filter the columns displayed in the diagram to only show key columns or just table names.
+
+### Fixed
+
+- DBCode icon was not showing if the panel display was set to show icons only. 
+- StarRocks: Fixed issue with introspection. #585
+- SQLite: Fixed sqlean extension not being loaded correctly on windows. #593
+- Results: Improved web page export, added maximize button.
+
 ## 1.14.11 - 2025-06-18
 
 ### Changed
 
-- ERD: Supports keyword search, clicking a table to highlight relations, cardinality shown on connections, (sharing a work in progres). #329
+- ERD: Supports keyword search, clicking a table to highlight relations, cardinality shown on connections, (sharing a work in progress). #329
 - Connection Import: You can now import connections from Azure Data Studio, pgAdmin or CSV files. #494
 - Autocomplete: Will now offer join syntax when adding joins. #204
 - API: Added an API for other extensions to use. #568

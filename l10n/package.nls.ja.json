@@ -210,5 +210,7 @@
   "Wrap cell text in the results.": "結果でセルのテキストを折り返します。",
   "Export / Share": "エクスポート / 共有",
   "Import Connections": "インポート接続",
-  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "接続は作成されません。\n[接続の追加](コマンド:dbcode.connections.add)\n[接続のインポート](コマンド:dbcode.connections.import)\n[サンプルデータベースを使用した探索](コマンド:dbcode.connections.sample)"
+  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "接続は作成されません。\n[接続の追加](コマンド:dbcode.connections.add)\n[接続のインポート](コマンド:dbcode.connections.import)\n[サンプルデータベースを使用した探索](コマンド:dbcode.connections.sample)",
+  " The code lense will provide inline actions for executing queries.": " Code Lense は、クエリを実行するためのインライン アクションを提供します。",
+  "Remove License": "ライセンスの削除"
 }

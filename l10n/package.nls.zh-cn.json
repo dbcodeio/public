@@ -210,5 +210,7 @@
   "Wrap cell text in the results.": "在结果中换行单元格文本。",
   "Export / Share": "导出 / 共享",
   "Import Connections": "导入连接",
-  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "未创建连接。\n[添加连接]（命令：dbcode.connections.add）\n[导入连接]（命令：dbcode.connections.import）\n[使用示例数据库进行探索]（命令：dbcode.connections.sample）"
+  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "未创建连接。\n[添加连接]（命令：dbcode.connections.add）\n[导入连接]（命令：dbcode.connections.import）\n[使用示例数据库进行探索]（命令：dbcode.connections.sample）",
+  " The code lense will provide inline actions for executing queries.": " 代码详解将提供用于执行查询的内联作。",
+  "Remove License": "删除许可证"
 }

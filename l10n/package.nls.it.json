@@ -210,5 +210,7 @@
   "Wrap cell text in the results.": "Disporre il testo della cella nei risultati.",
   "Export / Share": "Esporta / Condividi",
   "Import Connections": "Importa connessioni",
-  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "Nessuna connessione creata.\n[Aggiungi connessione](comando:dbcode.connections.add)\n[Importa connessioni](comando:dbcode.connections.import)\n[Esplora con un database di esempio](comando:dbcode.connections.sample)"
+  "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "Nessuna connessione creata.\n[Aggiungi connessione](comando:dbcode.connections.add)\n[Importa connessioni](comando:dbcode.connections.import)\n[Esplora con un database di esempio](comando:dbcode.connections.sample)",
+  " The code lense will provide inline actions for executing queries.": " La lente del codice fornirà azioni in linea per l'esecuzione di query.",
+  "Remove License": "Rimuovi licenza"
 }
