@@ -1106,7 +1106,6 @@
   "The following connections contain / in the name. This can lead to unexpected issues. It is recommended to rename them.": "다음 연결에는 이름에 /가 포함됩니다. 이로 인해 예기치 않은 문제가 발생할 수 있습니다. 이름을 바꾸는 것이 좋습니다.",
   "Relationship Detail": "관계 세부 정보",
   "Secure Sharing": "안전한 공유",
-  "Entity Relationship Diagram": "엔터티 관계 다이어그램",
   "Query Parameters": "쿼리 매개 변수",
   "Inline Completion": "인라인 완성",
   "History": "역사",
@@ -1589,5 +1588,7 @@
   "tooltipMode": "툴팁 모드",
   "tooltipModeSingle": "싱글",
   "tooltipModeShared": "배수",
-  "tooltipModeCompact": "콤팩트"
+  "tooltipModeCompact": "콤팩트",
+  "Export Branding": "수출 브랜딩",
+  "Created with": "다음으로 생성됨"
 }

@@ -1109,7 +1109,6 @@
   "The following connections contain / in the name. This can lead to unexpected issues. It is recommended to rename them.": "次の接続には、名前に / が含まれています。これにより、予期しない問題が発生する可能性があります。名前を変更することをお勧めします。",
   "Relationship Detail": "リレーションシップの詳細",
   "Secure Sharing": "安全な共有",
-  "Entity Relationship Diagram": "エンティティ関係図",
   "Query Parameters": "クエリ パラメーター",
   "Inline Completion": "インライン補完",
   "History": "履歴",
@@ -1592,5 +1591,7 @@
   "tooltipMode": "ツールチップモード",
   "tooltipModeSingle": "単",
   "tooltipModeShared": "倍数",
-  "tooltipModeCompact": "コンパクト"
+  "tooltipModeCompact": "コンパクト",
+  "Export Branding": "ブランディングのエクスポート",
+  "Created with": "で作成"
 }

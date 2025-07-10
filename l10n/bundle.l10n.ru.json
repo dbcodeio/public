@@ -1106,7 +1106,6 @@
   "The following connections contain / in the name. This can lead to unexpected issues. It is recommended to rename them.": "Следующие соединения содержат / в названии. Это может привести к неожиданным проблемам. Рекомендуется переименовать их.",
   "Relationship Detail": "Сведения о взаимоотношениях",
   "Secure Sharing": "Безопасный обмен",
-  "Entity Relationship Diagram": "Диаграмма взаимосвязи сущностей",
   "Query Parameters": "Параметры запроса",
   "Inline Completion": "Поточное завершение",
   "History": "История",
@@ -1589,5 +1588,7 @@
   "tooltipMode": "Режим всплывающей подсказки",
   "tooltipModeSingle": "Единственный",
   "tooltipModeShared": "Многократный",
-  "tooltipModeCompact": "Компактный"
+  "tooltipModeCompact": "Компактный",
+  "Export Branding": "Экспортный брендинг",
+  "Created with": "Создано с помощью"
 }

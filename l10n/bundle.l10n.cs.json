@@ -1106,7 +1106,6 @@
   "The following connections contain / in the name. This can lead to unexpected issues. It is recommended to rename them.": "Následující spojení obsahují v názvu /. To může vést k neočekávaným problémům. Doporučuje se je přejmenovat.",
   "Relationship Detail": "Detail vztahu",
   "Secure Sharing": "Bezpečné sdílení",
-  "Entity Relationship Diagram": "Diagram vztahu entit",
   "Query Parameters": "Parametry dotazu",
   "Inline Completion": "Vložené dokončování",
   "History": "Historie",
@@ -1589,5 +1588,7 @@
   "tooltipMode": "Režim popisku nástroje",
   "tooltipModeSingle": "Jednotlivý",
   "tooltipModeShared": "Mnohonásobný",
-  "tooltipModeCompact": "Kompaktní"
+  "tooltipModeCompact": "Kompaktní",
+  "Export Branding": "Exportní branding",
+  "Created with": "Vytvořeno pomocí"
 }

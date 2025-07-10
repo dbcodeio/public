@@ -1106,7 +1106,6 @@
   "The following connections contain / in the name. This can lead to unexpected issues. It is recommended to rename them.": "Die folgenden Verbindungen enthalten / im Namen. Dies kann zu unerwarteten Problemen führen. Es wird empfohlen, sie umzubenennen.",
   "Relationship Detail": "Beziehungsdetail",
   "Secure Sharing": "Sicheres Teilen",
-  "Entity Relationship Diagram": "Entity-Relationship-Diagramm",
   "Query Parameters": "Abfrage-Parameter",
   "Inline Completion": "Inline-Vervollständigung",
   "History": "Geschichte",
@@ -1589,5 +1588,7 @@
   "tooltipMode": "Tooltip-Modus",
   "tooltipModeSingle": "Ledig",
   "tooltipModeShared": "Mehrfach",
-  "tooltipModeCompact": "Kompakt"
+  "tooltipModeCompact": "Kompakt",
+  "Export Branding": "Branding exportieren",
+  "Created with": "Erstellt mit"
 }

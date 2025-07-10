@@ -1106,7 +1106,6 @@
   "The following connections contain / in the name. This can lead to unexpected issues. It is recommended to rename them.": "Następujące połączenia zawierają / w nazwie. Może to prowadzić do nieoczekiwanych problemów. Zaleca się zmianę ich nazw.",
   "Relationship Detail": "Szczegóły relacji",
   "Secure Sharing": "Bezpieczne udostępnianie",
-  "Entity Relationship Diagram": "Diagram relacji encji",
   "Query Parameters": "Parametry zapytania",
   "Inline Completion": "Uzupełnianie w tekście",
   "History": "Historia",
@@ -1589,5 +1588,7 @@
   "tooltipMode": "Tryb podpowiedzi",
   "tooltipModeSingle": "Pojedynczy",
   "tooltipModeShared": "Wielokrotny",
-  "tooltipModeCompact": "Zwarty"
+  "tooltipModeCompact": "Zwarty",
+  "Export Branding": "Branding eksportowy",
+  "Created with": "Utworzony z"
 }

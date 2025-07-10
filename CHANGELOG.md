@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.14.16 - 2025-07-10
+
+### Changed
+
+- ERD: Now part of the core features.
+- Notebook Export: Now part of the core features.
+- Export/Share: Last used theme is now remembered.
+
+### Fixed
+
+- MCP: Autostart was prompting to sign in/activate, even when already signed in. #610
+- Results: Refreshing table data with schema changes was not reflecting updated schema (eg new columns not being shown).
+- Notebook Export: Fixed issue with formatting of tables.
+
 ## 1.14.15 - 2025-07-03
 
 ### Changed

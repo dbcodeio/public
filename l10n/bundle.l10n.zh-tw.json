@@ -1106,7 +1106,6 @@
   "The following connections contain / in the name. This can lead to unexpected issues. It is recommended to rename them.": "以下連接的名稱中包含 /。這可能會導致意外問題。建議重新命名它們。",
   "Relationship Detail": "關係詳細資訊",
   "Secure Sharing": "安全共用",
-  "Entity Relationship Diagram": "實體關係圖",
   "Query Parameters": "查詢參數",
   "Inline Completion": "內聯補全",
   "History": "歷史",
@@ -1589,5 +1588,7 @@
   "tooltipMode": "工具提示模式",
   "tooltipModeSingle": "單",
   "tooltipModeShared": "倍數",
-  "tooltipModeCompact": "緊湊的"
+  "tooltipModeCompact": "緊湊的",
+  "Export Branding": "出口品牌",
+  "Created with": "創建方式"
 }

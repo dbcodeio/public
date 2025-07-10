@@ -232,7 +232,6 @@
   "The following connections contain / in the name. This can lead to unexpected issues. It is recommended to rename them.": "As conexões a seguir contêm / no nome. Isso pode levar a problemas inesperados. Recomenda-se renomeá-los.",
   "Relationship Detail": "Detalhe do relacionamento",
   "Secure Sharing": "Compartilhamento seguro",
-  "Entity Relationship Diagram": "Diagrama de Relacionamento de Entidade",
   "Query Parameters": "Parâmetros de consulta",
   "Inline Completion": "Conclusão em linha",
   "History": "História",
@@ -714,5 +713,7 @@
   "tooltipMode": "Modo de dica de ferramenta",
   "tooltipModeSingle": "Único",
   "tooltipModeShared": "Múltiplo",
-  "tooltipModeCompact": "Compacto"
+  "tooltipModeCompact": "Compacto",
+  "Export Branding": "Exportar marca",
+  "Created with": "Criado com"
 }

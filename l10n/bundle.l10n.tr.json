@@ -1106,7 +1106,6 @@
   "The following connections contain / in the name. This can lead to unexpected issues. It is recommended to rename them.": "Aşağıdaki bağlantılar adında / içerir. Bu, beklenmeyen sorunlara yol açabilir. Bunları yeniden adlandırmanız önerilir.",
   "Relationship Detail": "İlişki Detayı",
   "Secure Sharing": "Güvenli Paylaşım",
-  "Entity Relationship Diagram": "Varlık İlişkisi Diyagramı",
   "Query Parameters": "Sorgu Parametreleri",
   "Inline Completion": "Satır İçi Tamamlama",
   "History": "Tarih",
@@ -1589,5 +1588,7 @@
   "tooltipMode": "Araç ipucu modu",
   "tooltipModeSingle": "Tek",
   "tooltipModeShared": "Çoklu",
-  "tooltipModeCompact": "Kompakt"
+  "tooltipModeCompact": "Kompakt",
+  "Export Branding": "İhracat Markalaşması",
+  "Created with": "Şununla oluşturuldu:"
 }
