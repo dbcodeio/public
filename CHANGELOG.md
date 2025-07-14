@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.14.17 - 2025-07-14
+
+### Changed
+
+- Data: Transpose icon added to allow transposing the data in the results grid (in preview, still working on it). #554
+- SQL Server/Azure: System tables are now grouped into their own System Tables section in the explorer if present. 
+
+### Fixed
+
+- Autocomplete: Aliased tables across databases which did not support schemas were not being handled correctly.
+- Connection Pinning: Added keep alive for SQL Server. #611
+
 ## 1.14.16 - 2025-07-10
 
 ### Changed

@@ -1590,5 +1590,8 @@
   "tooltipModeShared": "Multiple",
   "tooltipModeCompact": "Compact",
   "Export Branding": "Exporter l’image de marque",
-  "Created with": "Créé avec"
+  "Created with": "Créé avec",
+  "Field": "Champ",
+  "Transpose Rows and Columns": "Transposer des lignes et des colonnes",
+  "System Tables": "Tables système"
 }

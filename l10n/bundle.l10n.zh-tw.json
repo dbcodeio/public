@@ -1590,5 +1590,8 @@
   "tooltipModeShared": "倍數",
   "tooltipModeCompact": "緊湊的",
   "Export Branding": "出口品牌",
-  "Created with": "創建方式"
+  "Created with": "創建方式",
+  "Field": "田",
+  "Transpose Rows and Columns": "轉置行和列",
+  "System Tables": "系統表"
 }

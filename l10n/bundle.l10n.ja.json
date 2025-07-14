@@ -1593,5 +1593,8 @@
   "tooltipModeShared": "倍数",
   "tooltipModeCompact": "コンパクト",
   "Export Branding": "ブランディングのエクスポート",
-  "Created with": "で作成"
+  "Created with": "で作成",
+  "Field": "畑",
+  "Transpose Rows and Columns": "行と列の入れ替え",
+  "System Tables": "システムテーブル"
 }

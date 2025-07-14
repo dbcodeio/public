@@ -1590,5 +1590,8 @@
   "tooltipModeShared": "Çoklu",
   "tooltipModeCompact": "Kompakt",
   "Export Branding": "İhracat Markalaşması",
-  "Created with": "Şununla oluşturuldu:"
+  "Created with": "Şununla oluşturuldu:",
+  "Field": "Alan",
+  "Transpose Rows and Columns": "Satırları ve sütunları devrik hale getirme",
+  "System Tables": "Sistem Tabloları"
 }

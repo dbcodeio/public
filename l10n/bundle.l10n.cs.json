@@ -1590,5 +1590,8 @@
   "tooltipModeShared": "Mnohonásobný",
   "tooltipModeCompact": "Kompaktní",
   "Export Branding": "Exportní branding",
-  "Created with": "Vytvořeno pomocí"
+  "Created with": "Vytvořeno pomocí",
+  "Field": "Pole",
+  "Transpose Rows and Columns": "Transponování řádků a sloupců",
+  "System Tables": "Systémové tabulky"
 }

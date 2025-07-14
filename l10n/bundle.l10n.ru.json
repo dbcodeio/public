@@ -1590,5 +1590,8 @@
   "tooltipModeShared": "Многократный",
   "tooltipModeCompact": "Компактный",
   "Export Branding": "Экспортный брендинг",
-  "Created with": "Создано с помощью"
+  "Created with": "Создано с помощью",
+  "Field": "Поле",
+  "Transpose Rows and Columns": "Транспонирование строк и столбцов",
+  "System Tables": "Системные таблицы"
 }

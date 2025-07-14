@@ -1590,5 +1590,8 @@
   "tooltipModeShared": "배수",
   "tooltipModeCompact": "콤팩트",
   "Export Branding": "수출 브랜딩",
-  "Created with": "다음으로 생성됨"
+  "Created with": "다음으로 생성됨",
+  "Field": "밭",
+  "Transpose Rows and Columns": "행과 열 전치",
+  "System Tables": "시스템 테이블"
 }

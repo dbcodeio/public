@@ -1590,5 +1590,8 @@
   "tooltipModeShared": "Mehrfach",
   "tooltipModeCompact": "Kompakt",
   "Export Branding": "Branding exportieren",
-  "Created with": "Erstellt mit"
+  "Created with": "Erstellt mit",
+  "Field": "Feld",
+  "Transpose Rows and Columns": "Transponieren von Zeilen und Spalten",
+  "System Tables": "System-Tabellen"
 }
