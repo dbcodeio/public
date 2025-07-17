@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.14.18 - 2025-07-17
+
+### Changed
+
+- Data: Transpose mode improved, some issues with switching modes with pending edits still to be resolved. #554
+- Inspector: Added form view with editing support, search and copy feature, and support for transposed results.
+- Results: Simplified selection UX, allowing for duplicating partial rows.
+- SQLite: Added support for an idle timeout. #615
+
+### Fixed
+
+- Added index as an escaped identifier. #620
+- Results: Reduced row heights when a smaller font size is used.
+
 ## 1.14.17 - 2025-07-14
 
 ### Changed

@@ -1589,9 +1589,19 @@
   "tooltipModeSingle": "Soltero",
   "tooltipModeShared": "Múltiple",
   "tooltipModeCompact": "Compacto",
-  "Export Branding": "Marca de exportación",
   "Created with": "Creado con",
   "Field": "Campo",
   "Transpose Rows and Columns": "Transposición de filas y columnas",
-  "System Tables": "Tablas del sistema"
+  "System Tables": "Tablas del sistema",
+  "No matches found": "No se han encontrado coincidencias",
+  "Copy form data": "Copiar datos del formulario",
+  "Switch to Form View": "Cambiar a la vista de formulario",
+  "Switch to JSON View": "Cambiar a la vista JSON",
+  "Search fields and values...": "Campos de búsqueda y valores...",
+  "Read-only (deleted row)": "Solo lectura (fila eliminada)",
+  "Read-only (not editable)": "Solo lectura (no editable)",
+  "Duplicate Selected Cells/Rows": "Duplicar celdas/filas seleccionadas",
+  "Delete Selected Rows": "Eliminar filas seleccionadas",
+  "Idle Timeout": "Tiempo de espera de inactividad",
+  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Cierre automáticamente la conexión a la base de datos después de unos segundos especificados de inactividad. Déjelo vacío para desactivarlo."
 }

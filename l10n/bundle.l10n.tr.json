@@ -1589,9 +1589,19 @@
   "tooltipModeSingle": "Tek",
   "tooltipModeShared": "Çoklu",
   "tooltipModeCompact": "Kompakt",
-  "Export Branding": "İhracat Markalaşması",
   "Created with": "Şununla oluşturuldu:",
   "Field": "Alan",
   "Transpose Rows and Columns": "Satırları ve sütunları devrik hale getirme",
-  "System Tables": "Sistem Tabloları"
+  "System Tables": "Sistem Tabloları",
+  "No matches found": "Eşleşme bulunamadı",
+  "Copy form data": "Form verilerini kopyalama",
+  "Switch to Form View": "Form Görünümüne Geçme",
+  "Switch to JSON View": "JSON Görünümüne Geç",
+  "Search fields and values...": "Arama alanları ve değerler...",
+  "Read-only (deleted row)": "Salt okunur (silinmiş satır)",
+  "Read-only (not editable)": "Salt okunur (düzenlenemez)",
+  "Duplicate Selected Cells/Rows": "Seçili Hücreleri/Satırları Çoğalt",
+  "Delete Selected Rows": "Seçili Satırları Sil",
+  "Idle Timeout": "Boşta Kalma Zaman Aşımı",
+  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Belirtilen saniye işlem yapılmadığında veritabanı bağlantısını otomatik olarak kapatın. Devre dışı bırakmak için boş bırakın."
 }

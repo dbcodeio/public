@@ -1589,9 +1589,19 @@
   "tooltipModeSingle": "Jednotlivý",
   "tooltipModeShared": "Mnohonásobný",
   "tooltipModeCompact": "Kompaktní",
-  "Export Branding": "Exportní branding",
   "Created with": "Vytvořeno pomocí",
   "Field": "Pole",
   "Transpose Rows and Columns": "Transponování řádků a sloupců",
-  "System Tables": "Systémové tabulky"
+  "System Tables": "Systémové tabulky",
+  "No matches found": "Nebyly nalezeny žádné shody",
+  "Copy form data": "Kopírování dat formuláře",
+  "Switch to Form View": "Přepnutí do formulářového zobrazení",
+  "Switch to JSON View": "Přepnutí na zobrazení JSON",
+  "Search fields and values...": "Vyhledávací pole a hodnoty...",
+  "Read-only (deleted row)": "Jen ke čtení (smazaný řádek)",
+  "Read-only (not editable)": "Pouze ke čtení (nelze upravovat)",
+  "Duplicate Selected Cells/Rows": "Duplikovat vybrané buňky/řádky",
+  "Delete Selected Rows": "Odstranění vybraných řádků",
+  "Idle Timeout": "Časový limit nečinnosti",
+  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Automaticky ukončit připojení k databázi po určených sekundách nečinnosti. Ponechte prázdné pro zakázání."
 }

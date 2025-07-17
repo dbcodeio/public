@@ -1589,9 +1589,19 @@
   "tooltipModeSingle": "Единственный",
   "tooltipModeShared": "Многократный",
   "tooltipModeCompact": "Компактный",
-  "Export Branding": "Экспортный брендинг",
   "Created with": "Создано с помощью",
   "Field": "Поле",
   "Transpose Rows and Columns": "Транспонирование строк и столбцов",
-  "System Tables": "Системные таблицы"
+  "System Tables": "Системные таблицы",
+  "No matches found": "Совпадения не найдены",
+  "Copy form data": "Копирование данных формы",
+  "Switch to Form View": "Переключение в вид формы",
+  "Switch to JSON View": "Переключение на JSON View",
+  "Search fields and values...": "Поля поиска и значения...",
+  "Read-only (deleted row)": "Только для чтения (удаленная строка)",
+  "Read-only (not editable)": "Только для чтения (не редактируется)",
+  "Duplicate Selected Cells/Rows": "Дублирование выбранных ячеек/строк",
+  "Delete Selected Rows": "Удаление выбранных строк",
+  "Idle Timeout": "Тайм-аут простоя",
+  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Автоматически закрывать соединение с базой данных после указанных секунд бездействия. Оставьте пустым для отключения."
 }

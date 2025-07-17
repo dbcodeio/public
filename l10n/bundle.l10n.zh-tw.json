@@ -1589,9 +1589,19 @@
   "tooltipModeSingle": "單",
   "tooltipModeShared": "倍數",
   "tooltipModeCompact": "緊湊的",
-  "Export Branding": "出口品牌",
   "Created with": "創建方式",
   "Field": "田",
   "Transpose Rows and Columns": "轉置行和列",
-  "System Tables": "系統表"
+  "System Tables": "系統表",
+  "No matches found": "未找到匹配項",
+  "Copy form data": "複製表單數據",
+  "Switch to Form View": "切換到表單檢視",
+  "Switch to JSON View": "切換到 JSON 檢視",
+  "Search fields and values...": "搜尋欄位與值...",
+  "Read-only (deleted row)": "唯讀（已刪除的行）",
+  "Read-only (not editable)": "唯讀（不可編輯）",
+  "Duplicate Selected Cells/Rows": "複製選定的儲存格/行",
+  "Delete Selected Rows": "刪除選取選取",
+  "Idle Timeout": "空閒超時",
+  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "在指定的非活動秒數后自動關閉資料庫連接。留空可禁用。"
 }
