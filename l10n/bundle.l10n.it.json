@@ -1603,5 +1603,6 @@
   "Duplicate Selected Cells/Rows": "Duplica celle/righe selezionate",
   "Delete Selected Rows": "Elimina le righe selezionate",
   "Idle Timeout": "Timeout di inattività",
-  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Chiude automaticamente la connessione al database dopo i secondi di inattività specificati. Lascia vuoto per disabilitare."
+  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Chiude automaticamente la connessione al database dopo i secondi di inattività specificati. Lascia vuoto per disabilitare.",
+  "Since: {0}": "Dal: {0}"
 }

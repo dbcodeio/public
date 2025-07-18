@@ -1603,5 +1603,6 @@
   "Duplicate Selected Cells/Rows": "复制选定的单元格/行",
   "Delete Selected Rows": "删除所选行",
   "Idle Timeout": "空闲超时",
-  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "在指定的非活动秒数后自动关闭数据库连接。留空可禁用。"
+  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "在指定的非活动秒数后自动关闭数据库连接。留空可禁用。",
+  "Since: {0}": "自：{0}"
 }

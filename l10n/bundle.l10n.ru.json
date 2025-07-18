@@ -1603,5 +1603,6 @@
   "Duplicate Selected Cells/Rows": "Дублирование выбранных ячеек/строк",
   "Delete Selected Rows": "Удаление выбранных строк",
   "Idle Timeout": "Тайм-аут простоя",
-  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Автоматически закрывать соединение с базой данных после указанных секунд бездействия. Оставьте пустым для отключения."
+  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Автоматически закрывать соединение с базой данных после указанных секунд бездействия. Оставьте пустым для отключения.",
+  "Since: {0}": "С: {0}"
 }

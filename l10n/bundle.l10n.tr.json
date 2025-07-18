@@ -1603,5 +1603,6 @@
   "Duplicate Selected Cells/Rows": "Seçili Hücreleri/Satırları Çoğalt",
   "Delete Selected Rows": "Seçili Satırları Sil",
   "Idle Timeout": "Boşta Kalma Zaman Aşımı",
-  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Belirtilen saniye işlem yapılmadığında veritabanı bağlantısını otomatik olarak kapatın. Devre dışı bırakmak için boş bırakın."
+  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Belirtilen saniye işlem yapılmadığında veritabanı bağlantısını otomatik olarak kapatın. Devre dışı bırakmak için boş bırakın.",
+  "Since: {0}": "Şu tarihten beri: {0}"
 }

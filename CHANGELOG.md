@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.14.19 - 2025-07-18
+
+### Changed
+
+- Data: Transpose mode improved, cmd/ctrl+t to toggle transpose mode, undo still needs work when switching modes. #554
+
 ## 1.14.18 - 2025-07-17
 
 ### Changed

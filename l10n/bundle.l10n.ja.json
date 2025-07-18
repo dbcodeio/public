@@ -1606,5 +1606,6 @@
   "Duplicate Selected Cells/Rows": "選択したセル/行の複製",
   "Delete Selected Rows": "選択した行の削除",
   "Idle Timeout": "アイドル タイムアウト",
-  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "指定した秒数非アクティブな状態が続くと、データベース接続を自動的に閉じます。無効にするには、空のままにします。"
+  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "指定した秒数非アクティブな状態が続くと、データベース接続を自動的に閉じます。無効にするには、空のままにします。",
+  "Since: {0}": "開始: {0}"
 }

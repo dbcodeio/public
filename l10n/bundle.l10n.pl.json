@@ -1603,5 +1603,6 @@
   "Duplicate Selected Cells/Rows": "Zduplikowane zaznaczone komórki/wiersze",
   "Delete Selected Rows": "Usuwanie zaznaczonych wierszy",
   "Idle Timeout": "Limit czasu bezczynności",
-  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Automatycznie zamykaj połączenie z bazą danych po określonych sekundach bezczynności. Pozostaw puste, aby wyłączyć."
+  "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Automatycznie zamykaj połączenie z bazą danych po określonych sekundach bezczynności. Pozostaw puste, aby wyłączyć.",
+  "Since: {0}": "Od: {0}"
 }
