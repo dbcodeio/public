@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.14.20 - 2025-07-21
+
+### Fixed
+
+- Notebooks: Restore cell height and chart width saved with output. #623
+- SQL Parsing: Better handling of begin.. end; blocks. #619
+- Supabase: Fixed issue when projects did not use branches. #624
+
 ## 1.14.19 - 2025-07-18
 
 ### Changed
