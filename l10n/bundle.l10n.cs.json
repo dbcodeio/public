@@ -919,7 +919,6 @@
   "ariaLabelDialog": "Dialog",
   "ariaLabelColumnMenu": "Nabídka Sloupec",
   "ariaLabelColumnFilter": "Sloupec Filtr",
-  "ariaLabelCellEditor": "Editor buněk",
   "ariaLabelSelectField": "Vybrat pole",
   "ariaLabelRichSelectField": "Bohaté výběrové pole",
   "ariaLabelRichSelectToggleSelection": "Stisknutím klávesy MEZERNÍK přepnete výběr",
@@ -1604,5 +1603,6 @@
   "Delete Selected Rows": "Odstranění vybraných řádků",
   "Idle Timeout": "Časový limit nečinnosti",
   "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Automaticky ukončit připojení k databázi po určených sekundách nečinnosti. Ponechte prázdné pro zakázání.",
-  "Since: {0}": "Od: {0}"
+  "Since: {0}": "Od: {0}",
+  "Transpose": "Transponovat"
 }

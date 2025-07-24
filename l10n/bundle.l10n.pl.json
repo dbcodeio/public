@@ -919,7 +919,6 @@
   "ariaLabelDialog": "Dialog",
   "ariaLabelColumnMenu": "Menu kolumnowe",
   "ariaLabelColumnFilter": "Filtr kolumnowy",
-  "ariaLabelCellEditor": "Edytor komórek",
   "ariaLabelSelectField": "Wybierz pole",
   "ariaLabelRichSelectField": "Bogate pole wyboru",
   "ariaLabelRichSelectToggleSelection": "Naciśnij SPACJĘ, aby przełączyć wybór",
@@ -1604,5 +1603,6 @@
   "Delete Selected Rows": "Usuwanie zaznaczonych wierszy",
   "Idle Timeout": "Limit czasu bezczynności",
   "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Automatycznie zamykaj połączenie z bazą danych po określonych sekundach bezczynności. Pozostaw puste, aby wyłączyć.",
-  "Since: {0}": "Od: {0}"
+  "Since: {0}": "Od: {0}",
+  "Transpose": "Transpozycji"
 }

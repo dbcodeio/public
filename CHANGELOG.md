@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.14.21 - 2025-07-24
+
+### Changed
+
+- Data: Transpose mode finalized. #554
+
+### Fixed
+
+- Oracle: executing of begin.. end; blocks fixed. #619
+
 ## 1.14.20 - 2025-07-21
 
 ### Fixed

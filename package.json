@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.14.20",
+    "version": "1.14.21",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -3984,7 +3984,6 @@
         "trino-client": "^0.2.7",
         "tunnel-ssh": "^5.2.0",
         "typed-emitter": "^2.1.0",
-        "undo-manager": "^1.1.1",
         "unzipper": "^0.12.3",
         "validator": "^13.12.0",
         "vscode-messenger": "^0.4.5",

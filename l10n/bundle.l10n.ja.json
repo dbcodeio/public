@@ -922,7 +922,6 @@
   "ariaLabelDialog": "] ダイアログ",
   "ariaLabelColumnMenu": "コラムメニュー",
   "ariaLabelColumnFilter": "列フィルター",
-  "ariaLabelCellEditor": "セルエディタ",
   "ariaLabelSelectField": "フィールドの選択",
   "ariaLabelRichSelectField": "リッチセレクトフィールド",
   "ariaLabelRichSelectToggleSelection": "SPACEを押して選択を切り替えます",
@@ -1607,5 +1606,6 @@
   "Delete Selected Rows": "選択した行の削除",
   "Idle Timeout": "アイドル タイムアウト",
   "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "指定した秒数非アクティブな状態が続くと、データベース接続を自動的に閉じます。無効にするには、空のままにします。",
-  "Since: {0}": "開始: {0}"
+  "Since: {0}": "開始: {0}",
+  "Transpose": "転置"
 }

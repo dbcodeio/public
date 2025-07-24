@@ -919,7 +919,6 @@
   "ariaLabelDialog": "對話",
   "ariaLabelColumnMenu": "列功能表",
   "ariaLabelColumnFilter": "列篩檢程式",
-  "ariaLabelCellEditor": "單元格編輯器",
   "ariaLabelSelectField": "選擇欄位",
   "ariaLabelRichSelectField": "豐富的選擇欄位",
   "ariaLabelRichSelectToggleSelection": "按SPACE鍵切換選擇",
@@ -1604,5 +1603,6 @@
   "Delete Selected Rows": "刪除選取選取",
   "Idle Timeout": "空閒超時",
   "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "在指定的非活動秒數后自動關閉資料庫連接。留空可禁用。",
-  "Since: {0}": "自：{0}"
+  "Since: {0}": "自：{0}",
+  "Transpose": "移調"
 }
