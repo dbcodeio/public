@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.14.22 - 2025-07-28
+
+### Fixed
+
+- Explorer mapping columns to incorrect tables in some cases. #628
+- IBM DB2: Added latest bindings. #636
+- MySQL/MariaDB: Filtering for year was using date rather than number. #633
+- Postgres: Updated to support AWS Aurora DSQL. #637
+- Parameters: The data type dropdown was not always visible.
+
 ## 1.14.21 - 2025-07-24
 
 ### Changed
