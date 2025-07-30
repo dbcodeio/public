@@ -1604,5 +1604,6 @@
   "Idle Timeout": "Zeitüberschreitung im Leerlauf",
   "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Automatisches Schließen der Datenbankverbindung nach bestimmten Sekunden der Inaktivität. Lassen Sie das Feld leer, um es zu deaktivieren.",
   "Since: {0}": "Seit: {0}",
-  "Transpose": "Transponieren"
+  "Transpose": "Transponieren",
+  "Tip: Use \\t for tab delimiter": "Tipp: Verwenden Sie \\t als Tabulatortrennzeichen"
 }

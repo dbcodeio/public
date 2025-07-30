@@ -1604,5 +1604,6 @@
   "Idle Timeout": "Časový limit nečinnosti",
   "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Automaticky ukončit připojení k databázi po určených sekundách nečinnosti. Ponechte prázdné pro zakázání.",
   "Since: {0}": "Od: {0}",
-  "Transpose": "Transponovat"
+  "Transpose": "Transponovat",
+  "Tip: Use \\t for tab delimiter": "Tip: Použití \\t pro oddělovač tabulátorů"
 }

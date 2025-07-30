@@ -1604,5 +1604,6 @@
   "Idle Timeout": "Boşta Kalma Zaman Aşımı",
   "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Belirtilen saniye işlem yapılmadığında veritabanı bağlantısını otomatik olarak kapatın. Devre dışı bırakmak için boş bırakın.",
   "Since: {0}": "Şu tarihten beri: {0}",
-  "Transpose": "Devrik_dönüşüm"
+  "Transpose": "Devrik_dönüşüm",
+  "Tip: Use \\t for tab delimiter": "İpucu: Sekme sınırlayıcı için \\t kullanın"
 }

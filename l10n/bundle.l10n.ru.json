@@ -1604,5 +1604,6 @@
   "Idle Timeout": "Тайм-аут простоя",
   "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Автоматически закрывать соединение с базой данных после указанных секунд бездействия. Оставьте пустым для отключения.",
   "Since: {0}": "С: {0}",
-  "Transpose": "Транспонировать"
+  "Transpose": "Транспонировать",
+  "Tip: Use \\t for tab delimiter": "Совет: Используйте \\t для разделителя табуляции"
 }

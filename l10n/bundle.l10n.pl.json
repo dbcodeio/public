@@ -1604,5 +1604,6 @@
   "Idle Timeout": "Limit czasu bezczynności",
   "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "Automatycznie zamykaj połączenie z bazą danych po określonych sekundach bezczynności. Pozostaw puste, aby wyłączyć.",
   "Since: {0}": "Od: {0}",
-  "Transpose": "Transpozycji"
+  "Transpose": "Transpozycji",
+  "Tip: Use \\t for tab delimiter": "Porada: Użyj \\t jako ogranicznika tabulatorów"
 }

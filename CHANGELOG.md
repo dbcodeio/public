@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.14.23 - 2025-07-30
+
+### Changed
+
+- Export/Share: Added support for tab delimiters in CSV export.
+
+### Fixed
+
+- Improved introspection performance for large schemas (1000+ schemas)
+
 ## 1.14.22 - 2025-07-28
 
 ### Fixed

@@ -1604,5 +1604,6 @@
   "Idle Timeout": "空閒超時",
   "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "在指定的非活動秒數后自動關閉資料庫連接。留空可禁用。",
   "Since: {0}": "自：{0}",
-  "Transpose": "移調"
+  "Transpose": "移調",
+  "Tip: Use \\t for tab delimiter": "提示：將 \\t 用於製表符分隔符"
 }

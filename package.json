@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.14.22",
+    "version": "1.14.23",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -3833,7 +3833,10 @@
         "postinstall": "patch-package",
         "version": "tsx ./scripts/changelog.ts && git add CHANGELOG.md",
         "check-types": "tsc --build --noEmit",
-        "check-types:file": "tsc --noEmit --skipLibCheck"
+        "check-types:file": "tsc --noEmit --skipLibCheck",
+        "benchmark": "vitest run src/benchmark --config vitest.benchmark.config.ts",
+        "benchmark:file": "vitest run --config vitest.benchmark.config.ts",
+        "benchmark:test": "vitest run --config vitest.benchmark.config.ts --testNamePattern"
     },
     "devDependencies": {
         "@azure-rest/ai-translation-text": "^1.0.1",

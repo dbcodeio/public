@@ -1607,5 +1607,6 @@
   "Idle Timeout": "アイドル タイムアウト",
   "Automatically close database connection after specified seconds of inactivity. Leave empty to disable.": "指定した秒数非アクティブな状態が続くと、データベース接続を自動的に閉じます。無効にするには、空のままにします。",
   "Since: {0}": "開始: {0}",
-  "Transpose": "転置"
+  "Transpose": "転置",
+  "Tip: Use \\t for tab delimiter": "ヒント: タブ区切り文字に \\t を使用します"
 }

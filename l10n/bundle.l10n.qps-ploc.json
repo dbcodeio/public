@@ -209,6 +209,7 @@
   "SQL Insert Statements": "ŞɊĿ Īƞşḗḗřŧ Şŧȧȧŧḗḗḿḗḗƞŧş",
   "XML": "ẊḾĿ",
   "Delimiter": "Ḓḗḗŀīḿīŧḗḗř",
+  "Tip: Use \\t for tab delimiter": "Ŧīƥ: ŬŬşḗḗ \\ŧ ƒǿǿř ŧȧȧƀ ḓḗḗŀīḿīŧḗḗř",
   "Suppress quotes": "Şŭŭƥƥřḗḗşş ɋŭŭǿǿŧḗḗş",
   "Note: Suppressing quotes will not escape the delimiter in values, which may cause parsing issues.": "Ƞǿǿŧḗḗ: Şŭŭƥƥřḗḗşşīƞɠ ɋŭŭǿǿŧḗḗş ẇīŀŀ ƞǿǿŧ ḗḗşƈȧȧƥḗḗ ŧħḗḗ ḓḗḗŀīḿīŧḗḗř īƞ ṽȧȧŀŭŭḗḗş, ẇħīƈħ ḿȧȧẏ ƈȧȧŭŭşḗḗ ƥȧȧřşīƞɠ īşşŭŭḗḗş.",
   "Password (Optional)": "Ƥȧȧşşẇǿǿřḓ (ǾǾƥŧīǿǿƞȧȧŀ)",
