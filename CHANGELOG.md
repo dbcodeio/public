@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.14.24 - 2025-08-01
+
+### Changed
+
+- Connection Pinning: Added support in notebooks, and for Postgres. #578
+- Redshift: Added support for external tables (Spectrum). #613
+
+### Fixed
+
+- Postgres: Introspection does not get columns for partitioned tables (redundant).
+- Postgres: Don't change schemas for non user based SQL execution. #507
+- Oracle: Fixed syntax error being displayed rather than driver error in certain cases.
+
 ## 1.14.23 - 2025-07-30
 
 ### Changed
