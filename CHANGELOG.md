@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.14.25 - 2025-08-02
+
+### Fixed
+
+- Autocomplete: Fixed issue where it was not working for some databases. #643
+- Redshift: Removed JSON method from introspection. #644
+
 ## 1.14.24 - 2025-08-01
 
 ### Changed
