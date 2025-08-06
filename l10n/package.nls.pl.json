@@ -212,5 +212,11 @@
   "Import Connections": "Importowanie połączeń",
   "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "Nie utworzono żadnych połączeń.\n[Dodaj połączenie](polecenie:dbcode.connections.add)\n[Importuj połączenia](polecenie:dbcode.connections.import)\n[Eksploruj za pomocą przykładowej bazy danych](polecenie:dbcode.connections.sample)",
   " The code lense will provide inline actions for executing queries.": " Soczewka kodu zapewni wbudowane akcje do wykonywania zapytań.",
-  "Remove License": "Usuń licencję"
+  "Remove License": "Usuń licencję",
+  "Column Mapping": "Mapowanie kolumn",
+  "Formatter ID": "Identyfikator formatera",
+  "Column Name": "Nazwa kolumny",
+  "Table Name": "Nazwa tabeli",
+  "Parameters for the formatter": "Parametry formatyzatora",
+  "Custom Column Formatters": "Formatery kolumn niestandardowych"
 }

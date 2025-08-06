@@ -212,5 +212,11 @@
   "Import Connections": "Bağlantıları İçe Aktar",
   "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "Bağlantı oluşturulmadı.\n[Bağlantı Ekle](komut:dbcode.connections.add)\n[Bağlantıları İçe Aktar](komut:dbcode.connections.import)\n[Örnek Bir Veritabanıyla Keşfedin](komut:dbcode.connections.sample)",
   " The code lense will provide inline actions for executing queries.": " Kod merceği, sorguları yürütmek için satır içi eylemler sağlar.",
-  "Remove License": "Lisansı Kaldır"
+  "Remove License": "Lisansı Kaldır",
+  "Column Mapping": "Sütun Eşleme",
+  "Formatter ID": "Biçimlendirici Kimliği",
+  "Column Name": "Sütun Adı",
+  "Table Name": "Tablo Adı",
+  "Parameters for the formatter": "Biçimlendirici için parametreler",
+  "Custom Column Formatters": "Özel Sütun Biçimlendiriciler"
 }

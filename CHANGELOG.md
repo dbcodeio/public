@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.14.26 - 2025-08-06
+
+### Changed
+
+- Results: Added support for data [formatting](https://dbcode.io/docs/data/formatters) (work in progress).
+- Results: Selecting a full row and pressing delete/backspace will now delete the row, rather than clear the contents (cmd/ctrl+delete/backspace will delete partially selected row). 
+
+### Fixed
+
+- Dragging a table to a new window did not load the data. 
+- Greenplum: Fixed introspection issue. #651
+- Doris: Fixed introspection issue. #645
+- Results: Fixed issue with sorting other columns, when primary key sorting setting was enabled.
+
 ## 1.14.25 - 2025-08-02
 
 ### Fixed
