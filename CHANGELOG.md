@@ -1,5 +1,50 @@
 # CHANGELOG
 
+## 1.14.28 - 2025-08-07
+
+### Changed
+
+- Results: Support for data [formatting](https://dbcode.io/docs/data/formatters) completed.
+- Inspector: Updated to use VSCode editor.
+
+### Fixed
+
+- DB2: Fixed issue with SSL connections. #652
+
+## 1.14.26 - 2025-08-06
+
+### Changed
+
+- Results: Added support for data [formatting](https://dbcode.io/docs/data/formatters) (work in progress).
+- Results: Selecting a full row and pressing delete/backspace will now delete the row, rather than clear the contents (cmd/ctrl+delete/backspace will delete partially selected row). 
+
+### Fixed
+
+- Dragging a table to a new window did not load the data. 
+- Greenplum: Fixed introspection issue. #651
+- Doris: Fixed introspection issue. #645
+- Results: Fixed issue with sorting other columns, when primary key sorting setting was enabled.
+
+## 1.14.25 - 2025-08-02
+
+### Fixed
+
+- Autocomplete: Fixed issue where it was not working for some databases. #643
+- Redshift: Removed JSON method from introspection. #644
+
+## 1.14.24 - 2025-08-01
+
+### Changed
+
+- Connection Pinning: Added support in notebooks, and for Postgres. #578
+- Redshift: Added support for external tables (Spectrum). #613
+
+### Fixed
+
+- Postgres: Introspection does not get columns for partitioned tables (redundant).
+- Postgres: Don't change schemas for non user based SQL execution. #507
+- Oracle: Fixed syntax error being displayed rather than driver error in certain cases.
+
 ## 1.14.23 - 2025-07-30
 
 ### Changed

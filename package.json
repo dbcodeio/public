@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.14.23",
+    "version": "1.14.28",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -3815,6 +3815,60 @@
                                 }
                             }
                         }
+                    },
+                    "dbcode.column.mapping": {
+                        "type": "object",
+                        "markdownDescription": "%Column Mapping%",
+                        "default": {},
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "description": "%Formatter ID%"
+                                },
+                                "columnName": {
+                                    "type": "string",
+                                    "description": "%Column Name%"
+                                },
+                                "tableName": {
+                                    "type": "string",
+                                    "markdownDescription": "%Table Name%"
+                                },
+                                "params": {
+                                    "type": "object",
+                                    "description": "%Parameters for the formatter%"
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "columnName"
+                            ]
+                        }
+                    },
+                    "dbcode.column.formatters": {
+                        "type": "array",
+                        "markdownDescription": "%Custom Column Formatters%",
+                        "default": [],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "code": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "name",
+                                "code"
+                            ]
+                        }
                     }
                 }
             }
@@ -3906,7 +3960,6 @@
     },
     "dependencies": {
         "@ag-grid-community/styles": "^32.3.4",
-        "@andypf/json-viewer": "^2.1.10",
         "@aws-sdk/client-athena": "^3.810.0",
         "@blocknote/core": "^0.31.0",
         "@blocknote/mantine": "^0.31.0",
@@ -3918,6 +3971,7 @@
         "@elastic/elasticsearch": "^9.0.1",
         "@google-cloud/bigquery": "^7.9.2",
         "@libsql/client": "^0.14.0",
+        "@monaco-editor/loader": "^1.4.0",
         "@types/dagre": "^0.7.52",
         "@types/mssql": "^9.1.7",
         "@vscode-elements/elements": "^1.15.0",
@@ -3957,6 +4011,7 @@
         "lit": "^3.2.1",
         "lodash-es": "^4.17.21",
         "mariadb": "^3.4.2",
+        "monaco-editor": "^0.52.2",
         "mongodb": "^6.14.0",
         "mssql": "^11.0.1",
         "mysql2": "^3.14.2",

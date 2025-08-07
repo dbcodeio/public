@@ -212,5 +212,11 @@
   "Import Connections": "Импорт подключений",
   "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "Подключения не созданы.\n[Добавить соединение](команда:dbcode.connections.add)\n[Импорт соединений](команда:dbcode.connections.import)\n[Исследуйте с помощью примера базы данных](команда:dbcode.connections.sample)",
   " The code lense will provide inline actions for executing queries.": " В коде lense будут предоставляться встроенные действия для выполнения запросов.",
-  "Remove License": "Удалить лицензию"
+  "Remove License": "Удалить лицензию",
+  "Column Mapping": "Сопоставление столбцов",
+  "Formatter ID": "Идентификатор форматтера",
+  "Column Name": "Имя столбца",
+  "Table Name": "Имя таблицы",
+  "Parameters for the formatter": "Параметры для модуля форматирования",
+  "Custom Column Formatters": "Пользовательские форматтеры столбцов"
 }

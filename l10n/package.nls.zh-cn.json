@@ -212,5 +212,11 @@
   "Import Connections": "导入连接",
   "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "未创建连接。\n[添加连接]（命令：dbcode.connections.add）\n[导入连接]（命令：dbcode.connections.import）\n[使用示例数据库进行探索]（命令：dbcode.connections.sample）",
   " The code lense will provide inline actions for executing queries.": " 代码详解将提供用于执行查询的内联作。",
-  "Remove License": "删除许可证"
+  "Remove License": "删除许可证",
+  "Column Mapping": "列映射",
+  "Formatter ID": "格式化程序 ID",
+  "Column Name": "列名称",
+  "Table Name": "表名称",
+  "Parameters for the formatter": "格式化程序的参数",
+  "Custom Column Formatters": "自定义列格式化程序"
 }

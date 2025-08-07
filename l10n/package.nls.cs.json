@@ -212,5 +212,11 @@
   "Import Connections": "Importovat připojení",
   "No connections created.\n[Add Connection](command:dbcode.connections.add)\n[Import Connections](command:dbcode.connections.import)\n[Explore With a Sample Database](command:dbcode.connections.sample)\n": "Nejsou vytvořena žádná spojení.\n[Přidat připojení](příkaz:dbcode.connections.add)\n[Importovat připojení](příkaz:dbcode.connections.import)\n[Prozkoumat s ukázkovou databází](příkaz:dbcode.connections.sample)",
   " The code lense will provide inline actions for executing queries.": " Kódová čočka poskytne vložené akce pro provádění dotazů.",
-  "Remove License": "Odebrat licenci"
+  "Remove License": "Odebrat licenci",
+  "Column Mapping": "Mapování sloupců",
+  "Formatter ID": "ID formátovacího modulu",
+  "Column Name": "Název sloupce",
+  "Table Name": "Název tabulky",
+  "Parameters for the formatter": "Parametry pro formátovač",
+  "Custom Column Formatters": "Vlastní formátovače sloupců"
 }
