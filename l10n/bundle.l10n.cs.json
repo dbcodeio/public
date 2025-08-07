@@ -1651,5 +1651,6 @@
   "Failed to clean up column formatter mappings for deleted connection: {0}": "Nepodařilo se vyčistit mapování formátovacího modulu sloupců pro odstraněné připojení: {0}",
   "Failed to remove column formatter mapping: {0}": "Odebrání mapování formátovacího modulu sloupců se nezdařilo: {0}",
   "Failed to save column formatter mapping: {0}": "Nepodařilo se uložit mapování formátovacího modulu sloupců: {0}",
-  "Perpetual License": "Trvalá licence"
+  "Perpetual License": "Trvalá licence",
+  "Formatters": "Formatters"
 }

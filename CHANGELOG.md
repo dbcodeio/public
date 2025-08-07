@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.14.27 - 2025-08-07
+
+### Changed
+
+- Results: Support for data [formatting](https://dbcode.io/docs/data/formatters) completed.
+- Inspector: Updated to use VSCode editor.
+
+### Fixed
+
+- DB2: Fixed issue with SSL connections. #652
+
 ## 1.14.26 - 2025-08-06
 
 ### Changed

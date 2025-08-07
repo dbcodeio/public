@@ -1651,5 +1651,6 @@
   "Failed to clean up column formatter mappings for deleted connection: {0}": "No se pudieron limpiar las asignaciones de formateador de columnas para la conexión eliminada: {0}",
   "Failed to remove column formatter mapping: {0}": "No se pudo quitar la asignación del formateador de columnas: {0}",
   "Failed to save column formatter mapping: {0}": "No se pudo guardar la asignación del formateador de columnas: {0}",
-  "Perpetual License": "Licencia perpetua"
+  "Perpetual License": "Licencia perpetua",
+  "Formatters": "Formateadores"
 }

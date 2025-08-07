@@ -1654,5 +1654,6 @@
   "Failed to clean up column formatter mappings for deleted connection: {0}": "削除された接続の列フォーマッタ マッピングのクリーンアップに失敗しました: {0}",
   "Failed to remove column formatter mapping: {0}": "列フォーマッタ マッピングの削除に失敗しました: {0}",
   "Failed to save column formatter mapping: {0}": "列フォーマッタ マッピングの保存に失敗しました: {0}",
-  "Perpetual License": "永久ライセンス"
+  "Perpetual License": "永久ライセンス",
+  "Formatters": "フォーマッタ"
 }
