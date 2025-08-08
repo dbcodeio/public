@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.14.29 - 2025-08-08
+
+### Changed
+
+- Results: VSCode editor now used in JSON/XML datatypes, and can be opened on any field using the open in editor icon (replaces old open in editor). #107
+- Connection Pinning: Will now destroy a connection if keep alive statement fails. #578 #648
+
+### Fixed
+
+- Trino: Uses line numbers in errors to reduce highlighting when present.
+- Export: Fixed issue with SQL Insert statement export. #655
+- Inspector: Show correct data types in the JSON view.
+- Inspector: Added proper editor to JSON and XML data types. #107
+
 ## 1.14.28 - 2025-08-07
 
 ### Changed
