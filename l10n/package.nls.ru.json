@@ -218,5 +218,6 @@
   "Column Name": "Имя столбца",
   "Table Name": "Имя таблицы",
   "Parameters for the formatter": "Параметры для модуля форматирования",
-  "Custom Column Formatters": "Пользовательские форматтеры столбцов"
+  "Custom Column Formatters": "Пользовательские форматтеры столбцов",
+  "Enable experimental DBCode SQL language server (active statement diagnostics) MariaDB and Postgres only at the moment.": "Включите экспериментальный сервер языка DBCode SQL (диагностика активных операторов) MariaDB и Postgres только на данный момент."
 }

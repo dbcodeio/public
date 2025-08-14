@@ -1652,5 +1652,9 @@
   "Failed to remove column formatter mapping: {0}": "無法刪除欄格式化程式映射：{0}",
   "Failed to save column formatter mapping: {0}": "無法儲存欄格式化程式映射：{0}",
   "Perpetual License": "永久許可證",
-  "Formatters": "格式化程式"
+  "Formatters": "格式化程式",
+  "Unsupported on this platform": "此平台不支援",
+  "Windows Only": "僅限 Windows",
+  "Microsoft Access driver is only supported on Windows.": "Microsoft Access 驅動程式僅在 Windows 上受支援。",
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "未安裝 Access ODBC 驅動程式。安裝 Microsoft Access 資料庫引擎可轉散發套件。"
 }

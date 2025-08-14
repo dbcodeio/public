@@ -218,5 +218,6 @@
   "Column Name": "Nome colonna",
   "Table Name": "Nome tabella",
   "Parameters for the formatter": "Parametri per il formattatore",
-  "Custom Column Formatters": "Formattatori di colonne personalizzati"
+  "Custom Column Formatters": "Formattatori di colonne personalizzati",
+  "Enable experimental DBCode SQL language server (active statement diagnostics) MariaDB and Postgres only at the moment.": "Abilita il DBCode, il server di linguaggio SQL sperimentale (diagnostica delle istruzioni attive) MariaDB e Postgres solo al momento."
 }

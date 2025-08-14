@@ -1652,5 +1652,9 @@
   "Failed to remove column formatter mapping: {0}": "Fehler beim Entfernen der Spaltenformatierungszuordnung: {0}",
   "Failed to save column formatter mapping: {0}": "Fehler beim Speichern der Spaltenformatiererzuordnung: {0}",
   "Perpetual License": "Unbefristete Lizenz",
-  "Formatters": "Formatierer"
+  "Formatters": "Formatierer",
+  "Unsupported on this platform": "Nicht unterstützt auf dieser Plattform",
+  "Windows Only": "Nur Windows",
+  "Microsoft Access driver is only supported on Windows.": "Der Microsoft Access-Treiber wird nur unter Windows unterstützt.",
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "Greifen Sie auf den nicht installierten ODBC-Treiber zu. Installieren Sie Microsoft Access-Datenbank-Engine Redistributable."
 }

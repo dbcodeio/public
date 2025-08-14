@@ -778,5 +778,9 @@
   "Failed to remove column formatter mapping: {0}": "Falha ao remover o mapeamento do formatador de coluna: {0}",
   "Failed to save column formatter mapping: {0}": "Falha ao salvar o mapeamento do formatador de coluna: {0}",
   "Perpetual License": "Licença Perpétua",
-  "Formatters": "Formatters"
+  "Formatters": "Formatters",
+  "Unsupported on this platform": "Não suportado nesta plataforma",
+  "Windows Only": "Somente Windows",
+  "Microsoft Access driver is only supported on Windows.": "O driver do Microsoft Access só é suportado no Windows.",
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "Driver ODBC de acesso não instalado. Instale o Mecanismo de Banco de Dados Redistribuível do Microsoft Access."
 }

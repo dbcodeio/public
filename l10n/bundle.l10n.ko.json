@@ -1652,5 +1652,9 @@
   "Failed to remove column formatter mapping: {0}": "열 포맷터 매핑을 제거하지 못했습니다: {0}",
   "Failed to save column formatter mapping: {0}": "열 포맷터 매핑을 저장하지 못했습니다: {0}",
   "Perpetual License": "영구 라이센스",
-  "Formatters": "포맷터"
+  "Formatters": "포맷터",
+  "Unsupported on this platform": "이 플랫폼에서는 지원되지 않습니다.",
+  "Windows Only": "Windows 전용",
+  "Microsoft Access driver is only supported on Windows.": "Microsoft Access 드라이버는 Windows에서만 지원됩니다.",
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "ODBC 드라이버에 액세스하지 않았습니다. Microsoft Access 데이터베이스 엔진 재배포 가능 패키지를 설치합니다."
 }

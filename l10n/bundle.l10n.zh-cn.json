@@ -1652,5 +1652,9 @@
   "Failed to remove column formatter mapping: {0}": "无法删除列格式化程序映射：{0}",
   "Failed to save column formatter mapping: {0}": "无法保存列格式化程序映射：{0}",
   "Perpetual License": "永久许可证",
-  "Formatters": "格式化程序"
+  "Formatters": "格式化程序",
+  "Unsupported on this platform": "此平台不支持",
+  "Windows Only": "仅限 Windows",
+  "Microsoft Access driver is only supported on Windows.": "Microsoft Access 驱动程序仅在 Windows 上受支持。",
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "未安装 Access ODBC 驱动程序。安装 Microsoft Access 数据库引擎可再发行组件。"
 }

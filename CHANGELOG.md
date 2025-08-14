@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.14.30 - 2025-08-14
+
+### Changed
+
+- Syntax validation: Experimental support for SQL syntax validation added (Postgres and Maria/MySQL initially).
+
+### Fixed
+
+- Postgres: Would not format data types correctly on initial table load in some cases. #107
+- Excel: Was not filtering reserved words in sheet names. #659
+
 ## 1.14.29 - 2025-08-08
 
 ### Changed

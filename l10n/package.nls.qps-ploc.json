@@ -107,6 +107,7 @@
   "Insert matched parameter background": "Īƞşḗḗřŧ ḿȧȧŧƈħḗḗḓ ƥȧȧřȧȧḿḗḗŧḗḗř ƀȧȧƈķɠřǿǿŭŭƞḓ",
   "General": "Ɠḗḗƞḗḗřȧȧŀ",
   " The code lense will provide inline actions for executing queries.": " Ŧħḗḗ ƈǿǿḓḗḗ ŀḗḗƞşḗḗ ẇīŀŀ ƥřǿǿṽīḓḗḗ īƞŀīƞḗḗ ȧȧƈŧīǿǿƞş ƒǿǿř ḗḗẋḗḗƈŭŭŧīƞɠ ɋŭŭḗḗřīḗḗş.",
+  "Enable experimental DBCode SQL language server (active statement diagnostics) MariaDB and Postgres only at the moment.": "ḖḖƞȧȧƀŀḗḗ ḗḗẋƥḗḗřīḿḗḗƞŧȧȧŀ ḒƁƇǿǿḓḗḗ ŞɊĿ ŀȧȧƞɠŭŭȧȧɠḗḗ şḗḗřṽḗḗř (ȧȧƈŧīṽḗḗ şŧȧȧŧḗḗḿḗḗƞŧ ḓīȧȧɠƞǿǿşŧīƈş) ḾȧȧřīȧȧḒƁ ȧȧƞḓ Ƥǿǿşŧɠřḗḗş ǿǿƞŀẏ ȧȧŧ ŧħḗḗ ḿǿǿḿḗḗƞŧ.",
   "The ID of the default connection.": "Ŧħḗḗ ĪḒ ǿǿƒ ŧħḗḗ ḓḗḗƒȧȧŭŭŀŧ ƈǿǿƞƞḗḗƈŧīǿǿƞ.",
   "The database of the default connection.": "Ŧħḗḗ ḓȧȧŧȧȧƀȧȧşḗḗ ǿǿƒ ŧħḗḗ ḓḗḗƒȧȧŭŭŀŧ ƈǿǿƞƞḗḗƈŧīǿǿƞ.",
   "The schema of the default connection if supported.": "Ŧħḗḗ şƈħḗḗḿȧȧ ǿǿƒ ŧħḗḗ ḓḗḗƒȧȧŭŭŀŧ ƈǿǿƞƞḗḗƈŧīǿǿƞ īƒ şŭŭƥƥǿǿřŧḗḗḓ.",

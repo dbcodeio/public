@@ -1655,5 +1655,9 @@
   "Failed to remove column formatter mapping: {0}": "列フォーマッタ マッピングの削除に失敗しました: {0}",
   "Failed to save column formatter mapping: {0}": "列フォーマッタ マッピングの保存に失敗しました: {0}",
   "Perpetual License": "永久ライセンス",
-  "Formatters": "フォーマッタ"
+  "Formatters": "フォーマッタ",
+  "Unsupported on this platform": "このプラットフォームではサポートされていません",
+  "Windows Only": "Windows のみ",
+  "Microsoft Access driver is only supported on Windows.": "Microsoft Access ドライバーは Windows でのみサポートされています。",
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "ODBC ドライバーがインストールされていません。Microsoft Access データベース エンジン再頒布可能パッケージをインストールします。"
 }
