@@ -1096,7 +1096,6 @@
   "Keyspaces": "키스페이스",
   "All Keys": "모든 키",
   "Direct commands not implemented yet": "직접 명령은 아직 구현되지 않았습니다.",
-  "Only select statements are implemented": "select 문만 구현됩니다",
   "Key": "열쇠",
   "Data": "데이터",
   "TTL": "TTL (TTL)",
@@ -1656,5 +1655,18 @@
   "Unsupported on this platform": "이 플랫폼에서는 지원되지 않습니다.",
   "Windows Only": "Windows 전용",
   "Microsoft Access driver is only supported on Windows.": "Microsoft Access 드라이버는 Windows에서만 지원됩니다.",
-  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "ODBC 드라이버에 액세스하지 않았습니다. Microsoft Access 데이터베이스 엔진 재배포 가능 패키지를 설치합니다."
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "ODBC 드라이버에 액세스하지 않았습니다. Microsoft Access 데이터베이스 엔진 재배포 가능 패키지를 설치합니다.",
+  "Reconnecting tunnel {0}...": "터널 {0} 다시 연결...",
+  "Tunnel {0} reconnected": "터널 {0} 다시 연결됨",
+  "Tunnel {0} reconnection failed: {1}": "터널 {0} 재연결 실패: {1}",
+  "Tunnel {0} reconnected on new port {1}": "터널{0} 새 포트 {1}에서 다시 연결됨",
+  "Editing streams is not supported": "스트림 편집은 지원되지 않습니다.",
+  "Key is required for insert": "삽입에는 키가 필요합니다.",
+  "Invalid JSON for Data": "데이터에 잘못된 JSON",
+  "Missing primary key for delete": "삭제할 기본 키 누락",
+  "Missing primary key for update": "업데이트에 대한 기본 키 누락",
+  "Unsupported statement": "지원되지 않는 명령문",
+  "Failed to reload file {0} for {1}: {2}": "{1}에 대한 파일 {0} 다시 로드하지 못했습니다: {2}",
+  "Failed to open Parquet file: {0}": "Parquet 파일을 열지 못했습니다 : {0}",
+  "Failed to open Avro file: {0}": "Avro 파일을 열지 못했습니다: {0}"
 }

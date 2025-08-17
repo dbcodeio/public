@@ -1096,7 +1096,6 @@
   "Keyspaces": "Przestrzenie",
   "All Keys": "Wszystkie klucze",
   "Direct commands not implemented yet": "Bezpośrednie polecenia nie zostały jeszcze zaimplementowane",
-  "Only select statements are implemented": "Implementowane są tylko instrukcje select",
   "Key": "Klucz",
   "Data": "Dane",
   "TTL": "TTL",
@@ -1656,5 +1655,18 @@
   "Unsupported on this platform": "Nieobsługiwane na tej platformie",
   "Windows Only": "Tylko Windows",
   "Microsoft Access driver is only supported on Windows.": "Sterownik Microsoft Access jest obsługiwany tylko w systemie Windows.",
-  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "Sterownik Access ODBC nie jest zainstalowany. Zainstaluj pakiet redystrybucyjny aparatu bazy danych programu Microsoft Access."
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "Sterownik Access ODBC nie jest zainstalowany. Zainstaluj pakiet redystrybucyjny aparatu bazy danych programu Microsoft Access.",
+  "Reconnecting tunnel {0}...": "Ponowne połączenie tunelu {0}...",
+  "Tunnel {0} reconnected": "Tunel {0} ponownie podłączony",
+  "Tunnel {0} reconnection failed: {1}": "Ponowne połączenie z {0} tunelu nie powiodło się: {1}",
+  "Tunnel {0} reconnected on new port {1}": "Tunel {0} ponownie podłączony na nowym porcie {1}",
+  "Editing streams is not supported": "Edytowanie strumieni nie jest obsługiwane",
+  "Key is required for insert": "Klucz jest wymagany do wkładki",
+  "Invalid JSON for Data": "Nieprawidłowy kod JSON dla danych",
+  "Missing primary key for delete": "Brak klucza podstawowego do usunięcia",
+  "Missing primary key for update": "Brak klucza podstawowego do aktualizacji",
+  "Unsupported statement": "Niepoparte stwierdzenie",
+  "Failed to reload file {0} for {1}: {2}": "Nie udało się ponownie załadować pliku {0} dla {1}: {2}",
+  "Failed to open Parquet file: {0}": "Nie można otworzyć pliku Parquet: {0}",
+  "Failed to open Avro file: {0}": "Nie udało się otworzyć pliku Avro: {0}"
 }

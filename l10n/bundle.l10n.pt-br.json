@@ -223,7 +223,6 @@
   "Keyspaces": "Espaços de teclas",
   "All Keys": "Todas as chaves",
   "Direct commands not implemented yet": "Comandos diretos ainda não implementados",
-  "Only select statements are implemented": "Somente instruções select são implementadas",
   "Key": "Chave",
   "Data": "Dados",
   "TTL": "TTL",
@@ -782,5 +781,18 @@
   "Unsupported on this platform": "Não suportado nesta plataforma",
   "Windows Only": "Somente Windows",
   "Microsoft Access driver is only supported on Windows.": "O driver do Microsoft Access só é suportado no Windows.",
-  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "Driver ODBC de acesso não instalado. Instale o Mecanismo de Banco de Dados Redistribuível do Microsoft Access."
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "Driver ODBC de acesso não instalado. Instale o Mecanismo de Banco de Dados Redistribuível do Microsoft Access.",
+  "Reconnecting tunnel {0}...": "Reconectando o túnel {0}...",
+  "Tunnel {0} reconnected": "Túnel {0} reconectado",
+  "Tunnel {0} reconnection failed: {1}": "Falha na reconexão do {0} do túnel: {1}",
+  "Tunnel {0} reconnected on new port {1}": "O túnel {0} reconectado na nova porta {1}",
+  "Editing streams is not supported": "A edição de fluxos não é suportada",
+  "Key is required for insert": "A chave é necessária para inserir",
+  "Invalid JSON for Data": "JSON inválido para dados",
+  "Missing primary key for delete": "Chave primária ausente para exclusão",
+  "Missing primary key for update": "Chave primária ausente para atualização",
+  "Unsupported statement": "Declaração sem suporte",
+  "Failed to reload file {0} for {1}: {2}": "Falha ao recarregar o {0} do arquivo para {1}: {2}",
+  "Failed to open Parquet file: {0}": "Falha ao abrir o arquivo Parquet: {0}",
+  "Failed to open Avro file: {0}": "Falha ao abrir o arquivo Avro: {0}"
 }

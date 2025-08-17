@@ -1096,7 +1096,6 @@
   "Keyspaces": "Espaces clés",
   "All Keys": "Toutes les clés",
   "Direct commands not implemented yet": "Les commandes directes ne sont pas encore implémentées",
-  "Only select statements are implemented": "Seules les instructions sélectionnées sont implémentées",
   "Key": "Clé",
   "Data": "Données",
   "TTL": "TTL",
@@ -1656,5 +1655,18 @@
   "Unsupported on this platform": "Non pris en charge sur cette plateforme",
   "Windows Only": "Windows uniquement",
   "Microsoft Access driver is only supported on Windows.": "Le pilote Microsoft Access n’est pris en charge que sous Windows.",
-  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "Le pilote ODBC d’Access n’est pas installé. Installez le moteur de base de données Microsoft Access redistribuable."
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "Le pilote ODBC d’Access n’est pas installé. Installez le moteur de base de données Microsoft Access redistribuable.",
+  "Reconnecting tunnel {0}...": "Reconnexion du tunnel {0}...",
+  "Tunnel {0} reconnected": "Tunnel {0} reconnecté",
+  "Tunnel {0} reconnection failed: {1}": "Echec de la reconnexion du tunnel {0} : {1}",
+  "Tunnel {0} reconnected on new port {1}": "Tunnel {0} reconnecté sur le nouveau port {1}",
+  "Editing streams is not supported": "La modification des flux n’est pas prise en charge",
+  "Key is required for insert": "La clé est requise pour l’insertion",
+  "Invalid JSON for Data": "JSON non valide pour les données",
+  "Missing primary key for delete": "Clé primaire manquante pour la suppression",
+  "Missing primary key for update": "Clé primaire manquante pour la mise à jour",
+  "Unsupported statement": "Déclaration non étayée",
+  "Failed to reload file {0} for {1}: {2}": "Echec du rechargement du fichier {0} pour {1} : {2}",
+  "Failed to open Parquet file: {0}": "Echec de l’ouverture du fichier Parquet : {0}",
+  "Failed to open Avro file: {0}": "Échec de l’ouverture du fichier Avro : {0}"
 }

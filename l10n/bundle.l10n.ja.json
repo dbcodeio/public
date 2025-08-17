@@ -1099,7 +1099,6 @@
   "Keyspaces": "キースペース",
   "All Keys": "すべてのキー",
   "Direct commands not implemented yet": "まだ実装されていない直接コマンド",
-  "Only select statements are implemented": "select ステートメントのみが実装されます",
   "Key": "Key",
   "Data": "データ",
   "TTL": "TTL",
@@ -1659,5 +1658,18 @@
   "Unsupported on this platform": "このプラットフォームではサポートされていません",
   "Windows Only": "Windows のみ",
   "Microsoft Access driver is only supported on Windows.": "Microsoft Access ドライバーは Windows でのみサポートされています。",
-  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "ODBC ドライバーがインストールされていません。Microsoft Access データベース エンジン再頒布可能パッケージをインストールします。"
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "ODBC ドライバーがインストールされていません。Microsoft Access データベース エンジン再頒布可能パッケージをインストールします。",
+  "Reconnecting tunnel {0}...": "トンネル{0}再接続...",
+  "Tunnel {0} reconnected": "トンネル{0}再接続されました",
+  "Tunnel {0} reconnection failed: {1}": "トンネル{0}の再接続に失敗しました:{1}",
+  "Tunnel {0} reconnected on new port {1}": "トンネル{0}新しいポート {1}で再接続されました",
+  "Editing streams is not supported": "ストリームの編集はサポートされていません",
+  "Key is required for insert": "挿入にはキーが必要です",
+  "Invalid JSON for Data": "データの JSON が無効です",
+  "Missing primary key for delete": "削除用の主キーがありません",
+  "Missing primary key for update": "更新用の主キーがありません",
+  "Unsupported statement": "サポートされていないステートメント",
+  "Failed to reload file {0} for {1}: {2}": "{1} のファイル {0}のリロードに失敗しました: {2}",
+  "Failed to open Parquet file: {0}": "Parquet ファイルを開くことができませんでした: {0}",
+  "Failed to open Avro file: {0}": "Avro ファイルを開くことができませんでした: {0}"
 }

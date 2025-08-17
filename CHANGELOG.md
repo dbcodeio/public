@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.15.0 - 2025-08-17
+
+### Changed
+
+- Parquet: Added support for parquet files. #177
+- Avro: Added support for Avro files. 
+- Redis: Added editing support (update, delete, insert), as well as editor logic for hash/sets. #39
+- CSV and Excel: Underlying files will be watched for changes, and re-load the data if the underlying file changes.
+
+### Fixed
+
+- Tunnels: Will now better handle reconnecting, and if it fails, will close connections that were using them to avoid connections attempting to use closed tunnels.
+- Notebooks: Fixed issue with canceling and connection pinning. #663
+
 ## 1.14.30 - 2025-08-14
 
 ### Changed

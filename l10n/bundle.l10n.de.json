@@ -1096,7 +1096,6 @@
   "Keyspaces": "Schlüsselräume",
   "All Keys": "Alle Schlüssel",
   "Direct commands not implemented yet": "Direkte Befehle noch nicht implementiert",
-  "Only select statements are implemented": "Es werden nur select-Anweisungen implementiert",
   "Key": "Schlüssel",
   "Data": "Daten",
   "TTL": "TTL",
@@ -1656,5 +1655,18 @@
   "Unsupported on this platform": "Nicht unterstützt auf dieser Plattform",
   "Windows Only": "Nur Windows",
   "Microsoft Access driver is only supported on Windows.": "Der Microsoft Access-Treiber wird nur unter Windows unterstützt.",
-  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "Greifen Sie auf den nicht installierten ODBC-Treiber zu. Installieren Sie Microsoft Access-Datenbank-Engine Redistributable."
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "Greifen Sie auf den nicht installierten ODBC-Treiber zu. Installieren Sie Microsoft Access-Datenbank-Engine Redistributable.",
+  "Reconnecting tunnel {0}...": "Wiederverbindung des Tunnels {0}...",
+  "Tunnel {0} reconnected": "Tunnel {0} wieder verbunden",
+  "Tunnel {0} reconnection failed: {1}": "Fehler beim erneuten Verbinden {0} Tunnels: {1}",
+  "Tunnel {0} reconnected on new port {1}": "Tunnel {0} an neuem Port wieder verbunden {1}",
+  "Editing streams is not supported": "Das Bearbeiten von Streams wird nicht unterstützt",
+  "Key is required for insert": "Schlüssel ist erforderlich für die Einsteckung",
+  "Invalid JSON for Data": "Ungültiger JSON-Code für Daten",
+  "Missing primary key for delete": "Fehlender Primärschlüssel für das Löschen",
+  "Missing primary key for update": "Fehlender Primärschlüssel für das Update",
+  "Unsupported statement": "Nicht unterstützte Aussage",
+  "Failed to reload file {0} for {1}: {2}": "Fehler beim erneuten Laden der Datei {0} für {1}: {2}",
+  "Failed to open Parquet file: {0}": "Fehler beim Öffnen der Parquet-Datei: {0}",
+  "Failed to open Avro file: {0}": "Fehler beim Öffnen der Avro-Datei: {0}"
 }

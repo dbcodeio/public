@@ -1096,7 +1096,6 @@
   "Keyspaces": "Prostory kláves",
   "All Keys": "Všechny klíče",
   "Direct commands not implemented yet": "Přímé příkazy zatím nejsou implementovány",
-  "Only select statements are implemented": "Implementovány jsou pouze vybrané příkazy",
   "Key": "Klíč",
   "Data": "Data",
   "TTL": "Hodnota ttl",
@@ -1656,5 +1655,18 @@
   "Unsupported on this platform": "Na této platformě nepodporováno",
   "Windows Only": "Pouze systém Windows",
   "Microsoft Access driver is only supported on Windows.": "Ovladač Microsoft Access je podporován pouze v systému Windows.",
-  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "Ovladač ODBC pro Access není nainstalován. Nainstalujte redistribuovatelný databázový stroj Microsoft Access."
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "Ovladač ODBC pro Access není nainstalován. Nainstalujte redistribuovatelný databázový stroj Microsoft Access.",
+  "Reconnecting tunnel {0}...": "Opětovné připojení tunelu {0}...",
+  "Tunnel {0} reconnected": "Tunelové {0} znovu připojeno",
+  "Tunnel {0} reconnection failed: {1}": "Opětovné připojení tunelového {0} se nezdařilo: {1}",
+  "Tunnel {0} reconnected on new port {1}": "Tunelové {0} znovu připojeno na novém portu {1}",
+  "Editing streams is not supported": "Úpravy datových proudů nejsou podporovány",
+  "Key is required for insert": "Pro vložení je vyžadován klíč",
+  "Invalid JSON for Data": "Neplatný kód JSON pro data",
+  "Missing primary key for delete": "Chybějící primární klíč pro odstranění",
+  "Missing primary key for update": "Chybějící primární klíč pro aktualizaci",
+  "Unsupported statement": "Příkaz Unsupported",
+  "Failed to reload file {0} for {1}: {2}": "Opětovné načtení {0} souboru pro {1} se nezdařilo: {2}",
+  "Failed to open Parquet file: {0}": "Nepodařilo se otevřít soubor Parquet: {0}",
+  "Failed to open Avro file: {0}": "Nepodařilo se otevřít soubor Avro: {0}"
 }

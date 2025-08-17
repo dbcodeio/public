@@ -1096,7 +1096,6 @@
   "Keyspaces": "键空间",
   "All Keys": "所有密钥",
   "Direct commands not implemented yet": "尚未实现直接命令",
-  "Only select statements are implemented": "仅实现了 SELECT 语句",
   "Key": "键",
   "Data": "数据",
   "TTL": "有效期",
@@ -1656,5 +1655,18 @@
   "Unsupported on this platform": "此平台不支持",
   "Windows Only": "仅限 Windows",
   "Microsoft Access driver is only supported on Windows.": "Microsoft Access 驱动程序仅在 Windows 上受支持。",
-  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "未安装 Access ODBC 驱动程序。安装 Microsoft Access 数据库引擎可再发行组件。"
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "未安装 Access ODBC 驱动程序。安装 Microsoft Access 数据库引擎可再发行组件。",
+  "Reconnecting tunnel {0}...": "重新连接隧道{0}...",
+  "Tunnel {0} reconnected": "隧道{0}重新连接",
+  "Tunnel {0} reconnection failed: {1}": "隧道{0}重新连接失败：{1}",
+  "Tunnel {0} reconnected on new port {1}": "隧道{0}在新端口{1}上重新连接",
+  "Editing streams is not supported": "不支持编辑流",
+  "Key is required for insert": "插入需要钥匙",
+  "Invalid JSON for Data": "数据的 JSON 无效",
+  "Missing primary key for delete": "缺少要删除的主键",
+  "Missing primary key for update": "缺少更新主键",
+  "Unsupported statement": "不受支持的语句",
+  "Failed to reload file {0} for {1}: {2}": "无法重新加载{1}的文件{0}：{2}",
+  "Failed to open Parquet file: {0}": "无法打开 Parquet 文件：{0}",
+  "Failed to open Avro file: {0}": "无法打开 Avro 文件：{0}"
 }

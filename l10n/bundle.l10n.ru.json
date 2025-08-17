@@ -1096,7 +1096,6 @@
   "Keyspaces": "Пространства ключей",
   "All Keys": "Все клавиши",
   "Direct commands not implemented yet": "Прямые команды еще не реализованы",
-  "Only select statements are implemented": "Реализуются только выбранные операторы",
   "Key": "Ключ",
   "Data": "Данные",
   "TTL": "ТТЛ",
@@ -1656,5 +1655,18 @@
   "Unsupported on this platform": "Не поддерживается на этой платформе",
   "Windows Only": "Только для Windows",
   "Microsoft Access driver is only supported on Windows.": "Драйвер Microsoft Access поддерживается только в Windows.",
-  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "Доступ к драйверу ODBC не установлен. Установите распространяемый компонент ядра СУБД Microsoft Access."
+  "Access ODBC driver not installed. Install the Microsoft Access Database Engine Redistributable.": "Доступ к драйверу ODBC не установлен. Установите распространяемый компонент ядра СУБД Microsoft Access.",
+  "Reconnecting tunnel {0}...": "Повторное соединение туннелей {0}...",
+  "Tunnel {0} reconnected": "Повторное подключение туннеля {0}",
+  "Tunnel {0} reconnection failed: {1}": "Не удалось повторно подключить туннель {0}: {1}",
+  "Tunnel {0} reconnected on new port {1}": "Туннельная {0} повторно подключена на новом порту {1}",
+  "Editing streams is not supported": "Редактирование потоков не поддерживается",
+  "Key is required for insert": "Для вставки требуется ключ",
+  "Invalid JSON for Data": "Недопустимый JSON для данных",
+  "Missing primary key for delete": "Отсутствует первичный ключ для удаления",
+  "Missing primary key for update": "Отсутствует первичный ключ для обновления",
+  "Unsupported statement": "Необоснованное заявление",
+  "Failed to reload file {0} for {1}: {2}": "Не удалось перезагрузить файл {0} для {1}: {2}",
+  "Failed to open Parquet file: {0}": "Не удалось открыть файл Parquet: {0}",
+  "Failed to open Avro file: {0}": "Не удалось открыть файл Avro: {0}"
 }
