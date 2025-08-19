@@ -1671,5 +1671,21 @@
   "Unsupported statement": "サポートされていないステートメント",
   "Failed to reload file {0} for {1}: {2}": "{1} のファイル {0}のリロードに失敗しました: {2}",
   "Failed to open Parquet file: {0}": "Parquet ファイルを開くことができませんでした: {0}",
-  "Failed to open Avro file: {0}": "Avro ファイルを開くことができませんでした: {0}"
+  "Failed to open Avro file: {0}": "Avro ファイルを開くことができませんでした: {0}",
+  "Authentication Method": "認証方法",
+  "Service Account Key File": "サービスアカウントキーファイル",
+  "Firebase Emulator": "Firebase エミュレーター",
+  "Your Firebase project ID (use \"demo-project\" for emulator)": "Firebase プロジェクト ID(エミュレータには「demo-project」を使用)",
+  "Path to your service account JSON key file": "サービスアカウントのJSONキーファイルへのパス",
+  "Emulator Host": "エミュレータホスト",
+  "Firebase emulator host (leave empty for cloud)": "Firebase エミュレータ ホスト(クラウドの場合は空のままにします)",
+  "Firestore Emulator Port": "Firestore エミュレーター ポート",
+  "Port for Firestore emulator (default: 8080)": "Firestore エミュレータのポート(デフォルト: 8080)",
+  "Realtime Database Emulator Port": "リアルタイム・データベース・エミュレータ・ポート",
+  "Port for Realtime Database emulator (default: 9000)": "リアルタイム データベース エミュレーターのポート (既定値: 9000)",
+  "Invalid service account key file: {0}": "無効なサービス アカウント キー ファイル: {0}",
+  "Service account key file path is required": "サービス アカウント キー ファイル パスが必要です",
+  "Unknown authentication method: {0}": "不明な認証方法: {0}",
+  "Firebase: only SELECT queries are implemented for now": "Firebase: 現時点では SELECT クエリのみが実装されています",
+  "Firebase: query failed: {0}": "Firebase: クエリに失敗しました: {0}"
 }

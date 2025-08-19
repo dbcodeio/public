@@ -1668,5 +1668,21 @@
   "Unsupported statement": "不支援的陳述式",
   "Failed to reload file {0} for {1}: {2}": "無法重新載入{1}的檔案{0}：{2}",
   "Failed to open Parquet file: {0}": "無法開啟 Parquet 檔案：{0}",
-  "Failed to open Avro file: {0}": "無法開啟 Avro 檔案：{0}"
+  "Failed to open Avro file: {0}": "無法開啟 Avro 檔案：{0}",
+  "Authentication Method": "驗證方法",
+  "Service Account Key File": "服務帳戶金鑰檔案",
+  "Firebase Emulator": "Firebase 模擬器",
+  "Your Firebase project ID (use \"demo-project\" for emulator)": "您的 Firebase 專案 ID （模擬器使用「demo-project」）",
+  "Path to your service account JSON key file": "服務帳戶 JSON 金鑰檔案的路徑",
+  "Emulator Host": "模擬器主機",
+  "Firebase emulator host (leave empty for cloud)": "Firebase 模擬器主機 （為雲端保留空白）",
+  "Firestore Emulator Port": "Firestore 模擬器連接埠",
+  "Port for Firestore emulator (default: 8080)": "Firestore 模擬器的連接埠 （預設值：8080）",
+  "Realtime Database Emulator Port": "即時資料庫模擬器連接埠",
+  "Port for Realtime Database emulator (default: 9000)": "即時資料庫模擬器的連接埠 （預設值：9000）",
+  "Invalid service account key file: {0}": "服務帳戶金鑰檔案無效：{0}",
+  "Service account key file path is required": "需要服務帳戶金鑰檔案路徑",
+  "Unknown authentication method: {0}": "未知的驗證方法：{0}",
+  "Firebase: only SELECT queries are implemented for now": "Firebase：目前僅實作 SELECT 查詢",
+  "Firebase: query failed: {0}": "Firebase：查詢失敗：{0}"
 }

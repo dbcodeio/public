@@ -4,6 +4,13 @@
 
 ### Changed
 
+- Firebase: Added initial preview support for Firestore and Realtime (editing not supported yet, might be some bugs.) #295
+- Syntax validation: Fixed semantic validation not working, enhanced grammar support, added fallback ANSI grammar.
+
+## 1.15.0 - 2025-08-17
+
+### Changed
+
 - Parquet: Added support for parquet files. #177
 - Avro: Added support for Avro files. 
 - Redis: Added editing support (update, delete, insert), as well as editor logic for hash/sets. #39

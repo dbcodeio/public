@@ -1668,5 +1668,21 @@
   "Unsupported statement": "Необоснованное заявление",
   "Failed to reload file {0} for {1}: {2}": "Не удалось перезагрузить файл {0} для {1}: {2}",
   "Failed to open Parquet file: {0}": "Не удалось открыть файл Parquet: {0}",
-  "Failed to open Avro file: {0}": "Не удалось открыть файл Avro: {0}"
+  "Failed to open Avro file: {0}": "Не удалось открыть файл Avro: {0}",
+  "Authentication Method": "Метод аутентификации",
+  "Service Account Key File": "Файл ключа учетной записи службы",
+  "Firebase Emulator": "Эмулятор огневой базы",
+  "Your Firebase project ID (use \"demo-project\" for emulator)": "Идентификатор вашего проекта Firebase (используйте \"demo-project\" для эмулятора)",
+  "Path to your service account JSON key file": "Путь к файлу ключа JSON учетной записи службы",
+  "Emulator Host": "Узел эмулятора",
+  "Firebase emulator host (leave empty for cloud)": "Хост эмулятора Firebase (оставьте пустым для облака)",
+  "Firestore Emulator Port": "Порт эмулятора Firestore",
+  "Port for Firestore emulator (default: 8080)": "Порт для эмулятора Firestore (по умолчанию: 8080)",
+  "Realtime Database Emulator Port": "Порт эмулятора базы данных в реальном времени",
+  "Port for Realtime Database emulator (default: 9000)": "Порт для эмулятора базы данных реального времени (по умолчанию: 9000)",
+  "Invalid service account key file: {0}": "Недопустимый файл ключа учетной записи службы: {0}",
+  "Service account key file path is required": "Требуется путь к файлу ключа учетной записи службы",
+  "Unknown authentication method: {0}": "Неизвестный способ аутентификации: {0}",
+  "Firebase: only SELECT queries are implemented for now": "Firebase: на данный момент реализованы только запросы SELECT",
+  "Firebase: query failed: {0}": "Firebase: ошибка запроса: {0}"
 }

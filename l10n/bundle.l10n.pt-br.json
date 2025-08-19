@@ -794,5 +794,21 @@
   "Unsupported statement": "Declaração sem suporte",
   "Failed to reload file {0} for {1}: {2}": "Falha ao recarregar o {0} do arquivo para {1}: {2}",
   "Failed to open Parquet file: {0}": "Falha ao abrir o arquivo Parquet: {0}",
-  "Failed to open Avro file: {0}": "Falha ao abrir o arquivo Avro: {0}"
+  "Failed to open Avro file: {0}": "Falha ao abrir o arquivo Avro: {0}",
+  "Authentication Method": "Método de autenticação",
+  "Service Account Key File": "Arquivo de chave da conta de serviço",
+  "Firebase Emulator": "Emulador do Firebase",
+  "Your Firebase project ID (use \"demo-project\" for emulator)": "Seu ID do projeto do Firebase (use \"demo-project\" para o emulador)",
+  "Path to your service account JSON key file": "Caminho para o arquivo de chave JSON da conta de serviço",
+  "Emulator Host": "Host do emulador",
+  "Firebase emulator host (leave empty for cloud)": "Host do emulador do Firebase (deixe vazio para a nuvem)",
+  "Firestore Emulator Port": "Porta do emulador do Firestore",
+  "Port for Firestore emulator (default: 8080)": "Porta para emulador do Firestore (padrão: 8080)",
+  "Realtime Database Emulator Port": "Porta do emulador de banco de dados em tempo real",
+  "Port for Realtime Database emulator (default: 9000)": "Porta para emulador de banco de dados em tempo real (padrão: 9000)",
+  "Invalid service account key file: {0}": "Arquivo de chave de conta de serviço inválido: {0}",
+  "Service account key file path is required": "O caminho do arquivo de chave da conta de serviço é necessário",
+  "Unknown authentication method: {0}": "Método de autenticação desconhecido: {0}",
+  "Firebase: only SELECT queries are implemented for now": "Firebase: apenas consultas SELECT são implementadas por enquanto",
+  "Firebase: query failed: {0}": "Firebase: falha na consulta: {0}"
 }

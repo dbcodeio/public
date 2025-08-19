@@ -1668,5 +1668,21 @@
   "Unsupported statement": "지원되지 않는 명령문",
   "Failed to reload file {0} for {1}: {2}": "{1}에 대한 파일 {0} 다시 로드하지 못했습니다: {2}",
   "Failed to open Parquet file: {0}": "Parquet 파일을 열지 못했습니다 : {0}",
-  "Failed to open Avro file: {0}": "Avro 파일을 열지 못했습니다: {0}"
+  "Failed to open Avro file: {0}": "Avro 파일을 열지 못했습니다: {0}",
+  "Authentication Method": "인증 방법",
+  "Service Account Key File": "서비스 계정 키 파일",
+  "Firebase Emulator": "Firebase 에뮬레이터",
+  "Your Firebase project ID (use \"demo-project\" for emulator)": "Firebase 프로젝트 ID(에뮬레이터에 'demo-project' 사용)",
+  "Path to your service account JSON key file": "서비스 계정 JSON 키 파일의 경로",
+  "Emulator Host": "에뮬레이터 호스트",
+  "Firebase emulator host (leave empty for cloud)": "Firebase 에뮬레이터 호스트(클라우드의 경우 비워 두기)",
+  "Firestore Emulator Port": "Firestore 에뮬레이터 포트",
+  "Port for Firestore emulator (default: 8080)": "Firestore 에뮬레이터용 포트(기본값: 8080)",
+  "Realtime Database Emulator Port": "실시간 데이터베이스 에뮬레이터 포트",
+  "Port for Realtime Database emulator (default: 9000)": "실시간 데이터베이스 에뮬레이터용 포트(기본값: 9000)",
+  "Invalid service account key file: {0}": "잘못된 서비스 계정 키 파일: {0}",
+  "Service account key file path is required": "서비스 계정 키 파일 경로가 필요합니다.",
+  "Unknown authentication method: {0}": "알 수 없는 인증 방법: {0}",
+  "Firebase: only SELECT queries are implemented for now": "Firebase: 현재는 SELECT 쿼리만 구현됩니다.",
+  "Firebase: query failed: {0}": "Firebase: 쿼리 실패: {0}"
 }

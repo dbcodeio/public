@@ -1668,5 +1668,21 @@
   "Unsupported statement": "Desteklenmeyen bildirim",
   "Failed to reload file {0} for {1}: {2}": "{1} için dosya {0} yeniden yüklenemedi: {2}",
   "Failed to open Parquet file: {0}": "Parquet dosyası açılamadı: {0}",
-  "Failed to open Avro file: {0}": "Avro dosyası açılamadı: {0}"
+  "Failed to open Avro file: {0}": "Avro dosyası açılamadı: {0}",
+  "Authentication Method": "Kimlik Doğrulama Yöntemi",
+  "Service Account Key File": "Hizmet Hesabı Anahtar Dosyası",
+  "Firebase Emulator": "Firebase Emülatörü",
+  "Your Firebase project ID (use \"demo-project\" for emulator)": "Firebase proje kimliğiniz (emülatör için \"demo proje\" kullanın)",
+  "Path to your service account JSON key file": "Hizmet hesabı JSON anahtar dosyanızın yolu",
+  "Emulator Host": "Emülatör Ana Bilgisayarı",
+  "Firebase emulator host (leave empty for cloud)": "Firebase öykünücü ana bilgisayarı (bulut için boş bırakın)",
+  "Firestore Emulator Port": "Firestore Emulator Bağlantı Noktası",
+  "Port for Firestore emulator (default: 8080)": "Firestore öykünücüsü için bağlantı noktası (varsayılan: 8080)",
+  "Realtime Database Emulator Port": "Gerçek Zamanlı Veritabanı Emülatörü Bağlantı Noktası",
+  "Port for Realtime Database emulator (default: 9000)": "Gerçek Zamanlı Veritabanı emülatörü için bağlantı noktası (varsayılan: 9000)",
+  "Invalid service account key file: {0}": "Geçersiz hizmet hesabı anahtarı dosyası: {0}",
+  "Service account key file path is required": "Hizmet hesabı anahtarı dosya yolu gereklidir",
+  "Unknown authentication method: {0}": "Bilinmeyen kimlik doğrulama yöntemi: {0}",
+  "Firebase: only SELECT queries are implemented for now": "Firebase: şimdilik yalnızca SELECT sorguları uygulanmaktadır",
+  "Firebase: query failed: {0}": "Firebase: sorgu başarısız oldu: {0}"
 }
