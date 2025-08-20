@@ -1683,6 +1683,7 @@
   "Invalid service account key file: {0}": "服務帳戶金鑰檔案無效：{0}",
   "Service account key file path is required": "需要服務帳戶金鑰檔案路徑",
   "Unknown authentication method: {0}": "未知的驗證方法：{0}",
-  "Firebase: only SELECT queries are implemented for now": "Firebase：目前僅實作 SELECT 查詢",
-  "Firebase: query failed: {0}": "Firebase：查詢失敗：{0}"
+  "Firebase: query failed: {0}": "Firebase：查詢失敗：{0}",
+  "ID is required for insert": "插入需要 ID",
+  "Unsupported statement: {0}": "不支援的陳述式：{0}"
 }

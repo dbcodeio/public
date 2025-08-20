@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.16.1 - 2025-08-20
+
+### Changed
+
+- Result: Editor now auto formats and focuses when opened, as well as auto detecting language.
+- Firebase: Will destructure data into keys where possible allowing specific key editing.
+- Code Completion: Will use new experimental language server if enabled. 
+
+### Fixed
+
+- SQL Server: Fixed BIT columns incorrectly exported as 'true'/'false' instead of 1/0 in SQL Insert statements. #658
+
 ## 1.16.0 - 2025-08-19
 
 ### Changed

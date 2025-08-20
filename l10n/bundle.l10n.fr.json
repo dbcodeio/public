@@ -1683,6 +1683,7 @@
   "Invalid service account key file: {0}": "Fichier de clé de compte de service non valide : {0}",
   "Service account key file path is required": "Le chemin d’accès au fichier de clé de compte de service est requis",
   "Unknown authentication method: {0}": "Méthode d’authentification inconnue : {0}",
-  "Firebase: only SELECT queries are implemented for now": "Firebase : seules les requêtes SELECT sont implémentées pour l’instant",
-  "Firebase: query failed: {0}": "Firebase : échec de la requête : {0}"
+  "Firebase: query failed: {0}": "Firebase : échec de la requête : {0}",
+  "ID is required for insert": "L’ID est requis pour l’insertion",
+  "Unsupported statement: {0}": "Affirmation non étayée : {0}"
 }

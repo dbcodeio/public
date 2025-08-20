@@ -1686,6 +1686,7 @@
   "Invalid service account key file: {0}": "無効なサービス アカウント キー ファイル: {0}",
   "Service account key file path is required": "サービス アカウント キー ファイル パスが必要です",
   "Unknown authentication method: {0}": "不明な認証方法: {0}",
-  "Firebase: only SELECT queries are implemented for now": "Firebase: 現時点では SELECT クエリのみが実装されています",
-  "Firebase: query failed: {0}": "Firebase: クエリに失敗しました: {0}"
+  "Firebase: query failed: {0}": "Firebase: クエリに失敗しました: {0}",
+  "ID is required for insert": "挿入にはIDが必要です",
+  "Unsupported statement: {0}": "サポートされていないステートメント: {0}"
 }

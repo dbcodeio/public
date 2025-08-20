@@ -219,5 +219,5 @@
   "Table Name": "表名稱",
   "Parameters for the formatter": "格式化程序的參數",
   "Custom Column Formatters": "自定義欄格式化程式",
-  "Enable experimental DBCode SQL language server (active statement diagnostics) MariaDB and Postgres only at the moment.": "目前僅啟用實驗性 DBCode SQL 語言伺服器 （作用中陳述式診斷） MariaDB 和 Postgres。"
+  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "目前僅啟用實驗性 DBCode SQL 語言伺服器 （作用中陳述式診斷和完成） MariaDB 和 Postgres。"
 }

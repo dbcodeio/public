@@ -1683,6 +1683,7 @@
   "Invalid service account key file: {0}": "Geçersiz hizmet hesabı anahtarı dosyası: {0}",
   "Service account key file path is required": "Hizmet hesabı anahtarı dosya yolu gereklidir",
   "Unknown authentication method: {0}": "Bilinmeyen kimlik doğrulama yöntemi: {0}",
-  "Firebase: only SELECT queries are implemented for now": "Firebase: şimdilik yalnızca SELECT sorguları uygulanmaktadır",
-  "Firebase: query failed: {0}": "Firebase: sorgu başarısız oldu: {0}"
+  "Firebase: query failed: {0}": "Firebase: sorgu başarısız oldu: {0}",
+  "ID is required for insert": "Ekleme için kimlik gereklidir",
+  "Unsupported statement: {0}": "Desteklenmeyen ifade: {0}"
 }

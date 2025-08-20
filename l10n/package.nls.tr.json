@@ -219,5 +219,5 @@
   "Table Name": "Tablo Adı",
   "Parameters for the formatter": "Biçimlendirici için parametreler",
   "Custom Column Formatters": "Özel Sütun Biçimlendiriciler",
-  "Enable experimental DBCode SQL language server (active statement diagnostics) MariaDB and Postgres only at the moment.": "Deneysel DBCode SQL dil sunucusunu (etkin deyim tanılaması), MariaDB ve Postgres'i yalnızca şu anda etkinleştirin."
+  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "Deneysel DBCode SQL dil sunucusunu (etkin deyim tanılama ve tamamlamalar), MariaDB ve Postgres'i yalnızca şu anda etkinleştirin."
 }

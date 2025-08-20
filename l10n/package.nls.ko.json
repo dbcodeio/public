@@ -219,5 +219,5 @@
   "Table Name": "테이블 이름",
   "Parameters for the formatter": "포맷터에 대한 매개 변수",
   "Custom Column Formatters": "사용자 지정 열 포맷터",
-  "Enable experimental DBCode SQL language server (active statement diagnostics) MariaDB and Postgres only at the moment.": "실험적 DBCode SQL 언어 서버(활성 문 진단), MariaDB 및 Postgres는 현재로만 활성화합니다."
+  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "실험적 DBCode SQL 언어 서버(활성 문 진단 및 완성), MariaDB 및 Postgres를 현재로만 활성화합니다."
 }

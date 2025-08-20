@@ -1683,6 +1683,7 @@
   "Invalid service account key file: {0}": "Недопустимый файл ключа учетной записи службы: {0}",
   "Service account key file path is required": "Требуется путь к файлу ключа учетной записи службы",
   "Unknown authentication method: {0}": "Неизвестный способ аутентификации: {0}",
-  "Firebase: only SELECT queries are implemented for now": "Firebase: на данный момент реализованы только запросы SELECT",
-  "Firebase: query failed: {0}": "Firebase: ошибка запроса: {0}"
+  "Firebase: query failed: {0}": "Firebase: ошибка запроса: {0}",
+  "ID is required for insert": "Для вставки требуется ID",
+  "Unsupported statement: {0}": "Необоснованное утверждение: {0}"
 }

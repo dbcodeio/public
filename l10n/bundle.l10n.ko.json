@@ -1683,6 +1683,7 @@
   "Invalid service account key file: {0}": "잘못된 서비스 계정 키 파일: {0}",
   "Service account key file path is required": "서비스 계정 키 파일 경로가 필요합니다.",
   "Unknown authentication method: {0}": "알 수 없는 인증 방법: {0}",
-  "Firebase: only SELECT queries are implemented for now": "Firebase: 현재는 SELECT 쿼리만 구현됩니다.",
-  "Firebase: query failed: {0}": "Firebase: 쿼리 실패: {0}"
+  "Firebase: query failed: {0}": "Firebase: 쿼리 실패: {0}",
+  "ID is required for insert": "삽입을 위해서는 ID가 필요합니다.",
+  "Unsupported statement: {0}": "지원되지 않는 명령문: {0}"
 }

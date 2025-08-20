@@ -1683,6 +1683,7 @@
   "Invalid service account key file: {0}": "服务帐户密钥文件无效：{0}",
   "Service account key file path is required": "服务帐户密钥文件路径是必需的",
   "Unknown authentication method: {0}": "未知的身份验证方法：{0}",
-  "Firebase: only SELECT queries are implemented for now": "Firebase：目前仅实现 SELECT 查询",
-  "Firebase: query failed: {0}": "Firebase：查询失败：{0}"
+  "Firebase: query failed: {0}": "Firebase：查询失败：{0}",
+  "ID is required for insert": "插入需要身份证件",
+  "Unsupported statement: {0}": "不受支持的语句：{0}"
 }

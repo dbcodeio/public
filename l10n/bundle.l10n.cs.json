@@ -1683,6 +1683,7 @@
   "Invalid service account key file: {0}": "Neplatný soubor klíče účtu služby: {0}",
   "Service account key file path is required": "Je vyžadována cesta k souboru klíče účtu služby",
   "Unknown authentication method: {0}": "Neznámá metoda ověřování: {0}",
-  "Firebase: only SELECT queries are implemented for now": "Firebase: Prozatím jsou implementovány pouze dotazy SELECT",
-  "Firebase: query failed: {0}": "Firebase: dotaz se nezdařil: {0}"
+  "Firebase: query failed: {0}": "Firebase: dotaz se nezdařil: {0}",
+  "ID is required for insert": "Pro vložení je vyžadováno ID",
+  "Unsupported statement: {0}": "Nepodporované prohlášení: {0}"
 }
