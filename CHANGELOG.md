@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.16.2 - 2025-08-22
+
+### Changed
+
+- Firebase: Handles setting (undefined) for a value to make the key undefined.
+- MongoDB: Handles setting (undefined) for a value to make the key undefined.
+
+### Fixed
+
+- Added groups to escaped identifier list.
+
 ## 1.16.1 - 2025-08-20
 
 ### Changed
