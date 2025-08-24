@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.16.3 - 2025-08-24
+
+### Changed
+
+- Firebase: Added support for editing sub collections. 
+- Firebase: Added support for multiple Firestore databases.
+- Code Completion: Experimental LS now provides table/column context and CTE understanding.
+
+### Fixed
+
+- Trino: Fixed map, array, and row types displaying as "[object Object]" in query results. #670
+
 ## 1.16.2 - 2025-08-22
 
 ### Changed

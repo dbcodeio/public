@@ -1683,7 +1683,9 @@
   "Invalid service account key file: {0}": "Archivo de clave de cuenta de servicio no válido: {0}",
   "Service account key file path is required": "Se requiere la ruta del archivo de clave de la cuenta de servicio",
   "Unknown authentication method: {0}": "Método de autenticación desconocido: {0}",
-  "Firebase: query failed: {0}": "Firebase: error en la consulta: {0}",
   "ID is required for insert": "Se requiere ID para insertar",
-  "Unsupported statement: {0}": "Declaración sin respaldo: {0}"
+  "Unsupported statement: {0}": "Declaración sin respaldo: {0}",
+  "Firebase query failed: {0}": "Error en la consulta de Firebase: {0}",
+  "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "La inserción en subcolecciones requiere una ruta de acceso completa: parentCollection/parentDocId/subcollection/docId",
+  "Deleting subcollection documents requires full path in Document ID": "La eliminación de documentos de subcolección requiere una ruta completa en el ID del documento"
 }

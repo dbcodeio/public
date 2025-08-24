@@ -1683,7 +1683,9 @@
   "Invalid service account key file: {0}": "Geçersiz hizmet hesabı anahtarı dosyası: {0}",
   "Service account key file path is required": "Hizmet hesabı anahtarı dosya yolu gereklidir",
   "Unknown authentication method: {0}": "Bilinmeyen kimlik doğrulama yöntemi: {0}",
-  "Firebase: query failed: {0}": "Firebase: sorgu başarısız oldu: {0}",
   "ID is required for insert": "Ekleme için kimlik gereklidir",
-  "Unsupported statement: {0}": "Desteklenmeyen ifade: {0}"
+  "Unsupported statement: {0}": "Desteklenmeyen ifade: {0}",
+  "Firebase query failed: {0}": "Firebase sorgusu başarısız oldu: {0}",
+  "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "Alt koleksiyonlara eklemek için tam yol gerekir: parentCollection/parentDocId/subcollection/docId",
+  "Deleting subcollection documents requires full path in Document ID": "Alt koleksiyon belgelerini silmek için Belge Kimliği'nde tam yol gerekir"
 }

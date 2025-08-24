@@ -1683,7 +1683,9 @@
   "Invalid service account key file: {0}": "服务帐户密钥文件无效：{0}",
   "Service account key file path is required": "服务帐户密钥文件路径是必需的",
   "Unknown authentication method: {0}": "未知的身份验证方法：{0}",
-  "Firebase: query failed: {0}": "Firebase：查询失败：{0}",
   "ID is required for insert": "插入需要身份证件",
-  "Unsupported statement: {0}": "不受支持的语句：{0}"
+  "Unsupported statement: {0}": "不受支持的语句：{0}",
+  "Firebase query failed: {0}": "Firebase 查询失败：{0}",
+  "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "插入子集合需要完整路径：parentCollection/parentDocId/subcollection/docId",
+  "Deleting subcollection documents requires full path in Document ID": "删除子集合文档需要文档 ID 中的完整路径"
 }

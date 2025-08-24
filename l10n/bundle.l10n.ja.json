@@ -1686,7 +1686,9 @@
   "Invalid service account key file: {0}": "無効なサービス アカウント キー ファイル: {0}",
   "Service account key file path is required": "サービス アカウント キー ファイル パスが必要です",
   "Unknown authentication method: {0}": "不明な認証方法: {0}",
-  "Firebase: query failed: {0}": "Firebase: クエリに失敗しました: {0}",
   "ID is required for insert": "挿入にはIDが必要です",
-  "Unsupported statement: {0}": "サポートされていないステートメント: {0}"
+  "Unsupported statement: {0}": "サポートされていないステートメント: {0}",
+  "Firebase query failed: {0}": "Firebase クエリが失敗しました: {0}",
+  "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "サブコレクションに挿入するには、フルパスが必要です: parentCollection/parentDocId/subcollection/docId",
+  "Deleting subcollection documents requires full path in Document ID": "サブコレクションドキュメントを削除するには、ドキュメントIDのフルパスが必要です"
 }

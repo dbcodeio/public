@@ -1683,7 +1683,9 @@
   "Invalid service account key file: {0}": "Nieprawidłowy plik klucza konta usługi: {0}",
   "Service account key file path is required": "Wymagana jest ścieżka do pliku klucza konta usługi",
   "Unknown authentication method: {0}": "Nieznana metoda uwierzytelniania: {0}",
-  "Firebase: query failed: {0}": "Firebase: zapytanie nie powiodło się: {0}",
   "ID is required for insert": "Do wstawienia wymagany jest identyfikator",
-  "Unsupported statement: {0}": "Niepoparte stwierdzeniem: {0}"
+  "Unsupported statement: {0}": "Niepoparte stwierdzeniem: {0}",
+  "Firebase query failed: {0}": "Zapytanie Firebase nie powiodło się: {0}",
+  "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "Wstawianie do podkolekcji wymaga pełnej ścieżki: parentCollection/parentDocId/subcollection/docId",
+  "Deleting subcollection documents requires full path in Document ID": "Usunięcie dokumentów kolekcji podrzędnej wymaga pełnej ścieżki w polu Identyfikator dokumentu"
 }

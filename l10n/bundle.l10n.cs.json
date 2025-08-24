@@ -1683,7 +1683,9 @@
   "Invalid service account key file: {0}": "Neplatný soubor klíče účtu služby: {0}",
   "Service account key file path is required": "Je vyžadována cesta k souboru klíče účtu služby",
   "Unknown authentication method: {0}": "Neznámá metoda ověřování: {0}",
-  "Firebase: query failed: {0}": "Firebase: dotaz se nezdařil: {0}",
   "ID is required for insert": "Pro vložení je vyžadováno ID",
-  "Unsupported statement: {0}": "Nepodporované prohlášení: {0}"
+  "Unsupported statement: {0}": "Nepodporované prohlášení: {0}",
+  "Firebase query failed: {0}": "Dotaz Firebase se nezdařil: {0}",
+  "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "Vložení do podknihoven vyžaduje úplnou cestu: parentCollection/parentDocId/subcollection/docId",
+  "Deleting subcollection documents requires full path in Document ID": "Odstranění dokumentů podkolekce vyžaduje úplnou cestu v ID dokumentu"
 }

@@ -1683,7 +1683,9 @@
   "Invalid service account key file: {0}": "잘못된 서비스 계정 키 파일: {0}",
   "Service account key file path is required": "서비스 계정 키 파일 경로가 필요합니다.",
   "Unknown authentication method: {0}": "알 수 없는 인증 방법: {0}",
-  "Firebase: query failed: {0}": "Firebase: 쿼리 실패: {0}",
   "ID is required for insert": "삽입을 위해서는 ID가 필요합니다.",
-  "Unsupported statement: {0}": "지원되지 않는 명령문: {0}"
+  "Unsupported statement: {0}": "지원되지 않는 명령문: {0}",
+  "Firebase query failed: {0}": "Firebase 쿼리 실패: {0}",
+  "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "하위 컬렉션에 삽입하려면 전체 경로가 필요합니다: parentCollection/parentDocId/subcollection/docId",
+  "Deleting subcollection documents requires full path in Document ID": "하위 컬렉션 문서를 삭제하려면 문서 ID의 전체 경로가 필요합니다."
 }

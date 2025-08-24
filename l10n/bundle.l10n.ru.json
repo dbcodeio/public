@@ -1683,7 +1683,9 @@
   "Invalid service account key file: {0}": "Недопустимый файл ключа учетной записи службы: {0}",
   "Service account key file path is required": "Требуется путь к файлу ключа учетной записи службы",
   "Unknown authentication method: {0}": "Неизвестный способ аутентификации: {0}",
-  "Firebase: query failed: {0}": "Firebase: ошибка запроса: {0}",
   "ID is required for insert": "Для вставки требуется ID",
-  "Unsupported statement: {0}": "Необоснованное утверждение: {0}"
+  "Unsupported statement: {0}": "Необоснованное утверждение: {0}",
+  "Firebase query failed: {0}": "Ошибка запроса Firebase: {0}",
+  "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "Для вставки в подколлекции требуется полный путь: parentCollection/parentDocId/subcollection/docId",
+  "Deleting subcollection documents requires full path in Document ID": "Для удаления документов подколлекции требуется полный путь в идентификаторе документа"
 }
