@@ -1687,5 +1687,7 @@
   "Unsupported statement: {0}": "Dichiarazione non supportata: {0}",
   "Firebase query failed: {0}": "Query Firebase non riuscita: {0}",
   "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "L'inserimento nelle sottoraccolte richiede il percorso completo: parentCollection/parentDocId/subcollection/docId",
-  "Deleting subcollection documents requires full path in Document ID": "L'eliminazione dei documenti della raccolta secondaria richiede il percorso completo nell'ID documento"
+  "Deleting subcollection documents requires full path in Document ID": "L'eliminazione dei documenti della raccolta secondaria richiede il percorso completo nell'ID documento",
+  "Application Databases": "Database delle applicazioni",
+  "Application platforms with integrated database capabilities": "Piattaforme applicative con funzionalità di database integrate"
 }

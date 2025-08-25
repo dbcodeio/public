@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.16.4 - 2025-08-25
+
+### Changed
+
+- Results: Added keyboard shortcuts to the tooltips.
+
+### Fixed
+
+- SQLite: Fixed issue where primary keys were not detected when not present in PRAGMA_index_list.
+- Cassandra: Fixed SSL certificate validation errors. #640
+- Oracle: Fixed crash when using Instant Client after initialization. #674
+
 ## 1.16.3 - 2025-08-24
 
 ### Changed

@@ -1687,5 +1687,7 @@
   "Unsupported statement: {0}": "지원되지 않는 명령문: {0}",
   "Firebase query failed: {0}": "Firebase 쿼리 실패: {0}",
   "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "하위 컬렉션에 삽입하려면 전체 경로가 필요합니다: parentCollection/parentDocId/subcollection/docId",
-  "Deleting subcollection documents requires full path in Document ID": "하위 컬렉션 문서를 삭제하려면 문서 ID의 전체 경로가 필요합니다."
+  "Deleting subcollection documents requires full path in Document ID": "하위 컬렉션 문서를 삭제하려면 문서 ID의 전체 경로가 필요합니다.",
+  "Application Databases": "응용 프로그램 데이터베이스",
+  "Application platforms with integrated database capabilities": "통합 데이터베이스 기능을 갖춘 애플리케이션 플랫폼"
 }

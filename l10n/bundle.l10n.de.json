@@ -1687,5 +1687,7 @@
   "Unsupported statement: {0}": "Nicht belegte Aussage: {0}",
   "Firebase query failed: {0}": "Fehler bei der Firebase-Abfrage: {0}",
   "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "Für das Einfügen in untergeordnete Sammlungen ist ein vollständiger Pfad erforderlich: parentCollection/parentDocId/subcollection/docId",
-  "Deleting subcollection documents requires full path in Document ID": "Für das Löschen von Untersammlungsdokumenten ist der vollständige Pfad in der Dokument-ID erforderlich."
+  "Deleting subcollection documents requires full path in Document ID": "Für das Löschen von Untersammlungsdokumenten ist der vollständige Pfad in der Dokument-ID erforderlich.",
+  "Application Databases": "Anwendungsdatenbanken",
+  "Application platforms with integrated database capabilities": "Anwendungsplattformen mit integrierten Datenbankfunktionen"
 }
