@@ -1689,5 +1689,7 @@
   "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "La inserción en subcolecciones requiere una ruta de acceso completa: parentCollection/parentDocId/subcollection/docId",
   "Deleting subcollection documents requires full path in Document ID": "La eliminación de documentos de subcolección requiere una ruta completa en el ID del documento",
   "Application Databases": "Bases de datos de aplicaciones",
-  "Application platforms with integrated database capabilities": "Plataformas de aplicaciones con capacidades de base de datos integradas"
+  "Application platforms with integrated database capabilities": "Plataformas de aplicaciones con capacidades de base de datos integradas",
+  "Connection failed: Required file not found - {0}": "Error de conexión: No se encontró el archivo requerido - {0}",
+  "Bytes Billed": "Bytes facturados"
 }

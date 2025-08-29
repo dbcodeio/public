@@ -1689,5 +1689,7 @@
   "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "Для вставки в подколлекции требуется полный путь: parentCollection/parentDocId/subcollection/docId",
   "Deleting subcollection documents requires full path in Document ID": "Для удаления документов подколлекции требуется полный путь в идентификаторе документа",
   "Application Databases": "Базы данных приложений",
-  "Application platforms with integrated database capabilities": "Прикладные платформы с интегрированными возможностями баз данных"
+  "Application platforms with integrated database capabilities": "Прикладные платформы с интегрированными возможностями баз данных",
+  "Connection failed: Required file not found - {0}": "Ошибка подключения: Требуемый файл не найден - {0}",
+  "Bytes Billed": "Байт Тарифицировано"
 }

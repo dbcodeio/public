@@ -1689,5 +1689,7 @@
   "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "Für das Einfügen in untergeordnete Sammlungen ist ein vollständiger Pfad erforderlich: parentCollection/parentDocId/subcollection/docId",
   "Deleting subcollection documents requires full path in Document ID": "Für das Löschen von Untersammlungsdokumenten ist der vollständige Pfad in der Dokument-ID erforderlich.",
   "Application Databases": "Anwendungsdatenbanken",
-  "Application platforms with integrated database capabilities": "Anwendungsplattformen mit integrierten Datenbankfunktionen"
+  "Application platforms with integrated database capabilities": "Anwendungsplattformen mit integrierten Datenbankfunktionen",
+  "Connection failed: Required file not found - {0}": "Verbindung fehlgeschlagen: Erforderliche Datei nicht gefunden - {0}",
+  "Bytes Billed": "Abgerechnete Bytes"
 }

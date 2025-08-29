@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.16.5 - 2025-08-29
+
+### Changed
+
+- Keyboard Shortcut: shift+cmd/ctrl+d shift+cmd/ctrl+b will open up selector to choose database (or connection) when in a SQL file. #690
+- Connection Pinning: Added MariaDB, and MySQL to pin a connection to the editor. #663
+- Connection Settings: Added [variable substitution](https://dbcode.io/docs/connections/variables) support for file paths in connection configurations. Supports `${workspaceFolder}`, `${workspaceRoot}`, `${home}`, `${env:VARIABLE_NAME}`, and relative paths. #683
+- USE Command: Will update displayed database when database supports USE command and connection pinning.
+- Bigquery: Added Bytes billed metadata. #693
+
 ## 1.16.4 - 2025-08-25
 
 ### Changed

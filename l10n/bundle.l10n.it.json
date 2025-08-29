@@ -1689,5 +1689,7 @@
   "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "L'inserimento nelle sottoraccolte richiede il percorso completo: parentCollection/parentDocId/subcollection/docId",
   "Deleting subcollection documents requires full path in Document ID": "L'eliminazione dei documenti della raccolta secondaria richiede il percorso completo nell'ID documento",
   "Application Databases": "Database delle applicazioni",
-  "Application platforms with integrated database capabilities": "Piattaforme applicative con funzionalità di database integrate"
+  "Application platforms with integrated database capabilities": "Piattaforme applicative con funzionalità di database integrate",
+  "Connection failed: Required file not found - {0}": "Connessione non riuscita: file richiesto non trovato - {0}",
+  "Bytes Billed": "Byte fatturati"
 }

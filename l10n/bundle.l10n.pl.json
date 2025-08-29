@@ -1689,5 +1689,7 @@
   "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "Wstawianie do podkolekcji wymaga pełnej ścieżki: parentCollection/parentDocId/subcollection/docId",
   "Deleting subcollection documents requires full path in Document ID": "Usunięcie dokumentów kolekcji podrzędnej wymaga pełnej ścieżki w polu Identyfikator dokumentu",
   "Application Databases": "Bazy danych aplikacji",
-  "Application platforms with integrated database capabilities": "Platformy aplikacyjne ze zintegrowanymi możliwościami baz danych"
+  "Application platforms with integrated database capabilities": "Platformy aplikacyjne ze zintegrowanymi możliwościami baz danych",
+  "Connection failed: Required file not found - {0}": "Połączenie nie powiodło się: Nie znaleziono wymaganego pliku — {0}",
+  "Bytes Billed": "Bajty rozliczane"
 }

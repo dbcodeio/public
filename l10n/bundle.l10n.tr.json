@@ -1689,5 +1689,7 @@
   "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "Alt koleksiyonlara eklemek için tam yol gerekir: parentCollection/parentDocId/subcollection/docId",
   "Deleting subcollection documents requires full path in Document ID": "Alt koleksiyon belgelerini silmek için Belge Kimliği'nde tam yol gerekir",
   "Application Databases": "Uygulama Veritabanları",
-  "Application platforms with integrated database capabilities": "Entegre veritabanı yeteneklerine sahip uygulama platformları"
+  "Application platforms with integrated database capabilities": "Entegre veritabanı yeteneklerine sahip uygulama platformları",
+  "Connection failed: Required file not found - {0}": "Bağlantı başarısız oldu: Gerekli dosya bulunamadı - {0}",
+  "Bytes Billed": "Faturalandırılan Bayt Sayısı"
 }

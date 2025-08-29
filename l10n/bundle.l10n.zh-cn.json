@@ -1689,5 +1689,7 @@
   "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "插入子集合需要完整路径：parentCollection/parentDocId/subcollection/docId",
   "Deleting subcollection documents requires full path in Document ID": "删除子集合文档需要文档 ID 中的完整路径",
   "Application Databases": "应用程序数据库",
-  "Application platforms with integrated database capabilities": "具有集成数据库功能的应用程序平台"
+  "Application platforms with integrated database capabilities": "具有集成数据库功能的应用程序平台",
+  "Connection failed: Required file not found - {0}": "连接失败：找不到所需文件 - {0}",
+  "Bytes Billed": "计费字节数"
 }

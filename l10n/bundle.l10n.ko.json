@@ -1689,5 +1689,7 @@
   "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "하위 컬렉션에 삽입하려면 전체 경로가 필요합니다: parentCollection/parentDocId/subcollection/docId",
   "Deleting subcollection documents requires full path in Document ID": "하위 컬렉션 문서를 삭제하려면 문서 ID의 전체 경로가 필요합니다.",
   "Application Databases": "응용 프로그램 데이터베이스",
-  "Application platforms with integrated database capabilities": "통합 데이터베이스 기능을 갖춘 애플리케이션 플랫폼"
+  "Application platforms with integrated database capabilities": "통합 데이터베이스 기능을 갖춘 애플리케이션 플랫폼",
+  "Connection failed: Required file not found - {0}": "연결 실패: 필요한 파일을 찾을 수 없음 - {0}",
+  "Bytes Billed": "청구된 바이트"
 }

@@ -1692,5 +1692,7 @@
   "Inserting into subcollections requires full path: parentCollection/parentDocId/subcollection/docId": "サブコレクションに挿入するには、フルパスが必要です: parentCollection/parentDocId/subcollection/docId",
   "Deleting subcollection documents requires full path in Document ID": "サブコレクションドキュメントを削除するには、ドキュメントIDのフルパスが必要です",
   "Application Databases": "アプリケーションデータベース",
-  "Application platforms with integrated database capabilities": "統合データベース機能を備えたアプリケーションプラットフォーム"
+  "Application platforms with integrated database capabilities": "統合データベース機能を備えたアプリケーションプラットフォーム",
+  "Connection failed: Required file not found - {0}": "接続に失敗しました: 必要なファイルが見つかりません - {0}",
+  "Bytes Billed": "請求バイト数"
 }
