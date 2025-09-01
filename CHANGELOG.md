@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.16.6 - 2025-09-01
+
+### Changed
+
+- Execution Plans: Initial preview of execution plan support has been added. #376. 
+- Connection Pinning: Added Oracle, DB2, ClickHouse, and Snowflake (with SSO token caching) support for connection pinning to maintain session state across query executions. #663
+- BigQuery: Use table list api when opening a table (only possible when no sorting or filtering applied). #693
+- BigQuery: Added support for dry run query execution. #693
+- BigQuery: Always show bytes billed, even if 0. #693
+- BigQuery: Added BI Engine information to the meta data display when present. #693
+
 ## 1.16.5 - 2025-08-29
 
 ### Changed

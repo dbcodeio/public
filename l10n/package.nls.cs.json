@@ -219,5 +219,8 @@
   "Table Name": "Název tabulky",
   "Parameters for the formatter": "Parametry pro formátovač",
   "Custom Column Formatters": "Vlastní formátovače sloupců",
-  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "Povolte experimentální jazykový server DBCode SQL (aktivní diagnostika a kompletace příkazů), MariaDB a Postgres pouze v tuto chvíli."
+  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "Povolte experimentální jazykový server DBCode SQL (aktivní diagnostika a kompletace příkazů), MariaDB a Postgres pouze v tuto chvíli.",
+  "Explain": "Vysvětlit",
+  "Analyze": "Analyzovat",
+  "Dry Run": "Zkouška na sucho"
 }

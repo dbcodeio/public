@@ -219,5 +219,8 @@
   "Table Name": "テーブル名",
   "Parameters for the formatter": "フォーマッタのパラメータ",
   "Custom Column Formatters": "カスタム列フォーマッタ",
-  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "実験的な DBCode SQL 言語サーバー (アクティブなステートメントの診断と補完) MariaDB と Postgres は現時点でのみ有効にします。"
+  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "実験的な DBCode SQL 言語サーバー (アクティブなステートメントの診断と補完) MariaDB と Postgres は現時点でのみ有効にします。",
+  "Explain": "説明する",
+  "Analyze": "分析する",
+  "Dry Run": "ドライラン"
 }

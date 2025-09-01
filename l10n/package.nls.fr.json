@@ -219,5 +219,8 @@
   "Table Name": "Nom de la table",
   "Parameters for the formatter": "Paramètres du formateur",
   "Custom Column Formatters": "Formateurs de colonnes personnalisés",
-  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "Activez le serveur de langage SQL expérimental DBCode (instructions actives, diagnostics et complétions), MariaDB et Postgres uniquement pour le moment."
+  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "Activez le serveur de langage SQL expérimental DBCode (instructions actives, diagnostics et complétions), MariaDB et Postgres uniquement pour le moment.",
+  "Explain": "Expliquer",
+  "Analyze": "Analyser",
+  "Dry Run": "Essai"
 }

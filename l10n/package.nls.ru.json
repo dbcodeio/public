@@ -219,5 +219,8 @@
   "Table Name": "Имя таблицы",
   "Parameters for the formatter": "Параметры для модуля форматирования",
   "Custom Column Formatters": "Пользовательские форматтеры столбцов",
-  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "Включите экспериментальный сервер языка DBCode SQL (диагностика и дополнения активных операторов) MariaDB и Postgres только на данный момент."
+  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "Включите экспериментальный сервер языка DBCode SQL (диагностика и дополнения активных операторов) MariaDB и Postgres только на данный момент.",
+  "Explain": "Объяснять",
+  "Analyze": "Анализировать",
+  "Dry Run": "Пробный прогон"
 }

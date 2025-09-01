@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.16.5",
+    "version": "1.16.6",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -351,6 +351,24 @@
                 "command": "dbcode.notebook.export",
                 "title": "%Export / Share%",
                 "icon": "$(share)",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.notebook.executeExplain",
+                "title": "%Explain%",
+                "icon": "$(info)",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.notebook.executeAnalyze",
+                "title": "%Analyze%",
+                "icon": "$(graph)",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.notebook.executeDryRun",
+                "title": "%Dry Run%",
+                "icon": "$(beaker)",
                 "category": "DBCode"
             },
             {
@@ -1373,6 +1391,20 @@
                     "when": "notebookType == dbcode-notebook",
                     "command": "dbcode.notebook.export",
                     "group": "navigation@2"
+                }
+            ],
+            "notebook/cell/execute": [
+                {
+                    "when": "notebookType == dbcode-notebook && dbcode.notebook.hasAnalyze",
+                    "command": "dbcode.notebook.executeAnalyze"
+                },
+                {
+                    "when": "notebookType == dbcode-notebook && dbcode.notebook.hasExplain",
+                    "command": "dbcode.notebook.executeExplain"
+                },
+                {
+                    "when": "notebookType == dbcode-notebook && dbcode.notebook.hasDryRun",
+                    "command": "dbcode.notebook.executeDryRun"
                 }
             ],
             "dbcode.submenu.script": [
@@ -3948,7 +3980,7 @@
         "postinstall": "patch-package",
         "version": "tsx ./scripts/changelog.ts && git add CHANGELOG.md",
         "check-types": "tsc --build --noEmit",
-        "check-types:file": "tsc --noEmit --skipLibCheck --types ./src/types --lib es2023 --target es2022 --module commonjs",
+        "check-types:file": "tsc --noEmit --skipLibCheck --experimentalDecorators --types ./src/types --lib es2023,dom --target es2022 --module commonjs",
         "ls:fetch-grammars": "tsx scripts/ls-fetch-grammars.ts",
         "ls:generate": "tsx scripts/ls-generate-grammars.ts",
         "ls:benchmark:semantic": "tsx benchmarks/ls-benchmark-semantic.ts",
@@ -4033,12 +4065,12 @@
         "@blocknote/core": "^0.31.0",
         "@blocknote/mantine": "^0.31.0",
         "@blocknote/react": "^0.31.0",
-        "@clickhouse/client": "^1.11.0",
-        "@databricks/sql": "^1.10.0",
+        "@clickhouse/client": "^1.12.1",
+        "@databricks/sql": "^1.11.0",
         "@date-fns/utc": "^2.1.0",
         "@duckdb/node-api": "^1.3.1-alpha.22",
         "@elastic/elasticsearch": "^9.0.1",
-        "@google-cloud/bigquery": "^7.9.2",
+        "@google-cloud/bigquery": "^8.1.1",
         "@libsql/client": "^0.14.0",
         "@monaco-editor/loader": "^1.4.0",
         "@types/dagre": "^0.7.52",
