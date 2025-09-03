@@ -1731,5 +1731,11 @@
   "{0} would be processed": "{0} будет обработано",
   "BI Mode": "Режим BI",
   "BI Acceleration": "Ускорение BI",
-  "BI Reasons": "Причины BI"
+  "BI Reasons": "Причины BI",
+  "Title": "Титул",
+  "Include current date and time": "Укажите текущую дату и время",
+  "Include SQL query": "Включение SQL-запроса",
+  "Est. I/O": "Est. ВВОД-ВЫВОД",
+  "Est. CPU": "Оц. ЦПУ",
+  "Output Columns": "Выходные столбцы"
 }

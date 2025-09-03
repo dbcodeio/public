@@ -857,5 +857,11 @@
   "{0} would be processed": "{0} seriam processados",
   "BI Mode": "Modo BI",
   "BI Acceleration": "Aceleração de BI",
-  "BI Reasons": "Razões de BI"
+  "BI Reasons": "Razões de BI",
+  "Title": "Título",
+  "Include current date and time": "Incluir data e hora atuais",
+  "Include SQL query": "Incluir consulta SQL",
+  "Est. I/O": "Est. E/S",
+  "Est. CPU": "Est. CPU",
+  "Output Columns": "Colunas de saída"
 }

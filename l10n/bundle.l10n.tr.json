@@ -1731,5 +1731,11 @@
   "{0} would be processed": "{0} işlenecektir",
   "BI Mode": "BI Modu",
   "BI Acceleration": "İş Zekası Hızlandırma",
-  "BI Reasons": "İş Zekası Nedenleri"
+  "BI Reasons": "İş Zekası Nedenleri",
+  "Title": "Başlık",
+  "Include current date and time": "Geçerli tarih ve saati dahil et",
+  "Include SQL query": "SQL sorgusunu dahil et",
+  "Est. I/O": "Est. G / ç",
+  "Est. CPU": "Tahmini İşlemci",
+  "Output Columns": "Çıktı Sütunları"
 }

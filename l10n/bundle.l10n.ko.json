@@ -1731,5 +1731,11 @@
   "{0} would be processed": "{0} 처리됩니다",
   "BI Mode": "BI 모드",
   "BI Acceleration": "BI 가속",
-  "BI Reasons": "BI 이유"
+  "BI Reasons": "BI 이유",
+  "Title": "타이틀",
+  "Include current date and time": "현재 날짜 및 시간 포함",
+  "Include SQL query": "SQL 쿼리 포함",
+  "Est. I/O": "추정. I/O",
+  "Est. CPU": "추정 CPU",
+  "Output Columns": "출력 열"
 }

@@ -1731,5 +1731,11 @@
   "{0} would be processed": "{0} będą przetwarzane",
   "BI Mode": "Tryb BI",
   "BI Acceleration": "Akceleracja BI",
-  "BI Reasons": "Przyczyny analizy biznesowej"
+  "BI Reasons": "Przyczyny analizy biznesowej",
+  "Title": "Tytuł",
+  "Include current date and time": "Uwzględnij bieżącą datę i godzinę",
+  "Include SQL query": "Dołącz zapytanie SQL",
+  "Est. I/O": "Est. We / wy",
+  "Est. CPU": "Szacowany procesor",
+  "Output Columns": "Kolumny wyjściowe"
 }

@@ -1731,5 +1731,11 @@
   "{0} would be processed": "{0}將被處理",
   "BI Mode": "BI 模式",
   "BI Acceleration": "BI 加速",
-  "BI Reasons": "BI 原因"
+  "BI Reasons": "BI 原因",
+  "Title": "名",
+  "Include current date and time": "包括目前的日期和時間",
+  "Include SQL query": "包含 SQL 查詢",
+  "Est. I/O": "估計。I/O",
+  "Est. CPU": "預估中央處理器",
+  "Output Columns": "輸出欄"
 }

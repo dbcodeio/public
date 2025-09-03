@@ -1731,5 +1731,11 @@
   "{0} would be processed": "{0}将被处理",
   "BI Mode": "BI模式",
   "BI Acceleration": "BI 加速",
-  "BI Reasons": "BI 原因"
+  "BI Reasons": "BI 原因",
+  "Title": "标题",
+  "Include current date and time": "包括当前日期和时间",
+  "Include SQL query": "包括 SQL 查询",
+  "Est. I/O": "最。I/O",
+  "Est. CPU": "估计 CPU",
+  "Output Columns": "输出列"
 }

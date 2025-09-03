@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 1.16.7 - 2025-09-03
+
+### Changed
+
+- Code Completion: Experimental LS is now complete for Postgres and MariaDB dialects. 
+- Exports/Share: Web page format now supports a title, date and optional SQL inclusion, along with updated rendering style.
+- Execution Plans: Export and Share support added. #376. 
+- Execution Plans: Preliminary support for Oracle added, more stats from SQL Server. #376. 
+
+### Fixed
+
+- Oracle: Fixed environment switching issue where service names were propagating between connections and environments were not properly isolated. #703
+- Results Grid: Fixed text jumping issue when hovering over cells with relationship icons. #695
+- SQL Server: Fixed inconsistent decimal formatting. #689
+
 ## 1.16.6 - 2025-09-01
 
 ### Changed

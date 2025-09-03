@@ -1731,5 +1731,11 @@
   "{0} would be processed": "{0} by byly zpracovány",
   "BI Mode": "Režim BI",
   "BI Acceleration": "Akcelerace BI",
-  "BI Reasons": "Důvody BI"
+  "BI Reasons": "Důvody BI",
+  "Title": "Titul",
+  "Include current date and time": "Zahrnout aktuální datum a čas",
+  "Include SQL query": "Zahrnout dotaz SQL",
+  "Est. I/O": "Est. I/O",
+  "Est. CPU": "Odhadovaný procesor",
+  "Output Columns": "Výstupní sloupce"
 }

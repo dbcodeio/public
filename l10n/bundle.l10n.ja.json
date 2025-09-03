@@ -1734,5 +1734,11 @@
   "{0} would be processed": "{0}処理されます",
   "BI Mode": "BIモード",
   "BI Acceleration": "BIアクセラレーション",
-  "BI Reasons": "BI の理由"
+  "BI Reasons": "BI の理由",
+  "Title": "タイトル",
+  "Include current date and time": "現在の日付と時刻を含める",
+  "Include SQL query": "SQL クエリを含める",
+  "Est. I/O": "推定。入出力",
+  "Est. CPU": "推定CPU",
+  "Output Columns": "出力列"
 }
