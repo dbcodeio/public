@@ -1737,5 +1737,13 @@
   "Include SQL query": "包括 SQL 查询",
   "Est. I/O": "最。I/O",
   "Est. CPU": "估计 CPU",
-  "Output Columns": "输出列"
+  "Output Columns": "输出列",
+  "Chart Type": "图表类型",
+  "Sankey Diagram": "桑基图",
+  "Sunburst": "旭日纹",
+  "Treemap": "树状图",
+  "Metric": "度量",
+  "No execution plan data available": "没有可用的执行计划数据",
+  "Failed to render chart": "无法呈现图表",
+  "Charts": "图表"
 }

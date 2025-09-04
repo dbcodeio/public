@@ -1737,5 +1737,13 @@
   "Include SQL query": "Включение SQL-запроса",
   "Est. I/O": "Est. ВВОД-ВЫВОД",
   "Est. CPU": "Оц. ЦПУ",
-  "Output Columns": "Выходные столбцы"
+  "Output Columns": "Выходные столбцы",
+  "Chart Type": "Тип диаграммы",
+  "Sankey Diagram": "Диаграмма Санки",
+  "Sunburst": "Солнечные лучи",
+  "Treemap": "Древовидная карта",
+  "Metric": "Метрический",
+  "No execution plan data available": "Данные о плане выполнения недоступны",
+  "Failed to render chart": "Не удалось отобразить диаграмму",
+  "Charts": "Диаграммы"
 }

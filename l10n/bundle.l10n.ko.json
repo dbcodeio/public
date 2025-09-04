@@ -1737,5 +1737,13 @@
   "Include SQL query": "SQL 쿼리 포함",
   "Est. I/O": "추정. I/O",
   "Est. CPU": "추정 CPU",
-  "Output Columns": "출력 열"
+  "Output Columns": "출력 열",
+  "Chart Type": "차트 유형",
+  "Sankey Diagram": "Sankey 다이어그램",
+  "Sunburst": "햇살",
+  "Treemap": "트리맵",
+  "Metric": "메트릭",
+  "No execution plan data available": "사용 가능한 실행 계획 데이터가 없습니다.",
+  "Failed to render chart": "차트 렌더링 실패",
+  "Charts": "차트"
 }

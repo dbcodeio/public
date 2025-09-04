@@ -1737,5 +1737,13 @@
   "Include SQL query": "包含 SQL 查詢",
   "Est. I/O": "估計。I/O",
   "Est. CPU": "預估中央處理器",
-  "Output Columns": "輸出欄"
+  "Output Columns": "輸出欄",
+  "Chart Type": "圖表類型",
+  "Sankey Diagram": "桑基圖",
+  "Sunburst": "旭日紋",
+  "Treemap": "樹狀圖",
+  "Metric": "公尺的",
+  "No execution plan data available": "沒有可用的執行計劃資料",
+  "Failed to render chart": "無法轉譯圖表",
+  "Charts": "圖表"
 }

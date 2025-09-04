@@ -1740,5 +1740,13 @@
   "Include SQL query": "SQL クエリを含める",
   "Est. I/O": "推定。入出力",
   "Est. CPU": "推定CPU",
-  "Output Columns": "出力列"
+  "Output Columns": "出力列",
+  "Chart Type": "チャートタイプ",
+  "Sankey Diagram": "サンキー図",
+  "Sunburst": "サンバースト",
+  "Treemap": "ツリーマップ",
+  "Metric": "メトリック",
+  "No execution plan data available": "実行プラン・データがありません",
+  "Failed to render chart": "チャートのレンダリングに失敗しました",
+  "Charts": "グラフ"
 }

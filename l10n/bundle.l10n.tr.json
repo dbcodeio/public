@@ -1737,5 +1737,13 @@
   "Include SQL query": "SQL sorgusunu dahil et",
   "Est. I/O": "Est. G / ç",
   "Est. CPU": "Tahmini İşlemci",
-  "Output Columns": "Çıktı Sütunları"
+  "Output Columns": "Çıktı Sütunları",
+  "Chart Type": "Grafik Türü",
+  "Sankey Diagram": "Sankey Diyagramı",
+  "Sunburst": "Sunburst",
+  "Treemap": "Ağaç Haritası",
+  "Metric": "Metrik",
+  "No execution plan data available": "Yürütme planı verisi yok",
+  "Failed to render chart": "Grafik işlenemedi",
+  "Charts": "Grafik"
 }

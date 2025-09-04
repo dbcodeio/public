@@ -1737,5 +1737,13 @@
   "Include SQL query": "Includi query SQL",
   "Est. I/O": "Est. I/O",
   "Est. CPU": "CPU stimata",
-  "Output Columns": "Colonne di output"
+  "Output Columns": "Colonne di output",
+  "Chart Type": "Tipo di grafico",
+  "Sankey Diagram": "Diagramma di Sankey",
+  "Sunburst": "Sunburst",
+  "Treemap": "Mappa ad albero",
+  "Metric": "Metrico",
+  "No execution plan data available": "Nessun dato del piano di esecuzione disponibile",
+  "Failed to render chart": "Impossibile eseguire il rendering del grafico",
+  "Charts": "Grafici"
 }

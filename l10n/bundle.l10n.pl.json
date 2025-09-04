@@ -1737,5 +1737,13 @@
   "Include SQL query": "Dołącz zapytanie SQL",
   "Est. I/O": "Est. We / wy",
   "Est. CPU": "Szacowany procesor",
-  "Output Columns": "Kolumny wyjściowe"
+  "Output Columns": "Kolumny wyjściowe",
+  "Chart Type": "Typ wykresu",
+  "Sankey Diagram": "Diagram Sankeya",
+  "Sunburst": "Sunburst",
+  "Treemap": "Mapa drzewa",
+  "Metric": "Metryka",
+  "No execution plan data available": "Brak dostępnych danych planu wykonania",
+  "Failed to render chart": "Nie udało się wyrenderować wykresu",
+  "Charts": "Wykresy"
 }

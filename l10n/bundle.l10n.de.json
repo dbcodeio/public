@@ -1737,5 +1737,13 @@
   "Include SQL query": "SQL-Abfrage einschließen",
   "Est. I/O": "Est. E/A",
   "Est. CPU": "Est. CPU",
-  "Output Columns": "Ausgabe-Spalten"
+  "Output Columns": "Ausgabe-Spalten",
+  "Chart Type": "Diagramm-Typ",
+  "Sankey Diagram": "Sankey-Diagramm",
+  "Sunburst": "Sunburst",
+  "Treemap": "Baumkarte",
+  "Metric": "Metrik",
+  "No execution plan data available": "Keine Daten zum Ausführungsplan verfügbar",
+  "Failed to render chart": "Diagramm konnte nicht gerendert werden",
+  "Charts": "Charts"
 }

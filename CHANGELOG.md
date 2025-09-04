@@ -1,13 +1,25 @@
 # CHANGELOG
 
+## 1.16.8 - 2025-09-04
+
+### Changed
+
+- Execution Plans: Initial basic chart support added. #376
+- Results Grid: Database selector now automatically syncs with the active editor's connection. #708
+
+### Fixed
+
+- Execution Plans: Added basic support for MySQL plans. #376. 
+- Editor: Right click execute with DBCode was throwing an error. #705
+
 ## 1.16.7 - 2025-09-03
 
 ### Changed
 
 - Code Completion: Experimental LS is now complete for Postgres and MariaDB dialects. 
 - Exports/Share: Web page format now supports a title, date and optional SQL inclusion, along with updated rendering style.
-- Execution Plans: Export and Share support added. #376. 
-- Execution Plans: Preliminary support for Oracle added, more stats from SQL Server. #376. 
+- Execution Plans: Export and Share support added. #376
+- Execution Plans: Preliminary support for Oracle added, more stats from SQL Server. #376
 
 ### Fixed
 
