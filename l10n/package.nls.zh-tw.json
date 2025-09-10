@@ -234,5 +234,7 @@
   "History: Sync Now": "歷史記錄：立即同步",
   "History: Syncing...": "歷史：同步...",
   "Enable cloud sync for query history.": "啟用查詢歷程記錄的雲端同步處理。",
-  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "連線群組的自訂順序。此處列出的群組首先顯示，其他群組按字母順序排序。"
+  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "連線群組的自訂順序。此處列出的群組首先顯示，其他群組按字母順序排序。",
+  "History: Change Passphrase": "歷史記錄：更改密碼",
+  "History: Reset Local Encryption (this device)": "歷史記錄：重置本地加密（此設備）"
 }

@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 1.16.12 - 2025-09-10
+
+### Changed
+
+- Script Generation: Added advanced DML script options - MERGE, INSERT ON CONFLICT (UPSERT), UPDATE FROM, and DELETE USING. #349
+- Script Generation: Improved SQL formatting with clauses on separate lines for better readability
+- Execution Plans: Improved charts. #376
+- Execution Plans: Added Clickhouse, libSQL, Snowflake support
+- Execution Plans: Added icons for explain, analyze to the editor title menu section when supported. 
+- Keyboard Shortcut: Changed shortcut to shift+ctrl+cmd/windows+o to choose database (or connection) when in a SQL file. #690
+
+### Fixed
+
+- BigQuery: Fixed introspection error for dataset names containing hyphens. #701
+- Script Generation: Fixed issue where identity/auto-increment columns were incorrectly included in INSERT statements. #349
+- Script Generation: Fixed issue where default value functions like CURRENT_TIMESTAMP were being incorrectly quoted. #349
+
 ## 1.16.11 - 2025-09-10
 
 ### Changed

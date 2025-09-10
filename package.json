@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.16.11",
+    "version": "1.16.12",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -259,13 +259,13 @@
             },
             {
                 "command": "dbcode.history.changePassphrase",
-                "title": "History: Change Passphrase",
+                "title": "%History: Change Passphrase%",
                 "category": "DBCode",
                 "icon": "$(key)"
             },
             {
                 "command": "dbcode.history.resetLocalEncryption",
-                "title": "History: Reset Local Encryption (this device)",
+                "title": "%History: Reset Local Encryption (this device)%",
                 "category": "DBCode",
                 "icon": "$(trash)"
             },
@@ -656,6 +656,24 @@
                 "icon": "$(run)"
             },
             {
+                "command": "dbcode.editor.executeExplain",
+                "title": "%Explain%",
+                "category": "DBCode",
+                "icon": "$(info)"
+            },
+            {
+                "command": "dbcode.editor.executeAnalyze",
+                "title": "%Analyze%",
+                "category": "DBCode",
+                "icon": "$(graph)"
+            },
+            {
+                "command": "dbcode.editor.executeDryRun",
+                "title": "%Dry Run%",
+                "category": "DBCode",
+                "icon": "$(beaker)"
+            },
+            {
                 "command": "dbcode.favorites.addScript",
                 "title": "%Add to DBCode Favorites%",
                 "category": "DBCode",
@@ -878,6 +896,26 @@
                 "command": "dbcode.script.delete",
                 "title": "DELETE",
                 "category": "DBCode"
+            },
+            {
+                "command": "dbcode.script.merge",
+                "title": "MERGE",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.script.insertOnConflict",
+                "title": "INSERT ON CONFLICT",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.script.updateFrom",
+                "title": "UPDATE FROM",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.script.deleteUsing",
+                "title": "DELETE USING",
+                "category": "DBCode"
             }
         ],
         "keybindings": [
@@ -900,8 +938,8 @@
             },
             {
                 "command": "dbcode.connections.select",
-                "key": "ctrl+shift+d ctrl+shift+b",
-                "mac": "cmd+shift+d cmd+shift+b",
+                "key": "shift+ctrl+windows+o",
+                "mac": "shift+ctrl+cmd+o",
                 "when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode",
                 "args": {
                     "contextAware": true
@@ -1463,12 +1501,27 @@
                 {
                     "command": "dbcode.editor.execute",
                     "when": "(editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode",
-                    "group": "navigation"
+                    "group": "navigation@1"
                 },
                 {
                     "command": "dbcode.editor.apply",
                     "when": "editorLangId == sql && resourceScheme == dbcode",
-                    "group": "navigation"
+                    "group": "navigation@1"
+                },
+                {
+                    "command": "dbcode.editor.executeExplain",
+                    "when": "(editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode && dbcode.editor.hasExplain",
+                    "group": "navigation@2"
+                },
+                {
+                    "command": "dbcode.editor.executeAnalyze",
+                    "when": "(editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode && dbcode.editor.hasAnalyze",
+                    "group": "navigation@3"
+                },
+                {
+                    "command": "dbcode.editor.executeDryRun",
+                    "when": "(editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode && dbcode.editor.hasDryRun",
+                    "group": "navigation@4"
                 }
             ],
             "editor/context": [
@@ -1512,16 +1565,19 @@
             ],
             "notebook/cell/execute": [
                 {
-                    "when": "notebookType == dbcode-notebook && dbcode.notebook.hasAnalyze",
-                    "command": "dbcode.notebook.executeAnalyze"
+                    "when": "notebookType == dbcode-notebook && dbcode.notebook.hasExplain",
+                    "command": "dbcode.notebook.executeExplain",
+                    "group": "navigation@1"
                 },
                 {
-                    "when": "notebookType == dbcode-notebook && dbcode.notebook.hasExplain",
-                    "command": "dbcode.notebook.executeExplain"
+                    "when": "notebookType == dbcode-notebook && dbcode.notebook.hasAnalyze",
+                    "command": "dbcode.notebook.executeAnalyze",
+                    "group": "navigation@2"
                 },
                 {
                     "when": "notebookType == dbcode-notebook && dbcode.notebook.hasDryRun",
-                    "command": "dbcode.notebook.executeDryRun"
+                    "command": "dbcode.notebook.executeDryRun",
+                    "group": "navigation@3"
                 }
             ],
             "dbcode.submenu.script": [
@@ -1549,6 +1605,26 @@
                     "when": "viewItem =~ /~scriptDelete~/",
                     "command": "dbcode.script.delete",
                     "group": "open@5"
+                },
+                {
+                    "when": "viewItem =~ /~scriptMerge~/",
+                    "command": "dbcode.script.merge",
+                    "group": "open@6"
+                },
+                {
+                    "when": "viewItem =~ /~scriptInsertOnConflict~/",
+                    "command": "dbcode.script.insertOnConflict",
+                    "group": "open@7"
+                },
+                {
+                    "when": "viewItem =~ /~scriptUpdateFrom~/",
+                    "command": "dbcode.script.updateFrom",
+                    "group": "open@8"
+                },
+                {
+                    "when": "viewItem =~ /~scriptDeleteUsing~/",
+                    "command": "dbcode.script.deleteUsing",
+                    "group": "open@9"
                 }
             ]
         },
@@ -4100,7 +4176,6 @@
     "scripts": {
         "vscode:prepublish": "npm run vsixprepare",
         "vsixprepare": "npm run esbuild -- --minify",
-        "lint": "npx @biomejs/biome check --write",
         "lint:file": "npx @biomejs/biome check --write",
         "watch": "npm run dev:build & npm run dev:server",
         "dev:build": "npm run esbuild -- --sourcemap --watch",
@@ -4111,7 +4186,6 @@
         "prepare": "husky install",
         "postinstall": "patch-package",
         "version": "tsx ./scripts/changelog.ts && git add CHANGELOG.md",
-        "check-types": "tsc --build --noEmit",
         "check-types:file": "tsc --noEmit --skipLibCheck --experimentalDecorators --types ./src/types --lib es2023,dom --target es2022 --module commonjs",
         "ls:fetch-grammars": "tsx scripts/ls-fetch-grammars.ts",
         "ls:generate": "tsx scripts/ls-generate-grammars.ts",

@@ -234,5 +234,7 @@
   "History: Sync Now": "История: Синхронизировать сейчас",
   "History: Syncing...": "История: Синхронизация...",
   "Enable cloud sync for query history.": "Включите облачную синхронизацию для журнала запросов.",
-  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "Индивидуальный заказ для групп подключения. Перечисленные здесь группы отображаются первыми, другие сортируются в алфавитном порядке."
+  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "Индивидуальный заказ для групп подключения. Перечисленные здесь группы отображаются первыми, другие сортируются в алфавитном порядке.",
+  "History: Change Passphrase": "История: Изменение парольной фразы",
+  "History: Reset Local Encryption (this device)": "История: Сброс локального шифрования (это устройство)"
 }

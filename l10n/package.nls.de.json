@@ -234,5 +234,7 @@
   "History: Sync Now": "Verlauf: Jetzt synchronisieren",
   "History: Syncing...": "Verlauf: Synchronisieren...",
   "Enable cloud sync for query history.": "Aktivieren Sie die Cloudsynchronisierung für den Abfrageverlauf.",
-  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "Benutzerdefinierte Reihenfolge für Verbindungsgruppen. Die hier aufgelisteten Gruppen erscheinen zuerst, andere sortieren alphabetisch."
+  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "Benutzerdefinierte Reihenfolge für Verbindungsgruppen. Die hier aufgelisteten Gruppen erscheinen zuerst, andere sortieren alphabetisch.",
+  "History: Change Passphrase": "Verlauf: Passphrase ändern",
+  "History: Reset Local Encryption (this device)": "Verlauf: Lokale Verschlüsselung zurücksetzen (dieses Gerät)"
 }

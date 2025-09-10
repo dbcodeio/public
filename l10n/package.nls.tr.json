@@ -234,5 +234,7 @@
   "History: Sync Now": "Geçmiş: Şimdi Senkronize Et",
   "History: Syncing...": "Tarih: Senkronizasyon...",
   "Enable cloud sync for query history.": "Sorgu geçmişi için bulut eşitlemeyi etkinleştirin.",
-  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "Bağlantı grupları için özel sipariş. Burada listelenen gruplar önce görünür, diğerleri alfabetik olarak sıralanır."
+  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "Bağlantı grupları için özel sipariş. Burada listelenen gruplar önce görünür, diğerleri alfabetik olarak sıralanır.",
+  "History: Change Passphrase": "Geçmiş: Parolayı Değiştir",
+  "History: Reset Local Encryption (this device)": "Geçmiş: Yerel Şifrelemeyi Sıfırla (bu cihaz)"
 }

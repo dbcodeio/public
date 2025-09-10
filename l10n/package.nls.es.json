@@ -234,5 +234,7 @@
   "History: Sync Now": "Historial: Sincronizar ahora",
   "History: Syncing...": "Historial: Sincronizando...",
   "Enable cloud sync for query history.": "Habilite la sincronización en la nube para el historial de consultas.",
-  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "Orden personalizado para grupos de conexión. Los grupos enumerados aquí aparecen primero, otros ordenan alfabéticamente."
+  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "Orden personalizado para grupos de conexión. Los grupos enumerados aquí aparecen primero, otros ordenan alfabéticamente.",
+  "History: Change Passphrase": "Historial: Cambiar frase de contraseña",
+  "History: Reset Local Encryption (this device)": "Historial: Restablecer el cifrado local (este dispositivo)"
 }
