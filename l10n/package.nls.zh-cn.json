@@ -222,5 +222,17 @@
   "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "目前仅启用实验性 DBCode SQL 语言服务器（活动语句诊断和完成）、MariaDB 和 Postgres。",
   "Explain": "解释",
   "Analyze": "分析",
-  "Dry Run": "试运行"
+  "Dry Run": "试运行",
+  "Search History": "搜索历史",
+  "Search Connection Queries": "搜索连接查询",
+  "Search Database Queries": "搜索数据库查询",
+  "Open History as Table": "将历史记录作为表打开",
+  "Open Connection History as Table": "打开连接历史记录作为表",
+  "Open Database History as Table": "将数据库历史记录作为表打开",
+  "History: Enable Sync": "历史记录：启用同步",
+  "History: Disable Sync": "历史记录：禁用同步",
+  "History: Sync Now": "历史记录：立即同步",
+  "History: Syncing...": "历史记录：同步中...",
+  "Enable cloud sync for query history.": "为查询历史记录启用云同步。",
+  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "连接组的自定义顺序。此处列出的组首先显示，其他组按字母顺序排序。"
 }

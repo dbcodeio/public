@@ -222,5 +222,17 @@
   "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "目前僅啟用實驗性 DBCode SQL 語言伺服器 （作用中陳述式診斷和完成） MariaDB 和 Postgres。",
   "Explain": "說",
   "Analyze": "分析",
-  "Dry Run": "試運行"
+  "Dry Run": "試運行",
+  "Search History": "搜尋記錄",
+  "Search Connection Queries": "搜尋連線查詢",
+  "Search Database Queries": "搜尋資料庫查詢",
+  "Open History as Table": "以表格形式開啟歷程記錄",
+  "Open Connection History as Table": "開啟連線歷程記錄為表格",
+  "Open Database History as Table": "將資料庫歷程記錄開啟為表格",
+  "History: Enable Sync": "歷史記錄：啟用同步",
+  "History: Disable Sync": "歷史記錄：禁用同步",
+  "History: Sync Now": "歷史記錄：立即同步",
+  "History: Syncing...": "歷史：同步...",
+  "Enable cloud sync for query history.": "啟用查詢歷程記錄的雲端同步處理。",
+  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "連線群組的自訂順序。此處列出的群組首先顯示，其他群組按字母順序排序。"
 }

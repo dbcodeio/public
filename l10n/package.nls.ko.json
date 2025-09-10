@@ -222,5 +222,17 @@
   "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "실험적 DBCode SQL 언어 서버(활성 문 진단 및 완성), MariaDB 및 Postgres를 현재로만 활성화합니다.",
   "Explain": "설명하다",
   "Analyze": "분석",
-  "Dry Run": "드라이 런"
+  "Dry Run": "드라이 런",
+  "Search History": "검색 내역",
+  "Search Connection Queries": "연결 쿼리 검색",
+  "Search Database Queries": "데이터베이스 쿼리 검색",
+  "Open History as Table": "기록을 테이블로 열기",
+  "Open Connection History as Table": "연결 기록을 테이블로 열기",
+  "Open Database History as Table": "데이터베이스 기록을 테이블로 열기",
+  "History: Enable Sync": "기록: 동기화 활성화",
+  "History: Disable Sync": "기록: 동기화 비활성화",
+  "History: Sync Now": "기록: 지금 동기화",
+  "History: Syncing...": "기록: 동기화 중...",
+  "Enable cloud sync for query history.": "쿼리 기록에 대해 클라우드 동기화를 사용하도록 설정합니다.",
+  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "연결 그룹에 대한 사용자 지정 순서입니다. 여기에 나열된 그룹이 먼저 나타나고 다른 그룹은 알파벳순으로 정렬됩니다."
 }

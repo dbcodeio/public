@@ -222,5 +222,17 @@
   "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "Deneysel DBCode SQL dil sunucusunu (etkin deyim tanılama ve tamamlamalar), MariaDB ve Postgres'i yalnızca şu anda etkinleştirin.",
   "Explain": "Açıklamak",
   "Analyze": "Analiz",
-  "Dry Run": "Kuru Çalışma"
+  "Dry Run": "Kuru Çalışma",
+  "Search History": "Arama Geçmişi",
+  "Search Connection Queries": "Bağlantı sorgularını ara",
+  "Search Database Queries": "Veritabanı Sorgularını Ara",
+  "Open History as Table": "Geçmişi Tablo Olarak Aç",
+  "Open Connection History as Table": "Bağlantı Geçmişini Tablo Olarak Aç",
+  "Open Database History as Table": "Veritabanı Geçmişini Tablo Olarak Aç",
+  "History: Enable Sync": "Geçmiş: Senkronizasyonu Etkinleştir",
+  "History: Disable Sync": "Geçmiş: Senkronizasyonu Devre Dışı Bırak",
+  "History: Sync Now": "Geçmiş: Şimdi Senkronize Et",
+  "History: Syncing...": "Tarih: Senkronizasyon...",
+  "Enable cloud sync for query history.": "Sorgu geçmişi için bulut eşitlemeyi etkinleştirin.",
+  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "Bağlantı grupları için özel sipariş. Burada listelenen gruplar önce görünür, diğerleri alfabetik olarak sıralanır."
 }

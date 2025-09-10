@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.16.8",
+    "version": "1.16.11",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -256,6 +256,18 @@
                 "title": "%Sign In%",
                 "category": "DBCode",
                 "icon": "$(sign-in)"
+            },
+            {
+                "command": "dbcode.history.changePassphrase",
+                "title": "History: Change Passphrase",
+                "category": "DBCode",
+                "icon": "$(key)"
+            },
+            {
+                "command": "dbcode.history.resetLocalEncryption",
+                "title": "History: Reset Local Encryption (this device)",
+                "category": "DBCode",
+                "icon": "$(trash)"
             },
             {
                 "command": "dbcode.auth.signout",
@@ -703,6 +715,42 @@
                 "icon": "$(extensions-clear-search-results)"
             },
             {
+                "command": "dbcode.history.searchQueries",
+                "title": "%Search History%",
+                "category": "DBCode",
+                "icon": "$(search)"
+            },
+            {
+                "command": "dbcode.history.searchInConnection",
+                "title": "%Search Connection Queries%",
+                "category": "DBCode",
+                "icon": "$(search)"
+            },
+            {
+                "command": "dbcode.history.searchInDatabase",
+                "title": "%Search Database Queries%",
+                "category": "DBCode",
+                "icon": "$(search)"
+            },
+            {
+                "command": "dbcode.history.openAsTable",
+                "title": "%Open History as Table%",
+                "category": "DBCode",
+                "icon": "$(table)"
+            },
+            {
+                "command": "dbcode.history.openConnectionAsTable",
+                "title": "%Open Connection History as Table%",
+                "category": "DBCode",
+                "icon": "$(table)"
+            },
+            {
+                "command": "dbcode.history.openDatabaseAsTable",
+                "title": "%Open Database History as Table%",
+                "category": "DBCode",
+                "icon": "$(table)"
+            },
+            {
                 "command": "dbcode.history.expandAll",
                 "title": "%Expand All%",
                 "category": "DBCode",
@@ -715,6 +763,30 @@
                 "category": "DBCode",
                 "icon": "$(search-collapse-results)",
                 "enablement": "!dbcode.history.treeView"
+            },
+            {
+                "command": "dbcode.history.enableSync",
+                "title": "%History: Enable Sync%",
+                "category": "DBCode",
+                "icon": "$(sync-ignored)"
+            },
+            {
+                "command": "dbcode.history.disableSync",
+                "title": "%History: Disable Sync%",
+                "category": "DBCode",
+                "icon": "$(sync)"
+            },
+            {
+                "command": "dbcode.history.syncNow",
+                "title": "%History: Sync Now%",
+                "category": "DBCode",
+                "icon": "$(sync)"
+            },
+            {
+                "command": "dbcode.history.syncing",
+                "title": "%History: Syncing...%",
+                "category": "DBCode",
+                "icon": "$(sync~spin)"
             },
             {
                 "command": "dbcode.tables.create",
@@ -983,14 +1055,24 @@
                     "group": "navigation@5"
                 },
                 {
+                    "command": "dbcode.history.searchQueries",
+                    "when": "view == dbcode.history.view && config.dbcode.history.enabled",
+                    "group": "navigation@1"
+                },
+                {
+                    "command": "dbcode.history.openAsTable",
+                    "when": "view == dbcode.history.view && config.dbcode.history.enabled",
+                    "group": "navigation@2"
+                },
+                {
                     "command": "dbcode.history.filterQueries",
                     "when": "view == dbcode.history.view && config.dbcode.history.enabled && !dbcode.history.filtered",
-                    "group": "navigation@1"
+                    "group": "navigation@3"
                 },
                 {
                     "command": "dbcode.history.clearFilter",
                     "when": "view == dbcode.history.view && config.dbcode.history.enabled && dbcode.history.filtered",
-                    "group": "navigation@1"
+                    "group": "navigation@3"
                 },
                 {
                     "command": "dbcode.history.showAllQueries",
@@ -1011,6 +1093,21 @@
                     "command": "dbcode.history.collapseAll",
                     "when": "view == dbcode.history.view && dbcode.history.expanded == true && config.dbcode.history.enabled",
                     "group": "navigation@3"
+                },
+                {
+                    "command": "dbcode.history.enableSync",
+                    "when": "view == dbcode.history.view && config.dbcode.history.enabled && !config.dbcode.history.sync.enabled",
+                    "group": "navigation@4"
+                },
+                {
+                    "command": "dbcode.history.disableSync",
+                    "when": "view == dbcode.history.view && config.dbcode.history.enabled && config.dbcode.history.sync.enabled && !dbcode.history.syncing",
+                    "group": "navigation@4"
+                },
+                {
+                    "command": "dbcode.history.syncing",
+                    "when": "view == dbcode.history.view && config.dbcode.history.enabled && config.dbcode.history.sync.enabled && dbcode.history.syncing",
+                    "group": "navigation@4"
                 },
                 {
                     "command": "dbcode.favorites.removeAll",
@@ -1087,6 +1184,26 @@
                 {
                     "command": "dbcode.history.copysql",
                     "when": "view == dbcode.history.view && viewItem == query",
+                    "group": "inline@2"
+                },
+                {
+                    "command": "dbcode.history.searchInConnection",
+                    "when": "view == dbcode.history.view && viewItem == connection",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.history.openConnectionAsTable",
+                    "when": "view == dbcode.history.view && viewItem == connection",
+                    "group": "inline@2"
+                },
+                {
+                    "command": "dbcode.history.searchInDatabase",
+                    "when": "view == dbcode.history.view && viewItem == database",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.history.openDatabaseAsTable",
+                    "when": "view == dbcode.history.view && viewItem == database",
                     "group": "inline@2"
                 },
                 {
@@ -3004,6 +3121,11 @@
                         "type": "number",
                         "default": 2000,
                         "markdownDescription": "%Number of records to store per database.%"
+                    },
+                    "dbcode.history.sync.enabled": {
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "%Enable cloud sync for query history.%"
                     }
                 }
             },
@@ -3536,6 +3658,14 @@
                 "order": 999,
                 "type": "object",
                 "properties": {
+                    "dbcode.connectionGroupOrder": {
+                        "type": "array",
+                        "description": "%Custom order for connection groups. Groups listed here appear first, others sort alphabetically.%",
+                        "default": [],
+                        "items": {
+                            "type": "string"
+                        }
+                    },
                     "dbcode.connections": {
                         "type": "array",
                         "markdownDescription": "%Connections%",
@@ -3972,7 +4102,9 @@
         "vsixprepare": "npm run esbuild -- --minify",
         "lint": "npx @biomejs/biome check --write",
         "lint:file": "npx @biomejs/biome check --write",
-        "watch": "npm run esbuild -- --sourcemap --watch",
+        "watch": "npm run dev:build & npm run dev:server",
+        "dev:build": "npm run esbuild -- --sourcemap --watch",
+        "dev:server": "npx tsx ./scripts/dev-server.ts",
         "test": "vitest run",
         "test-e2e": "wdio run ./wdio.conf.ts",
         "esbuild": "npx tsx ./scripts/build.ts",
@@ -4116,6 +4248,7 @@
         "lit": "^3.2.1",
         "lodash-es": "^4.17.21",
         "mariadb": "^3.4.2",
+        "minisearch": "^7.1.2",
         "monaco-editor": "^0.52.2",
         "mongodb": "^6.14.0",
         "mssql": "^11.0.1",
@@ -4148,6 +4281,7 @@
         "trino-client": "^0.2.7",
         "tunnel-ssh": "^5.2.0",
         "typed-emitter": "^2.1.0",
+        "ulid": "^3.0.1",
         "unzipper": "^0.12.3",
         "validator": "^13.12.0",
         "vscode-messenger": "^0.4.5",
@@ -4155,6 +4289,7 @@
         "wkx": "^0.5.0",
         "xlsx": "^0.18.5",
         "yaml": "^2.7.0",
+        "yjs": "^13.6.27",
         "zod": "^3.24.2"
     }
 }

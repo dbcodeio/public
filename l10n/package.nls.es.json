@@ -222,5 +222,17 @@
   "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "Habilite el servidor de lenguaje DBCode SQL experimental (diagnósticos y finalizaciones de declaraciones activas) MariaDB y Postgres solo en este momento.",
   "Explain": "Explicar",
   "Analyze": "Analizar",
-  "Dry Run": "Simulacro"
+  "Dry Run": "Simulacro",
+  "Search History": "Historial de búsqueda",
+  "Search Connection Queries": "Buscar consultas de conexión",
+  "Search Database Queries": "Buscar consultas en bases de datos",
+  "Open History as Table": "Abrir historial como tabla",
+  "Open Connection History as Table": "Abrir el historial de conexiones como tabla",
+  "Open Database History as Table": "Abrir el historial de la base de datos como tabla",
+  "History: Enable Sync": "Historial: Habilitar sincronización",
+  "History: Disable Sync": "Historial: Desactivar la sincronización",
+  "History: Sync Now": "Historial: Sincronizar ahora",
+  "History: Syncing...": "Historial: Sincronizando...",
+  "Enable cloud sync for query history.": "Habilite la sincronización en la nube para el historial de consultas.",
+  "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "Orden personalizado para grupos de conexión. Los grupos enumerados aquí aparecen primero, otros ordenan alfabéticamente."
 }

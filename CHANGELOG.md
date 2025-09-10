@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.16.11 - 2025-09-10
+
+### Changed
+
+- Connection Groups: Added custom sorting via drag & drop. Groups can now be reordered by dragging them to new positions. #707
+- History: Added search, added table open. 
+- History: Added [multi-device sync](https://dbcode.io/docs/query/history-sync). #709
+- History: Converted storage format to binary crdt format.
+
+### Fixed
+
+- Results Grid: Cell editor now closes when clicking outside of it, and can be closed with Ctrl/Cmd+Enter. #107
+
 ## 1.16.8 - 2025-09-04
 
 ### Changed
