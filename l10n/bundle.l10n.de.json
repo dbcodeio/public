@@ -1705,7 +1705,6 @@
   "Background Fill (Time %)": "Hintergrundfüllung (Zeit %)",
   "Shows a subtle bar behind the operation proportional to Time %.": "Zeigt einen subtilen Balken hinter der Operation an, der proportional zur Zeit % ist.",
   "Parent % Badge": "Übergeordnetes %-Abzeichen",
-  "Displays how much of the parent’s time this node accounts for.": "Zeigt an, wie viel Zeit dieser Knoten auf den übergeordneten Knoten entfällt.",
   "Config": "Konfiguration",
   "Operation": "Operation",
   "Details": "Details",
@@ -1718,7 +1717,6 @@
   "Index Cond": "Index Cond",
   "Join Filter": "Filter beitreten",
   "Recheck Cond": "Cond erneut prüfen",
-  "Loading execution plan...": "Ausführungsplan wird geladen...",
   "Expand All": "Alle aufklappen",
   "Collapse All": "Alle einklappen",
   "Refresh Anyway": "Trotzdem aktualisieren",
@@ -1782,5 +1780,16 @@
   "Enter new encryption passphrase for history sync": "Geben Sie eine neue Verschlüsselungspassphrase für die Verlaufssynchronisierung ein",
   "Enter encryption passphrase for history sync": "Geben Sie die Verschlüsselungspassphrase für die Verlaufssynchronisierung ein",
   "History Sync encrypts and syncs your queries across devices. [Learn more](https://dbcode.io/docs/query/history-sync)": "History Sync verschlüsselt und synchronisiert Ihre Abfragen geräteübergreifend. [Mehr erfahren](https://dbcode.io/docs/query/history-sync)",
-  "Recommended minimum 12 characters": "Empfohlenes Minimum von 12 Zeichen"
+  "Recommended minimum 12 characters": "Empfohlenes Minimum von 12 Zeichen",
+  "Aggregate Numeric Columns": "Numerische Spalten aggregieren",
+  "Aggregate numeric columns on group rows": "Aggregieren numerischer Spalten in Gruppenzeilen",
+  "When enabled, numeric columns (e.g., Time, Rows) aggregate their values on group rows. When disabled, they display each operator's own value.": "Wenn diese Option aktiviert ist, aggregieren numerische Spalten (z. B. Zeit, Zeilen) ihre Werte in Gruppenzeilen. Wenn sie deaktiviert sind, zeigen sie den eigenen Wert jedes Operators an.",
+  "Displays how much of the parent's time this node accounts for.": "Zeigt an, wie viel Zeit dieser Knoten auf den übergeordneten Knoten entfällt.",
+  "Shuffle": "Durchmischung",
+  "Parallel": "Parallel",
+  "Wait %": "Warten %",
+  "Read %": "Lesen %",
+  "Compute %": "Berechnen %",
+  "Write %": "Schreiben %",
+  "Slot Time": "Spielautomat Zeit"
 }

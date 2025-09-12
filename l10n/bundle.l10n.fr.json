@@ -1705,7 +1705,6 @@
   "Background Fill (Time %)": "Remplissage de l’arrière-plan ( % de temps)",
   "Shows a subtle bar behind the operation proportional to Time %.": "Affiche une barre subtile derrière l’opération proportionnelle au % de temps.",
   "Parent % Badge": "Parent % Badge",
-  "Displays how much of the parent’s time this node accounts for.": "Affiche la quantité de temps que ce nœud représente pour le parent.",
   "Config": "Configurer",
   "Operation": "Opération",
   "Details": "Détails",
@@ -1718,7 +1717,6 @@
   "Index Cond": "Index Cond",
   "Join Filter": "Filtre de jointure",
   "Recheck Cond": "Revérifier Cond",
-  "Loading execution plan...": "Chargement du plan d’exécution...",
   "Expand All": "Tout afficher",
   "Collapse All": "Réduire tout",
   "Refresh Anyway": "Actualiser quand même",
@@ -1782,5 +1780,16 @@
   "Enter new encryption passphrase for history sync": "Entrez une nouvelle phrase secrète de chiffrement pour la synchronisation de l’historique",
   "Enter encryption passphrase for history sync": "Entrez la phrase secrète de chiffrement pour la synchronisation de l’historique",
   "History Sync encrypts and syncs your queries across devices. [Learn more](https://dbcode.io/docs/query/history-sync)": "La synchronisation de l’historique chiffre et synchronise vos requêtes sur tous les appareils. [En savoir plus](https://dbcode.io/docs/query/history-sync)",
-  "Recommended minimum 12 characters": "Minimum recommandé de 12 caractères"
+  "Recommended minimum 12 characters": "Minimum recommandé de 12 caractères",
+  "Aggregate Numeric Columns": "Agréger des colonnes numériques",
+  "Aggregate numeric columns on group rows": "Agréger des colonnes numériques sur des lignes de groupe",
+  "When enabled, numeric columns (e.g., Time, Rows) aggregate their values on group rows. When disabled, they display each operator's own value.": "Lorsque cette option est activée, les colonnes numériques (par exemple, Temps, Lignes) agrègent leurs valeurs sur des lignes de groupe. Lorsqu’ils sont désactivés, ils affichent la valeur propre à chaque opérateur.",
+  "Displays how much of the parent's time this node accounts for.": "Affiche la quantité de temps que ce nœud représente pour le parent.",
+  "Shuffle": "Mêler",
+  "Parallel": "Parallèle",
+  "Wait %": "% d’attente",
+  "Read %": "Lecture %",
+  "Compute %": "Calcul %",
+  "Write %": "% d’écriture",
+  "Slot Time": "Créneau horaire"
 }

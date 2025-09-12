@@ -1705,7 +1705,6 @@
   "Background Fill (Time %)": "Riempimento sfondo (% tempo)",
   "Shows a subtle bar behind the operation proportional to Time %.": "Mostra una sottile barra dietro l'operazione proporzionale alla % di tempo.",
   "Parent % Badge": "Badge % genitore",
-  "Displays how much of the parent’s time this node accounts for.": "Visualizza la quantità di tempo del nodo padre che rappresenta.",
   "Config": "Configurazione",
   "Operation": "Operazione",
   "Details": "Dettagli",
@@ -1718,7 +1717,6 @@
   "Index Cond": "Indice Cond",
   "Join Filter": "Join Filter",
   "Recheck Cond": "Ricontrolla Cond",
-  "Loading execution plan...": "Caricamento del piano di esecuzione...",
   "Expand All": "Espandi tutto",
   "Collapse All": "Comprimi tutto",
   "Refresh Anyway": "Aggiorna comunque",
@@ -1782,5 +1780,16 @@
   "Enter new encryption passphrase for history sync": "Inserisci una nuova passphrase di crittografia per la sincronizzazione della cronologia",
   "Enter encryption passphrase for history sync": "Immettere la passphrase di crittografia per la sincronizzazione della cronologia",
   "History Sync encrypts and syncs your queries across devices. [Learn more](https://dbcode.io/docs/query/history-sync)": "La sincronizzazione della cronologia crittografa e sincronizza le query su tutti i dispositivi. [Per saperne di più](https://dbcode.io/docs/query/history-sync)",
-  "Recommended minimum 12 characters": "Minimo consigliato 12 caratteri"
+  "Recommended minimum 12 characters": "Minimo consigliato 12 caratteri",
+  "Aggregate Numeric Columns": "Aggregare colonne numeriche",
+  "Aggregate numeric columns on group rows": "Aggregare colonne numeriche nelle righe del gruppo",
+  "When enabled, numeric columns (e.g., Time, Rows) aggregate their values on group rows. When disabled, they display each operator's own value.": "Se abilitata, le colonne numeriche (ad esempio, Ora, Righe) aggregano i loro valori su righe di gruppo. Se disabilitati, visualizzano il valore di ciascun operatore.",
+  "Displays how much of the parent's time this node accounts for.": "Visualizza la quantità di tempo del nodo padre che rappresenta.",
+  "Shuffle": "Cambiare",
+  "Parallel": "Parallelo",
+  "Wait %": "% di attesa",
+  "Read %": "Leggi %",
+  "Compute %": "Calcola %",
+  "Write %": "% scrittura",
+  "Slot Time": "Tempo di slot"
 }

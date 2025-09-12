@@ -1705,7 +1705,6 @@
   "Background Fill (Time %)": "Wypełnienie tła (%)",
   "Shows a subtle bar behind the operation proportional to Time %.": "Pokazuje subtelny pasek za operacją proporcjonalny do czasu %.",
   "Parent % Badge": "Odznaka nadrzędna %",
-  "Displays how much of the parent’s time this node accounts for.": "Wyświetla, jaką część czasu rodzica zajmuje ten węzeł.",
   "Config": "Konfiguracja",
   "Operation": "Operacja",
   "Details": "Szczegóły",
@@ -1718,7 +1717,6 @@
   "Index Cond": "Warunki indeksu",
   "Join Filter": "Filtr dołączania",
   "Recheck Cond": "Sprawdź ponownie warunek",
-  "Loading execution plan...": "Plan realizacji załadunku...",
   "Expand All": "Rozwiń wszystko",
   "Collapse All": "Zwiń wszystko",
   "Refresh Anyway": "Odśwież mimo to",
@@ -1782,5 +1780,16 @@
   "Enter new encryption passphrase for history sync": "Wprowadź nowe hasło szyfrowania do synchronizacji historii",
   "Enter encryption passphrase for history sync": "Wprowadź hasło szyfrowania do synchronizacji historii",
   "History Sync encrypts and syncs your queries across devices. [Learn more](https://dbcode.io/docs/query/history-sync)": "Synchronizacja historii szyfruje i synchronizuje zapytania między urządzeniami. [Dowiedz się więcej](https://dbcode.io/docs/query/history-sync)",
-  "Recommended minimum 12 characters": "Zalecane minimum 12 znaków"
+  "Recommended minimum 12 characters": "Zalecane minimum 12 znaków",
+  "Aggregate Numeric Columns": "Agregowanie kolumn liczbowych",
+  "Aggregate numeric columns on group rows": "Agregowanie kolumn liczbowych w wierszach grupy",
+  "When enabled, numeric columns (e.g., Time, Rows) aggregate their values on group rows. When disabled, they display each operator's own value.": "Gdy ta opcja jest włączona, kolumny liczbowe (np. Czas, Wiersze) agregują swoje wartości w wierszach grupy. Po wyłączeniu wyświetlają one własne wartości każdego operatora.",
+  "Displays how much of the parent's time this node accounts for.": "Wyświetla, jaką część czasu rodzica zajmuje ten węzeł.",
+  "Shuffle": "Tasować",
+  "Parallel": "Równoległy",
+  "Wait %": "Czekaj %",
+  "Read %": "Odczyt %",
+  "Compute %": "Obliczenia %",
+  "Write %": "Zapis %",
+  "Slot Time": "Czas slotu"
 }

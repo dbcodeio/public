@@ -1705,7 +1705,6 @@
   "Background Fill (Time %)": "背景填充（时间%）",
   "Shows a subtle bar behind the operation proportional to Time %.": "在作后面显示与时间 % 成正比的细微条形。",
   "Parent % Badge": "家长 % 徽章",
-  "Displays how much of the parent’s time this node accounts for.": "显示此节点占父节点的时间。",
   "Config": "配置",
   "Operation": "操作",
   "Details": "详",
@@ -1718,7 +1717,6 @@
   "Index Cond": "索引标准",
   "Join Filter": "联接过滤器",
   "Recheck Cond": "重新检查 Cond",
-  "Loading execution plan...": "正在加载执行计划...",
   "Expand All": "全部展开",
   "Collapse All": "全部折叠",
   "Refresh Anyway": "无论如何刷新",
@@ -1782,5 +1780,16 @@
   "Enter new encryption passphrase for history sync": "输入新的加密密码以进行历史同步",
   "Enter encryption passphrase for history sync": "输入历史同步的加密密码",
   "History Sync encrypts and syncs your queries across devices. [Learn more](https://dbcode.io/docs/query/history-sync)": "历史同步会加密并跨设备同步您的查询。[了解更多]（https://dbcode.io/docs/query/history-sync）",
-  "Recommended minimum 12 characters": "建议最少 12 个字符"
+  "Recommended minimum 12 characters": "建议最少 12 个字符",
+  "Aggregate Numeric Columns": "聚合数值列",
+  "Aggregate numeric columns on group rows": "聚合组行上的数值列",
+  "When enabled, numeric columns (e.g., Time, Rows) aggregate their values on group rows. When disabled, they display each operator's own value.": "启用后，数值列（例如，时间、行）会在组行上聚合其值。禁用后，它们会显示每个运算符自己的值。",
+  "Displays how much of the parent's time this node accounts for.": "显示此节点占父节点的时间。",
+  "Shuffle": "洗牌",
+  "Parallel": "平行",
+  "Wait %": "等待 %",
+  "Read %": "读取 %",
+  "Compute %": "计算 %",
+  "Write %": "写入 %",
+  "Slot Time": "时段时间"
 }

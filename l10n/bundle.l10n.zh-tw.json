@@ -1705,7 +1705,6 @@
   "Background Fill (Time %)": "背景填滿 （時間%）",
   "Shows a subtle bar behind the operation proportional to Time %.": "在作業後面顯示與時間 % 成比例的細微長條。",
   "Parent % Badge": "家長百分比徽章",
-  "Displays how much of the parent’s time this node accounts for.": "顯示此節點佔用父項的時間。",
   "Config": "組態",
   "Operation": "手術",
   "Details": "詳",
@@ -1718,7 +1717,6 @@
   "Index Cond": "索引條件",
   "Join Filter": "聯結篩選器",
   "Recheck Cond": "重新檢查 Cond",
-  "Loading execution plan...": "正在載入執行計劃...",
   "Expand All": "全部展開",
   "Collapse All": "全部收合",
   "Refresh Anyway": "無論如何刷新",
@@ -1782,5 +1780,16 @@
   "Enter new encryption passphrase for history sync": "輸入新的加密密碼以進行歷史同步",
   "Enter encryption passphrase for history sync": "輸入歷史同步的加密密碼",
   "History Sync encrypts and syncs your queries across devices. [Learn more](https://dbcode.io/docs/query/history-sync)": "歷史同步會加密並跨裝置同步您的查詢。[瞭解詳情]（https://dbcode.io/docs/query/history-sync）",
-  "Recommended minimum 12 characters": "建議最少 12 個字元"
+  "Recommended minimum 12 characters": "建議最少 12 個字元",
+  "Aggregate Numeric Columns": "彙總數值欄",
+  "Aggregate numeric columns on group rows": "彙總群組資料列上的數值資料行",
+  "When enabled, numeric columns (e.g., Time, Rows) aggregate their values on group rows. When disabled, they display each operator's own value.": "啟用時，數值欄 （例如時間、列） 會在群組列上彙總其值。停用時，它們會顯示每個運算子自己的值。",
+  "Displays how much of the parent's time this node accounts for.": "顯示此節點佔用父項的時間。",
+  "Shuffle": "跕",
+  "Parallel": "緯線",
+  "Wait %": "等待 %",
+  "Read %": "讀取 %",
+  "Compute %": "計算 %",
+  "Write %": "寫 %",
+  "Slot Time": "時段時間"
 }

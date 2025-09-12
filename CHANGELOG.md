@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.16.13 - 2025-09-12
+
+### Changed
+
+- Execution Plans: Added DuckDB and BigQuery support.
+- Execution Plans: Added config option to aggregate grouped column values.
+
+### Fixed
+
+- History: Fixed crash with large history files (300MB+) by removing dedicated search index. #715
+
+
 ## 1.16.12 - 2025-09-10
 
 ### Changed

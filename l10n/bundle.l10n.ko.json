@@ -1705,7 +1705,6 @@
   "Background Fill (Time %)": "배경 채우기(시간 %)",
   "Shows a subtle bar behind the operation proportional to Time %.": "시간 %에 비례하는 연산 뒤에 미묘한 막대를 표시합니다.",
   "Parent % Badge": "상위 % 배지",
-  "Displays how much of the parent’s time this node accounts for.": "이 노드가 차지하는 상위 시간을 표시합니다.",
   "Config": "구성",
   "Operation": "수술",
   "Details": "세부 정보",
@@ -1718,7 +1717,6 @@
   "Index Cond": "인덱스 컨드",
   "Join Filter": "조인 필터",
   "Recheck Cond": "Cond 다시 확인",
-  "Loading execution plan...": "실행 계획 로드 중...",
   "Expand All": "모두 확장",
   "Collapse All": "모두 축소",
   "Refresh Anyway": "어쨌든 새로 고침",
@@ -1782,5 +1780,16 @@
   "Enter new encryption passphrase for history sync": "기록 동기화를 위한 새 암호화 암호 입력",
   "Enter encryption passphrase for history sync": "기록 동기화를 위한 암호화 암호 입력",
   "History Sync encrypts and syncs your queries across devices. [Learn more](https://dbcode.io/docs/query/history-sync)": "History Sync는 여러 장치에서 쿼리를 암호화하고 동기화합니다. [자세히 알아보기](https://dbcode.io/docs/query/history-sync)",
-  "Recommended minimum 12 characters": "권장 최소 12자"
+  "Recommended minimum 12 characters": "권장 최소 12자",
+  "Aggregate Numeric Columns": "숫자 열 집계",
+  "Aggregate numeric columns on group rows": "그룹 행의 숫자 열 집계",
+  "When enabled, numeric columns (e.g., Time, Rows) aggregate their values on group rows. When disabled, they display each operator's own value.": "활성화되면 숫자 열(예: 시간, 행)이 그룹 행의 값을 집계합니다. 비활성화하면 각 연산자의 고유한 값이 표시됩니다.",
+  "Displays how much of the parent's time this node accounts for.": "이 노드가 차지하는 상위 시간을 표시합니다.",
+  "Shuffle": "뒤섞다",
+  "Parallel": "평행의",
+  "Wait %": "대기 %",
+  "Read %": "읽기 %",
+  "Compute %": "컴퓨팅 %",
+  "Write %": "쓰기 %",
+  "Slot Time": "슬롯 시간"
 }

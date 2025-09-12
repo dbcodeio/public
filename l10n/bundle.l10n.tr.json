@@ -1705,7 +1705,6 @@
   "Background Fill (Time %)": "Arka Plan Dolgusu (Zaman%)",
   "Shows a subtle bar behind the operation proportional to Time %.": "İşlemin arkasında Zaman % ile orantılı olarak ince bir çubuk gösterir.",
   "Parent % Badge": "Ebeveyn % Rozeti",
-  "Displays how much of the parent’s time this node accounts for.": "Bu düğümün ebeveynin zamanının ne kadarını oluşturduğunu gösterir.",
   "Config": "Yapılandırma",
   "Operation": "İşlem",
   "Details": "Şey",
@@ -1718,7 +1717,6 @@
   "Index Cond": "Endeks Devamı",
   "Join Filter": "Filtreye Katıl",
   "Recheck Cond": "Kond'u yeniden kontrol edin",
-  "Loading execution plan...": "Yürütme planı yükleniyor...",
   "Expand All": "Tümünü Genişlet",
   "Collapse All": "Tümünü Daralt",
   "Refresh Anyway": "Yine de Yenile",
@@ -1782,5 +1780,16 @@
   "Enter new encryption passphrase for history sync": "Geçmiş senkronizasyonu için yeni şifreleme parolası girin",
   "Enter encryption passphrase for history sync": "Geçmiş senkronizasyonu için şifreleme parolası girin",
   "History Sync encrypts and syncs your queries across devices. [Learn more](https://dbcode.io/docs/query/history-sync)": "History Sync, sorgularınızı şifreler ve cihazlar arasında senkronize eder. [Daha fazla bilgi edinin](https://dbcode.io/docs/query/history-sync)",
-  "Recommended minimum 12 characters": "Önerilen en az 12 karakter"
+  "Recommended minimum 12 characters": "Önerilen en az 12 karakter",
+  "Aggregate Numeric Columns": "Sayısal Sütunları Toplama",
+  "Aggregate numeric columns on group rows": "Grup satırlarındaki sayısal sütunları toplama",
+  "When enabled, numeric columns (e.g., Time, Rows) aggregate their values on group rows. When disabled, they display each operator's own value.": "Etkinleştirildiğinde, sayısal sütunlar (örneğin, Zaman, Satırlar) değerlerini grup satırlarında toplar. Devre dışı bırakıldığında her operatörün kendi değerini görüntüler.",
+  "Displays how much of the parent's time this node accounts for.": "Bu düğümün ebeveynin zamanının ne kadarını oluşturduğunu görüntüler.",
+  "Shuffle": "Karıştırmak",
+  "Parallel": "Koşut",
+  "Wait %": "Bekle %",
+  "Read %": "Okuma yüzdesi",
+  "Compute %": "İşlem yüzdesi",
+  "Write %": "% yaz",
+  "Slot Time": "Slot Zamanı"
 }

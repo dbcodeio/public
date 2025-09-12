@@ -831,7 +831,6 @@
   "Background Fill (Time %)": "Preenchimento de plano de fundo (% de tempo)",
   "Shows a subtle bar behind the operation proportional to Time %.": "Mostra uma barra sutil por trás da operação proporcional à % de tempo.",
   "Parent % Badge": "Selo de % pai",
-  "Displays how much of the parent’s time this node accounts for.": "Exibe quanto tempo do pai esse nó é responsável.",
   "Config": "Configuração",
   "Operation": "Operação",
   "Details": "Detalhes",
@@ -844,7 +843,6 @@
   "Index Cond": "Índice Cond",
   "Join Filter": "Filtro de junção",
   "Recheck Cond": "Verifique novamente o cond",
-  "Loading execution plan...": "Carregando plano de execução...",
   "Expand All": "Expandir tudo",
   "Collapse All": "Recolher tudo",
   "Refresh Anyway": "Atualize mesmo assim",
@@ -908,5 +906,16 @@
   "Enter new encryption passphrase for history sync": "Insira a nova senha de criptografia para sincronização do histórico",
   "Enter encryption passphrase for history sync": "Insira a senha de criptografia para sincronização do histórico",
   "History Sync encrypts and syncs your queries across devices. [Learn more](https://dbcode.io/docs/query/history-sync)": "A Sincronização de Histórico criptografa e sincroniza suas consultas entre dispositivos. [Saiba mais](https://dbcode.io/docs/query/history-sync)",
-  "Recommended minimum 12 characters": "Mínimo recomendado de 12 caracteres"
+  "Recommended minimum 12 characters": "Mínimo recomendado de 12 caracteres",
+  "Aggregate Numeric Columns": "Agregar colunas numéricas",
+  "Aggregate numeric columns on group rows": "Agregar colunas numéricas em linhas de grupo",
+  "When enabled, numeric columns (e.g., Time, Rows) aggregate their values on group rows. When disabled, they display each operator's own value.": "Quando ativadas, as colunas numéricas (por exemplo, Hora, Linhas) agregam seus valores em linhas de grupo. Quando desabilitados, eles exibem o valor próprio de cada operador.",
+  "Displays how much of the parent's time this node accounts for.": "Exibe quanto tempo do pai esse nó é responsável.",
+  "Shuffle": "Embaralhar",
+  "Parallel": "Paralelo",
+  "Wait %": "% de espera",
+  "Read %": "% de leitura",
+  "Compute %": "% de computação",
+  "Write %": "% de gravação",
+  "Slot Time": "Horário do slot"
 }

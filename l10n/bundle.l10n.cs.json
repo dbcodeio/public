@@ -1705,7 +1705,6 @@
   "Background Fill (Time %)": "Výplň pozadí (v %)",
   "Shows a subtle bar behind the operation proportional to Time %.": "Zobrazuje jemný pruh za operací úměrný Času %.",
   "Parent % Badge": "Odznak nadřazeného %",
-  "Displays how much of the parent’s time this node accounts for.": "Zobrazuje, kolik času rodič tento uzel započítává.",
   "Config": "Konfigurace",
   "Operation": "Operace",
   "Details": "Podrobnosti",
@@ -1718,7 +1717,6 @@
   "Index Cond": "Indexová podmínka",
   "Join Filter": "Filtr spojení",
   "Recheck Cond": "Znovu zkontrolovat stav",
-  "Loading execution plan...": "Načítání plánu provádění...",
   "Expand All": "Rozbalit vše",
   "Collapse All": "Sbalit vše",
   "Refresh Anyway": "Přesto obnovit",
@@ -1782,5 +1780,16 @@
   "Enter new encryption passphrase for history sync": "Zadejte nové šifrovací heslo pro synchronizaci historie",
   "Enter encryption passphrase for history sync": "Zadejte šifrovací heslo pro synchronizaci historie",
   "History Sync encrypts and syncs your queries across devices. [Learn more](https://dbcode.io/docs/query/history-sync)": "Synchronizace historie šifruje a synchronizuje vaše dotazy mezi zařízeními. [Další informace](https://dbcode.io/docs/query/history-sync)",
-  "Recommended minimum 12 characters": "Doporučeno minimálně 12 znaků"
+  "Recommended minimum 12 characters": "Doporučeno minimálně 12 znaků",
+  "Aggregate Numeric Columns": "Agregované číselné sloupce",
+  "Aggregate numeric columns on group rows": "Agregace číselných sloupců v řádcích skupiny",
+  "When enabled, numeric columns (e.g., Time, Rows) aggregate their values on group rows. When disabled, they display each operator's own value.": "Pokud je tato možnost povolena, číselné sloupce (např. Čas, Řádky) agregují své hodnoty na řádcích skupiny. Pokud je tato možnost vypnutá, zobrazují vlastní hodnotu každého operátora.",
+  "Displays how much of the parent's time this node accounts for.": "Zobrazuje, kolik času rodič tento uzel započítává.",
+  "Shuffle": "Zamíchat",
+  "Parallel": "Rovnoběžný",
+  "Wait %": "Počkejte %",
+  "Read %": "Čtení %",
+  "Compute %": "Výpočetní %",
+  "Write %": "Napište %",
+  "Slot Time": "Čas slotu"
 }

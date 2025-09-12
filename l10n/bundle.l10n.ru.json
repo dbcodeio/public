@@ -1705,7 +1705,6 @@
   "Background Fill (Time %)": "Заливка фона (% по времени)",
   "Shows a subtle bar behind the operation proportional to Time %.": "Показывает тонкую полосу за операцией, пропорциональную Time %.",
   "Parent % Badge": "Родительский % Значок",
-  "Displays how much of the parent’s time this node accounts for.": "Показывает, сколько времени родительского узла приходится на этот узел.",
   "Config": "Конфигурация",
   "Operation": "Операция",
   "Details": "Подробности",
@@ -1718,7 +1717,6 @@
   "Index Cond": "Индекс Конд",
   "Join Filter": "Фильтр соединений",
   "Recheck Cond": "Перепроверьте Cond",
-  "Loading execution plan...": "План выполнения загрузки...",
   "Expand All": "Развернуть все",
   "Collapse All": "Свернуть все",
   "Refresh Anyway": "Обновите в любом случае",
@@ -1782,5 +1780,16 @@
   "Enter new encryption passphrase for history sync": "Введите новую парольную фразу шифрования для синхронизации истории",
   "Enter encryption passphrase for history sync": "Введите парольную фразу шифрования для синхронизации истории",
   "History Sync encrypts and syncs your queries across devices. [Learn more](https://dbcode.io/docs/query/history-sync)": "History Sync шифрует и синхронизирует запросы между устройствами. [Подробности](https://dbcode.io/docs/query/history-sync)",
-  "Recommended minimum 12 characters": "Рекомендуемый минимум 12 символов"
+  "Recommended minimum 12 characters": "Рекомендуемый минимум 12 символов",
+  "Aggregate Numeric Columns": "Агрегирование числовых столбцов",
+  "Aggregate numeric columns on group rows": "Агрегирование числовых столбцов в групповых строках",
+  "When enabled, numeric columns (e.g., Time, Rows) aggregate their values on group rows. When disabled, they display each operator's own value.": "Когда этот параметр включен, числовые столбцы (например, «Время», «Строки») агрегируют свои значения по групповым строкам. Когда они отключены, они отображают собственное значение каждого оператора.",
+  "Displays how much of the parent's time this node accounts for.": "Показывает, сколько времени родительского узла приходится на этот узел.",
+  "Shuffle": "Шаркать",
+  "Parallel": "Параллельный",
+  "Wait %": "Ожидание %",
+  "Read %": "Читать %",
+  "Compute %": "Вычислительные ресурсы %",
+  "Write %": "Запись %",
+  "Slot Time": "Время в слоте"
 }
