@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.16.14 - 2025-09-15
+
+### Changed
+
+- View Editing: View editing is now supported for databases that support it.
+- Inspector: the inspector panel now has a map icon, which will render geo data on a map. #566
+
+### Fixed
+
+- Results: Date filters were not loading with fully loaded data. #721
+- History: Fixed issue where truncated SQL was being used when loading or copying queries from the tree view instead of full SQL. #720
+- LibSQL: Not correctly detecting libc on linux systems causing failure to download the native bindings. #718
+- Chat: Fixed issue where where VSCode was trying to infer the default connection, and it was not set. #656
+
 ## 1.16.13 - 2025-09-12
 
 ### Changed

@@ -236,5 +236,8 @@
   "Enable cloud sync for query history.": "Povolte cloudovou synchronizaci pro historii dotazů.",
   "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "Vlastní pořadí pro skupiny připojení. Zde uvedené skupiny se zobrazují jako první, ostatní jsou seřazeny podle abecedy.",
   "History: Change Passphrase": "Historie: Změna přístupové fráze",
-  "History: Reset Local Encryption (this device)": "Historie: Resetovat místní šifrování (toto zařízení)"
+  "History: Reset Local Encryption (this device)": "Historie: Resetovat místní šifrování (toto zařízení)",
+  "Open": "Otevřený",
+  "Alter": "Proměnit",
+  "Create": "Vytvářet"
 }

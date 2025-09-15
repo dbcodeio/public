@@ -236,5 +236,8 @@
   "Enable cloud sync for query history.": "为查询历史记录启用云同步。",
   "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "连接组的自定义顺序。此处列出的组首先显示，其他组按字母顺序排序。",
   "History: Change Passphrase": "历史记录：更改密码",
-  "History: Reset Local Encryption (this device)": "历史记录：重置本地加密（此设备）"
+  "History: Reset Local Encryption (this device)": "历史记录：重置本地加密（此设备）",
+  "Open": "打开",
+  "Alter": "改变",
+  "Create": "创造"
 }

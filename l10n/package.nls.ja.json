@@ -236,5 +236,8 @@
   "Enable cloud sync for query history.": "クエリ履歴のクラウド同期を有効にします。",
   "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "接続グループのカスタムオーダー。ここにリストされているグループが最初に表示され、他のグループはアルファベット順に並べ替えられます。",
   "History: Change Passphrase": "履歴: パスフレーズの変更",
-  "History: Reset Local Encryption (this device)": "履歴:ローカル暗号化のリセット(このデバイス)"
+  "History: Reset Local Encryption (this device)": "履歴:ローカル暗号化のリセット(このデバイス)",
+  "Open": "開ける",
+  "Alter": "変える",
+  "Create": "創造する"
 }

@@ -236,5 +236,8 @@
   "Enable cloud sync for query history.": "쿼리 기록에 대해 클라우드 동기화를 사용하도록 설정합니다.",
   "Custom order for connection groups. Groups listed here appear first, others sort alphabetically.": "연결 그룹에 대한 사용자 지정 순서입니다. 여기에 나열된 그룹이 먼저 나타나고 다른 그룹은 알파벳순으로 정렬됩니다.",
   "History: Change Passphrase": "기록: 암호 변경",
-  "History: Reset Local Encryption (this device)": "기록: 로컬 암호화 재설정(이 장치)"
+  "History: Reset Local Encryption (this device)": "기록: 로컬 암호화 재설정(이 장치)",
+  "Open": "열다",
+  "Alter": "바꾸다",
+  "Create": "창조하다"
 }
