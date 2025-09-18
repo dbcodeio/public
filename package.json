@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.16.14",
+    "version": "1.16.15",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -865,6 +865,16 @@
                 "category": "DBCode"
             },
             {
+                "command": "dbcode.editor.context.openTable",
+                "title": "%Open%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.editor.context.openTableWithLimit",
+                "title": "%Open with limit...%",
+                "category": "DBCode"
+            },
+            {
                 "command": "dbcode.tables.diagram",
                 "title": "%Entity Relationship Diagram%",
                 "category": "DBCode"
@@ -1566,6 +1576,16 @@
                     "when": "resourceLangId == sql && !editorHasSelection && resourceScheme == dbcode",
                     "command": "dbcode.editor.apply",
                     "group": "navigatio@1"
+                },
+                {
+                    "when": "resourceLangId == sql && dbcode.editor.tableContextAvailable",
+                    "command": "dbcode.editor.context.openTable",
+                    "group": "navigation@90"
+                },
+                {
+                    "when": "resourceLangId == sql && dbcode.editor.tableContextAvailable",
+                    "command": "dbcode.editor.context.openTableWithLimit",
+                    "group": "navigation@91"
                 }
             ],
             "notebook/toolbar": [
@@ -4209,7 +4229,7 @@
         "prepare": "husky install",
         "postinstall": "patch-package",
         "version": "tsx ./scripts/changelog.ts && git add CHANGELOG.md",
-        "check-types:file": "tsc --noEmit --skipLibCheck --experimentalDecorators --types ./src/types --lib es2023,dom --target es2022 --module commonjs",
+        "check-types:file": "node ./scripts/check-types-file.js",
         "ls:fetch-grammars": "tsx scripts/ls-fetch-grammars.ts",
         "ls:generate": "tsx scripts/ls-generate-grammars.ts",
         "ls:benchmark:semantic": "tsx benchmarks/ls-benchmark-semantic.ts",

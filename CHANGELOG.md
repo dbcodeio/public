@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.16.15 - 2025-09-18
+
+### Changed
+
+- Editor: Go to definition (cmd/ctrl+click) on tables, views, procedures, functions, etc now opens the alter intent.
+- Editor: Right click on tables, views, etc to select open and open with limit options.
+- Firebase: Fixed date handling, removed from preview. 
+
+### Fixed
+
+- Scripting: restored explicit column expansion for the `SELECT` script option. #726
+- Roles: classify CALL/EXEC statements as EXECUTE rather than unknown. #725
+
 ## 1.16.14 - 2025-09-15
 
 ### Changed
