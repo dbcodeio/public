@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.17.0 - 2025-09-19
+
+### Changed
+
+- Athena: Added initial support for Athena. #279
+- Trino: Added view support, as well as execution metadata. #279
+- Execution Plans: Modified plan format to be more driver based, added support for all existing databases that can produce plans. #376
+
+### Fixed
+
+- Results Grid: Inline edits now close when you click empty grid space, including Monaco-backed editors.
+
 ## 1.16.15 - 2025-09-18
 
 ### Changed
