@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.17.2 - 2025-09-22
+
+### Changed
+
+- Connections: Added Copy Connection String to context menu of connections. #550
+- Connections: Support variable substitution in SSL/TLS certificate paths. #728
+- Redshift: Introspection now surfaces distribution/sort keys.
+
+### Fixed
+
+- Results Grid: Ensure keyboard shortcuts work even when focus is on the toolbar or empty grid space.
+
 ## 1.17.0 - 2025-09-19
 
 ### Changed

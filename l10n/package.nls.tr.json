@@ -239,5 +239,6 @@
   "History: Reset Local Encryption (this device)": "Geçmiş: Yerel Şifrelemeyi Sıfırla (bu cihaz)",
   "Open": "Açık",
   "Alter": "Değiştirmek",
-  "Create": "Yaratmak"
+  "Create": "Yaratmak",
+  "Copy Connection String": "Bağlantı Dizesini Kopyala"
 }

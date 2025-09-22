@@ -239,5 +239,6 @@
   "History: Reset Local Encryption (this device)": "历史记录：重置本地加密（此设备）",
   "Open": "打开",
   "Alter": "改变",
-  "Create": "创造"
+  "Create": "创造",
+  "Copy Connection String": "复制连接字符串"
 }

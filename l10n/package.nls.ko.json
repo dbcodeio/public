@@ -239,5 +239,6 @@
   "History: Reset Local Encryption (this device)": "기록: 로컬 암호화 재설정(이 장치)",
   "Open": "열다",
   "Alter": "바꾸다",
-  "Create": "창조하다"
+  "Create": "창조하다",
+  "Copy Connection String": "연결 문자열 복사"
 }

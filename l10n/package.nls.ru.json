@@ -239,5 +239,6 @@
   "History: Reset Local Encryption (this device)": "История: Сброс локального шифрования (это устройство)",
   "Open": "Открытый",
   "Alter": "Изменить",
-  "Create": "Создавать"
+  "Create": "Создавать",
+  "Copy Connection String": "Скопировать строку подключения"
 }

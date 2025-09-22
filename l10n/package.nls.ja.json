@@ -239,5 +239,6 @@
   "History: Reset Local Encryption (this device)": "履歴:ローカル暗号化のリセット(このデバイス)",
   "Open": "開ける",
   "Alter": "変える",
-  "Create": "創造する"
+  "Create": "創造する",
+  "Copy Connection String": "接続文字列のコピー"
 }

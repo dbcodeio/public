@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.17.0",
+    "version": "1.17.2",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -48,7 +48,9 @@
         "Greenplum",
         "ClickHouse",
         "Dataverse (Power Platform)",
-        "Trino"
+        "Trino",
+        "Athena",
+        "DynamoDB"
     ],
     "categories": [
         "AI",
@@ -605,6 +607,12 @@
                 "title": "%Copy Connection%",
                 "category": "DBCode",
                 "icon": "$(copy)"
+            },
+            {
+                "command": "dbcode.connections.copyConnectionString",
+                "title": "%Copy Connection String%",
+                "category": "DBCode",
+                "icon": "$(link)"
             },
             {
                 "command": "dbcode.connections.select",
@@ -1365,6 +1373,11 @@
                     "command": "dbcode.connections.copy",
                     "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~edit~/",
                     "group": "2edit@2"
+                },
+                {
+                    "command": "dbcode.connections.copyConnectionString",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~copyConnectionString~/",
+                    "group": "zzzommon@2"
                 },
                 {
                     "command": "dbcode.connections.remove",
@@ -4318,6 +4331,8 @@
     "dependencies": {
         "@ag-grid-community/styles": "^32.3.4",
         "@aws-sdk/client-athena": "^3.810.0",
+        "@aws-sdk/client-dynamodb": "^3.893.0",
+        "@aws-sdk/lib-dynamodb": "^3.893.0",
         "@blocknote/core": "^0.31.0",
         "@blocknote/mantine": "^0.31.0",
         "@blocknote/react": "^0.31.0",

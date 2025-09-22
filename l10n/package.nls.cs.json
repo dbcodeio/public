@@ -239,5 +239,6 @@
   "History: Reset Local Encryption (this device)": "Historie: Resetovat místní šifrování (toto zařízení)",
   "Open": "Otevřený",
   "Alter": "Proměnit",
-  "Create": "Vytvářet"
+  "Create": "Vytvářet",
+  "Copy Connection String": "Kopírovat připojovací řetězec"
 }

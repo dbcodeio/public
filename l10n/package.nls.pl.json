@@ -239,5 +239,6 @@
   "History: Reset Local Encryption (this device)": "Historia: Zresetuj szyfrowanie lokalne (to urządzenie)",
   "Open": "Otwierać",
   "Alter": "Zmienić",
-  "Create": "Tworzyć"
+  "Create": "Tworzyć",
+  "Copy Connection String": "Kopiowanie parametrów połączenia"
 }
