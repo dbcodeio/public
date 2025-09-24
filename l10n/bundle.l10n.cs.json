@@ -1903,5 +1903,10 @@
   "day": "Den",
   "hour": "Hodina",
   "minute": "Minuta",
-  "second": "Vteřina"
+  "second": "Vteřina",
+  "Post-Connection SQL": "SQL po připojení",
+  "Post-connection SQL requires DBCode Pro/Team. The script was not executed for connection {0}.": "SQL po připojení vyžaduje DBCode Pro/Team. Skript nebyl spuštěn pro {0} připojení.",
+  "Error running post-connection SQL for {0}. Script: {1}. Error: {2}": "Chyba při spuštění SQL po připojení pro {0}. Skript: {1}. Chyba: {2}",
+  "Runs immediately after the connection opens. Separate multiple statements with semicolons.": "Spustí se okamžitě po otevření připojení. Více příkazů oddělte středníky.",
+  "Requires an active DBCode Pro/Team subscription.": "Vyžaduje aktivní předplatné DBCode Pro/Team."
 }

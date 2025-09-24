@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.17.3 - 2025-09-24
+
+### Changed
+
+- Connections: Post-connection SQL execution option added to connection config (requires Pro/Team). #729
+
+### Fixed
+
+- Redshift: Could not open additional connections while introspection was running. 
+
 ## 1.17.2 - 2025-09-22
 
 ### Changed

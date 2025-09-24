@@ -1903,5 +1903,10 @@
   "day": "日",
   "hour": "小时",
   "minute": "分钟",
-  "second": "第二"
+  "second": "第二",
+  "Post-Connection SQL": "连接后 SQL",
+  "Post-connection SQL requires DBCode Pro/Team. The script was not executed for connection {0}.": "连接后 SQL 需要 DBCode Pro/Team。未执行该脚本以进行连接{0}。",
+  "Error running post-connection SQL for {0}. Script: {1}. Error: {2}": "运行连接后 SQL for {0}时出错。脚本：{1}。错误：{2}",
+  "Runs immediately after the connection opens. Separate multiple statements with semicolons.": "连接打开后立即运行。用分号分隔多个语句。",
+  "Requires an active DBCode Pro/Team subscription.": "需要有效的 DBCode Pro/Team 订阅。"
 }

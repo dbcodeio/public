@@ -1903,5 +1903,10 @@
   "day": "Dzień",
   "hour": "Godzina",
   "minute": "Minuta",
-  "second": "Sekunda"
+  "second": "Sekunda",
+  "Post-Connection SQL": "Język SQL po nawiązaniu połączenia",
+  "Post-connection SQL requires DBCode Pro/Team. The script was not executed for connection {0}.": "Język SQL po nawiązaniu połączenia wymaga programu DBCode Pro/Team. Skrypt nie został wykonany dla {0} połączenia.",
+  "Error running post-connection SQL for {0}. Script: {1}. Error: {2}": "Błąd podczas uruchamiania programu SQL po nawiązaniu połączenia dla {0}. Scenariusz: {1}. Błąd: {2}",
+  "Runs immediately after the connection opens. Separate multiple statements with semicolons.": "Uruchamia się natychmiast po otwarciu połączenia. Oddziel wiele instrukcji średnikami.",
+  "Requires an active DBCode Pro/Team subscription.": "Wymaga aktywnej subskrypcji DBCode Pro/Team."
 }

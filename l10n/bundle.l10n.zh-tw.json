@@ -1903,5 +1903,10 @@
   "day": "日",
   "hour": "小時",
   "minute": "纖",
-  "second": "秒"
+  "second": "秒",
+  "Post-Connection SQL": "連線後 SQL",
+  "Post-connection SQL requires DBCode Pro/Team. The script was not executed for connection {0}.": "連接後 SQL 需要 DBCode Pro/Team。未執行指令碼以進行連線{0}。",
+  "Error running post-connection SQL for {0}. Script: {1}. Error: {2}": "執行連線後 SQL for {0} 時發生錯誤。指令碼：{1}。錯誤：{2}",
+  "Runs immediately after the connection opens. Separate multiple statements with semicolons.": "在連線開啟後立即執行。用分號分隔多個陳述式。",
+  "Requires an active DBCode Pro/Team subscription.": "需要有效的 DBCode Pro/Team 訂閱。"
 }

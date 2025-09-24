@@ -1903,5 +1903,10 @@
   "day": "Giorno",
   "hour": "Ora",
   "minute": "Minuto",
-  "second": "Secondo"
+  "second": "Secondo",
+  "Post-Connection SQL": "SQL post-connessione",
+  "Post-connection SQL requires DBCode Pro/Team. The script was not executed for connection {0}.": "L'SQL post-connessione richiede DBCode Pro/Team. Lo script non è stato eseguito per la connessione {0}.",
+  "Error running post-connection SQL for {0}. Script: {1}. Error: {2}": "Errore durante l'esecuzione di SQL post-connessione per {0}. Script: {1}. Errore: {2}",
+  "Runs immediately after the connection opens. Separate multiple statements with semicolons.": "Viene eseguito immediatamente dopo l'apertura della connessione. Separare più istruzioni con punti e virgola.",
+  "Requires an active DBCode Pro/Team subscription.": "Richiede un abbonamento DBCode Pro/Team attivo."
 }

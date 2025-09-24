@@ -1903,5 +1903,10 @@
   "day": "Gün",
   "hour": "Saat",
   "minute": "Dakika",
-  "second": "Saniye"
+  "second": "Saniye",
+  "Post-Connection SQL": "Bağlantı Sonrası SQL",
+  "Post-connection SQL requires DBCode Pro/Team. The script was not executed for connection {0}.": "Bağlantı sonrası SQL için DBCode Pro/Team gerekir. Komut dosyası bağlantı {0} için yürütülmedi.",
+  "Error running post-connection SQL for {0}. Script: {1}. Error: {2}": "{0} için bağlantı sonrası SQL çalıştırılırken hata oluştu. Komut Dosyası: {1}. Hata: {2}",
+  "Runs immediately after the connection opens. Separate multiple statements with semicolons.": "Bağlantı açıldıktan hemen sonra çalışır. Birden çok deyimi noktalı virgülle ayırın.",
+  "Requires an active DBCode Pro/Team subscription.": "Etkin bir DBCode Pro/Team aboneliği gerektirir."
 }

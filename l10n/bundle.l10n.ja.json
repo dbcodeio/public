@@ -1906,5 +1906,10 @@
   "day": "日",
   "hour": "時",
   "minute": "分",
-  "second": "秒"
+  "second": "秒",
+  "Post-Connection SQL": "接続後の SQL",
+  "Post-connection SQL requires DBCode Pro/Team. The script was not executed for connection {0}.": "接続後のSQLにはDBCode Pro/Teamが必要です。接続{0}のためにスクリプトが実行されませんでした。",
+  "Error running post-connection SQL for {0}. Script: {1}. Error: {2}": "{0} の接続後 SQL の実行中にエラーが発生しました。スクリプト: {1}. エラー: {2}",
+  "Runs immediately after the connection opens. Separate multiple statements with semicolons.": "接続が開いた直後に実行されます。複数のステートメントはセミコロンで区切ります。",
+  "Requires an active DBCode Pro/Team subscription.": "アクティブなDBCode Pro/Teamサブスクリプションが必要です。"
 }
