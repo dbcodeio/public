@@ -2,6 +2,7 @@
   "10": "10",
   "20": "20",
   "50": "50",
+  "60": "60",
   "100": "100",
   "200": "200",
   "500": "500",
@@ -1908,5 +1909,16 @@
   "Post-connection SQL requires DBCode Pro/Team. The script was not executed for connection {0}.": "連接後 SQL 需要 DBCode Pro/Team。未執行指令碼以進行連線{0}。",
   "Error running post-connection SQL for {0}. Script: {1}. Error: {2}": "執行連線後 SQL for {0} 時發生錯誤。指令碼：{1}。錯誤：{2}",
   "Runs immediately after the connection opens. Separate multiple statements with semicolons.": "在連線開啟後立即執行。用分號分隔多個陳述式。",
-  "Requires an active DBCode Pro/Team subscription.": "需要有效的 DBCode Pro/Team 訂閱。"
+  "Requires an active DBCode Pro/Team subscription.": "需要有效的 DBCode Pro/Team 訂閱。",
+  "No settings configured": "未設定任何設定",
+  "setting_name": "setting_name",
+  "value": "價",
+  "Remove setting": "移除設定",
+  "Add setting": "新增設定",
+  "No SQL to copy.": "沒有要複製的 SQL。",
+  "Driver Settings": "驅動程式設定",
+  "Add Setting": "新增設定",
+  "Configure additional <a class=\"link\" href=\"https://clickhouse.com/docs/operations/settings/settings\" target=\"_blank\">ClickHouse settings</a>.": "配置其他 <a class=\"link\" href=\"https://clickhouse.com/docs/operations/settings/settings\" target=\"_blank\">ClickHouse 設定</a>。",
+  "No additional settings configured": "未配置其他設定",
+  "max_execution_time": "max_execution_time"
 }

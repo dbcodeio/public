@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.17.3",
+    "version": "1.17.4",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -699,6 +699,12 @@
                 "icon": "$(beaker)"
             },
             {
+                "command": "dbcode.editor.copyQuery",
+                "title": "%Copy Query%",
+                "category": "DBCode",
+                "icon": "$(copy)"
+            },
+            {
                 "command": "dbcode.favorites.addScript",
                 "title": "%Add to DBCode Favorites%",
                 "category": "DBCode",
@@ -959,6 +965,12 @@
                 "key": "windows+enter",
                 "mac": "cmd+enter",
                 "when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode"
+            },
+            {
+                "command": "dbcode.editor.copyQuery",
+                "key": "ctrl+alt+c",
+                "mac": "cmd+ctrl+c",
+                "when": "editorTextFocus && (editorLangId == sql || resourceFilename =~ /.sql$/)"
             },
             {
                 "command": "dbcode.editor.apply",
@@ -1574,6 +1586,11 @@
                     "when": "resourceLangId == sql && editorHasSelection",
                     "command": "dbcode.editor.execute#selection",
                     "group": "navigation@1"
+                },
+                {
+                    "when": "resourceLangId == sql && !editorHasSelection",
+                    "command": "dbcode.editor.copyQuery",
+                    "group": "navigation@1.5"
                 },
                 {
                     "when": "resourceLangId == sql && editorHasSelection",
@@ -4359,7 +4376,7 @@
         "antlr4-c3": "^3.4.4",
         "antlr4ng": "^3.0.16",
         "base64-js": "^1.5.1",
-        "better-sqlite3-multiple-ciphers": "11.3.0",
+        "better-sqlite3-multiple-ciphers": "^12.4.1",
         "cassandra-driver": "^4.8.0",
         "cbor-x": "^1.6.0",
         "chevrotain": "^11.0.3",

@@ -240,5 +240,6 @@
   "Open": "開ける",
   "Alter": "変える",
   "Create": "創造する",
-  "Copy Connection String": "接続文字列のコピー"
+  "Copy Connection String": "接続文字列のコピー",
+  "Copy Query": "クエリのコピー"
 }

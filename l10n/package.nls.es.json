@@ -240,5 +240,6 @@
   "Open": "Abrir",
   "Alter": "Alterar",
   "Create": "Crear",
-  "Copy Connection String": "Copiar cadena de conexión"
+  "Copy Connection String": "Copiar cadena de conexión",
+  "Copy Query": "Copiar consulta"
 }

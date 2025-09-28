@@ -2,6 +2,7 @@
   "10": "10",
   "20": "20",
   "50": "50",
+  "60": "60",
   "100": "100",
   "200": "200",
   "500": "500",
@@ -1908,5 +1909,16 @@
   "Post-connection SQL requires DBCode Pro/Team. The script was not executed for connection {0}.": "연결 후 SQL에는 DBCode Pro/Team이 필요합니다. 연결 {0}에 대해 스크립트가 실행되지 않았습니다.",
   "Error running post-connection SQL for {0}. Script: {1}. Error: {2}": "{0}에 대한 연결 후 SQL을 실행하는 동안 오류가 발생했습니다. 스크립트: {1}. 오류: {2}",
   "Runs immediately after the connection opens. Separate multiple statements with semicolons.": "연결이 열린 직후에 실행됩니다. 여러 문장을 세미콜론으로 구분합니다.",
-  "Requires an active DBCode Pro/Team subscription.": "활성 DBCode Pro/Team 구독이 필요합니다."
+  "Requires an active DBCode Pro/Team subscription.": "활성 DBCode Pro/Team 구독이 필요합니다.",
+  "No settings configured": "구성된 설정이 없습니다.",
+  "setting_name": "setting_name",
+  "value": "값",
+  "Remove setting": "설정 제거",
+  "Add setting": "설정 추가",
+  "No SQL to copy.": "복사할 SQL이 없습니다.",
+  "Driver Settings": "드라이버 설정",
+  "Add Setting": "설정 추가",
+  "Configure additional <a class=\"link\" href=\"https://clickhouse.com/docs/operations/settings/settings\" target=\"_blank\">ClickHouse settings</a>.": "추가 <a class=\"link\" href=\"https://clickhouse.com/docs/operations/settings/settings\" target=\"_blank\">ClickHouse 설정을</a> 구성합니다.",
+  "No additional settings configured": "추가 설정이 구성되지 않았습니다.",
+  "max_execution_time": "max_execution_time"
 }

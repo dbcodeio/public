@@ -2,6 +2,7 @@
   "10": "10",
   "20": "20",
   "50": "50",
+  "60": "60",
   "100": "100",
   "200": "200",
   "500": "500",
@@ -1908,5 +1909,16 @@
   "Post-connection SQL requires DBCode Pro/Team. The script was not executed for connection {0}.": "Для SQL после подключения требуется DBCode Pro/Team. Скрипт не был выполнен для подключения {0}.",
   "Error running post-connection SQL for {0}. Script: {1}. Error: {2}": "Ошибка при выполнении SQL после подключения для {0}. Сценарий: {1}. Ошибка: {2}",
   "Runs immediately after the connection opens. Separate multiple statements with semicolons.": "Запускается сразу после открытия соединения. Разделяйте несколько утверждений точкой с запятой.",
-  "Requires an active DBCode Pro/Team subscription.": "Требуется активная подписка DBCode Pro/Team."
+  "Requires an active DBCode Pro/Team subscription.": "Требуется активная подписка DBCode Pro/Team.",
+  "No settings configured": "Настройки не настроены",
+  "setting_name": "setting_name",
+  "value": "ценность",
+  "Remove setting": "Удалить настройку",
+  "Add setting": "Добавить настройку",
+  "No SQL to copy.": "Нет SQL для копирования.",
+  "Driver Settings": "Настройки драйвера",
+  "Add Setting": "Добавить настройку",
+  "Configure additional <a class=\"link\" href=\"https://clickhouse.com/docs/operations/settings/settings\" target=\"_blank\">ClickHouse settings</a>.": "Настройте дополнительные <a class=\"link\" href=\"https://clickhouse.com/docs/operations/settings/settings\" target=\"_blank\">параметры ClickHouse</a>.",
+  "No additional settings configured": "Никаких дополнительных настроек не настраивается",
+  "max_execution_time": "max_execution_time"
 }

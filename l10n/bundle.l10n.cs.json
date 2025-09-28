@@ -2,6 +2,7 @@
   "10": "10",
   "20": "20",
   "50": "50",
+  "60": "60",
   "100": "100",
   "200": "200",
   "500": "500",
@@ -1908,5 +1909,16 @@
   "Post-connection SQL requires DBCode Pro/Team. The script was not executed for connection {0}.": "SQL po připojení vyžaduje DBCode Pro/Team. Skript nebyl spuštěn pro {0} připojení.",
   "Error running post-connection SQL for {0}. Script: {1}. Error: {2}": "Chyba při spuštění SQL po připojení pro {0}. Skript: {1}. Chyba: {2}",
   "Runs immediately after the connection opens. Separate multiple statements with semicolons.": "Spustí se okamžitě po otevření připojení. Více příkazů oddělte středníky.",
-  "Requires an active DBCode Pro/Team subscription.": "Vyžaduje aktivní předplatné DBCode Pro/Team."
+  "Requires an active DBCode Pro/Team subscription.": "Vyžaduje aktivní předplatné DBCode Pro/Team.",
+  "No settings configured": "Nejsou nakonfigurována žádná nastavení",
+  "setting_name": "setting_name",
+  "value": "hodnota",
+  "Remove setting": "Odebrat nastavení",
+  "Add setting": "Přidat nastavení",
+  "No SQL to copy.": "Žádné SQL ke kopírování.",
+  "Driver Settings": "Nastavení ovladače",
+  "Add Setting": "Přidat nastavení",
+  "Configure additional <a class=\"link\" href=\"https://clickhouse.com/docs/operations/settings/settings\" target=\"_blank\">ClickHouse settings</a>.": "Nakonfigurujte další <a class=\"link\" href=\"https://clickhouse.com/docs/operations/settings/settings\" target=\"_blank\">nastavení ClickHouse</a>.",
+  "No additional settings configured": "Nejsou nakonfigurovaná žádná další nastavení",
+  "max_execution_time": "max_execution_time"
 }

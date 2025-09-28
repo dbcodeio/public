@@ -2,6 +2,7 @@
   "10": "10",
   "20": "20",
   "50": "50",
+  "60": "60",
   "100": "100",
   "200": "200",
   "500": "500",
@@ -1908,5 +1909,16 @@
   "Post-connection SQL requires DBCode Pro/Team. The script was not executed for connection {0}.": "Le SQL post-connexion nécessite DBCode Pro/Team. Le script n’a pas été exécuté pour la connexion {0}.",
   "Error running post-connection SQL for {0}. Script: {1}. Error: {2}": "Erreur lors de l’exécution de SQL post-connexion pour {0}. Script : {1}. Erreur : {2}",
   "Runs immediately after the connection opens. Separate multiple statements with semicolons.": "S’exécute immédiatement après l’ouverture de la connexion. Séparez plusieurs instructions par des points-virgules.",
-  "Requires an active DBCode Pro/Team subscription.": "Nécessite un abonnement DBCode Pro/Team actif."
+  "Requires an active DBCode Pro/Team subscription.": "Nécessite un abonnement DBCode Pro/Team actif.",
+  "No settings configured": "Aucun paramètre configuré",
+  "setting_name": "setting_name",
+  "value": "valeur",
+  "Remove setting": "Supprimer le paramètre",
+  "Add setting": "Ajouter un paramètre",
+  "No SQL to copy.": "Pas de SQL à copier.",
+  "Driver Settings": "Paramètres du pilote",
+  "Add Setting": "Ajouter un paramètre",
+  "Configure additional <a class=\"link\" href=\"https://clickhouse.com/docs/operations/settings/settings\" target=\"_blank\">ClickHouse settings</a>.": "Configurez des <a class=\"link\" href=\"https://clickhouse.com/docs/operations/settings/settings\" target=\"_blank\">paramètres ClickHouse</a> supplémentaires.",
+  "No additional settings configured": "Aucun paramètre supplémentaire n’est configuré",
+  "max_execution_time": "max_execution_time"
 }

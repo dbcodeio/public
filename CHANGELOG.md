@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.17.4 - 2025-09-28
+
+### Changed
+
+- Editor: Added Copy Query command and default shortcut to copy the active SQL statement without executing it. #732
+- SQL Export: Multi-row INSERT statements now emit as a single batch when the target dialect supports it, while Oracle and other single-row engines still receive individual statements.
+- Clickhouse: Added connection option to set driver settings.
+- SQLite: Updated better-sqlite3-multiple-ciphers to 12.4.1 (SQLite - 3.50.4). #727
+
+### Fixed
+
+- Results Grid: Filter dropdown menus stay open when activated after keyboard shortcut updates.
+
 ## 1.17.3 - 2025-09-24
 
 ### Changed

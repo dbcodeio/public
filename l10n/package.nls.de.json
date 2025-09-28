@@ -240,5 +240,6 @@
   "Open": "Offen",
   "Alter": "Ändern",
   "Create": "Schaffen",
-  "Copy Connection String": "Verbindungszeichenfolge kopieren"
+  "Copy Connection String": "Verbindungszeichenfolge kopieren",
+  "Copy Query": "Abfrage kopieren"
 }

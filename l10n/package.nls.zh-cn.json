@@ -240,5 +240,6 @@
   "Open": "打开",
   "Alter": "改变",
   "Create": "创造",
-  "Copy Connection String": "复制连接字符串"
+  "Copy Connection String": "复制连接字符串",
+  "Copy Query": "复制查询"
 }

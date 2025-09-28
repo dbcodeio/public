@@ -240,5 +240,6 @@
   "Open": "Otwierać",
   "Alter": "Zmienić",
   "Create": "Tworzyć",
-  "Copy Connection String": "Kopiowanie parametrów połączenia"
+  "Copy Connection String": "Kopiowanie parametrów połączenia",
+  "Copy Query": "Kopiowanie zapytania"
 }

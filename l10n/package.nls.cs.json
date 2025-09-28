@@ -240,5 +240,6 @@
   "Open": "Otevřený",
   "Alter": "Proměnit",
   "Create": "Vytvářet",
-  "Copy Connection String": "Kopírovat připojovací řetězec"
+  "Copy Connection String": "Kopírovat připojovací řetězec",
+  "Copy Query": "Kopírovat dotaz"
 }

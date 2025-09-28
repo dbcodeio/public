@@ -240,5 +240,6 @@
   "Open": "열다",
   "Alter": "바꾸다",
   "Create": "창조하다",
-  "Copy Connection String": "연결 문자열 복사"
+  "Copy Connection String": "연결 문자열 복사",
+  "Copy Query": "쿼리 복사"
 }

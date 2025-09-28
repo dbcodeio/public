@@ -240,5 +240,6 @@
   "Open": "Açık",
   "Alter": "Değiştirmek",
   "Create": "Yaratmak",
-  "Copy Connection String": "Bağlantı Dizesini Kopyala"
+  "Copy Connection String": "Bağlantı Dizesini Kopyala",
+  "Copy Query": "Sorguyu Kopyala"
 }

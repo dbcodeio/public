@@ -2,6 +2,7 @@
   "10": "10",
   "20": "20",
   "50": "50",
+  "60": "60",
   "100": "100",
   "200": "200",
   "500": "500",
@@ -1911,5 +1912,16 @@
   "Post-connection SQL requires DBCode Pro/Team. The script was not executed for connection {0}.": "接続後のSQLにはDBCode Pro/Teamが必要です。接続{0}のためにスクリプトが実行されませんでした。",
   "Error running post-connection SQL for {0}. Script: {1}. Error: {2}": "{0} の接続後 SQL の実行中にエラーが発生しました。スクリプト: {1}. エラー: {2}",
   "Runs immediately after the connection opens. Separate multiple statements with semicolons.": "接続が開いた直後に実行されます。複数のステートメントはセミコロンで区切ります。",
-  "Requires an active DBCode Pro/Team subscription.": "アクティブなDBCode Pro/Teamサブスクリプションが必要です。"
+  "Requires an active DBCode Pro/Team subscription.": "アクティブなDBCode Pro/Teamサブスクリプションが必要です。",
+  "No settings configured": "設定が構成されていません",
+  "setting_name": "setting_name",
+  "value": "価値",
+  "Remove setting": "設定の削除",
+  "Add setting": "設定の追加",
+  "No SQL to copy.": "コピーするSQLはありません。",
+  "Driver Settings": "ドライバー設定",
+  "Add Setting": "設定の追加",
+  "Configure additional <a class=\"link\" href=\"https://clickhouse.com/docs/operations/settings/settings\" target=\"_blank\">ClickHouse settings</a>.": "追加の <a class=\"link\" href=\"https://clickhouse.com/docs/operations/settings/settings\" target=\"_blank\">ClickHouse 設定</a>を構成します。",
+  "No additional settings configured": "追加の設定は構成されていません",
+  "max_execution_time": "max_execution_time"
 }
