@@ -1,5 +1,249 @@
 # CHANGELOG
 
+## 1.17.3 - 2025-09-24
+
+### Changed
+
+- Connections: Post-connection SQL execution option added to connection config (requires Pro/Team). #729
+
+### Fixed
+
+- Redshift: Could not open additional connections while introspection was running. 
+
+## 1.17.2 - 2025-09-22
+
+### Changed
+
+- Connections: Added Copy Connection String to context menu of connections. #550
+- Connections: Support variable substitution in SSL/TLS certificate paths. #728
+- Redshift: Introspection now surfaces distribution/sort keys.
+
+### Fixed
+
+- Results Grid: Ensure keyboard shortcuts work even when focus is on the toolbar or empty grid space.
+
+## 1.17.0 - 2025-09-19
+
+### Changed
+
+- Athena: Added initial support for Athena. #279
+- Trino: Added view support, as well as execution metadata. #279
+- Execution Plans: Modified plan format to be more driver based, added support for all existing databases that can produce plans. #376
+
+### Fixed
+
+- Results Grid: Inline edits now close when you click empty grid space, including Monaco-backed editors.
+
+## 1.16.15 - 2025-09-18
+
+### Changed
+
+- Editor: Go to definition (cmd/ctrl+click) on tables, views, procedures, functions, etc now opens the alter intent.
+- Editor: Right click on tables, views, etc to select open and open with limit options.
+- Firebase: Fixed date handling, removed from preview. 
+
+### Fixed
+
+- Scripting: restored explicit column expansion for the `SELECT` script option. #726
+- Roles: classify CALL/EXEC statements as EXECUTE rather than unknown. #725
+
+## 1.16.14 - 2025-09-15
+
+### Changed
+
+- View Editing: View editing is now supported for databases that support it.
+- Inspector: the inspector panel now has a map icon, which will render geo data on a map. #566
+
+### Fixed
+
+- Results: Date filters were not loading with fully loaded data. #721
+- History: Fixed issue where truncated SQL was being used when loading or copying queries from the tree view instead of full SQL. #720
+- LibSQL: Not correctly detecting libc on linux systems causing failure to download the native bindings. #718
+- Chat: Fixed issue where where VSCode was trying to infer the default connection, and it was not set. #656
+
+## 1.16.13 - 2025-09-12
+
+### Changed
+
+- Execution Plans: Added DuckDB and BigQuery support.
+- Execution Plans: Added config option to aggregate grouped column values.
+
+### Fixed
+
+- History: Fixed crash with large history files (300MB+) by removing dedicated search index. #715
+
+
+## 1.16.12 - 2025-09-10
+
+### Changed
+
+- Script Generation: Added advanced DML script options - MERGE, INSERT ON CONFLICT (UPSERT), UPDATE FROM, and DELETE USING. #349
+- Script Generation: Improved SQL formatting with clauses on separate lines for better readability
+- Execution Plans: Improved charts. #376
+- Execution Plans: Added Clickhouse, libSQL, Snowflake support
+- Execution Plans: Added icons for explain, analyze to the editor title menu section when supported. 
+- Keyboard Shortcut: Changed shortcut to shift+ctrl+cmd/windows+o to choose database (or connection) when in a SQL file. #690
+
+### Fixed
+
+- BigQuery: Fixed introspection error for dataset names containing hyphens. #701
+- Script Generation: Fixed issue where identity/auto-increment columns were incorrectly included in INSERT statements. #349
+- Script Generation: Fixed issue where default value functions like CURRENT_TIMESTAMP were being incorrectly quoted. #349
+
+## 1.16.11 - 2025-09-10
+
+### Changed
+
+- Connection Groups: Added custom sorting via drag & drop. Groups can now be reordered by dragging them to new positions. #707
+- History: Added search, added table open. 
+- History: Added [multi-device sync](https://dbcode.io/docs/query/history-sync). #709
+- History: Converted storage format to binary crdt format.
+
+### Fixed
+
+- Results Grid: Cell editor now closes when clicking outside of it, and can be closed with Ctrl/Cmd+Enter. #107
+
+## 1.16.8 - 2025-09-04
+
+### Changed
+
+- Execution Plans: Initial basic chart support added. #376
+- Results Grid: Database selector now automatically syncs with the active editor's connection. #708
+
+### Fixed
+
+- Execution Plans: Added basic support for MySQL plans. #376. 
+- Editor: Right click execute with DBCode was throwing an error. #705
+
+## 1.16.7 - 2025-09-03
+
+### Changed
+
+- Code Completion: Experimental LS is now complete for Postgres and MariaDB dialects. 
+- Exports/Share: Web page format now supports a title, date and optional SQL inclusion, along with updated rendering style.
+- Execution Plans: Export and Share support added. #376
+- Execution Plans: Preliminary support for Oracle added, more stats from SQL Server. #376
+
+### Fixed
+
+- Oracle: Fixed environment switching issue where service names were propagating between connections and environments were not properly isolated. #703
+- Results Grid: Fixed text jumping issue when hovering over cells with relationship icons. #695
+- SQL Server: Fixed inconsistent decimal formatting. #689
+
+## 1.16.6 - 2025-09-01
+
+### Changed
+
+- Execution Plans: Initial preview of execution plan support has been added. #376. 
+- Connection Pinning: Added Oracle, DB2, ClickHouse, and Snowflake (with SSO token caching) support for connection pinning to maintain session state across query executions. #663
+- BigQuery: Use table list api when opening a table (only possible when no sorting or filtering applied). #693
+- BigQuery: Added support for dry run query execution. #693
+- BigQuery: Always show bytes billed, even if 0. #693
+- BigQuery: Added BI Engine information to the meta data display when present. #693
+
+## 1.16.5 - 2025-08-29
+
+### Changed
+
+- Keyboard Shortcut: shift+cmd/ctrl+d shift+cmd/ctrl+b will open up selector to choose database (or connection) when in a SQL file. #690
+- Connection Pinning: Added MariaDB, and MySQL to pin a connection to the editor. #663
+- Connection Settings: Added [variable substitution](https://dbcode.io/docs/connections/variables) support for file paths in connection configurations. Supports `${workspaceFolder}`, `${workspaceRoot}`, `${home}`, `${env:VARIABLE_NAME}`, and relative paths. #683
+- USE Command: Will update displayed database when database supports USE command and connection pinning.
+- Bigquery: Added Bytes billed metadata. #693
+
+## 1.16.4 - 2025-08-25
+
+### Changed
+
+- Results: Added keyboard shortcuts to the tooltips.
+
+### Fixed
+
+- SQLite: Fixed issue where primary keys were not detected when not present in PRAGMA_index_list.
+- Cassandra: Fixed SSL certificate validation errors. #640
+- Oracle: Fixed crash when using Instant Client after initialization. #674
+
+## 1.16.3 - 2025-08-24
+
+### Changed
+
+- Firebase: Added support for editing sub collections. 
+- Firebase: Added support for multiple Firestore databases.
+- Code Completion: Experimental LS now provides table/column context and CTE understanding.
+
+### Fixed
+
+- Trino: Fixed map, array, and row types displaying as "[object Object]" in query results. #670
+
+## 1.16.2 - 2025-08-22
+
+### Changed
+
+- Firebase: Handles setting (undefined) for a value to make the key undefined.
+- MongoDB: Handles setting (undefined) for a value to make the key undefined.
+
+### Fixed
+
+- Added groups to escaped identifier list.
+
+## 1.16.1 - 2025-08-20
+
+### Changed
+
+- Result: Editor now auto formats and focuses when opened, as well as auto detecting language.
+- Firebase: Will destructure data into keys where possible allowing specific key editing.
+- Code Completion: Will use new experimental language server if enabled. 
+
+### Fixed
+
+- SQL Server: Fixed BIT columns incorrectly exported as 'true'/'false' instead of 1/0 in SQL Insert statements. #658
+
+## 1.16.0 - 2025-08-19
+
+### Changed
+
+- Firebase: Added initial preview support for Firestore and Realtime (editing not supported yet, might be some bugs.) #295
+- Syntax validation: Fixed semantic validation not working, enhanced grammar support, added fallback ANSI grammar.
+
+## 1.15.0 - 2025-08-17
+
+### Changed
+
+- Parquet: Added support for parquet files. #177
+- Avro: Added support for Avro files. 
+- Redis: Added editing support (update, delete, insert), as well as editor logic for hash/sets. #39
+- CSV and Excel: Underlying files will be watched for changes, and re-load the data if the underlying file changes.
+
+### Fixed
+
+- Tunnels: Will now better handle reconnecting, and if it fails, will close connections that were using them to avoid connections attempting to use closed tunnels.
+- Notebooks: Fixed issue with canceling and connection pinning. #663
+
+## 1.14.30 - 2025-08-14
+
+### Changed
+
+- Syntax validation: Experimental support for SQL syntax validation added (Postgres and Maria/MySQL initially).
+
+### Fixed
+
+- Postgres: Would not format data types correctly on initial table load in some cases. #107
+- Excel: Was not filtering reserved words in sheet names. #659
+
+## 1.14.29 - 2025-08-08
+
+### Changed
+
+- Results: VSCode editor now used in JSON/XML datatypes, and can be opened on any field using the open in editor icon (replaces old open in editor). #107
+- Connection Pinning: Will now destroy a connection if keep alive statement fails. #578 #648
+
+### Fixed
+
+- Trino: Uses line numbers in errors to reduce highlighting when present.
+- Export: Fixed issue with SQL Insert statement export. #655
+- Inspector: Show correct data types in the JSON view.
+- Inspector: Added proper editor to JSON and XML data types. #107
+
 ## 1.14.28 - 2025-08-07
 
 ### Changed
