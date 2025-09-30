@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 1.17.6 - 2025-09-30
+
+
+### Changed
+
+- Results: Added data lookup formatters (lookup a value from another table based on the current column value).
+- Clickhouse: Removed from preview. #111
+
+### Fixed
+
+- MySQL/MariaDB: Fixed DATETIME columns being incorrectly timezone-shifted when displayed in Locale format. #85
+- MySQL/MariaDB: Added charset and collation connection settings to configure character encoding. #227
+- Results: Fixed Locale date format displaying incorrect datetime values when timezone conversion was applied.
+- Inspector: Map view now renders PostGIS geometry columns delivered as EWKB hex. #738
+
 ## 1.17.4 - 2025-09-28
 
 ### Changed
