@@ -1783,7 +1783,6 @@
   "Connection unavailable for {0}": "連線無法用於{0}",
   "Schema unavailable for {0}.{1}": "結構描述無法用於{0}。{1}",
   "Item {0} not found": "找不到項目{0}",
-  "Definition Editing": "定義編輯",
   "Open with Limit": "限價開啟",
   "Alter": "改",
   "Create Definition": "建立定義",
@@ -1937,5 +1936,17 @@
   "Unable to locate connection for grid execution.": "無法找到網格執行的連線。",
   "Lookup query failed: {0}": "查閱查詢失敗：{0}",
   "Configure character set and collation for the connection.": "設定連線的字集和定序。",
-  "Leave values empty to use server defaults.": "將值保留空白以使用伺服器預設值。"
+  "Leave values empty to use server defaults.": "將值保留空白以使用伺服器預設值。",
+  "Definition": "定義",
+  "Could not retrieve DDL for {0}": "無法擷取 DDL 以取得{0}",
+  "SQLite support does not include {0} scripting. Please raise a github issue to get it added!": "SQLite 支援不包括{0}腳本。請提出 github 問題以添加它！",
+  "Postgres support does not include {0} scripting. Please raise a github issue to get it added!": "Postgres 支援不包括{0}腳本。請提出 github 問題以添加它！",
+  "Cockroach support does not include {0} scripting. Please raise a github issue to get it added!": "蟑螂支援不包括{0}腳本。請提出 github 問題以添加它！",
+  "{0} support does not include {1} scripting. Please raise a github issue to get it added!": "{0}支援不包括{1}腳本。請提出 github 問題以添加它！",
+  "libSQL support does not include {0} scripting. Please raise a github issue to get it added!": "libSQL 支援不包括{0}腳本。請提出 github 問題以添加它！",
+  "DuckDB support does not include {0} scripting. Please raise a github issue to get it added!": "DuckDB 支援不包括{0}腳本。請提出 github 問題以添加它！",
+  "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "D1 支援不包括{0}腳本。請提出 github 問題以添加它！",
+  "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "ClickHouse 支援不包括{0}腳本。請提出 github 問題以添加它！",
+  "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Cassandra 支援不包括{0}腳本。請提出 github 問題以添加它！",
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "BigQuery 支援不包括{0}指令碼。請提出 github 問題以添加它！"
 }

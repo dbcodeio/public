@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.17.6",
+    "version": "1.17.7",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -957,6 +957,11 @@
                 "command": "dbcode.script.deleteUsing",
                 "title": "DELETE USING",
                 "category": "DBCode"
+            },
+            {
+                "command": "dbcode.script.ddl",
+                "title": "CREATE (DDL)",
+                "category": "DBCode"
             }
         ],
         "keybindings": [
@@ -1697,6 +1702,11 @@
                     "when": "viewItem =~ /~scriptDeleteUsing~/",
                     "command": "dbcode.script.deleteUsing",
                     "group": "open@9"
+                },
+                {
+                    "when": "viewItem =~ /~scriptDDL~/",
+                    "command": "dbcode.script.ddl",
+                    "group": "open@10"
                 }
             ]
         },

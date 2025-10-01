@@ -1783,7 +1783,6 @@
   "Connection unavailable for {0}": "{0}에 연결할 수 없습니다.",
   "Schema unavailable for {0}.{1}": "{0}에 스키마를 사용할 수 없습니다. {1}",
   "Item {0} not found": "항목을 찾을 수 {0} 없습니다.",
-  "Definition Editing": "정의 편집",
   "Open with Limit": "제한으로 열기",
   "Alter": "바꾸다",
   "Create Definition": "정의 생성",
@@ -1937,5 +1936,17 @@
   "Unable to locate connection for grid execution.": "그리드 실행을 위한 연결을 찾을 수 없습니다.",
   "Lookup query failed: {0}": "조회 쿼리 실패: {0}",
   "Configure character set and collation for the connection.": "연결에 대한 문자 집합 및 데이터 정렬을 구성합니다.",
-  "Leave values empty to use server defaults.": "서버 기본값을 사용하려면 값을 비워 둡니다."
+  "Leave values empty to use server defaults.": "서버 기본값을 사용하려면 값을 비워 둡니다.",
+  "Definition": "정의",
+  "Could not retrieve DDL for {0}": "{0}에 대한 DDL을 검색할 수 없습니다.",
+  "SQLite support does not include {0} scripting. Please raise a github issue to get it added!": "SQLite 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!",
+  "Postgres support does not include {0} scripting. Please raise a github issue to get it added!": "Postgres 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!",
+  "Cockroach support does not include {0} scripting. Please raise a github issue to get it added!": "바퀴벌레 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!",
+  "{0} support does not include {1} scripting. Please raise a github issue to get it added!": "{0} 지원에는 {1} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!",
+  "libSQL support does not include {0} scripting. Please raise a github issue to get it added!": "libSQL 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!",
+  "DuckDB support does not include {0} scripting. Please raise a github issue to get it added!": "DuckDB 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!",
+  "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "D1 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!",
+  "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "ClickHouse 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!",
+  "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Cassandra 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!",
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "BigQuery 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!"
 }

@@ -1783,7 +1783,6 @@
   "Connection unavailable for {0}": "连接不可用 {0}",
   "Schema unavailable for {0}.{1}": "架构不适用于{0}。{1}",
   "Item {0} not found": "未找到项目{0}",
-  "Definition Editing": "定义编辑",
   "Open with Limit": "限价开盘",
   "Alter": "改变",
   "Create Definition": "创建定义",
@@ -1937,5 +1936,17 @@
   "Unable to locate connection for grid execution.": "无法找到网格执行的连接。",
   "Lookup query failed: {0}": "查找查询失败：{0}",
   "Configure character set and collation for the connection.": "配置连接的字符集和排序规则。",
-  "Leave values empty to use server defaults.": "将值留空以使用服务器默认值。"
+  "Leave values empty to use server defaults.": "将值留空以使用服务器默认值。",
+  "Definition": "定义",
+  "Could not retrieve DDL for {0}": "无法检索 DDL 以进行{0}",
+  "SQLite support does not include {0} scripting. Please raise a github issue to get it added!": "SQLite 支持不包括{0}脚本。请提出 github 问题以添加它！",
+  "Postgres support does not include {0} scripting. Please raise a github issue to get it added!": "Postgres 支持不包括{0}脚本。请提出 github 问题以添加它！",
+  "Cockroach support does not include {0} scripting. Please raise a github issue to get it added!": "蟑螂支持不包括{0}脚本。请提出 github 问题以添加它！",
+  "{0} support does not include {1} scripting. Please raise a github issue to get it added!": "{0}支持不包括{1}脚本。请提出 github 问题以添加它！",
+  "libSQL support does not include {0} scripting. Please raise a github issue to get it added!": "libSQL 支持不包括{0}脚本。请提出 github 问题以添加它！",
+  "DuckDB support does not include {0} scripting. Please raise a github issue to get it added!": "DuckDB 支持不包括{0}脚本。请提出 github 问题以添加它！",
+  "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "D1 支持不包括{0}脚本。请提出 github 问题以添加它！",
+  "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "ClickHouse 支持不包括{0}脚本。请提出 github 问题以添加它！",
+  "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Cassandra 支持不包括{0}脚本。请提出 github 问题以添加它！",
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "BigQuery 支持不包括{0}脚本。请提出 github 问题以添加它！"
 }

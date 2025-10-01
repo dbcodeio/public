@@ -1786,7 +1786,6 @@
   "Connection unavailable for {0}": "{0}に接続できません",
   "Schema unavailable for {0}.{1}": "スキーマは{0}使用できません。{1}",
   "Item {0} not found": "アイテム{0}見つかりません",
-  "Definition Editing": "定義編集",
   "Open with Limit": "制限付きで開く",
   "Alter": "変える",
   "Create Definition": "定義の作成",
@@ -1940,5 +1939,17 @@
   "Unable to locate connection for grid execution.": "グリッド実行の接続が見つかりません。",
   "Lookup query failed: {0}": "ルックアップ クエリが失敗しました: {0}",
   "Configure character set and collation for the connection.": "接続の文字セットと照合順序を設定します。",
-  "Leave values empty to use server defaults.": "サーバーのデフォルトを使用するには、値を空のままにします。"
+  "Leave values empty to use server defaults.": "サーバーのデフォルトを使用するには、値を空のままにします。",
+  "Definition": "定義",
+  "Could not retrieve DDL for {0}": "{0} の DDL を取得できませんでした",
+  "SQLite support does not include {0} scripting. Please raise a github issue to get it added!": "SQLite のサポートには、{0} スクリプトは含まれません。githubの問題を提起して追加してください!",
+  "Postgres support does not include {0} scripting. Please raise a github issue to get it added!": "Postgres のサポートには、{0} スクリプトは含まれません。githubの問題を提起して追加してください!",
+  "Cockroach support does not include {0} scripting. Please raise a github issue to get it added!": "ゴキブリのサポートには、{0}スクリプトは含まれていません。githubの問題を提起して追加してください!",
+  "{0} support does not include {1} scripting. Please raise a github issue to get it added!": "{0}サポートには、{1} スクリプトは含まれません。githubの問題を提起して追加してください!",
+  "libSQL support does not include {0} scripting. Please raise a github issue to get it added!": "libSQL のサポートには、{0} スクリプトは含まれません。githubの問題を提起して追加してください!",
+  "DuckDB support does not include {0} scripting. Please raise a github issue to get it added!": "DuckDB のサポートには、{0} スクリプトは含まれていません。githubの問題を提起して追加してください!",
+  "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "D1 サポートには、{0} スクリプトは含まれません。githubの問題を提起して追加してください!",
+  "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "ClickHouse のサポートには、{0} スクリプトは含まれません。githubの問題を提起して追加してください!",
+  "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Cassandra のサポートには、{0} スクリプトは含まれません。githubの問題を提起して追加してください!",
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "BigQuery のサポートには、{0} スクリプトは含まれません。githubの問題を提起して追加してください!"
 }

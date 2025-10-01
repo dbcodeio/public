@@ -1783,7 +1783,6 @@
   "Connection unavailable for {0}": "Connexion indisponible pour {0}",
   "Schema unavailable for {0}.{1}": "Schéma indisponible pour {0}. {1}",
   "Item {0} not found": "Article {0} pas trouvé",
-  "Definition Editing": "Édition de définition",
   "Open with Limit": "Ouvrir avec limite",
   "Alter": "Changer",
   "Create Definition": "Créer une définition",
@@ -1937,5 +1936,17 @@
   "Unable to locate connection for grid execution.": "Impossible de localiser la connexion pour l’exécution du réseau.",
   "Lookup query failed: {0}": "Echec de la requête de recherche : {0}",
   "Configure character set and collation for the connection.": "Configurez le jeu de caractères et le classement pour la connexion.",
-  "Leave values empty to use server defaults.": "Laissez les valeurs vides pour utiliser les valeurs par défaut du serveur."
+  "Leave values empty to use server defaults.": "Laissez les valeurs vides pour utiliser les valeurs par défaut du serveur.",
+  "Definition": "Définition",
+  "Could not retrieve DDL for {0}": "Impossible de récupérer DDL pour {0}",
+  "SQLite support does not include {0} scripting. Please raise a github issue to get it added!": "La prise en charge de SQLite n’inclut pas les scripts {0}. S’il vous plaît, soulevez un problème github pour qu’il soit ajouté !",
+  "Postgres support does not include {0} scripting. Please raise a github issue to get it added!": "La prise en charge de Postgres n’inclut pas les scripts {0}. S’il vous plaît, soulevez un problème github pour qu’il soit ajouté !",
+  "Cockroach support does not include {0} scripting. Please raise a github issue to get it added!": "La prise en charge des cafards n’inclut pas les scripts {0}. S’il vous plaît, soulevez un problème github pour qu’il soit ajouté !",
+  "{0} support does not include {1} scripting. Please raise a github issue to get it added!": "{0} support n’inclut pas les scripts {1}. S’il vous plaît, soulevez un problème github pour qu’il soit ajouté !",
+  "libSQL support does not include {0} scripting. Please raise a github issue to get it added!": "La prise en charge de libSQL n’inclut pas les scripts {0}. S’il vous plaît, soulevez un problème github pour qu’il soit ajouté !",
+  "DuckDB support does not include {0} scripting. Please raise a github issue to get it added!": "La prise en charge de DuckDB n’inclut pas les scripts {0}. S’il vous plaît, soulevez un problème github pour qu’il soit ajouté !",
+  "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "La prise en charge de D1 n’inclut pas les scripts {0}. S’il vous plaît, soulevez un problème github pour qu’il soit ajouté !",
+  "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "Le support ClickHouse n’inclut pas les scripts {0}. S’il vous plaît, soulevez un problème github pour qu’il soit ajouté !",
+  "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Le support Cassandra n’inclut pas les scripts {0}. S’il vous plaît, soulevez un problème github pour qu’il soit ajouté !",
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "L’assistance BigQuery n’inclut pas les scripts {0}. S’il vous plaît, soulevez un problème github pour qu’il soit ajouté !"
 }

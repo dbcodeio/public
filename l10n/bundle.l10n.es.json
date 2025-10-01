@@ -1783,7 +1783,6 @@
   "Connection unavailable for {0}": "Conexión no disponible para {0}",
   "Schema unavailable for {0}.{1}": "Esquema no disponible para {0}. {1}",
   "Item {0} not found": "Artículo {0} no encontrado",
-  "Definition Editing": "Edición de definiciones",
   "Open with Limit": "Abrir con límite",
   "Alter": "Alterar",
   "Create Definition": "Crear definición",
@@ -1937,5 +1936,17 @@
   "Unable to locate connection for grid execution.": "No se puede localizar la conexión para la ejecución de la red.",
   "Lookup query failed: {0}": "Error en la consulta de búsqueda: {0}",
   "Configure character set and collation for the connection.": "Configure el juego de caracteres y la intercalación para la conexión.",
-  "Leave values empty to use server defaults.": "Deje los valores vacíos para usar los valores predeterminados del servidor."
+  "Leave values empty to use server defaults.": "Deje los valores vacíos para usar los valores predeterminados del servidor.",
+  "Definition": "Definición",
+  "Could not retrieve DDL for {0}": "No se pudo recuperar DDL para {0}",
+  "SQLite support does not include {0} scripting. Please raise a github issue to get it added!": "El soporte de SQLite no incluye secuencias de comandos {0}. ¡Por favor, plantee un problema de github para que se agregue!",
+  "Postgres support does not include {0} scripting. Please raise a github issue to get it added!": "La compatibilidad con Postgres no incluye secuencias de comandos {0}. ¡Por favor, plantee un problema de github para que se agregue!",
+  "Cockroach support does not include {0} scripting. Please raise a github issue to get it added!": "El soporte de cucarachas no incluye secuencias de comandos {0}. ¡Por favor, plantee un problema de github para que se agregue!",
+  "{0} support does not include {1} scripting. Please raise a github issue to get it added!": "{0} soporte no incluye {1} scripting. ¡Por favor, plantee un problema de github para que se agregue!",
+  "libSQL support does not include {0} scripting. Please raise a github issue to get it added!": "El soporte de libSQL no incluye secuencias de comandos {0}. ¡Por favor, plantee un problema de github para que se agregue!",
+  "DuckDB support does not include {0} scripting. Please raise a github issue to get it added!": "La compatibilidad con DuckDB no incluye secuencias de comandos {0}. ¡Por favor, plantee un problema de github para que se agregue!",
+  "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "La compatibilidad con D1 no incluye secuencias de comandos {0}. ¡Por favor, plantee un problema de github para que se agregue!",
+  "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "La compatibilidad con ClickHouse no incluye {0} scripts. ¡Por favor, plantee un problema de github para que se agregue!",
+  "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "La compatibilidad con Cassandra no incluye secuencias de comandos {0}. ¡Por favor, plantee un problema de github para que se agregue!",
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "La compatibilidad con BigQuery no incluye {0} secuencias de comandos. ¡Por favor, plantee un problema de github para que se agregue!"
 }

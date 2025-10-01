@@ -1783,7 +1783,6 @@
   "Connection unavailable for {0}": "Připojení není k dispozici pro {0}",
   "Schema unavailable for {0}.{1}": "Schéma není k dispozici pro {0}. {1}",
   "Item {0} not found": "Položka {0} nenalezena",
-  "Definition Editing": "Úpravy definic",
   "Open with Limit": "Otevřít s limitem",
   "Alter": "Proměnit",
   "Create Definition": "Vytvořit definici",
@@ -1937,5 +1936,17 @@
   "Unable to locate connection for grid execution.": "Nelze najít připojení pro spuštění v síti.",
   "Lookup query failed: {0}": "Vyhledávací dotaz se nezdařil: {0}",
   "Configure character set and collation for the connection.": "Nakonfigurujte znakovou sadu a řazení pro připojení.",
-  "Leave values empty to use server defaults.": "Hodnoty ponechte prázdné, aby se použilo výchozí nastavení serveru."
+  "Leave values empty to use server defaults.": "Hodnoty ponechte prázdné, aby se použilo výchozí nastavení serveru.",
+  "Definition": "Definice",
+  "Could not retrieve DDL for {0}": "Nelze načíst DDL pro {0}",
+  "SQLite support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora SQLite nezahrnuje skriptování {0}. Prosím, vyvolejte problém na githubu, abyste to přidali!",
+  "Postgres support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora Postgresu nezahrnuje {0} skriptování. Prosím, vyvolejte problém na githubu, abyste to přidali!",
+  "Cockroach support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora švábů nezahrnuje skriptování {0}. Prosím, vyvolejte problém na githubu, abyste to přidali!",
+  "{0} support does not include {1} scripting. Please raise a github issue to get it added!": "{0} podpora nezahrnuje skriptování {1}. Prosím, vyvolejte problém na githubu, abyste to přidali!",
+  "libSQL support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora libSQL nezahrnuje skriptování {0}. Prosím, vyvolejte problém na githubu, abyste to přidali!",
+  "DuckDB support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora DuckDB nezahrnuje {0} skriptování. Prosím, vyvolejte problém na githubu, abyste to přidali!",
+  "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora D1 nezahrnuje {0} skriptování. Prosím, vyvolejte problém na githubu, abyste to přidali!",
+  "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora ClickHouse nezahrnuje {0} skriptování. Prosím, vyvolejte problém na githubu, abyste to přidali!",
+  "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora aplikace Cassandra nezahrnuje skriptování {0}. Prosím, vyvolejte problém na githubu, abyste to přidali!",
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora nástroje BigQuery nezahrnuje skriptování {0}. Prosím, vyvolejte problém na githubu, abyste to přidali!"
 }

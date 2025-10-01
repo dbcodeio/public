@@ -1,7 +1,13 @@
 # CHANGELOG
 
-## 1.17.6 - 2025-09-30
+## 1.17.7 - 2025-09-30
 
+### Changed
+
+- Scripting: now supports tables, triggers, indexes for most databases (Postgres, Oracle, Snowflake, SQL Server still work in progress). #389
+- Copilot: Drag tables to copilot to provide it the table create statement and other context. #723
+
+## 1.17.6 - 2025-09-30
 
 ### Changed
 

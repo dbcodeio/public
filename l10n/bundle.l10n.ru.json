@@ -1783,7 +1783,6 @@
   "Connection unavailable for {0}": "Подключение недоступно для {0}",
   "Schema unavailable for {0}.{1}": "Схема недоступна для {0}. {1}",
   "Item {0} not found": "Товар не {0} найден",
-  "Definition Editing": "Редактирование определений",
   "Open with Limit": "Открытие с ограничением",
   "Alter": "Изменить",
   "Create Definition": "Создать определение",
@@ -1937,5 +1936,17 @@
   "Unable to locate connection for grid execution.": "Не удается найти подключение для выполнения в сети.",
   "Lookup query failed: {0}": "Сбой запроса на поиск: {0}",
   "Configure character set and collation for the connection.": "Настройте набор символов и параметры сортировки для подключения.",
-  "Leave values empty to use server defaults.": "Оставьте значения пустыми, чтобы использовать значения по умолчанию для сервера."
+  "Leave values empty to use server defaults.": "Оставьте значения пустыми, чтобы использовать значения по умолчанию для сервера.",
+  "Definition": "Определение",
+  "Could not retrieve DDL for {0}": "Не удалось получить DDL для {0}",
+  "SQLite support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка SQLite не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!",
+  "Postgres support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка Postgres не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!",
+  "Cockroach support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка Cockroach не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!",
+  "{0} support does not include {1} scripting. Please raise a github issue to get it added!": "{0} поддержка не включает в себя {1} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!",
+  "libSQL support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка libSQL не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!",
+  "DuckDB support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка DuckDB не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!",
+  "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка D1 не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!",
+  "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка ClickHouse не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!",
+  "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка Cassandra не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!",
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка BigQuery не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!"
 }

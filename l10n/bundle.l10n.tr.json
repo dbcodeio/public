@@ -1783,7 +1783,6 @@
   "Connection unavailable for {0}": "{0} için bağlantı kullanılamıyor",
   "Schema unavailable for {0}.{1}": "Şema {0} için kullanılamıyor. {1}",
   "Item {0} not found": "Eşya {0} bulunamadı",
-  "Definition Editing": "Tanım Düzenleme",
   "Open with Limit": "Limitli Aç",
   "Alter": "Değiştirmek",
   "Create Definition": "Tanım Oluştur",
@@ -1937,5 +1936,17 @@
   "Unable to locate connection for grid execution.": "Şebeke yürütme için bağlantı bulunamıyor.",
   "Lookup query failed: {0}": "Arama sorgusu başarısız oldu: {0}",
   "Configure character set and collation for the connection.": "Bağlantı için karakter kümesini ve harmanlamayı yapılandırın.",
-  "Leave values empty to use server defaults.": "Sunucu varsayılanlarını kullanmak için değerleri boş bırakın."
+  "Leave values empty to use server defaults.": "Sunucu varsayılanlarını kullanmak için değerleri boş bırakın.",
+  "Definition": "Tanım",
+  "Could not retrieve DDL for {0}": "DDL {0} için alınamadı",
+  "SQLite support does not include {0} scripting. Please raise a github issue to get it added!": "SQLite desteği {0} komut dosyası oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!",
+  "Postgres support does not include {0} scripting. Please raise a github issue to get it added!": "Postgres desteği {0} betik oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!",
+  "Cockroach support does not include {0} scripting. Please raise a github issue to get it added!": "Hamamböceği desteği {0} komut dosyası içermez. Eklenmesi için lütfen bir github sorunu oluşturun!",
+  "{0} support does not include {1} scripting. Please raise a github issue to get it added!": "{0} desteği {1} komut dosyası oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!",
+  "libSQL support does not include {0} scripting. Please raise a github issue to get it added!": "libSQL desteği {0} komut dosyası oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!",
+  "DuckDB support does not include {0} scripting. Please raise a github issue to get it added!": "DuckDB desteği {0} komut dosyası oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!",
+  "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "D1 desteği {0} komut dosyası oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!",
+  "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "ClickHouse desteği {0} komut dosyası oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!",
+  "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Cassandra desteği {0} komut dosyası oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!",
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "BigQuery desteği, {0} komut dosyası oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!"
 }
