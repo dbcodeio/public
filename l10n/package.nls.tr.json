@@ -241,5 +241,8 @@
   "Alter": "Değiştirmek",
   "Create": "Yaratmak",
   "Copy Connection String": "Bağlantı Dizesini Kopyala",
-  "Copy Query": "Sorguyu Kopyala"
+  "Copy Query": "Sorguyu Kopyala",
+  "Open the DDL/definition editor (Cmd/Ctrl+Click on tables/views).": "DDL/tanım düzenleyicisini açın (Cmd/Ctrl+tablolara/görünümlere tıklayın).",
+  "Open the data viewer (Cmd/Ctrl+Click on tables/views).": "Veri görüntüleyiciyi açın (Cmd/Ctrl+tablolara/görünümlere tıklayın).",
+  "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "Tablolarda ve görünümlerde Tanıma Git (Cmd/Ctrl+Tıklatma) kullanırken varsayılan eylemi seçin."
 }

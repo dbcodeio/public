@@ -1924,7 +1924,6 @@
   "Reference": "참조",
   "Loading schema information...": "스키마 정보를 로드하는 중...",
   "No tables available for this connection": "이 연결에 사용할 수 있는 테이블이 없습니다.",
-  "Target Table": "대상 테이블",
   "Select a table...": "테이블 선택...",
   "Join Column": "열 조인",
   "Display Columns": "열 표시",
@@ -1948,5 +1947,17 @@
   "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "D1 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!",
   "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "ClickHouse 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!",
   "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Cassandra 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!",
-  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "BigQuery 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!"
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "BigQuery 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!",
+  "Source Database": "원본 데이터베이스",
+  "Source Schema": "소스 스키마",
+  "Source Table": "소스 테이블",
+  "Downloading {0}": "다운로드 {0}",
+  "Fetching package...": "패키지 가져오기 중...",
+  "Unpacking...": "풀고...",
+  "Configuring...": "구성...",
+  "Failed to configure {0}. Error: {1}": "{0} 구성하지 못했습니다. 오류: {1}",
+  "Snowflake support does not include {0} scripting. Please raise a github issue to get it added!": "Snowflake 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!",
+  "Failed to download pg_dump tools": "pg_dump 도구를 다운로드하지 못했습니다.",
+  "pg_dump failed: {0}": "pg_dump 실패: {0}",
+  "Oracle support does not include {0} scripting. Please raise a github issue to get it added!": "Oracle 지원에는 {0} 스크립팅이 포함되지 않습니다. 추가하려면 github 문제를 제기하십시오!"
 }

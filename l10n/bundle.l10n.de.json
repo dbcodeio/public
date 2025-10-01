@@ -1924,7 +1924,6 @@
   "Reference": "Referenz",
   "Loading schema information...": "Schemainformationen werden geladen...",
   "No tables available for this connection": "Für diese Verbindung sind keine Tabellen verfügbar",
-  "Target Table": "Ziel-Tabelle",
   "Select a table...": "Wählen Sie einen Tisch aus...",
   "Join Column": "Spalte verbinden",
   "Display Columns": "Spalten anzeigen",
@@ -1948,5 +1947,17 @@
   "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "Die D1-Unterstützung umfasst keine {0} Skripting. Bitte melden Sie ein Github-Problem, um es hinzuzufügen!",
   "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "Der ClickHouse-Support umfasst keine {0} Scripting. Bitte melden Sie ein Github-Problem, um es hinzuzufügen!",
   "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Die Cassandra-Unterstützung umfasst keine {0} Skripting. Bitte melden Sie ein Github-Problem, um es hinzuzufügen!",
-  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "Die BigQuery-Unterstützung umfasst keine {0} Scripting. Bitte melden Sie ein Github-Problem, um es hinzuzufügen!"
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "Die BigQuery-Unterstützung umfasst keine {0} Scripting. Bitte melden Sie ein Github-Problem, um es hinzuzufügen!",
+  "Source Database": "Quell-Datenbank",
+  "Source Schema": "Quellschema",
+  "Source Table": "Quellentabelle",
+  "Downloading {0}": "Herunterladen {0}",
+  "Fetching package...": "Paket wird geholt...",
+  "Unpacking...": "Auspacken...",
+  "Configuring...": "Konfigurierend...",
+  "Failed to configure {0}. Error: {1}": "Fehler beim Konfigurieren {0}. Fehler: {1}",
+  "Snowflake support does not include {0} scripting. Please raise a github issue to get it added!": "Die Snowflake-Unterstützung umfasst keine {0} Skripterstellung. Bitte melden Sie ein Github-Problem, um es hinzuzufügen!",
+  "Failed to download pg_dump tools": "Fehler beim Herunterladen pg_dump Tools",
+  "pg_dump failed: {0}": "pg_dump fehlgeschlagen: {0}",
+  "Oracle support does not include {0} scripting. Please raise a github issue to get it added!": "Der Oracle-Support umfasst keine {0} Scripting. Bitte melden Sie ein Github-Problem, um es hinzuzufügen!"
 }

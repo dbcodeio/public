@@ -1924,7 +1924,6 @@
   "Reference": "Referencia",
   "Loading schema information...": "Cargando información de esquema...",
   "No tables available for this connection": "No hay tablas disponibles para esta conexión",
-  "Target Table": "Tabla de destino",
   "Select a table...": "Seleccione una tabla...",
   "Join Column": "Unir columna",
   "Display Columns": "Mostrar columnas",
@@ -1948,5 +1947,17 @@
   "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "La compatibilidad con D1 no incluye secuencias de comandos {0}. ¡Por favor, plantee un problema de github para que se agregue!",
   "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "La compatibilidad con ClickHouse no incluye {0} scripts. ¡Por favor, plantee un problema de github para que se agregue!",
   "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "La compatibilidad con Cassandra no incluye secuencias de comandos {0}. ¡Por favor, plantee un problema de github para que se agregue!",
-  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "La compatibilidad con BigQuery no incluye {0} secuencias de comandos. ¡Por favor, plantee un problema de github para que se agregue!"
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "La compatibilidad con BigQuery no incluye {0} secuencias de comandos. ¡Por favor, plantee un problema de github para que se agregue!",
+  "Source Database": "Base de datos de origen",
+  "Source Schema": "Esquema de origen",
+  "Source Table": "Tabla de origen",
+  "Downloading {0}": "Descarga {0}",
+  "Fetching package...": "Buscando paquete...",
+  "Unpacking...": "Desembalaje...",
+  "Configuring...": "Configuración...",
+  "Failed to configure {0}. Error: {1}": "No se pudo configurar {0}. Error: {1}",
+  "Snowflake support does not include {0} scripting. Please raise a github issue to get it added!": "La compatibilidad con Snowflake no incluye secuencias de comandos {0}. ¡Por favor, plantee un problema de github para que se agregue!",
+  "Failed to download pg_dump tools": "No se pudieron descargar las herramientas de pg_dump",
+  "pg_dump failed: {0}": "pg_dump falló: {0}",
+  "Oracle support does not include {0} scripting. Please raise a github issue to get it added!": "El soporte de Oracle no incluye secuencias de comandos {0}. ¡Por favor, plantee un problema de github para que se agregue!"
 }

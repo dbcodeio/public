@@ -241,5 +241,8 @@
   "Alter": "바꾸다",
   "Create": "창조하다",
   "Copy Connection String": "연결 문자열 복사",
-  "Copy Query": "쿼리 복사"
+  "Copy Query": "쿼리 복사",
+  "Open the DDL/definition editor (Cmd/Ctrl+Click on tables/views).": "DDL/정의 편집기를 엽니다(테이블/뷰의 경우 Cmd/Ctrl+클릭).",
+  "Open the data viewer (Cmd/Ctrl+Click on tables/views).": "데이터 뷰어를 엽니다(테이블/뷰에서 Cmd/Ctrl+클릭).",
+  "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "테이블 및 뷰에서 정의로 이동(Cmd/Ctrl+클릭)을 사용할 때 기본 작업을 선택합니다."
 }

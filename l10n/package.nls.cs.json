@@ -241,5 +241,8 @@
   "Alter": "Proměnit",
   "Create": "Vytvářet",
   "Copy Connection String": "Kopírovat připojovací řetězec",
-  "Copy Query": "Kopírovat dotaz"
+  "Copy Query": "Kopírovat dotaz",
+  "Open the DDL/definition editor (Cmd/Ctrl+Click on tables/views).": "Otevřete editor DDL/definic (Cmd/Ctrl+Klikněte na tabulky/pohledy).",
+  "Open the data viewer (Cmd/Ctrl+Click on tables/views).": "Otevřete prohlížeč dat (Cmd/Ctrl+Klikněte na tabulky/pohledy).",
+  "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "Výchozí akci zvolte při použití příkazu Přejít k definici (Cmd/Ctrl+Kliknutí) v tabulkách a zobrazeních."
 }

@@ -1927,7 +1927,6 @@
   "Reference": "参考",
   "Loading schema information...": "スキーマ情報を読み込んでいます...",
   "No tables available for this connection": "この接続に使用できるテーブルがありません",
-  "Target Table": "ターゲットテーブル",
   "Select a table...": "テーブルを選択してください...",
   "Join Column": "結合列",
   "Display Columns": "列の表示",
@@ -1951,5 +1950,17 @@
   "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "D1 サポートには、{0} スクリプトは含まれません。githubの問題を提起して追加してください!",
   "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "ClickHouse のサポートには、{0} スクリプトは含まれません。githubの問題を提起して追加してください!",
   "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Cassandra のサポートには、{0} スクリプトは含まれません。githubの問題を提起して追加してください!",
-  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "BigQuery のサポートには、{0} スクリプトは含まれません。githubの問題を提起して追加してください!"
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "BigQuery のサポートには、{0} スクリプトは含まれません。githubの問題を提起して追加してください!",
+  "Source Database": "ソースデータベース",
+  "Source Schema": "ソーススキーマ",
+  "Source Table": "ソーステーブル",
+  "Downloading {0}": "ダウンロード{0}",
+  "Fetching package...": "パッケージをフェッチしています...",
+  "Unpacking...": "解凍。。。",
+  "Configuring...": "構成。。。",
+  "Failed to configure {0}. Error: {1}": "{0}の設定に失敗しました。エラー: {1}",
+  "Snowflake support does not include {0} scripting. Please raise a github issue to get it added!": "Snowflakeのサポートには、{0}スクリプトは含まれていません。githubの問題を提起して追加してください!",
+  "Failed to download pg_dump tools": "pg_dumpツールのダウンロードに失敗しました",
+  "pg_dump failed: {0}": "pg_dump失敗しました: {0}",
+  "Oracle support does not include {0} scripting. Please raise a github issue to get it added!": "Oracleのサポートには、{0}スクリプトは含まれていません。githubの問題を提起して追加してください!"
 }

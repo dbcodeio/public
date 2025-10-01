@@ -1924,7 +1924,6 @@
   "Reference": "Referans",
   "Loading schema information...": "Şema bilgileri yükleniyor...",
   "No tables available for this connection": "Bu bağlantı için kullanılabilir tablo yok",
-  "Target Table": "Hedef Tablo",
   "Select a table...": "Bir tablo seçin...",
   "Join Column": "Birleştirme Sütunu",
   "Display Columns": "Sütunları Görüntüle",
@@ -1948,5 +1947,17 @@
   "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "D1 desteği {0} komut dosyası oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!",
   "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "ClickHouse desteği {0} komut dosyası oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!",
   "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Cassandra desteği {0} komut dosyası oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!",
-  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "BigQuery desteği, {0} komut dosyası oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!"
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "BigQuery desteği, {0} komut dosyası oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!",
+  "Source Database": "Kaynak Veritabanı",
+  "Source Schema": "Kaynak Şeması",
+  "Source Table": "Kaynak Tablo",
+  "Downloading {0}": "İndirme {0}",
+  "Fetching package...": "Paket getiriliyor...",
+  "Unpacking...": "Açma...",
+  "Configuring...": "Yapılandırma...",
+  "Failed to configure {0}. Error: {1}": "{0} yapılandırılamadı. Hata: {1}",
+  "Snowflake support does not include {0} scripting. Please raise a github issue to get it added!": "Snowflake desteği {0} komut dosyası içermez. Eklenmesi için lütfen bir github sorunu oluşturun!",
+  "Failed to download pg_dump tools": "pg_dump araçları indirilemedi",
+  "pg_dump failed: {0}": "pg_dump başarısız oldu: {0}",
+  "Oracle support does not include {0} scripting. Please raise a github issue to get it added!": "Oracle desteği, {0} komut dosyası oluşturmayı içermez. Eklenmesi için lütfen bir github sorunu oluşturun!"
 }

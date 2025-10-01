@@ -1924,7 +1924,6 @@
   "Reference": "Riferimento",
   "Loading schema information...": "Caricamento delle informazioni sullo schema...",
   "No tables available for this connection": "Non sono disponibili tabelle per questo collegamento",
-  "Target Table": "Tabella di destinazione",
   "Select a table...": "Seleziona un tavolo...",
   "Join Column": "Unisci colonna",
   "Display Columns": "Visualizza colonne",
@@ -1948,5 +1947,17 @@
   "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "Il supporto D1 non include lo scripting {0}. Si prega di sollevare un problema con github per aggiungerlo!",
   "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "Il supporto di ClickHouse non include {0} scripting. Si prega di sollevare un problema con github per aggiungerlo!",
   "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Il supporto di Cassandra non include lo scripting {0}. Si prega di sollevare un problema con github per aggiungerlo!",
-  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "Il supporto di BigQuery non include {0} scripting. Si prega di sollevare un problema con github per aggiungerlo!"
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "Il supporto di BigQuery non include {0} scripting. Si prega di sollevare un problema con github per aggiungerlo!",
+  "Source Database": "Database di origine",
+  "Source Schema": "Schema di origine",
+  "Source Table": "Tabella di origine",
+  "Downloading {0}": "Scaricare {0}",
+  "Fetching package...": "Recupero del pacchetto...",
+  "Unpacking...": "Disimballaggio...",
+  "Configuring...": "Configurando...",
+  "Failed to configure {0}. Error: {1}": "Impossibile configurare {0}. Errore: {1}",
+  "Snowflake support does not include {0} scripting. Please raise a github issue to get it added!": "Il supporto di Snowflake non include {0} scripting. Si prega di sollevare un problema con github per aggiungerlo!",
+  "Failed to download pg_dump tools": "Impossibile scaricare gli strumenti pg_dump",
+  "pg_dump failed: {0}": "pg_dump fallito: {0}",
+  "Oracle support does not include {0} scripting. Please raise a github issue to get it added!": "Il supporto Oracle non include lo scripting {0}. Si prega di sollevare un problema con github per aggiungerlo!"
 }

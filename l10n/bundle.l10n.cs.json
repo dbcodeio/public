@@ -1924,7 +1924,6 @@
   "Reference": "Odkaz",
   "Loading schema information...": "Načítání informací o schématu...",
   "No tables available for this connection": "Pro toto připojení nejsou k dispozici žádné tabulky",
-  "Target Table": "Cílová tabulka",
   "Select a table...": "Vyberte tabulku...",
   "Join Column": "Spojit sloupec",
   "Display Columns": "Zobrazit sloupce",
@@ -1948,5 +1947,17 @@
   "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora D1 nezahrnuje {0} skriptování. Prosím, vyvolejte problém na githubu, abyste to přidali!",
   "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora ClickHouse nezahrnuje {0} skriptování. Prosím, vyvolejte problém na githubu, abyste to přidali!",
   "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora aplikace Cassandra nezahrnuje skriptování {0}. Prosím, vyvolejte problém na githubu, abyste to přidali!",
-  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora nástroje BigQuery nezahrnuje skriptování {0}. Prosím, vyvolejte problém na githubu, abyste to přidali!"
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora nástroje BigQuery nezahrnuje skriptování {0}. Prosím, vyvolejte problém na githubu, abyste to přidali!",
+  "Source Database": "Zdrojová databáze",
+  "Source Schema": "Zdrojové schéma",
+  "Source Table": "Zdrojová tabulka",
+  "Downloading {0}": "Stahování {0}",
+  "Fetching package...": "Načítání balíčku...",
+  "Unpacking...": "Vybalování...",
+  "Configuring...": "Nastavující...",
+  "Failed to configure {0}. Error: {1}": "Konfigurace {0} se nezdařila. Chyba: {1}",
+  "Snowflake support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora Snowflake nezahrnuje skriptování {0}. Prosím, vyvolejte problém na githubu, abyste to přidali!",
+  "Failed to download pg_dump tools": "Nepodařilo se stáhnout pg_dump nástroje",
+  "pg_dump failed: {0}": "pg_dump se nezdařilo: {0}",
+  "Oracle support does not include {0} scripting. Please raise a github issue to get it added!": "Podpora společnosti Oracle nezahrnuje skriptování {0}. Prosím, vyvolejte problém na githubu, abyste to přidali!"
 }

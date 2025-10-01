@@ -241,5 +241,8 @@
   "Alter": "改",
   "Create": "創造",
   "Copy Connection String": "複製連接字串",
-  "Copy Query": "複製查詢"
+  "Copy Query": "複製查詢",
+  "Open the DDL/definition editor (Cmd/Ctrl+Click on tables/views).": "開啟 DDL/定義編輯器 （Cmd/Ctrl+按一下表格/檢視）。",
+  "Open the data viewer (Cmd/Ctrl+Click on tables/views).": "開啟資料檢視器（Cmd/Ctrl+按一下表格/檢視）。",
+  "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "在表格和檢視上使用 [移至定義] （Cmd/Ctrl+按一下） 時，選擇預設動作。"
 }

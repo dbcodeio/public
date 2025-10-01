@@ -1924,7 +1924,6 @@
   "Reference": "參考",
   "Loading schema information...": "載入結構描述資訊...",
   "No tables available for this connection": "沒有可用於此連線的資料表",
-  "Target Table": "目標表格",
   "Select a table...": "選取表格...",
   "Join Column": "連接欄",
   "Display Columns": "顯示欄",
@@ -1948,5 +1947,17 @@
   "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "D1 支援不包括{0}腳本。請提出 github 問題以添加它！",
   "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "ClickHouse 支援不包括{0}腳本。請提出 github 問題以添加它！",
   "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Cassandra 支援不包括{0}腳本。請提出 github 問題以添加它！",
-  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "BigQuery 支援不包括{0}指令碼。請提出 github 問題以添加它！"
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "BigQuery 支援不包括{0}指令碼。請提出 github 問題以添加它！",
+  "Source Database": "來源資料庫",
+  "Source Schema": "來源結構描述",
+  "Source Table": "來源表格",
+  "Downloading {0}": "下載{0}",
+  "Fetching package...": "獲取包...",
+  "Unpacking...": "開箱...",
+  "Configuring...": "設定...",
+  "Failed to configure {0}. Error: {1}": "無法設定{0}。錯誤：{1}",
+  "Snowflake support does not include {0} scripting. Please raise a github issue to get it added!": "Snowflake 支援不包括{0}腳本。請提出 github 問題以添加它！",
+  "Failed to download pg_dump tools": "無法下載pg_dump工具",
+  "pg_dump failed: {0}": "pg_dump失敗：{0}",
+  "Oracle support does not include {0} scripting. Please raise a github issue to get it added!": "Oracle 支援不包括{0}指令碼。請提出 github 問題以添加它！"
 }

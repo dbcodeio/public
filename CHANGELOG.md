@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.17.8 - 2025-10-01
+
+### Changed
+
+- Definition Provider: Added setting `dbcode.definitionProvider.defaultAction` to control Cmd/Ctrl+Click behavior on tables/views - choose between opening definition (default) or data viewer. #739
+- Results: Data lookup formatters now support cross-database and cross-schema lookups.
+
 ## 1.17.7 - 2025-09-30
 
 ### Changed

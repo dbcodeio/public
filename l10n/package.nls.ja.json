@@ -241,5 +241,8 @@
   "Alter": "変える",
   "Create": "創造する",
   "Copy Connection String": "接続文字列のコピー",
-  "Copy Query": "クエリのコピー"
+  "Copy Query": "クエリのコピー",
+  "Open the DDL/definition editor (Cmd/Ctrl+Click on tables/views).": "DDL/定義エディターを開きます (テーブル/ビューでは Cmd/Ctrl+クリック)。",
+  "Open the data viewer (Cmd/Ctrl+Click on tables/views).": "データビューアを開きます(テーブル/ビューではCmd/Ctrl+クリック)。",
+  "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "テーブルおよびビューで [定義に移動] (Cmd/Ctrl+クリック) を使用する場合の既定のアクションを選択します。"
 }

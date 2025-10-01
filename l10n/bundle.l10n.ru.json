@@ -1924,7 +1924,6 @@
   "Reference": "Ссылка",
   "Loading schema information...": "Загрузка информации о схеме...",
   "No tables available for this connection": "Для этого подключения нет доступных таблиц",
-  "Target Table": "Целевой стол",
   "Select a table...": "Выберите стол...",
   "Join Column": "Столбец «Присоединить»",
   "Display Columns": "Отображение столбцов",
@@ -1948,5 +1947,17 @@
   "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка D1 не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!",
   "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка ClickHouse не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!",
   "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка Cassandra не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!",
-  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка BigQuery не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!"
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка BigQuery не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!",
+  "Source Database": "Исходная база данных",
+  "Source Schema": "Исходная схема",
+  "Source Table": "Исходная таблица",
+  "Downloading {0}": "Загрузка {0}",
+  "Fetching package...": "Доставка пакета...",
+  "Unpacking...": "Распаковка...",
+  "Configuring...": "Конфигурирование...",
+  "Failed to configure {0}. Error: {1}": "Не удалось настроить {0}. Ошибка: {1}",
+  "Snowflake support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка Snowflake не включает в себя {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!",
+  "Failed to download pg_dump tools": "Не удалось загрузить инструменты pg_dump",
+  "pg_dump failed: {0}": "pg_dump не удалось: {0}",
+  "Oracle support does not include {0} scripting. Please raise a github issue to get it added!": "Поддержка Oracle не включает {0} скриптов. Пожалуйста, поднимите вопрос на github, чтобы его добавили!"
 }

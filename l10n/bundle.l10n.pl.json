@@ -1924,7 +1924,6 @@
   "Reference": "Odniesienie",
   "Loading schema information...": "Wczytywanie informacji o schemacie...",
   "No tables available for this connection": "Dla tego połączenia nie są dostępne żadne tabele",
-  "Target Table": "Tabela docelowa",
   "Select a table...": "Wybierz tabelę...",
   "Join Column": "Kolumna sprzężenia",
   "Display Columns": "Wyświetlanie kolumn",
@@ -1948,5 +1947,17 @@
   "D1 support does not include {0} scripting. Please raise a github issue to get it added!": "Obsługa języka D1 nie obejmuje skryptów {0}. Zgłoś problem z githubem, aby go dodać!",
   "ClickHouse support does not include {0} scripting. Please raise a github issue to get it added!": "Wsparcie ClickHouse nie obejmuje skryptów {0}. Zgłoś problem z githubem, aby go dodać!",
   "Cassandra support does not include {0} scripting. Please raise a github issue to get it added!": "Obsługa bazy danych Cassandra nie obejmuje skryptów {0}. Zgłoś problem z githubem, aby go dodać!",
-  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "Obsługa BigQuery nie obejmuje skryptów {0}. Zgłoś problem z githubem, aby go dodać!"
+  "BigQuery support does not include {0} scripting. Please raise a github issue to get it added!": "Obsługa BigQuery nie obejmuje skryptów {0}. Zgłoś problem z githubem, aby go dodać!",
+  "Source Database": "Źródłowa baza danych",
+  "Source Schema": "Schemat źródłowy",
+  "Source Table": "Tabela źródłowa",
+  "Downloading {0}": "Pobieranie {0}",
+  "Fetching package...": "Pobieranie pakietu...",
+  "Unpacking...": "Rozpakowaniu...",
+  "Configuring...": "Konfigurowanie...",
+  "Failed to configure {0}. Error: {1}": "Nie można skonfigurować {0}. Błąd: {1}",
+  "Snowflake support does not include {0} scripting. Please raise a github issue to get it added!": "Obsługa Snowflake nie obejmuje skryptów {0}. Zgłoś problem z githubem, aby go dodać!",
+  "Failed to download pg_dump tools": "Nie udało się pobrać narzędzi pg_dump",
+  "pg_dump failed: {0}": "pg_dump nie powiodło się: {0}",
+  "Oracle support does not include {0} scripting. Please raise a github issue to get it added!": "Wsparcie Oracle nie obejmuje {0} skryptów. Zgłoś problem z githubem, aby go dodać!"
 }

@@ -241,5 +241,8 @@
   "Alter": "Changer",
   "Create": "Créer",
   "Copy Connection String": "Copier la chaîne de connexion",
-  "Copy Query": "Copier la requête"
+  "Copy Query": "Copier la requête",
+  "Open the DDL/definition editor (Cmd/Ctrl+Click on tables/views).": "Ouvrez l’éditeur DDL/définition (Cmd/Ctrl+Clic sur les tables/vues).",
+  "Open the data viewer (Cmd/Ctrl+Click on tables/views).": "Ouvrez la visionneuse de données (Cmd/Ctrl+Clic sur les tables/vues).",
+  "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "Choisissez l’action par défaut lorsque vous utilisez Aller à la définition (Cmd/Ctrl+Clic) sur les tables et les vues."
 }
