@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.17.8",
+    "version": "1.17.9",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -643,6 +643,18 @@
                 "title": "%Drop Database%",
                 "category": "DBCode",
                 "icon": "$(trash)"
+            },
+            {
+                "command": "dbcode.database.backup",
+                "title": "%Backup Database%",
+                "category": "DBCode",
+                "icon": "$(save)"
+            },
+            {
+                "command": "dbcode.database.restore",
+                "title": "%Restore Database%",
+                "category": "DBCode",
+                "icon": "$(history)"
             },
             {
                 "command": "dbcode.schema.create",
@@ -1350,6 +1362,16 @@
                     "command": "dbcode.connections.execfile",
                     "when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~execFile~/",
                     "group": "3operation@2"
+                },
+                {
+                    "command": "dbcode.database.backup",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~backup~/",
+                    "group": "4backup@1"
+                },
+                {
+                    "command": "dbcode.database.restore",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~restore~/",
+                    "group": "4backup@2"
                 },
                 {
                     "command": "dbcode.database.rename",

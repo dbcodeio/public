@@ -244,5 +244,7 @@
   "Copy Query": "쿼리 복사",
   "Open the DDL/definition editor (Cmd/Ctrl+Click on tables/views).": "DDL/정의 편집기를 엽니다(테이블/뷰의 경우 Cmd/Ctrl+클릭).",
   "Open the data viewer (Cmd/Ctrl+Click on tables/views).": "데이터 뷰어를 엽니다(테이블/뷰에서 Cmd/Ctrl+클릭).",
-  "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "테이블 및 뷰에서 정의로 이동(Cmd/Ctrl+클릭)을 사용할 때 기본 작업을 선택합니다."
+  "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "테이블 및 뷰에서 정의로 이동(Cmd/Ctrl+클릭)을 사용할 때 기본 작업을 선택합니다.",
+  "Backup Database": "백업 데이터베이스",
+  "Restore Database": "데이터베이스 복원"
 }

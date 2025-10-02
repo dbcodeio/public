@@ -244,5 +244,7 @@
   "Copy Query": "复制查询",
   "Open the DDL/definition editor (Cmd/Ctrl+Click on tables/views).": "打开 DDL/定义编辑器（Cmd/Ctrl+单击表/视图）。",
   "Open the data viewer (Cmd/Ctrl+Click on tables/views).": "打开数据查看器（Cmd/Ctrl+单击表/视图）。",
-  "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "在表和视图上使用“转到定义”（Cmd/Ctrl+单击）时选择默认作。"
+  "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "在表和视图上使用“转到定义”（Cmd/Ctrl+单击）时选择默认作。",
+  "Backup Database": "备份数据库",
+  "Restore Database": "恢复数据库"
 }

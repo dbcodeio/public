@@ -244,5 +244,7 @@
   "Copy Query": "Запрос на копирование",
   "Open the DDL/definition editor (Cmd/Ctrl+Click on tables/views).": "Откройте редактор DDL/определений (Cmd/Ctrl+клик по таблицам/представлениям).",
   "Open the data viewer (Cmd/Ctrl+Click on tables/views).": "Откройте просмотрщик данных (Cmd/Ctrl+клик по таблицам/представлениям).",
-  "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "Выберите действие по умолчанию при использовании команды «Перейти к определению» (Cmd/Ctrl+Click) для таблиц и представлений."
+  "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "Выберите действие по умолчанию при использовании команды «Перейти к определению» (Cmd/Ctrl+Click) для таблиц и представлений.",
+  "Backup Database": "Резервная база данных",
+  "Restore Database": "Восстановить базу данных"
 }

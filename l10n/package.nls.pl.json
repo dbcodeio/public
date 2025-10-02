@@ -244,5 +244,7 @@
   "Copy Query": "Kopiowanie zapytania",
   "Open the DDL/definition editor (Cmd/Ctrl+Click on tables/views).": "Otwórz edytor DDL/definicji (Cmd/Ctrl+kliknięcie na tabelach/widokach).",
   "Open the data viewer (Cmd/Ctrl+Click on tables/views).": "Otwórz przeglądarkę danych (Cmd/Ctrl+kliknięcie na tabelach/widokach).",
-  "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "Wybierz akcję domyślną w przypadku korzystania z opcji Przejdź do definicji (Cmd/Ctrl+kliknięcie) w tabelach i widokach."
+  "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "Wybierz akcję domyślną w przypadku korzystania z opcji Przejdź do definicji (Cmd/Ctrl+kliknięcie) w tabelach i widokach.",
+  "Backup Database": "Kopia zapasowa bazy danych",
+  "Restore Database": "Przywróć bazę danych"
 }

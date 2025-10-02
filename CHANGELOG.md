@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.17.9 - 2025-10-02
+
+### Changed
+
+- Backup/Restore: Added backup and restore functionality for PostgreSQL MySQL, SQLite, and DuckDB to start to the right click context menu of their databases (uses native tools). #195
+
 ## 1.17.8 - 2025-10-01
 
 ### Changed
