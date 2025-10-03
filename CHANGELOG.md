@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.17.10 - 2025-10-03
+
+### Changed
+
+- Sign in: Added web based sign in option including support for Google. #742
+
+### Fixed
+
+- Results: Fixed type collision issue when using data formatters that caused some values to not display.
+
 ## 1.17.9 - 2025-10-02
 
 ### Changed
