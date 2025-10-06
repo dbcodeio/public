@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.17.11 - 2025-10-06
+
+### Changed
+
+- MCP/Copilot: Added separate `dbcode-execute-dml` and `dbcode-execute-ddl` tools for granular permission control. #739
+- MCP: **Breaking Change** - Legacy auth modes (Bearer, Querystring) and depreciated SSE transport removed. OAuth provides automatic discovert and secure authentication with approval dialogs for MCP clients, and no need to set query strings, tokens etc. URL has also been changed to http://localhost:PORT/mcp.
+- MongoDB: Added create, drop, and rename capabilities to MongoDB collections, matching functionality available for SQL database tables. #66
+
+### Fixed
+
+- Connections: Fixed refresh not updating schema metadata when database structure changes (table field types, new databases, etc.). #747
+- Azure/SQL Server: Stored procedures and functions were not scriptable. #743
+
 ## 1.17.10 - 2025-10-03
 
 ### Changed
