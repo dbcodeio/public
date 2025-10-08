@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.17.12 - 2025-10-08
+
+### Changed
+
+- File Formats: CSV, Parquet, and Excel files now save changes back to disk after editing. #751
+- Explorer: Added create capability for database objects (triggers, views, procedures, functions, indexes) with dialect-specific SQL across all supported databases. #67
+- Results: Added Parquet export format. #730
+- Results: Added option to expand a JSON column into unique keys or rows if an array. #710
+- Notebooks: Added python language support. #621
+
+### Fixed
+
+- Results: Fixed "Export - All" to automatically fetch all rows when row limit is reached. #750
+
 ## 1.17.11 - 2025-10-06
 
 ### Changed
