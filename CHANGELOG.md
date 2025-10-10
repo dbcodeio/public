@@ -1,5 +1,76 @@
 # CHANGELOG
 
+## 1.17.12 - 2025-10-08
+
+### Changed
+
+- File Formats: CSV, Parquet, and Excel files now save changes back to disk after editing. #751
+- Explorer: Added create capability for database objects (triggers, views, procedures, functions, indexes) with dialect-specific SQL across all supported databases. #67
+- Results: Added Parquet export format. #730
+- Results: Added option to expand a JSON column into unique keys or rows if an array. #710
+- Notebooks: Added python language support. #621
+
+### Fixed
+
+- Results: Fixed "Export - All" to automatically fetch all rows when row limit is reached. #750
+
+## 1.17.11 - 2025-10-06
+
+### Changed
+
+- MCP/Copilot: Added separate `dbcode-execute-dml` and `dbcode-execute-ddl` tools for granular permission control. #739
+- MCP: **Breaking Change** - Legacy auth modes (Bearer, Querystring) and depreciated SSE transport removed. OAuth provides automatic discovert and secure authentication with approval dialogs for MCP clients, and no need to set query strings, tokens etc. URL has also been changed to http://localhost:PORT/mcp.
+- MongoDB: Added create, drop, and rename capabilities to MongoDB collections, matching functionality available for SQL database tables. #66
+
+### Fixed
+
+- Connections: Fixed refresh not updating schema metadata when database structure changes (table field types, new databases, etc.). #747
+- Azure/SQL Server: Stored procedures and functions were not scriptable. #743
+
+## 1.17.10 - 2025-10-03
+
+### Changed
+
+- Sign in: Added web based sign in option including support for Google. #742
+
+### Fixed
+
+- Results: Fixed type collision issue when using data formatters that caused some values to not display.
+
+## 1.17.9 - 2025-10-02
+
+### Changed
+
+- Backup/Restore: Added backup and restore functionality for PostgreSQL MySQL, SQLite, and DuckDB to start to the right click context menu of their databases (uses native tools). #195
+
+## 1.17.8 - 2025-10-01
+
+### Changed
+
+- Definition Provider: Added setting `dbcode.definitionProvider.defaultAction` to control Cmd/Ctrl+Click behavior on tables/views - choose between opening definition (default) or data viewer. #739
+- Results: Data lookup formatters now support cross-database and cross-schema lookups.
+
+## 1.17.7 - 2025-09-30
+
+### Changed
+
+- Scripting: now supports tables, triggers, indexes for most databases (Postgres, Oracle, Snowflake, SQL Server still work in progress). #389
+- Copilot: Drag tables to copilot to provide it the table create statement and other context. #723
+
+## 1.17.6 - 2025-09-30
+
+### Changed
+
+- Results: Added data lookup formatters (lookup a value from another table based on the current column value).
+- Clickhouse: Removed from preview. #111
+
+### Fixed
+
+- MySQL/MariaDB: Fixed DATETIME columns being incorrectly timezone-shifted when displayed in Locale format. #85
+- MySQL/MariaDB: Added charset and collation connection settings to configure character encoding. #227
+- Results: Fixed Locale date format displaying incorrect datetime values when timezone conversion was applied.
+- Inspector: Map view now renders PostGIS geometry columns delivered as EWKB hex. #738
+
 ## 1.17.4 - 2025-09-28
 
 ### Changed
