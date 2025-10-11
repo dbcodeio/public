@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.17.13 - 2025-10-11
+
+### Changed
+
+- ERD: Can now choose to display multiple schemas in the diagram. #744
+- Import: You can now create a new table when importing. #529
+- Import: Now supports importing from parquet and avro files. 
+
+### Fixed
+
+- ERD: Filtering to start a specific table was not showing tables that did not contain that table's name.
+
 ## 1.17.12 - 2025-10-08
 
 ### Changed
