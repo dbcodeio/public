@@ -2069,5 +2069,6 @@
   "A File (.csv; .xlsx; .parquet; .avro)": "ファイル (.csv、.xlsx、.parquet、.avro)",
   "Error getting sample data from {0}, error: {1}": "{0}からのサンプルデータの取得中にエラーが発生しました、エラー: {1}",
   "Destination connection not found": "宛先接続が見つかりません",
-  "Destination table is required": "宛先テーブルは必須です"
+  "Destination table is required": "宛先テーブルは必須です",
+  "authSource: Database name with the credentials.": "authSource: 資格情報を含むデータベース名。"
 }

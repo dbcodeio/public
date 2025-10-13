@@ -2066,5 +2066,6 @@
   "A File (.csv; .xlsx; .parquet; .avro)": "Файл (.csv; .xlsx; .parquet; .avro)",
   "Error getting sample data from {0}, error: {1}": "Ошибка получения образца данных из {0}, ошибка: {1}",
   "Destination connection not found": "Подключение к месту назначения не найдено",
-  "Destination table is required": "Таблица назначения обязательна"
+  "Destination table is required": "Таблица назначения обязательна",
+  "authSource: Database name with the credentials.": "authSource: Имя базы данных с учетными данными."
 }

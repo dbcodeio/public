@@ -2066,5 +2066,6 @@
   "A File (.csv; .xlsx; .parquet; .avro)": "Soubor (.csv; .xlsx; .parquet; .avro)",
   "Error getting sample data from {0}, error: {1}": "Chyba při získávání ukázkových dat z {0}, chyba: {1}",
   "Destination connection not found": "Cílové připojení nebylo nalezeno",
-  "Destination table is required": "Cílová tabulka je povinná"
+  "Destination table is required": "Cílová tabulka je povinná",
+  "authSource: Database name with the credentials.": "authSource: Název databáze s přihlašovacími údaji."
 }

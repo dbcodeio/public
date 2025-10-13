@@ -2066,5 +2066,6 @@
   "A File (.csv; .xlsx; .parquet; .avro)": "檔案 （.csv; .xlsx; .parquet; .avro）",
   "Error getting sample data from {0}, error: {1}": "從{0}取得範例資料時出錯，錯誤：{1}",
   "Destination connection not found": "找不到目的地連線",
-  "Destination table is required": "目的地表格是必填項"
+  "Destination table is required": "目的地表格是必填項",
+  "authSource: Database name with the credentials.": "authSource：具有認證的資料庫名稱。"
 }

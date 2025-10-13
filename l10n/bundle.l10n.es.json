@@ -2066,5 +2066,6 @@
   "A File (.csv; .xlsx; .parquet; .avro)": "Un archivo (.csv; .xlsx; .parquet; .avro)",
   "Error getting sample data from {0}, error: {1}": "Error al obtener datos de muestra de {0}, error: {1}",
   "Destination connection not found": "No se ha encontrado la conexión de destino",
-  "Destination table is required": "Se requiere la tabla de destino"
+  "Destination table is required": "Se requiere la tabla de destino",
+  "authSource: Database name with the credentials.": "authSource: Nombre de la base de datos con las credenciales."
 }

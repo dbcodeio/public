@@ -1296,6 +1296,7 @@
   "Format: {0}": "Ƒǿǿřḿȧȧŧ: {0}",
   "Microsoft Entra ID": "Ḿīƈřǿǿşǿǿƒŧ ḖḖƞŧřȧȧ ĪḒ",
   "MongoDB Protocol": "ḾǿǿƞɠǿǿḒƁ Ƥřǿǿŧǿǿƈǿǿŀ",
+  "authSource: Database name with the credentials.": "ȧȧŭŭŧħŞǿǿŭŭřƈḗḗ: Ḓȧȧŧȧȧƀȧȧşḗḗ ƞȧȧḿḗḗ ẇīŧħ ŧħḗḗ ƈřḗḗḓḗḗƞŧīȧȧŀş.",
   "Nothing returned. Try using db.collection('name').find();": "Ƞǿǿŧħīƞɠ řḗḗŧŭŭřƞḗḗḓ. Ŧřẏ ŭŭşīƞɠ ḓƀ.ƈǿǿŀŀḗḗƈŧīǿǿƞ('ƞȧȧḿḗḗ').ƒīƞḓ();",
   "Unknown BSON type: {0} found in MongoDB": "ŬŬƞķƞǿǿẇƞ ƁŞǾǾȠ ŧẏƥḗḗ: {0} ƒǿǿŭŭƞḓ īƞ ḾǿǿƞɠǿǿḒƁ",
   "Enter the name for the collection": "ḖḖƞŧḗḗř ŧħḗḗ ƞȧȧḿḗḗ ƒǿǿř ŧħḗḗ ƈǿǿŀŀḗḗƈŧīǿǿƞ",

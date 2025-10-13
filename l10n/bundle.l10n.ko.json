@@ -2066,5 +2066,6 @@
   "A File (.csv; .xlsx; .parquet; .avro)": "파일(.csv; .xlsx; .parquet; .avro)",
   "Error getting sample data from {0}, error: {1}": "{0}에서 샘플 데이터를 가져오는 중 오류 발생, 오류: {1}",
   "Destination connection not found": "대상 연결을 찾을 수 없습니다.",
-  "Destination table is required": "대상 테이블이 필요합니다."
+  "Destination table is required": "대상 테이블이 필요합니다.",
+  "authSource: Database name with the credentials.": "authSource: 자격 증명이 있는 데이터베이스 이름입니다."
 }

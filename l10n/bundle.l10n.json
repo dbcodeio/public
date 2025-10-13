@@ -1296,6 +1296,7 @@
   "Format: {0}": "Format: {0}",
   "Microsoft Entra ID": "Microsoft Entra ID",
   "MongoDB Protocol": "MongoDB Protocol",
+  "authSource: Database name with the credentials.": "authSource: Database name with the credentials.",
   "Nothing returned. Try using db.collection('name').find();": "Nothing returned. Try using db.collection('name').find();",
   "Unknown BSON type: {0} found in MongoDB": "Unknown BSON type: {0} found in MongoDB",
   "Enter the name for the collection": "Enter the name for the collection",

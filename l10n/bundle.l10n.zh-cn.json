@@ -2066,5 +2066,6 @@
   "A File (.csv; .xlsx; .parquet; .avro)": "文件 （.csv; .xlsx; .parquet; .avro）",
   "Error getting sample data from {0}, error: {1}": "从 {0} 获取示例数据时出错，错误：{1}",
   "Destination connection not found": "未找到目标连接",
-  "Destination table is required": "目标表是必填项"
+  "Destination table is required": "目标表是必填项",
+  "authSource: Database name with the credentials.": "authSource：带有凭据的数据库名称。"
 }

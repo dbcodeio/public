@@ -2066,5 +2066,6 @@
   "A File (.csv; .xlsx; .parquet; .avro)": "Bir Dosya (.csv; .xlsx; .parke; .avro)",
   "Error getting sample data from {0}, error: {1}": "{0}'den örnek veriler alınırken hata oluştu, hata: {1}",
   "Destination connection not found": "Hedef bağlantı bulunamadı",
-  "Destination table is required": "Hedef tablo gereklidir"
+  "Destination table is required": "Hedef tablo gereklidir",
+  "authSource: Database name with the credentials.": "authSource: Kimlik bilgilerini içeren veritabanı adı."
 }

@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.17.15 - 2025-10-13
+
+### Changed
+
+- MongoDB: Added authentication database (authSource) option to connection settings. #752
+
+### Fixed
+
+- RisingWave: Fixed connection errors with RisingWave versions below 2.0 due to missing information_schema support. #753
+- Results: Expansion now handles more complex nested data, along with correctly displaying row numbers and background stripes. #710
+- Bigquery: Fixed JSON data types being quoted. #710
+
 ## 1.17.13 - 2025-10-11
 
 ### Changed

@@ -2066,5 +2066,6 @@
   "A File (.csv; .xlsx; .parquet; .avro)": "Eine Datei (.csv; .xlsx; .parquet; .avro)",
   "Error getting sample data from {0}, error: {1}": "Fehler beim Abrufen von Beispieldaten aus {0}, Fehler: {1}",
   "Destination connection not found": "Zielverbindung nicht gefunden",
-  "Destination table is required": "Zieltabelle ist erforderlich"
+  "Destination table is required": "Zieltabelle ist erforderlich",
+  "authSource: Database name with the credentials.": "authSource: Datenbankname mit den Anmeldeinformationen."
 }
