@@ -2011,8 +2011,6 @@
   "License activation failed. Please check the license and try again.": "ライセンスのアクティベーションに失敗しました。ライセンスを確認してから、もう一度やり直してください。",
   "Sign in with {0}": "{0}でサインインする",
   "Built in provider": "組み込みプロバイダー",
-  "Sign via the Web": "Web経由で署名する",
-  "Supports Microsoft, Google, and GitHub accounts": "Microsoft、Google、GitHub アカウントをサポート",
   "Offline Activation": "オフラインアクティベーション",
   "Generate a machine key for offline activation": "オフラインアクティベーション用のマシンキーを生成する",
   "Select how to sign in/activate": "サインイン/アクティブ化の方法を選択する",
@@ -2070,5 +2068,16 @@
   "Error getting sample data from {0}, error: {1}": "{0}からのサンプルデータの取得中にエラーが発生しました、エラー: {1}",
   "Destination connection not found": "宛先接続が見つかりません",
   "Destination table is required": "宛先テーブルは必須です",
-  "authSource: Database name with the credentials.": "authSource: 資格情報を含むデータベース名。"
+  "authSource: Database name with the credentials.": "authSource: 資格情報を含むデータベース名。",
+  "No items available": "利用可能なアイテムはありません",
+  "Error fetching data: {0}": "データの取得エラー: {0}",
+  "Sign in via the Web": "Web 経由でサインインする",
+  "Works with Microsoft, Google, GitHub, or email": "Microsoft、Google、GitHub、または電子メールで動作",
+  "Unable to fetch roles. Please enter manually.": "ロールをフェッチできません。手動で入力してください。",
+  "No roles found.": "ロールが見つかりませんでした。",
+  "Unable to fetch warehouses. Please enter manually.": "倉庫を取得できません。手動で入力してください。",
+  "No warehouses found. Please create a warehouse in Snowflake.": "倉庫は見つかりませんでした。Snowflakeでウェアハウスを作成してください。",
+  "Hybrid Tables": "ハイブリッドテーブル",
+  "Transient Tables": "一時テーブル",
+  "Dynamic Tables": "動的テーブル"
 }

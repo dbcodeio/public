@@ -2008,8 +2008,6 @@
   "License activation failed. Please check the license and try again.": "授權啟動失敗。請檢查許可證並重試。",
   "Sign in with {0}": "使用{0}登入",
   "Built in provider": "內建提供者",
-  "Sign via the Web": "透過網路簽署",
-  "Supports Microsoft, Google, and GitHub accounts": "支持 Microsoft、Google 和 GitHub 帳戶",
   "Offline Activation": "離線激活",
   "Generate a machine key for offline activation": "產生電腦金鑰以進行離線啟用",
   "Select how to sign in/activate": "選擇登入/啟用方式",
@@ -2067,5 +2065,16 @@
   "Error getting sample data from {0}, error: {1}": "從{0}取得範例資料時出錯，錯誤：{1}",
   "Destination connection not found": "找不到目的地連線",
   "Destination table is required": "目的地表格是必填項",
-  "authSource: Database name with the credentials.": "authSource：具有認證的資料庫名稱。"
+  "authSource: Database name with the credentials.": "authSource：具有認證的資料庫名稱。",
+  "No items available": "沒有可用的項目",
+  "Error fetching data: {0}": "擷取資料時發生錯誤：{0}",
+  "Sign in via the Web": "透過網路登入",
+  "Works with Microsoft, Google, GitHub, or email": "適用於 Microsoft、Google、GitHub 或電子郵件",
+  "Unable to fetch roles. Please enter manually.": "無法擷取角色。請手動輸入。",
+  "No roles found.": "找不到角色。",
+  "Unable to fetch warehouses. Please enter manually.": "無法取得倉儲。請手動輸入。",
+  "No warehouses found. Please create a warehouse in Snowflake.": "沒有找到倉庫。請在 Snowflake 中建立倉庫。",
+  "Hybrid Tables": "混合式表格",
+  "Transient Tables": "暫時性表格",
+  "Dynamic Tables": "動態表格"
 }

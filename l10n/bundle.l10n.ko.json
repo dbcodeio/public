@@ -2008,8 +2008,6 @@
   "License activation failed. Please check the license and try again.": "라이센스 활성화에 실패했습니다. 라이센스를 확인하고 다시 시도하십시오.",
   "Sign in with {0}": "{0}로 로그인",
   "Built in provider": "기본 제공자",
-  "Sign via the Web": "웹을 통해 서명",
-  "Supports Microsoft, Google, and GitHub accounts": "Microsoft, Google 및 GitHub 계정 지원",
   "Offline Activation": "오프라인 활성화",
   "Generate a machine key for offline activation": "오프라인 활성화를 위한 컴퓨터 키 생성",
   "Select how to sign in/activate": "로그인/활성화 방법 선택",
@@ -2067,5 +2065,16 @@
   "Error getting sample data from {0}, error: {1}": "{0}에서 샘플 데이터를 가져오는 중 오류 발생, 오류: {1}",
   "Destination connection not found": "대상 연결을 찾을 수 없습니다.",
   "Destination table is required": "대상 테이블이 필요합니다.",
-  "authSource: Database name with the credentials.": "authSource: 자격 증명이 있는 데이터베이스 이름입니다."
+  "authSource: Database name with the credentials.": "authSource: 자격 증명이 있는 데이터베이스 이름입니다.",
+  "No items available": "사용 가능한 항목이 없습니다.",
+  "Error fetching data: {0}": "데이터 가져오기 오류: {0}",
+  "Sign in via the Web": "웹을 통해 로그인",
+  "Works with Microsoft, Google, GitHub, or email": "Microsoft, Google, GitHub 또는 이메일과 함께 작동",
+  "Unable to fetch roles. Please enter manually.": "역할을 가져올 수 없습니다. 수동으로 입력하십시오.",
+  "No roles found.": "역할을 찾을 수 없습니다.",
+  "Unable to fetch warehouses. Please enter manually.": "창고를 가져올 수 없습니다. 수동으로 입력하십시오.",
+  "No warehouses found. Please create a warehouse in Snowflake.": "창고를 찾을 수 없습니다. Snowflake에서 웨어하우스를 생성하세요.",
+  "Hybrid Tables": "하이브리드 테이블",
+  "Transient Tables": "과도 테이블",
+  "Dynamic Tables": "동적 테이블"
 }

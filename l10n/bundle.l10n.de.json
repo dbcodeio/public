@@ -2008,8 +2008,6 @@
   "License activation failed. Please check the license and try again.": "Fehler bei der Lizenzaktivierung. Bitte überprüfen Sie die Lizenz und versuchen Sie es erneut.",
   "Sign in with {0}": "Anmelden mit {0}",
   "Built in provider": "Integrierter Anbieter",
-  "Sign via the Web": "Signieren Sie über das Web",
-  "Supports Microsoft, Google, and GitHub accounts": "Unterstützt Microsoft-, Google- und GitHub-Konten",
   "Offline Activation": "Offline-Aktivierung",
   "Generate a machine key for offline activation": "Generieren eines Computerschlüssels für die Offlineaktivierung",
   "Select how to sign in/activate": "Wählen Sie aus, wie Sie sich anmelden/aktivieren möchten",
@@ -2067,5 +2065,16 @@
   "Error getting sample data from {0}, error: {1}": "Fehler beim Abrufen von Beispieldaten aus {0}, Fehler: {1}",
   "Destination connection not found": "Zielverbindung nicht gefunden",
   "Destination table is required": "Zieltabelle ist erforderlich",
-  "authSource: Database name with the credentials.": "authSource: Datenbankname mit den Anmeldeinformationen."
+  "authSource: Database name with the credentials.": "authSource: Datenbankname mit den Anmeldeinformationen.",
+  "No items available": "Keine Artikel verfügbar",
+  "Error fetching data: {0}": "Fehler beim Abrufen von Daten: {0}",
+  "Sign in via the Web": "Anmelden über das Web",
+  "Works with Microsoft, Google, GitHub, or email": "Funktioniert mit Microsoft, Google, GitHub oder E-Mail",
+  "Unable to fetch roles. Please enter manually.": "Rollen können nicht abgerufen werden. Bitte manuell eingeben.",
+  "No roles found.": "Keine Rollen gefunden.",
+  "Unable to fetch warehouses. Please enter manually.": "Lager können nicht abgerufen werden. Bitte manuell eingeben.",
+  "No warehouses found. Please create a warehouse in Snowflake.": "Keine Lager gefunden. Bitte erstellen Sie ein Lager in Snowflake.",
+  "Hybrid Tables": "Hybrid-Tabellen",
+  "Transient Tables": "Transiente Tabellen",
+  "Dynamic Tables": "Dynamische Tabellen"
 }

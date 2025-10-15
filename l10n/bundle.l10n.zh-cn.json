@@ -2008,8 +2008,6 @@
   "License activation failed. Please check the license and try again.": "许可证激活失败。请检查许可证并重试。",
   "Sign in with {0}": "使用{0}登录",
   "Built in provider": "内置提供商",
-  "Sign via the Web": "通过网络签名",
-  "Supports Microsoft, Google, and GitHub accounts": "支持 Microsoft、Google 和 GitHub 帐户",
   "Offline Activation": "离线激活",
   "Generate a machine key for offline activation": "生成用于脱机激活的计算机密钥",
   "Select how to sign in/activate": "选择登录/激活方式",
@@ -2067,5 +2065,16 @@
   "Error getting sample data from {0}, error: {1}": "从 {0} 获取示例数据时出错，错误：{1}",
   "Destination connection not found": "未找到目标连接",
   "Destination table is required": "目标表是必填项",
-  "authSource: Database name with the credentials.": "authSource：带有凭据的数据库名称。"
+  "authSource: Database name with the credentials.": "authSource：带有凭据的数据库名称。",
+  "No items available": "没有可用物品",
+  "Error fetching data: {0}": "获取数据时出错：{0}",
+  "Sign in via the Web": "通过 Web 登录",
+  "Works with Microsoft, Google, GitHub, or email": "适用于 Microsoft、Google、GitHub 或电子邮件",
+  "Unable to fetch roles. Please enter manually.": "无法提取角色。请手动输入。",
+  "No roles found.": "未找到角色。",
+  "Unable to fetch warehouses. Please enter manually.": "无法获取仓库。请手动输入。",
+  "No warehouses found. Please create a warehouse in Snowflake.": "未找到仓库。请在 Snowflake 中创建一个仓库。",
+  "Hybrid Tables": "混合表",
+  "Transient Tables": "瞬态表",
+  "Dynamic Tables": "动态表"
 }

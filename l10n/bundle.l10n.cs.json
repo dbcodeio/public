@@ -2008,8 +2008,6 @@
   "License activation failed. Please check the license and try again.": "Aktivace licence se nezdařila. Zkontrolujte licenci a zkuste to znovu.",
   "Sign in with {0}": "Přihlásit se pomocí {0}",
   "Built in provider": "Vestavěný poskytovatel",
-  "Sign via the Web": "Podepisování přes web",
-  "Supports Microsoft, Google, and GitHub accounts": "Podporuje účty Microsoft, Google a GitHub",
   "Offline Activation": "Offline aktivace",
   "Generate a machine key for offline activation": "Vygenerování klíče počítače pro offline aktivaci",
   "Select how to sign in/activate": "Vyberte způsob přihlášení/aktivace",
@@ -2067,5 +2065,16 @@
   "Error getting sample data from {0}, error: {1}": "Chyba při získávání ukázkových dat z {0}, chyba: {1}",
   "Destination connection not found": "Cílové připojení nebylo nalezeno",
   "Destination table is required": "Cílová tabulka je povinná",
-  "authSource: Database name with the credentials.": "authSource: Název databáze s přihlašovacími údaji."
+  "authSource: Database name with the credentials.": "authSource: Název databáze s přihlašovacími údaji.",
+  "No items available": "Žádné položky nejsou k dispozici",
+  "Error fetching data: {0}": "Chyba při načítání dat: {0}",
+  "Sign in via the Web": "Přihlášení přes web",
+  "Works with Microsoft, Google, GitHub, or email": "Funguje s Microsoftem, Googlem, GitHubem nebo e-mailem",
+  "Unable to fetch roles. Please enter manually.": "Nelze načíst role. Zadejte prosím ručně.",
+  "No roles found.": "Nebyly nalezeny žádné role.",
+  "Unable to fetch warehouses. Please enter manually.": "Nelze načíst sklady. Zadejte prosím ručně.",
+  "No warehouses found. Please create a warehouse in Snowflake.": "Nebyly nalezeny žádné sklady. Vytvořte prosím sklad ve Snowflake.",
+  "Hybrid Tables": "Hybridní tabulky",
+  "Transient Tables": "Přechodné tabulky",
+  "Dynamic Tables": "Dynamické tabulky"
 }

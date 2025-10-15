@@ -2008,8 +2008,6 @@
   "License activation failed. Please check the license and try again.": "L’activation de la licence a échoué. Vérifiez la licence et réessayez.",
   "Sign in with {0}": "Connectez-vous avec {0}",
   "Built in provider": "Fournisseur intégré",
-  "Sign via the Web": "Signer via le Web",
-  "Supports Microsoft, Google, and GitHub accounts": "Prend en charge les comptes Microsoft, Google et GitHub",
   "Offline Activation": "Activation hors ligne",
   "Generate a machine key for offline activation": "Générer une clé machine pour une activation hors ligne",
   "Select how to sign in/activate": "Sélectionnez le mode de connexion/d’activation",
@@ -2067,5 +2065,16 @@
   "Error getting sample data from {0}, error: {1}": "Erreur lors de l’obtention d’un échantillon de données à partir d'{0}, erreur : {1}",
   "Destination connection not found": "Connexion de destination introuvable",
   "Destination table is required": "La table de destination est obligatoire",
-  "authSource: Database name with the credentials.": "authSource : nom de la base de données avec les informations d’identification."
+  "authSource: Database name with the credentials.": "authSource : nom de la base de données avec les informations d’identification.",
+  "No items available": "Aucun article disponible",
+  "Error fetching data: {0}": "Erreur lors de la récupération des données : {0}",
+  "Sign in via the Web": "Se connecter via le Web",
+  "Works with Microsoft, Google, GitHub, or email": "Fonctionne avec Microsoft, Google, GitHub ou la messagerie électronique",
+  "Unable to fetch roles. Please enter manually.": "Impossible de récupérer les rôles. Veuillez saisir manuellement.",
+  "No roles found.": "Aucun rôle n’a été trouvé.",
+  "Unable to fetch warehouses. Please enter manually.": "Impossible de récupérer les entrepôts. Veuillez saisir manuellement.",
+  "No warehouses found. Please create a warehouse in Snowflake.": "Aucun entrepôt trouvé. Veuillez créer un entrepôt dans Snowflake.",
+  "Hybrid Tables": "Tables hybrides",
+  "Transient Tables": "Tables transitoires",
+  "Dynamic Tables": "Tables dynamiques"
 }

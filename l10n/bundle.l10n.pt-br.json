@@ -1141,8 +1141,6 @@
   "License activation failed. Please check the license and try again.": "Falha na ativação da licença. Verifique a licença e tente novamente.",
   "Sign in with {0}": "Entrar com {0}",
   "Built in provider": "Provedor integrado",
-  "Sign via the Web": "Assine pela Web",
-  "Supports Microsoft, Google, and GitHub accounts": "Suporta contas da Microsoft, Google e GitHub",
   "Offline Activation": "Ativação offline",
   "Generate a machine key for offline activation": "Gerar uma chave de máquina para ativação offline",
   "Select how to sign in/activate": "Selecione como entrar/ativar",
@@ -1200,5 +1198,16 @@
   "Error getting sample data from {0}, error: {1}": "Erro ao obter dados de amostra do {0}, erro: {1}",
   "Destination connection not found": "Conexão de destino não encontrada",
   "Destination table is required": "A tabela de destino é obrigatória",
-  "authSource: Database name with the credentials.": "authSource: nome do banco de dados com as credenciais."
+  "authSource: Database name with the credentials.": "authSource: nome do banco de dados com as credenciais.",
+  "No items available": "Nenhum item disponível",
+  "Error fetching data: {0}": "Erro ao buscar dados: {0}",
+  "Sign in via the Web": "Entrar pela Web",
+  "Works with Microsoft, Google, GitHub, or email": "Funciona com Microsoft, Google, GitHub ou e-mail",
+  "Unable to fetch roles. Please enter manually.": "Não é possível buscar funções. Insira manualmente.",
+  "No roles found.": "Nenhuma função encontrada.",
+  "Unable to fetch warehouses. Please enter manually.": "Não é possível buscar warehouses. Insira manualmente.",
+  "No warehouses found. Please create a warehouse in Snowflake.": "Nenhum armazém encontrado. Crie um armazém no Snowflake.",
+  "Hybrid Tables": "Mesas híbridas",
+  "Transient Tables": "Tabelas transitórias",
+  "Dynamic Tables": "Tabelas dinâmicas"
 }

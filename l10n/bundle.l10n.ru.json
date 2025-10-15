@@ -2008,8 +2008,6 @@
   "License activation failed. Please check the license and try again.": "Не удалось активировать лицензию. Пожалуйста, проверьте лицензию и повторите попытку.",
   "Sign in with {0}": "Вход с помощью {0}",
   "Built in provider": "Встроенный провайдер",
-  "Sign via the Web": "Подпись через Интернет",
-  "Supports Microsoft, Google, and GitHub accounts": "Поддержка учетных записей Microsoft, Google и GitHub",
   "Offline Activation": "Оффлайн активация",
   "Generate a machine key for offline activation": "Создание ключа компьютера для автономной активации",
   "Select how to sign in/activate": "Выберите способ входа/активации",
@@ -2067,5 +2065,16 @@
   "Error getting sample data from {0}, error: {1}": "Ошибка получения образца данных из {0}, ошибка: {1}",
   "Destination connection not found": "Подключение к месту назначения не найдено",
   "Destination table is required": "Таблица назначения обязательна",
-  "authSource: Database name with the credentials.": "authSource: Имя базы данных с учетными данными."
+  "authSource: Database name with the credentials.": "authSource: Имя базы данных с учетными данными.",
+  "No items available": "Товаров нет в наличии",
+  "Error fetching data: {0}": "Ошибка при получении данных: {0}",
+  "Sign in via the Web": "Вход через Интернет",
+  "Works with Microsoft, Google, GitHub, or email": "Работает с Microsoft, Google, GitHub или электронной почтой",
+  "Unable to fetch roles. Please enter manually.": "Не удается получить роли. Пожалуйста, введите данные вручную.",
+  "No roles found.": "Роли не найдены.",
+  "Unable to fetch warehouses. Please enter manually.": "Не удается забрать склады. Пожалуйста, введите данные вручную.",
+  "No warehouses found. Please create a warehouse in Snowflake.": "Складов не найдено. Пожалуйста, создайте склад в Snowflake.",
+  "Hybrid Tables": "Гибридные столы",
+  "Transient Tables": "Переходные таблицы",
+  "Dynamic Tables": "Динамические таблицы"
 }

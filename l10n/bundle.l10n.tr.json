@@ -2008,8 +2008,6 @@
   "License activation failed. Please check the license and try again.": "Lisans etkinleştirme başarısız oldu. Lütfen lisansı kontrol edin ve tekrar deneyin.",
   "Sign in with {0}": "{0} ile giriş yapın",
   "Built in provider": "Yerleşik sağlayıcı",
-  "Sign via the Web": "Web üzerinden imzalama",
-  "Supports Microsoft, Google, and GitHub accounts": "Microsoft, Google ve GitHub hesaplarını destekler",
   "Offline Activation": "Çevrimdışı Aktivasyon",
   "Generate a machine key for offline activation": "Çevrimdışı etkinleştirme için bir makine anahtarı oluşturun",
   "Select how to sign in/activate": "Nasıl oturum açacağınızı/etkinleştireceğinizi seçin",
@@ -2067,5 +2065,16 @@
   "Error getting sample data from {0}, error: {1}": "{0}'den örnek veriler alınırken hata oluştu, hata: {1}",
   "Destination connection not found": "Hedef bağlantı bulunamadı",
   "Destination table is required": "Hedef tablo gereklidir",
-  "authSource: Database name with the credentials.": "authSource: Kimlik bilgilerini içeren veritabanı adı."
+  "authSource: Database name with the credentials.": "authSource: Kimlik bilgilerini içeren veritabanı adı.",
+  "No items available": "Mevcut ürün yok",
+  "Error fetching data: {0}": "Veri getirilirken hata oluştu: {0}",
+  "Sign in via the Web": "Web üzerinden giriş yapma",
+  "Works with Microsoft, Google, GitHub, or email": "Microsoft, Google, GitHub veya e-posta ile çalışır",
+  "Unable to fetch roles. Please enter manually.": "Roller getirilemiyor. Lütfen manuel olarak giriniz.",
+  "No roles found.": "Rol bulunamadı.",
+  "Unable to fetch warehouses. Please enter manually.": "Depolar getirilemiyor. Lütfen manuel olarak giriniz.",
+  "No warehouses found. Please create a warehouse in Snowflake.": "Depo bulunamadı. Lütfen Snowflake'te bir depo oluşturun.",
+  "Hybrid Tables": "Hibrit Tablolar",
+  "Transient Tables": "Geçici Tablolar",
+  "Dynamic Tables": "Dinamik Tablolar"
 }

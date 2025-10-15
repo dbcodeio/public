@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.17.16 - 2025-10-15
+
+### Changed
+
+- Snowflake: Added support for dynamic tables, hybrid tables, transient tables, external tables and materialized views. #113
+
+### Fixed
+
+- All databases: Added more sql keywords to the escape list. #763
+- MySQL: Fixed timestamp values in SQL INSERT exports including timezone suffix that MySQL doesn't accept. #761
+- Oracle: Fixed schema detection failing when connecting with system accounts (SYSTEM, SYS, etc.). #760
+- SQLite/D1: Fixed introspection error when database metadata references non-existent tables. #667
+- Snowflake: Warehouse and Security Role now fetch from the server. #762
+
 ## 1.17.15 - 2025-10-13
 
 ### Changed

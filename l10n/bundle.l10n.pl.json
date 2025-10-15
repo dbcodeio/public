@@ -2008,8 +2008,6 @@
   "License activation failed. Please check the license and try again.": "Aktywacja licencji nie powiodła się. Sprawdź licencję i spróbuj ponownie.",
   "Sign in with {0}": "Zaloguj się za pomocą {0}",
   "Built in provider": "Wbudowany dostawca",
-  "Sign via the Web": "Podpisywanie przez Internet",
-  "Supports Microsoft, Google, and GitHub accounts": "Obsługuje konta Microsoft, Google i GitHub",
   "Offline Activation": "Aktywacja w trybie offline",
   "Generate a machine key for offline activation": "Generowanie klucza komputera do aktywacji w trybie offline",
   "Select how to sign in/activate": "Wybierz sposób logowania/aktywacji",
@@ -2067,5 +2065,16 @@
   "Error getting sample data from {0}, error: {1}": "Błąd podczas pobierania przykładowych danych z {0}, błąd: {1}",
   "Destination connection not found": "Nie znaleziono połączenia docelowego",
   "Destination table is required": "Tabela docelowa jest wymagana",
-  "authSource: Database name with the credentials.": "authSource: nazwa bazy danych z poświadczeniami."
+  "authSource: Database name with the credentials.": "authSource: nazwa bazy danych z poświadczeniami.",
+  "No items available": "Brak dostępnych przedmiotów",
+  "Error fetching data: {0}": "Błąd podczas pobierania danych: {0}",
+  "Sign in via the Web": "Logowanie się przez Internet",
+  "Works with Microsoft, Google, GitHub, or email": "Współpracuje z firmami Microsoft, Google, GitHub lub pocztą e-mail",
+  "Unable to fetch roles. Please enter manually.": "Nie można pobrać ról. Wprowadź ręcznie.",
+  "No roles found.": "Nie znaleziono ról.",
+  "Unable to fetch warehouses. Please enter manually.": "Nie można pobrać magazynów. Wprowadź ręcznie.",
+  "No warehouses found. Please create a warehouse in Snowflake.": "Nie znaleziono magazynów. Utwórz magazyn w Snowflake.",
+  "Hybrid Tables": "Stoły hybrydowe",
+  "Transient Tables": "Tabele stanów przejściowych",
+  "Dynamic Tables": "Tabele dynamiczne"
 }
