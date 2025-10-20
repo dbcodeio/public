@@ -248,5 +248,21 @@
   "MCP Revoke All OAuth Tokens": "MCP がすべての OAuth トークンを取り消す",
   "The authorization method for the MCP Server. OAuth provides secure authentication with user approval dialogs. [more information](https://dbcode.io/docs/ai/mcp)": "MCP サーバーの認証方法。OAuth は、ユーザー承認ダイアログで安全な認証を提供します。[詳細](https://dbcode.io/docs/ai/mcp)",
   "OAuth 2.1 with PKCE - secure authentication with user approval dialogs.": "PKCE を使用した OAuth 2.1 - ユーザー承認ダイアログによる安全な認証。",
-  "No authorization required - use only in trusted environments.": "承認は不要 - 信頼できる環境でのみ使用できます。"
+  "No authorization required - use only in trusted environments.": "承認は不要 - 信頼できる環境でのみ使用できます。",
+  "Search...": "捜索。。。",
+  "Open Scratch Files Folder": "スクラッチファイルフォルダを開く",
+  "Delete Old Scratch Files": "古いスクラッチファイルを削除する",
+  "Scratch Files": "スクラッチファイル",
+  "Enable scratch files to save SQL snippets to disk instead of using untitled files.": "スクラッチファイルを有効にして、無題のファイルを使用する代わりにSQLスニペットをディスクに保存します。",
+  "Directory path to store scratch files. Supports ~ for home directory.": "スクラッチファイルを格納するディレクトリパス。ホームディレクトリの~をサポートします。",
+  "Create a new scratch file each hour": "毎時新しいスクラッチファイルを作成する",
+  "Create a new scratch file each day": "毎日新しいスクラッチファイルを作成する",
+  "Create a new scratch file each week": "毎週新しいスクラッチファイルを作成する",
+  "Create a new scratch file each month": "毎月新しいスクラッチファイルを作成する",
+  "How often to create a new scratch file per connection.": "接続ごとに新しいスクラッチファイルを作成する頻度。",
+  "Never automatically delete scratch files": "スクラッチファイルを自動的に削除しない",
+  "Delete scratch files older than 1 month": "1か月以上経過したスクラッチファイルを削除する",
+  "Delete scratch files older than 6 months": "6 か月以上経過したスクラッチ ファイルを削除する",
+  "Delete scratch files older than 1 year": "1 年以上前のスクラッチ ファイルを削除する",
+  "Automatically delete old scratch files based on their last modified date.": "古いスクラッチ ファイルを最終更新日に基づいて自動的に削除します。"
 }

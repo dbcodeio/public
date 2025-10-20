@@ -248,5 +248,21 @@
   "MCP Revoke All OAuth Tokens": "MCP Tüm OAuth Belirteçlerini İptal Ediyor",
   "The authorization method for the MCP Server. OAuth provides secure authentication with user approval dialogs. [more information](https://dbcode.io/docs/ai/mcp)": "MCP Sunucusu için yetkilendirme yöntemi. OAuth, kullanıcı onayı iletişim kutularıyla güvenli kimlik doğrulaması sağlar. [daha fazla bilgi](https://dbcode.io/docs/ai/mcp)",
   "OAuth 2.1 with PKCE - secure authentication with user approval dialogs.": "PKCE ile OAuth 2.1 - kullanıcı onayı iletişim kutuları ile güvenli kimlik doğrulama.",
-  "No authorization required - use only in trusted environments.": "Yetkilendirme gerekmez - yalnızca güvenilir ortamlarda kullanın."
+  "No authorization required - use only in trusted environments.": "Yetkilendirme gerekmez - yalnızca güvenilir ortamlarda kullanın.",
+  "Search...": "Aramak...",
+  "Open Scratch Files Folder": "Scratch Dosyaları Klasörünü Aç",
+  "Delete Old Scratch Files": "Eski Çalışma Dosyalarını Sil",
+  "Scratch Files": "Karalama Dosyaları",
+  "Enable scratch files to save SQL snippets to disk instead of using untitled files.": "Adsız dosyalar kullanmak yerine SQL parçacıklarını diske kaydetmek için çalışma dosyalarını etkinleştirin.",
+  "Directory path to store scratch files. Supports ~ for home directory.": "Çalışma dosyalarını depolamak için dizin yolu. Ana dizin için ~ destekler.",
+  "Create a new scratch file each hour": "Her saat başı yeni bir karalama dosyası oluşturma",
+  "Create a new scratch file each day": "Her gün yeni bir karalama dosyası oluşturun",
+  "Create a new scratch file each week": "Her hafta yeni bir karalama dosyası oluşturma",
+  "Create a new scratch file each month": "Her ay yeni bir karalama dosyası oluşturma",
+  "How often to create a new scratch file per connection.": "Bağlantı başına yeni bir çalışma dosyası oluşturma sıklığı.",
+  "Never automatically delete scratch files": "Çalışma dosyalarını hiçbir zaman otomatik olarak silme",
+  "Delete scratch files older than 1 month": "1 aydan eski çalışma dosyalarını silin",
+  "Delete scratch files older than 6 months": "6 aydan eski çalışma dosyalarını silin",
+  "Delete scratch files older than 1 year": "1 yıldan eski çalışma dosyalarını silin",
+  "Automatically delete old scratch files based on their last modified date.": "Eski karalama dosyalarını son değiştirilme tarihlerine göre otomatik olarak silin."
 }

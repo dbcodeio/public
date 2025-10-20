@@ -248,5 +248,21 @@
   "MCP Revoke All OAuth Tokens": "MCP zrušit všechny tokeny OAuth",
   "The authorization method for the MCP Server. OAuth provides secure authentication with user approval dialogs. [more information](https://dbcode.io/docs/ai/mcp)": "Metoda autorizace pro MCP Server. OAuth poskytuje zabezpečené ověřování pomocí dialogových oken pro schválení uživatelem. [více informací](https://dbcode.io/docs/ai/mcp)",
   "OAuth 2.1 with PKCE - secure authentication with user approval dialogs.": "OAuth 2.1 s PKCE - zabezpečené ověřování s dialogovými dialogy pro schvalování uživatelů.",
-  "No authorization required - use only in trusted environments.": "Není vyžadována žádná autorizace - používejte pouze v důvěryhodných prostředích."
+  "No authorization required - use only in trusted environments.": "Není vyžadována žádná autorizace - používejte pouze v důvěryhodných prostředích.",
+  "Search...": "Hledání...",
+  "Open Scratch Files Folder": "Otevřít složku Scratch Files",
+  "Delete Old Scratch Files": "Odstranit staré stírací soubory",
+  "Scratch Files": "Odkládací soubory",
+  "Enable scratch files to save SQL snippets to disk instead of using untitled files.": "Povolením odkládacích souborů uložíte fragmenty SQL na disk namísto použití souborů bez názvu.",
+  "Directory path to store scratch files. Supports ~ for home directory.": "Cesta k adresáři pro uložení odkládacích souborů. Podporuje ~ pro domovský adresář.",
+  "Create a new scratch file each hour": "Každou hodinu vytvořit nový soubor scratch",
+  "Create a new scratch file each day": "Vytvořit každý den nový soubor Scratch",
+  "Create a new scratch file each week": "Vytvořit nový soubor Scratch každý týden",
+  "Create a new scratch file each month": "Vytvořit nový soubor Scratch každý měsíc",
+  "How often to create a new scratch file per connection.": "Jak často vytvářet nový odkládací soubor pro každé připojení.",
+  "Never automatically delete scratch files": "Nikdy automaticky nemažte pomocné soubory",
+  "Delete scratch files older than 1 month": "Smazat stírací soubory starší než 1 měsíc",
+  "Delete scratch files older than 6 months": "Odstranit stírací soubory starší než 6 měsíců",
+  "Delete scratch files older than 1 year": "Odstranit stírací soubory starší než 1 rok",
+  "Automatically delete old scratch files based on their last modified date.": "Automaticky odstranit staré odkládací soubory na základě data jejich poslední změny."
 }

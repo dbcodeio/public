@@ -248,5 +248,21 @@
   "MCP Revoke All OAuth Tokens": "MCP widerruft alle OAuth-Token",
   "The authorization method for the MCP Server. OAuth provides secure authentication with user approval dialogs. [more information](https://dbcode.io/docs/ai/mcp)": "Die Autorisierungsmethode für den MCP-Server. OAuth bietet eine sichere Authentifizierung mit Benutzergenehmigungsdialogen. [mehr Informationen](https://dbcode.io/docs/ai/mcp)",
   "OAuth 2.1 with PKCE - secure authentication with user approval dialogs.": "OAuth 2.1 mit PKCE - sichere Authentifizierung mit Benutzergenehmigungsdialogen.",
-  "No authorization required - use only in trusted environments.": "Keine Autorisierung erforderlich - nur in vertrauenswürdigen Umgebungen verwenden."
+  "No authorization required - use only in trusted environments.": "Keine Autorisierung erforderlich - nur in vertrauenswürdigen Umgebungen verwenden.",
+  "Search...": "Suchen...",
+  "Open Scratch Files Folder": "Öffnen Sie den Ordner \"Arbeitsdateien\"",
+  "Delete Old Scratch Files": "Alte Arbeitsdateien löschen",
+  "Scratch Files": "Scratch-Dateien",
+  "Enable scratch files to save SQL snippets to disk instead of using untitled files.": "Aktivieren Sie Arbeitsdateien, um SQL-Snippets auf der Festplatte zu speichern, anstatt unbenannte Dateien zu verwenden.",
+  "Directory path to store scratch files. Supports ~ for home directory.": "Verzeichnispfad zum Speichern von Arbeitsdateien. Unterstützt ~ für das Home-Verzeichnis.",
+  "Create a new scratch file each hour": "Erstellen Sie stündlich eine neue Arbeitsdatei",
+  "Create a new scratch file each day": "Erstellen Sie jeden Tag eine neue Arbeitsdatei",
+  "Create a new scratch file each week": "Erstellen Sie jede Woche eine neue Arbeitsdatei",
+  "Create a new scratch file each month": "Erstellen Sie jeden Monat eine neue Arbeitsdatei",
+  "How often to create a new scratch file per connection.": "Wie oft eine neue Arbeitsdatei pro Verbindung erstellt werden soll.",
+  "Never automatically delete scratch files": "Arbeitsdateien nie automatisch löschen",
+  "Delete scratch files older than 1 month": "Löschen von Arbeitsdateien, die älter als 1 Monat sind",
+  "Delete scratch files older than 6 months": "Löschen von Arbeitsdateien, die älter als 6 Monate sind",
+  "Delete scratch files older than 1 year": "Löschen von Arbeitsdateien, die älter als 1 Jahr sind",
+  "Automatically delete old scratch files based on their last modified date.": "Automatisches Löschen alter Arbeitsdateien basierend auf dem Datum der letzten Änderung."
 }

@@ -248,5 +248,21 @@
   "MCP Revoke All OAuth Tokens": "MCP Unieważnienie wszystkich tokenów OAuth",
   "The authorization method for the MCP Server. OAuth provides secure authentication with user approval dialogs. [more information](https://dbcode.io/docs/ai/mcp)": "Metoda autoryzacji dla serwera MCP. Uwierzytelnianie OAuth zapewnia bezpieczne uwierzytelnianie z oknami dialogowymi zatwierdzania użytkowników. [więcej informacji](https://dbcode.io/docs/ai/mcp)",
   "OAuth 2.1 with PKCE - secure authentication with user approval dialogs.": "OAuth 2.1 z PKCE - bezpieczne uwierzytelnianie z oknami dialogowymi zatwierdzania użytkownika.",
-  "No authorization required - use only in trusted environments.": "Autoryzacja nie jest wymagana - używaj tylko w zaufanych środowiskach."
+  "No authorization required - use only in trusted environments.": "Autoryzacja nie jest wymagana - używaj tylko w zaufanych środowiskach.",
+  "Search...": "Szukać...",
+  "Open Scratch Files Folder": "Otwórz folder plików tymczasowych",
+  "Delete Old Scratch Files": "Usuń stare pliki zapasowe",
+  "Scratch Files": "Pliki scratch",
+  "Enable scratch files to save SQL snippets to disk instead of using untitled files.": "Włącz pliki zapasowe, aby zapisywać fragmenty kodu SQL na dysku zamiast używać plików bez tytułu.",
+  "Directory path to store scratch files. Supports ~ for home directory.": "Ścieżka katalogu do przechowywania plików tymczasowych. Obsługuje ~ dla katalogu domowego.",
+  "Create a new scratch file each hour": "Twórz nowy plik zapasowy co godzinę",
+  "Create a new scratch file each day": "Codziennie twórz nowy plik zapasowy",
+  "Create a new scratch file each week": "Twórz nowy plik zapasowy co tydzień",
+  "Create a new scratch file each month": "Tworzenie nowego pliku zapasowego każdego miesiąca",
+  "How often to create a new scratch file per connection.": "Jak często tworzyć nowy plik tymczasowy dla każdego połączenia.",
+  "Never automatically delete scratch files": "Nigdy nie usuwaj automatycznie plików zapasowych",
+  "Delete scratch files older than 1 month": "Usuń pliki zapasowe starsze niż 1 miesiąc",
+  "Delete scratch files older than 6 months": "Usuń pliki zapasowe starsze niż 6 miesięcy",
+  "Delete scratch files older than 1 year": "Usuń pliki zapasowe starsze niż 1 rok",
+  "Automatically delete old scratch files based on their last modified date.": "Automatycznie usuwaj stare pliki zapasowe na podstawie ich daty ostatniej modyfikacji."
 }

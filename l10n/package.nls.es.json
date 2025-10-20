@@ -248,5 +248,21 @@
   "MCP Revoke All OAuth Tokens": "MCP revoca todos los tokens de OAuth",
   "The authorization method for the MCP Server. OAuth provides secure authentication with user approval dialogs. [more information](https://dbcode.io/docs/ai/mcp)": "El método de autorización para el servidor MCP. OAuth proporciona autenticación segura con cuadros de diálogo de aprobación de usuarios. [más información](https://dbcode.io/docs/ai/mcp)",
   "OAuth 2.1 with PKCE - secure authentication with user approval dialogs.": "OAuth 2.1 con PKCE: autenticación segura con cuadros de diálogo de aprobación de usuarios.",
-  "No authorization required - use only in trusted environments.": "No se requiere autorización: utilícelo solo en entornos de confianza."
+  "No authorization required - use only in trusted environments.": "No se requiere autorización: utilícelo solo en entornos de confianza.",
+  "Search...": "Buscar...",
+  "Open Scratch Files Folder": "Abrir carpeta de archivos de borrador",
+  "Delete Old Scratch Files": "Eliminar archivos antiguos de Scratch",
+  "Scratch Files": "Archivos de Scratch",
+  "Enable scratch files to save SQL snippets to disk instead of using untitled files.": "Habilite los archivos temporales para guardar fragmentos de código SQL en el disco en lugar de usar archivos sin título.",
+  "Directory path to store scratch files. Supports ~ for home directory.": "Ruta de directorio para almacenar archivos temporales. Admite ~ para el directorio de inicio.",
+  "Create a new scratch file each hour": "Crear un nuevo archivo borrador cada hora",
+  "Create a new scratch file each day": "Crear un nuevo archivo borrador cada día",
+  "Create a new scratch file each week": "Crear un nuevo archivo borrador cada semana",
+  "Create a new scratch file each month": "Crear un nuevo archivo borrador cada mes",
+  "How often to create a new scratch file per connection.": "Con qué frecuencia crear un nuevo archivo temporal por conexión.",
+  "Never automatically delete scratch files": "Nunca elimine automáticamente los archivos borradores",
+  "Delete scratch files older than 1 month": "Eliminar archivos de memoria virtual de más de 1 mes",
+  "Delete scratch files older than 6 months": "Eliminar archivos de memoria virtual de más de 6 meses",
+  "Delete scratch files older than 1 year": "Eliminar archivos borradores de más de 1 año",
+  "Automatically delete old scratch files based on their last modified date.": "Elimine automáticamente los archivos de memoria virtual antiguos en función de su fecha de última modificación."
 }

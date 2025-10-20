@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.17.16",
+    "version": "1.17.17",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -1059,6 +1059,22 @@
                 "command": "dbcode.script.ddl",
                 "title": "CREATE (DDL)",
                 "category": "DBCode"
+            },
+            {
+                "command": "dbcode.table.search",
+                "title": "%Search...%",
+                "category": "DBCode",
+                "icon": "$(search)"
+            },
+            {
+                "command": "dbcode.scratchFiles.openFolder",
+                "title": "%Open Scratch Files Folder%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.scratchFiles.delete",
+                "title": "%Delete Old Scratch Files%",
+                "category": "DBCode"
             }
         ],
         "keybindings": [
@@ -1637,6 +1653,11 @@
                     "command": "dbcode.table.import",
                     "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~import~/",
                     "group": "2actoin@1"
+                },
+                {
+                    "command": "dbcode.table.search",
+                    "when": "view == dbcode.connections.view && viewItem =~ /~search~/",
+                    "group": "2actoin@2"
                 },
                 {
                     "command": "dbcode.table.rename",
@@ -3549,6 +3570,62 @@
                                     "%Deny the statement from being executed.%"
                                 ]
                             },
+                            "transaction": {
+                                "type": "string",
+                                "default": "allow",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ]
+                            },
+                            "maintenance": {
+                                "type": "string",
+                                "default": "allow",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ]
+                            },
+                            "set/use": {
+                                "type": "string",
+                                "default": "allow",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ]
+                            },
+                            "grant/revoke": {
+                                "type": "string",
+                                "default": "allow",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ]
+                            },
                             "other": {
                                 "type": "string",
                                 "default": "allow",
@@ -3575,6 +3652,10 @@
                             "create": "allow",
                             "alter": "allow",
                             "drop": "allow",
+                            "transaction": "allow",
+                            "maintenance": "allow",
+                            "set/use": "allow",
+                            "grant/revoke": "allow",
                             "other": "allow"
                         }
                     },
@@ -3709,6 +3790,62 @@
                                     "%Deny the statement from being executed.%"
                                 ]
                             },
+                            "transaction": {
+                                "type": "string",
+                                "default": "allow",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ]
+                            },
+                            "maintenance": {
+                                "type": "string",
+                                "default": "allow",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ]
+                            },
+                            "set/use": {
+                                "type": "string",
+                                "default": "allow",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ]
+                            },
+                            "grant/revoke": {
+                                "type": "string",
+                                "default": "allow",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ]
+                            },
                             "other": {
                                 "type": "string",
                                 "default": "allow",
@@ -3735,6 +3872,10 @@
                             "create": "ask",
                             "alter": "ask",
                             "drop": "ask",
+                            "transaction": "allow",
+                            "maintenance": "allow",
+                            "set/use": "allow",
+                            "grant/revoke": "ask",
                             "other": "ask"
                         }
                     },
@@ -3869,6 +4010,62 @@
                                     "%Deny the statement from being executed.%"
                                 ]
                             },
+                            "transaction": {
+                                "type": "string",
+                                "default": "allow",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ]
+                            },
+                            "maintenance": {
+                                "type": "string",
+                                "default": "allow",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ]
+                            },
+                            "set/use": {
+                                "type": "string",
+                                "default": "allow",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ]
+                            },
+                            "grant/revoke": {
+                                "type": "string",
+                                "default": "allow",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ]
+                            },
                             "other": {
                                 "type": "string",
                                 "default": "allow",
@@ -3895,6 +4092,10 @@
                             "create": "deny",
                             "alter": "deny",
                             "drop": "deny",
+                            "transaction": "allow",
+                            "maintenance": "ask",
+                            "set/use": "allow",
+                            "grant/revoke": "deny",
                             "other": "ask"
                         }
                     }
@@ -4379,6 +4580,61 @@
                         }
                     }
                 }
+            },
+            {
+                "title": "%Scratch Files%",
+                "order": 99,
+                "type": "object",
+                "properties": {
+                    "dbcode.scratchFiles.enabled": {
+                        "order": 1,
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "%Enable scratch files to save SQL snippets to disk instead of using untitled files.%"
+                    },
+                    "dbcode.scratchFiles.path": {
+                        "order": 2,
+                        "type": "string",
+                        "default": "~/.dbcode/scratch",
+                        "markdownDescription": "%Directory path to store scratch files. Supports ~ for home directory.%"
+                    },
+                    "dbcode.scratchFiles.rotationPeriod": {
+                        "order": 3,
+                        "type": "string",
+                        "enum": [
+                            "hour",
+                            "day",
+                            "week",
+                            "month"
+                        ],
+                        "default": "day",
+                        "enumDescriptions": [
+                            "%Create a new scratch file each hour%",
+                            "%Create a new scratch file each day%",
+                            "%Create a new scratch file each week%",
+                            "%Create a new scratch file each month%"
+                        ],
+                        "markdownDescription": "%How often to create a new scratch file per connection.%"
+                    },
+                    "dbcode.scratchFiles.delete": {
+                        "order": 4,
+                        "type": "string",
+                        "enum": [
+                            "never",
+                            "1month",
+                            "6months",
+                            "1year"
+                        ],
+                        "default": "6months",
+                        "enumDescriptions": [
+                            "%Never automatically delete scratch files%",
+                            "%Delete scratch files older than 1 month%",
+                            "%Delete scratch files older than 6 months%",
+                            "%Delete scratch files older than 1 year%"
+                        ],
+                        "markdownDescription": "%Automatically delete old scratch files based on their last modified date.%"
+                    }
+                }
             }
         ]
     },
@@ -4558,7 +4814,6 @@
         "shiki": "^3.1.0",
         "snowflake-sdk": "^2.1.0",
         "sql-formatter": "^15.4.11",
-        "sql-query-identifier": "^2.8.0",
         "ssh-config": "^5.0.3",
         "sshpk": "^1.18.0",
         "tablemark": "^3.1.0",

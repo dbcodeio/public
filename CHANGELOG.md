@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## 1.17.17 - 2025-10-20
+
+### Changed
+
+- Editor: Opening SQL now reuses existing untitled files for the same connection instead of creating multiple tabs.
+- Editor: Added [scratch files](https://dbcode.io/docs/query/scratch-files) for persistent SQL files organized by connection with configurable rotation (hourly/daily/weekly/monthly) and automatic cleanup.
+- Editor: Reworked statement boundary parsing to better handle functions, procedures, and other complex SQL constructs. #768 #767
+- Connection Roles: Added new statement types for transactions, maintenance, grant/revoke, set/use.
+- Explorer: Added table search to right click context menu in explorer, supports multiple table selection.
+- Oracle: Added "Include Oracle Maintained Schemas" option to show system schemas (SYS, SYSTEM, etc.). #769
+- Redis: Added support for executing statements in the editor.
+- Results: Added "Open" to context menu to open data directly in editor. #630
+
+### Fixed
+
+- Parameters: Fixed parameter detection incorrectly interpreting string concatenation operator (`||`) as parameter definitions. #770
+- Redis: Follows pagination correctly when loading keyspaces.
+- Results: CSV and Excel exports now respect the grid's column order, including user-reordered columns.
+- Table Editing: Not correctly handling tables with columns already set to null.
+
 ## 1.17.16 - 2025-10-15
 
 ### Changed

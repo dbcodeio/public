@@ -248,5 +248,21 @@
   "MCP Revoke All OAuth Tokens": "MCP Отзыв всех токенов OAuth",
   "The authorization method for the MCP Server. OAuth provides secure authentication with user approval dialogs. [more information](https://dbcode.io/docs/ai/mcp)": "Метод авторизации для сервера MCP. OAuth обеспечивает безопасную аутентификацию с диалоговыми окнами утверждения пользователей. [подробнее](https://dbcode.io/docs/ai/mcp)",
   "OAuth 2.1 with PKCE - secure authentication with user approval dialogs.": "OAuth 2.1 с PKCE - безопасная аутентификация с диалоговыми окнами утверждения пользователей.",
-  "No authorization required - use only in trusted environments.": "Не требуется авторизация - используйте только в доверенных средах."
+  "No authorization required - use only in trusted environments.": "Не требуется авторизация - используйте только в доверенных средах.",
+  "Search...": "Искать...",
+  "Open Scratch Files Folder": "Откройте папку Scratch Files",
+  "Delete Old Scratch Files": "Удаление старых скретч-файлов",
+  "Scratch Files": "Скретч-файлы",
+  "Enable scratch files to save SQL snippets to disk instead of using untitled files.": "Включите временные файлы для сохранения фрагментов SQL на диске вместо использования файлов без названия.",
+  "Directory path to store scratch files. Supports ~ for home directory.": "Путь к директории для хранения временных файлов. Поддерживает ~ для домашнего каталога.",
+  "Create a new scratch file each hour": "Создание нового скретч-файла каждый час",
+  "Create a new scratch file each day": "Создавайте новый рабочий файл каждый день",
+  "Create a new scratch file each week": "Создавайте новый скретч-файл каждую неделю",
+  "Create a new scratch file each month": "Создание нового скретч-файла каждый месяц",
+  "How often to create a new scratch file per connection.": "Как часто создавать новый рабочий файл для каждого соединения.",
+  "Never automatically delete scratch files": "Никогда не удаляйте автоматически скретч-файлы",
+  "Delete scratch files older than 1 month": "Удаление скретч-файлов старше 1 месяца",
+  "Delete scratch files older than 6 months": "Удаление скретч-файлов старше 6 месяцев",
+  "Delete scratch files older than 1 year": "Удаление скретч-файлов старше 1 года",
+  "Automatically delete old scratch files based on their last modified date.": "Автоматическое удаление старых скретч-файлов на основе даты их последнего изменения."
 }

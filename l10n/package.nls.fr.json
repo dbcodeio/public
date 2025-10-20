@@ -248,5 +248,21 @@
   "MCP Revoke All OAuth Tokens": "MCP Révoquer tous les jetons OAuth",
   "The authorization method for the MCP Server. OAuth provides secure authentication with user approval dialogs. [more information](https://dbcode.io/docs/ai/mcp)": "Méthode d’autorisation pour le serveur MCP. OAuth fournit une authentification sécurisée avec des boîtes de dialogue d’approbation de l’utilisateur. [plus d’informations](https://dbcode.io/docs/ai/mcp)",
   "OAuth 2.1 with PKCE - secure authentication with user approval dialogs.": "OAuth 2.1 avec PKCE - authentification sécurisée avec boîtes de dialogue d’approbation de l’utilisateur.",
-  "No authorization required - use only in trusted environments.": "Aucune autorisation requise - à utiliser uniquement dans des environnements de confiance."
+  "No authorization required - use only in trusted environments.": "Aucune autorisation requise - à utiliser uniquement dans des environnements de confiance.",
+  "Search...": "Rechercher...",
+  "Open Scratch Files Folder": "Ouvrir le dossier Scratch Files",
+  "Delete Old Scratch Files": "Supprimer les anciens fichiers de travail",
+  "Scratch Files": "Fichiers de travail",
+  "Enable scratch files to save SQL snippets to disk instead of using untitled files.": "Activez les fichiers de travail pour enregistrer des extraits de code SQL sur le disque au lieu d’utiliser des fichiers sans titre.",
+  "Directory path to store scratch files. Supports ~ for home directory.": "Chemin d’accès au répertoire pour stocker les fichiers de travail. Prend en charge ~ pour le répertoire personnel.",
+  "Create a new scratch file each hour": "Créez un nouveau fichier de travail toutes les heures",
+  "Create a new scratch file each day": "Créez un nouveau fichier de travail chaque jour",
+  "Create a new scratch file each week": "Créez un nouveau fichier de travail chaque semaine",
+  "Create a new scratch file each month": "Créez un nouveau fichier de travail chaque mois",
+  "How often to create a new scratch file per connection.": "À quelle fréquence créer un nouveau fichier de travail par connexion.",
+  "Never automatically delete scratch files": "Ne supprimez jamais automatiquement les fichiers de travail",
+  "Delete scratch files older than 1 month": "Supprimer les fichiers de travail de plus de 1 mois",
+  "Delete scratch files older than 6 months": "Supprimer les fichiers de travail de plus de 6 mois",
+  "Delete scratch files older than 1 year": "Supprimer les fichiers de travail de plus de 1 an",
+  "Automatically delete old scratch files based on their last modified date.": "Supprimez automatiquement les anciens fichiers de travail en fonction de leur date de dernière modification."
 }

@@ -248,5 +248,21 @@
   "MCP Revoke All OAuth Tokens": "MCP revoca tutti i token OAuth",
   "The authorization method for the MCP Server. OAuth provides secure authentication with user approval dialogs. [more information](https://dbcode.io/docs/ai/mcp)": "Il metodo di autorizzazione per il server MCP. OAuth fornisce un'autenticazione sicura con finestre di dialogo di approvazione dell'utente. [maggiori informazioni](https://dbcode.io/docs/ai/mcp)",
   "OAuth 2.1 with PKCE - secure authentication with user approval dialogs.": "OAuth 2.1 con PKCE: autenticazione sicura con finestre di dialogo di approvazione dell'utente.",
-  "No authorization required - use only in trusted environments.": "Non è richiesta alcuna autorizzazione: utilizzare solo in ambienti affidabili."
+  "No authorization required - use only in trusted environments.": "Non è richiesta alcuna autorizzazione: utilizzare solo in ambienti affidabili.",
+  "Search...": "Ricerca...",
+  "Open Scratch Files Folder": "Apri la cartella dei file di memoria virtuale",
+  "Delete Old Scratch Files": "Elimina i vecchi file di memoria virtuale",
+  "Scratch Files": "Scratch File",
+  "Enable scratch files to save SQL snippets to disk instead of using untitled files.": "Abilita i file di memoria virtuale per salvare i frammenti SQL su disco invece di utilizzare file senza titolo.",
+  "Directory path to store scratch files. Supports ~ for home directory.": "Percorso della directory per archiviare i file di memoria virtuale. Supporta ~ per la directory home.",
+  "Create a new scratch file each hour": "Crea un nuovo file di memoria virtuale ogni ora",
+  "Create a new scratch file each day": "Crea un nuovo file di memoria virtuale ogni giorno",
+  "Create a new scratch file each week": "Crea un nuovo file di memoria virtuale ogni settimana",
+  "Create a new scratch file each month": "Crea un nuovo file di memoria virtuale ogni mese",
+  "How often to create a new scratch file per connection.": "Frequenza con cui creare un nuovo file di memoria virtuale per connessione.",
+  "Never automatically delete scratch files": "Non eliminare mai automaticamente i file di memoria virtuale",
+  "Delete scratch files older than 1 month": "Elimina i file di memoria virtuale più vecchi di 1 mese",
+  "Delete scratch files older than 6 months": "Elimina i file scratch più vecchi di 6 mesi",
+  "Delete scratch files older than 1 year": "Elimina i file scratch più vecchi di 1 anno",
+  "Automatically delete old scratch files based on their last modified date.": "Elimina automaticamente i vecchi file di memoria virtuale in base alla data dell'ultima modifica."
 }

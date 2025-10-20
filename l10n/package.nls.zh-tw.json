@@ -248,5 +248,21 @@
   "MCP Revoke All OAuth Tokens": "MCP 撤銷所有 OAuth 代幣",
   "The authorization method for the MCP Server. OAuth provides secure authentication with user approval dialogs. [more information](https://dbcode.io/docs/ai/mcp)": "MCP 伺服器的授權方法。OAuth 透過使用者核准對話方塊提供安全驗證。[更多資訊]（https://dbcode.io/docs/ai/mcp）",
   "OAuth 2.1 with PKCE - secure authentication with user approval dialogs.": "帶有 PKCE 的 OAuth 2.1 - 使用用戶批准對話框進行安全身份驗證。",
-  "No authorization required - use only in trusted environments.": "無需授權 - 僅在受信任的環境中使用。"
+  "No authorization required - use only in trusted environments.": "無需授權 - 僅在受信任的環境中使用。",
+  "Search...": "尋。。。",
+  "Open Scratch Files Folder": "打開 Scratch 文件夾",
+  "Delete Old Scratch Files": "刪除舊的暫存文件",
+  "Scratch Files": "暫存檔案",
+  "Enable scratch files to save SQL snippets to disk instead of using untitled files.": "啟用暫存檔案以將 SQL 程式碼片段儲存至磁碟，而不是使用無標題檔案。",
+  "Directory path to store scratch files. Supports ~ for home directory.": "儲存暫存檔案的目錄路徑。支持~用於主目錄。",
+  "Create a new scratch file each hour": "每小時建立一個新的暫存檔",
+  "Create a new scratch file each day": "每天建立新的暫存檔",
+  "Create a new scratch file each week": "每週建立新的暫存檔",
+  "Create a new scratch file each month": "每個月建立新的暫存檔",
+  "How often to create a new scratch file per connection.": "每個連線建立新暫存檔案的頻率。",
+  "Never automatically delete scratch files": "永遠不要自動刪除暫存文件",
+  "Delete scratch files older than 1 month": "刪除超過 1 個月的暫存檔案",
+  "Delete scratch files older than 6 months": "刪除超過 6 個月的暫存文件",
+  "Delete scratch files older than 1 year": "刪除超過 1 年的暫存文件",
+  "Automatically delete old scratch files based on their last modified date.": "根據上次修改日期自動刪除舊暫存檔案。"
 }

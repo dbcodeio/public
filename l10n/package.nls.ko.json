@@ -248,5 +248,21 @@
   "MCP Revoke All OAuth Tokens": "MCP 모든 OAuth 토큰 취소",
   "The authorization method for the MCP Server. OAuth provides secure authentication with user approval dialogs. [more information](https://dbcode.io/docs/ai/mcp)": "MCP 서버에 대한 권한 부여 방법입니다. OAuth는 사용자 승인 대화 상자를 통해 보안 인증을 제공합니다. [추가 정보](https://dbcode.io/docs/ai/mcp)",
   "OAuth 2.1 with PKCE - secure authentication with user approval dialogs.": "PKCE가 포함된 OAuth 2.1 - 사용자 승인 대화 상자를 통한 보안 인증.",
-  "No authorization required - use only in trusted environments.": "승인이 필요하지 않으며 신뢰할 수 있는 환경에서만 사용할 수 있습니다."
+  "No authorization required - use only in trusted environments.": "승인이 필요하지 않으며 신뢰할 수 있는 환경에서만 사용할 수 있습니다.",
+  "Search...": "검색...",
+  "Open Scratch Files Folder": "스크래치 파일 폴더 열기",
+  "Delete Old Scratch Files": "오래된 스크래치 파일 삭제",
+  "Scratch Files": "스크래치 파일",
+  "Enable scratch files to save SQL snippets to disk instead of using untitled files.": "스크래치 파일을 활성화하여 제목 없는 파일을 사용하는 대신 SQL 코드 조각을 디스크에 저장합니다.",
+  "Directory path to store scratch files. Supports ~ for home directory.": "스크래치 파일을 저장할 디렉터리 경로입니다. 홈 디렉토리에 대해 ~를 지원합니다.",
+  "Create a new scratch file each hour": "매시간 새 스크래치 파일 만들기",
+  "Create a new scratch file each day": "매일 새 스크래치 파일 만들기",
+  "Create a new scratch file each week": "매주 새 스크래치 파일 만들기",
+  "Create a new scratch file each month": "매월 새 스크래치 파일 만들기",
+  "How often to create a new scratch file per connection.": "연결당 새 스크래치 파일을 만드는 빈도입니다.",
+  "Never automatically delete scratch files": "스크래치 파일을 자동으로 삭제하지 않음",
+  "Delete scratch files older than 1 month": "1개월이 지난 스크래치 파일 삭제",
+  "Delete scratch files older than 6 months": "6개월이 지난 스크래치 파일 삭제",
+  "Delete scratch files older than 1 year": "1년 이상 된 스크래치 파일 삭제",
+  "Automatically delete old scratch files based on their last modified date.": "마지막 수정 날짜를 기준으로 오래된 스크래치 파일을 자동으로 삭제합니다."
 }
