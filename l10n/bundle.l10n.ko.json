@@ -2094,5 +2094,10 @@
   "Info commands": "정보 명령",
   "Result": "결과",
   "(null)": "(null)",
-  "Include Oracle Maintained Schemas": "Oracle 유지 관리 스키마 포함"
+  "Include Oracle Maintained Schemas": "Oracle 유지 관리 스키마 포함",
+  "SQL filter (e.g., {0} = '{1}')": "SQL 필터(예: {0} = '{1}')",
+  "Filter table with SQL WHERE clause": "SQL WHERE 절을 사용하여 테이블 필터링",
+  "Clear filter": "필터 지우기",
+  "Unable to open file: {0}": "파일을 열 수 없음: {0}",
+  "Failed to open file in DBCode: {0}": "DBCode에서 파일을 열지 못했습니다: {0}"
 }

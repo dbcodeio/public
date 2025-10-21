@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.17.17",
+    "version": "1.17.18",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -342,6 +342,42 @@
                 }
             }
         ],
+        "customEditors": [
+            {
+                "viewType": "dbcode.dataFileViewer",
+                "displayName": "DBCode",
+                "selector": [
+                    {
+                        "filenamePattern": "*.db"
+                    },
+                    {
+                        "filenamePattern": "*.duckdb"
+                    },
+                    {
+                        "filenamePattern": "*.ddb"
+                    },
+                    {
+                        "filenamePattern": "*.sqlite"
+                    },
+                    {
+                        "filenamePattern": "*.sqlite3"
+                    },
+                    {
+                        "filenamePattern": "*.csv"
+                    },
+                    {
+                        "filenamePattern": "*.xlsx"
+                    },
+                    {
+                        "filenamePattern": "*.parquet"
+                    },
+                    {
+                        "filenamePattern": "*.avro"
+                    }
+                ],
+                "priority": "option"
+            }
+        ],
         "commands": [
             {
                 "command": "dbcode.item.click",
@@ -514,12 +550,6 @@
                 "command": "dbcode.editor.open",
                 "title": "%Load%",
                 "category": "DBCode"
-            },
-            {
-                "command": "dbcode.discovery.manual",
-                "title": "%Open with DBCode%",
-                "category": "DBCode",
-                "icon": "$(plug)"
             },
             {
                 "command": "dbcode.discovery.folder",
@@ -1676,11 +1706,6 @@
                 }
             ],
             "explorer/context": [
-                {
-                    "command": "dbcode.discovery.manual",
-                    "when": "isFileSystemResource === true && resourceFilename =~ /\\.(db|duckdb|ddb|sqlite|sqlite3|csv|xlsx|avro|parquet)$/",
-                    "group": "navigation"
-                },
                 {
                     "command": "dbcode.discovery.folder",
                     "when": "isFileSystemResource === true && explorerResourceIsFolder === true",

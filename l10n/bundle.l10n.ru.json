@@ -2094,5 +2094,10 @@
   "Info commands": "Информационные команды",
   "Result": "Результат",
   "(null)": "(null)",
-  "Include Oracle Maintained Schemas": "Включение поддерживаемых схем Oracle"
+  "Include Oracle Maintained Schemas": "Включение поддерживаемых схем Oracle",
+  "SQL filter (e.g., {0} = '{1}')": "SQL-фильтр (например, {0} = '{1}')",
+  "Filter table with SQL WHERE clause": "Таблица фильтров с предложением SQL WHERE",
+  "Clear filter": "Очистить фильтр",
+  "Unable to open file: {0}": "Не удается открыть файл: {0}",
+  "Failed to open file in DBCode: {0}": "Не удалось открыть файл в DBCode: {0}"
 }

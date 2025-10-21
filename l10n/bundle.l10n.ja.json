@@ -2097,5 +2097,10 @@
   "Info commands": "情報コマンド",
   "Result": "結果",
   "(null)": "(ヌル)",
-  "Include Oracle Maintained Schemas": "Oracle管理スキーマを含める"
+  "Include Oracle Maintained Schemas": "Oracle管理スキーマを含める",
+  "SQL filter (e.g., {0} = '{1}')": "SQL フィルター (例: {0} = '{1}')",
+  "Filter table with SQL WHERE clause": "SQL WHERE 句を使用したテーブルのフィルター処理",
+  "Clear filter": "クリアフィルター",
+  "Unable to open file: {0}": "ファイルを開くことができません: {0}",
+  "Failed to open file in DBCode: {0}": "DBCodeでファイルを開くことができませんでした:{0}"
 }

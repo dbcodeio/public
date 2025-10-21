@@ -2094,5 +2094,10 @@
   "Info commands": "Commandes d’infos",
   "Result": "Résultat",
   "(null)": "(nulle)",
-  "Include Oracle Maintained Schemas": "Inclure les schémas gérés par Oracle"
+  "Include Oracle Maintained Schemas": "Inclure les schémas gérés par Oracle",
+  "SQL filter (e.g., {0} = '{1}')": "Filtre SQL (par exemple, {0} = '{1}')",
+  "Filter table with SQL WHERE clause": "Table de filtrage avec clause SQL WHERE",
+  "Clear filter": "Effacer le filtre",
+  "Unable to open file: {0}": "Impossible d’ouvrir le fichier : {0}",
+  "Failed to open file in DBCode: {0}": "Échec de l’ouverture du fichier dans DBCode : {0}"
 }

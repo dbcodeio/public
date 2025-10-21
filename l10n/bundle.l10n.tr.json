@@ -2094,5 +2094,10 @@
   "Info commands": "Bilgi komutları",
   "Result": "Sonuç",
   "(null)": "(boş)",
-  "Include Oracle Maintained Schemas": "Oracle tarafından tutulan şemaları dahil etme"
+  "Include Oracle Maintained Schemas": "Oracle tarafından tutulan şemaları dahil etme",
+  "SQL filter (e.g., {0} = '{1}')": "SQL filtresi (örneğin, {0} = '{1}')",
+  "Filter table with SQL WHERE clause": "SQL WHERE yan tümcesi ile tabloyu filtreleme",
+  "Clear filter": "Filtreyi temizle",
+  "Unable to open file: {0}": "Dosya açılamıyor: {0}",
+  "Failed to open file in DBCode: {0}": "DBCode'da dosya açılamadı: {0}"
 }

@@ -2094,5 +2094,10 @@
   "Info commands": "資訊指令",
   "Result": "結果",
   "(null)": "（空）",
-  "Include Oracle Maintained Schemas": "包含 Oracle 維護的綱目"
+  "Include Oracle Maintained Schemas": "包含 Oracle 維護的綱目",
+  "SQL filter (e.g., {0} = '{1}')": "SQL 篩選器 （例如，{0} = '{1}'）",
+  "Filter table with SQL WHERE clause": "使用 SQL WHERE 子句篩選表格",
+  "Clear filter": "清除濾鏡",
+  "Unable to open file: {0}": "無法開啟檔案：{0}",
+  "Failed to open file in DBCode: {0}": "無法在 DBCode 中開啟檔案：{0}"
 }

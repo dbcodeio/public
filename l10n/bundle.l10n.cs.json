@@ -2094,5 +2094,10 @@
   "Info commands": "Informační příkazy",
   "Result": "Výsledek",
   "(null)": "(null)",
-  "Include Oracle Maintained Schemas": "Zahrnout schémata udržovaná Oracle"
+  "Include Oracle Maintained Schemas": "Zahrnout schémata udržovaná Oracle",
+  "SQL filter (e.g., {0} = '{1}')": "SQL filtr (např. {0} = '{1}')",
+  "Filter table with SQL WHERE clause": "Filtrovat tabulku pomocí klauzule SQL WHERE",
+  "Clear filter": "Vymazat filtr",
+  "Unable to open file: {0}": "Soubor nelze otevřít: {0}",
+  "Failed to open file in DBCode: {0}": "Nepodařilo se otevřít soubor v DBCode: {0}"
 }

@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.17.18 - 2025-10-21
+
+### Changed
+
+- Results: Added SQL based where filter to results. #745
+- Files: Added custom editor support for data and database files (CSV, XLSX, Parquet, Avro, SQLite, DuckDB) - users can now use "Open With..." to open files in DBCode. #764
+
+### Fixed
+
+- Autocomplete: No longer suggests items immediately after typing a comma - now requires at least one character to be typed for context-aware suggestions. #765
+- Editor: Fixed DECLARE block parsing. #772
+
 ## 1.17.17 - 2025-10-20
 
 ### Changed

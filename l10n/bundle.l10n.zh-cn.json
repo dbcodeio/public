@@ -2094,5 +2094,10 @@
   "Info commands": "信息命令",
   "Result": "结果",
   "(null)": "（空）",
-  "Include Oracle Maintained Schemas": "包括 Oracle 维护的模式"
+  "Include Oracle Maintained Schemas": "包括 Oracle 维护的模式",
+  "SQL filter (e.g., {0} = '{1}')": "SQL 过滤器（例如，{0} = '{1}'）",
+  "Filter table with SQL WHERE clause": "使用 SQL WHERE 子句过滤表",
+  "Clear filter": "清除过滤器",
+  "Unable to open file: {0}": "无法打开文件：{0}",
+  "Failed to open file in DBCode: {0}": "无法在 DBCode 中打开文件：{0}"
 }
