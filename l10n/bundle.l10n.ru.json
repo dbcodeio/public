@@ -2099,5 +2099,19 @@
   "Filter table with SQL WHERE clause": "Таблица фильтров с предложением SQL WHERE",
   "Clear filter": "Очистить фильтр",
   "Unable to open file: {0}": "Не удается открыть файл: {0}",
-  "Failed to open file in DBCode: {0}": "Не удалось открыть файл в DBCode: {0}"
+  "Failed to open file in DBCode: {0}": "Не удалось открыть файл в DBCode: {0}",
+  "Saved Filters": "Сохраненные фильтры",
+  "Rename filter": "Переименовать фильтр",
+  "Delete filter": "Удалить фильтр",
+  "Apply a filter and save it to reuse later": "Примените фильтр и сохраните его для повторного использования позже",
+  "Save Filter": "Сохранить фильтр",
+  "Saved filters": "Сохраненные фильтры",
+  "Enter a name for this filter": "Введите имя для этого фильтра",
+  "e.g., Active Orders": "Например, активные заказы",
+  "Filter name is required": "Имя фильтра обязательно для заполнения",
+  "Filter \"{0}\" saved": "Фильтр \"{0}\" сохранен",
+  "Rename Filter": "Переименовать фильтр",
+  "Enter new name": "Введите новое имя",
+  "Delete": "Удалить",
+  "Delete filter \"{0}\"?": "Удалить фильтр \"{0}\"?"
 }

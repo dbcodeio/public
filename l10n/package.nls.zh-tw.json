@@ -263,5 +263,6 @@
   "Delete scratch files older than 1 month": "刪除超過 1 個月的暫存檔案",
   "Delete scratch files older than 6 months": "刪除超過 6 個月的暫存文件",
   "Delete scratch files older than 1 year": "刪除超過 1 年的暫存文件",
-  "Automatically delete old scratch files based on their last modified date.": "根據上次修改日期自動刪除舊暫存檔案。"
+  "Automatically delete old scratch files based on their last modified date.": "根據上次修改日期自動刪除舊暫存檔案。",
+  "Saved table filters.": "已儲存的表格篩選器。"
 }

@@ -263,5 +263,6 @@
   "Delete scratch files older than 1 month": "Excluir arquivos temporários com mais de 1 mês",
   "Delete scratch files older than 6 months": "Excluir arquivos de trabalho com mais de 6 meses",
   "Delete scratch files older than 1 year": "Excluir arquivos de trabalho com mais de 1 ano",
-  "Automatically delete old scratch files based on their last modified date.": "Exclua automaticamente arquivos de trabalho antigos com base na data da última modificação."
+  "Automatically delete old scratch files based on their last modified date.": "Exclua automaticamente arquivos de trabalho antigos com base na data da última modificação.",
+  "Saved table filters.": "Filtros de tabela salvos."
 }

@@ -2099,5 +2099,19 @@
   "Filter table with SQL WHERE clause": "SQL WHERE yan tümcesi ile tabloyu filtreleme",
   "Clear filter": "Filtreyi temizle",
   "Unable to open file: {0}": "Dosya açılamıyor: {0}",
-  "Failed to open file in DBCode: {0}": "DBCode'da dosya açılamadı: {0}"
+  "Failed to open file in DBCode: {0}": "DBCode'da dosya açılamadı: {0}",
+  "Saved Filters": "Kayıtlı Filtreler",
+  "Rename filter": "Filtreyi yeniden adlandır",
+  "Delete filter": "Filtreyi sil",
+  "Apply a filter and save it to reuse later": "Bir filtre uygulayın ve daha sonra yeniden kullanmak üzere kaydedin",
+  "Save Filter": "Filtreyi Kaydet",
+  "Saved filters": "Kaydedilmiş filtreler",
+  "Enter a name for this filter": "Bu filtre için bir ad girin",
+  "e.g., Active Orders": "örneğin, Aktif Siparişler",
+  "Filter name is required": "Filtre adı gerekli",
+  "Filter \"{0}\" saved": "\"{0}\" filtresini kaydet",
+  "Rename Filter": "Filtreyi Yeniden Adlandır",
+  "Enter new name": "Yeni ad girin",
+  "Delete": "Silmek",
+  "Delete filter \"{0}\"?": "\"{0}\" filtresi silinsin mi?"
 }

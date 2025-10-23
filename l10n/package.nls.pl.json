@@ -263,5 +263,6 @@
   "Delete scratch files older than 1 month": "Usuń pliki zapasowe starsze niż 1 miesiąc",
   "Delete scratch files older than 6 months": "Usuń pliki zapasowe starsze niż 6 miesięcy",
   "Delete scratch files older than 1 year": "Usuń pliki zapasowe starsze niż 1 rok",
-  "Automatically delete old scratch files based on their last modified date.": "Automatycznie usuwaj stare pliki zapasowe na podstawie ich daty ostatniej modyfikacji."
+  "Automatically delete old scratch files based on their last modified date.": "Automatycznie usuwaj stare pliki zapasowe na podstawie ich daty ostatniej modyfikacji.",
+  "Saved table filters.": "Zapisane filtry tabeli."
 }

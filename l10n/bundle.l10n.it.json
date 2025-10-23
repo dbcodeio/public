@@ -2099,5 +2099,19 @@
   "Filter table with SQL WHERE clause": "Filtrare la tabella con la clausola SQL WHERE",
   "Clear filter": "Cancella filtro",
   "Unable to open file: {0}": "Impossibile aprire il file: {0}",
-  "Failed to open file in DBCode: {0}": "Impossibile aprire il file in DBCode: {0}"
+  "Failed to open file in DBCode: {0}": "Impossibile aprire il file in DBCode: {0}",
+  "Saved Filters": "Filtri salvati",
+  "Rename filter": "Rinomina filtro",
+  "Delete filter": "Elimina filtro",
+  "Apply a filter and save it to reuse later": "Applicare un filtro e salvarlo per riutilizzarlo in un secondo momento",
+  "Save Filter": "Salva filtro",
+  "Saved filters": "Filtri salvati",
+  "Enter a name for this filter": "Inserisci un nome per questo filtro",
+  "e.g., Active Orders": "Ad esempio, ordini attivi",
+  "Filter name is required": "Il nome del filtro è obbligatorio",
+  "Filter \"{0}\" saved": "Filtro \"{0}\" salvato",
+  "Rename Filter": "Rinomina filtro",
+  "Enter new name": "Inserisci il nuovo nome",
+  "Delete": "Cancellare",
+  "Delete filter \"{0}\"?": "Eliminare il filtro \"{0}\"?"
 }

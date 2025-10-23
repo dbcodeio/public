@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.17.23 - 2025-10-23
+
+### Changed
+
+- Results: Added ability to save filters and re use on tables. 
+- Language Server: Added PL/SQL and T-SQL dialect support to the experimental language server for autocomplete and syntax validation.
+
+### Fixed
+
+- Monaco Editor: Fixed theme initialization crash when VS Code themes contain non-string color values.
+- Language Server: Disable diagnostics for unsupported dialects to prevent false positives. #772
+- Themes: Adjusted some colors from the VSCode theme css provided. #776
+
 ## 1.17.18 - 2025-10-21
 
 ### Changed

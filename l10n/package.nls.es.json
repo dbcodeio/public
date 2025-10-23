@@ -263,5 +263,6 @@
   "Delete scratch files older than 1 month": "Eliminar archivos de memoria virtual de más de 1 mes",
   "Delete scratch files older than 6 months": "Eliminar archivos de memoria virtual de más de 6 meses",
   "Delete scratch files older than 1 year": "Eliminar archivos borradores de más de 1 año",
-  "Automatically delete old scratch files based on their last modified date.": "Elimine automáticamente los archivos de memoria virtual antiguos en función de su fecha de última modificación."
+  "Automatically delete old scratch files based on their last modified date.": "Elimine automáticamente los archivos de memoria virtual antiguos en función de su fecha de última modificación.",
+  "Saved table filters.": "Filtros de tabla guardados."
 }

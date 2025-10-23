@@ -2099,5 +2099,19 @@
   "Filter table with SQL WHERE clause": "使用 SQL WHERE 子句过滤表",
   "Clear filter": "清除过滤器",
   "Unable to open file: {0}": "无法打开文件：{0}",
-  "Failed to open file in DBCode: {0}": "无法在 DBCode 中打开文件：{0}"
+  "Failed to open file in DBCode: {0}": "无法在 DBCode 中打开文件：{0}",
+  "Saved Filters": "保存的过滤器",
+  "Rename filter": "重命名过滤器",
+  "Delete filter": "删除过滤器",
+  "Apply a filter and save it to reuse later": "应用过滤器并保存以供日后重复使用",
+  "Save Filter": "保存过滤器",
+  "Saved filters": "已保存的筛选器",
+  "Enter a name for this filter": "输入此过滤器的名称",
+  "e.g., Active Orders": "例如，活跃订单",
+  "Filter name is required": "过滤器名称为必填项",
+  "Filter \"{0}\" saved": "过滤器“{0}”已保存",
+  "Rename Filter": "重命名过滤器",
+  "Enter new name": "输入新名称",
+  "Delete": "删除",
+  "Delete filter \"{0}\"?": "删除过滤器“{0}”？"
 }

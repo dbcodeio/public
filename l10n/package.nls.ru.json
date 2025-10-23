@@ -263,5 +263,6 @@
   "Delete scratch files older than 1 month": "Удаление скретч-файлов старше 1 месяца",
   "Delete scratch files older than 6 months": "Удаление скретч-файлов старше 6 месяцев",
   "Delete scratch files older than 1 year": "Удаление скретч-файлов старше 1 года",
-  "Automatically delete old scratch files based on their last modified date.": "Автоматическое удаление старых скретч-файлов на основе даты их последнего изменения."
+  "Automatically delete old scratch files based on their last modified date.": "Автоматическое удаление старых скретч-файлов на основе даты их последнего изменения.",
+  "Saved table filters.": "Сохранены фильтры таблицы."
 }

@@ -2099,5 +2099,19 @@
   "Filter table with SQL WHERE clause": "Filtrovat tabulku pomocí klauzule SQL WHERE",
   "Clear filter": "Vymazat filtr",
   "Unable to open file: {0}": "Soubor nelze otevřít: {0}",
-  "Failed to open file in DBCode: {0}": "Nepodařilo se otevřít soubor v DBCode: {0}"
+  "Failed to open file in DBCode: {0}": "Nepodařilo se otevřít soubor v DBCode: {0}",
+  "Saved Filters": "Uložené filtry",
+  "Rename filter": "Přejmenovat filtr",
+  "Delete filter": "Smazat filtr",
+  "Apply a filter and save it to reuse later": "Použití filtru a jeho uložení pro pozdější použití",
+  "Save Filter": "Uložit filtr",
+  "Saved filters": "Uložené filtry",
+  "Enter a name for this filter": "Zadejte název tohoto filtru",
+  "e.g., Active Orders": "např. Aktivní příkazy",
+  "Filter name is required": "Název filtru je povinný",
+  "Filter \"{0}\" saved": "Filtr \"{0}\" uložen",
+  "Rename Filter": "Přejmenovat filtr",
+  "Enter new name": "Zadejte nový název",
+  "Delete": "Vymazat",
+  "Delete filter \"{0}\"?": "Smazat filtr \"{0}\"?"
 }

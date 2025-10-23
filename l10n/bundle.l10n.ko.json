@@ -2099,5 +2099,19 @@
   "Filter table with SQL WHERE clause": "SQL WHERE 절을 사용하여 테이블 필터링",
   "Clear filter": "필터 지우기",
   "Unable to open file: {0}": "파일을 열 수 없음: {0}",
-  "Failed to open file in DBCode: {0}": "DBCode에서 파일을 열지 못했습니다: {0}"
+  "Failed to open file in DBCode: {0}": "DBCode에서 파일을 열지 못했습니다: {0}",
+  "Saved Filters": "저장된 필터",
+  "Rename filter": "필터 이름 바꾸기",
+  "Delete filter": "필터 삭제",
+  "Apply a filter and save it to reuse later": "필터를 적용하고 나중에 다시 사용할 수 있도록 저장합니다.",
+  "Save Filter": "필터 저장",
+  "Saved filters": "저장된 필터",
+  "Enter a name for this filter": "이 필터의 이름을 입력합니다",
+  "e.g., Active Orders": "예: 활성 주문",
+  "Filter name is required": "필터 이름은 필수입니다.",
+  "Filter \"{0}\" saved": "필터 \"{0}\" 저장됨",
+  "Rename Filter": "필터 이름 바꾸기",
+  "Enter new name": "새 이름 입력",
+  "Delete": "삭제하다",
+  "Delete filter \"{0}\"?": "필터 \"{0}\"을 삭제하시겠습니까?"
 }

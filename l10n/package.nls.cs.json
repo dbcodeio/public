@@ -263,5 +263,6 @@
   "Delete scratch files older than 1 month": "Smazat stírací soubory starší než 1 měsíc",
   "Delete scratch files older than 6 months": "Odstranit stírací soubory starší než 6 měsíců",
   "Delete scratch files older than 1 year": "Odstranit stírací soubory starší než 1 rok",
-  "Automatically delete old scratch files based on their last modified date.": "Automaticky odstranit staré odkládací soubory na základě data jejich poslední změny."
+  "Automatically delete old scratch files based on their last modified date.": "Automaticky odstranit staré odkládací soubory na základě data jejich poslední změny.",
+  "Saved table filters.": "Uložené filtry tabulek."
 }

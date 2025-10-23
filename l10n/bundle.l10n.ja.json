@@ -2102,5 +2102,19 @@
   "Filter table with SQL WHERE clause": "SQL WHERE 句を使用したテーブルのフィルター処理",
   "Clear filter": "クリアフィルター",
   "Unable to open file: {0}": "ファイルを開くことができません: {0}",
-  "Failed to open file in DBCode: {0}": "DBCodeでファイルを開くことができませんでした:{0}"
+  "Failed to open file in DBCode: {0}": "DBCodeでファイルを開くことができませんでした:{0}",
+  "Saved Filters": "保存済みフィルター",
+  "Rename filter": "フィルターの名前変更",
+  "Delete filter": "フィルターの削除",
+  "Apply a filter and save it to reuse later": "フィルターを適用して保存し、後で再利用する",
+  "Save Filter": "フィルターの保存",
+  "Saved filters": "保存されたフィルター",
+  "Enter a name for this filter": "このフィルターの名前を入力します",
+  "e.g., Active Orders": "例: アクティブな注文",
+  "Filter name is required": "フィルター名は必須です",
+  "Filter \"{0}\" saved": "フィルター \"{0}\" 保存済み",
+  "Rename Filter": "フィルターの名前変更",
+  "Enter new name": "新しい名前を入力",
+  "Delete": "削除",
+  "Delete filter \"{0}\"?": "フィルター「{0}」を削除しますか?"
 }

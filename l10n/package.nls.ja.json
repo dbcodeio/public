@@ -263,5 +263,6 @@
   "Delete scratch files older than 1 month": "1か月以上経過したスクラッチファイルを削除する",
   "Delete scratch files older than 6 months": "6 か月以上経過したスクラッチ ファイルを削除する",
   "Delete scratch files older than 1 year": "1 年以上前のスクラッチ ファイルを削除する",
-  "Automatically delete old scratch files based on their last modified date.": "古いスクラッチ ファイルを最終更新日に基づいて自動的に削除します。"
+  "Automatically delete old scratch files based on their last modified date.": "古いスクラッチ ファイルを最終更新日に基づいて自動的に削除します。",
+  "Saved table filters.": "保存されたテーブルフィルター。"
 }

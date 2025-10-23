@@ -263,5 +263,6 @@
   "Delete scratch files older than 1 month": "1개월이 지난 스크래치 파일 삭제",
   "Delete scratch files older than 6 months": "6개월이 지난 스크래치 파일 삭제",
   "Delete scratch files older than 1 year": "1년 이상 된 스크래치 파일 삭제",
-  "Automatically delete old scratch files based on their last modified date.": "마지막 수정 날짜를 기준으로 오래된 스크래치 파일을 자동으로 삭제합니다."
+  "Automatically delete old scratch files based on their last modified date.": "마지막 수정 날짜를 기준으로 오래된 스크래치 파일을 자동으로 삭제합니다.",
+  "Saved table filters.": "저장된 테이블 필터."
 }
