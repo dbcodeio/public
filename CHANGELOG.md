@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.17.24 - 2025-10-24
+
+### Changed
+
+- Language Server: Included MySQL and Trino support. 
+- Filters: Table filters that are saved can now be loaded directly from the explorer. 
+
+### Fixed
+
+- ClickHouse: Fixed CREATE FUNCTION statement boundary parsing. #781
+- Results: Fixed JSON columns being double-stringified when opening grid selections in editor with JSON format.
+- Results: Fixed cell editor treating formatting-only changes as data modifications for JSON and XML content.
+- Notebooks: Fixed result grid disappearing when clicking refresh or save dropdown menus. #780
+
 ## 1.17.23 - 2025-10-23
 
 ### Changed
