@@ -264,5 +264,8 @@
   "Delete scratch files older than 6 months": "Usuń pliki zapasowe starsze niż 6 miesięcy",
   "Delete scratch files older than 1 year": "Usuń pliki zapasowe starsze niż 1 rok",
   "Automatically delete old scratch files based on their last modified date.": "Automatycznie usuwaj stare pliki zapasowe na podstawie ich daty ostatniej modyfikacji.",
-  "Saved table filters.": "Zapisane filtry tabeli."
+  "Saved table filters.": "Zapisane filtry tabeli.",
+  "Whether to use inline SQL or a file path for post-connection SQL.": "Określa, czy ma być używany wbudowany kod SQL, czy ścieżka pliku dla języka SQL po połączeniu.",
+  "SQL to execute after connecting (inline mode).": "SQL do wykonania po nawiązaniu połączenia (tryb wbudowany).",
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "Ścieżka do pliku SQL do wykonania po nawiązaniu połączenia (tryb pliku). Obsługuje zmienne."
 }

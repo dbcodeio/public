@@ -264,5 +264,8 @@
   "Delete scratch files older than 6 months": "Удаление скретч-файлов старше 6 месяцев",
   "Delete scratch files older than 1 year": "Удаление скретч-файлов старше 1 года",
   "Automatically delete old scratch files based on their last modified date.": "Автоматическое удаление старых скретч-файлов на основе даты их последнего изменения.",
-  "Saved table filters.": "Сохранены фильтры таблицы."
+  "Saved table filters.": "Сохранены фильтры таблицы.",
+  "Whether to use inline SQL or a file path for post-connection SQL.": "Следует ли использовать встроенный SQL или путь к файлу для SQL после подключения.",
+  "SQL to execute after connecting (inline mode).": "SQL для выполнения после подключения (встроенный режим).",
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "Путь к SQL-файлу для выполнения после подключения (файловый режим). Поддерживает переменные."
 }

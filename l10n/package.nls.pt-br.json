@@ -264,5 +264,8 @@
   "Delete scratch files older than 6 months": "Excluir arquivos de trabalho com mais de 6 meses",
   "Delete scratch files older than 1 year": "Excluir arquivos de trabalho com mais de 1 ano",
   "Automatically delete old scratch files based on their last modified date.": "Exclua automaticamente arquivos de trabalho antigos com base na data da última modificação.",
-  "Saved table filters.": "Filtros de tabela salvos."
+  "Saved table filters.": "Filtros de tabela salvos.",
+  "Whether to use inline SQL or a file path for post-connection SQL.": "Se o SQL embutido deve ser usado ou um caminho de arquivo para SQL pós-conexão.",
+  "SQL to execute after connecting (inline mode).": "SQL a ser executado após a conexão (modo embutido).",
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "Caminho para o arquivo SQL a ser executado após a conexão (modo de arquivo). Suporta variáveis."
 }

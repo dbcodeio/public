@@ -264,5 +264,8 @@
   "Delete scratch files older than 6 months": "6 か月以上経過したスクラッチ ファイルを削除する",
   "Delete scratch files older than 1 year": "1 年以上前のスクラッチ ファイルを削除する",
   "Automatically delete old scratch files based on their last modified date.": "古いスクラッチ ファイルを最終更新日に基づいて自動的に削除します。",
-  "Saved table filters.": "保存されたテーブルフィルター。"
+  "Saved table filters.": "保存されたテーブルフィルター。",
+  "Whether to use inline SQL or a file path for post-connection SQL.": "インライン SQL を使用するか、接続後の SQL にファイル パスを使用するか。",
+  "SQL to execute after connecting (inline mode).": "接続後に実行する SQL (インライン モード)。",
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "接続後に実行するSQLファイルへのパス(ファイルモード)。変数をサポートします。"
 }

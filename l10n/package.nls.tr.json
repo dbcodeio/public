@@ -264,5 +264,8 @@
   "Delete scratch files older than 6 months": "6 aydan eski çalışma dosyalarını silin",
   "Delete scratch files older than 1 year": "1 yıldan eski çalışma dosyalarını silin",
   "Automatically delete old scratch files based on their last modified date.": "Eski karalama dosyalarını son değiştirilme tarihlerine göre otomatik olarak silin.",
-  "Saved table filters.": "Kaydedilmiş tablo filtreleri."
+  "Saved table filters.": "Kaydedilmiş tablo filtreleri.",
+  "Whether to use inline SQL or a file path for post-connection SQL.": "Bağlantı sonrası SQL için satır içi SQL mi yoksa dosya yolu mu kullanılacağı.",
+  "SQL to execute after connecting (inline mode).": "Bağlandıktan sonra yürütülecek SQL (satır içi mod).",
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "Bağlandıktan sonra yürütülecek SQL dosyasının yolu (dosya modu). Değişkenleri destekler."
 }

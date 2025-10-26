@@ -264,5 +264,8 @@
   "Delete scratch files older than 6 months": "6개월이 지난 스크래치 파일 삭제",
   "Delete scratch files older than 1 year": "1년 이상 된 스크래치 파일 삭제",
   "Automatically delete old scratch files based on their last modified date.": "마지막 수정 날짜를 기준으로 오래된 스크래치 파일을 자동으로 삭제합니다.",
-  "Saved table filters.": "저장된 테이블 필터."
+  "Saved table filters.": "저장된 테이블 필터.",
+  "Whether to use inline SQL or a file path for post-connection SQL.": "인라인 SQL을 사용할지 아니면 연결 후 SQL에 파일 경로를 사용할지 여부입니다.",
+  "SQL to execute after connecting (inline mode).": "연결 후 실행할 SQL(인라인 모드).",
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "연결 후 실행할 SQL 파일의 경로(파일 모드)입니다. 변수를 지원합니다."
 }

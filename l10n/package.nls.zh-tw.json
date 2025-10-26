@@ -264,5 +264,8 @@
   "Delete scratch files older than 6 months": "刪除超過 6 個月的暫存文件",
   "Delete scratch files older than 1 year": "刪除超過 1 年的暫存文件",
   "Automatically delete old scratch files based on their last modified date.": "根據上次修改日期自動刪除舊暫存檔案。",
-  "Saved table filters.": "已儲存的表格篩選器。"
+  "Saved table filters.": "已儲存的表格篩選器。",
+  "Whether to use inline SQL or a file path for post-connection SQL.": "是否要使用內嵌 SQL 或連線後 SQL 的檔案路徑。",
+  "SQL to execute after connecting (inline mode).": "連接後執行的 SQL（內嵌模式）。",
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "連線後要執行的 SQL 檔案路徑 （檔案模式）。支援變數。"
 }

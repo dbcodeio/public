@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.17.25 - 2025-10-26
+
+### Changed
+
+- Language Server: Included SQLite support.
+- Connections: Added file-based post-connection SQL support. #784
+
+### Fixed
+
+- ERD: Fixed incorrect cardinality display for junction tables with composite primary keys. #785
+- SQLite: Fixed ATTACH DATABASE and DETACH DATABASE statements not being recognized to refresh the explorer. #784
+- SQLite: Fixed introspection error when database has read-only file permissions. #783
+
 ## 1.17.24 - 2025-10-24
 
 ### Changed
