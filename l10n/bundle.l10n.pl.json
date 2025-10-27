@@ -1246,7 +1246,6 @@
   "Open SQL File": "Otwórz plik SQL",
   "Resources": "Zasoby",
   "Documentation": "Dokumentacja",
-  "Roadmap": "Mapa drogowa",
   "Issues & Feature Requests": "Problemy i prośby o nowe funkcje",
   "Select Color": "Wybierz kolor",
   "localhost": "localhost (host lokalny)",
@@ -1324,7 +1323,6 @@
   "In Memory - Won't be persisted": "W pamięci — nie zostanie utrwalony",
   "Could not find the configuration for the currently configured default workspace connection": "Nie można odnaleźć konfiguracji dla aktualnie skonfigurowanego domyślnego połączenia obszaru roboczego",
   "Retrieving workspace connection": "Pobieranie połączenia z obszarem roboczym",
-  "Failed to fetch [{0}]({0}). Error: {1}": "Nie udało się pobrać [{0}]({0}). Błąd: {1}",
   "No query ID available for cancellation": "Brak dostępnego identyfikatora zapytania do anulowania",
   "Schema not converted to v1 format yet.": "Schemat nie został jeszcze przekonwertowany na format v1.",
   "Request Timeout": "Limit czasu żądania",
@@ -2123,5 +2121,6 @@
   "SQL Script File": "Plik skryptu SQL",
   "Path to SQL file to execute after connection opens.": "Ścieżka do pliku SQL do wykonania po otwarciu połączenia.",
   "Supports": "Obsługuje",
-  "variables": "Zmiennych"
+  "variables": "Zmiennych",
+  "Failed to fetch {0}. Error: {1}": "Nie udało się pobrać {0}. Błąd: {1}"
 }

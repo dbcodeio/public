@@ -1246,7 +1246,6 @@
   "Open SQL File": "打开 SQL 文件",
   "Resources": "资源",
   "Documentation": "文档",
-  "Roadmap": "路线图",
   "Issues & Feature Requests": "问题和功能请求",
   "Select Color": "选择颜色",
   "localhost": "本地主机",
@@ -1324,7 +1323,6 @@
   "In Memory - Won't be persisted": "在内存中 - 不会持久保存",
   "Could not find the configuration for the currently configured default workspace connection": "找不到当前配置的默认工作区连接的配置",
   "Retrieving workspace connection": "检索工作区连接",
-  "Failed to fetch [{0}]({0}). Error: {1}": "无法获取 [{0}]（{0}）。错误：{1}",
   "No query ID available for cancellation": "没有可供取消的查询 ID",
   "Schema not converted to v1 format yet.": "架构尚未转换为 v1 格式。",
   "Request Timeout": "请求超时",
@@ -2123,5 +2121,6 @@
   "SQL Script File": "SQL 脚本文件",
   "Path to SQL file to execute after connection opens.": "连接打开后要执行的 SQL 文件的路径。",
   "Supports": "支持",
-  "variables": "变量"
+  "variables": "变量",
+  "Failed to fetch {0}. Error: {1}": "无法获取{0}。错误：{1}"
 }

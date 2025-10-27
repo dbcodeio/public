@@ -1246,7 +1246,6 @@
   "Open SQL File": "Otevřít soubor SQL",
   "Resources": "Prostředky",
   "Documentation": "Dokumentace",
-  "Roadmap": "Plán",
   "Issues & Feature Requests": "Problémy a požadavky na funkce",
   "Select Color": "Vybrat barvu",
   "localhost": "Místní hostitel",
@@ -1324,7 +1323,6 @@
   "In Memory - Won't be persisted": "V paměti – nebude zachováno",
   "Could not find the configuration for the currently configured default workspace connection": "Nelze najít konfiguraci pro aktuálně nakonfigurované výchozí připojení k pracovnímu prostoru",
   "Retrieving workspace connection": "Načítání připojení k pracovní ploše",
-  "Failed to fetch [{0}]({0}). Error: {1}": "Nepodařilo se načíst [{0}]({0}). Chyba: {1}",
   "No query ID available for cancellation": "Pro zrušení není k dispozici žádné ID dotazu",
   "Schema not converted to v1 format yet.": "Schéma ještě nebylo převedeno do formátu v1.",
   "Request Timeout": "Časový limit požadavku",
@@ -2123,5 +2121,6 @@
   "SQL Script File": "Soubor skriptu SQL",
   "Path to SQL file to execute after connection opens.": "Cesta k souboru SQL, který se má spustit po otevření připojení.",
   "Supports": "Podporuje",
-  "variables": "proměnné"
+  "variables": "proměnné",
+  "Failed to fetch {0}. Error: {1}": "Načtení {0} se nezdařilo. Chyba: {1}"
 }

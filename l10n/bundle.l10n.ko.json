@@ -1246,7 +1246,6 @@
   "Open SQL File": "SQL 파일 열기",
   "Resources": "리소스",
   "Documentation": "문서조사",
-  "Roadmap": "로드맵",
   "Issues & Feature Requests": "문제 및 기능 요청",
   "Select Color": "색상 선택",
   "localhost": "localhost",
@@ -1324,7 +1323,6 @@
   "In Memory - Won't be persisted": "In Memory - 유지되지 않습니다.",
   "Could not find the configuration for the currently configured default workspace connection": "현재 구성된 기본 작업 영역 연결에 대한 구성을 찾을 수 없습니다.",
   "Retrieving workspace connection": "워크스페이스 연결 검색",
-  "Failed to fetch [{0}]({0}). Error: {1}": "[{0}]({0})을(를) 가져오지 못했습니다. 오류: {1}",
   "No query ID available for cancellation": "취소에 사용할 수 있는 쿼리 ID가 없습니다.",
   "Schema not converted to v1 format yet.": "스키마가 아직 v1 형식으로 변환되지 않았습니다.",
   "Request Timeout": "요청 시간 초과",
@@ -2123,5 +2121,6 @@
   "SQL Script File": "SQL 스크립트 파일",
   "Path to SQL file to execute after connection opens.": "연결이 열린 후 실행할 SQL 파일의 경로입니다.",
   "Supports": "지원",
-  "variables": "변수"
+  "variables": "변수",
+  "Failed to fetch {0}. Error: {1}": "{0} 가져오지 못했습니다. 오류: {1}"
 }

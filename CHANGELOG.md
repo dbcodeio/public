@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.17.26 - 2025-10-27
+
+### Fixed
+
+- Results: Fixed tooltip sizing and formatting for JSON content.
+- Results: Fixed json cell editor saving JSON with whitespace instead of condensed format.
+- SQLite: Fixed attached databases showing main database's tables instead of their own tables. #784
+- Filters: Fixed WHERE clause filters not including schema qualification, causing "table not found" errors. #787
+- Connection: Fixed USE statement not triggering database context switch after parser update.
+
 ## 1.17.25 - 2025-10-26
 
 ### Changed

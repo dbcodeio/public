@@ -1246,7 +1246,6 @@
   "Open SQL File": "Ouvrir le fichier SQL",
   "Resources": "Ressources",
   "Documentation": "Documentation",
-  "Roadmap": "Feuille de route",
   "Issues & Feature Requests": "Problèmes et demandes de fonctionnalités",
   "Select Color": "Sélectionner la couleur",
   "localhost": "localhost",
@@ -1324,7 +1323,6 @@
   "In Memory - Won't be persisted": "En mémoire - Ne sera pas conservé",
   "Could not find the configuration for the currently configured default workspace connection": "Impossible de trouver la configuration de la connexion d’espace de travail par défaut actuellement configurée",
   "Retrieving workspace connection": "Récupération de la connexion à l’espace de travail",
-  "Failed to fetch [{0}]({0}). Error: {1}": "Echec de la récupération de [{0}]({0}). Erreur : {1}",
   "No query ID available for cancellation": "Aucun ID de requête disponible pour l’annulation",
   "Schema not converted to v1 format yet.": "Le schéma n’a pas encore été converti au format v1.",
   "Request Timeout": "Délai d’expiration de la demande",
@@ -2123,5 +2121,6 @@
   "SQL Script File": "Fichier de script SQL",
   "Path to SQL file to execute after connection opens.": "Chemin d’accès au fichier SQL à exécuter après l’ouverture de la connexion.",
   "Supports": "Soutient",
-  "variables": "Variables"
+  "variables": "Variables",
+  "Failed to fetch {0}. Error: {1}": "Impossible de récupérer {0}. Erreur : {1}"
 }

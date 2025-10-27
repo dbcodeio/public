@@ -1249,7 +1249,6 @@
   "Open SQL File": "SQLファイルを開く",
   "Resources": "リソース",
   "Documentation": "ドキュメント",
-  "Roadmap": "ロードマップ",
   "Issues & Feature Requests": "問題と機能のリクエスト",
   "Select Color": "色を選択",
   "localhost": "localhost",
@@ -1327,7 +1326,6 @@
   "In Memory - Won't be persisted": "メモリ内 - 永続化されません",
   "Could not find the configuration for the currently configured default workspace connection": "現在構成されているデフォルトのワークスペース接続の構成が見つかりませんでした",
   "Retrieving workspace connection": "ワークスペース接続を取得しています",
-  "Failed to fetch [{0}]({0}). Error: {1}": "[{0}]({0}) のフェッチに失敗しました。エラー: {1}",
   "No query ID available for cancellation": "キャンセルに利用できるクエリ ID がありません",
   "Schema not converted to v1 format yet.": "スキーマはまだ v1 形式に変換されていません。",
   "Request Timeout": "リクエストタイムアウト",
@@ -2126,5 +2124,6 @@
   "SQL Script File": "SQL スクリプトファイル",
   "Path to SQL file to execute after connection opens.": "接続が開いた後に実行する SQL ファイルへのパス。",
   "Supports": "楨",
-  "variables": "変数"
+  "variables": "変数",
+  "Failed to fetch {0}. Error: {1}": "{0}の取得に失敗しました。エラー: {1}"
 }

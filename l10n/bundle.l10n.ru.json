@@ -1246,7 +1246,6 @@
   "Open SQL File": "Открыть файл SQL",
   "Resources": "Ресурсы",
   "Documentation": "Документация",
-  "Roadmap": "Дорожная карта",
   "Issues & Feature Requests": "Проблемы и запросы функций",
   "Select Color": "Выберите цвет",
   "localhost": "localhost",
@@ -1324,7 +1323,6 @@
   "In Memory - Won't be persisted": "В памяти — не будет сохранено",
   "Could not find the configuration for the currently configured default workspace connection": "Не удалось найти конфигурацию для текущего настроенного подключения к рабочей области по умолчанию",
   "Retrieving workspace connection": "Получение подключения к рабочей области",
-  "Failed to fetch [{0}]({0}). Error: {1}": "Не удалось получить [{0}]({0}). Ошибка: {1}",
   "No query ID available for cancellation": "Идентификатор запроса недоступен для отмены",
   "Schema not converted to v1 format yet.": "Схема еще не преобразована в формат v1.",
   "Request Timeout": "Время ожидания запроса",
@@ -2123,5 +2121,6 @@
   "SQL Script File": "Файл сценария SQL",
   "Path to SQL file to execute after connection opens.": "Путь к SQL-файлу для выполнения после открытия соединения.",
   "Supports": "Поддерживает",
-  "variables": "Переменные"
+  "variables": "Переменные",
+  "Failed to fetch {0}. Error: {1}": "Не удалось получить {0}. Ошибка: {1}"
 }

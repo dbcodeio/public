@@ -1246,7 +1246,6 @@
   "Open SQL File": "打開 SQL 檔",
   "Resources": "資源",
   "Documentation": "文件",
-  "Roadmap": "路線圖",
   "Issues & Feature Requests": "問題和功能請求",
   "Select Color": "選擇顏色",
   "localhost": "本地主機",
@@ -1324,7 +1323,6 @@
   "In Memory - Won't be persisted": "在記憶體中 - 不會持久保存",
   "Could not find the configuration for the currently configured default workspace connection": "找不到當前配置的預設工作區連接的配置",
   "Retrieving workspace connection": "檢索工作區連接",
-  "Failed to fetch [{0}]({0}). Error: {1}": "無法獲取 [{0}]（{0}）。錯誤：{1}",
   "No query ID available for cancellation": "沒有可供取消的查詢ID",
   "Schema not converted to v1 format yet.": "架構尚未轉換為 v1 格式。",
   "Request Timeout": "請求超時",
@@ -2123,5 +2121,6 @@
   "SQL Script File": "SQL 指令碼檔案",
   "Path to SQL file to execute after connection opens.": "連線開啟後要執行的 SQL 檔案路徑。",
   "Supports": "支撐",
-  "variables": "變數"
+  "variables": "變數",
+  "Failed to fetch {0}. Error: {1}": "無法取得{0}。錯誤：{1}"
 }

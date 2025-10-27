@@ -1246,7 +1246,6 @@
   "Open SQL File": "SQL Dosyasını Aç",
   "Resources": "Kaynaklar",
   "Documentation": "Belge",
-  "Roadmap": "Yol Haritası",
   "Issues & Feature Requests": "Sorunlar ve Özellik İstekleri",
   "Select Color": "Renk Seç",
   "localhost": "yerel ana bilgisayar",
@@ -1324,7 +1323,6 @@
   "In Memory - Won't be persisted": "Bellekte - Kalıcı olmayacak",
   "Could not find the configuration for the currently configured default workspace connection": "Şu anda yapılandırılmış varsayılan çalışma alanı bağlantısının yapılandırması bulunamadı",
   "Retrieving workspace connection": "Çalışma alanı bağlantısı alınıyor",
-  "Failed to fetch [{0}]({0}). Error: {1}": "[{0}]({0}) getirilemedi. Hata: {1}",
   "No query ID available for cancellation": "İptal için sorgu kimliği yok",
   "Schema not converted to v1 format yet.": "Şema henüz v1 biçimine dönüştürülmedi.",
   "Request Timeout": "İstek Zaman Aşımı",
@@ -2123,5 +2121,6 @@
   "SQL Script File": "SQL Komut Dosyası",
   "Path to SQL file to execute after connection opens.": "Bağlantı açıldıktan sonra yürütülecek SQL dosyasının yolu.",
   "Supports": "Destekle -yen",
-  "variables": "Değişken"
+  "variables": "Değişken",
+  "Failed to fetch {0}. Error: {1}": "{0} getirilemedi. Hata: {1}"
 }
