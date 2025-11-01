@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.17.27 - 2025-11-01
+
+### Fixed
+
+- ClickHouse: Fixed infinity and NaN values displaying as null in query results. #794
+- Language Server: Fixed diagnostics incorrectly showing for unsupported dialects like ClickHouse. #795
+- Editor: Fixed "No SQL to execute" error when executing queries in files without assigned connections. #798
+- Results: Fixed initial loading performance. #789
+- PostgreSQL: Fixed table row counts showing stale data by using pg_stat_all_tables when available. #791
+
 ## 1.17.26 - 2025-10-27
 
 ### Fixed
