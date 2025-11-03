@@ -267,5 +267,8 @@
   "Saved table filters.": "保存されたテーブルフィルター。",
   "Whether to use inline SQL or a file path for post-connection SQL.": "インライン SQL を使用するか、接続後の SQL にファイル パスを使用するか。",
   "SQL to execute after connecting (inline mode).": "接続後に実行する SQL (インライン モード)。",
-  "Path to SQL file to execute after connecting (file mode). Supports variables.": "接続後に実行するSQLファイルへのパス(ファイルモード)。変数をサポートします。"
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "接続後に実行するSQLファイルへのパス(ファイルモード)。変数をサポートします。",
+  "Rename Filter": "フィルターの名前変更",
+  "Delete Filter": "フィルターの削除",
+  "Use a single persistent scratch file (no timestamp rotation)": "単一の永続的なスクラッチ ファイルを使用する (タイムスタンプのローテーションなし)"
 }

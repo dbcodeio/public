@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.17.27",
+    "version": "1.17.29",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -709,6 +709,18 @@
                 "title": "%Collapse All%",
                 "category": "DBCode",
                 "icon": "$(collapse-all)"
+            },
+            {
+                "command": "dbcode.filters.edit",
+                "title": "%Rename Filter%",
+                "category": "DBCode",
+                "icon": "$(edit)"
+            },
+            {
+                "command": "dbcode.filters.delete",
+                "title": "%Delete Filter%",
+                "category": "DBCode",
+                "icon": "$(trash)"
             },
             {
                 "command": "dbcode.connections.edit",
@@ -1465,6 +1477,26 @@
                     "group": "inline@2"
                 },
                 {
+                    "command": "dbcode.filters.edit",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^filter-/",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.filters.delete",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^filter-/",
+                    "group": "inline@2"
+                },
+                {
+                    "command": "dbcode.filters.edit",
+                    "when": "view == dbcode.favorites.view && viewItem =~ /^filter-/",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.filters.delete",
+                    "when": "view == dbcode.favorites.view && viewItem =~ /^filter-/",
+                    "group": "inline@2"
+                },
+                {
                     "command": "dbcode.connections.sqlFile",
                     "when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newFile~/",
                     "group": "inline@1"
@@ -1703,6 +1735,26 @@
                     "command": "dbcode.table.drop",
                     "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~drop~/",
                     "group": "4destructive@3"
+                },
+                {
+                    "command": "dbcode.filters.edit",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^filter-/",
+                    "group": "1filter@1"
+                },
+                {
+                    "command": "dbcode.filters.delete",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^filter-/",
+                    "group": "1filter@2"
+                },
+                {
+                    "command": "dbcode.filters.edit",
+                    "when": "view == dbcode.favorites.view && viewItem =~ /^filter-/",
+                    "group": "1filter@1"
+                },
+                {
+                    "command": "dbcode.filters.delete",
+                    "when": "view == dbcode.favorites.view && viewItem =~ /^filter-/",
+                    "group": "1filter@2"
                 }
             ],
             "explorer/context": [
@@ -4650,6 +4702,7 @@
                         "order": 3,
                         "type": "string",
                         "enum": [
+                            "none",
                             "hour",
                             "day",
                             "week",
@@ -4657,6 +4710,7 @@
                         ],
                         "default": "day",
                         "enumDescriptions": [
+                            "%Use a single persistent scratch file (no timestamp rotation)%",
                             "%Create a new scratch file each hour%",
                             "%Create a new scratch file each day%",
                             "%Create a new scratch file each week%",
@@ -4723,7 +4777,6 @@
         "@types/html-escaper": "^3.0.2",
         "@types/ibm_db": "^3.2.0",
         "@types/json-diff": "^1.0.3",
-        "@types/json2md": "^1.5.4",
         "@types/jstoxml": "^5.0.0",
         "@types/lodash-es": "^4.17.12",
         "@types/mocha": "^10.0.9",
@@ -4833,7 +4886,6 @@
         "interactjs": "^1.10.27",
         "jsforce": "^3.10.4",
         "json-diff": "^1.0.6",
-        "json2md": "^2.0.2",
         "jspdf": "^3.0.1",
         "jwt-decode": "^4.0.0",
         "lit": "^3.2.1",

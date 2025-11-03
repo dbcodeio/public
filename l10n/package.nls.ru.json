@@ -267,5 +267,8 @@
   "Saved table filters.": "Сохранены фильтры таблицы.",
   "Whether to use inline SQL or a file path for post-connection SQL.": "Следует ли использовать встроенный SQL или путь к файлу для SQL после подключения.",
   "SQL to execute after connecting (inline mode).": "SQL для выполнения после подключения (встроенный режим).",
-  "Path to SQL file to execute after connecting (file mode). Supports variables.": "Путь к SQL-файлу для выполнения после подключения (файловый режим). Поддерживает переменные."
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "Путь к SQL-файлу для выполнения после подключения (файловый режим). Поддерживает переменные.",
+  "Rename Filter": "Переименовать фильтр",
+  "Delete Filter": "Удалить фильтр",
+  "Use a single persistent scratch file (no timestamp rotation)": "Используйте один постоянный скретч-файл (без поворота временных меток)"
 }

@@ -267,5 +267,8 @@
   "Saved table filters.": "Kaydedilmiş tablo filtreleri.",
   "Whether to use inline SQL or a file path for post-connection SQL.": "Bağlantı sonrası SQL için satır içi SQL mi yoksa dosya yolu mu kullanılacağı.",
   "SQL to execute after connecting (inline mode).": "Bağlandıktan sonra yürütülecek SQL (satır içi mod).",
-  "Path to SQL file to execute after connecting (file mode). Supports variables.": "Bağlandıktan sonra yürütülecek SQL dosyasının yolu (dosya modu). Değişkenleri destekler."
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "Bağlandıktan sonra yürütülecek SQL dosyasının yolu (dosya modu). Değişkenleri destekler.",
+  "Rename Filter": "Filtreyi Yeniden Adlandır",
+  "Delete Filter": "Filtreyi Sil",
+  "Use a single persistent scratch file (no timestamp rotation)": "Tek bir kalıcı karalama dosyası kullanın (zaman damgası döndürme yok)"
 }

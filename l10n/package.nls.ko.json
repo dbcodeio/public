@@ -267,5 +267,8 @@
   "Saved table filters.": "저장된 테이블 필터.",
   "Whether to use inline SQL or a file path for post-connection SQL.": "인라인 SQL을 사용할지 아니면 연결 후 SQL에 파일 경로를 사용할지 여부입니다.",
   "SQL to execute after connecting (inline mode).": "연결 후 실행할 SQL(인라인 모드).",
-  "Path to SQL file to execute after connecting (file mode). Supports variables.": "연결 후 실행할 SQL 파일의 경로(파일 모드)입니다. 변수를 지원합니다."
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "연결 후 실행할 SQL 파일의 경로(파일 모드)입니다. 변수를 지원합니다.",
+  "Rename Filter": "필터 이름 바꾸기",
+  "Delete Filter": "필터 삭제",
+  "Use a single persistent scratch file (no timestamp rotation)": "단일 영구 스크래치 파일 사용(타임스탬프 순환 없음)"
 }

@@ -267,5 +267,8 @@
   "Saved table filters.": "已保存的表过滤器。",
   "Whether to use inline SQL or a file path for post-connection SQL.": "是使用内联 SQL 还是连接后 SQL 的文件路径。",
   "SQL to execute after connecting (inline mode).": "连接后执行的 SQL（内联模式）。",
-  "Path to SQL file to execute after connecting (file mode). Supports variables.": "连接后要执行的 SQL 文件的路径（文件模式）。支持变量。"
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "连接后要执行的 SQL 文件的路径（文件模式）。支持变量。",
+  "Rename Filter": "重命名过滤器",
+  "Delete Filter": "删除过滤器",
+  "Use a single persistent scratch file (no timestamp rotation)": "使用单个持久暂存文件（无时间戳轮换）"
 }

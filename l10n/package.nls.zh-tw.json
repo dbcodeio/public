@@ -267,5 +267,8 @@
   "Saved table filters.": "已儲存的表格篩選器。",
   "Whether to use inline SQL or a file path for post-connection SQL.": "是否要使用內嵌 SQL 或連線後 SQL 的檔案路徑。",
   "SQL to execute after connecting (inline mode).": "連接後執行的 SQL（內嵌模式）。",
-  "Path to SQL file to execute after connecting (file mode). Supports variables.": "連線後要執行的 SQL 檔案路徑 （檔案模式）。支援變數。"
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "連線後要執行的 SQL 檔案路徑 （檔案模式）。支援變數。",
+  "Rename Filter": "重新命名篩選器",
+  "Delete Filter": "刪除過濾器",
+  "Use a single persistent scratch file (no timestamp rotation)": "使用單一持續性暫存檔案 （無時間戳記輪替）"
 }

@@ -267,5 +267,8 @@
   "Saved table filters.": "Uložené filtry tabulek.",
   "Whether to use inline SQL or a file path for post-connection SQL.": "Zda použít vložený SQL nebo cestu k souboru pro SQL po připojení.",
   "SQL to execute after connecting (inline mode).": "SQL, který se má spustit po připojení (inline režim).",
-  "Path to SQL file to execute after connecting (file mode). Supports variables.": "Cesta k souboru SQL, který se má spustit po připojení (režim souboru). Podporuje proměnné."
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "Cesta k souboru SQL, který se má spustit po připojení (režim souboru). Podporuje proměnné.",
+  "Rename Filter": "Přejmenovat filtr",
+  "Delete Filter": "Odstranit filtr",
+  "Use a single persistent scratch file (no timestamp rotation)": "Použít jeden trvalý odkládací soubor (bez střídání časových razítek)"
 }

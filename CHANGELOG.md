@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 1.17.29 - 2025-11-03
+
+### Changed
+
+- Scratch Files: Added "none" rotation option for persistent scratch files without timestamp.
+- Language Server: Added Clickhouse support. #795
+- PostgreSQL: Added support for external tables (FDW). #800
+- Filters: Can now be edited/deleted from the explorer, and maintain sync with the results grid.
+
+### Fixed
+
+- Export: Fixed grid data not visible in webpage/notebook exports. #799
+- Filters: Fixed filters duplicating when saved and not updating across panels and notebooks. #790
+- Hover: Fixed table column preview formatting with improved layout, smart column hiding, and better alignment. #797
+- PostgreSQL: PostGIS geometry columns now display as readable EWKT format instead of raw hex in result grids.
+- Language Server: Fixed case-insensitive column name matching in both editor and grid WHERE filters. #792 #773
+- Language Server: Fixed partial keyword matching in autocomplete suggestions. #792
+
 ## 1.17.27 - 2025-11-01
 
 ### Fixed

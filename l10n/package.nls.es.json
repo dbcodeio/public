@@ -267,5 +267,8 @@
   "Saved table filters.": "Filtros de tabla guardados.",
   "Whether to use inline SQL or a file path for post-connection SQL.": "Si se debe usar SQL en línea o una ruta de acceso de archivo para SQL posterior a la conexión.",
   "SQL to execute after connecting (inline mode).": "SQL para ejecutar después de la conexión (modo en línea).",
-  "Path to SQL file to execute after connecting (file mode). Supports variables.": "Ruta al archivo SQL que se ejecutará después de la conexión (modo de archivo). Admite variables."
+  "Path to SQL file to execute after connecting (file mode). Supports variables.": "Ruta al archivo SQL que se ejecutará después de la conexión (modo de archivo). Admite variables.",
+  "Rename Filter": "Cambiar el nombre del filtro",
+  "Delete Filter": "Eliminar filtro",
+  "Use a single persistent scratch file (no timestamp rotation)": "Usar un único archivo temporal persistente (sin rotación de marca de tiempo)"
 }
