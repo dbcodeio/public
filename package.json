@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.17.29",
+    "version": "1.17.30",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -3312,12 +3312,161 @@
                             "database"
                         ],
                         "markdownDescription": "%The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.%"
+                    },
+                    "dbcode.tabTitle.separator": {
+                        "order": 5,
+                        "type": "string",
+                        "default": "/",
+                        "markdownDescription": "%Separator used between components in tab titles.%"
+                    },
+                    "dbcode.tabTitle.format": {
+                        "order": 6,
+                        "type": "string",
+                        "default": "${connection}${separator}${database}${separator}${schema}${separator}${table}",
+                        "markdownDescription": "%Format for table tab titles. Available variables: `${connection}`, `${database}`, `${schema}`, `${table}`, `${type}`, `${separator}`. Duplicate separators are automatically removed.%"
+                    }
+                }
+            },
+            {
+                "title": "%Formatting%",
+                "order": 2,
+                "type": "object",
+                "properties": {
+                    "dbcode.formatting.configPath": {
+                        "order": 1,
+                        "type": "string",
+                        "default": "",
+                        "markdownDescription": "%Path to a custom SQL formatter configuration file (`.sql-formatter.json`). Can be absolute or relative to workspace root. If not specified, DBCode will look for `.sql-formatter.json` in workspace folders automatically. [Learn about formatting options](https://dbcode.io/docs/query/sql-formatting).%"
+                    },
+                    "dbcode.formatting.keywordCase": {
+                        "order": 2,
+                        "type": "string",
+                        "enum": [
+                            "preserve",
+                            "upper",
+                            "lower"
+                        ],
+                        "default": "preserve",
+                        "enumDescriptions": [
+                            "%Keep keywords as-is.%",
+                            "%Convert keywords to UPPERCASE.%",
+                            "%Convert keywords to lowercase.%"
+                        ],
+                        "markdownDescription": "%Formatting of SQL keywords (SELECT, FROM, WHERE, etc.).%"
+                    },
+                    "dbcode.formatting.dataTypeCase": {
+                        "order": 3,
+                        "type": "string",
+                        "enum": [
+                            "preserve",
+                            "upper",
+                            "lower"
+                        ],
+                        "default": "preserve",
+                        "enumDescriptions": [
+                            "%Keep data types as-is.%",
+                            "%Convert data types to UPPERCASE.%",
+                            "%Convert data types to lowercase.%"
+                        ],
+                        "markdownDescription": "%Formatting of data types (VARCHAR, INTEGER, etc.).%"
+                    },
+                    "dbcode.formatting.functionCase": {
+                        "order": 4,
+                        "type": "string",
+                        "enum": [
+                            "preserve",
+                            "upper",
+                            "lower"
+                        ],
+                        "default": "preserve",
+                        "enumDescriptions": [
+                            "%Keep function names as-is.%",
+                            "%Convert function names to UPPERCASE.%",
+                            "%Convert function names to lowercase.%"
+                        ],
+                        "markdownDescription": "%Formatting of function names (COUNT, SUM, NOW, etc.).%"
+                    },
+                    "dbcode.formatting.identifierCase": {
+                        "order": 5,
+                        "type": "string",
+                        "enum": [
+                            "preserve",
+                            "upper",
+                            "lower"
+                        ],
+                        "default": "preserve",
+                        "enumDescriptions": [
+                            "%Keep identifiers as-is.%",
+                            "%Convert identifiers to UPPERCASE.%",
+                            "%Convert identifiers to lowercase.%"
+                        ],
+                        "markdownDescription": "%Formatting of identifiers (table names, column names, etc.).%"
+                    },
+                    "dbcode.formatting.indentStyle": {
+                        "order": 6,
+                        "type": "string",
+                        "enum": [
+                            "standard",
+                            "tabularLeft",
+                            "tabularRight"
+                        ],
+                        "default": "standard",
+                        "enumDescriptions": [
+                            "%Standard block indentation.%",
+                            "%Align keywords to the left.%",
+                            "%Align keywords to the right.%"
+                        ],
+                        "markdownDescription": "%SQL indentation style.%"
+                    },
+                    "dbcode.formatting.logicalOperatorNewline": {
+                        "order": 7,
+                        "type": "string",
+                        "enum": [
+                            "before",
+                            "after"
+                        ],
+                        "default": "before",
+                        "enumDescriptions": [
+                            "%Place newline before AND/OR operators.%",
+                            "%Place newline after AND/OR operators.%"
+                        ],
+                        "markdownDescription": "%Newline placement for AND/OR operators.%"
+                    },
+                    "dbcode.formatting.tabulateAlias": {
+                        "order": 8,
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "%Align AS keywords in column lists for improved readability.%"
+                    },
+                    "dbcode.formatting.expressionWidth": {
+                        "order": 9,
+                        "type": "number",
+                        "default": 50,
+                        "markdownDescription": "%Maximum characters in parenthesized expressions before breaking to multiple lines.%"
+                    },
+                    "dbcode.formatting.linesBetweenQueries": {
+                        "order": 10,
+                        "type": "number",
+                        "default": 1,
+                        "markdownDescription": "%Number of blank lines between separate queries.%"
+                    },
+                    "dbcode.formatting.denseOperators": {
+                        "order": 11,
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "%Remove spaces around operators (e.g., `age>=18` instead of `age >= 18`).%"
+                    },
+                    "dbcode.formatting.newlineBeforeSemicolon": {
+                        "order": 12,
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "%Place semicolons on separate lines.%"
                     }
                 }
             },
             {
                 "title": "%Results%",
-                "order": 2,
+                "order": 3,
                 "type": "object",
                 "properties": {
                     "dbcode.resultLocation": {
@@ -4913,7 +5062,7 @@
         "semver": "^7.7.1",
         "shiki": "^3.1.0",
         "snowflake-sdk": "^2.1.0",
-        "sql-formatter": "^15.4.11",
+        "sql-formatter": "^15.6.10",
         "ssh-config": "^5.0.3",
         "sshpk": "^1.18.0",
         "tablemark": "^3.1.0",

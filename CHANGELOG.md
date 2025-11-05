@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.17.30 - 2025-11-05
+
+### Changed
+
+- Table Tabs: Added customizable tab title setting `dbcode.tabTitle.format` format with template variables for tables and views. #579
+- SQL Formatting: Added support for `.sql-formatter.json` configuration files in workspace folders
+- SQL Formatting: Added `tabulateAlias` option to align AS keywords in column lists for improved readability. #103
+- Settings: Added Formatting section to specify default formatting configuration.
+
+### Fixed
+
+- SQL Parser: Fixed comments after semicolons being treated as separate statements causing execution errors.
+- SQL Server: Fixed semicolons now treated as statement boundaries alongside GO delimiters. #802
+
 ## 1.17.29 - 2025-11-03
 
 ### Changed
