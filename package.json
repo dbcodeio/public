@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.17.30",
+    "version": "1.17.31",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -4886,6 +4886,27 @@
                         "markdownDescription": "%Automatically delete old scratch files based on their last modified date.%"
                     }
                 }
+            },
+            {
+                "title": "%Transactions%",
+                "order": 100,
+                "type": "object",
+                "properties": {
+                    "dbcode.transactions.longTransactionThreshold": {
+                        "order": 1,
+                        "type": "number",
+                        "default": 5,
+                        "minimum": 0,
+                        "maximum": 60,
+                        "markdownDescription": "%Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.%"
+                    },
+                    "dbcode.transactions.autoRollbackOnError": {
+                        "order": 2,
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "%Automatically rollback the transaction when a query fails. Use with caution.%"
+                    }
+                }
             }
         ]
     },
@@ -4908,6 +4929,7 @@
         "ls:benchmark:semantic": "tsx benchmarks/ls-benchmark-semantic.ts",
         "inspect": "tsx scripts/ls-inspect-parser.ts",
         "ls:test-semantic": "tsx scripts/ls-test-semantic.ts",
+        "ls:test-completions": "tsx scripts/ls-test-completions.ts",
         "benchmark": "vitest run src/benchmark --config vitest.benchmark.config.ts",
         "benchmark:file": "vitest run --config vitest.benchmark.config.ts",
         "benchmark:test": "vitest run --config vitest.benchmark.config.ts --testNamePattern"

@@ -302,5 +302,8 @@
   "Maximum characters in parenthesized expressions before breaking to multiple lines.": "Número máximo de caracteres en expresiones entre paréntesis antes de dividirse en varias líneas.",
   "Number of blank lines between separate queries.": "Número de líneas en blanco entre consultas separadas.",
   "Remove spaces around operators (e.g., `age>=18` instead of `age >= 18`).": "Elimine los espacios alrededor de los operadores (por ejemplo, 'edad>=18' en lugar de 'edad >= 18').",
-  "Place semicolons on separate lines.": "Coloque el punto y coma en líneas separadas."
+  "Place semicolons on separate lines.": "Coloque el punto y coma en líneas separadas.",
+  "Transactions": "Transacciones",
+  "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Advertir cuando una transacción ha estado abierta durante tantos minutos. Establézcalo en 0 para deshabilitar las advertencias.",
+  "Automatically rollback the transaction when a query fails. Use with caution.": "Revierta automáticamente la transacción cuando se produzca un error en una consulta. Úselo con precaución."
 }

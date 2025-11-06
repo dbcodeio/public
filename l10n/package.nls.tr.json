@@ -302,5 +302,8 @@
   "Maximum characters in parenthesized expressions before breaking to multiple lines.": "Birden çok satıra bölmeden önce parantez içindeki ifadelerdeki maksimum karakter sayısı.",
   "Number of blank lines between separate queries.": "Ayrı sorgular arasındaki boş satır sayısı.",
   "Remove spaces around operators (e.g., `age>=18` instead of `age >= 18`).": "Operatörlerin etrafındaki boşlukları kaldırın (örneğin, 'yaş >=18' yerine 'yaş>=18').",
-  "Place semicolons on separate lines.": "Noktalı virgülleri ayrı satırlara yerleştirin."
+  "Place semicolons on separate lines.": "Noktalı virgülleri ayrı satırlara yerleştirin.",
+  "Transactions": "Hareket",
+  "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Bir işlem bu kadar dakika boyunca açık kaldığında uyarır. Uyarıları devre dışı bırakmak için 0 olarak ayarlayın.",
+  "Automatically rollback the transaction when a query fails. Use with caution.": "Sorgu başarısız olduğunda işlemi otomatik olarak geri alın. Dikkatli kullanın."
 }

@@ -302,5 +302,8 @@
   "Maximum characters in parenthesized expressions before breaking to multiple lines.": "여러 줄로 나누기 전에 괄호로 묶인 표현식의 최대 문자입니다.",
   "Number of blank lines between separate queries.": "개별 쿼리 사이의 빈 줄 수입니다.",
   "Remove spaces around operators (e.g., `age>=18` instead of `age >= 18`).": "연산자 주위의 공백을 제거합니다(예: 'age >= 18' 대신 'age>=18').",
-  "Place semicolons on separate lines.": "세미콜론을 별도의 줄에 배치합니다."
+  "Place semicolons on separate lines.": "세미콜론을 별도의 줄에 배치합니다.",
+  "Transactions": "트랜잭션을",
+  "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "이 분 동안 거래가 열려 있을 때 경고합니다. 경고를 사용하지 않도록 설정하려면 0으로 설정합니다.",
+  "Automatically rollback the transaction when a query fails. Use with caution.": "쿼리가 실패할 때 트랜잭션을 자동으로 롤백합니다. 주의해서 사용하십시오."
 }

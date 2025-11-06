@@ -302,5 +302,8 @@
   "Maximum characters in parenthesized expressions before breaking to multiple lines.": "Максимальное количество символов в выражениях в скобках перед разбивкой на несколько строк.",
   "Number of blank lines between separate queries.": "Количество пустых строк между отдельными запросами.",
   "Remove spaces around operators (e.g., `age>=18` instead of `age >= 18`).": "Удалите пробелы вокруг операторов (например, 'age>=18' вместо 'age >= 18').",
-  "Place semicolons on separate lines.": "Ставьте точку с запятой на отдельных строках."
+  "Place semicolons on separate lines.": "Ставьте точку с запятой на отдельных строках.",
+  "Transactions": "Операций",
+  "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Предупредите, когда транзакция была открыта в течение указанного количества минут. Установите значение 0, чтобы отключить предупреждения.",
+  "Automatically rollback the transaction when a query fails. Use with caution.": "Автоматический откат транзакции при сбое запроса. Используйте с осторожностью."
 }

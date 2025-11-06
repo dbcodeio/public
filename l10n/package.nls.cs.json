@@ -302,5 +302,8 @@
   "Maximum characters in parenthesized expressions before breaking to multiple lines.": "Maximální počet znaků ve výrazech v závorkách před rozdělením na více řádků.",
   "Number of blank lines between separate queries.": "Počet prázdných řádků mezi samostatnými dotazy.",
   "Remove spaces around operators (e.g., `age>=18` instead of `age >= 18`).": "Odstraňte mezery kolem operátorů (např. 'age>=18' místo 'age >= 18').",
-  "Place semicolons on separate lines.": "Umístěte středníky na samostatné řádky."
+  "Place semicolons on separate lines.": "Umístěte středníky na samostatné řádky.",
+  "Transactions": "Transakce",
+  "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Zobrazí upozornění, pokud je transakce otevřená po příliš mnoho minut. Nastavením na 0 zakážete upozornění.",
+  "Automatically rollback the transaction when a query fails. Use with caution.": "Automaticky vrátí transakci zpět, když dotaz selže. Používejte opatrně."
 }

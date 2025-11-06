@@ -302,5 +302,8 @@
   "Maximum characters in parenthesized expressions before breaking to multiple lines.": "複数行に分割される前の括弧で囲まれた式内の最大文字数。",
   "Number of blank lines between separate queries.": "個別のクエリ間の空白行の数。",
   "Remove spaces around operators (e.g., `age>=18` instead of `age >= 18`).": "演算子の周りのスペースを削除します(例:'age >= 18'ではなく 'age>=18')。",
-  "Place semicolons on separate lines.": "セミコロンを別々の行に配置します。"
+  "Place semicolons on separate lines.": "セミコロンを別々の行に配置します。",
+  "Transactions": "トランザクション",
+  "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "トランザクションがこれだけ分間開かれているときに警告します。警告を無効にするには、0 に設定します。",
+  "Automatically rollback the transaction when a query fails. Use with caution.": "クエリが失敗すると、トランザクションを自動的にロールバックします。注意して使用してください。"
 }

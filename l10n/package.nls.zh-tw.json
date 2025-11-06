@@ -302,5 +302,8 @@
   "Maximum characters in parenthesized expressions before breaking to multiple lines.": "括號內運算式中中斷為多行之前的字元數上限。",
   "Number of blank lines between separate queries.": "個別查詢之間的空行數。",
   "Remove spaces around operators (e.g., `age>=18` instead of `age >= 18`).": "刪除運算子周圍的空格（例如，'age>=18' 而不是 'age >= 18'）。",
-  "Place semicolons on separate lines.": "將分號放在單獨的行上。"
+  "Place semicolons on separate lines.": "將分號放在單獨的行上。",
+  "Transactions": "交易",
+  "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "當交易已開啟這麼幾分鐘時發出警告。設定為 0 可停用警告。",
+  "Automatically rollback the transaction when a query fails. Use with caution.": "查詢失敗時自動復原交易。謹慎使用。"
 }

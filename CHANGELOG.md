@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 1.17.31 - 2025-11-06
+
+### Changed
+
+- Transaction Control: Manual transaction management with auto-commit toggle, commit/rollback actions, and uncommitted change tracking for supported databases. #368
+- CSV/Excel/Parquet/Avro: Now supports opening a folder of files and loading all files as tables in a single connection.
+- ERD: Added multi-table selection support #812
+
+### Fixed
+
+- PostgreSQL: Fixed backup failing on macOS due to pgAdmin 4.app extraction errors in the PostgreSQL tools package.
+- SQLite: Fixed sqlean extension not loading due to incorrect required check and filename handling.
+- Connection Tree: Fixed tables starting with underscore not appearing in tree view.
+- PostgreSQL: Fixed DDL scripting for external tables (FDW). #806
+- Language Server: Fixed incorrect suggestions for CTEs in autocomplete. #204
+- Zero Config: Fixed postgres:// protocol not being recognized in .env files for PostgreSQL connection discovery. #813
+
 ## 1.17.30 - 2025-11-05
 
 ### Changed

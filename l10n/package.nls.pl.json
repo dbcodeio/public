@@ -302,5 +302,8 @@
   "Maximum characters in parenthesized expressions before breaking to multiple lines.": "Maksymalna liczba znaków w wyrażeniach ujętych w nawiasy przed podziałem na wiele wierszy.",
   "Number of blank lines between separate queries.": "Liczba pustych wierszy między oddzielnymi zapytaniami.",
   "Remove spaces around operators (e.g., `age>=18` instead of `age >= 18`).": "Usuń spacje wokół operatorów (np. \"wiek>=18\" zamiast \"wiek >=18\").",
-  "Place semicolons on separate lines.": "Umieść średniki w osobnych wierszach."
+  "Place semicolons on separate lines.": "Umieść średniki w osobnych wierszach.",
+  "Transactions": "Transakcji",
+  "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Ostrzegaj, gdy transakcja jest otwarta przez tyle minut. Ustaw wartość 0, aby wyłączyć ostrzeżenia.",
+  "Automatically rollback the transaction when a query fails. Use with caution.": "Automatycznie wycofuj transakcję, gdy zapytanie zakończy się niepowodzeniem. Używaj ostrożnie."
 }

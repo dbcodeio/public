@@ -302,5 +302,8 @@
   "Delete scratch files older than 1 month": "Ḓḗḗŀḗḗŧḗḗ şƈřȧȧŧƈħ ƒīŀḗḗş ǿǿŀḓḗḗř ŧħȧȧƞ 1 ḿǿǿƞŧħ",
   "Delete scratch files older than 6 months": "Ḓḗḗŀḗḗŧḗḗ şƈřȧȧŧƈħ ƒīŀḗḗş ǿǿŀḓḗḗř ŧħȧȧƞ 6 ḿǿǿƞŧħş",
   "Delete scratch files older than 1 year": "Ḓḗḗŀḗḗŧḗḗ şƈřȧȧŧƈħ ƒīŀḗḗş ǿǿŀḓḗḗř ŧħȧȧƞ 1 ẏḗḗȧȧř",
-  "Automatically delete old scratch files based on their last modified date.": "ȦȦŭŭŧǿǿḿȧȧŧīƈȧȧŀŀẏ ḓḗḗŀḗḗŧḗḗ ǿǿŀḓ şƈřȧȧŧƈħ ƒīŀḗḗş ƀȧȧşḗḗḓ ǿǿƞ ŧħḗḗīř ŀȧȧşŧ ḿǿǿḓīƒīḗḗḓ ḓȧȧŧḗḗ."
+  "Automatically delete old scratch files based on their last modified date.": "ȦȦŭŭŧǿǿḿȧȧŧīƈȧȧŀŀẏ ḓḗḗŀḗḗŧḗḗ ǿǿŀḓ şƈřȧȧŧƈħ ƒīŀḗḗş ƀȧȧşḗḗḓ ǿǿƞ ŧħḗḗīř ŀȧȧşŧ ḿǿǿḓīƒīḗḗḓ ḓȧȧŧḗḗ.",
+  "Transactions": "Ŧřȧȧƞşȧȧƈŧīǿǿƞş",
+  "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Ẇȧȧřƞ ẇħḗḗƞ ȧȧ ŧřȧȧƞşȧȧƈŧīǿǿƞ ħȧȧş ƀḗḗḗḗƞ ǿǿƥḗḗƞ ƒǿǿř ŧħīş ḿȧȧƞẏ ḿīƞŭŭŧḗḗş. Şḗḗŧ ŧǿǿ 0 ŧǿǿ ḓīşȧȧƀŀḗḗ ẇȧȧřƞīƞɠş.",
+  "Automatically rollback the transaction when a query fails. Use with caution.": "ȦȦŭŭŧǿǿḿȧȧŧīƈȧȧŀŀẏ řǿǿŀŀƀȧȧƈķ ŧħḗḗ ŧřȧȧƞşȧȧƈŧīǿǿƞ ẇħḗḗƞ ȧȧ ɋŭŭḗḗřẏ ƒȧȧīŀş. ŬŬşḗḗ ẇīŧħ ƈȧȧŭŭŧīǿǿƞ."
 }
