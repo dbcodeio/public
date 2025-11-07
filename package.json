@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.17.31",
+    "version": "1.17.32",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -449,6 +449,12 @@
                 "title": "%Delete%",
                 "category": "DBCode",
                 "icon": "$(trash)"
+            },
+            {
+                "command": "dbcode.account.changeSeatRole",
+                "title": "%Change Role%",
+                "category": "DBCode",
+                "icon": "$(shield)"
             },
             {
                 "command": "dbcode.account.purchase",
@@ -1418,13 +1424,18 @@
                 },
                 {
                     "command": "dbcode.account.seatEdit",
-                    "when": "view == dbcode.account.view && viewItem === seat",
+                    "when": "view == dbcode.account.view && viewItem =~ /seat-manageable/",
                     "group": "inline@1"
                 },
                 {
                     "command": "dbcode.account.seatDelete",
-                    "when": "view == dbcode.account.view && viewItem === seat",
+                    "when": "view == dbcode.account.view && viewItem =~ /seat-manageable/",
                     "group": "inline@2"
+                },
+                {
+                    "command": "dbcode.account.changeSeatRole",
+                    "when": "view == dbcode.account.view && viewItem =~ /~changeRole~/",
+                    "group": "inline@3"
                 },
                 {
                     "command": "dbcode.tunnels.edit",

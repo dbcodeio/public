@@ -305,5 +305,6 @@
   "Place semicolons on separate lines.": "Platzieren Sie Semikolons in separaten Zeilen.",
   "Transactions": "Transaktionen",
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Warnen, wenn eine Transaktion so viele Minuten lang geöffnet war. Legen Sie diesen Wert auf 0 fest, um Warnungen zu deaktivieren.",
-  "Automatically rollback the transaction when a query fails. Use with caution.": "Automatisches Rollback der Transaktion, wenn eine Abfrage fehlschlägt. Mit Vorsicht verwenden."
+  "Automatically rollback the transaction when a query fails. Use with caution.": "Automatisches Rollback der Transaktion, wenn eine Abfrage fehlschlägt. Mit Vorsicht verwenden.",
+  "Change Role": "Rolle ändern"
 }

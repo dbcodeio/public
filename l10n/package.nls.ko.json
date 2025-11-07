@@ -305,5 +305,6 @@
   "Place semicolons on separate lines.": "세미콜론을 별도의 줄에 배치합니다.",
   "Transactions": "트랜잭션을",
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "이 분 동안 거래가 열려 있을 때 경고합니다. 경고를 사용하지 않도록 설정하려면 0으로 설정합니다.",
-  "Automatically rollback the transaction when a query fails. Use with caution.": "쿼리가 실패할 때 트랜잭션을 자동으로 롤백합니다. 주의해서 사용하십시오."
+  "Automatically rollback the transaction when a query fails. Use with caution.": "쿼리가 실패할 때 트랜잭션을 자동으로 롤백합니다. 주의해서 사용하십시오.",
+  "Change Role": "역할 변경"
 }

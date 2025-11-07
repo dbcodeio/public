@@ -305,5 +305,6 @@
   "Place semicolons on separate lines.": "Placez les points-virgules sur des lignes distinctes.",
   "Transactions": "Transactions",
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Avertir lorsqu’une transaction est ouverte depuis autant de minutes. Réglez sur 0 pour désactiver les avertissements.",
-  "Automatically rollback the transaction when a query fails. Use with caution.": "Annulez automatiquement la transaction en cas d’échec d’une requête. À utiliser avec prudence."
+  "Automatically rollback the transaction when a query fails. Use with caution.": "Annulez automatiquement la transaction en cas d’échec d’une requête. À utiliser avec prudence.",
+  "Change Role": "Changer de rôle"
 }

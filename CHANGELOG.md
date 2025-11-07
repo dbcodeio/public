@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.17.32 - 2025-11-07
+
+### Changed
+
+- Notebooks: Added Python cell support with Jupyter kernel integration and SQL-to-Python result injection using @var annotations. #621
+- Team Seats: Added role management with Owner, Admin, and Member roles for team subscriptions. Admins can manage seats while only owners can change roles.
+
+### Fixed
+
+- Activation: Fixed web and email activation causing account section to not display license details. #810
+- ClickHouse: Fixed connection failure when connecting to servers with readonly mode enforced at credential/server level. #817
+
 ## 1.17.31 - 2025-11-06
 
 ### Changed

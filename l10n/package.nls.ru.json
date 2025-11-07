@@ -305,5 +305,6 @@
   "Place semicolons on separate lines.": "Ставьте точку с запятой на отдельных строках.",
   "Transactions": "Операций",
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Предупредите, когда транзакция была открыта в течение указанного количества минут. Установите значение 0, чтобы отключить предупреждения.",
-  "Automatically rollback the transaction when a query fails. Use with caution.": "Автоматический откат транзакции при сбое запроса. Используйте с осторожностью."
+  "Automatically rollback the transaction when a query fails. Use with caution.": "Автоматический откат транзакции при сбое запроса. Используйте с осторожностью.",
+  "Change Role": "Изменение роли"
 }

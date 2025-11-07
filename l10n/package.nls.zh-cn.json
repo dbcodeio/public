@@ -305,5 +305,6 @@
   "Place semicolons on separate lines.": "将分号放在单独的行上。",
   "Transactions": "交易",
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "当交易已打开这么多分钟时发出警告。设置为 0 可禁用警告。",
-  "Automatically rollback the transaction when a query fails. Use with caution.": "查询失败时自动回滚事务。谨慎使用。"
+  "Automatically rollback the transaction when a query fails. Use with caution.": "查询失败时自动回滚事务。谨慎使用。",
+  "Change Role": "更改角色"
 }

@@ -305,5 +305,6 @@
   "Place semicolons on separate lines.": "Umístěte středníky na samostatné řádky.",
   "Transactions": "Transakce",
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Zobrazí upozornění, pokud je transakce otevřená po příliš mnoho minut. Nastavením na 0 zakážete upozornění.",
-  "Automatically rollback the transaction when a query fails. Use with caution.": "Automaticky vrátí transakci zpět, když dotaz selže. Používejte opatrně."
+  "Automatically rollback the transaction when a query fails. Use with caution.": "Automaticky vrátí transakci zpět, když dotaz selže. Používejte opatrně.",
+  "Change Role": "Změna role"
 }
