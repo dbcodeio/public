@@ -2183,5 +2183,11 @@
   "Python injection help and information": "Pomoc i informacje dotyczące wstrzykiwania języka Python",
   "Python Injection": "Wstrzykiwanie Pythona",
   "No Jupyter kernels found. Open a Jupyter notebook and run a cell first.": "Nie znaleziono jąder Jupyter. Otwórz notes Jupyter i najpierw uruchom komórkę.",
-  "Select Python kernel for this notebook": "Wybierz jądro języka Python dla tego notesu"
+  "Select Python kernel for this notebook": "Wybierz jądro języka Python dla tego notesu",
+  "SQLite database \"{0}\" contains orphaned views (views referencing dropped tables). These views appear in the tree but column information is unavailable.": "Baza danych SQLite \"{0}\" zawiera osierocone widoki (widoki odwołujące się do porzuconych tabel). Te widoki są wyświetlane w drzewie, ale informacje o kolumnach są niedostępne.",
+  "Packages": "Pakiety",
+  "pinRow": "Rząd szpilek",
+  "pinTop": "Przypnij do góry",
+  "pinBottom": "Przypnij do dołu",
+  "unpinRow": "Odepnij wiersz"
 }

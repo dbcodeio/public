@@ -2183,5 +2183,11 @@
   "Python injection help and information": "Python 삽입 도움말 및 정보",
   "Python Injection": "파이썬 주입",
   "No Jupyter kernels found. Open a Jupyter notebook and run a cell first.": "Jupyter 커널을 찾을 수 없습니다. Jupyter Notebook을 열고 먼저 셀을 실행합니다.",
-  "Select Python kernel for this notebook": "이 Notebook에 대한 Python 커널 선택"
+  "Select Python kernel for this notebook": "이 Notebook에 대한 Python 커널 선택",
+  "SQLite database \"{0}\" contains orphaned views (views referencing dropped tables). These views appear in the tree but column information is unavailable.": "SQLite 데이터베이스 \"{0}\"에는 분리된 뷰(삭제된 테이블을 참조하는 뷰)가 포함되어 있습니다. 이러한 보기는 트리에 표시되지만 열 정보를 사용할 수 없습니다.",
+  "Packages": "패키지",
+  "pinRow": "핀 행",
+  "pinTop": "맨 위에 고정",
+  "pinBottom": "하단에 고정",
+  "unpinRow": "행 고정 해제"
 }

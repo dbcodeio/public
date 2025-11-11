@@ -2183,5 +2183,11 @@
   "Python injection help and information": "Python enjeksiyon yardımı ve bilgileri",
   "Python Injection": "Python Enjeksiyonu",
   "No Jupyter kernels found. Open a Jupyter notebook and run a cell first.": "Jupyter çekirdeği bulunamadı. Bir Jupyter not defteri açın ve önce bir hücre çalıştırın.",
-  "Select Python kernel for this notebook": "Bu not defteri için Python çekirdeğini seçin"
+  "Select Python kernel for this notebook": "Bu not defteri için Python çekirdeğini seçin",
+  "SQLite database \"{0}\" contains orphaned views (views referencing dropped tables). These views appear in the tree but column information is unavailable.": "SQLite veritabanı \"{0}\" artık görünümler (bırakılan tablolara başvuran görünümler) içerir. Bu görünümler ağaçta görünür, ancak sütun bilgileri kullanılamaz.",
+  "Packages": "Paket",
+  "pinRow": "Pin Satırı",
+  "pinTop": "Başa Sabitle",
+  "pinBottom": "Aşağıya Sabitle",
+  "unpinRow": "Satırın Sabitlemesini Kaldır"
 }

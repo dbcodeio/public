@@ -2183,5 +2183,11 @@
   "Python injection help and information": "Python 注入說明和資訊",
   "Python Injection": "Python 注入",
   "No Jupyter kernels found. Open a Jupyter notebook and run a cell first.": "未找到 Jupyter 核心。開啟 Jupyter 筆記本，然後先執行儲存格。",
-  "Select Python kernel for this notebook": "選取此筆記本的 Python 核心"
+  "Select Python kernel for this notebook": "選取此筆記本的 Python 核心",
+  "SQLite database \"{0}\" contains orphaned views (views referencing dropped tables). These views appear in the tree but column information is unavailable.": "SQLite 資料庫「{0}」包含孤立的檢視（參考已刪除表的檢視）。這些視圖會出現在樹狀結構中，但無法使用欄資訊。",
+  "Packages": "套餐",
+  "pinRow": "針排",
+  "pinTop": "釘選到頂部",
+  "pinBottom": "釘選到底部",
+  "unpinRow": "取消固定列"
 }

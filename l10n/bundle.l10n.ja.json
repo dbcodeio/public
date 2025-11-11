@@ -2186,5 +2186,11 @@
   "Python injection help and information": "Python インジェクションのヘルプと情報",
   "Python Injection": "Python インジェクション",
   "No Jupyter kernels found. Open a Jupyter notebook and run a cell first.": "Jupyter カーネルが見つかりませんでした。Jupyter ノートブックを開き、最初にセルを実行します。",
-  "Select Python kernel for this notebook": "このノートブックの Python カーネルを選択します"
+  "Select Python kernel for this notebook": "このノートブックの Python カーネルを選択します",
+  "SQLite database \"{0}\" contains orphaned views (views referencing dropped tables). These views appear in the tree but column information is unavailable.": "SQLite データベース \"{0}\" には、孤立したビュー (削除されたテーブルを参照するビュー) が含まれています。これらのビューはツリーに表示されますが、列情報は使用できません。",
+  "Packages": "パッケージ",
+  "pinRow": "ピンロー",
+  "pinTop": "トップにピン留め",
+  "pinBottom": "下にピン留め",
+  "unpinRow": "行のピン留め解除"
 }

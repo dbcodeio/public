@@ -2183,5 +2183,11 @@
   "Python injection help and information": "Nápověda a informace o injekci Pythonu",
   "Python Injection": "Injekce Pythonu",
   "No Jupyter kernels found. Open a Jupyter notebook and run a cell first.": "Nebyla nalezena žádná jádra Jupyter. Otevřete poznámkový blok Jupyter a nejprve spusťte buňku.",
-  "Select Python kernel for this notebook": "Vyberte jádro Pythonu pro tento poznámkový blok"
+  "Select Python kernel for this notebook": "Vyberte jádro Pythonu pro tento poznámkový blok",
+  "SQLite database \"{0}\" contains orphaned views (views referencing dropped tables). These views appear in the tree but column information is unavailable.": "SQLite databáze \"{0}\" obsahuje osiřelé pohledy (pohledy odkazující na vyřazené tabulky). Tato zobrazení se zobrazí ve stromu, ale informace o sloupci nejsou k dispozici.",
+  "Packages": "Balíky",
+  "pinRow": "Řádek špendlíků",
+  "pinTop": "Připnout nahoru",
+  "pinBottom": "Připnout dolů",
+  "unpinRow": "Odepnout řádek"
 }

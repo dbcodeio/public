@@ -2183,5 +2183,11 @@
   "Python injection help and information": "Помощь и информация о внедрении Python",
   "Python Injection": "Внедрение Python",
   "No Jupyter kernels found. Open a Jupyter notebook and run a cell first.": "Ядра Jupyter не найдены. Откройте записную книжку Jupyter и сначала запустите ячейку.",
-  "Select Python kernel for this notebook": "Выберите ядро Python для этой записной книжки"
+  "Select Python kernel for this notebook": "Выберите ядро Python для этой записной книжки",
+  "SQLite database \"{0}\" contains orphaned views (views referencing dropped tables). These views appear in the tree but column information is unavailable.": "База данных SQLite \"{0}\" содержит осиротевшие представления (представления, ссылающиеся на удаленные таблицы). Эти представления отображаются в дереве, но информация о столбцах недоступна.",
+  "Packages": "Пакеты",
+  "pinRow": "Пин Роу",
+  "pinTop": "Закрепить наверх",
+  "pinBottom": "Штифт на дно",
+  "unpinRow": "Открепить ряд"
 }

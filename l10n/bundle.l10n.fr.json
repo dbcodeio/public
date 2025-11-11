@@ -2183,5 +2183,11 @@
   "Python injection help and information": "Aide et informations sur l’injection Python",
   "Python Injection": "Python Injection",
   "No Jupyter kernels found. Open a Jupyter notebook and run a cell first.": "Aucun noyau Jupyter n’a été trouvé. Ouvrez un bloc-notes Jupyter et exécutez d’abord une cellule.",
-  "Select Python kernel for this notebook": "Sélectionnez le noyau Python pour ce notebook"
+  "Select Python kernel for this notebook": "Sélectionnez le noyau Python pour ce notebook",
+  "SQLite database \"{0}\" contains orphaned views (views referencing dropped tables). These views appear in the tree but column information is unavailable.": "La base de données SQLite « {0} » contient des vues orphelines (vues référençant des tables supprimées). Ces vues apparaissent dans l’arborescence, mais les informations sur les colonnes ne sont pas disponibles.",
+  "Packages": "Paquets",
+  "pinRow": "Épingler Rangée",
+  "pinTop": "Épingler en haut",
+  "pinBottom": "Goupille en bas",
+  "unpinRow": "Désépingler la ligne"
 }

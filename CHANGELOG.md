@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.17.33 - 2025-11-11
+
+### Changed
+
+- Oracle: Added preliminary support for packages in database explorer.
+
+### Fixed
+
+- Explorer: Fixed sequence/identity column default values being truncated in database tree (missing closing bracket after type cast). #807
+- SQLite: Fixed introspection error when database contains orphaned views (views referencing dropped tables). #819
+- MySQL/MariaDB: Fixed backup and restore failing over SSH tunnels by forcing TCP protocol to prevent socket connection attempts. #808
+- PostgreSQL: Fixed SSL connection failures with servers using ECDSA P-521 certificates (secp521r1) by appending missing signature algorithm to BoringSSL defaults. #777
+- Snowflake: Added debug logging to help diagnose connection issues. #814
+
 ## 1.17.32 - 2025-11-07
 
 ### Changed
