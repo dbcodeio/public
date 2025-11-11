@@ -306,5 +306,6 @@
   "Transactions": "交易",
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "當交易已開啟這麼幾分鐘時發出警告。設定為 0 可停用警告。",
   "Automatically rollback the transaction when a query fails. Use with caution.": "查詢失敗時自動復原交易。謹慎使用。",
-  "Change Role": "變更角色"
+  "Change Role": "變更角色",
+  "Export Data": "匯出資料"
 }

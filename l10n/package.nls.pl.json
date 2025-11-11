@@ -306,5 +306,6 @@
   "Transactions": "Transakcji",
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Ostrzegaj, gdy transakcja jest otwarta przez tyle minut. Ustaw wartość 0, aby wyłączyć ostrzeżenia.",
   "Automatically rollback the transaction when a query fails. Use with caution.": "Automatycznie wycofuj transakcję, gdy zapytanie zakończy się niepowodzeniem. Używaj ostrożnie.",
-  "Change Role": "Zmień rolę"
+  "Change Role": "Zmień rolę",
+  "Export Data": "Eksport danych"
 }

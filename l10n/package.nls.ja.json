@@ -306,5 +306,6 @@
   "Transactions": "トランザクション",
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "トランザクションがこれだけ分間開かれているときに警告します。警告を無効にするには、0 に設定します。",
   "Automatically rollback the transaction when a query fails. Use with caution.": "クエリが失敗すると、トランザクションを自動的にロールバックします。注意して使用してください。",
-  "Change Role": "ロールの変更"
+  "Change Role": "ロールの変更",
+  "Export Data": "データのエクスポート"
 }

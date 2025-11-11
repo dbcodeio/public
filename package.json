@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.17.33",
+    "version": "1.17.34",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -1029,6 +1029,12 @@
                 "category": "DBCode"
             },
             {
+                "command": "dbcode.export",
+                "title": "%Export Data%",
+                "category": "DBCode",
+                "icon": "$(export)"
+            },
+            {
                 "command": "dbcode.editor.context.openTable",
                 "title": "%Open%",
                 "category": "DBCode"
@@ -1725,6 +1731,11 @@
                 {
                     "command": "dbcode.table.import",
                     "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~import~/",
+                    "group": "2actoin@1"
+                },
+                {
+                    "command": "dbcode.export",
+                    "when": "view == dbcode.connections.view && viewItem =~ /~export~/",
                     "group": "2actoin@1"
                 },
                 {
@@ -4943,7 +4954,8 @@
         "ls:test-completions": "tsx scripts/ls-test-completions.ts",
         "benchmark": "vitest run src/benchmark --config vitest.benchmark.config.ts",
         "benchmark:file": "vitest run --config vitest.benchmark.config.ts",
-        "benchmark:test": "vitest run --config vitest.benchmark.config.ts --testNamePattern"
+        "benchmark:test": "vitest run --config vitest.benchmark.config.ts --testNamePattern",
+        "funding:scan": "tsx scripts/funding-scanner.ts"
     },
     "devDependencies": {
         "@azure-rest/ai-translation-text": "^1.0.1",

@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 1.17.34 - 2025-11-11
+
+### Changed
+
+- Export: You can now export a table, view, or filter directly from the explorer in the right click context menu. #559 #796
+- Language Server: Added multi-schema search path support for completions and semantic validation (PostgreSQL search_path, Oracle multi-schema access, SQL Server schema resolution). #773
+
+### Fixed
+
+- CockroachDB: Fixed introspection error when connecting via zero-config with postgres:// protocol by auto-detecting CockroachDB and switching to the correct driver. #823
+- Language Server: Fixed ClickHouse parser to support trailing commas in CREATE TABLE column lists. #818
+- Language Server: Fixed Trino and ClickHouse UPDATE/DELETE WHERE completions not suggesting table columns.
+- Language Server: Fixed ClickHouse UNION queries requiring ALL keyword when optional syntax is valid.
+- Language Server: Fixed ClickHouse ORDER BY WITH FILL syntax not being recognized. #795
+
 ## 1.17.33 - 2025-11-11
 
 ### Changed
