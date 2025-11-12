@@ -1,7 +1,7 @@
 ---
 name: New Database 
 about: Add support for a new database
-title: "New Databse: "
+title: "New Database: "
 
 ---
 
