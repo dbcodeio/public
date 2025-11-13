@@ -2258,5 +2258,14 @@
   "Exported {0} tables successfully, {1} failed ({2} total rows)": "{0} 테이블을 성공적으로 내보냈지만 실패{1}(총 행 {2}개)",
   "Show Errors": "오류 표시",
   "{0}: {1}": "{0}: {1}",
-  "Export errors:\n{0}": "내보내기 오류:\n{0}"
+  "Export errors:\n{0}": "내보내기 오류:\n{0}",
+  "Sign in to use {0}": "{0} 사용하려면 로그인하세요",
+  "Upgrade to Pro": "프로로 업그레이드",
+  "Monthly limit reached": "월별 한도 도달",
+  "You've used {0} {1} times this month.\n\nUpgrade to Pro for unlimited access.": "이번 달에 {0} {1}번 사용하셨습니다.\n\n무제한 액세스를 위해 Pro로 업그레이드하십시오.",
+  "OK": "그래",
+  "{0} available on Core plan": "{0} Core 플랜에서 사용할 수 있습니다.",
+  "**Error:** {0}": "**오류:** {0}",
+  "error": "오류",
+  "typeToSearchOoo": "검색하려면 입력..."
 }

@@ -92,7 +92,6 @@
   "Cloud Provider ID": "雲供應商ID",
   "Cloud Provider name": "雲供應商名稱",
   "Cloud Provider": "雲供應商",
-  "Record query history": "記錄查詢歷史",
   "AI": "人工智慧",
   "Inline Completion": "內聯補全",
   "Connection Color": "連接顏色",
@@ -307,5 +306,7 @@
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "當交易已開啟這麼幾分鐘時發出警告。設定為 0 可停用警告。",
   "Automatically rollback the transaction when a query fails. Use with caution.": "查詢失敗時自動復原交易。謹慎使用。",
   "Change Role": "變更角色",
-  "Export Data": "匯出資料"
+  "Export Data": "匯出資料",
+  "Record query history.": "記錄查詢歷史記錄。",
+  "Log failed queries to history.": "將失敗的查詢記錄到歷史記錄。"
 }

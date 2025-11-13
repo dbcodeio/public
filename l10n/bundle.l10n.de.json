@@ -2258,5 +2258,14 @@
   "Exported {0} tables successfully, {1} failed ({2} total rows)": "{0} Tabellen erfolgreich exportiert {1} fehlgeschlagen ({2} Zeilen insgesamt)",
   "Show Errors": "Fehler anzeigen",
   "{0}: {1}": "{0}: {1}",
-  "Export errors:\n{0}": "Fehler beim Exportieren:\n{0}"
+  "Export errors:\n{0}": "Fehler beim Exportieren:\n{0}",
+  "Sign in to use {0}": "Melden Sie sich an, um {0} zu verwenden",
+  "Upgrade to Pro": "Upgrade auf Pro",
+  "Monthly limit reached": "Monatliches Limit erreicht",
+  "You've used {0} {1} times this month.\n\nUpgrade to Pro for unlimited access.": "Sie haben diesen Monat {0} {1} Mal verwendet.\n\nUpgrade auf Pro für unbegrenzten Zugriff.",
+  "OK": "OKAY",
+  "{0} available on Core plan": "{0} im Core-Plan verfügbar",
+  "**Error:** {0}": "**Fehler:** {0}",
+  "error": "Fehler",
+  "typeToSearchOoo": "Geben Sie ein, um zu suchen..."
 }

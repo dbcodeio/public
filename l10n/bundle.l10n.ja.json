@@ -2261,5 +2261,14 @@
   "Exported {0} tables successfully, {1} failed ({2} total rows)": "{0}テーブルは正常にエクスポートされましたが、失敗{1} (合計行数は {2})",
   "Show Errors": "エラーの表示",
   "{0}: {1}": "{0}: {1}",
-  "Export errors:\n{0}": "エクスポートエラー:\n{0}"
+  "Export errors:\n{0}": "エクスポートエラー:\n{0}",
+  "Sign in to use {0}": "サインインして{0}を使用する",
+  "Upgrade to Pro": "Proへのアップグレード",
+  "Monthly limit reached": "月間制限に達しました",
+  "You've used {0} {1} times this month.\n\nUpgrade to Pro for unlimited access.": "今月は{0} {1}回使用しました。\n\nProにアップグレードすると、無制限にアクセスできます。",
+  "OK": "わかりました",
+  "{0} available on Core plan": "{0}コアプランで利用可能",
+  "**Error:** {0}": "**エラー:** {0}",
+  "error": "エラー",
+  "typeToSearchOoo": "検索するには入力します..."
 }

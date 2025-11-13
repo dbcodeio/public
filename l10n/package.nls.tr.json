@@ -92,7 +92,6 @@
   "Cloud Provider ID": "Bulut Sağlayıcı Kimliği",
   "Cloud Provider name": "Bulut Sağlayıcısı adı",
   "Cloud Provider": "Bulut Sağlayıcı",
-  "Record query history": "Kayıt sorgu geçmişi",
   "AI": "AI",
   "Inline Completion": "Satır İçi Tamamlama",
   "Connection Color": "Bağlantı Rengi",
@@ -307,5 +306,7 @@
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Bir işlem bu kadar dakika boyunca açık kaldığında uyarır. Uyarıları devre dışı bırakmak için 0 olarak ayarlayın.",
   "Automatically rollback the transaction when a query fails. Use with caution.": "Sorgu başarısız olduğunda işlemi otomatik olarak geri alın. Dikkatli kullanın.",
   "Change Role": "Rolü Değiştir",
-  "Export Data": "Verileri Dışa Aktar"
+  "Export Data": "Verileri Dışa Aktar",
+  "Record query history.": "Sorgu geçmişini kaydedin.",
+  "Log failed queries to history.": "Başarısız sorguları geçmişe kaydedin."
 }

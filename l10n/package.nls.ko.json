@@ -92,7 +92,6 @@
   "Cloud Provider ID": "클라우드 제공업체 ID",
   "Cloud Provider name": "클라우드 공급자 이름",
   "Cloud Provider": "클라우드 제공업체",
-  "Record query history": "쿼리 기록",
   "AI": "인공 지능",
   "Inline Completion": "인라인 완성",
   "Connection Color": "연결 색상",
@@ -307,5 +306,7 @@
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "이 분 동안 거래가 열려 있을 때 경고합니다. 경고를 사용하지 않도록 설정하려면 0으로 설정합니다.",
   "Automatically rollback the transaction when a query fails. Use with caution.": "쿼리가 실패할 때 트랜잭션을 자동으로 롤백합니다. 주의해서 사용하십시오.",
   "Change Role": "역할 변경",
-  "Export Data": "데이터 내보내기"
+  "Export Data": "데이터 내보내기",
+  "Record query history.": "쿼리 기록을 기록합니다.",
+  "Log failed queries to history.": "실패한 쿼리를 기록에 기록합니다."
 }

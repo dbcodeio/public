@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.17.34",
+    "version": "1.17.35",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -3668,7 +3668,7 @@
                     "dbcode.history.enabled": {
                         "type": "boolean",
                         "default": false,
-                        "markdownDescription": "%Record query history%"
+                        "markdownDescription": "%Record query history.%"
                     },
                     "dbcode.history.recordsPerDatabase": {
                         "type": "number",
@@ -3679,6 +3679,11 @@
                         "type": "boolean",
                         "default": false,
                         "markdownDescription": "%Enable cloud sync for query history.%"
+                    },
+                    "dbcode.history.logFailedQueries": {
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "%Log failed queries to history.%"
                     }
                 }
             },
@@ -4955,7 +4960,8 @@
         "benchmark": "vitest run src/benchmark --config vitest.benchmark.config.ts",
         "benchmark:file": "vitest run --config vitest.benchmark.config.ts",
         "benchmark:test": "vitest run --config vitest.benchmark.config.ts --testNamePattern",
-        "funding:scan": "tsx scripts/funding-scanner.ts"
+        "funding:scan": "tsx scripts/funding-scanner.ts",
+        "socket:check": "npx @socketsecurity/cli ci"
     },
     "devDependencies": {
         "@azure-rest/ai-translation-text": "^1.0.1",
@@ -4963,6 +4969,7 @@
         "@azure/keyvault-secrets": "^4.8.0",
         "@biomejs/biome": "^2.1.2",
         "@chevrotain/types": "^11.0.3",
+        "@socketsecurity/cli": "^1.0.0",
         "@testcontainers/mssqlserver": "^10.13.2",
         "@testcontainers/mysql": "^10.13.2",
         "@testcontainers/postgresql": "^10.13.2",

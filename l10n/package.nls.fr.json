@@ -92,7 +92,6 @@
   "Cloud Provider ID": "ID du fournisseur de cloud",
   "Cloud Provider name": "Nom du fournisseur de cloud",
   "Cloud Provider": "Fournisseur de cloud",
-  "Record query history": "Historique des requêtes d’enregistrement",
   "AI": "IA",
   "Inline Completion": "Complétion en ligne",
   "Connection Color": "Couleur de connexion",
@@ -307,5 +306,7 @@
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Avertir lorsqu’une transaction est ouverte depuis autant de minutes. Réglez sur 0 pour désactiver les avertissements.",
   "Automatically rollback the transaction when a query fails. Use with caution.": "Annulez automatiquement la transaction en cas d’échec d’une requête. À utiliser avec prudence.",
   "Change Role": "Changer de rôle",
-  "Export Data": "Exporter des données"
+  "Export Data": "Exporter des données",
+  "Record query history.": "Enregistrer l’historique des requêtes.",
+  "Log failed queries to history.": "Consigner les requêtes ayant échoué dans l’historique."
 }

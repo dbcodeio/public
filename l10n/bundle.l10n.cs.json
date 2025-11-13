@@ -2014,7 +2014,7 @@
   "OAuth is not enabled": "OAuth není povolen",
   "This will revoke all active MCP OAuth tokens. The server will need to be restarted. Continue?": "Tím dojde ke zrušení všech aktivních OAuth tokenů pro MCP. Server bude nutné restartovat. Pokračovat?",
   "All MCP OAuth tokens have been revoked": "Všechny OAuth tokeny pro MCP byly zrušeny",
-  "MCP started with OAuth authentication at {0}\n\nOAuth discovery: {1}": "MCP začal s ověřováním OAuth v {0}\n\OAuth: {1}",
+  "MCP started with OAuth authentication at {0}\n\nOAuth discovery: {1}": "MCP začal s ověřováním OAuth v {0}\n\nOAuth: {1}",
   "MCP started (no authentication) at {0}": "MCP byl spuštěn (bez ověření) v {0}",
   "MCP Client \"{0}\" is requesting access to DBCode.\n\nRedirect URI: {1}\nScopes: {2}\n\nDo you want to authorize this client?": "MCP Client \"{0}\" žádá o přístup k DBCode.\n\nIdentifikátor URI přesměrování: {1}\nRozsah: {2}\n\nChcete autorizovat tohoto klienta?",
   "Approve": "Schválit",
@@ -2258,5 +2258,14 @@
   "Exported {0} tables successfully, {1} failed ({2} total rows)": "Úspěšný export {0} tabulek, {1} se nezdařil ({2} celkových řádků)",
   "Show Errors": "Zobrazit chyby",
   "{0}: {1}": "{0}: {1}",
-  "Export errors:\n{0}": "Chyby exportu:\n{0}"
+  "Export errors:\n{0}": "Chyby exportu:\n{0}",
+  "Sign in to use {0}": "Přihlásit se a používat {0}",
+  "Upgrade to Pro": "Upgradujte na verzi Pro",
+  "Monthly limit reached": "Dosažení měsíčního limitu",
+  "You've used {0} {1} times this month.\n\nUpgrade to Pro for unlimited access.": "Tento měsíc jste použili {0} {1} krát.\n\nUpgradujte na verzi Pro a získejte neomezený přístup.",
+  "OK": "OK",
+  "{0} available on Core plan": "{0} k dispozici v základním plánu",
+  "**Error:** {0}": "**Chyba:** {0}",
+  "error": "chyba",
+  "typeToSearchOoo": "Zadejte pro vyhledávání..."
 }

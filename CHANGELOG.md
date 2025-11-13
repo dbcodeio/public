@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.17.35 - 2025-11-13
+
+### Changed
+
+- Core Plan: Testing usage-based access for select Pro features. Core users can now use certain features up to a limited number of times per month.
+- Oracle: Ability to alter packages.
+- SQL Server: Statements with DECLARE, temp tables, or variable assignments now stay together as one batch unless separated by GO or blank lines. #822
+- Language Server: Added Snowflake support.
+- History: Added setting to enable logging of failed queries. #827
+
+### Fixed
+
+- ERD: Fixed position saving not persisting correctly. #829
+- Results: Fixed WHERE filter input not expanding to fill available space when toolbar is constrained. #828
+- MySQL: Fixed ER diagrams incorrectly showing One-to-Many relationships for foreign keys with UNIQUE constraints.
+
 ## 1.17.34 - 2025-11-11
 
 ### Changed

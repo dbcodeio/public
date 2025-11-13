@@ -92,7 +92,6 @@
   "Cloud Provider ID": "ID облачного провайдера",
   "Cloud Provider name": "Имя облачного провайдера",
   "Cloud Provider": "Поставщик облачных услуг",
-  "Record query history": "Запись журнала запросов",
   "AI": "Искусственный интеллект",
   "Inline Completion": "Поточное завершение",
   "Connection Color": "Цвет подключения",
@@ -307,5 +306,7 @@
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Предупредите, когда транзакция была открыта в течение указанного количества минут. Установите значение 0, чтобы отключить предупреждения.",
   "Automatically rollback the transaction when a query fails. Use with caution.": "Автоматический откат транзакции при сбое запроса. Используйте с осторожностью.",
   "Change Role": "Изменение роли",
-  "Export Data": "Экспорт данных"
+  "Export Data": "Экспорт данных",
+  "Record query history.": "Запись журнала запросов.",
+  "Log failed queries to history.": "Записывайте в журнал неудачные запросы."
 }

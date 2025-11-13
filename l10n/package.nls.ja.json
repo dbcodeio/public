@@ -92,7 +92,6 @@
   "Cloud Provider ID": "クラウドプロバイダーID",
   "Cloud Provider name": "クラウドプロバイダー名",
   "Cloud Provider": "クラウドプロバイダー",
-  "Record query history": "クエリ履歴の記録",
   "AI": "人工知能",
   "Inline Completion": "インライン補完",
   "Connection Color": "接続色",
@@ -307,5 +306,7 @@
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "トランザクションがこれだけ分間開かれているときに警告します。警告を無効にするには、0 に設定します。",
   "Automatically rollback the transaction when a query fails. Use with caution.": "クエリが失敗すると、トランザクションを自動的にロールバックします。注意して使用してください。",
   "Change Role": "ロールの変更",
-  "Export Data": "データのエクスポート"
+  "Export Data": "データのエクスポート",
+  "Record query history.": "クエリ履歴を記録します。",
+  "Log failed queries to history.": "失敗したクエリを履歴に記録します。"
 }

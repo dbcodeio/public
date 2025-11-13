@@ -92,7 +92,6 @@
   "Cloud Provider ID": "ID poskytovatele cloudu",
   "Cloud Provider name": "Název poskytovatele cloudu",
   "Cloud Provider": "Poskytovatel cloudu",
-  "Record query history": "Záznam historie dotazů",
   "AI": "Umělá inteligence",
   "Inline Completion": "Vložené dokončování",
   "Connection Color": "Barva připojení",
@@ -307,5 +306,7 @@
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Zobrazí upozornění, pokud je transakce otevřená po příliš mnoho minut. Nastavením na 0 zakážete upozornění.",
   "Automatically rollback the transaction when a query fails. Use with caution.": "Automaticky vrátí transakci zpět, když dotaz selže. Používejte opatrně.",
   "Change Role": "Změna role",
-  "Export Data": "Exportovat data"
+  "Export Data": "Exportovat data",
+  "Record query history.": "Zaznamenejte historii dotazů.",
+  "Log failed queries to history.": "Zaznamenávat neúspěšné dotazy do historie."
 }
