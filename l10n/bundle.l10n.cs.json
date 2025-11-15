@@ -967,7 +967,6 @@
   "Local Date": "Místní datum",
   "Local Time": "Místní čas",
   "Account Identifier": "Identifikátor účtu",
-  "Schema": "Schéma",
   "Failed to find parent item {0} of type {1} in type {2}": "Nepodařilo se najít {0} nadřazené položky typu {1} v typu {2}",
   "Username and Password": "Uživatelské jméno a heslo",
   "Single sign-on": "Jednotné přihlášení",
@@ -2267,5 +2266,10 @@
   "{0} available on Core plan": "{0} k dispozici v základním plánu",
   "**Error:** {0}": "**Chyba:** {0}",
   "error": "chyba",
-  "typeToSearchOoo": "Zadejte pro vyhledávání..."
+  "typeToSearchOoo": "Zadejte pro vyhledávání...",
+  "Schemas": "Schémata",
+  "External Servers": "Externí servery",
+  "User Mappings": "Mapování uživatelů",
+  "Failed to open Snowflake SSO URL. URL copied to clipboard - paste in your browser to authenticate.": "Nepodařilo se otevřít adresu URL jednotného přihlašování Snowflake. URL zkopírováno do schránky - vložte do prohlížeče pro ověření.",
+  "Foreign Servers": "Zahraniční servery"
 }

@@ -967,7 +967,6 @@
   "Local Date": "현지 날짜",
   "Local Time": "현지 시간",
   "Account Identifier": "계정 식별자",
-  "Schema": "스키마",
   "Failed to find parent item {0} of type {1} in type {2}": "{2} 형식에서 {1} 형식의 부모 항목 {0} 찾지 못했습니다.",
   "Username and Password": "사용자 이름 및 비밀번호",
   "Single sign-on": "싱글 사인온(SSO)",
@@ -2267,5 +2266,10 @@
   "{0} available on Core plan": "{0} Core 플랜에서 사용할 수 있습니다.",
   "**Error:** {0}": "**오류:** {0}",
   "error": "오류",
-  "typeToSearchOoo": "검색하려면 입력..."
+  "typeToSearchOoo": "검색하려면 입력...",
+  "Schemas": "스키마",
+  "External Servers": "외부 서버",
+  "User Mappings": "사용자 매핑",
+  "Failed to open Snowflake SSO URL. URL copied to clipboard - paste in your browser to authenticate.": "Snowflake SSO URL을 열지 못했습니다. 클립보드에 복사된 URL - 인증을 위해 브라우저에 붙여넣습니다.",
+  "Foreign Servers": "외국 서버"
 }

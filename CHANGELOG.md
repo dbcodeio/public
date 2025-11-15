@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 1.17.37 - 2025-11-14
+
+### Changed
+
+- Transaction Control: Rolled out to MySQL/MariaDB, SQL Server, Oracle, DB2, ClickHouse, and Snowflake. #368
+- PostgreSQL: Added Foreign Data Wrapper (FDW) support to explorer. Foreign servers now appear at database level with their tables and user mappings. Also supported in Yugabyte, Timescale, Greenplum, and RisingWave derivatives.
+- PostgreSQL: Filtered out pg_temp and pg_toast schemas from explorer.
+- Explorer: Database-level containers (Schemas, Foreign Servers, etc.) are now always shown. Will require re applying any schema filters.
+- Explorer: Updated connections to show refreshing icon when introspection is in progress.
+
+### Fixed
+
+- Commands: "Alter Table" and "Entity Relationship Diagram" commands failing when invoked from command palette without tree selection.
+- PostgreSQL: Fixed foreign tables appearing under Types in explorer.
+- Snowflake: Fixed SSO authentication failing in dev containers and remote environments. #814
+- ClickHouse: Fallback to SHOW commands when system tables are inaccessible. #817
+
 ## 1.17.35 - 2025-11-13
 
 ### Changed

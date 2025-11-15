@@ -967,7 +967,6 @@
   "Local Date": "Data locale",
   "Local Time": "Ora locale",
   "Account Identifier": "Identificatore dell'account",
-  "Schema": "Schema",
   "Failed to find parent item {0} of type {1} in type {2}": "Impossibile trovare il {0} dell'elemento padre di tipo {1} nel tipo {2}",
   "Username and Password": "Nome utente e password",
   "Single sign-on": "Accesso singolo",
@@ -2267,5 +2266,10 @@
   "{0} available on Core plan": "{0} disponibile con il piano Core",
   "**Error:** {0}": "**Errore:** {0}",
   "error": "errore",
-  "typeToSearchOoo": "Digita per cercare..."
+  "typeToSearchOoo": "Digita per cercare...",
+  "Schemas": "Schemi",
+  "External Servers": "Server esterni",
+  "User Mappings": "Mappature utente",
+  "Failed to open Snowflake SSO URL. URL copied to clipboard - paste in your browser to authenticate.": "Impossibile aprire l'URL SSO di Snowflake. URL copiato negli appunti: incollalo nel browser per autenticarti.",
+  "Foreign Servers": "Server esterni"
 }

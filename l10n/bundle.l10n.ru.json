@@ -967,7 +967,6 @@
   "Local Date": "Местная дата",
   "Local Time": "Местное время",
   "Account Identifier": "Идентификатор учетной записи",
-  "Schema": "Схема",
   "Failed to find parent item {0} of type {1} in type {2}": "Не удалось найти родительский элемент {0} типа {1} в типе {2}",
   "Username and Password": "Имя пользователя и пароль",
   "Single sign-on": "Единый вход",
@@ -2267,5 +2266,10 @@
   "{0} available on Core plan": "{0} доступно на тарифе Core",
   "**Error:** {0}": "**Ошибка:** {0}",
   "error": "ошибка",
-  "typeToSearchOoo": "Введите для поиска..."
+  "typeToSearchOoo": "Введите для поиска...",
+  "Schemas": "Схемы",
+  "External Servers": "Внешние серверы",
+  "User Mappings": "Сопоставления пользователей",
+  "Failed to open Snowflake SSO URL. URL copied to clipboard - paste in your browser to authenticate.": "Не удалось открыть URL единого входа Snowflake. URL скопирован в буфер обмена - вставьте в ваш браузер для аутентификации.",
+  "Foreign Servers": "Зарубежные серверы"
 }

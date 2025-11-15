@@ -967,7 +967,6 @@
   "Local Date": "本地日期",
   "Local Time": "當地時間",
   "Account Identifier": "帳戶標識碼",
-  "Schema": "圖式",
   "Failed to find parent item {0} of type {1} in type {2}": "無法在 {2} 類型中找到 {1} 類型的父項{0}",
   "Username and Password": "使用者名和密碼",
   "Single sign-on": "單點登錄",
@@ -2267,5 +2266,10 @@
   "{0} available on Core plan": "{0}適用於核心計劃",
   "**Error:** {0}": "**錯誤：** {0}",
   "error": "錯",
-  "typeToSearchOoo": "輸入以搜尋..."
+  "typeToSearchOoo": "輸入以搜尋...",
+  "Schemas": "結構描述",
+  "External Servers": "外部伺服器",
+  "User Mappings": "使用者對應",
+  "Failed to open Snowflake SSO URL. URL copied to clipboard - paste in your browser to authenticate.": "無法開啟 Snowflake SSO URL。URL 複製到剪貼簿 - 貼到瀏覽器中進行驗證。",
+  "Foreign Servers": "國外伺服器"
 }

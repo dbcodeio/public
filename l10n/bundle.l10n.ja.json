@@ -970,7 +970,6 @@
   "Local Date": "ローカル日付",
   "Local Time": "ローカル時刻",
   "Account Identifier": "アカウント識別子",
-  "Schema": "スキーマ",
   "Failed to find parent item {0} of type {1} in type {2}": "タイプ {2} でタイプ {1} の親アイテム {0} が見つかりませんでした",
   "Username and Password": "ユーザー名とパスワード",
   "Single sign-on": "シングルサインオン",
@@ -2270,5 +2269,10 @@
   "{0} available on Core plan": "{0}コアプランで利用可能",
   "**Error:** {0}": "**エラー:** {0}",
   "error": "エラー",
-  "typeToSearchOoo": "検索するには入力します..."
+  "typeToSearchOoo": "検索するには入力します...",
+  "Schemas": "スキーマ",
+  "External Servers": "外部サーバー",
+  "User Mappings": "ユーザーマッピング",
+  "Failed to open Snowflake SSO URL. URL copied to clipboard - paste in your browser to authenticate.": "Snowflake SSO URLを開くことができませんでした。URL をクリップボードにコピーしました - ブラウザーに貼り付けて認証します。",
+  "Foreign Servers": "外国サーバー"
 }

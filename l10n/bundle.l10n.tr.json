@@ -967,7 +967,6 @@
   "Local Date": "Yerel Tarih",
   "Local Time": "Yerel saat",
   "Account Identifier": "Hesap Tanımlayıcı",
-  "Schema": "Şema",
   "Failed to find parent item {0} of type {1} in type {2}": "Tür {2}'da {1} türündeki ana öğe {0} bulunamadı",
   "Username and Password": "Kullanıcı Adı ve Şifre",
   "Single sign-on": "Çoklu oturum açma",
@@ -2267,5 +2266,10 @@
   "{0} available on Core plan": "{0} Çekirdek planda mevcuttur",
   "**Error:** {0}": "**Hata:** {0}",
   "error": "hata",
-  "typeToSearchOoo": "Aramak için yazın..."
+  "typeToSearchOoo": "Aramak için yazın...",
+  "Schemas": "Şema",
+  "External Servers": "Harici Sunucular",
+  "User Mappings": "Kullanıcı Eşlemeleri",
+  "Failed to open Snowflake SSO URL. URL copied to clipboard - paste in your browser to authenticate.": "Snowflake SSO URL'si açılamadı. URL panoya kopyalandı - kimlik doğrulaması için tarayıcınıza yapıştırın.",
+  "Foreign Servers": "Yabancı Sunucular"
 }
