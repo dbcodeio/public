@@ -1,5 +1,54 @@
 # CHANGELOG
 
+## 1.18.0 - 2025-11-17
+
+### Changed
+
+- Netezza: Added preview support for Netezza. #748
+- Explorer: Added drop, rename, create to more objects.
+- Notebooks: Python injection toggle now appears in SQL cells even when notebook has no Python cells, enabling injection to external Jupyter notebooks. #621
+
+### Fixed
+
+- Language Server: Fixed Windows compatibility issue where ESM dynamic imports. #204
+- Connection Colors: Fixed user-level workbench.colorCustomizations being copied to workspace configuration file. #836
+- SQL Server: Fixed DECLARE variables not in scope when blank lines exist between declarations and usage statements. #839
+- PostgreSQL: Fixed introspection failure when user lacks permissions on pg_user_mapping table. #834
+- File connections (CSV/Excel/Parquet/Avro): Fixed connection breaking when files are deleted, mapped tables will now be removed. 
+
+## 1.17.37 - 2025-11-14
+
+### Changed
+
+- Transaction Control: Rolled out to MySQL/MariaDB, SQL Server, Oracle, DB2, ClickHouse, and Snowflake. #368
+- PostgreSQL: Added Foreign Data Wrapper (FDW) support to explorer. Foreign servers now appear at database level with their tables and user mappings. Also supported in Yugabyte, Timescale, Greenplum, and RisingWave derivatives.
+- PostgreSQL: Filtered out pg_temp and pg_toast schemas from explorer.
+- Explorer: Database-level containers (Schemas, Foreign Servers, etc.) are now always shown. Will require re applying any schema filters.
+- Explorer: Updated connections to show refreshing icon when introspection is in progress.
+
+### Fixed
+
+- Commands: "Alter Table" and "Entity Relationship Diagram" commands failing when invoked from command palette without tree selection.
+- PostgreSQL: Fixed foreign tables appearing under Types in explorer.
+- Snowflake: Fixed SSO authentication failing in dev containers and remote environments. #814
+- ClickHouse: Fallback to SHOW commands when system tables are inaccessible. #817
+
+## 1.17.35 - 2025-11-13
+
+### Changed
+
+- Core Plan: Testing usage-based access for select Pro features. Core users can now use certain features up to a limited number of times per month.
+- Oracle: Ability to alter packages.
+- SQL Server: Statements with DECLARE, temp tables, or variable assignments now stay together as one batch unless separated by GO or blank lines. #822
+- Language Server: Added Snowflake support.
+- History: Added setting to enable logging of failed queries. #827
+
+### Fixed
+
+- ERD: Fixed position saving not persisting correctly. #829
+- Results: Fixed WHERE filter input not expanding to fill available space when toolbar is constrained. #828
+- MySQL: Fixed ER diagrams incorrectly showing One-to-Many relationships for foreign keys with UNIQUE constraints.
+
 ## 1.17.34 - 2025-11-11
 
 ### Changed
