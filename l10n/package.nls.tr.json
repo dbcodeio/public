@@ -30,8 +30,6 @@
   "Copy Connection": "Bağlantıyı Kopyala",
   "Select Connection": "Bağlantı Seç",
   "Create Database": "Veritabanı Oluştur",
-  "Rename Database": "Veritabanını Yeniden Adlandır",
-  "Drop Database": "Bırak Veritabanı",
   "Execute with DBCode": "DBCode ile yürütün",
   "Apply to Database": "Veritabanına Başvur",
   "Enable": "Etkinleştirmek",
@@ -45,9 +43,6 @@
   "Create Table": "Tablo Oluştur",
   "Import Data": "Verileri İçe Aktar",
   "Alter Table": "Tabloyu Değiştir",
-  "Rename Table": "Tabloyu Yeniden Adlandır",
-  "Truncate Table": "Kesme Tablosu",
-  "Drop Table": "Bırakma Tablosu",
   "Open Table": "Açık Masa",
   "Open with limit...": "Limitle aç...",
   "Entity Relationship Diagram": "Varlık İlişkisi Diyagramı",
@@ -193,9 +188,6 @@
   "Generate Key for License": "Lisans için Anahtar Oluştur",
   "Generate License from Key": "Anahtardan Lisans Oluştur",
   "Install License": "Lisansı Yükle",
-  "Create Schema": "Şema Oluştur",
-  "Rename Schema": "Şemayı Yeniden Adlandır",
-  "Drop Schema": "Bırak Şeması",
   "Highlight color": "Vurgu rengi",
   "Active statement background": "Aktif deyim arka planı",
   "Insert matched parameter background": "Eşleşen parametre arka planı ekle",
@@ -308,5 +300,8 @@
   "Change Role": "Rolü Değiştir",
   "Export Data": "Verileri Dışa Aktar",
   "Record query history.": "Sorgu geçmişini kaydedin.",
-  "Log failed queries to history.": "Başarısız sorguları geçmişe kaydedin."
+  "Log failed queries to history.": "Başarısız sorguları geçmişe kaydedin.",
+  "Drop": "Damla",
+  "Rename": "Yeniden Adlandır",
+  "Truncate": "Truncate"
 }

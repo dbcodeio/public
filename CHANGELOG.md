@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.18.0 - 2025-11-17
+
+### Changed
+
+- Netezza: Added preview support for Netezza. #748
+- Explorer: Added drop, rename, create to more objects.
+- Notebooks: Python injection toggle now appears in SQL cells even when notebook has no Python cells, enabling injection to external Jupyter notebooks. #621
+
+### Fixed
+
+- Language Server: Fixed Windows compatibility issue where ESM dynamic imports. #204
+- Connection Colors: Fixed user-level workbench.colorCustomizations being copied to workspace configuration file. #836
+- SQL Server: Fixed DECLARE variables not in scope when blank lines exist between declarations and usage statements. #839
+- PostgreSQL: Fixed introspection failure when user lacks permissions on pg_user_mapping table. #834
+- File connections (CSV/Excel/Parquet/Avro): Fixed connection breaking when files are deleted, mapped tables will now be removed. 
+
 ## 1.17.37 - 2025-11-14
 
 ### Changed

@@ -30,8 +30,6 @@
   "Copy Connection": "コピー接続",
   "Select Connection": "接続を選択",
   "Create Database": "データベースの作成",
-  "Rename Database": "データベースの名前を変更",
-  "Drop Database": "ドロップデータベース",
   "Execute with DBCode": "DBCode での実行",
   "Apply to Database": "データベースへの適用",
   "Enable": "エネーブル",
@@ -45,9 +43,6 @@
   "Create Table": "テーブルの作成",
   "Import Data": "データのインポート",
   "Alter Table": "テーブルの変更",
-  "Rename Table": "テーブルの名前を変更",
-  "Truncate Table": "テーブルを切り捨てる",
-  "Drop Table": "ドロップテーブル",
   "Open Table": "テーブルを開く",
   "Open with limit...": "制限付きで営業中...",
   "Entity Relationship Diagram": "エンティティ関係図",
@@ -193,9 +188,6 @@
   "Generate Key for License": "ライセンスのキーの生成",
   "Generate License from Key": "キーからライセンスを生成",
   "Install License": "ライセンスのインストール",
-  "Create Schema": "スキーマの作成",
-  "Rename Schema": "スキーマの名前変更",
-  "Drop Schema": "ドロップスキーマ",
   "Highlight color": "ハイライト色",
   "Active statement background": "アクティブステートメントの背景",
   "Insert matched parameter background": "一致したパラメータの背景を挿入",
@@ -308,5 +300,8 @@
   "Change Role": "ロールの変更",
   "Export Data": "データのエクスポート",
   "Record query history.": "クエリ履歴を記録します。",
-  "Log failed queries to history.": "失敗したクエリを履歴に記録します。"
+  "Log failed queries to history.": "失敗したクエリを履歴に記録します。",
+  "Drop": "落とす",
+  "Rename": "改名する",
+  "Truncate": "切り捨てる"
 }

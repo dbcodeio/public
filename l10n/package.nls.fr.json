@@ -30,8 +30,6 @@
   "Copy Connection": "Copier la connexion",
   "Select Connection": "Sélectionnez Connexion",
   "Create Database": "Créer une base de données",
-  "Rename Database": "Renommer la base de données",
-  "Drop Database": "Déposer la base de données",
   "Execute with DBCode": "Exécuter avec DBCode",
   "Apply to Database": "Appliquer à la base de données",
   "Enable": "Activer",
@@ -45,9 +43,6 @@
   "Create Table": "Créer une table",
   "Import Data": "Importer des données",
   "Alter Table": "Table d’alternance",
-  "Rename Table": "Renommer la table",
-  "Truncate Table": "Tronquer la table",
-  "Drop Table": "Table de chute",
   "Open Table": "Ouvrir la table",
   "Open with limit...": "Ouvrir avec limite...",
   "Entity Relationship Diagram": "Diagramme de relation d’entité",
@@ -193,9 +188,6 @@
   "Generate Key for License": "Générer la clé pour la licence",
   "Generate License from Key": "Générer une licence à partir d’une clé",
   "Install License": "Installer la licence",
-  "Create Schema": "Créer un schéma",
-  "Rename Schema": "Renommer le schéma",
-  "Drop Schema": "Schéma de dépôt",
   "Highlight color": "Couleur de surbrillance",
   "Active statement background": "Arrière-plan de la déclaration active",
   "Insert matched parameter background": "Insérer l’arrière-plan du paramètre correspondant",
@@ -308,5 +300,8 @@
   "Change Role": "Changer de rôle",
   "Export Data": "Exporter des données",
   "Record query history.": "Enregistrer l’historique des requêtes.",
-  "Log failed queries to history.": "Consigner les requêtes ayant échoué dans l’historique."
+  "Log failed queries to history.": "Consigner les requêtes ayant échoué dans l’historique.",
+  "Drop": "Goutte",
+  "Rename": "Renommer",
+  "Truncate": "Tronquer"
 }

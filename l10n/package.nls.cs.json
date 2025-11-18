@@ -30,8 +30,6 @@
   "Copy Connection": "Kopírovat připojení",
   "Select Connection": "Vyberte Připojení",
   "Create Database": "Vytvořit databázi",
-  "Rename Database": "Přejmenovat databázi",
-  "Drop Database": "Drop databáze",
   "Execute with DBCode": "Spuštění pomocí nástroje DBCode",
   "Apply to Database": "Použít na databázi",
   "Enable": "Zapnout",
@@ -45,9 +43,6 @@
   "Create Table": "Vytvořit tabulku",
   "Import Data": "Import dat",
   "Alter Table": "Změnit tabulku",
-  "Rename Table": "Přejmenovat tabulku",
-  "Truncate Table": "Zkrátit tabulku",
-  "Drop Table": "Odkládací tabulka",
   "Open Table": "Otevřít tabulku",
   "Open with limit...": "Otevřeno s limitem...",
   "Entity Relationship Diagram": "Diagram vztahu entit",
@@ -193,9 +188,6 @@
   "Generate Key for License": "Vygenerovat klíč pro licenci",
   "Generate License from Key": "Generovat licenci z klíče",
   "Install License": "Instalovat licenci",
-  "Create Schema": "Vytvoření schématu",
-  "Rename Schema": "Přejmenovat schéma",
-  "Drop Schema": "Schéma vyřazení",
   "Highlight color": "Barva zvýraznění",
   "Active statement background": "Pozadí aktivního příkazu",
   "Insert matched parameter background": "Vložit pozadí odpovídajícího parametru",
@@ -308,5 +300,8 @@
   "Change Role": "Změna role",
   "Export Data": "Exportovat data",
   "Record query history.": "Zaznamenejte historii dotazů.",
-  "Log failed queries to history.": "Zaznamenávat neúspěšné dotazy do historie."
+  "Log failed queries to history.": "Zaznamenávat neúspěšné dotazy do historie.",
+  "Drop": "Kapka",
+  "Rename": "Přejmenovat",
+  "Truncate": "Zkrátit"
 }
