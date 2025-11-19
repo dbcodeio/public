@@ -30,8 +30,6 @@
   "Copy Connection": "연결 복사",
   "Select Connection": "연결을 선택합니다.",
   "Create Database": "데이터베이스 생성",
-  "Rename Database": "데이터베이스 이름 바꾸기",
-  "Drop Database": "데이터베이스 삭제(drop database)",
   "Execute with DBCode": "DBCode로 실행",
   "Apply to Database": "데이터베이스에 적용",
   "Enable": "사용",
@@ -45,9 +43,6 @@
   "Create Table": "테이블 만들기",
   "Import Data": "데이터 가져오기",
   "Alter Table": "테이블 변경",
-  "Rename Table": "테이블 이름 바꾸기",
-  "Truncate Table": "테이블 자르기",
-  "Drop Table": "드롭 테이블",
   "Open Table": "테이블 열기",
   "Open with limit...": "제한으로 열기...",
   "Entity Relationship Diagram": "엔터티 관계 다이어그램",
@@ -193,9 +188,6 @@
   "Generate Key for License": "라이선스에 대한 키 생성",
   "Generate License from Key": "키에서 라이선스 생성",
   "Install License": "라이선스 설치",
-  "Create Schema": "스키마 생성",
-  "Rename Schema": "스키마 이름 바꾸기",
-  "Drop Schema": "스키마 삭제",
   "Highlight color": "하이라이트 색상",
   "Active statement background": "능동태 진술 배경",
   "Insert matched parameter background": "일치하는 매개변수 배경 삽입",
@@ -308,5 +300,8 @@
   "Change Role": "역할 변경",
   "Export Data": "데이터 내보내기",
   "Record query history.": "쿼리 기록을 기록합니다.",
-  "Log failed queries to history.": "실패한 쿼리를 기록에 기록합니다."
+  "Log failed queries to history.": "실패한 쿼리를 기록에 기록합니다.",
+  "Drop": "방울",
+  "Rename": "이름 바꾸기",
+  "Truncate": "잘라야"
 }

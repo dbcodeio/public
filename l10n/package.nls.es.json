@@ -30,8 +30,6 @@
   "Copy Connection": "Conexión de copia",
   "Select Connection": "Seleccione Conexión",
   "Create Database": "Crear base de datos",
-  "Rename Database": "Cambiar el nombre de la base de datos",
-  "Drop Database": "Base de datos de descarte",
   "Execute with DBCode": "Ejecución con DBCode",
   "Apply to Database": "Aplicar a la base de datos",
   "Enable": "Habilitar",
@@ -45,9 +43,6 @@
   "Create Table": "Crear tabla",
   "Import Data": "Importar datos",
   "Alter Table": "Alterar tabla",
-  "Rename Table": "Cambiar el nombre de la tabla",
-  "Truncate Table": "Tabla truncada",
-  "Drop Table": "Mesa Drop",
   "Open Table": "Mesa abierta",
   "Open with limit...": "Abierto con límite...",
   "Entity Relationship Diagram": "Diagrama Entidad-Relación",
@@ -193,9 +188,6 @@
   "Generate Key for License": "Generar clave para licencia",
   "Generate License from Key": "Generar licencia a partir de clave",
   "Install License": "Licencia de instalación",
-  "Create Schema": "Crear esquema",
-  "Rename Schema": "Cambiar el nombre del esquema",
-  "Drop Schema": "Descartar esquema",
   "Highlight color": "Color de resaltado",
   "Active statement background": "Antecedentes de la declaración activa",
   "Insert matched parameter background": "Insertar fondo de parámetro coincidente",
@@ -308,5 +300,8 @@
   "Change Role": "Cambiar rol",
   "Export Data": "Exportar datos",
   "Record query history.": "Registrar el historial de consultas.",
-  "Log failed queries to history.": "Registre las consultas con errores en el historial."
+  "Log failed queries to history.": "Registre las consultas con errores en el historial.",
+  "Drop": "Soltar",
+  "Rename": "Rebautizar",
+  "Truncate": "Truncar"
 }

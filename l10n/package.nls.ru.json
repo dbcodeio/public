@@ -30,8 +30,6 @@
   "Copy Connection": "Копировать соединение",
   "Select Connection": "Выберите подключение",
   "Create Database": "Создать БД",
-  "Rename Database": "Переименовать БД",
-  "Drop Database": "Удалить БД",
   "Execute with DBCode": "Выполнить в DBCode",
   "Apply to Database": "Применить к БД",
   "Enable": "Включить",
@@ -45,9 +43,6 @@
   "Create Table": "Создать таблицу",
   "Import Data": "Импорт данных",
   "Alter Table": "Изменить таблицу",
-  "Rename Table": "Переименовать таблицу",
-  "Truncate Table": "Усечение таблицы",
-  "Drop Table": "Удалить таблицу",
   "Open Table": "Открыть таблицу",
   "Open with limit...": "Открыть с ограничением...",
   "Entity Relationship Diagram": "Диаграмма взаимосвязи сущностей",
@@ -193,9 +188,6 @@
   "Generate Key for License": "Сгенерировать ключ для лицензии",
   "Generate License from Key": "Генерация лицензии из ключа",
   "Install License": "Лицензия на установку",
-  "Create Schema": "Создать схему",
-  "Rename Schema": "Схема переименования",
-  "Drop Schema": "Схема удаления",
   "Highlight color": "Цвет выделения",
   "Active statement background": "Предыстория активного заявления",
   "Insert matched parameter background": "Вставка соответствующего параметра background",
@@ -308,5 +300,8 @@
   "Change Role": "Изменение роли",
   "Export Data": "Экспорт данных",
   "Record query history.": "Запись журнала запросов.",
-  "Log failed queries to history.": "Записывайте в журнал неудачные запросы."
+  "Log failed queries to history.": "Записывайте в журнал неудачные запросы.",
+  "Drop": "Капля",
+  "Rename": "Переименовать",
+  "Truncate": "Укорачивать"
 }

@@ -30,8 +30,6 @@
   "Copy Connection": "Kopiuj połączenie",
   "Select Connection": "Wybierz połączenie",
   "Create Database": "Utwórz bazę danych",
-  "Rename Database": "Zmień nazwę bazy danych",
-  "Drop Database": "Upuść bazę danych",
   "Execute with DBCode": "Wykonywanie za pomocą DBCode",
   "Apply to Database": "Zastosuj do bazy danych",
   "Enable": "Umożliwiać",
@@ -45,9 +43,6 @@
   "Create Table": "Utwórz tabelę",
   "Import Data": "Importowanie danych",
   "Alter Table": "Zmień tabelę",
-  "Rename Table": "Zmień nazwę tabeli",
-  "Truncate Table": "Obcinanie tabeli",
-  "Drop Table": "Upuść tabelę",
   "Open Table": "Otwórz tabelę",
   "Open with limit...": "Otwórz z limitem...",
   "Entity Relationship Diagram": "Diagram relacji encji",
@@ -193,9 +188,6 @@
   "Generate Key for License": "Generuj klucz do licencji",
   "Generate License from Key": "Generuj licencję na podstawie klucza",
   "Install License": "Zainstaluj licencję",
-  "Create Schema": "Utwórz schemat",
-  "Rename Schema": "Zmień nazwę schematu",
-  "Drop Schema": "Upuść schemat",
   "Highlight color": "Kolor podświetlenia",
   "Active statement background": "Tło aktywnej instrukcji",
   "Insert matched parameter background": "Wstawianie dopasowanego tła parametru",
@@ -308,5 +300,8 @@
   "Change Role": "Zmień rolę",
   "Export Data": "Eksport danych",
   "Record query history.": "Rejestrowanie historii zapytań.",
-  "Log failed queries to history.": "Rejestruj zapytania zakończone niepowodzeniem w historii."
+  "Log failed queries to history.": "Rejestruj zapytania zakończone niepowodzeniem w historii.",
+  "Drop": "Kropla",
+  "Rename": "Przemianować",
+  "Truncate": "Obciąć"
 }

@@ -30,8 +30,6 @@
   "Copy Connection": "复制连接",
   "Select Connection": "选择 连接",
   "Create Database": "创建数据库",
-  "Rename Database": "重命名数据库",
-  "Drop Database": "删除数据库",
   "Execute with DBCode": "使用 DBCode 执行",
   "Apply to Database": "应用于数据库",
   "Enable": "使",
@@ -45,9 +43,6 @@
   "Create Table": "创建表",
   "Import Data": "导入数据",
   "Alter Table": "更改表",
-  "Rename Table": "重命名表",
-  "Truncate Table": "截断表",
-  "Drop Table": "Drop Table",
   "Open Table": "打开表",
   "Open with limit...": "打开限注...",
   "Entity Relationship Diagram": "实体关系图",
@@ -193,9 +188,6 @@
   "Generate Key for License": "为许可证生成密钥",
   "Generate License from Key": "从密钥生成许可证",
   "Install License": "安装许可证",
-  "Create Schema": "Create Schema",
-  "Rename Schema": "重命名架构",
-  "Drop Schema": "删除架构",
   "Highlight color": "高亮颜色",
   "Active statement background": "Active 语句背景",
   "Insert matched parameter background": "插入匹配的参数背景",
@@ -308,5 +300,8 @@
   "Change Role": "更改角色",
   "Export Data": "导出数据",
   "Record query history.": "记录查询历史。",
-  "Log failed queries to history.": "将失败的查询记录到历史记录中。"
+  "Log failed queries to history.": "将失败的查询记录到历史记录中。",
+  "Drop": "落",
+  "Rename": "重命名",
+  "Truncate": "截断"
 }
