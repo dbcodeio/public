@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 1.18.2 - 2025-11-20
+
+### Changed
+
+- Tunnels: Added test connection button to tunnel creation/edit.
+- Zero Config: Added support for framework-specific .env patterns including Laravel, Django, Spring Boot, and Node.js. #841
+- Snowflake: Added support for SF_AUTH_SOCKET_PORT environment variable to use fixed port for SSO authentication callback.
+- Alter/Open Table Commands: Where possible they now use the currently open table, and fallback to the quick picker.
+
+### Fixed
+
+- Results: Fixed "Get started" screen appearing instead of query results when panel was reopened. #842
+- Improved translations for several languages.
+
+
 ## 1.18.0 - 2025-11-17
 
 ### Changed
