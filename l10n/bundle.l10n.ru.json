@@ -2291,5 +2291,15 @@
   "Password is required": "Требуется пароль",
   "Private key path is required for key authentication": "Для аутентификации по ключу требуется путь к закрытому ключу",
   "Passphrase is required for encrypted private key": "Для зашифрованного закрытого ключа требуется парольная фраза",
-  "Could not find the SSH_AUTH_SOCK environment variable required for agent based authentication": "Не удалось найти переменную окружения SSH_AUTH_SOCK, необходимую для аутентификации через агент"
+  "Could not find the SSH_AUTH_SOCK environment variable required for agent based authentication": "Не удалось найти переменную окружения SSH_AUTH_SOCK, необходимую для аутентификации через агент",
+  "Language server not available": "Языковой сервер недоступен",
+  "No connection for this document": "Нет подключения для этого документа",
+  "No active statement": "Нет активного выражения",
+  "No SELECT * found at cursor position": "SELECT * не найден в позиции курсора",
+  "Server Hostname": "Имя хоста сервера",
+  "e.g., adb-1234567890123456.7.azuredatabricks.net": "например, adb-1234567890123456.7.azuredatabricks.net",
+  "HTTP Path": "HTTP-путь",
+  "e.g., /sql/1.0/warehouses/abc123def456": "например, /sql/1.0/warehouses/abc123def456",
+  "OAuth": "OAuth",
+  "Expand SELECT *": "Развернуть SELECT *"
 }

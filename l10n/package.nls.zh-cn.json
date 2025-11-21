@@ -303,5 +303,6 @@
   "Log failed queries to history.": "记录失败的查询到历史记录",
   "Drop": "删除",
   "Rename": "重命名",
-  "Truncate": "截断"
+  "Truncate": "截断",
+  "Expand SELECT *": "展开 SELECT *"
 }

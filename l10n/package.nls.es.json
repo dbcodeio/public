@@ -303,5 +303,6 @@
   "Log failed queries to history.": "Registrar consultas fallidas en el historial.",
   "Drop": "Eliminar",
   "Rename": "Renombrar",
-  "Truncate": "Truncar"
+  "Truncate": "Truncar",
+  "Expand SELECT *": "Expandir SELECT *"
 }

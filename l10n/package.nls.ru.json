@@ -303,5 +303,6 @@
   "Log failed queries to history.": "Записывать неудачные запросы в историю.",
   "Drop": "Удалить",
   "Rename": "Переименовать",
-  "Truncate": "Очистить"
+  "Truncate": "Очистить",
+  "Expand SELECT *": "Развернуть SELECT *"
 }

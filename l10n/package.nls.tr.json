@@ -303,5 +303,6 @@
   "Log failed queries to history.": "Başarısız sorguları geçmişe kaydet",
   "Drop": "Sil",
   "Rename": "Yeniden Adlandır",
-  "Truncate": "Boşalt"
+  "Truncate": "Boşalt",
+  "Expand SELECT *": "SELECT * Genişlet"
 }

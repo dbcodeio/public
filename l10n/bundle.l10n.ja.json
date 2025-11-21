@@ -2294,5 +2294,15 @@
   "Password is required": "パスワードは必須です",
   "Private key path is required for key authentication": "鍵認証には秘密鍵のパスが必要です",
   "Passphrase is required for encrypted private key": "暗号化された秘密鍵にはパスフレーズが必要です",
-  "Could not find the SSH_AUTH_SOCK environment variable required for agent based authentication": "エージェントベース認証に必要な SSH_AUTH_SOCK 環境変数が見つかりませんでした"
+  "Could not find the SSH_AUTH_SOCK environment variable required for agent based authentication": "エージェントベース認証に必要な SSH_AUTH_SOCK 環境変数が見つかりませんでした",
+  "Language server not available": "言語サーバーが利用できません",
+  "No connection for this document": "このドキュメントに接続がありません",
+  "No active statement": "アクティブなステートメントがありません",
+  "No SELECT * found at cursor position": "カーソル位置に SELECT * が見つかりません",
+  "Server Hostname": "サーバーホスト名",
+  "e.g., adb-1234567890123456.7.azuredatabricks.net": "例: adb-1234567890123456.7.azuredatabricks.net",
+  "HTTP Path": "HTTP パス",
+  "e.g., /sql/1.0/warehouses/abc123def456": "例: /sql/1.0/warehouses/abc123def456",
+  "OAuth": "OAuth",
+  "Expand SELECT *": "SELECT * を展開"
 }

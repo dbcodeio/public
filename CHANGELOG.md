@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.19.0 - 2025-11-20
+
+### Changed
+- Databricks: Added preview support. #158
+- Editor: Added "Expand SELECT *" command to replace `*` with explicit column list. Available via keyboard shortcut (Cmd+Shift+E / Ctrl+Shift+E) or lightbulb code action.
+
 ## 1.18.2 - 2025-11-20
 
 ### Changed
@@ -19,7 +25,7 @@
 
 ### Changed
 
-- Netezza: Added preview support for Netezza. #748
+- Netezza: Added preview support. #748
 - Explorer: Added drop, rename, create to more objects.
 - Notebooks: Python injection toggle now appears in SQL cells even when notebook has no Python cells, enabling injection to external Jupyter notebooks. #621
 

@@ -303,5 +303,6 @@
   "Log failed queries to history.": "失敗したクエリを履歴に記録します。",
   "Drop": "削除",
   "Rename": "名前変更",
-  "Truncate": "トランケート"
+  "Truncate": "トランケート",
+  "Expand SELECT *": "SELECT * を展開"
 }

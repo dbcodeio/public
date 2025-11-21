@@ -2291,5 +2291,15 @@
   "Password is required": "Heslo je povinné",
   "Private key path is required for key authentication": "Cesta k privátnímu klíči je vyžadována pro autentizaci klíčem",
   "Passphrase is required for encrypted private key": "Přístupová fráze je vyžadována pro šifrovaný privátní klíč",
-  "Could not find the SSH_AUTH_SOCK environment variable required for agent based authentication": "Nepodařilo se najít proměnnou prostředí SSH_AUTH_SOCK vyžadovanou pro autentizaci pomocí agenta"
+  "Could not find the SSH_AUTH_SOCK environment variable required for agent based authentication": "Nepodařilo se najít proměnnou prostředí SSH_AUTH_SOCK vyžadovanou pro autentizaci pomocí agenta",
+  "Language server not available": "Jazykový server není dostupný",
+  "No connection for this document": "Žádné připojení pro tento dokument",
+  "No active statement": "Žádný aktivní příkaz",
+  "No SELECT * found at cursor position": "Na pozici kurzoru nebyl nalezen SELECT *",
+  "Server Hostname": "Název hostitele serveru",
+  "e.g., adb-1234567890123456.7.azuredatabricks.net": "např. adb-1234567890123456.7.azuredatabricks.net",
+  "HTTP Path": "Cesta HTTP",
+  "e.g., /sql/1.0/warehouses/abc123def456": "např. /sql/1.0/warehouses/abc123def456",
+  "OAuth": "OAuth",
+  "Expand SELECT *": "Rozbalit SELECT *"
 }

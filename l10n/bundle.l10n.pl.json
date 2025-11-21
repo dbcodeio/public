@@ -2291,5 +2291,15 @@
   "Password is required": "Hasło jest wymagane",
   "Private key path is required for key authentication": "Ścieżka do klucza prywatnego jest wymagana dla uwierzytelniania kluczem",
   "Passphrase is required for encrypted private key": "Hasło jest wymagane dla zaszyfrowanego klucza prywatnego",
-  "Could not find the SSH_AUTH_SOCK environment variable required for agent based authentication": "Nie można znaleźć zmiennej środowiskowej SSH_AUTH_SOCK wymaganej do uwierzytelniania przez agenta"
+  "Could not find the SSH_AUTH_SOCK environment variable required for agent based authentication": "Nie można znaleźć zmiennej środowiskowej SSH_AUTH_SOCK wymaganej do uwierzytelniania przez agenta",
+  "Language server not available": "Serwer języka niedostępny",
+  "No connection for this document": "Brak połączenia dla tego dokumentu",
+  "No active statement": "Brak aktywnej instrukcji",
+  "No SELECT * found at cursor position": "Nie znaleziono SELECT * w pozycji kursora",
+  "Server Hostname": "Nazwa hosta serwera",
+  "e.g., adb-1234567890123456.7.azuredatabricks.net": "np. adb-1234567890123456.7.azuredatabricks.net",
+  "HTTP Path": "Ścieżka HTTP",
+  "e.g., /sql/1.0/warehouses/abc123def456": "np. /sql/1.0/warehouses/abc123def456",
+  "OAuth": "OAuth",
+  "Expand SELECT *": "Rozwiń SELECT *"
 }

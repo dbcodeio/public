@@ -2291,5 +2291,15 @@
   "Password is required": "密码为必填项",
   "Private key path is required for key authentication": "密钥认证需要提供私钥路径",
   "Passphrase is required for encrypted private key": "加密私钥需要提供密码短语",
-  "Could not find the SSH_AUTH_SOCK environment variable required for agent based authentication": "找不到代理认证所需的 SSH_AUTH_SOCK 环境变量"
+  "Could not find the SSH_AUTH_SOCK environment variable required for agent based authentication": "找不到代理认证所需的 SSH_AUTH_SOCK 环境变量",
+  "Language server not available": "语言服务器不可用",
+  "No connection for this document": "此文档没有连接",
+  "No active statement": "没有活动语句",
+  "No SELECT * found at cursor position": "光标位置未找到 SELECT *",
+  "Server Hostname": "服务器主机名",
+  "e.g., adb-1234567890123456.7.azuredatabricks.net": "例如：adb-1234567890123456.7.azuredatabricks.net",
+  "HTTP Path": "HTTP 路径",
+  "e.g., /sql/1.0/warehouses/abc123def456": "例如：/sql/1.0/warehouses/abc123def456",
+  "OAuth": "OAuth",
+  "Expand SELECT *": "展开 SELECT *"
 }

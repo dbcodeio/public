@@ -303,5 +303,6 @@
   "Log failed queries to history.": "실패한 쿼리도 기록에 저장",
   "Drop": "삭제",
   "Rename": "이름 변경",
-  "Truncate": "데이터 삭제"
+  "Truncate": "데이터 삭제",
+  "Expand SELECT *": "SELECT * 확장"
 }

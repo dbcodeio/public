@@ -2291,5 +2291,15 @@
   "Password is required": "Şifre gerekli",
   "Private key path is required for key authentication": "Anahtar kimlik doğrulaması için özel anahtar yolu gerekli",
   "Passphrase is required for encrypted private key": "Şifrelenmiş özel anahtar için parola gerekli",
-  "Could not find the SSH_AUTH_SOCK environment variable required for agent based authentication": "Ajan tabanlı kimlik doğrulaması için gerekli SSH_AUTH_SOCK ortam değişkeni bulunamadı"
+  "Could not find the SSH_AUTH_SOCK environment variable required for agent based authentication": "Ajan tabanlı kimlik doğrulaması için gerekli SSH_AUTH_SOCK ortam değişkeni bulunamadı",
+  "Language server not available": "Dil sunucusu kullanılamıyor",
+  "No connection for this document": "Bu belge için bağlantı yok",
+  "No active statement": "Etkin deyim yok",
+  "No SELECT * found at cursor position": "İmleç konumunda SELECT * bulunamadı",
+  "Server Hostname": "Sunucu Ana Bilgisayar Adı",
+  "e.g., adb-1234567890123456.7.azuredatabricks.net": "örn., adb-1234567890123456.7.azuredatabricks.net",
+  "HTTP Path": "HTTP Yolu",
+  "e.g., /sql/1.0/warehouses/abc123def456": "örn., /sql/1.0/warehouses/abc123def456",
+  "OAuth": "OAuth",
+  "Expand SELECT *": "SELECT * İfadesini Genişlet"
 }

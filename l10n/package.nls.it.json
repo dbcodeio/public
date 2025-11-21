@@ -303,5 +303,6 @@
   "Log failed queries to history.": "Registra le query non riuscite nella cronologia.",
   "Drop": "Elimina",
   "Rename": "Rinomina",
-  "Truncate": "Tronca"
+  "Truncate": "Tronca",
+  "Expand SELECT *": "Espandi SELECT *"
 }

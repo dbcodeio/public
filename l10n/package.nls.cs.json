@@ -303,5 +303,6 @@
   "Log failed queries to history.": "Zaznamenávat neúspěšné dotazy do historie.",
   "Drop": "Odstranit",
   "Rename": "Přejmenovat",
-  "Truncate": "Vyprázdnit"
+  "Truncate": "Vyprázdnit",
+  "Expand SELECT *": "Rozbalit SELECT *"
 }

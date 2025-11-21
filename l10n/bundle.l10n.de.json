@@ -2291,5 +2291,15 @@
   "Password is required": "Passwort ist erforderlich",
   "Private key path is required for key authentication": "Pfad zum privaten Schlüssel ist für die Schlüsselauthentifizierung erforderlich",
   "Passphrase is required for encrypted private key": "Passphrase ist für den verschlüsselten privaten Schlüssel erforderlich",
-  "Could not find the SSH_AUTH_SOCK environment variable required for agent based authentication": "Die für die agentenbasierte Authentifizierung erforderliche Umgebungsvariable SSH_AUTH_SOCK wurde nicht gefunden"
+  "Could not find the SSH_AUTH_SOCK environment variable required for agent based authentication": "Die für die agentenbasierte Authentifizierung erforderliche Umgebungsvariable SSH_AUTH_SOCK wurde nicht gefunden",
+  "Language server not available": "Sprachserver nicht verfügbar",
+  "No connection for this document": "Keine Verbindung für dieses Dokument",
+  "No active statement": "Keine aktive Anweisung",
+  "No SELECT * found at cursor position": "Kein SELECT * an Cursorposition gefunden",
+  "Server Hostname": "Server-Hostname",
+  "e.g., adb-1234567890123456.7.azuredatabricks.net": "z. B. adb-1234567890123456.7.azuredatabricks.net",
+  "HTTP Path": "HTTP-Pfad",
+  "e.g., /sql/1.0/warehouses/abc123def456": "z. B. /sql/1.0/warehouses/abc123def456",
+  "OAuth": "OAuth",
+  "Expand SELECT *": "SELECT * erweitern"
 }
