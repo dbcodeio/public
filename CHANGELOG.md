@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 1.19.0 - 2025-11-20
+## 1.19.1 - 2025-11-21
 
 ### Changed
 - Databricks: Added preview support. #158
