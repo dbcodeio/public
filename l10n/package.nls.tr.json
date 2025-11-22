@@ -304,5 +304,10 @@
   "Drop": "Sil",
   "Rename": "Yeniden Adlandır",
   "Truncate": "Boşalt",
-  "Expand SELECT *": "SELECT * Genişlet"
+  "Expand SELECT *": "SELECT * Genişlet",
+  "Auth Profiles": "Kimlik Doğrulama Profilleri",
+  "Auth Profile ID": "Profil ID",
+  "Auth Profile Name": "Profil Adı",
+  "Auth Profile Type": "Profil Türü",
+  "Auth Profile Options": "Profil Seçenekleri"
 }

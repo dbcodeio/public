@@ -304,5 +304,10 @@
   "Drop": "删除",
   "Rename": "重命名",
   "Truncate": "截断",
-  "Expand SELECT *": "展开 SELECT *"
+  "Expand SELECT *": "展开 SELECT *",
+  "Auth Profiles": "身份验证配置",
+  "Auth Profile ID": "配置 ID",
+  "Auth Profile Name": "配置名称",
+  "Auth Profile Type": "配置类型",
+  "Auth Profile Options": "配置选项"
 }

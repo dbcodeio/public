@@ -304,5 +304,10 @@
   "Drop": "Odstranit",
   "Rename": "Přejmenovat",
   "Truncate": "Vyprázdnit",
-  "Expand SELECT *": "Rozbalit SELECT *"
+  "Expand SELECT *": "Rozbalit SELECT *",
+  "Auth Profiles": "Profily ověření",
+  "Auth Profile ID": "ID profilu auth.",
+  "Auth Profile Name": "Název profilu auth.",
+  "Auth Profile Type": "Typ profilu auth.",
+  "Auth Profile Options": "Možnosti profilu auth."
 }

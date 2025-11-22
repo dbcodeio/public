@@ -304,5 +304,10 @@
   "Drop": "Supprimer",
   "Rename": "Renommer",
   "Truncate": "Tronquer",
-  "Expand SELECT *": "Développer SELECT *"
+  "Expand SELECT *": "Développer SELECT *",
+  "Auth Profiles": "Profils d'authentification",
+  "Auth Profile ID": "ID du profil d'auth.",
+  "Auth Profile Name": "Nom du profil d'auth.",
+  "Auth Profile Type": "Type de profil d'auth.",
+  "Auth Profile Options": "Options du profil d'auth."
 }

@@ -304,5 +304,10 @@
   "Drop": "삭제",
   "Rename": "이름 변경",
   "Truncate": "데이터 삭제",
-  "Expand SELECT *": "SELECT * 확장"
+  "Expand SELECT *": "SELECT * 확장",
+  "Auth Profiles": "인증 프로필",
+  "Auth Profile ID": "인증 프로필 ID",
+  "Auth Profile Name": "인증 프로필 이름",
+  "Auth Profile Type": "인증 프로필 유형",
+  "Auth Profile Options": "인증 프로필 옵션"
 }

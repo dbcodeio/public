@@ -304,5 +304,10 @@
   "Drop": "刪除",
   "Rename": "重新命名",
   "Truncate": "清空",
-  "Expand SELECT *": "展開 SELECT *"
+  "Expand SELECT *": "展開 SELECT *",
+  "Auth Profiles": "驗證設定檔",
+  "Auth Profile ID": "設定檔 ID",
+  "Auth Profile Name": "設定檔名稱",
+  "Auth Profile Type": "設定檔類型",
+  "Auth Profile Options": "設定檔選項"
 }

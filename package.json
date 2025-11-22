@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.19.1",
+    "version": "1.19.3",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -4743,6 +4743,36 @@
                                 "debug": {
                                     "type": "boolean",
                                     "description": "%Enable debug logging for the tunnel.%"
+                                }
+                            }
+                        }
+                    },
+                    "dbcode.authProfiles": {
+                        "type": "array",
+                        "markdownDescription": "%Auth Profiles%",
+                        "default": [],
+                        "scope": "resource",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "description": "%Auth Profile ID%"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "%Auth Profile Name%"
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "enum": [
+                                        "oauth2"
+                                    ],
+                                    "description": "%Auth Profile Type%"
+                                },
+                                "options": {
+                                    "type": "object",
+                                    "description": "%Auth Profile Options%"
                                 }
                             }
                         }

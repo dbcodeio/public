@@ -304,5 +304,10 @@
   "Drop": "削除",
   "Rename": "名前変更",
   "Truncate": "トランケート",
-  "Expand SELECT *": "SELECT * を展開"
+  "Expand SELECT *": "SELECT * を展開",
+  "Auth Profiles": "認証プロファイル",
+  "Auth Profile ID": "認証プロファイル ID",
+  "Auth Profile Name": "認証プロファイル名",
+  "Auth Profile Type": "認証プロファイルの種類",
+  "Auth Profile Options": "認証プロファイルオプション"
 }

@@ -304,5 +304,10 @@
   "Drop": "Удалить",
   "Rename": "Переименовать",
   "Truncate": "Очистить",
-  "Expand SELECT *": "Развернуть SELECT *"
+  "Expand SELECT *": "Развернуть SELECT *",
+  "Auth Profiles": "Профили аутентификации",
+  "Auth Profile ID": "ID профиля аутентификации",
+  "Auth Profile Name": "Имя профиля аутентификации",
+  "Auth Profile Type": "Тип профиля аутентификации",
+  "Auth Profile Options": "Параметры профиля аутентификации"
 }

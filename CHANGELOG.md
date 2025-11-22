@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.19.3 - 2025-11-22
+
+### Changed
+
+- Auth Profiles: First look at centralized authentication profiles (added to Trino for OAuth). #279
+- Results: Auto-focus first cell when switching to results panel for immediate keyboard navigation. #840
+- Trino: Added support for OAuth authentication via new authentication profiles. 
+
+### Fixed
+
+- Databricks: Fixed SSO authentication failing in dev containers and remote environments.
+- MongoDB: Fixed multi-line queries failing with "Unexpected end of input" error. #848
+
 ## 1.19.1 - 2025-11-21
 
 ### Changed
