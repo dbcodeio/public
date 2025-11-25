@@ -1,6 +1,19 @@
 # CHANGELOG
 
-## 1.19.4 - 2025-11-25
+## 1.19.5 - 2025-11-25
+
+### Changed
+
+- Authentication Profiles: Added a view to the explorer to manage authentication profiles. #279
+
+### Fixed
+
+- Connection Colors: Fixed empty workbench.colorCustomizations object appearing in workspace configuration file. #836
+- File connections: Fixed CSV/Excel/Parquet/Avro file picker defaulting to folder mode on Windows/Linux. #845
+- MongoDB: Fixed editing disabled for queries run from the editor. #851
+- Results: Fixed parquet export failing when decimal columns are present. #852
+
+## 1.19.3 - 2025-11-22
 
 ### Changed
 

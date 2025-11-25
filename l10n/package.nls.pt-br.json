@@ -51,7 +51,6 @@
   "Tunnels": "Túneis",
   "History": "Histórico",
   "Account": "Conta",
-  "Help + Suggestions": "Ajuda + Sugestões",
   "No tunnels created.\n[Add New Tunnel](command:dbcode.tunnels.add)": "Nenhum túnel criado.",
   "Connection ID": "ID da Conexão",
   "Tunnel ID to connect through": "ID do túnel para conexão",
@@ -184,7 +183,6 @@
   "Add to DBCode Favorites": "Adicionar aos Favoritos do DBCode",
   "Favorites": "Favoritos",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "Habilite o Histórico para registrar comandos SQL.",
-  "Looking for something else, or found a bug?\n[Docs](https://dbcode.io/docs)\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n": "Procurando por outra coisa ou encontrou um bug?",
   "Generate Key for License": "Gerar Chave para Licença",
   "Generate License from Key": "Gerar Licença a partir da Chave",
   "Install License": "Instalar Licença",
@@ -305,9 +303,11 @@
   "Rename": "Renomear",
   "Truncate": "Truncar",
   "Expand SELECT *": "Expandir SELECT *",
-  "Auth Profiles": "Perfis de autenticação",
-  "Auth Profile ID": "ID do perfil de auth.",
-  "Auth Profile Name": "Nome do perfil de auth.",
-  "Auth Profile Type": "Tipo do perfil de auth.",
-  "Auth Profile Options": "Opções do perfil de auth."
+  "Create Authentication Profile": "Criar Perfil de Autenticação",
+  "Authentication Profiles Help": "Ajuda de Perfis de Autenticação",
+  "Authentication Profiles": "Perfis de Autenticação",
+  "Authentication Profile ID": "ID do Perfil de Autenticação",
+  "Authentication Profile Name": "Nome do Perfil de Autenticação",
+  "Authentication Profile Type": "Tipo de Perfil de Autenticação",
+  "Authentication Profile Options": "Opções do Perfil de Autenticação"
 }

@@ -51,7 +51,6 @@
   "Tunnels": "터널",
   "History": "기록",
   "Account": "계정",
-  "Help + Suggestions": "도움말 + 제안",
   "No tunnels created.\n[Add New Tunnel](command:dbcode.tunnels.add)": "생성된 터널이 없습니다.",
   "Connection ID": "연결 ID",
   "Tunnel ID to connect through": "연결할 터널 ID",
@@ -184,7 +183,6 @@
   "Add to DBCode Favorites": "DBCode 즐겨찾기에 추가",
   "Favorites": "즐겨찾기",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "SQL 명령을 기록하려면 기록을 활성화하세요.",
-  "Looking for something else, or found a bug?\n[Docs](https://dbcode.io/docs)\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n": "다른 내용을 찾고 계시거나 버그를 발견하셨나요?",
   "Generate Key for License": "라이선스 키 생성",
   "Generate License from Key": "키로 라이선스 생성",
   "Install License": "라이선스 설치",
@@ -305,9 +303,11 @@
   "Rename": "이름 변경",
   "Truncate": "데이터 삭제",
   "Expand SELECT *": "SELECT * 확장",
-  "Auth Profiles": "인증 프로필",
-  "Auth Profile ID": "인증 프로필 ID",
-  "Auth Profile Name": "인증 프로필 이름",
-  "Auth Profile Type": "인증 프로필 유형",
-  "Auth Profile Options": "인증 프로필 옵션"
+  "Create Authentication Profile": "인증 프로필 생성",
+  "Authentication Profiles Help": "인증 프로필 도움말",
+  "Authentication Profiles": "인증 프로필",
+  "Authentication Profile ID": "인증 프로필 ID",
+  "Authentication Profile Name": "인증 프로필 이름",
+  "Authentication Profile Type": "인증 프로필 유형",
+  "Authentication Profile Options": "인증 프로필 옵션"
 }

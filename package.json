@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.19.4",
+    "version": "1.19.5",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -1106,6 +1106,36 @@
                 "command": "dbcode.scratchFiles.delete",
                 "title": "%Delete Old Scratch Files%",
                 "category": "DBCode"
+            },
+            {
+                "command": "dbcode.authProfiles.create",
+                "title": "%Create Authentication Profile%",
+                "category": "DBCode",
+                "icon": "$(add)"
+            },
+            {
+                "command": "dbcode.authProfiles.tree.edit",
+                "title": "%Edit%",
+                "category": "DBCode",
+                "icon": "$(edit)"
+            },
+            {
+                "command": "dbcode.authProfiles.tree.delete",
+                "title": "%Delete%",
+                "category": "DBCode",
+                "icon": "$(trash)"
+            },
+            {
+                "command": "dbcode.authProfiles.tree.refresh",
+                "title": "%Refresh%",
+                "category": "DBCode",
+                "icon": "$(refresh)"
+            },
+            {
+                "command": "dbcode.authProfiles.help",
+                "title": "%Authentication Profiles Help%",
+                "category": "DBCode",
+                "icon": "$(question)"
             }
         ],
         "keybindings": [
@@ -1191,6 +1221,10 @@
                     "name": "%Tunnels%"
                 },
                 {
+                    "id": "dbcode.authProfiles.view",
+                    "name": "%Authentication Profiles%"
+                },
+                {
                     "id": "dbcode.favorites.view",
                     "name": "%Favorites%"
                 },
@@ -1201,10 +1235,6 @@
                 {
                     "id": "dbcode.account.view",
                     "name": "%Account%"
-                },
-                {
-                    "id": "dbcode.help.view",
-                    "name": "%Help + Suggestions%"
                 }
             ],
             "dbcodePanelContainer": [
@@ -1245,10 +1275,6 @@
                 "view": "dbcode.history.view",
                 "contents": "%Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)%",
                 "when": "!config.dbcode.history.enabled"
-            },
-            {
-                "view": "dbcode.help.view",
-                "contents": "%Looking for something else, or found a bug?\n[Docs](https://dbcode.io/docs)\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n%"
             }
         ],
         "menus": {
@@ -1373,6 +1399,21 @@
                     "command": "dbcode.auth.signin",
                     "when": "view == dbcode.account.view && dbcode.auth.signedin === false",
                     "group": "navigation"
+                },
+                {
+                    "command": "dbcode.authProfiles.create",
+                    "when": "view == dbcode.authProfiles.view",
+                    "group": "navigation@1"
+                },
+                {
+                    "command": "dbcode.authProfiles.tree.refresh",
+                    "when": "view == dbcode.authProfiles.view",
+                    "group": "navigation@2"
+                },
+                {
+                    "command": "dbcode.authProfiles.help",
+                    "when": "view == dbcode.authProfiles.view",
+                    "group": "navigation@3"
                 }
             ],
             "view/item/context": [
@@ -1745,6 +1786,16 @@
                     "command": "dbcode.filters.delete",
                     "when": "view == dbcode.favorites.view && viewItem =~ /^filter-/",
                     "group": "1filter@2"
+                },
+                {
+                    "command": "dbcode.authProfiles.tree.edit",
+                    "when": "view == dbcode.authProfiles.view",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.authProfiles.tree.delete",
+                    "when": "view == dbcode.authProfiles.view",
+                    "group": "inline@2"
                 }
             ],
             "explorer/context": [
@@ -4749,7 +4800,7 @@
                     },
                     "dbcode.authProfiles": {
                         "type": "array",
-                        "markdownDescription": "%Auth Profiles%",
+                        "markdownDescription": "%Authentication Profiles%",
                         "default": [],
                         "scope": "resource",
                         "items": {
@@ -4757,22 +4808,22 @@
                             "properties": {
                                 "id": {
                                     "type": "string",
-                                    "description": "%Auth Profile ID%"
+                                    "description": "%Authentication Profile ID%"
                                 },
                                 "name": {
                                     "type": "string",
-                                    "description": "%Auth Profile Name%"
+                                    "description": "%Authentication Profile Name%"
                                 },
                                 "type": {
                                     "type": "string",
                                     "enum": [
                                         "oauth2"
                                     ],
-                                    "description": "%Auth Profile Type%"
+                                    "description": "%Authentication Profile Type%"
                                 },
                                 "options": {
                                     "type": "object",
-                                    "description": "%Auth Profile Options%"
+                                    "description": "%Authentication Profile Options%"
                                 }
                             }
                         }

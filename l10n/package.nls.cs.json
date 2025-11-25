@@ -51,7 +51,6 @@
   "Tunnels": "Tunely",
   "History": "Historie",
   "Account": "Účet",
-  "Help + Suggestions": "Nápověda + návrhy",
   "No tunnels created.\n[Add New Tunnel](command:dbcode.tunnels.add)": "Nejsou vytvořeny žádné tunely.",
   "Connection ID": "ID připojení",
   "Tunnel ID to connect through": "ID tunelu pro průchod",
@@ -184,7 +183,6 @@
   "Add to DBCode Favorites": "Přidat do oblíbených DBCode",
   "Favorites": "Oblíbené položky",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "Povolit Historii pro záznam SQL příkazů.",
-  "Looking for something else, or found a bug?\n[Docs](https://dbcode.io/docs)\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n": "Hledáte něco jiného nebo jste našli chybu?",
   "Generate Key for License": "Vygenerovat klíč pro licenci",
   "Generate License from Key": "Vygenerovat licenci z klíče",
   "Install License": "Nainstalovat licenci",
@@ -305,9 +303,11 @@
   "Rename": "Přejmenovat",
   "Truncate": "Vyprázdnit",
   "Expand SELECT *": "Rozbalit SELECT *",
-  "Auth Profiles": "Profily ověření",
-  "Auth Profile ID": "ID profilu auth.",
-  "Auth Profile Name": "Název profilu auth.",
-  "Auth Profile Type": "Typ profilu auth.",
-  "Auth Profile Options": "Možnosti profilu auth."
+  "Create Authentication Profile": "Vytvořit ověřovací profil",
+  "Authentication Profiles Help": "Nápověda k ověřovacím profilům",
+  "Authentication Profiles": "Ověřovací profily",
+  "Authentication Profile ID": "ID ověřovacího profilu",
+  "Authentication Profile Name": "Název ověřovacího profilu",
+  "Authentication Profile Type": "Typ ověřovacího profilu",
+  "Authentication Profile Options": "Možnosti ověřovacího profilu"
 }

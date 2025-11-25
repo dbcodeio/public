@@ -51,7 +51,6 @@
   "Tunnels": "トンネル",
   "History": "履歴",
   "Account": "アカウント",
-  "Help + Suggestions": "ヘルプと提案",
   "No tunnels created.\n[Add New Tunnel](command:dbcode.tunnels.add)": "トンネルが作成されていません。[新しいトンネルを追加](command:dbcode.tunnels.add)",
   "Connection ID": "接続ID",
   "Tunnel ID to connect through": "接続するトンネルID",
@@ -184,7 +183,6 @@
   "Add to DBCode Favorites": "DBCode のお気に入りに追加",
   "Favorites": "お気に入り",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "履歴を有効にして SQL コマンドを記録します。",
-  "Looking for something else, or found a bug?\n[Docs](https://dbcode.io/docs)\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n": "他にお探しのものやバグを見つけましたか?",
   "Generate Key for License": "ライセンスキーの生成",
   "Generate License from Key": "キーからライセンスを生成",
   "Install License": "ライセンスのインストール",
@@ -305,9 +303,11 @@
   "Rename": "名前変更",
   "Truncate": "トランケート",
   "Expand SELECT *": "SELECT * を展開",
-  "Auth Profiles": "認証プロファイル",
-  "Auth Profile ID": "認証プロファイル ID",
-  "Auth Profile Name": "認証プロファイル名",
-  "Auth Profile Type": "認証プロファイルの種類",
-  "Auth Profile Options": "認証プロファイルオプション"
+  "Create Authentication Profile": "認証プロファイルを作成",
+  "Authentication Profiles Help": "認証プロファイルのヘルプ",
+  "Authentication Profiles": "認証プロファイル",
+  "Authentication Profile ID": "認証プロファイルID",
+  "Authentication Profile Name": "認証プロファイル名",
+  "Authentication Profile Type": "認証プロファイルタイプ",
+  "Authentication Profile Options": "認証プロファイルオプション"
 }

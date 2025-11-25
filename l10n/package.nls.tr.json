@@ -51,7 +51,6 @@
   "Tunnels": "Tüneller",
   "History": "Geçmiş",
   "Account": "Hesap",
-  "Help + Suggestions": "Yardım + Öneriler",
   "No tunnels created.\n[Add New Tunnel](command:dbcode.tunnels.add)": "Tünel oluşturulmadı.",
   "Connection ID": "Bağlantı Kimliği",
   "Tunnel ID to connect through": "Bağlanılacak tünel kimliği",
@@ -184,7 +183,6 @@
   "Add to DBCode Favorites": "DBCode Sık Kullanılanlara Ekle",
   "Favorites": "Sık Kullanılanlar",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "SQL komutlarını kaydetmek için Geçmiş'i etkinleştir.",
-  "Looking for something else, or found a bug?\n[Docs](https://dbcode.io/docs)\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n": "Başka bir şey mi arıyorsunuz veya bir hata mı buldunuz?",
   "Generate Key for License": "Lisans için Anahtar Oluştur",
   "Generate License from Key": "Anahtardan Lisans Oluştur",
   "Install License": "Lisans Yükle",
@@ -305,9 +303,11 @@
   "Rename": "Yeniden Adlandır",
   "Truncate": "Boşalt",
   "Expand SELECT *": "SELECT * Genişlet",
-  "Auth Profiles": "Kimlik Doğrulama Profilleri",
-  "Auth Profile ID": "Profil ID",
-  "Auth Profile Name": "Profil Adı",
-  "Auth Profile Type": "Profil Türü",
-  "Auth Profile Options": "Profil Seçenekleri"
+  "Create Authentication Profile": "Kimlik Doğrulama Profili Oluştur",
+  "Authentication Profiles Help": "Kimlik Doğrulama Profilleri Yardım",
+  "Authentication Profiles": "Kimlik Doğrulama Profilleri",
+  "Authentication Profile ID": "Kimlik Doğrulama Profili ID",
+  "Authentication Profile Name": "Kimlik Doğrulama Profili Adı",
+  "Authentication Profile Type": "Kimlik Doğrulama Profili Türü",
+  "Authentication Profile Options": "Kimlik Doğrulama Profili Seçenekleri"
 }

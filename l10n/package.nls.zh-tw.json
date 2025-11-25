@@ -51,7 +51,6 @@
   "Tunnels": "通道",
   "History": "歷史記錄",
   "Account": "帳戶",
-  "Help + Suggestions": "說明與建議",
   "No tunnels created.\n[Add New Tunnel](command:dbcode.tunnels.add)": "尚未建立通道。[新增通道](command:dbcode.tunnels.add)",
   "Connection ID": "連線 ID",
   "Tunnel ID to connect through": "要使用的通道 ID",
@@ -184,7 +183,6 @@
   "Add to DBCode Favorites": "新增至 DBCode 我的最愛",
   "Favorites": "我的最愛",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "啟用歷史記錄以記錄 SQL 命令。",
-  "Looking for something else, or found a bug?\n[Docs](https://dbcode.io/docs)\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n": "尋找其他內容，或發現錯誤？",
   "Generate Key for License": "為授權產生金鑰",
   "Generate License from Key": "從金鑰產生授權",
   "Install License": "安裝授權",
@@ -305,9 +303,11 @@
   "Rename": "重新命名",
   "Truncate": "清空",
   "Expand SELECT *": "展開 SELECT *",
-  "Auth Profiles": "驗證設定檔",
-  "Auth Profile ID": "設定檔 ID",
-  "Auth Profile Name": "設定檔名稱",
-  "Auth Profile Type": "設定檔類型",
-  "Auth Profile Options": "設定檔選項"
+  "Create Authentication Profile": "建立驗證設定檔",
+  "Authentication Profiles Help": "驗證設定檔說明",
+  "Authentication Profiles": "驗證設定檔",
+  "Authentication Profile ID": "驗證設定檔 ID",
+  "Authentication Profile Name": "驗證設定檔名稱",
+  "Authentication Profile Type": "驗證設定檔類型",
+  "Authentication Profile Options": "驗證設定檔選項"
 }

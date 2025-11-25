@@ -51,7 +51,6 @@
   "Tunnels": "隧道",
   "History": "历史记录",
   "Account": "账户",
-  "Help + Suggestions": "帮助与建议",
   "No tunnels created.\n[Add New Tunnel](command:dbcode.tunnels.add)": "未创建隧道。",
   "Connection ID": "连接 ID",
   "Tunnel ID to connect through": "要连接的隧道 ID",
@@ -184,7 +183,6 @@
   "Add to DBCode Favorites": "添加到 DBCode 收藏",
   "Favorites": "收藏",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "启用历史记录以记录 SQL 命令。",
-  "Looking for something else, or found a bug?\n[Docs](https://dbcode.io/docs)\n[Open GitHub Issue](https://github.com/dbcodeio/public/issues)\n": "需要其他帮助或发现了问题？",
   "Generate Key for License": "为许可证生成密钥",
   "Generate License from Key": "从密钥生成许可证",
   "Install License": "安装许可证",
@@ -305,9 +303,11 @@
   "Rename": "重命名",
   "Truncate": "截断",
   "Expand SELECT *": "展开 SELECT *",
-  "Auth Profiles": "身份验证配置",
-  "Auth Profile ID": "配置 ID",
-  "Auth Profile Name": "配置名称",
-  "Auth Profile Type": "配置类型",
-  "Auth Profile Options": "配置选项"
+  "Create Authentication Profile": "创建身份验证配置",
+  "Authentication Profiles Help": "身份验证配置帮助",
+  "Authentication Profiles": "身份验证配置",
+  "Authentication Profile ID": "身份验证配置 ID",
+  "Authentication Profile Name": "身份验证配置名称",
+  "Authentication Profile Type": "身份验证配置类型",
+  "Authentication Profile Options": "身份验证配置选项"
 }
