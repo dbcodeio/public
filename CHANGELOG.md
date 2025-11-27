@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.19.6 - 2025-11-26
+
+### Changed
+
+- DuckDB: Updated to version 1.4.2. #736
+- Results: Added keyboard shortcut to focus WHERE filter (Ctrl+Shift+F / Cmd+Shift+F) and vim-style grid navigation (Ctrl+H/J/K/L). #858
+
+### Fixed
+
+- Panel: Fixed results panel failing to load when visible during VS Code startup.
+- Parameters: Ignore parameters in PREPARE statements. #857
+- Language Server: Added ClickHouse support for `SELECT * EXCEPT` column exclusion syntax and `SYSTEM REFRESH VIEW` statement. #795
+
 ## 1.19.5 - 2025-11-25
 
 ### Changed
