@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.19.7 - 2025-11-29
+
+### Changed
+
+- MongoDB: Added Command authentication provider for retrieving credentials from external secret managers (1Password CLI, Vault, AWS Secrets Manager, etc.) or custom scripts. #496
+- Performance: Added experimental background schema worker to build schemas off the main thread. Enable with `dbcode.useSchemaWorker` setting.
+
+### Fixed
+
+- MySQL: Fixed connection timeout on large databases (1000+ tables) by loading database sizes asynchronously. #862
+- Authentication Profiles: AWS, auto runs SSO login if needed.
+
 ## 1.19.6 - 2025-11-26
 
 ### Changed
