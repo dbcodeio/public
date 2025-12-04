@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.19.9 - 2025-12-04
+
+### Changed
+
+- SQL Server/Azure: Added backup/restore support. #195
+- MongoDB: Added backup/restore support using mongodump/mongorestore. #195
+- MongoDB: Added create and drop database support.
+- Trino: Now generally available (out of preview).
+- Athena: Now generally available (out of preview).
+
+### Fixed
+
+- MongoDB: Fixed introspection error when user does not have collStats permission. #863
+- Results: Fixed focus not being set on first cell when opening a table. #840
+- Zero Config: Fixed connection IDs to be deterministic, allowing workspace default connections to be shared across developers. #855
+
 ## 1.19.8 - 2025-11-29
 
 ### Changed
