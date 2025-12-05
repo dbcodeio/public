@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 1.19.10 - 2025-12-05
+
+### Changed
+
+- DB Explorer: Default connection (from setting or zero config) now indicated with a star (☆), connected icon change to (●).
+- Connections: Connection configured colors now display on the connection item in the tree.
+- Zero Config: Discovered connections will be used as default if a workspace does not have an explicit default connection configured, multiple discovered connections will show a prompt to select one on first request. #855
+- DuckDB: Added "File Search Path" setting to control where relative file paths resolve from (Database Directory, Document Directory, or Workspace Root). #865
+
+### Fixed
+
+- MongoDB: Fixed introspection error when user lacks aggregate permission on system collections. #863
+- Notebooks: Fixed Python injection failing with "Invalid \escape" error when data contains backslashes. #864
+- AWS SSO: Improved login flow to display authorization code in a persistent notification with clickable link to open browser.
+
 ## 1.19.9 - 2025-12-04
 
 ### Changed
