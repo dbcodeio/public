@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.20.0 - 2025-12-08
+
+### Changed
+
+- Elasticsearch: Added support for Elasticsearch (Preview). #323
+- QuestDB: Added support for QuestDB (Preview). #527
+- ScyllaDB: Added support for ScyllaDB (Preview). #680
+- SQLite: Added mod_spatialite extension for spatial SQL capabilities. #867 #576
+
+### Fixed
+
+- Cassandra/ScyllaDB: Fixed USE command not updating codelens to reflect the current keyspace.
+- Requests: Fixed fetch failing with "Invalid URL protocol" error when proxy is misconfigured or undefined. #868
+
 ## 1.19.10 - 2025-12-05
 
 ### Changed
