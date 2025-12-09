@@ -309,5 +309,6 @@
   "Authentication Profile ID": "ID profilu uwierzytelniania",
   "Authentication Profile Name": "Nazwa profilu uwierzytelniania",
   "Authentication Profile Type": "Typ profilu uwierzytelniania",
-  "Authentication Profile Options": "Opcje profilu uwierzytelniania"
+  "Authentication Profile Options": "Opcje profilu uwierzytelniania",
+  "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "Włącz sprawdzanie SQL (walidacja składni i semantyki). Wyłącz, aby ukryć wszystkie ostrzeżenia w plikach SQL."
 }

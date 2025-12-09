@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.20.1 - 2025-12-09
+
+### Changed
+
+- Language Server: Added `dbcode.enableLinting` setting to disable SQL linting (syntax and semantic validation). #795
+
+### Fixed
+
+- Language Server: Fixed false "Unknown column" errors appearing during initial connection when schema is still loading. #869
+- PostgreSQL: Updated bundled pg_dump from 17.6 to 18.1 to support PostgreSQL 18 servers. #871
+- Open Table: Now uses workspace default connection when invoked from command palette. #855
+
 ## 1.20.0 - 2025-12-08
 
 ### Changed

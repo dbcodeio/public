@@ -309,5 +309,6 @@
   "Authentication Profile ID": "Kimlik Doğrulama Profili ID",
   "Authentication Profile Name": "Kimlik Doğrulama Profili Adı",
   "Authentication Profile Type": "Kimlik Doğrulama Profili Türü",
-  "Authentication Profile Options": "Kimlik Doğrulama Profili Seçenekleri"
+  "Authentication Profile Options": "Kimlik Doğrulama Profili Seçenekleri",
+  "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "SQL denetimini etkinleştir (sözdizimi ve anlamsal doğrulama). SQL dosyalarındaki tüm uyarıları gizlemek için devre dışı bırakın."
 }

@@ -309,5 +309,6 @@
   "Authentication Profile ID": "認証プロファイルID",
   "Authentication Profile Name": "認証プロファイル名",
   "Authentication Profile Type": "認証プロファイルタイプ",
-  "Authentication Profile Options": "認証プロファイルオプション"
+  "Authentication Profile Options": "認証プロファイルオプション",
+  "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "SQL リント機能を有効化（構文・セマンティック検証）。無効にすると SQL ファイルのすべての警告が抑制されます。"
 }

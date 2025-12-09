@@ -309,5 +309,6 @@
   "Authentication Profile ID": "驗證設定檔 ID",
   "Authentication Profile Name": "驗證設定檔名稱",
   "Authentication Profile Type": "驗證設定檔類型",
-  "Authentication Profile Options": "驗證設定檔選項"
+  "Authentication Profile Options": "驗證設定檔選項",
+  "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "啟用 SQL 檢查（語法和語意驗證）。停用以隱藏 SQL 檔案中的所有警告。"
 }

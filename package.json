@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.20.0",
+    "version": "1.20.1",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -3352,6 +3352,12 @@
                         "type": "boolean",
                         "default": false,
                         "markdownDescription": "%Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.%"
+                    },
+                    "dbcode.enableLinting": {
+                        "order": 2,
+                        "type": "boolean",
+                        "default": true,
+                        "markdownDescription": "%Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.%"
                     },
                     "dbcode.definitionProvider.defaultAction": {
                         "order": 3,

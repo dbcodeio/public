@@ -309,5 +309,6 @@
   "Authentication Profile ID": "인증 프로필 ID",
   "Authentication Profile Name": "인증 프로필 이름",
   "Authentication Profile Type": "인증 프로필 유형",
-  "Authentication Profile Options": "인증 프로필 옵션"
+  "Authentication Profile Options": "인증 프로필 옵션",
+  "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "SQL 린팅 활성화(구문 및 의미 검증). 비활성화하면 SQL 파일의 모든 경고가 숨겨집니다."
 }

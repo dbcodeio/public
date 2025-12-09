@@ -136,6 +136,7 @@
   "General": "Ɠḗḗƞḗḗřȧȧŀ",
   " The code lense will provide inline actions for executing queries.": " Ŧħḗḗ ƈǿǿḓḗḗ ŀḗḗƞşḗḗ ẇīŀŀ ƥřǿǿṽīḓḗḗ īƞŀīƞḗḗ ȧȧƈŧīǿǿƞş ƒǿǿř ḗḗẋḗḗƈŭŭŧīƞɠ ɋŭŭḗḗřīḗḗş.",
   "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "ḖḖƞȧȧƀŀḗḗ ḗḗẋƥḗḗřīḿḗḗƞŧȧȧŀ ḒƁƇǿǿḓḗḗ ŞɊĿ ŀȧȧƞɠŭŭȧȧɠḗḗ şḗḗřṽḗḗř (ȧȧƈŧīṽḗḗ şŧȧȧŧḗḗḿḗḗƞŧ ḓīȧȧɠƞǿǿşŧīƈş ȧȧƞḓ ƈǿǿḿƥŀḗḗŧīǿǿƞş) ḾȧȧřīȧȧḒƁ ȧȧƞḓ Ƥǿǿşŧɠřḗḗş ǿǿƞŀẏ ȧȧŧ ŧħḗḗ ḿǿǿḿḗḗƞŧ.",
+  "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "ḖḖƞȧȧƀŀḗḗ ŞɊĿ ŀīƞŧīƞɠ (şẏƞŧȧȧẋ ȧȧƞḓ şḗḗḿȧȧƞŧīƈ ṽȧȧŀīḓȧȧŧīǿǿƞ). Ḓīşȧȧƀŀḗḗ ŧǿǿ şŭŭƥƥřḗḗşş ȧȧŀŀ ŀīƞŧīƞɠ ẇȧȧřƞīƞɠş īƞ ŞɊĿ ƒīŀḗḗş.",
   "Open the DDL/definition editor (Cmd/Ctrl+Click on tables/views).": "ǾǾƥḗḗƞ ŧħḗḗ ḒḒĿ/ḓḗḗƒīƞīŧīǿǿƞ ḗḗḓīŧǿǿř (Ƈḿḓ/Ƈŧřŀ+Ƈŀīƈķ ǿǿƞ ŧȧȧƀŀḗḗş/ṽīḗḗẇş).",
   "Open the data viewer (Cmd/Ctrl+Click on tables/views).": "ǾǾƥḗḗƞ ŧħḗḗ ḓȧȧŧȧȧ ṽīḗḗẇḗḗř (Ƈḿḓ/Ƈŧřŀ+Ƈŀīƈķ ǿǿƞ ŧȧȧƀŀḗḗş/ṽīḗḗẇş).",
   "Choose the default action when using Go to Definition (Cmd/Ctrl+Click) on tables and views.": "Ƈħǿǿǿǿşḗḗ ŧħḗḗ ḓḗḗƒȧȧŭŭŀŧ ȧȧƈŧīǿǿƞ ẇħḗḗƞ ŭŭşīƞɠ Ɠǿǿ ŧǿǿ Ḓḗḗƒīƞīŧīǿǿƞ (Ƈḿḓ/Ƈŧřŀ+Ƈŀīƈķ) ǿǿƞ ŧȧȧƀŀḗḗş ȧȧƞḓ ṽīḗḗẇş.",

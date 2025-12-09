@@ -309,5 +309,6 @@
   "Authentication Profile ID": "ID профиля аутентификации",
   "Authentication Profile Name": "Название профиля аутентификации",
   "Authentication Profile Type": "Тип профиля аутентификации",
-  "Authentication Profile Options": "Параметры профиля аутентификации"
+  "Authentication Profile Options": "Параметры профиля аутентификации",
+  "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "Включить проверку SQL (синтаксическая и семантическая валидация). Отключите для подавления всех предупреждений в SQL-файлах."
 }
