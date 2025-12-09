@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.21.1 - 2025-12-09
+
+### Changed
+
+- TiDB: Added support for TiDB. #872
+- Trino: Username and password are now optional.
+
+### Fixed
+
+- Zero Config: Fixed symlinked `.env` files not being detected during connection discovery. #855
+- MySQL/MariaDB: Added support for MaxScale proxy with dbfwfilter by auto-detecting and disabling multi-statement queries (or manual connection configuration). #870
+
 ## 1.20.1 - 2025-12-09
 
 ### Changed

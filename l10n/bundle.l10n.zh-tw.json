@@ -2565,5 +2565,7 @@
   "Table {0} created": "資料表 {0} 已建立",
   "Drop table {0}? This will delete all data.": "刪除資料表 {0}?這將刪除所有資料。",
   "Table {0} dropped": "資料表 {0} 已刪除",
-  "DynamoDB requires an AWS IAM authentication profile": "DynamoDB 需要 AWS IAM 驗證設定檔"
+  "DynamoDB requires an AWS IAM authentication profile": "DynamoDB 需要 AWS IAM 驗證設定檔",
+  "Disable Multi-Statements": "停用多重陳述式",
+  "Enable this for proxies like MaxScale with dbfwfilter that block multi-statement queries.": "為使用 dbfwfilter 封鎖多重陳述式查詢的 MaxScale 等 Proxy 啟用此選項。"
 }

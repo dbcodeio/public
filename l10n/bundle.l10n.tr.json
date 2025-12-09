@@ -2565,5 +2565,7 @@
   "Table {0} created": "{0} tablosu oluşturuldu",
   "Drop table {0}? This will delete all data.": "{0} tablosunu sil? Bu tüm verileri silecektir.",
   "Table {0} dropped": "{0} tablosu silindi",
-  "DynamoDB requires an AWS IAM authentication profile": "DynamoDB, AWS IAM kimlik doğrulama profili gerektirir"
+  "DynamoDB requires an AWS IAM authentication profile": "DynamoDB, AWS IAM kimlik doğrulama profili gerektirir",
+  "Disable Multi-Statements": "Çoklu ifadeleri devre dışı bırak",
+  "Enable this for proxies like MaxScale with dbfwfilter that block multi-statement queries.": "Çok ifadeli sorguları engelleyen dbfwfilter ile MaxScale gibi proxy'ler için etkinleştirin."
 }

@@ -2565,5 +2565,7 @@
   "Table {0} created": "Tabulka {0} vytvořena",
   "Drop table {0}? This will delete all data.": "Smazat tabulku {0}? Tím se odstraní všechna data.",
   "Table {0} dropped": "Tabulka {0} smazána",
-  "DynamoDB requires an AWS IAM authentication profile": "DynamoDB vyžaduje ověřovací profil AWS IAM"
+  "DynamoDB requires an AWS IAM authentication profile": "DynamoDB vyžaduje ověřovací profil AWS IAM",
+  "Disable Multi-Statements": "Zakázat vícenásobné příkazy",
+  "Enable this for proxies like MaxScale with dbfwfilter that block multi-statement queries.": "Povolte pro proxy jako MaxScale s dbfwfilter, které blokují dotazy s více příkazy."
 }

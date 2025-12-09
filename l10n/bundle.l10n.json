@@ -1668,6 +1668,8 @@
   "Configure character set and collation for the connection.": "Configure character set and collation for the connection.",
   "Leave values empty to use server defaults.": "Leave values empty to use server defaults.",
   "Retrieve Public Key": "Retrieve Public Key",
+  "Disable Multi-Statements": "Disable Multi-Statements",
+  "Enable this for proxies like MaxScale with dbfwfilter that block multi-statement queries.": "Enable this for proxies like MaxScale with dbfwfilter that block multi-statement queries.",
   "Access Type": "Access Type",
   "Filtered (%)": "Filtered (%)",
   "Key Length": "Key Length",

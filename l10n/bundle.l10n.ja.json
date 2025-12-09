@@ -2568,5 +2568,7 @@
   "Table {0} created": "テーブル {0} を作成しました",
   "Drop table {0}? This will delete all data.": "テーブル {0} を削除しますか? すべてのデータが削除されます。",
   "Table {0} dropped": "テーブル {0} を削除しました",
-  "DynamoDB requires an AWS IAM authentication profile": "DynamoDB には AWS IAM 認証プロファイルが必要です"
+  "DynamoDB requires an AWS IAM authentication profile": "DynamoDB には AWS IAM 認証プロファイルが必要です",
+  "Disable Multi-Statements": "複数ステートメントを無効化",
+  "Enable this for proxies like MaxScale with dbfwfilter that block multi-statement queries.": "dbfwfilter で複数ステートメントクエリをブロックする MaxScale などのプロキシに対して有効にします。"
 }

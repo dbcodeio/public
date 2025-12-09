@@ -6,14 +6,61 @@
 
 For devs who'd rather ship than <strike>fumble</strike> alt-tab around.
 
-## Database Support 
+## Database Support
 
-Connect to 20+ databases including:
+Connect to 40+ databases:
 
-<img width="100%" alt="data-editor" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/logo_panel.png">
+<p align="center">
+	<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+	<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" alt="MySQL"/>
+	<img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat&logo=mssqlserver&logoColor=white" alt="SQL Server"/>
+	<img src="https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white" alt="SQLite"/>
+	<img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white" alt="Oracle"/>
+	<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white" alt="MongoDB"/>
+	<img src="https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white" alt="Redis"/>
+	<img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white" alt="MariaDB"/>
+	<img src="https://img.shields.io/badge/DuckDB-FFF000?style=flat&logo=duckdb&logoColor=black" alt="DuckDB"/>
+	<img src="https://img.shields.io/badge/Snowflake-29B5E8?style=flat&logo=snowflake&logoColor=white" alt="Snowflake"/>
+	<img src="https://img.shields.io/badge/BigQuery-669DF6?style=flat&logo=googlebigquery&logoColor=white" alt="BigQuery"/>
+	<img src="https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white" alt="Databricks"/>
+	<img src="https://img.shields.io/badge/ClickHouse-FFCC01?style=flat&logo=clickhouse&logoColor=black" alt="ClickHouse"/>
+	<img src="https://img.shields.io/badge/Cassandra-1287B1?style=flat&logo=apachecassandra&logoColor=white" alt="Cassandra"/>
+	<img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat&logo=elasticsearch&logoColor=white" alt="Elasticsearch"/>
+	<img src="https://img.shields.io/badge/CockroachDB-6933FF?style=flat&logo=cockroachlabs&logoColor=white" alt="CockroachDB"/>
+	<img src="https://img.shields.io/badge/Trino-DD00A1?style=flat&logo=trino&logoColor=white" alt="Trino"/>
+	<img src="https://img.shields.io/badge/Firebase-DD2C00?style=flat&logo=firebase&logoColor=white" alt="Firebase"/>
+	<img src="https://img.shields.io/badge/DynamoDB-4053D6?style=flat&logo=amazondynamodb&logoColor=white" alt="DynamoDB"/>
+	<img src="https://img.shields.io/badge/Redshift-8C4FFF?style=flat&logo=amazonredshift&logoColor=white" alt="Redshift"/>
+	<img src="https://img.shields.io/badge/Athena-232F3E?style=flat&logo=amazonaws&logoColor=white" alt="Athena"/>
+	<img src="https://img.shields.io/badge/Azure%20SQL-0078D4?style=flat&logo=microsoftazure&logoColor=white" alt="Azure SQL"/>
+	<img src="https://img.shields.io/badge/Synapse-0078D4?style=flat&logo=microsoftazure&logoColor=white" alt="Azure Synapse"/>
+	<img src="https://img.shields.io/badge/Dataverse-742774?style=flat&logo=dynamics365&logoColor=white" alt="Dataverse"/>
+	<img src="https://img.shields.io/badge/IBM%20Db2-052FAD?style=flat&logo=ibm&logoColor=white" alt="IBM Db2"/>
+	<img src="https://img.shields.io/badge/Netezza-052FAD?style=flat&logo=ibm&logoColor=white" alt="IBM Netezza"/>
+	<img src="https://img.shields.io/badge/Cloudflare%20D1-F38020?style=flat&logo=cloudflare&logoColor=white" alt="Cloudflare D1"/>
+	<img src="https://img.shields.io/badge/libSQL-4FF8D2?style=flat&logo=turso&logoColor=black" alt="libSQL"/>
+	<img src="https://img.shields.io/badge/MotherDuck-FFF000?style=flat&logo=duckdb&logoColor=black" alt="MotherDuck"/>
+	<img src="https://img.shields.io/badge/Timescale-FDB515?style=flat&logo=timescale&logoColor=black" alt="Timescale"/>
+	<img src="https://img.shields.io/badge/YugabyteDB-FF6E42?style=flat&logo=yugabytedb&logoColor=white" alt="YugabyteDB"/>
+	<img src="https://img.shields.io/badge/SingleStore-AA00FF?style=flat&logo=singlestore&logoColor=white" alt="SingleStore"/>
+	<img src="https://img.shields.io/badge/TiDB-DD0031?style=flat&logo=tidb&logoColor=white" alt="TiDB"/>
+	<img src="https://img.shields.io/badge/Doris-5694E5?style=flat&logo=apachedoris&logoColor=white" alt="Apache Doris"/>
+	<img src="https://img.shields.io/badge/StarRocks-00A1E5?style=flat" alt="StarRocks"/>
+	<img src="https://img.shields.io/badge/ScyllaDB-6CD5E7?style=flat&logo=scylladb&logoColor=black" alt="ScyllaDB"/>
+	<img src="https://img.shields.io/badge/QuestDB-B73CD4?style=flat&logo=questdb&logoColor=white" alt="QuestDB"/>
+	<img src="https://img.shields.io/badge/RisingWave-0055FF?style=flat" alt="RisingWave"/>
+	<img src="https://img.shields.io/badge/Greenplum-6DB33F?style=flat" alt="Greenplum"/>
+	<img src="https://img.shields.io/badge/MS%20Access-A4373A?style=flat&logo=microsoftaccess&logoColor=white" alt="MS Access"/>
+</p>
 
+<p align="center">
+	<img src="https://img.shields.io/badge/CSV-217346?style=flat" alt="CSV"/>
+	<img src="https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoftexcel&logoColor=white" alt="Excel"/>
+	<img src="https://img.shields.io/badge/Parquet-50ABF1?style=flat&logo=apacheparquet&logoColor=white" alt="Parquet"/>
+	<img src="https://img.shields.io/badge/Avro-D12127?style=flat&logo=apachekafka&logoColor=white" alt="Avro"/>
+</p>
 
-[See more](https://dbcode.io)
+[See all supported databases](https://dbcode.io)
 
 ## Data Viewing & Editing
 
@@ -90,20 +137,33 @@ Connect to 20+ databases including:
 
 ## Additional Features
 
-- **Import**: Easily import data from CSV files or other database tables
-- **Export**: Get your data out when you need it elsewhere
-- **Multi-DB Sessions**: Query across databases simultaneously
-- **Query Parameters**: Reuse queries with different inputs (less copy-paste, more productivity)
-- **Custom Colors**: Color-code your connections - production remains red, naturally
-- **Result Pinning**: Keep important query results around
-- **SSL Auto Config**: Automatic SSL setup for [known hosts](https://dbcode.io/docs/connections/auto-ssl)
+**Data**
+- **Import/Export**: CSV, Excel, JSON, Parquet, Avro
+- **Backup/Restore**: Native backup tools for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB
+- **File Formats**: Open CSV/Excel/Parquet/Avro files directly - edit and save back
+- **Data Formatters**: Lookup values from other tables, expand JSON columns
+
+**Query & Analysis**
+- **Execution Plans**: Visualize EXPLAIN/ANALYZE output
+- **Transaction Control**: Manual commit/rollback with auto-commit toggle
+- **SQL Filters**: WHERE clause filtering with saved filters
+- **Query Parameters**: Reuse queries with different inputs
+
+**Connectivity**
+- **Zero Config**: Auto-discovers connections from .env files (Laravel, Django, Spring, Node.js)
+- **Auth Profiles**: Centralized auth - OAuth, AWS SSO, 1Password, Vault
+- **SSL Auto Config**: Automatic SSL for [known hosts](https://dbcode.io/docs/connections/auto-ssl)
 - **SSH Tunnels**: Manual config or auto-discovery from SSH config
+
+**Notebooks & AI**
+- **Python Cells**: Jupyter kernel integration with SQL-to-Python injection
+- **Copilot Integration**: Drag tables to Copilot, natural language queries
+
+**VS Code Integration**
 - **Theme Support**: Full compatibility with VS Code themes
 - **Localization**: Available in all VS Code supported languages
-- **Fuzzy Table Search**: Find that table even when you can't remember its exact name
-- **Quick Query History**: Revisit recent queries without retyping - perfect for iterative development
-- **Command Palette Integration**: All database actions at your fingertips, keyboard warriors rejoice
-- **[More Features](https://dbcode.io/features/)**
+
+[All Features](https://dbcode.io/features/) · [Documentation](https://dbcode.io/docs)
 
 ## Pricing
 

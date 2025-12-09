@@ -2567,5 +2567,7 @@
   "Table {0} created": "Tabla {0} creada",
   "Drop table {0}? This will delete all data.": "¿Eliminar tabla {0}? Esto borrará todos los datos.",
   "Table {0} dropped": "Tabla {0} eliminada",
-  "DynamoDB requires an AWS IAM authentication profile": "DynamoDB requiere un perfil de autenticación de AWS IAM"
+  "DynamoDB requires an AWS IAM authentication profile": "DynamoDB requiere un perfil de autenticación de AWS IAM",
+  "Disable Multi-Statements": "Desactivar sentencias múltiples",
+  "Enable this for proxies like MaxScale with dbfwfilter that block multi-statement queries.": "Active esto para proxies como MaxScale con dbfwfilter que bloquean consultas de múltiples sentencias."
 }
