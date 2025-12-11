@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.21.2 - 2025-12-10
+
+### Changed
+
+- DuckDB: Added extensions support for loading core and community extensions on connect.
+- Formatting: Improved SQL formatter dialect mappings for ClickHouse, Databricks, Access, CQL, and Elasticsearch.
+- Results: Quick search now highlights matching cells in the grid.
+
+### Fixed
+
+- SQLite: Fixed slow connection times on large databases (1GB+) by skipping expensive ANALYZE and table size calculations.
+- SQL Server: Fixed backup failing on Docker/local instances with SSL certificate errors by explicitly setting encryption mode.
+- Commands: Fixed Quick Open and other commands failing on first attempt when extension hadn't activated yet. #876
+
 ## 1.21.1 - 2025-12-09
 
 ### Changed
