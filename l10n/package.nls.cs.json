@@ -310,5 +310,6 @@
   "Authentication Profile Name": "Název ověřovacího profilu",
   "Authentication Profile Type": "Typ ověřovacího profilu",
   "Authentication Profile Options": "Možnosti ověřovacího profilu",
-  "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "Povolit kontrolu SQL (syntaktická a sémantická validace). Zakažte pro potlačení všech upozornění v SQL souborech."
+  "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "Povolit kontrolu SQL (syntaktická a sémantická validace). Zakažte pro potlačení všech upozornění v SQL souborech.",
+  "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Výchozí režim automatického potvrzování pro nová připnutá připojení. Pokud je zakázáno, musíte změny potvrdit nebo vrátit ručně."
 }

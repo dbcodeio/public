@@ -310,5 +310,6 @@
   "Automatically delete old scratch files based on their last modified date.": "ȦȦŭŭŧǿǿḿȧȧŧīƈȧȧŀŀẏ ḓḗḗŀḗḗŧḗḗ ǿǿŀḓ şƈřȧȧŧƈħ ƒīŀḗḗş ƀȧȧşḗḗḓ ǿǿƞ ŧħḗḗīř ŀȧȧşŧ ḿǿǿḓīƒīḗḗḓ ḓȧȧŧḗḗ.",
   "Transactions": "Ŧřȧȧƞşȧȧƈŧīǿǿƞş",
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Ẇȧȧřƞ ẇħḗḗƞ ȧȧ ŧřȧȧƞşȧȧƈŧīǿǿƞ ħȧȧş ƀḗḗḗḗƞ ǿǿƥḗḗƞ ƒǿǿř ŧħīş ḿȧȧƞẏ ḿīƞŭŭŧḗḗş. Şḗḗŧ ŧǿǿ 0 ŧǿǿ ḓīşȧȧƀŀḗḗ ẇȧȧřƞīƞɠş.",
-  "Automatically rollback the transaction when a query fails. Use with caution.": "ȦȦŭŭŧǿǿḿȧȧŧīƈȧȧŀŀẏ řǿǿŀŀƀȧȧƈķ ŧħḗḗ ŧřȧȧƞşȧȧƈŧīǿǿƞ ẇħḗḗƞ ȧȧ ɋŭŭḗḗřẏ ƒȧȧīŀş. ŬŬşḗḗ ẇīŧħ ƈȧȧŭŭŧīǿǿƞ."
+  "Automatically rollback the transaction when a query fails. Use with caution.": "ȦȦŭŭŧǿǿḿȧȧŧīƈȧȧŀŀẏ řǿǿŀŀƀȧȧƈķ ŧħḗḗ ŧřȧȧƞşȧȧƈŧīǿǿƞ ẇħḗḗƞ ȧȧ ɋŭŭḗḗřẏ ƒȧȧīŀş. ŬŬşḗḗ ẇīŧħ ƈȧȧŭŭŧīǿǿƞ.",
+  "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Ḓḗḗƒȧȧŭŭŀŧ ȧȧŭŭŧǿǿ-ƈǿǿḿḿīŧ ḿǿǿḓḗḗ ƒǿǿř ƞḗḗẇ ƥīƞƞḗḗḓ ƈǿǿƞƞḗḗƈŧīǿǿƞş. Ẇħḗḗƞ ḓīşȧȧƀŀḗḗḓ, ẏǿǿŭŭ ḿŭŭşŧ ḿȧȧƞŭŭȧȧŀŀẏ ƈǿǿḿḿīŧ ǿǿř řǿǿŀŀƀȧȧƈķ ƈħȧȧƞɠḗḗş."
 }

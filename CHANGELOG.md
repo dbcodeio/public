@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.21.3 - 2025-12-11
+
+### Changed
+
+- Microsoft Access: Added support for Microsoft Access databases (.mdb, .accdb). (Preview, Windows only). #546
+- Transactions: Added `dbcode.transactions.defaultAutoCommit` setting to control the default auto-commit mode for new pinned connections.
+- Schema Switching: Added automatic schema context detection for Oracle, PostgreSQL, DB2, Databricks, and Snowflake when executing schema switch commands.
+
+### Fixed
+
+- SQLite: On large databases (1GB+) using approximate ANALYZE with `analysis_limit` and skipping table size calculations.
+
 ## 1.21.2 - 2025-12-10
 
 ### Changed

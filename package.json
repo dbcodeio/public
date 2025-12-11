@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.21.2",
+    "version": "1.21.3",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -377,6 +377,12 @@
                     },
                     {
                         "filenamePattern": "*.avro"
+                    },
+                    {
+                        "filenamePattern": "*.mdb"
+                    },
+                    {
+                        "filenamePattern": "*.accdb"
                     }
                 ],
                 "priority": "option"
@@ -5037,6 +5043,12 @@
                         "type": "boolean",
                         "default": false,
                         "markdownDescription": "%Automatically rollback the transaction when a query fails. Use with caution.%"
+                    },
+                    "dbcode.transactions.defaultAutoCommit": {
+                        "order": 3,
+                        "type": "boolean",
+                        "default": true,
+                        "markdownDescription": "%Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.%"
                     }
                 }
             }
@@ -5205,7 +5217,6 @@
         "mssql": "^11.0.1",
         "mysql2": "^3.14.2",
         "npm": "^11.2.0",
-        "odbc": "^2.4.9",
         "oracledb": "^6.8.0",
         "p-queue": "^8.1.0",
         "pako": "^2.1.0",

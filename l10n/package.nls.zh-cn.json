@@ -310,5 +310,6 @@
   "Authentication Profile Name": "身份验证配置名称",
   "Authentication Profile Type": "身份验证配置类型",
   "Authentication Profile Options": "身份验证配置选项",
-  "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "启用 SQL 检查（语法和语义验证）。禁用以隐藏 SQL 文件中的所有警告。"
+  "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "启用 SQL 检查（语法和语义验证）。禁用以隐藏 SQL 文件中的所有警告。",
+  "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "新固定连接的默认自动提交模式。禁用时，必须手动提交或回滚更改。"
 }
