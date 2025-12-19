@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 1.22.1 - 2025-12-19
+
+### Changed
+
+- Authentication Profiles: Added .pgpass file authentication profile for PostgreSQL.
+- BigQuery: Added support for cross-project browsing with separate billing project. Users can now browse datasets from external projects (e.g., `bigquery-public-data`) while using a different project for query billing.
+- Athena: Added workgroup support for organizations with IAM policies that restrict query execution to specific workgroups. #880
+
+### Fixed
+
+- Connections: Fixed SSL checkbox being locked for known hosts (AWS RDS, etc.) when using SSH tunnels. #883
+- Oracle: Fixed connection error on Oracle Free Docker containers where PRODUCT_COMPONENT_VERSION view returns empty results. #885
+- DuckDB: Fixed database file remaining locked after disconnecting. #884
+- Cloud Providers: Fixed schema caching failing on Windows due to invalid path characters in connection IDs.
+
 ## 1.22.0 - 2025-12-13
 
 ### Changed
