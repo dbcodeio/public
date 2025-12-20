@@ -1316,7 +1316,6 @@
   "No query ID available for cancellation": "キャンセル可能なクエリ ID がありません",
   "Schema not converted to v1 format yet.": "スキーマはまだ v1 形式に変換されていません。",
   "Request Timeout": "リクエストタイムアウト",
-  "Oracle 12.1 or higher is required": "Oracle 12.1 以降が必要です",
   "{0} Copy": "{0} のコピー",
   "SQL Server 2012 or higher is required": "SQL Server 2012 以降が必要です",
   "Failed to initialize grid: {0}": "グリッドの初期化に失敗しました: {0}",
@@ -2617,5 +2616,7 @@
   "Cloud Resource Manager API must be enabled to list projects. Visit: {0}": "プロジェクトを一覧表示するには、Cloud Resource Manager API を有効にする必要があります。アクセス先: {0}",
   "Cloud Resource Manager API must be enabled to list projects.": "プロジェクトを一覧表示するには、Cloud Resource Manager API を有効にする必要があります。",
   "No valid credentials found. Run \"gcloud auth application-default login\" or select a service account key file.": "有効な認証情報が見つかりません。\"gcloud auth application-default login\" を実行するか、サービス アカウント キー ファイルを選択してください。",
-  "Unable to fetch projects: {0}": "プロジェクトを取得できません: {0}"
+  "Unable to fetch projects: {0}": "プロジェクトを取得できません: {0}",
+  "Oracle 12.1 or higher is required for Thin mode. Use Instant Client for older versions.": "Thin モードには Oracle 12.1 以降が必要です。旧バージョンでは Instant Client を使用してください。",
+  "This Oracle version requires Thick mode. Configure Instant Client in the connection settings.": "この Oracle バージョンには Thick モードが必要です。接続設定で Instant Client を構成してください。"
 }

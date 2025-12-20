@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.22.2 - 2025-12-20
+
+### Changed
+
+- Parameters: Added support for positional parameters ($1, $2, etc.) outside of function bodies. #889
+- Authentication Profiles: Extended .pgpass and command auth profiles to CockroachDB, Greenplum, QuestDB, RisingWave, Timescale, and YugabyteDB.
+- Oracle: Added support for Oracle 11g when using Instant Client (Thick mode).
+
+### Fixed
+
+- Language Server: Fixed false "Unknown column" warnings for stored procedure/function parameters and DECLARE variables.
+- Language Server: Fixed JOIN hints not using table aliases in ON clause conditions (e.g., `ON a.id = b.user_id` now uses both aliases correctly).
+- Redis: Fixed authentication failing on Redis versions before 6.0 which don't support username in AUTH command. #888
+
 ## 1.22.1 - 2025-12-19
 
 ### Changed

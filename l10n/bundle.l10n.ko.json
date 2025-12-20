@@ -1313,7 +1313,6 @@
   "No query ID available for cancellation": "취소할 쿼리 ID가 없습니다",
   "Schema not converted to v1 format yet.": "스키마가 아직 v1 형식으로 변환되지 않았습니다",
   "Request Timeout": "요청 시간 초과",
-  "Oracle 12.1 or higher is required": "Oracle 12.1 이상이 필요합니다",
   "{0} Copy": "{0} 복사",
   "SQL Server 2012 or higher is required": "SQL Server 2012 이상이 필요합니다",
   "Failed to initialize grid: {0}": "그리드 초기화 실패: {0}",
@@ -2614,5 +2613,7 @@
   "Cloud Resource Manager API must be enabled to list projects. Visit: {0}": "프로젝트를 나열하려면 Cloud Resource Manager API를 사용 설정해야 합니다. 방문: {0}",
   "Cloud Resource Manager API must be enabled to list projects.": "프로젝트를 나열하려면 Cloud Resource Manager API를 사용 설정해야 합니다.",
   "No valid credentials found. Run \"gcloud auth application-default login\" or select a service account key file.": "유효한 자격 증명을 찾을 수 없습니다. \"gcloud auth application-default login\"을 실행하거나 서비스 계정 키 파일을 선택하세요.",
-  "Unable to fetch projects: {0}": "프로젝트를 가져올 수 없음: {0}"
+  "Unable to fetch projects: {0}": "프로젝트를 가져올 수 없음: {0}",
+  "Oracle 12.1 or higher is required for Thin mode. Use Instant Client for older versions.": "Thin 모드에는 Oracle 12.1 이상이 필요합니다. 이전 버전은 Instant Client를 사용하세요.",
+  "This Oracle version requires Thick mode. Configure Instant Client in the connection settings.": "이 Oracle 버전은 Thick 모드가 필요합니다. 연결 설정에서 Instant Client를 구성하세요."
 }

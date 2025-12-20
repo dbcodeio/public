@@ -1313,7 +1313,6 @@
   "No query ID available for cancellation": "İptal için kullanılabilir sorgu kimliği yok",
   "Schema not converted to v1 format yet.": "Şema henüz v1 formatına dönüştürülmedi.",
   "Request Timeout": "İstek Zaman Aşımı",
-  "Oracle 12.1 or higher is required": "Oracle 12.1 veya üzeri gereklidir",
   "{0} Copy": "{0} Kopyası",
   "SQL Server 2012 or higher is required": "SQL Server 2012 veya üzeri gereklidir",
   "Failed to initialize grid: {0}": "Grid başlatılamadı: {0}",
@@ -2614,5 +2613,7 @@
   "Cloud Resource Manager API must be enabled to list projects. Visit: {0}": "Projeleri listelemek için Cloud Resource Manager API'sinin etkinleştirilmesi gerekir. Ziyaret edin: {0}",
   "Cloud Resource Manager API must be enabled to list projects.": "Projeleri listelemek için Cloud Resource Manager API'sinin etkinleştirilmesi gerekir.",
   "No valid credentials found. Run \"gcloud auth application-default login\" or select a service account key file.": "Geçerli kimlik bilgisi bulunamadı. \"gcloud auth application-default login\" komutunu çalıştırın veya bir hizmet hesabı anahtar dosyası seçin.",
-  "Unable to fetch projects: {0}": "Projeler alınamıyor: {0}"
+  "Unable to fetch projects: {0}": "Projeler alınamıyor: {0}",
+  "Oracle 12.1 or higher is required for Thin mode. Use Instant Client for older versions.": "Thin modu için Oracle 12.1 veya üzeri gereklidir. Eski sürümler için Instant Client kullanın.",
+  "This Oracle version requires Thick mode. Configure Instant Client in the connection settings.": "Bu Oracle sürümü Thick modu gerektirir. Bağlantı ayarlarında Instant Client'ı yapılandırın."
 }

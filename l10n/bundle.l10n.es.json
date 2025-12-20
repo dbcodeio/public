@@ -1286,7 +1286,6 @@
   "No query ID available for cancellation": "No hay ID de consulta disponible para cancelar",
   "Schema not converted to v1 format yet.": "El esquema aún no se ha convertido al formato v1.",
   "Request Timeout": "Tiempo de espera agotado",
-  "Oracle 12.1 or higher is required": "Se requiere Oracle 12.1 o superior",
   "{0} Copy": "{0} Copia",
   "SQL Server 2012 or higher is required": "Se requiere SQL Server 2012 o superior",
   "Failed to initialize grid: {0}": "Error al inicializar la cuadrícula: {0}",
@@ -2616,5 +2615,7 @@
   "Cloud Resource Manager API must be enabled to list projects. Visit: {0}": "La API de Cloud Resource Manager debe estar habilitada para listar proyectos. Visite: {0}",
   "Cloud Resource Manager API must be enabled to list projects.": "La API de Cloud Resource Manager debe estar habilitada para listar proyectos.",
   "No valid credentials found. Run \"gcloud auth application-default login\" or select a service account key file.": "No se encontraron credenciales válidas. Ejecute \"gcloud auth application-default login\" o seleccione un archivo de clave de cuenta de servicio.",
-  "Unable to fetch projects: {0}": "No se pueden obtener los proyectos: {0}"
+  "Unable to fetch projects: {0}": "No se pueden obtener los proyectos: {0}",
+  "Oracle 12.1 or higher is required for Thin mode. Use Instant Client for older versions.": "Se requiere Oracle 12.1 o superior para el modo Thin. Use Instant Client para versiones anteriores.",
+  "This Oracle version requires Thick mode. Configure Instant Client in the connection settings.": "Esta versión de Oracle requiere el modo Thick. Configure Instant Client en la configuración de conexión."
 }

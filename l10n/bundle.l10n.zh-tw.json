@@ -1313,7 +1313,6 @@
   "No query ID available for cancellation": "沒有可供取消的查詢 ID",
   "Schema not converted to v1 format yet.": "架構尚未轉換為 v1 格式。",
   "Request Timeout": "請求逾時",
-  "Oracle 12.1 or higher is required": "需要 Oracle 12.1 或更高版本",
   "{0} Copy": "{0} 副本",
   "SQL Server 2012 or higher is required": "需要 SQL Server 2012 或更高版本",
   "Failed to initialize grid: {0}": "無法初始化網格：{0}",
@@ -2614,5 +2613,7 @@
   "Cloud Resource Manager API must be enabled to list projects. Visit: {0}": "必須啟用 Cloud Resource Manager API 才能列出專案。造訪：{0}",
   "Cloud Resource Manager API must be enabled to list projects.": "必須啟用 Cloud Resource Manager API 才能列出專案。",
   "No valid credentials found. Run \"gcloud auth application-default login\" or select a service account key file.": "找不到有效的憑證。執行 \"gcloud auth application-default login\" 或選擇服務帳戶金鑰檔案。",
-  "Unable to fetch projects: {0}": "無法擷取專案：{0}"
+  "Unable to fetch projects: {0}": "無法擷取專案：{0}",
+  "Oracle 12.1 or higher is required for Thin mode. Use Instant Client for older versions.": "Thin 模式需要 Oracle 12.1 或更高版本。舊版本請使用 Instant Client。",
+  "This Oracle version requires Thick mode. Configure Instant Client in the connection settings.": "此 Oracle 版本需要 Thick 模式。請在連線設定中設定 Instant Client。"
 }
