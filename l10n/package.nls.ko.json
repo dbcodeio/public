@@ -311,5 +311,6 @@
   "Authentication Profile Type": "인증 프로필 유형",
   "Authentication Profile Options": "인증 프로필 옵션",
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "SQL 린팅 활성화(구문 및 의미 검증). 비활성화하면 SQL 파일의 모든 경고가 숨겨집니다.",
-  "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "새 고정된 연결의 기본 자동 커밋 모드. 비활성화 시 변경 사항을 수동으로 커밋하거나 롤백해야 합니다."
+  "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "새 고정된 연결의 기본 자동 커밋 모드. 비활성화 시 변경 사항을 수동으로 커밋하거나 롤백해야 합니다.",
+  "Exact value from database - no conversion or formatting applied.": "데이터베이스의 정확한 값 - 변환이나 서식 적용 없음."
 }

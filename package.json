@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.22.2",
+    "version": "1.22.3",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -3679,12 +3679,14 @@
                     },
                     "dbcode.format.dateStyle": {
                         "type": "string",
-                        "default": "ISO 9075",
+                        "default": "Raw",
                         "enum": [
+                            "Raw",
                             "ISO 9075",
                             "Locale"
                         ],
                         "enumDescriptions": [
+                            "%Exact value from database - no conversion or formatting applied.%",
                             "%YYYY-MM-DD hh:mm:ss - Will include fractional sections and timezone if present.%",
                             "%Your computers locale format.%"
                         ],
@@ -5062,6 +5064,8 @@
         "dev:build": "npm run esbuild -- --sourcemap --watch",
         "dev:server": "npx tsx ./scripts/dev-server.ts",
         "test": "vitest run --coverage",
+        "test:unit": "vitest run --project unit",
+        "test:integration": "vitest run --project integration",
         "test-e2e": "wdio run ./wdio.conf.ts",
         "esbuild": "npx tsx ./scripts/build.ts",
         "prepare": "husky install",

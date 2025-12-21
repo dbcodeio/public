@@ -311,5 +311,6 @@
   "Authentication Profile Type": "Kimlik Doğrulama Profili Türü",
   "Authentication Profile Options": "Kimlik Doğrulama Profili Seçenekleri",
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "SQL denetimini etkinleştir (sözdizimi ve anlamsal doğrulama). SQL dosyalarındaki tüm uyarıları gizlemek için devre dışı bırakın.",
-  "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Yeni sabitlenmiş bağlantılar için varsayılan otomatik onaylama modu. Devre dışı bırakıldığında, değişiklikleri manuel olarak onaylamanız veya geri almanız gerekir."
+  "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Yeni sabitlenmiş bağlantılar için varsayılan otomatik onaylama modu. Devre dışı bırakıldığında, değişiklikleri manuel olarak onaylamanız veya geri almanız gerekir.",
+  "Exact value from database - no conversion or formatting applied.": "Veritabanından tam değer - dönüştürme veya biçimlendirme uygulanmadı."
 }

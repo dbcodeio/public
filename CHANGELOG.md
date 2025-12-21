@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.22.3 - 2025-12-21
+
+### Changed
+
+- Date/Time Display: Added "Raw" option to date style setting that preserves original database values without formatting or timezone conversion. Maintains full precision (microseconds) as stored in the database.
+
 ## 1.22.2 - 2025-12-20
 
 ### Changed

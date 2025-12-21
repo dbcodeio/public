@@ -311,5 +311,6 @@
   "Authentication Profile Type": "Tipo de perfil de autenticación",
   "Authentication Profile Options": "Opciones del perfil de autenticación",
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "Habilitar verificación SQL (validación sintáctica y semántica). Deshabilitar para suprimir todas las advertencias en archivos SQL.",
-  "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Modo de confirmación automática predeterminado para nuevas conexiones ancladas. Si está deshabilitado, debe confirmar o revertir los cambios manualmente."
+  "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Modo de confirmación automática predeterminado para nuevas conexiones ancladas. Si está deshabilitado, debe confirmar o revertir los cambios manualmente.",
+  "Exact value from database - no conversion or formatting applied.": "Valor exacto de la base de datos - sin conversión ni formato aplicado."
 }
