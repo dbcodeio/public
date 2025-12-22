@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 1.22.4 - 2025-12-22
+
+### Changed
+
+- Language Server: Now enabled by default. Disable with `dbcode.useLanguageServer` setting if needed.
+- QuestDB: Now generally available (out of preview). #527
+
+### Fixed
+
+- BigQuery: Fixed stored procedure DDL script missing parameters.
+- BigQuery: Improved introspection to gracefully handle permission-denied errors. Dataset browsing now shows accessible objects (like procedures) even when table access is restricted.
+- Elasticsearch: Fixed connection errors with Elasticsearch 7.x and 8.x servers. #890
+- MongoDB: Fixed introspection error on system.profile when user lacks listIndexes permission. #863
+- PostgreSQL: Fixed connection failure when user lacks SELECT permission on pg_database view.
+
 ## 1.22.3 - 2025-12-21
 
 ### Changed
