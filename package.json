@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.22.0",
+    "version": "1.22.4",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -3363,8 +3363,8 @@
                     "dbcode.useLanguageServer": {
                         "order": 2,
                         "type": "boolean",
-                        "default": false,
-                        "markdownDescription": "%Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.%"
+                        "default": true,
+                        "markdownDescription": "%Enable DBCode SQL language server for diagnostics and completions.%"
                     },
                     "dbcode.enableLinting": {
                         "order": 2,
@@ -3679,12 +3679,14 @@
                     },
                     "dbcode.format.dateStyle": {
                         "type": "string",
-                        "default": "ISO 9075",
+                        "default": "Raw",
                         "enum": [
+                            "Raw",
                             "ISO 9075",
                             "Locale"
                         ],
                         "enumDescriptions": [
+                            "%Exact value from database - no conversion or formatting applied.%",
                             "%YYYY-MM-DD hh:mm:ss - Will include fractional sections and timezone if present.%",
                             "%Your computers locale format.%"
                         ],
@@ -5062,7 +5064,8 @@
         "dev:build": "npm run esbuild -- --sourcemap --watch",
         "dev:server": "npx tsx ./scripts/dev-server.ts",
         "test": "vitest run --coverage",
-        "test-e2e": "wdio run ./wdio.conf.ts",
+        "test:unit": "vitest run --project unit",
+        "test:integration": "vitest run --project integration",
         "esbuild": "npx tsx ./scripts/build.ts",
         "prepare": "husky install",
         "postinstall": "patch-package",
@@ -5087,9 +5090,6 @@
         "@biomejs/biome": "^2.1.2",
         "@chevrotain/types": "^11.0.3",
         "@socketsecurity/cli": "^1.0.0",
-        "@testcontainers/mssqlserver": "^10.13.2",
-        "@testcontainers/mysql": "^10.13.2",
-        "@testcontainers/postgresql": "^10.13.2",
         "@types/big.js": "^6.2.2",
         "@types/glob": "^8.1.0",
         "@types/html-escaper": "^3.0.2",
@@ -5116,17 +5116,13 @@
         "@types/vscode-notebook-renderer": "^1.72.3",
         "@vitest/coverage-v8": "^3.0.7",
         "@vscode/l10n-dev": "^0.0.35",
-        "@wdio/cli": "^9.2.1",
-        "@wdio/local-runner": "^9.2.1",
-        "@wdio/mocha-framework": "^9.1.3",
-        "@wdio/spec-reporter": "^9.1.3",
         "big.js": "^6.2.2",
         "esbuild": "^0.25.0",
         "esbuild-plugin-copy": "^2.1.1",
         "expect": "^29.7.0",
         "git-pull-run": "^1.5.0",
         "glob": "^11.0.1",
-        "happy-dom": "^17.4.4",
+        "happy-dom": "^20.0.11",
         "husky": "^9.1.7",
         "json5": "^2.2.3",
         "license-checker": "^25.0.1",
@@ -5138,16 +5134,14 @@
         "patch-package": "^8.0.0",
         "source-map": "^0.7.4",
         "svgtofont": "^6.3.1",
-        "testcontainers": "^10.13.2",
         "titleize": "^4.0.0",
         "ts-node": "^10.9.2",
         "tsx": "^4.19.3",
+        "undici": "^7.16.0",
         "vitest": "^3.0.7",
         "vscode-languageclient": "^9.0.1",
         "vscode-languageserver": "^9.0.1",
-        "vscode-languageserver-textdocument": "^1.0.11",
-        "wdio-vscode-service": "^6.1.2",
-        "wdio-wait-for": "^3.0.11"
+        "vscode-languageserver-textdocument": "^1.0.11"
     },
     "dependencies": {
         "@ag-grid-community/styles": "^32.3.4",
@@ -5165,6 +5159,7 @@
         "@duckdb/node-api": "^1.4.2-r.1",
         "@elastic/elasticsearch": "^9.0.1",
         "@google-cloud/bigquery": "^8.1.1",
+        "@google-cloud/resource-manager": "^6.2.1",
         "@libsql/client": "^0.14.0",
         "@modelcontextprotocol/sdk": "^1.19.1",
         "@monaco-editor/loader": "^1.4.0",

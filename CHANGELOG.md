@@ -1,5 +1,55 @@
 # CHANGELOG
 
+## 1.22.4 - 2025-12-22
+
+### Changed
+
+- Language Server: Now enabled by default. Disable with `dbcode.useLanguageServer` setting if needed.
+- QuestDB: Now generally available (out of preview). #527
+
+### Fixed
+
+- BigQuery: Fixed stored procedure DDL script missing parameters.
+- BigQuery: Improved introspection to gracefully handle permission-denied errors. Dataset browsing now shows accessible objects (like procedures) even when table access is restricted.
+- Elasticsearch: Fixed connection errors with Elasticsearch 7.x and 8.x servers. #890
+- MongoDB: Fixed introspection error on system.profile when user lacks listIndexes permission. #863
+- PostgreSQL: Fixed connection failure when user lacks SELECT permission on pg_database view.
+
+## 1.22.3 - 2025-12-21
+
+### Changed
+
+- Date/Time Display: Added "Raw" option to date style setting that preserves original database values without formatting or timezone conversion. Maintains full precision (microseconds) as stored in the database.
+
+## 1.22.2 - 2025-12-20
+
+### Changed
+
+- Parameters: Added support for positional parameters ($1, $2, etc.) outside of function bodies. #889
+- Authentication Profiles: Extended .pgpass and command auth profiles to CockroachDB, Greenplum, QuestDB, RisingWave, Timescale, and YugabyteDB.
+- Oracle: Added support for Oracle 11g when using Instant Client (Thick mode).
+
+### Fixed
+
+- Language Server: Fixed false "Unknown column" warnings for stored procedure/function parameters and DECLARE variables.
+- Language Server: Fixed JOIN hints not using table aliases in ON clause conditions (e.g., `ON a.id = b.user_id` now uses both aliases correctly).
+- Redis: Fixed authentication failing on Redis versions before 6.0 which don't support username in AUTH command. #888
+
+## 1.22.1 - 2025-12-19
+
+### Changed
+
+- Authentication Profiles: Added .pgpass file authentication profile for PostgreSQL.
+- BigQuery: Added support for cross-project browsing with separate billing project. Users can now browse datasets from external projects (e.g., `bigquery-public-data`) while using a different project for query billing.
+- Athena: Added workgroup support for organizations with IAM policies that restrict query execution to specific workgroups. #880
+
+### Fixed
+
+- Connections: Fixed SSL checkbox being locked for known hosts (AWS RDS, etc.) when using SSH tunnels. #883
+- Oracle: Fixed connection error on Oracle Free Docker containers where PRODUCT_COMPONENT_VERSION view returns empty results. #885
+- DuckDB: Fixed database file remaining locked after disconnecting. #884
+- Cloud Providers: Fixed schema caching failing on Windows due to invalid path characters in connection IDs.
+
 ## 1.22.0 - 2025-12-13
 
 ### Changed
