@@ -201,7 +201,6 @@
   "Table Name": "Tablo Adı",
   "Parameters for the formatter": "Biçimlendirici parametreleri",
   "Custom Column Formatters": "Özel Sütun Biçimlendiricileri",
-  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "Deneysel DBCode SQL dil sunucusunu etkinleştir (aktif sorgu tanılama ve otomatik tamamlama). Şu anda yalnızca MariaDB ve Postgres destekleniyor.",
   "Explain": "Açıkla",
   "Analyze": "Analiz Et",
   "Dry Run": "Deneme Çalıştırması",
@@ -312,5 +311,6 @@
   "Authentication Profile Options": "Kimlik Doğrulama Profili Seçenekleri",
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "SQL denetimini etkinleştir (sözdizimi ve anlamsal doğrulama). SQL dosyalarındaki tüm uyarıları gizlemek için devre dışı bırakın.",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Yeni sabitlenmiş bağlantılar için varsayılan otomatik onaylama modu. Devre dışı bırakıldığında, değişiklikleri manuel olarak onaylamanız veya geri almanız gerekir.",
-  "Exact value from database - no conversion or formatting applied.": "Veritabanından tam değer - dönüştürme veya biçimlendirme uygulanmadı."
+  "Exact value from database - no conversion or formatting applied.": "Veritabanından tam değer - dönüştürme veya biçimlendirme uygulanmadı.",
+  "Enable DBCode SQL language server for diagnostics and completions.": "Tanılama ve tamamlamalar için DBCode SQL dil sunucusunu etkinleştirin."
 }

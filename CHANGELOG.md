@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.23.0 - 2025-12-24
+
+### Changed
+
+- DynamoDB: Added DynamoDB (Preview). Supports AWS credential chain, access keys, auth profiles, and DynamoDB Local. #495, #887
+- Hive: Added Apache Hive (Preview). Supports HiveServer2 via Thrift protocol with TCP and HTTP transports. #661
+- Impala: Added Apache Impala (Preview). #190
+- RavenDB: Added RavenDB (Preview). #252
+
+### Fixed
+
+- Results: Fixed copy/paste not preserving null and boolean values between grid cells.
+
 ## 1.22.4 - 2025-12-22
 
 ### Changed

@@ -201,7 +201,6 @@
   "Table Name": "テーブル名",
   "Parameters for the formatter": "フォーマッタのパラメータ",
   "Custom Column Formatters": "カスタム列フォーマッタ",
-  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "実験的な DBCode SQL 言語サーバー (アクティブなステートメントの診断と補完) を有効にします。現時点では MariaDB と Postgres のみ対応。",
   "Explain": "実行計画",
   "Analyze": "分析",
   "Dry Run": "ドライラン",
@@ -312,5 +311,6 @@
   "Authentication Profile Options": "認証プロファイルオプション",
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "SQL リント機能を有効化（構文・セマンティック検証）。無効にすると SQL ファイルのすべての警告が抑制されます。",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "新しいピン留め接続のデフォルト自動コミットモード。無効にすると、変更を手動でコミットまたはロールバックする必要があります。",
-  "Exact value from database - no conversion or formatting applied.": "データベースの正確な値 - 変換や書式設定は適用されていません。"
+  "Exact value from database - no conversion or formatting applied.": "データベースの正確な値 - 変換や書式設定は適用されていません。",
+  "Enable DBCode SQL language server for diagnostics and completions.": "DBCode SQL 言語サーバーを有効にして、診断と補完機能を使用します。"
 }

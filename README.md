@@ -18,6 +18,7 @@ Connect to 40+ databases:
 	<img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white" alt="Oracle"/>
 	<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white" alt="MongoDB"/>
 	<img src="https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white" alt="Redis"/>
+	<img src="https://img.shields.io/badge/RavenDB-388EE9?style=flat" alt="RavenDB"/>
 	<img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white" alt="MariaDB"/>
 	<img src="https://img.shields.io/badge/DuckDB-FFF000?style=flat&logo=duckdb&logoColor=black" alt="DuckDB"/>
 	<img src="https://img.shields.io/badge/Snowflake-29B5E8?style=flat&logo=snowflake&logoColor=white" alt="Snowflake"/>
@@ -28,6 +29,8 @@ Connect to 40+ databases:
 	<img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat&logo=elasticsearch&logoColor=white" alt="Elasticsearch"/>
 	<img src="https://img.shields.io/badge/CockroachDB-6933FF?style=flat&logo=cockroachlabs&logoColor=white" alt="CockroachDB"/>
 	<img src="https://img.shields.io/badge/Trino-DD00A1?style=flat&logo=trino&logoColor=white" alt="Trino"/>
+	<img src="https://img.shields.io/badge/Hive-FDEE21?style=flat&logo=apachehive&logoColor=black" alt="Apache Hive"/>
+	<img src="https://img.shields.io/badge/Impala-00BCD4?style=flat" alt="Apache Impala"/>
 	<img src="https://img.shields.io/badge/Firebase-DD2C00?style=flat&logo=firebase&logoColor=white" alt="Firebase"/>
 	<img src="https://img.shields.io/badge/DynamoDB-4053D6?style=flat&logo=amazondynamodb&logoColor=white" alt="DynamoDB"/>
 	<img src="https://img.shields.io/badge/Redshift-8C4FFF?style=flat&logo=amazonredshift&logoColor=white" alt="Redshift"/>

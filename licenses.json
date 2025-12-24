@@ -1554,6 +1554,14 @@
         "repository": "https://github.com/remirror/remirror"
     },
     {
+        "name": "@rollup/rollup-linux-x64-gnu",
+        "direct": false,
+        "license": "MIT",
+        "licenseTxt": "# `@rollup/rollup-linux-x64-gnu`\n\nThis is the **x86_64-unknown-linux-gnu** binary for `rollup`",
+        "repository": "https://github.com/rollup/rollup",
+        "publisher": "Lukas Taegert-Atkinson"
+    },
+    {
         "name": "@shikijs/core",
         "direct": false,
         "license": "MIT",
@@ -5173,6 +5181,14 @@
         "publisher": "Xueqiao Xu"
     },
     {
+        "name": "hive-driver",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "MIT License\n\nCopyright (c) 2020 Volodymyr Liench\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+        "repository": "https://github.com/lenchv/hive-driver",
+        "publisher": "Liench Volodymyr"
+    },
+    {
         "name": "homedir-polyfill",
         "direct": false,
         "license": "MIT",
@@ -7825,6 +7841,14 @@
         "url": "http://tjholowaychuk.com"
     },
     {
+        "name": "ravendb",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "MIT License\r\n\r\nCopyright (c) 2017 Hibernating Rhinos LTD\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy\r\nof this software and associated documentation files (the \"Software\"), to deal\r\nin the Software without restriction, including without limitation the rights\r\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\r\ncopies of the Software, and to permit persons to whom the Software is\r\nfurnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all\r\ncopies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\r\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\r\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\r\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\r\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\r\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\r\nSOFTWARE.",
+        "repository": "https://github.com/ravendb/ravendb-nodejs-client",
+        "publisher": "Hibernating Rhinos"
+    },
+    {
         "name": "raw-body",
         "direct": false,
         "license": "MIT",
@@ -8203,6 +8227,14 @@
         "repository": "https://github.com/feross/safe-buffer",
         "publisher": "Feross Aboukhadijeh",
         "url": "http://feross.org"
+    },
+    {
+        "name": "safe-memory-cache",
+        "direct": false,
+        "license": "MIT",
+        "licenseTxt": "The MIT License (MIT)\n\nCopyright (c) 2016 Zbyszek Tenerowicz\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+        "repository": "https://github.com/naugtur/safe-memory-cache",
+        "publisher": "Zbyszek Tenerowicz"
     },
     {
         "name": "safe-stable-stringify",
