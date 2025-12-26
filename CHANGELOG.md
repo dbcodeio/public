@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.23.1 - 2025-12-26
+
+### Changed
+
+- MongoDB: Added authentication mechanism selection (SCRAM-SHA-1, SCRAM-SHA-256, X509, AWS, LDAP, Kerberos) to connection settings. #892
+
+### Fixed
+
+- Results: Fixed first cell not receiving focus when opening tables via Quick Open. #840
+- Results: Fixed ESC key not closing relationship sub-tables when focus was inside the nested grid.
+- Hive: Fixed materialized view DDL generation to output `CREATE MATERIALIZED VIEW` instead of `CREATE TABLE`.
+- MongoDB: Fixed connection string import not parsing query parameters (authSource, authMechanism, tls). #892
+
 ## 1.23.0 - 2025-12-24
 
 ### Changed
