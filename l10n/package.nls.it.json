@@ -201,7 +201,6 @@
   "Table Name": "Nome tabella",
   "Parameters for the formatter": "Parametri per il formattatore",
   "Custom Column Formatters": "Formattatori colonna personalizzati",
-  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "Abilita il server di linguaggio SQL DBCode sperimentale (diagnostica e completamento istruzioni attive). Al momento solo MariaDB e Postgres.",
   "Explain": "Spiega",
   "Analyze": "Analizza",
   "Dry Run": "Prova a secco",
@@ -312,5 +311,6 @@
   "Authentication Profile Options": "Opzioni Profilo di Autenticazione",
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "Abilita il controllo SQL (validazione sintattica e semantica). Disabilitare per eliminare tutti gli avvisi nei file SQL.",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Modalità auto-commit predefinita per le nuove connessioni fissate. Se disabilitata, è necessario confermare o annullare le modifiche manualmente.",
-  "Exact value from database - no conversion or formatting applied.": "Valore esatto dal database - nessuna conversione o formattazione applicata."
+  "Exact value from database - no conversion or formatting applied.": "Valore esatto dal database - nessuna conversione o formattazione applicata.",
+  "Enable DBCode SQL language server for diagnostics and completions.": "Abilita il server del linguaggio SQL DBCode per diagnostica e completamenti."
 }

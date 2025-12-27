@@ -201,7 +201,6 @@
   "Table Name": "資料表名稱",
   "Parameters for the formatter": "格式化程式的參數",
   "Custom Column Formatters": "自訂欄位格式化程式",
-  "Enable experimental DBCode SQL language server (active statement diagnostics and completions) MariaDB and Postgres only at the moment.": "啟用實驗性 DBCode SQL 語言伺服器（即時陳述式診斷和自動完成）目前僅支援 MariaDB 和 Postgres。",
   "Explain": "說明",
   "Analyze": "分析",
   "Dry Run": "模擬執行",
@@ -312,5 +311,6 @@
   "Authentication Profile Options": "驗證設定檔選項",
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "啟用 SQL 檢查（語法和語意驗證）。停用以隱藏 SQL 檔案中的所有警告。",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "新釘選連線的預設自動認可模式。停用時，必須手動認可或復原變更。",
-  "Exact value from database - no conversion or formatting applied.": "資料庫中的確切值 - 未套用任何轉換或格式化。"
+  "Exact value from database - no conversion or formatting applied.": "資料庫中的確切值 - 未套用任何轉換或格式化。",
+  "Enable DBCode SQL language server for diagnostics and completions.": "啟用 DBCode SQL 語言伺服器以取得診斷和自動完成功能。"
 }
