@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.23.2 - 2025-12-27
+
+### Changed
+
+- Hive: Added protocol version selection (V7 for Hive 1.2+, V10 for Hive 3+) to connection settings. #661
+
+### Fixed
+
+- Hive: Fixed transactional table detection for Hive 2.x to enable grid editing on ACID tables. #661
+- Access: Fixed download by hosting package in DBCode repository with manual file fallback for air-gapped environments. #546
+- BigQuery: Fixed functions incorrectly showing as procedures and added proper return type display.
+- BigQuery: Fixed DROP PROCEDURE and DROP FUNCTION commands to use correct syntax.
+
 ## 1.23.1 - 2025-12-26
 
 ### Changed

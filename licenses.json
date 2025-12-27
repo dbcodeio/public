@@ -9785,5 +9785,91 @@
         "repository": "https://github.com/wooorm/zwitch",
         "publisher": "Titus Wormer",
         "url": "https://wooorm.com"
+    },
+    {
+        "name": "Cql SQL Grammar (CqlParser)",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "The MIT License (MIT)\n\nCopyright (c) 2014 by Domagoj Kovačević\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and\nassociated documentation files (the \"Software\"), to deal in the Software without restriction,\nincluding without limitation the rights to use, copy, modify, merge, publish, distribute,\nsublicense, and/or sell copies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or\nsubstantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT\nNOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nProject : cql-parser; an ANTLR4 grammar for Apache Cassandra CQL  https://github.com/kdcro101cql-parser",
+        "repository": "https://github.com/kdcro101cql-parser",
+        "publisher": "by Domagoj Kovačević"
+    },
+    {
+        "name": "Databricks SQL Grammar (DatabricksLexer)",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "Databricks Database grammar.\nThe MIT License (MIT).\n\nCopyright (c) 2025, Michał Lorek.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+        "repository": "https://github.com/antlr/grammars-v4/tree/master/sql/databricks",
+        "publisher": "Michał Lorek."
+    },
+    {
+        "name": "Elasticsearch SQL Grammar (SqlBase)",
+        "direct": true,
+        "license": "Apache-2.0",
+        "licenseTxt": "[2017] Elasticsearch Incorporated. All Rights Reserved.\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+        "repository": "https://github.com/antlr/grammars-v4/tree/master/sql/elasticsearch",
+        "publisher": "Elasticsearch Inc."
+    },
+    {
+        "name": "Hive SQL Grammar (HiveLexer)",
+        "direct": true,
+        "license": "Apache-2.0",
+        "licenseTxt": "Licensed to the Apache Software Foundation (ASF) under one or more\n   contributor license agreements.  See the NOTICE file distributed with\n   this work for additional information regarding copyright ownership.\n   The ASF licenses this file to You under the Apache License, Version 2.0\n   (the \"License\"); you may not use this file except in compliance with\n   the License.  You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.",
+        "repository": "https://github.com/antlr/grammars-v4/tree/master/sql/hive",
+        "publisher": "Apache Software Foundation"
+    },
+    {
+        "name": "Mariadb SQL Grammar (MariaDBLexer)",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "MariaDB grammar\nThe MIT License (MIT).\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+        "repository": "https://github.com/antlr/grammars-v4/tree/master/sql/mariadb"
+    },
+    {
+        "name": "Oracle SQL Grammar (PlSqlLexer)",
+        "direct": true,
+        "license": "Apache-2.0",
+        "licenseTxt": "Oracle(c) PL/SQL 11g Parser\n\nCopyright (c) 2009-2011 Alexandre Porcelli <alexandre.porcelli@gmail.com>\nCopyright (c) 2015-2019 Ivan Kochurkin (KvanTTT, kvanttt@gmail.com, Positive Technologies).\nCopyright (c) 2017 Mark Adams <madams51703@gmail.com>\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n     http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+        "repository": "https://github.com/antlr/grammars-v4/tree/master/sql/oracle",
+        "publisher": "Alexandre Porcelli <alexandre.porcelli@gmail.com>, Ivan Kochurkin (KvanTTT, kvanttt@gmail.com, Positive Technologies)., Mark Adams <madams51703@gmail.com>"
+    },
+    {
+        "name": "Postgres SQL Grammar (PostgreSQLParser)",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "PostgreSQL grammar.\nThe MIT License (MIT).\nCopyright (c) 2021-2023, Oleksii Kovalov (Oleksii.Kovalov@outlook.com).\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+        "repository": "https://github.com/antlr/grammars-v4/tree/master/sql/postgres",
+        "publisher": "Oleksii Kovalov (Oleksii.Kovalov@outlook.com)."
+    },
+    {
+        "name": "Snowflake SQL Grammar (SnowflakeLexer)",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "Snowflake Database grammar.\nThe MIT License (MIT).\n\nCopyright (c) 2022, Michał Lorek.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+        "repository": "https://github.com/antlr/grammars-v4/tree/master/sql/snowflake",
+        "publisher": "Michał Lorek."
+    },
+    {
+        "name": "Sqlite SQL Grammar (SQLiteLexer)",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "The MIT License (MIT)\n\nCopyright (c) 2020 by Martin Mirchev\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and\nassociated documentation files (the \"Software\"), to deal in the Software without restriction,\nincluding without limitation the rights to use, copy, modify, merge, publish, distribute,\nsublicense, and/or sell copies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or\nsubstantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT\nNOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nProject : sqlite-parser; an ANTLR4 grammar for SQLite https://github.com/bkiers/sqlite-parser\nDeveloped by : Bart Kiers, bart@big-o.nl",
+        "repository": "https://github.com/bkiers/sqlite-parser",
+        "publisher": "by Martin Mirchev"
+    },
+    {
+        "name": "Trino SQL Grammar (TrinoLexer)",
+        "direct": true,
+        "license": "Apache-2.0",
+        "licenseTxt": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+        "repository": "https://github.com/antlr/grammars-v4/tree/master/sql/trino"
+    },
+    {
+        "name": "Tsql SQL Grammar (TSqlLexer)",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "T-SQL (Transact-SQL, MSSQL) grammar.\nThe MIT License (MIT).\nCopyright (c) 2017, Mark Adams (madams51703@gmail.com)\nCopyright (c) 2015-2017, Ivan Kochurkin (kvanttt@gmail.com), Positive Technologies.\nCopyright (c) 2016, Scott Ure (scott@redstormsoftware.com).\nCopyright (c) 2016, Rui Zhang (ruizhang.ccs@gmail.com).\nCopyright (c) 2016, Marcus Henriksson (kuseman80@gmail.com).\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+        "repository": "https://github.com/antlr/grammars-v4/tree/master/sql/tsql",
+        "publisher": "Mark Adams (madams51703@gmail.com), Ivan Kochurkin (kvanttt@gmail.com), Positive Technologies., Scott Ure (scott@redstormsoftware.com)., Rui Zhang (ruizhang.ccs@gmail.com)., Marcus Henriksson (kuseman80@gmail.com)."
     }
 ]
