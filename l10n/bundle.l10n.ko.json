@@ -2634,5 +2634,13 @@
   "DDL generation not supported for {0}": "{0}에 대한 DDL 생성이 지원되지 않습니다",
   "Partition Key": "파티션 키",
   "Sort Key": "정렬 키",
-  "Limited access to dataset '{0}'. Could not query: {1}. Some objects may not be shown.": "데이터 세트 '{0}'에 대한 액세스가 제한되었습니다. 쿼리할 수 없습니다: {1}. 일부 개체가 표시되지 않을 수 있습니다."
+  "Limited access to dataset '{0}'. Could not query: {1}. Some objects may not be shown.": "데이터 세트 '{0}'에 대한 액세스가 제한되었습니다. 쿼리할 수 없습니다: {1}. 일부 개체가 표시되지 않을 수 있습니다.",
+  "PLAIN (LDAP)": "PLAIN (LDAP)",
+  "GSSAPI (Kerberos)": "GSSAPI (Kerberos)",
+  "Protocol Version": "프로토콜 버전",
+  "V7 (Default - All versions)": "V7 (기본값 - 모든 버전)",
+  "V10 (Hive 3+ only)": "V10 (Hive 3+ 전용)",
+  "Proxy/Firewall Mode": "프록시/방화벽 모드",
+  "Enable if connections are being dropped by corporate proxies or firewalls.": "회사 프록시 또는 방화벽에 의해 연결이 끊어지는 경우 활성화합니다.",
+  "Configures aggressive keep-alive (1s probes), 10-minute socket timeout, and automatic retry on connection errors.": "적극적인 연결 유지(1초 프로브), 10분 소켓 시간 초과 및 연결 오류 시 자동 재시도를 구성합니다."
 }

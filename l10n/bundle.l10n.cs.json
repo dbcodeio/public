@@ -2634,5 +2634,13 @@
   "DDL generation not supported for {0}": "Generování DDL není podporováno pro {0}",
   "Partition Key": "Klíč oddílu",
   "Sort Key": "Klíč řazení",
-  "Limited access to dataset '{0}'. Could not query: {1}. Some objects may not be shown.": "Omezený přístup k datové sadě '{0}'. Nelze dotazovat: {1}. Některé objekty se nemusí zobrazit."
+  "Limited access to dataset '{0}'. Could not query: {1}. Some objects may not be shown.": "Omezený přístup k datové sadě '{0}'. Nelze dotazovat: {1}. Některé objekty se nemusí zobrazit.",
+  "PLAIN (LDAP)": "PLAIN (LDAP)",
+  "GSSAPI (Kerberos)": "GSSAPI (Kerberos)",
+  "Protocol Version": "Verze protokolu",
+  "V7 (Default - All versions)": "V7 (Výchozí - Všechny verze)",
+  "V10 (Hive 3+ only)": "V10 (Pouze Hive 3+)",
+  "Proxy/Firewall Mode": "Režim proxy/firewall",
+  "Enable if connections are being dropped by corporate proxies or firewalls.": "Povolte, pokud jsou připojení přerušována firemními proxy servery nebo firewally.",
+  "Configures aggressive keep-alive (1s probes), 10-minute socket timeout, and automatic retry on connection errors.": "Konfiguruje agresivní keep-alive (sondy 1s), 10minutový timeout socketu a automatické opakování při chybách připojení."
 }

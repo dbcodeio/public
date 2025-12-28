@@ -9834,6 +9834,13 @@
         "publisher": "Alexandre Porcelli <alexandre.porcelli@gmail.com>, Ivan Kochurkin (KvanTTT, kvanttt@gmail.com, Positive Technologies)., Mark Adams <madams51703@gmail.com>"
     },
     {
+        "name": "Partiql SQL Grammar (PartiQLTokens)",
+        "direct": true,
+        "license": "Apache-2.0",
+        "licenseTxt": "Copyright 2022 Amazon.com, Inc. or its affiliates.  All rights reserved.\n\nLicensed under the Apache License, Version 2.0 (the \"License\").\n You may not use this file except in compliance with the License.\nA copy of the License is located at:\n\n     http://aws.amazon.com/apache2.0/\n\n or in the \"license\" file accompanying this file. This file is distributed on an \"AS IS\" BASIS,\n WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific\n language governing permissions and limitations under the License.",
+        "repository": "https://github.com/antlr/grammars-v4/tree/master/sql/partiql"
+    },
+    {
         "name": "Postgres SQL Grammar (PostgreSQLParser)",
         "direct": true,
         "license": "MIT",

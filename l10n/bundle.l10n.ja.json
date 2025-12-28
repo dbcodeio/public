@@ -2637,5 +2637,13 @@
   "DDL generation not supported for {0}": "{0} の DDL 生成はサポートされていません",
   "Partition Key": "パーティションキー",
   "Sort Key": "ソートキー",
-  "Limited access to dataset '{0}'. Could not query: {1}. Some objects may not be shown.": "データセット '{0}' へのアクセスが制限されています。クエリできませんでした:{1}。一部のオブジェクトが表示されない可能性があります。"
+  "Limited access to dataset '{0}'. Could not query: {1}. Some objects may not be shown.": "データセット '{0}' へのアクセスが制限されています。クエリできませんでした:{1}。一部のオブジェクトが表示されない可能性があります。",
+  "PLAIN (LDAP)": "PLAIN (LDAP)",
+  "GSSAPI (Kerberos)": "GSSAPI (Kerberos)",
+  "Protocol Version": "プロトコルバージョン",
+  "V7 (Default - All versions)": "V7 (デフォルト - 全バージョン)",
+  "V10 (Hive 3+ only)": "V10 (Hive 3+ のみ)",
+  "Proxy/Firewall Mode": "プロキシ/ファイアウォールモード",
+  "Enable if connections are being dropped by corporate proxies or firewalls.": "企業のプロキシやファイアウォールによって接続が切断される場合に有効にします。",
+  "Configures aggressive keep-alive (1s probes), 10-minute socket timeout, and automatic retry on connection errors.": "アグレッシブなキープアライブ（1秒プローブ）、10分のソケットタイムアウト、接続エラー時の自動リトライを設定します。"
 }

@@ -2634,5 +2634,13 @@
   "DDL generation not supported for {0}": "Генерация DDL не поддерживается для {0}",
   "Partition Key": "Ключ раздела",
   "Sort Key": "Ключ сортировки",
-  "Limited access to dataset '{0}'. Could not query: {1}. Some objects may not be shown.": "Ограниченный доступ к набору данных '{0}'. Не удалось выполнить запрос: {1}. Некоторые объекты могут не отображаться."
+  "Limited access to dataset '{0}'. Could not query: {1}. Some objects may not be shown.": "Ограниченный доступ к набору данных '{0}'. Не удалось выполнить запрос: {1}. Некоторые объекты могут не отображаться.",
+  "PLAIN (LDAP)": "PLAIN (LDAP)",
+  "GSSAPI (Kerberos)": "GSSAPI (Kerberos)",
+  "Protocol Version": "Версия протокола",
+  "V7 (Default - All versions)": "V7 (По умолчанию - Все версии)",
+  "V10 (Hive 3+ only)": "V10 (Только Hive 3+)",
+  "Proxy/Firewall Mode": "Режим прокси/брандмауэра",
+  "Enable if connections are being dropped by corporate proxies or firewalls.": "Включите, если соединения прерываются корпоративными прокси или брандмауэрами.",
+  "Configures aggressive keep-alive (1s probes), 10-minute socket timeout, and automatic retry on connection errors.": "Настраивает агрессивный keep-alive (зонды 1с), таймаут сокета 10 минут и автоматический повтор при ошибках подключения."
 }

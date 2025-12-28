@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.23.3 - 2025-12-28
+
+### Fixed
+
+- PostgreSQL: Fixed introspection failing when user lacks access to system tables (pg_inherits, pg_trigger, pg_matviews, pg_policies, pg_foreign_server).
+- Zero Config: Fixed discovered connections not updating when adding folders. #900
+- MSSQL: Fixed DROP PROCEDURE and DROP FUNCTION commands to use correct syntax.
+- Oracle: Fixed DROP PROCEDURE and DROP FUNCTION commands to use correct syntax.
+- MySQL/MariaDB: Fixed DROP PROCEDURE and DROP FUNCTION commands to use correct syntax. #898
+- MySQL: Fixed procedures/functions not using DROP statement for alter workflow. #898
+
+
 ## 1.23.2 - 2025-12-27
 
 ### Changed

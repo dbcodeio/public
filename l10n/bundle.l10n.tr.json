@@ -2634,5 +2634,13 @@
   "DDL generation not supported for {0}": "{0} için DDL oluşturma desteklenmiyor",
   "Partition Key": "Bölüm anahtarı",
   "Sort Key": "Sıralama anahtarı",
-  "Limited access to dataset '{0}'. Could not query: {1}. Some objects may not be shown.": "'{0}' veri kümesine sınırlı erişim. Sorgulanamadı: {1}. Bazı nesneler gösterilmeyebilir."
+  "Limited access to dataset '{0}'. Could not query: {1}. Some objects may not be shown.": "'{0}' veri kümesine sınırlı erişim. Sorgulanamadı: {1}. Bazı nesneler gösterilmeyebilir.",
+  "PLAIN (LDAP)": "PLAIN (LDAP)",
+  "GSSAPI (Kerberos)": "GSSAPI (Kerberos)",
+  "Protocol Version": "Protokol Sürümü",
+  "V7 (Default - All versions)": "V7 (Varsayılan - Tüm sürümler)",
+  "V10 (Hive 3+ only)": "V10 (Yalnızca Hive 3+)",
+  "Proxy/Firewall Mode": "Proxy/Güvenlik Duvarı Modu",
+  "Enable if connections are being dropped by corporate proxies or firewalls.": "Kurumsal proxy veya güvenlik duvarları tarafından bağlantılar kesiliyorsa etkinleştirin.",
+  "Configures aggressive keep-alive (1s probes), 10-minute socket timeout, and automatic retry on connection errors.": "Agresif keep-alive (1s yoklama), 10 dakika soket zaman aşımı ve bağlantı hatalarında otomatik yeniden deneme yapılandırır."
 }

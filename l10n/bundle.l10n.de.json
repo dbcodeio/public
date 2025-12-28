@@ -2634,5 +2634,13 @@
   "DDL generation not supported for {0}": "DDL-Generierung für {0} nicht unterstützt",
   "Partition Key": "Partitionsschlüssel",
   "Sort Key": "Sortierschlüssel",
-  "Limited access to dataset '{0}'. Could not query: {1}. Some objects may not be shown.": "Eingeschränkter Zugriff auf Datensatz '{0}'. Abfrage nicht möglich: {1}. Einige Objekte werden möglicherweise nicht angezeigt."
+  "Limited access to dataset '{0}'. Could not query: {1}. Some objects may not be shown.": "Eingeschränkter Zugriff auf Datensatz '{0}'. Abfrage nicht möglich: {1}. Einige Objekte werden möglicherweise nicht angezeigt.",
+  "PLAIN (LDAP)": "PLAIN (LDAP)",
+  "GSSAPI (Kerberos)": "GSSAPI (Kerberos)",
+  "Protocol Version": "Protokollversion",
+  "V7 (Default - All versions)": "V7 (Standard - Alle Versionen)",
+  "V10 (Hive 3+ only)": "V10 (Nur Hive 3+)",
+  "Proxy/Firewall Mode": "Proxy-/Firewall-Modus",
+  "Enable if connections are being dropped by corporate proxies or firewalls.": "Aktivieren, wenn Verbindungen durch Unternehmens-Proxys oder Firewalls unterbrochen werden.",
+  "Configures aggressive keep-alive (1s probes), 10-minute socket timeout, and automatic retry on connection errors.": "Konfiguriert aggressives Keep-Alive (1s-Probes), 10-minütiges Socket-Timeout und automatische Wiederholung bei Verbindungsfehlern."
 }

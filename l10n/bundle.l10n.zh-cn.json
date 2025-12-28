@@ -2634,5 +2634,13 @@
   "DDL generation not supported for {0}": "不支持为 {0} 生成 DDL",
   "Partition Key": "分区键",
   "Sort Key": "排序键",
-  "Limited access to dataset '{0}'. Could not query: {1}. Some objects may not be shown.": "对数据集 '{0}' 的访问受限。无法查询:{1}。某些对象可能不会显示。"
+  "Limited access to dataset '{0}'. Could not query: {1}. Some objects may not be shown.": "对数据集 '{0}' 的访问受限。无法查询:{1}。某些对象可能不会显示。",
+  "PLAIN (LDAP)": "PLAIN (LDAP)",
+  "GSSAPI (Kerberos)": "GSSAPI (Kerberos)",
+  "Protocol Version": "协议版本",
+  "V7 (Default - All versions)": "V7 (默认 - 所有版本)",
+  "V10 (Hive 3+ only)": "V10 (仅 Hive 3+)",
+  "Proxy/Firewall Mode": "代理/防火墙模式",
+  "Enable if connections are being dropped by corporate proxies or firewalls.": "如果连接被企业代理或防火墙中断，请启用此选项。",
+  "Configures aggressive keep-alive (1s probes), 10-minute socket timeout, and automatic retry on connection errors.": "配置激进的保持连接（1秒探测）、10分钟套接字超时和连接错误时自动重试。"
 }
