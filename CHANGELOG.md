@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.23.4 - 2025-12-30
+
+### Changed
+
+- Editor: Added signature help for user-defined functions and procedures, showing parameter names, types, and active parameter position.
+
+### Fixed
+
+- SingleStore: Fixed introspection error due to missing generation_expression column. #903
+- Hive: Fixed introspection limited to 100 tables due to default fetch size. #904
+- ClickHouse: Fixed connection failure on legacy versions (< 21.11) due to missing comment column in system tables. #902
+
 ## 1.23.3 - 2025-12-28
 
 ### Fixed
