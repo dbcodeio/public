@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.24.0 - 2026-01-04
+
+### Changed
+
+- Neo4j/Memgraph: Added preview support. #572 #622 #617
+- PostgreSQL: Added "Truncate Cascade" option for tables to handle foreign key constraints.
+- Netezza: Added query cancellation support, removed from preview. #748
+- MSSQL: Added Windows Integrated Authentication (SSPI) (Testing).
+
+### Fixed
+
+- Connections: Fixed SSL/TLS settings not being preserved in "Copy Connection String" and "Import Connection String". #905
+- Hive: Not fetching all data during introspection. #904
+
 ## 1.23.4 - 2025-12-30
 
 ### Changed

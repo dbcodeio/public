@@ -107,7 +107,6 @@
   "Your computers locale format.": "您的電腦區域設定格式。",
   "Format to display dates and times in.": "顯示日期和時間的格式。",
   "Cloud Providers, Connections and Tunnels": "雲端供應商、連接與通道",
-  "Sparkle": "Sparkle",
   "Create New DBCode Notebook": "建立新的 DBCode 筆記本",
   "Create New SQL File": "建立新的 SQL 檔案",
   "New SQL File": "新增 SQL 檔案",
@@ -312,5 +311,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "啟用 SQL 檢查（語法和語意驗證）。停用以隱藏 SQL 檔案中的所有警告。",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "新釘選連線的預設自動認可模式。停用時，必須手動認可或復原變更。",
   "Exact value from database - no conversion or formatting applied.": "資料庫中的確切值 - 未套用任何轉換或格式化。",
-  "Enable DBCode SQL language server for diagnostics and completions.": "啟用 DBCode SQL 語言伺服器以取得診斷和自動完成功能。"
+  "Enable DBCode SQL language server for diagnostics and completions.": "啟用 DBCode SQL 語言伺服器以取得診斷和自動完成功能。",
+  "Truncate Cascade": "階層式截斷"
 }

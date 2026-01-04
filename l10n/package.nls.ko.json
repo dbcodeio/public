@@ -107,7 +107,6 @@
   "Your computers locale format.": "컴퓨터 로케일 형식",
   "Format to display dates and times in.": "날짜 및 시간 표시 형식",
   "Cloud Providers, Connections and Tunnels": "클라우드 공급자, 연결 및 터널",
-  "Sparkle": "Sparkle",
   "Create New DBCode Notebook": "새 DBCode Notebook 만들기",
   "Create New SQL File": "새 SQL 파일 만들기",
   "New SQL File": "새 SQL 파일",
@@ -312,5 +311,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "SQL 린팅 활성화(구문 및 의미 검증). 비활성화하면 SQL 파일의 모든 경고가 숨겨집니다.",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "새 고정된 연결의 기본 자동 커밋 모드. 비활성화 시 변경 사항을 수동으로 커밋하거나 롤백해야 합니다.",
   "Exact value from database - no conversion or formatting applied.": "데이터베이스의 정확한 값 - 변환이나 서식 적용 없음.",
-  "Enable DBCode SQL language server for diagnostics and completions.": "진단 및 자동 완성을 위해 DBCode SQL 언어 서버를 활성화합니다."
+  "Enable DBCode SQL language server for diagnostics and completions.": "진단 및 자동 완성을 위해 DBCode SQL 언어 서버를 활성화합니다.",
+  "Truncate Cascade": "계단식 자르기"
 }

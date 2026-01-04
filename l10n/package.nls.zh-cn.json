@@ -107,7 +107,6 @@
   "Your computers locale format.": "计算机的区域设置格式。",
   "Format to display dates and times in.": "日期和时间的显示格式。",
   "Cloud Providers, Connections and Tunnels": "云提供商、连接和隧道",
-  "Sparkle": "闪光",
   "Create New DBCode Notebook": "创建新的 DBCode 笔记本",
   "Create New SQL File": "创建新的 SQL 文件",
   "New SQL File": "新建 SQL 文件",
@@ -312,5 +311,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "启用 SQL 检查（语法和语义验证）。禁用以隐藏 SQL 文件中的所有警告。",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "新固定连接的默认自动提交模式。禁用时，必须手动提交或回滚更改。",
   "Exact value from database - no conversion or formatting applied.": "数据库中的精确值 - 未应用任何转换或格式化。",
-  "Enable DBCode SQL language server for diagnostics and completions.": "启用 DBCode SQL 语言服务器以获取诊断和自动完成功能。"
+  "Enable DBCode SQL language server for diagnostics and completions.": "启用 DBCode SQL 语言服务器以获取诊断和自动完成功能。",
+  "Truncate Cascade": "级联截断"
 }

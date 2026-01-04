@@ -107,7 +107,6 @@
   "Your computers locale format.": "コンピューターのロケール形式。",
   "Format to display dates and times in.": "日付と時刻の表示形式。",
   "Cloud Providers, Connections and Tunnels": "クラウドプロバイダー、接続、トンネル",
-  "Sparkle": "スパークル",
   "Create New DBCode Notebook": "新しい DBCode ノートブックを作成",
   "Create New SQL File": "新しい SQL ファイルを作成",
   "New SQL File": "新しい SQL ファイル",
@@ -312,5 +311,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "SQL リント機能を有効化（構文・セマンティック検証）。無効にすると SQL ファイルのすべての警告が抑制されます。",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "新しいピン留め接続のデフォルト自動コミットモード。無効にすると、変更を手動でコミットまたはロールバックする必要があります。",
   "Exact value from database - no conversion or formatting applied.": "データベースの正確な値 - 変換や書式設定は適用されていません。",
-  "Enable DBCode SQL language server for diagnostics and completions.": "DBCode SQL 言語サーバーを有効にして、診断と補完機能を使用します。"
+  "Enable DBCode SQL language server for diagnostics and completions.": "DBCode SQL 言語サーバーを有効にして、診断と補完機能を使用します。",
+  "Truncate Cascade": "カスケード切り詰め"
 }

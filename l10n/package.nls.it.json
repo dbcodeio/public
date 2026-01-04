@@ -107,7 +107,6 @@
   "Your computers locale format.": "Formato locale del computer.",
   "Format to display dates and times in.": "Formato di visualizzazione per date e ore.",
   "Cloud Providers, Connections and Tunnels": "Provider cloud, connessioni e tunnel",
-  "Sparkle": "Sparkle",
   "Create New DBCode Notebook": "Crea nuovo notebook DBCode",
   "Create New SQL File": "Crea nuovo file SQL",
   "New SQL File": "Nuovo file SQL",
@@ -312,5 +311,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "Abilita il controllo SQL (validazione sintattica e semantica). Disabilitare per eliminare tutti gli avvisi nei file SQL.",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Modalità auto-commit predefinita per le nuove connessioni fissate. Se disabilitata, è necessario confermare o annullare le modifiche manualmente.",
   "Exact value from database - no conversion or formatting applied.": "Valore esatto dal database - nessuna conversione o formattazione applicata.",
-  "Enable DBCode SQL language server for diagnostics and completions.": "Abilita il server del linguaggio SQL DBCode per diagnostica e completamenti."
+  "Enable DBCode SQL language server for diagnostics and completions.": "Abilita il server del linguaggio SQL DBCode per diagnostica e completamenti.",
+  "Truncate Cascade": "Tronca a cascata"
 }

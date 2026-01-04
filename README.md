@@ -54,6 +54,8 @@ Connect to 40+ databases:
 	<img src="https://img.shields.io/badge/RisingWave-0055FF?style=flat" alt="RisingWave"/>
 	<img src="https://img.shields.io/badge/Greenplum-6DB33F?style=flat" alt="Greenplum"/>
 	<img src="https://img.shields.io/badge/MS%20Access-A4373A?style=flat&logo=microsoftaccess&logoColor=white" alt="MS Access"/>
+	<img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat&logo=neo4j&logoColor=white" alt="Neo4j"/>
+	<img src="https://img.shields.io/badge/Memgraph-FB6E00?style=flat" alt="Memgraph"/>
 </p>
 
 <p align="center">
