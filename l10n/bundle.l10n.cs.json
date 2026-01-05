@@ -2657,5 +2657,10 @@
   "Error deleting nodes with label {0}: {1}": "Chyba při odstraňování uzlů s popiskem {0}: {1}",
   "Authenticate as a Windows user": "Ověřit jako uživatel Windows",
   "Windows Integrated": "Integrace Windows",
-  "Use current Windows login (Windows only)": "Použít aktuální přihlášení Windows (pouze Windows)"
+  "Use current Windows login (Windows only)": "Použít aktuální přihlášení Windows (pouze Windows)",
+  "TCP/IP": "TCP/IP",
+  "Named Pipe / LocalDB (Windows only)": "Named Pipe / LocalDB (pouze Windows)",
+  "Named Pipe / LocalDB Instance": "Instance Named Pipe / LocalDB",
+  "LocalDB: Enter the instance name (e.g., MSSQLLocalDB)": "LocalDB: Zadejte název instance (např. MSSQLLocalDB)",
+  "Named Pipe: Enter the full path (e.g., \\\\.\\pipe\\sql\\query)": "Named Pipe: Zadejte úplnou cestu (např. \\\\.\\pipe\\sql\\query)"
 }

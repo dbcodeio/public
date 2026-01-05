@@ -2657,5 +2657,10 @@
   "Error deleting nodes with label {0}: {1}": "Erreur lors de la suppression des nœuds avec l'étiquette {0} : {1}",
   "Authenticate as a Windows user": "S'authentifier en tant qu'utilisateur Windows",
   "Windows Integrated": "Intégration Windows",
-  "Use current Windows login (Windows only)": "Utiliser la connexion Windows actuelle (Windows uniquement)"
+  "Use current Windows login (Windows only)": "Utiliser la connexion Windows actuelle (Windows uniquement)",
+  "TCP/IP": "TCP/IP",
+  "Named Pipe / LocalDB (Windows only)": "Canal nommé / LocalDB (Windows uniquement)",
+  "Named Pipe / LocalDB Instance": "Instance de canal nommé / LocalDB",
+  "LocalDB: Enter the instance name (e.g., MSSQLLocalDB)": "LocalDB : Saisissez le nom de l'instance (ex. MSSQLLocalDB)",
+  "Named Pipe: Enter the full path (e.g., \\\\.\\pipe\\sql\\query)": "Canal nommé : Saisissez le chemin complet (ex. \\\\.\\pipe\\sql\\query)"
 }

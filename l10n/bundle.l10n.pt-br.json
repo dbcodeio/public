@@ -1826,5 +1826,10 @@
   "Error deleting nodes with label {0}: {1}": "Erro ao excluir nós com o rótulo {0}: {1}",
   "Authenticate as a Windows user": "Autenticar como usuário do Windows",
   "Windows Integrated": "Integração do Windows",
-  "Use current Windows login (Windows only)": "Usar o login atual do Windows (somente Windows)"
+  "Use current Windows login (Windows only)": "Usar o login atual do Windows (somente Windows)",
+  "TCP/IP": "TCP/IP",
+  "Named Pipe / LocalDB (Windows only)": "Named Pipe / LocalDB (somente Windows)",
+  "Named Pipe / LocalDB Instance": "Instância Named Pipe / LocalDB",
+  "LocalDB: Enter the instance name (e.g., MSSQLLocalDB)": "LocalDB: Insira o nome da instância (ex. MSSQLLocalDB)",
+  "Named Pipe: Enter the full path (e.g., \\\\.\\pipe\\sql\\query)": "Named Pipe: Insira o caminho completo (ex. \\\\.\\pipe\\sql\\query)"
 }

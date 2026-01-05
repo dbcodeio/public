@@ -2657,5 +2657,10 @@
   "Error deleting nodes with label {0}: {1}": "{0} etiketine sahip düğümler silinirken hata: {1}",
   "Authenticate as a Windows user": "Windows kullanıcısı olarak kimlik doğrula",
   "Windows Integrated": "Windows Tümleşik",
-  "Use current Windows login (Windows only)": "Geçerli Windows oturumunu kullan (yalnızca Windows)"
+  "Use current Windows login (Windows only)": "Geçerli Windows oturumunu kullan (yalnızca Windows)",
+  "TCP/IP": "TCP/IP",
+  "Named Pipe / LocalDB (Windows only)": "Named Pipe / LocalDB (yalnızca Windows)",
+  "Named Pipe / LocalDB Instance": "Named Pipe / LocalDB Örneği",
+  "LocalDB: Enter the instance name (e.g., MSSQLLocalDB)": "LocalDB: Örnek adını girin (örn. MSSQLLocalDB)",
+  "Named Pipe: Enter the full path (e.g., \\\\.\\pipe\\sql\\query)": "Named Pipe: Tam yolu girin (örn. \\\\.\\pipe\\sql\\query)"
 }

@@ -2660,5 +2660,10 @@
   "Error deleting nodes with label {0}: {1}": "ラベル {0} を持つノードの削除中にエラーが発生しました: {1}",
   "Authenticate as a Windows user": "Windows ユーザーとして認証",
   "Windows Integrated": "Windows 統合",
-  "Use current Windows login (Windows only)": "現在の Windows ログインを使用 (Windows のみ)"
+  "Use current Windows login (Windows only)": "現在の Windows ログインを使用 (Windows のみ)",
+  "TCP/IP": "TCP/IP",
+  "Named Pipe / LocalDB (Windows only)": "名前付きパイプ / LocalDB (Windows のみ)",
+  "Named Pipe / LocalDB Instance": "名前付きパイプ / LocalDB インスタンス",
+  "LocalDB: Enter the instance name (e.g., MSSQLLocalDB)": "LocalDB: インスタンス名を入力 (例: MSSQLLocalDB)",
+  "Named Pipe: Enter the full path (e.g., \\\\.\\pipe\\sql\\query)": "名前付きパイプ: フルパスを入力 (例: \\\\.\\pipe\\sql\\query)"
 }

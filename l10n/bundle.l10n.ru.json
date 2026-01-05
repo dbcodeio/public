@@ -2657,5 +2657,10 @@
   "Error deleting nodes with label {0}: {1}": "Ошибка удаления узлов с меткой {0}: {1}",
   "Authenticate as a Windows user": "Аутентификация как пользователь Windows",
   "Windows Integrated": "Интеграция Windows",
-  "Use current Windows login (Windows only)": "Использовать текущий вход Windows (только Windows)"
+  "Use current Windows login (Windows only)": "Использовать текущий вход Windows (только Windows)",
+  "TCP/IP": "TCP/IP",
+  "Named Pipe / LocalDB (Windows only)": "Named Pipe / LocalDB (только Windows)",
+  "Named Pipe / LocalDB Instance": "Экземпляр Named Pipe / LocalDB",
+  "LocalDB: Enter the instance name (e.g., MSSQLLocalDB)": "LocalDB: Введите имя экземпляра (напр. MSSQLLocalDB)",
+  "Named Pipe: Enter the full path (e.g., \\\\.\\pipe\\sql\\query)": "Named Pipe: Введите полный путь (напр. \\\\.\\pipe\\sql\\query)"
 }

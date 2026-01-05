@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.24.1 - 2026-01-05
+
+### Changed
+
+- MSSQL: Added Named Pipe and LocalDB connection support for Windows, allowing connections via named pipes or LocalDB instance. #497
+- Neo4j/Memgraph: Added relationship visualization to entity diagrams, showing connections between Labels.
+
+### Fixed
+
+- Hive: Fixed introspection failure due to integer overflow in HiveServer2. #904
+
 ## 1.24.0 - 2026-01-04
 
 ### Changed

@@ -2657,5 +2657,10 @@
   "Error deleting nodes with label {0}: {1}": "删除带有标签 {0} 的节点时出错：{1}",
   "Authenticate as a Windows user": "以 Windows 用户身份进行身份验证",
   "Windows Integrated": "Windows 集成",
-  "Use current Windows login (Windows only)": "使用当前 Windows 登录（仅限 Windows）"
+  "Use current Windows login (Windows only)": "使用当前 Windows 登录（仅限 Windows）",
+  "TCP/IP": "TCP/IP",
+  "Named Pipe / LocalDB (Windows only)": "命名管道 / LocalDB (仅限 Windows)",
+  "Named Pipe / LocalDB Instance": "命名管道 / LocalDB 实例",
+  "LocalDB: Enter the instance name (e.g., MSSQLLocalDB)": "LocalDB: 输入实例名称 (例如 MSSQLLocalDB)",
+  "Named Pipe: Enter the full path (e.g., \\\\.\\pipe\\sql\\query)": "命名管道: 输入完整路径 (例如 \\\\.\\pipe\\sql\\query)"
 }

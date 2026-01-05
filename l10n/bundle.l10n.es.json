@@ -2659,5 +2659,10 @@
   "Error deleting nodes with label {0}: {1}": "Error al eliminar nodos con la etiqueta {0}: {1}",
   "Authenticate as a Windows user": "Autenticar como usuario de Windows",
   "Windows Integrated": "Integración de Windows",
-  "Use current Windows login (Windows only)": "Usar el inicio de sesión actual de Windows (solo Windows)"
+  "Use current Windows login (Windows only)": "Usar el inicio de sesión actual de Windows (solo Windows)",
+  "TCP/IP": "TCP/IP",
+  "Named Pipe / LocalDB (Windows only)": "Named Pipe / LocalDB (solo Windows)",
+  "Named Pipe / LocalDB Instance": "Instancia Named Pipe / LocalDB",
+  "LocalDB: Enter the instance name (e.g., MSSQLLocalDB)": "LocalDB: Ingrese el nombre de la instancia (ej. MSSQLLocalDB)",
+  "Named Pipe: Enter the full path (e.g., \\\\.\\pipe\\sql\\query)": "Named Pipe: Ingrese la ruta completa (ej. \\\\.\\pipe\\sql\\query)"
 }

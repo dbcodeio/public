@@ -2657,5 +2657,10 @@
   "Error deleting nodes with label {0}: {1}": "레이블 {0}이(가) 있는 노드 삭제 중 오류 발생: {1}",
   "Authenticate as a Windows user": "Windows 사용자로 인증",
   "Windows Integrated": "Windows 통합",
-  "Use current Windows login (Windows only)": "현재 Windows 로그인 사용 (Windows만 해당)"
+  "Use current Windows login (Windows only)": "현재 Windows 로그인 사용 (Windows만 해당)",
+  "TCP/IP": "TCP/IP",
+  "Named Pipe / LocalDB (Windows only)": "명명된 파이프 / LocalDB (Windows 전용)",
+  "Named Pipe / LocalDB Instance": "명명된 파이프 / LocalDB 인스턴스",
+  "LocalDB: Enter the instance name (e.g., MSSQLLocalDB)": "LocalDB: 인스턴스 이름 입력 (예: MSSQLLocalDB)",
+  "Named Pipe: Enter the full path (e.g., \\\\.\\pipe\\sql\\query)": "명명된 파이프: 전체 경로 입력 (예: \\\\.\\pipe\\sql\\query)"
 }

@@ -2657,5 +2657,10 @@
   "Error deleting nodes with label {0}: {1}": "Błąd podczas usuwania węzłów z etykietą {0}: {1}",
   "Authenticate as a Windows user": "Uwierzytelnij jako użytkownik Windows",
   "Windows Integrated": "Integracja z Windows",
-  "Use current Windows login (Windows only)": "Użyj bieżącego logowania do Windows (tylko Windows)"
+  "Use current Windows login (Windows only)": "Użyj bieżącego logowania do Windows (tylko Windows)",
+  "TCP/IP": "TCP/IP",
+  "Named Pipe / LocalDB (Windows only)": "Named Pipe / LocalDB (tylko Windows)",
+  "Named Pipe / LocalDB Instance": "Instancja Named Pipe / LocalDB",
+  "LocalDB: Enter the instance name (e.g., MSSQLLocalDB)": "LocalDB: Wprowadź nazwę instancji (np. MSSQLLocalDB)",
+  "Named Pipe: Enter the full path (e.g., \\\\.\\pipe\\sql\\query)": "Named Pipe: Wprowadź pełną ścieżkę (np. \\\\.\\pipe\\sql\\query)"
 }

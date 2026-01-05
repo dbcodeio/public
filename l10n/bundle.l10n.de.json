@@ -2657,5 +2657,10 @@
   "Error deleting nodes with label {0}: {1}": "Fehler beim Löschen der Knoten mit Label {0}: {1}",
   "Authenticate as a Windows user": "Als Windows-Benutzer authentifizieren",
   "Windows Integrated": "Windows-Integration",
-  "Use current Windows login (Windows only)": "Aktuelle Windows-Anmeldung verwenden (nur Windows)"
+  "Use current Windows login (Windows only)": "Aktuelle Windows-Anmeldung verwenden (nur Windows)",
+  "TCP/IP": "TCP/IP",
+  "Named Pipe / LocalDB (Windows only)": "Named Pipe / LocalDB (nur Windows)",
+  "Named Pipe / LocalDB Instance": "Named Pipe / LocalDB-Instanz",
+  "LocalDB: Enter the instance name (e.g., MSSQLLocalDB)": "LocalDB: Instanznamen eingeben (z. B. MSSQLLocalDB)",
+  "Named Pipe: Enter the full path (e.g., \\\\.\\pipe\\sql\\query)": "Named Pipe: Vollständigen Pfad eingeben (z. B. \\\\.\\pipe\\sql\\query)"
 }
