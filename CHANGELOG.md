@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.25.0 - 2026-01-07
+
+### Changed
+
+- SurrealDB: Added preview support for SurrealDB with namespace/database browsing, SurrealQL queries, and document editing. #254
+- InfluxDB: Added preview support for InfluxDB 3 with SQL query execution, line protocol writes, and soft/hard delete options. #168
+- Results: Column header tooltips now show datatype info and column comments (where available). #669
+- Inspector: NoSQL databases now allow the inspector JSON mode to be editable, as well as the form mode to add remove columns.
+- Inspector: If selecting multiple rows, you can now edit the value for all selected rows at once.
+- Inspector: Now shows the data type of each column in the form view and comments where available.
+
+### Fixed
+
+- MongoDB: You can now insert a document into a blank collection.
+- Editor: Fixed format-on-paste mangling pasted values like UUIDs by adding spaces around hyphens. #896
+
 ## 1.24.1 - 2026-01-05
 
 ### Changed

@@ -27,6 +27,7 @@ Connect to 40+ databases:
 	<img src="https://img.shields.io/badge/ClickHouse-FFCC01?style=flat&logo=clickhouse&logoColor=black" alt="ClickHouse"/>
 	<img src="https://img.shields.io/badge/Cassandra-1287B1?style=flat&logo=apachecassandra&logoColor=white" alt="Cassandra"/>
 	<img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat&logo=elasticsearch&logoColor=white" alt="Elasticsearch"/>
+	<img src="https://img.shields.io/badge/InfluxDB-22ADF6?style=flat&logo=influxdb&logoColor=white" alt="InfluxDB"/>
 	<img src="https://img.shields.io/badge/CockroachDB-6933FF?style=flat&logo=cockroachlabs&logoColor=white" alt="CockroachDB"/>
 	<img src="https://img.shields.io/badge/Trino-DD00A1?style=flat&logo=trino&logoColor=white" alt="Trino"/>
 	<img src="https://img.shields.io/badge/Hive-FDEE21?style=flat&logo=apachehive&logoColor=black" alt="Apache Hive"/>
@@ -56,6 +57,7 @@ Connect to 40+ databases:
 	<img src="https://img.shields.io/badge/MS%20Access-A4373A?style=flat&logo=microsoftaccess&logoColor=white" alt="MS Access"/>
 	<img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat&logo=neo4j&logoColor=white" alt="Neo4j"/>
 	<img src="https://img.shields.io/badge/Memgraph-FB6E00?style=flat" alt="Memgraph"/>
+	<img src="https://img.shields.io/badge/SurrealDB-FF00A0?style=flat&logo=surrealdb&logoColor=white" alt="SurrealDB"/>
 </p>
 
 <p align="center">
