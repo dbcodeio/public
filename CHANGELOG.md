@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.26.1 - 2026-01-08
+
+### Fixed
+
+- Results: Fixed pivot mode calculating incorrect aggregates for decimal values with trailing zeros (e.g., 175.20). #913
+
 ## 1.26.0 - 2026-01-08
 
 ### Changed
