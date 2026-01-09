@@ -312,5 +312,11 @@
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "新釘選連線的預設自動認可模式。停用時，必須手動認可或復原變更。",
   "Exact value from database - no conversion or formatting applied.": "資料庫中的確切值 - 未套用任何轉換或格式化。",
   "Enable DBCode SQL language server for diagnostics and completions.": "啟用 DBCode SQL 語言伺服器以取得診斷和自動完成功能。",
-  "Truncate Cascade": "階層式截斷"
+  "Truncate Cascade": "階層式截斷",
+  "View Tunnel Logs": "檢視通道記錄檔",
+  "Show column comments below column names in result headers.": "在結果標題的欄名下方顯示欄註解。",
+  "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "命令通道要執行的命令（例如：cloud-sql-auth-proxy、kubectl）",
+  "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "命令引數。變數：{localPort}、{remoteHost}、{remotePort}、{database}",
+  "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "在 stdout/stderr 中比對的正規表示式模式，指示通道已就緒",
+  "Timeout in milliseconds to wait for the tunnel to become ready": "等待通道就緒的逾時時間（毫秒）"
 }

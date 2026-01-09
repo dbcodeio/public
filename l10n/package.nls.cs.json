@@ -312,5 +312,11 @@
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Výchozí režim automatického potvrzování pro nová připnutá připojení. Pokud je zakázáno, musíte změny potvrdit nebo vrátit ručně.",
   "Exact value from database - no conversion or formatting applied.": "Přesná hodnota z databáze - nebyla použita žádná konverze ani formátování.",
   "Enable DBCode SQL language server for diagnostics and completions.": "Povolte jazykový server DBCode SQL pro diagnostiku a doplňování.",
-  "Truncate Cascade": "Kaskádově zkrátit"
+  "Truncate Cascade": "Kaskádově zkrátit",
+  "View Tunnel Logs": "Zobrazit logy tunelu",
+  "Show column comments below column names in result headers.": "Zobrazit komentáře sloupců pod názvy sloupců v záhlavích výsledků.",
+  "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "Příkaz pro příkazové tunely (např. cloud-sql-auth-proxy, kubectl)",
+  "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "Argumenty pro příkaz. Proměnné: {localPort}, {remoteHost}, {remotePort}, {database}",
+  "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "Regex vzor pro hledání v stdout/stderr indikující, že tunel je připraven",
+  "Timeout in milliseconds to wait for the tunnel to become ready": "Časový limit v milisekundách pro čekání na připravenost tunelu"
 }

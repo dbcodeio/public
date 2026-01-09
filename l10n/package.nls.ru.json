@@ -312,5 +312,11 @@
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Режим автоматической фиксации по умолчанию для новых закрепленных подключений. При отключении необходимо вручную фиксировать или откатывать изменения.",
   "Exact value from database - no conversion or formatting applied.": "Точное значение из базы данных - без преобразования или форматирования.",
   "Enable DBCode SQL language server for diagnostics and completions.": "Включить языковой сервер SQL DBCode для диагностики и автодополнения.",
-  "Truncate Cascade": "Очистить каскадно"
+  "Truncate Cascade": "Очистить каскадно",
+  "View Tunnel Logs": "Просмотр журналов туннеля",
+  "Show column comments below column names in result headers.": "Показывать комментарии к столбцам под именами столбцов в заголовках результатов.",
+  "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "Команда для командных туннелей (напр: cloud-sql-auth-proxy, kubectl)",
+  "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "Аргументы команды. Переменные: {localPort}, {remoteHost}, {remotePort}, {database}",
+  "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "Regex-шаблон для поиска в stdout/stderr, указывающий на готовность туннеля",
+  "Timeout in milliseconds to wait for the tunnel to become ready": "Таймаут в миллисекундах ожидания готовности туннеля"
 }

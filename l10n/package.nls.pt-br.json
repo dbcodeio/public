@@ -312,5 +312,11 @@
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Modo de confirmação automática padrão para novas conexões fixadas. Quando desabilitado, você deve confirmar ou reverter as alterações manualmente.",
   "Exact value from database - no conversion or formatting applied.": "Valor exato do banco de dados - nenhuma conversão ou formatação aplicada.",
   "Enable DBCode SQL language server for diagnostics and completions.": "Habilite o servidor de linguagem SQL DBCode para diagnósticos e preenchimentos automáticos.",
-  "Truncate Cascade": "Truncar em cascata"
+  "Truncate Cascade": "Truncar em cascata",
+  "View Tunnel Logs": "Ver logs do túnel",
+  "Show column comments below column names in result headers.": "Mostrar comentários das colunas abaixo dos nomes das colunas nos cabeçalhos de resultados.",
+  "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "Comando a executar para túneis de comando (ex: cloud-sql-auth-proxy, kubectl)",
+  "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "Argumentos para o comando. Variáveis: {localPort}, {remoteHost}, {remotePort}, {database}",
+  "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "Padrão regex para buscar em stdout/stderr indicando que o túnel está pronto",
+  "Timeout in milliseconds to wait for the tunnel to become ready": "Tempo limite em milissegundos para aguardar o túnel ficar pronto"
 }

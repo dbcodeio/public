@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.26.1",
+    "version": "1.26.2",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -702,6 +702,12 @@
                 "title": "%Delete Tunnel%",
                 "category": "DBCode",
                 "icon": "$(trash)"
+            },
+            {
+                "command": "dbcode.tunnels.viewLogs",
+                "title": "%View Tunnel Logs%",
+                "category": "DBCode",
+                "icon": "$(output)"
             },
             {
                 "command": "dbcode.favorites.removeAll",
@@ -1484,14 +1490,19 @@
                     "group": "inline@3"
                 },
                 {
-                    "command": "dbcode.tunnels.edit",
+                    "command": "dbcode.tunnels.viewLogs",
                     "when": "view == dbcode.tunnels.view",
                     "group": "inline@1"
                 },
                 {
-                    "command": "dbcode.tunnels.delete",
+                    "command": "dbcode.tunnels.edit",
                     "when": "view == dbcode.tunnels.view",
                     "group": "inline@2"
+                },
+                {
+                    "command": "dbcode.tunnels.delete",
+                    "when": "view == dbcode.tunnels.view",
+                    "group": "inline@3"
                 },
                 {
                     "command": "dbcode.history.loadQuery",
@@ -3719,6 +3730,12 @@
                         "type": "boolean",
                         "default": false,
                         "markdownDescription": "%Wrap cell text in the results.%"
+                    },
+                    "dbcode.showColumnComments": {
+                        "order": 11,
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "%Show column comments below column names in result headers.%"
                     }
                 }
             },
@@ -4834,10 +4851,12 @@
                                 "type": {
                                     "type": "string",
                                     "enum": [
-                                        "ssh"
+                                        "ssh",
+                                        "command"
                                     ],
                                     "enumDescriptions": [
-                                        "SSH Connection"
+                                        "SSH Connection",
+                                        "Command Tunnel (e.g., cloud-sql-auth-proxy, kubectl port-forward)"
                                     ],
                                     "description": "%Tunnel Type%"
                                 },
@@ -4905,6 +4924,23 @@
                                 "debug": {
                                     "type": "boolean",
                                     "description": "%Enable debug logging for the tunnel.%"
+                                },
+                                "command": {
+                                    "type": "string",
+                                    "description": "%Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)%"
+                                },
+                                "args": {
+                                    "type": "string",
+                                    "description": "%Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}%"
+                                },
+                                "readyPattern": {
+                                    "type": "string",
+                                    "description": "%Regex pattern to match in stdout/stderr indicating the tunnel is ready%"
+                                },
+                                "readyTimeout": {
+                                    "type": "number",
+                                    "description": "%Timeout in milliseconds to wait for the tunnel to become ready%",
+                                    "default": 30000
                                 }
                             }
                         }

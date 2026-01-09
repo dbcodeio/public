@@ -312,5 +312,11 @@
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Yeni sabitlenmiş bağlantılar için varsayılan otomatik onaylama modu. Devre dışı bırakıldığında, değişiklikleri manuel olarak onaylamanız veya geri almanız gerekir.",
   "Exact value from database - no conversion or formatting applied.": "Veritabanından tam değer - dönüştürme veya biçimlendirme uygulanmadı.",
   "Enable DBCode SQL language server for diagnostics and completions.": "Tanılama ve tamamlamalar için DBCode SQL dil sunucusunu etkinleştirin.",
-  "Truncate Cascade": "Basamaklı kısalt"
+  "Truncate Cascade": "Basamaklı kısalt",
+  "View Tunnel Logs": "Tünel günlüklerini görüntüle",
+  "Show column comments below column names in result headers.": "Sonuç başlıklarında sütun adlarının altında sütun yorumlarını göster.",
+  "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "Komut tünelleri için çalıştırılacak komut (örn: cloud-sql-auth-proxy, kubectl)",
+  "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "Komut için argümanlar. Değişkenler: {localPort}, {remoteHost}, {remotePort}, {database}",
+  "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "Tünelin hazır olduğunu belirten stdout/stderr'de eşleştirilecek regex deseni",
+  "Timeout in milliseconds to wait for the tunnel to become ready": "Tünelin hazır olmasını beklemek için milisaniye cinsinden zaman aşımı"
 }

@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.26.2 - 2026-01-09
+
+### Changed
+
+- Tunnels: Added command tunnels for local proxy tools (cloud-sql-auth-proxy, kubectl port-forward, AWS SSM, etc.) with presets, variable substitution, and ready detection. #625
+- Tunnels: Added per-tunnel output channels for viewing tunnel logs via "View Logs" command.
+- SurrealDB: Added relationships and events for tables, and functions as well as auto complete support. #254
+- Results: Added setting to show column comments below column names in grid headers. #669
+
+### Fixed
+
+- Formatting: SQL formatter now respects `files.insertFinalNewline` setting from VS Code/EditorConfig.
+- BigQuery: Fixed CLONE and SNAPSHOT tables not appearing in the db explorer. CLONE tables now show in Tables, SNAPSHOT tables in a separate Snapshots section. #914
+
 ## 1.26.1 - 2026-01-08
 
 ### Fixed
