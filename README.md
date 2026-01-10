@@ -27,6 +27,7 @@ Connect to 40+ databases:
 	<img src="https://img.shields.io/badge/ClickHouse-FFCC01?style=flat&logo=clickhouse&logoColor=black" alt="ClickHouse"/>
 	<img src="https://img.shields.io/badge/Cassandra-1287B1?style=flat&logo=apachecassandra&logoColor=white" alt="Cassandra"/>
 	<img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat&logo=elasticsearch&logoColor=white" alt="Elasticsearch"/>
+	<img src="https://img.shields.io/badge/OpenSearch-005EB8?style=flat&logo=opensearch&logoColor=white" alt="OpenSearch"/>
 	<img src="https://img.shields.io/badge/InfluxDB-22ADF6?style=flat&logo=influxdb&logoColor=white" alt="InfluxDB"/>
 	<img src="https://img.shields.io/badge/CockroachDB-6933FF?style=flat&logo=cockroachlabs&logoColor=white" alt="CockroachDB"/>
 	<img src="https://img.shields.io/badge/Trino-DD00A1?style=flat&logo=trino&logoColor=white" alt="Trino"/>

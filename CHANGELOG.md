@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.26.4 - 2026-01-10
+
+### Changed
+
+- Opensearch: Added preview support. #874
+- Elasticsearch: Added Aliases, Scripts and Ingest Pipelines to explorer.
+
 ## 1.26.2 - 2026-01-09
 
 ### Changed
