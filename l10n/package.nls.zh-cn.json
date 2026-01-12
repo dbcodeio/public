@@ -311,7 +311,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "启用 SQL 检查（语法和语义验证）。禁用以隐藏 SQL 文件中的所有警告。",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "新固定连接的默认自动提交模式。禁用时，必须手动提交或回滚更改。",
   "Exact value from database - no conversion or formatting applied.": "数据库中的精确值 - 未应用任何转换或格式化。",
-  "Enable DBCode SQL language server for diagnostics and completions.": "启用 DBCode SQL 语言服务器以获取诊断和自动完成功能。",
   "Truncate Cascade": "级联截断",
   "View Tunnel Logs": "查看隧道日志",
   "Show column comments below column names in result headers.": "在结果标题的列名下方显示列注释。",

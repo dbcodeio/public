@@ -311,7 +311,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "SQL-Prüfung aktivieren (Syntax- und semantische Validierung). Deaktivieren, um alle Warnungen in SQL-Dateien zu unterdrücken.",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Standard-Auto-Commit-Modus für neue angepinnte Verbindungen. Bei Deaktivierung müssen Änderungen manuell committet oder zurückgesetzt werden.",
   "Exact value from database - no conversion or formatting applied.": "Exakter Wert aus der Datenbank - keine Konvertierung oder Formatierung angewendet.",
-  "Enable DBCode SQL language server for diagnostics and completions.": "DBCode SQL-Sprachserver für Diagnosen und Vervollständigungen aktivieren.",
   "Truncate Cascade": "Kaskadierend leeren",
   "View Tunnel Logs": "Tunnel-Protokolle anzeigen",
   "Show column comments below column names in result headers.": "Spaltenkommentare unter Spaltennamen in Ergebnisüberschriften anzeigen.",

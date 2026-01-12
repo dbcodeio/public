@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.26.6 - 2026-01-12
+
+### Changed
+
+- MySQL/Trino/Athena: Added experimental progressive schema loading for faster initial connections. Enable via editing connection, going to Advanced > Introspection settings. Includes on-demand detail fetching, background prefetch, and configurable cache TTL. #908 #875 #862
+
 ## 1.26.4 - 2026-01-10
 
 ### Changed

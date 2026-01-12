@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.26.4",
+    "version": "1.26.6",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -758,6 +758,12 @@
                 "icon": "$(refresh)"
             },
             {
+                "command": "dbcode.connections.refreshItem",
+                "title": "%Refresh%",
+                "category": "DBCode",
+                "icon": "$(refresh)"
+            },
+            {
                 "command": "dbcode.connections.copy",
                 "title": "%Copy Connection%",
                 "category": "DBCode",
@@ -1448,6 +1454,11 @@
                     "command": "dbcode.item.create",
                     "when": "view == dbcode.connections.view && viewItem =~ /~create~/",
                     "group": "1create@1"
+                },
+                {
+                    "command": "dbcode.connections.refreshItem",
+                    "when": "view == dbcode.connections.view && viewItem =~ /~refresh~/ && !(viewItem =~ /^database-/) && !(viewItem =~ /^connection-/)",
+                    "group": "2refresh@1"
                 },
                 {
                     "command": "dbcode.item.drop",
@@ -3433,12 +3444,6 @@
                         "default": true,
                         "markdownDescription": "% The code lense will provide inline actions for executing queries.%"
                     },
-                    "dbcode.useLanguageServer": {
-                        "order": 2,
-                        "type": "boolean",
-                        "default": true,
-                        "markdownDescription": "%Enable DBCode SQL language server for diagnostics and completions.%"
-                    },
                     "dbcode.enableLinting": {
                         "order": 2,
                         "type": "boolean",
@@ -5193,7 +5198,6 @@
         "@azure/app-configuration": "^1.8.0",
         "@azure/keyvault-secrets": "^4.8.0",
         "@biomejs/biome": "^2.1.2",
-        "@chevrotain/types": "^11.0.3",
         "@socketsecurity/cli": "^1.0.0",
         "@types/big.js": "^6.2.2",
         "@types/glob": "^8.1.0",
@@ -5288,7 +5292,6 @@
         "better-sqlite3-multiple-ciphers": "^12.4.1",
         "cassandra-driver": "^4.8.0",
         "cbor-x": "^1.6.0",
-        "chevrotain": "^11.0.3",
         "dagre": "^0.8.5",
         "date-fns": "^4.1.0",
         "debounce": "^2.2.0",

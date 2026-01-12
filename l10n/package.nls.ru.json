@@ -311,7 +311,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "Включить проверку SQL (синтаксическая и семантическая валидация). Отключите для подавления всех предупреждений в SQL-файлах.",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Режим автоматической фиксации по умолчанию для новых закрепленных подключений. При отключении необходимо вручную фиксировать или откатывать изменения.",
   "Exact value from database - no conversion or formatting applied.": "Точное значение из базы данных - без преобразования или форматирования.",
-  "Enable DBCode SQL language server for diagnostics and completions.": "Включить языковой сервер SQL DBCode для диагностики и автодополнения.",
   "Truncate Cascade": "Очистить каскадно",
   "View Tunnel Logs": "Просмотр журналов туннеля",
   "Show column comments below column names in result headers.": "Показывать комментарии к столбцам под именами столбцов в заголовках результатов.",
