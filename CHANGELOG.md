@@ -1,8 +1,17 @@
 # CHANGELOG
 
+## 1.26.8 - 2026-01-15
+
+### Fixed
+
+- AWS: Fixed SSO credentials not refreshing after user re-authenticates via CLI, previously requiring VS Code restart.
+- DB2: Fixed connection failure on Windows due to CLI driver path not being resolved. #918
+- Results: Fixed date filter on datetime/timestamp columns not matching rows when using equals with date-only values. Now expands to match any time on that date.
+
 ## 1.26.7 - 2026-01-14
 
 ### Changed
+
 - H2: Added experimental support. #371 #788
 - Table View: Added loading status text ("Connecting...", "Loading data...") to provide feedback during slow initial database connections.
 
@@ -11,7 +20,6 @@
 - Hive: Fixed column comments not appearing on Hive 2.x (legacy) servers. #669
 - MySQL: Fixed progressive schema loading still timing out on very large table counts. #862
 - PostgreSQL: Fixed introspection error on openGauss and PostgreSQL < 9.5 due to missing array_position function. #917
-
 
 ## 1.26.6 - 2026-01-12
 

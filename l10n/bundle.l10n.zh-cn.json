@@ -2749,5 +2749,17 @@
   "AWS region for the OpenSearch domain. If not specified, uses the region from the auth profile.": "OpenSearch 域的 AWS 区域。如果未指定，则使用身份验证配置文件中的区域。",
   "Service Type": "服务类型",
   "Amazon OpenSearch Service": "Amazon OpenSearch Service",
-  "Amazon OpenSearch Serverless": "Amazon OpenSearch Serverless"
+  "Amazon OpenSearch Serverless": "Amazon OpenSearch Serverless",
+  "Failed to parse URI": "解析 URI 失败",
+  "Connecting...": "连接中...",
+  "Loading data...": "加载数据...",
+  "JDBC Error": "JDBC 错误",
+  "Experimental": "实验性",
+  "Connection Mode": "连接模式",
+  "Embedded (File)": "嵌入式(文件)",
+  "Server Mode (TCP)": "服务器模式(TCP)",
+  "In-Memory": "内存模式",
+  "Only connect if exists": "仅在存在时连接",
+  "H2 support does not include {0} scripting.": "H2 支持不包括 {0} 脚本。",
+  "DB2 driver failed to load. This usually means the Microsoft Visual C++ Redistributable is not installed. Download it from: https://aka.ms/vs/17/release/vc_redist.x64.exe": "DB2 驱动程序加载失败。这通常意味着未安装 Microsoft Visual C++ Redistributable。请从此处下载:https://aka.ms/vs/17/release/vc_redist.x64.exe"
 }

@@ -2749,5 +2749,17 @@
   "AWS region for the OpenSearch domain. If not specified, uses the region from the auth profile.": "OpenSearch 도메인의 AWS 리전입니다. 지정하지 않으면 인증 프로필의 리전을 사용합니다.",
   "Service Type": "서비스 유형",
   "Amazon OpenSearch Service": "Amazon OpenSearch Service",
-  "Amazon OpenSearch Serverless": "Amazon OpenSearch Serverless"
+  "Amazon OpenSearch Serverless": "Amazon OpenSearch Serverless",
+  "Failed to parse URI": "URI 구문 분석 실패",
+  "Connecting...": "연결 중...",
+  "Loading data...": "데이터 로드 중...",
+  "JDBC Error": "JDBC 오류",
+  "Experimental": "실험적",
+  "Connection Mode": "연결 모드",
+  "Embedded (File)": "임베디드(파일)",
+  "Server Mode (TCP)": "서버 모드(TCP)",
+  "In-Memory": "인메모리",
+  "Only connect if exists": "존재하는 경우에만 연결",
+  "H2 support does not include {0} scripting.": "H2 지원에는 {0} 스크립팅이 포함되지 않습니다.",
+  "DB2 driver failed to load. This usually means the Microsoft Visual C++ Redistributable is not installed. Download it from: https://aka.ms/vs/17/release/vc_redist.x64.exe": "DB2 드라이버를 로드하지 못했습니다. 일반적으로 Microsoft Visual C++ 재배포 가능 패키지가 설치되지 않았음을 의미합니다. 다음에서 다운로드하세요: https://aka.ms/vs/17/release/vc_redist.x64.exe"
 }
