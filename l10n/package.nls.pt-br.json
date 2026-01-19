@@ -317,5 +317,6 @@
   "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "Comando a executar para túneis de comando (ex: cloud-sql-auth-proxy, kubectl)",
   "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "Argumentos para o comando. Variáveis: {localPort}, {remoteHost}, {remotePort}, {database}",
   "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "Padrão regex para buscar em stdout/stderr indicando que o túnel está pronto",
-  "Timeout in milliseconds to wait for the tunnel to become ready": "Tempo limite em milissegundos para aguardar o túnel ficar pronto"
+  "Timeout in milliseconds to wait for the tunnel to become ready": "Tempo limite em milissegundos para aguardar o túnel ficar pronto",
+  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Descobrir automaticamente conexões de banco de dados de arquivos do espaço de trabalho (`.env`, arquivos de configuração, etc.). Desative para impedir que conexões descobertas automaticamente apareçam."
 }

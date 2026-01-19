@@ -317,5 +317,6 @@
   "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "Příkaz pro příkazové tunely (např. cloud-sql-auth-proxy, kubectl)",
   "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "Argumenty pro příkaz. Proměnné: {localPort}, {remoteHost}, {remotePort}, {database}",
   "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "Regex vzor pro hledání v stdout/stderr indikující, že tunel je připraven",
-  "Timeout in milliseconds to wait for the tunnel to become ready": "Časový limit v milisekundách pro čekání na připravenost tunelu"
+  "Timeout in milliseconds to wait for the tunnel to become ready": "Časový limit v milisekundách pro čekání na připravenost tunelu",
+  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Automaticky zjišťovat databázová připojení ze souborů pracovního prostoru (`.env`, konfigurační soubory atd.). Zakázáním zabráníte zobrazování automaticky zjištěných připojení."
 }

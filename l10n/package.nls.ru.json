@@ -317,5 +317,6 @@
   "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "Команда для командных туннелей (напр: cloud-sql-auth-proxy, kubectl)",
   "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "Аргументы команды. Переменные: {localPort}, {remoteHost}, {remotePort}, {database}",
   "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "Regex-шаблон для поиска в stdout/stderr, указывающий на готовность туннеля",
-  "Timeout in milliseconds to wait for the tunnel to become ready": "Таймаут в миллисекундах ожидания готовности туннеля"
+  "Timeout in milliseconds to wait for the tunnel to become ready": "Таймаут в миллисекундах ожидания готовности туннеля",
+  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Автоматически обнаруживать подключения к базам данных из файлов рабочего пространства (`.env`, конфигурационные файлы и т.д.). Отключите, чтобы предотвратить появление автоматически обнаруженных подключений."
 }

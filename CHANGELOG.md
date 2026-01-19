@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.26.9 - 2026-01-19
+
+### Changed
+
+- Inferred Relationships: Ability to define relationships for databases without native foreign key support (MongoDB, DynamoDB, etc.). Configure patterns in connection settings or visually in the entity relationship diagram to detect relationships based on column naming conventions (e.g., `user_id` → `users.id`). 
+- Results: Hold Shift while executing (Shift+Cmd+Enter / Shift+Window+Enter) to refresh the last result tab instead of opening a new one, preserving chart configuration. In single-tab mode (maxTabs=1), this behavior is inverted. #921
+- Results: Added column selection via Shift/Cmd/Ctrl+click on column headers, or "Select Column" in context menu. Shift selects a range, Cmd/Ctrl adds to selection. #921
+- Athena: Added multi-catalog support. Database list now shows all data catalogs (data sources) including federated connectors. #920
+- Settings: Added `dbcode.discovery.enabled` setting to disable automatic zero-config connection discovery from workspace files (.env, config files, etc.).
+
+### Fixed
+
+- Formatting: SQL formatter now properly respects `.editorconfig` `insert_final_newline` setting at file level.
+
 ## 1.26.8 - 2026-01-15
 
 ### Fixed

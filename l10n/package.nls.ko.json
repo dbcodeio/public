@@ -317,5 +317,6 @@
   "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "명령 터널에서 실행할 명령(예: cloud-sql-auth-proxy, kubectl)",
   "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "명령 인수. 변수: {localPort}, {remoteHost}, {remotePort}, {database}",
   "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "터널이 준비되었음을 나타내는 stdout/stderr에서 일치시킬 정규식 패턴",
-  "Timeout in milliseconds to wait for the tunnel to become ready": "터널이 준비될 때까지 기다리는 제한 시간(밀리초)"
+  "Timeout in milliseconds to wait for the tunnel to become ready": "터널이 준비될 때까지 기다리는 제한 시간(밀리초)",
+  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "작업 공간 파일(`.env`, 구성 파일 등)에서 데이터베이스 연결을 자동으로 검색합니다. 자동 검색된 연결이 표시되지 않도록 하려면 비활성화하십시오."
 }
