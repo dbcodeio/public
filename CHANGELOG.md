@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 1.26.11 - 2026-01-22
+
+### Changed
+
+- Salesforce: Preview support added for Salesforce.
+- DB Explorer: Tree filter now searches cached schemas, not just active connections.
+- BigQuery: Progressive introspection enabled. #925
+
+### Fixed
+
+- BigQuery: Fixed "Premature close" error when queries return more than 40K rows by enabling driver pagination. #925
+- SSH Tunnels: Fixed SSH Agent authentication with Pageant on Windows failing with "Failed to retrieve identities from agent".
+- Elasticsearch: Fixed connection errors with Elasticsearch 7.x and 8.x servers caused by incompatible version headers in client v9.
+- Elasticsearch: Made Catalog field optional. Leave empty to use the local cluster.
+
 ## 1.26.10 - 2026-01-20
 
 ### Changed

@@ -60,6 +60,7 @@ Connect to 40+ databases:
 	<img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat&logo=neo4j&logoColor=white" alt="Neo4j"/>
 	<img src="https://img.shields.io/badge/Memgraph-FB6E00?style=flat" alt="Memgraph"/>
 	<img src="https://img.shields.io/badge/SurrealDB-FF00A0?style=flat&logo=surrealdb&logoColor=white" alt="SurrealDB"/>
+	<img src="https://img.shields.io/badge/Salesforce-00A1E0?style=flat&logo=salesforce&logoColor=white" alt="Salesforce"/>
 </p>
 
 <p align="center">
