@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.26.12 - 2026-01-23
+
+### Changed
+
+- BigQuery: Output log now displays individual SQL statements for each step when executing stored procedures. #924
+- Results: Output log now has clickable row counts to navigate directly to result tabs. #924
+
+### Fixed
+
+- Redshift: Fixed Explain button failing with FORMAT parameter error.
+- Results: Fixed Shift+Execute triggering license prompt instead of refreshing the last result tab. #921
+- Connection Import: Added support for JDBC connection strings (e.g., `jdbc:db2://host/db`). #927
+
 ## 1.26.11 - 2026-01-22
 
 ### Changed
