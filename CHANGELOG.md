@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 1.26.13 - 2026-01-26
+## 1.26.14 - 2026-01-26
 
 ### Changed
 
@@ -12,6 +12,7 @@
 
 ### Fixed
 
+- Results: Tab reuse now reuses the currently active tab instead of the last tab.
 - Results: Fixed output log not showing all recordset rows on first execution.
 - Favorites: Fixed favorites disappearing when adding items while a filter was active in the connections tree.
 - ERD: Fixed export to PNG/PDF failing with "Failed to fetch" error. #931

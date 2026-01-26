@@ -319,5 +319,5 @@
   "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "在 stdout/stderr 中比對的正規表示式模式，指示通道已就緒",
   "Timeout in milliseconds to wait for the tunnel to become ready": "等待通道就緒的逾時時間（毫秒）",
   "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "自動從工作區檔案（`.env`、設定檔等）發現資料庫連線。停用以防止顯示自動發現的連線。",
-  "Compare Data With...": "比較資料與..."
+  "Compare Data With...": "比較資料..."
 }
