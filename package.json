@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.26.14",
+    "version": "1.26.15",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -1003,6 +1003,11 @@
                 "category": "DBCode"
             },
             {
+                "command": "dbcode.table.compareWith",
+                "title": "%Compare Data With...%",
+                "category": "DBCode"
+            },
+            {
                 "command": "dbcode.table.alter",
                 "title": "%Alter Table%",
                 "category": "DBCode"
@@ -1174,6 +1179,15 @@
                 },
                 "key": "shift+windows+enter",
                 "mac": "shift+cmd+enter",
+                "when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode"
+            },
+            {
+                "command": "dbcode.editor.execute",
+                "args": {
+                    "altKey": true
+                },
+                "key": "alt+windows+enter",
+                "mac": "alt+cmd+enter",
                 "when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode"
             },
             {
@@ -1798,6 +1812,21 @@
                     "command": "dbcode.table.search",
                     "when": "view == dbcode.connections.view && viewItem =~ /~search~/",
                     "group": "2actoin@2"
+                },
+                {
+                    "command": "dbcode.table.compareWith",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^table-/",
+                    "group": "2actoin@3"
+                },
+                {
+                    "command": "dbcode.table.compareWith",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^view-/",
+                    "group": "2actoin@3"
+                },
+                {
+                    "command": "dbcode.table.compareWith",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^materializedView-/",
+                    "group": "2actoin@3"
                 },
                 {
                     "command": "dbcode.item.rename",
