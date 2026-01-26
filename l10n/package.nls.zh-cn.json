@@ -318,5 +318,6 @@
   "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "命令参数。变量：{localPort}、{remoteHost}、{remotePort}、{database}",
   "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "在 stdout/stderr 中匹配的正则表达式模式，指示隧道已就绪",
   "Timeout in milliseconds to wait for the tunnel to become ready": "等待隧道就绪的超时时间（毫秒）",
-  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "自动从工作区文件（`.env`、配置文件等）发现数据库连接。禁用以防止显示自动发现的连接。"
+  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "自动从工作区文件（`.env`、配置文件等）发现数据库连接。禁用以防止显示自动发现的连接。",
+  "Compare Data With...": "比较数据与..."
 }

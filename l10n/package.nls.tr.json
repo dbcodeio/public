@@ -318,5 +318,6 @@
   "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "Komut için argümanlar. Değişkenler: {localPort}, {remoteHost}, {remotePort}, {database}",
   "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "Tünelin hazır olduğunu belirten stdout/stderr'de eşleştirilecek regex deseni",
   "Timeout in milliseconds to wait for the tunnel to become ready": "Tünelin hazır olmasını beklemek için milisaniye cinsinden zaman aşımı",
-  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Çalışma alanı dosyalarından (`.env`, yapılandırma dosyaları vb.) veritabanı bağlantılarını otomatik olarak keşfedin. Otomatik keşfedilen bağlantıların görünmesini engellemek için devre dışı bırakın."
+  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Çalışma alanı dosyalarından (`.env`, yapılandırma dosyaları vb.) veritabanı bağlantılarını otomatik olarak keşfedin. Otomatik keşfedilen bağlantıların görünmesini engellemek için devre dışı bırakın.",
+  "Compare Data With...": "Verileri karşılaştır..."
 }

@@ -318,5 +318,6 @@
   "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "Argumentos para o comando. Variáveis: {localPort}, {remoteHost}, {remotePort}, {database}",
   "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "Padrão regex para buscar em stdout/stderr indicando que o túnel está pronto",
   "Timeout in milliseconds to wait for the tunnel to become ready": "Tempo limite em milissegundos para aguardar o túnel ficar pronto",
-  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Descobrir automaticamente conexões de banco de dados de arquivos do espaço de trabalho (`.env`, arquivos de configuração, etc.). Desative para impedir que conexões descobertas automaticamente apareçam."
+  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Descobrir automaticamente conexões de banco de dados de arquivos do espaço de trabalho (`.env`, arquivos de configuração, etc.). Desative para impedir que conexões descobertas automaticamente apareçam.",
+  "Compare Data With...": "Comparar dados com..."
 }

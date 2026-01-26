@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 1.26.13 - 2026-01-26
+
+### Changed
+
+- Data Compare: Right click a tab in the panel, or table in the tree, to compare data. "Compare data with..." menu option, direction toggle, and ability to generate sync scripts or apply changes directly.
+- BigQuery: Real-time progress reporting for stored procedures - step completion status now displays in the output log while script jobs execute. #924
+- Results: Tab reuse now reuses the currently active tab instead of the last tab. #921
+- Results: Hold Alt while executing (Alt+Cmd+Enter / Alt+Windows+Enter) to combine multiple result sets into a single tab. Tabs can also be combined by dragging one onto another or Ctrl/Cmd+clicking to multi-select and using "Combine Selected" from context menu.
+- Results: Added "Combine with..." right-click menu option for tab combining with visual selection mode.
+
+### Fixed
+
+- Results: Fixed output log not showing all recordset rows on first execution.
+- Favorites: Fixed favorites disappearing when adding items while a filter was active in the connections tree.
+- ERD: Fixed export to PNG/PDF failing with "Failed to fetch" error. #931
+- ERD: Fixed export to web page not rendering tables for schema-less databases.
+
 ## 1.26.12 - 2026-01-23
 
 ### Changed

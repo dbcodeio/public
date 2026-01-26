@@ -318,5 +318,6 @@
   "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "コマンドの引数。変数：{localPort}、{remoteHost}、{remotePort}、{database}",
   "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "トンネルの準備完了を示す stdout/stderr で一致させる正規表現パターン",
   "Timeout in milliseconds to wait for the tunnel to become ready": "トンネルの準備完了を待機するタイムアウト（ミリ秒）",
-  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "ワークスペースファイル（`.env`、設定ファイルなど）からデータベース接続を自動検出します。自動検出された接続が表示されないようにするには無効にします。"
+  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "ワークスペースファイル（`.env`、設定ファイルなど）からデータベース接続を自動検出します。自動検出された接続が表示されないようにするには無効にします。",
+  "Compare Data With...": "データを比較..."
 }
