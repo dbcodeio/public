@@ -84,9 +84,8 @@ jobs:
           NEW_RENAMED=""
 
           # Node ABI mappings for code-server (Node prebuild -> fake electron name)
-          # Node 18 = ABI 108, Node 20 = ABI 115, Node 22 = ABI 127
+          # Node 20 = ABI 115, Node 22 = ABI 127
           declare -A NODE_ABIS=(
-            ["108"]="108"  # Node 18
             ["115"]="115"  # Node 20
             ["127"]="127"  # Node 22
           )
