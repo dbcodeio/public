@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.26.16 - 2026-01-28
+
+### Fixed
+
+- Procedures/functions: Fixed comments above stored procedures being lost when saving in SQL Server.
+
 ## 1.26.15 - 2026-01-26
 
 ### Changed
@@ -7,8 +13,8 @@
 - Data Compare: Right click a tab in the panel, or table in the tree, to compare data. "Compare data with..." menu option, direction toggle, and ability to generate sync scripts or apply changes directly.
 - BigQuery: Real-time progress reporting for stored procedures - step completion status now displays in the output log while script jobs execute. #924
 - Results: Tab reuse now reuses the currently active tab instead of the last tab. #921
-- Results: Hold Alt while executing (Alt+Cmd+Enter / Alt+Windows+Enter) to combine multiple result sets into a single tab. Tabs can also be combined by dragging one onto another or Ctrl/Cmd+clicking to multi-select and using "Combine Selected" from context menu.
-- Results: Added "Combine with..." right-click menu option for tab combining with visual selection mode.
+- Results: Hold Alt while executing (Alt+Cmd+Enter / Alt+Windows+Enter) to combine multiple result sets into a single tab. Tabs can also be combined by dragging one onto another or Ctrl/Cmd+clicking to multi-select and using "Stack Selected" from context menu.
+- Results: Added "Stack with..." right-click menu option for tab combining with visual selection mode.
 
 ### Fixed
 
