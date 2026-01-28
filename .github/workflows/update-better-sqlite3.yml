@@ -1,0 +1,168 @@
+name: Update Better-SQLite3 Binaries
+
+on:
+  schedule:
+    # Run daily at 7 AM UTC
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+    inputs:
+      force_update:
+        description: 'Force update even if binaries exist'
+        required: false
+        default: 'false'
+        type: boolean
+      version:
+        description: 'Specific version to fetch (e.g., v12.4.1). Leave empty for latest.'
+        required: false
+        default: ''
+        type: string
+
+jobs:
+  update-binaries:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get latest release info
+        id: release
+        run: |
+          if [ -n "${{ inputs.version }}" ]; then
+            VERSION="${{ inputs.version }}"
+          else
+            VERSION=$(curl -s https://api.github.com/repos/m4heshd/better-sqlite3-multiple-ciphers/releases/latest | jq -r '.tag_name')
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Fetching better-sqlite3-multiple-ciphers $VERSION"
+
+      - name: Download prebuilds from upstream
+        id: download
+        run: |
+          VERSION="${{ steps.release.outputs.version }}"
+          PACKAGES_DIR="packages/better-sqlite3"
+          TEMP_DIR="/tmp/prebuilds"
+          mkdir -p "$TEMP_DIR"
+          mkdir -p "$PACKAGES_DIR"
+
+          # Get all prebuild assets from the release
+          ASSETS=$(curl -s "https://api.github.com/repos/m4heshd/better-sqlite3-multiple-ciphers/releases/tags/$VERSION" | jq -r '.assets[] | select(.name | endswith(".tar.gz")) | .browser_download_url')
+
+          if [ -z "$ASSETS" ]; then
+            echo "No prebuilds found for $VERSION"
+            echo "has_updates=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          NEW_BINARIES=""
+
+          for url in $ASSETS; do
+            filename=$(basename "$url")
+            target_file="$PACKAGES_DIR/$filename"
+
+            # Skip if we already have it (unless force update)
+            if [ -f "$target_file" ] && [ "${{ inputs.force_update }}" != "true" ]; then
+              echo "Already have $filename, skipping"
+              continue
+            fi
+
+            echo "Downloading $filename..."
+            curl -sL "$url" -o "$target_file"
+            NEW_BINARIES="$NEW_BINARIES $filename"
+          done
+
+          echo "new_electron=$NEW_BINARIES" >> $GITHUB_OUTPUT
+
+      - name: Rename Node prebuilds for code-server
+        id: rename
+        run: |
+          VERSION="${{ steps.release.outputs.version }}"
+          PACKAGES_DIR="packages/better-sqlite3"
+          NEW_RENAMED=""
+
+          # Node ABI mappings for code-server (Node prebuild -> fake electron name)
+          # Node 18 = ABI 108, Node 20 = ABI 115, Node 22 = ABI 127
+          declare -A NODE_ABIS=(
+            ["108"]="108"  # Node 18
+            ["115"]="115"  # Node 20
+            ["127"]="127"  # Node 22
+          )
+
+          # Platform mappings
+          PLATFORMS=("darwin-arm64" "darwin-x64" "linux-arm64" "linux-x64" "win32-x64" "win32-arm64" "linux-arm" "linuxmusl-x64" "linuxmusl-arm64")
+
+          for abi in "${!NODE_ABIS[@]}"; do
+            for platform in "${PLATFORMS[@]}"; do
+              # Source: node prebuild
+              node_file="$PACKAGES_DIR/better-sqlite3-multiple-ciphers-${VERSION}-node-v${abi}-${platform}.tar.gz"
+              # Target: electron naming for code-server
+              electron_file="$PACKAGES_DIR/better-sqlite3-multiple-ciphers-${VERSION}-electron-v${abi}-${platform}.tar.gz"
+
+              if [ -f "$node_file" ]; then
+                # Skip if electron version already exists (real electron prebuild or already renamed)
+                if [ -f "$electron_file" ] && [ "${{ inputs.force_update }}" != "true" ]; then
+                  echo "Already have $electron_file, skipping rename"
+                  continue
+                fi
+
+                echo "Copying $node_file -> $electron_file (for code-server)"
+                cp "$node_file" "$electron_file"
+                NEW_RENAMED="$NEW_RENAMED $(basename $electron_file)"
+              fi
+            done
+          done
+
+          echo "renamed=$NEW_RENAMED" >> $GITHUB_OUTPUT
+
+      - name: Check for updates
+        id: check
+        run: |
+          if [ -n "${{ steps.download.outputs.new_electron }}" ] || [ -n "${{ steps.rename.outputs.renamed }}" ]; then
+            echo "has_updates=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_updates=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Pull Request
+        if: steps.check.outputs.has_updates == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Update better-sqlite3-multiple-ciphers to ${{ steps.release.outputs.version }}"
+          title: "Update better-sqlite3-multiple-ciphers to ${{ steps.release.outputs.version }}"
+          body: |
+            This PR updates better-sqlite3-multiple-ciphers prebuilds.
+
+            **Version:** ${{ steps.release.outputs.version }}
+
+            **New Electron prebuilds from upstream:**
+            ${{ steps.download.outputs.new_electron }}
+
+            **Node prebuilds renamed for code-server:**
+            ${{ steps.rename.outputs.renamed }}
+
+            These prebuilds are from [m4heshd/better-sqlite3-multiple-ciphers](https://github.com/m4heshd/better-sqlite3-multiple-ciphers/releases).
+
+            ---
+            *This PR was automatically generated by the update-better-sqlite3 workflow.*
+          branch: update-better-sqlite3
+          delete-branch: true
+
+      - name: Summary
+        run: |
+          echo "## Better-SQLite3 Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Version:** ${{ steps.release.outputs.version }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check.outputs.has_updates }}" == "true" ]; then
+            echo "**New Electron prebuilds:**" >> $GITHUB_STEP_SUMMARY
+            echo "${{ steps.download.outputs.new_electron }}" | tr ' ' '\n' | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "**Renamed for code-server:**" >> $GITHUB_STEP_SUMMARY
+            echo "${{ steps.rename.outputs.renamed }}" | tr ' ' '\n' | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
+          else
+            echo "No new binaries were needed." >> $GITHUB_STEP_SUMMARY
+          fi
