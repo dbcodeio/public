@@ -1,5 +1,166 @@
 # CHANGELOG
 
+## 1.26.16 - 2026-01-28
+
+### Fixed
+
+- Procedures/functions: Fixed comments above stored procedures being lost when saving in SQL Server.
+
+## 1.26.15 - 2026-01-26
+
+### Changed
+
+- Data Compare: Right click a tab in the panel, or table in the tree, to compare data. "Compare data with..." menu option, direction toggle, and ability to generate sync scripts or apply changes directly.
+- BigQuery: Real-time progress reporting for stored procedures - step completion status now displays in the output log while script jobs execute. #924
+- Results: Tab reuse now reuses the currently active tab instead of the last tab. #921
+- Results: Hold Alt while executing (Alt+Cmd+Enter / Alt+Windows+Enter) to combine multiple result sets into a single tab. Tabs can also be combined by dragging one onto another or Ctrl/Cmd+clicking to multi-select and using "Stack Selected" from context menu.
+- Results: Added "Stack with..." right-click menu option for tab combining with visual selection mode.
+
+### Fixed
+
+- Results: Tab reuse now reuses the currently active tab instead of the last tab.
+- Results: Fixed output log not showing all recordset rows on first execution.
+- Favorites: Fixed favorites disappearing when adding items while a filter was active in the connections tree.
+- ERD: Fixed export to PNG/PDF failing with "Failed to fetch" error. #931
+- ERD: Fixed export to web page not rendering tables for schema-less databases.
+
+## 1.26.12 - 2026-01-23
+
+### Changed
+
+- BigQuery: Output log now displays individual SQL statements for each step when executing stored procedures. #924
+- Results: Output log now has clickable row counts to navigate directly to result tabs. #924
+
+### Fixed
+
+- Redshift: Fixed Explain button failing with FORMAT parameter error.
+- Results: Fixed Shift+Execute triggering license prompt instead of refreshing the last result tab. #921
+- Connection Import: Added support for JDBC connection strings (e.g., `jdbc:db2://host/db`). #927
+
+## 1.26.11 - 2026-01-22
+
+### Changed
+
+- Salesforce: Preview support added for Salesforce.
+- DB Explorer: Tree filter now searches cached schemas, not just active connections.
+- BigQuery: Progressive introspection enabled. #925
+
+### Fixed
+
+- BigQuery: Fixed "Premature close" error when queries return more than 40K rows by enabling driver pagination. #925
+- SSH Tunnels: Fixed SSH Agent authentication with Pageant on Windows failing with "Failed to retrieve identities from agent".
+- Elasticsearch: Fixed connection errors with Elasticsearch 7.x and 8.x servers caused by incompatible version headers in client v9.
+- Elasticsearch: Made Catalog field optional. Leave empty to use the local cluster.
+
+## 1.26.10 - 2026-01-20
+
+### Changed
+
+- Inferred Relationships: Ability to define relationships for databases without native foreign key support (MongoDB, DynamoDB, etc.). Configure patterns in connection settings or visually in the entity relationship diagram to detect relationships based on column naming conventions (e.g., `user_id` → `users.id`). 
+- Results: Hold Shift while executing (Shift+Cmd+Enter / Shift+Window+Enter) to refresh the last result tab instead of opening a new one, preserving chart configuration. In single-tab mode (maxTabs=1), this behavior is inverted. #921
+- Results: Added column selection via Shift/Cmd/Ctrl+click on column headers, or "Select Column" in context menu. Shift selects a range, Cmd/Ctrl adds to selection. #921
+- Athena: Added multi-catalog support. Database list now shows all data catalogs (data sources) including federated connectors. #920
+- Settings: Added `dbcode.discovery.enabled` setting to disable automatic zero-config connection discovery from workspace files (.env, config files, etc.).
+
+### Fixed
+
+- Formatting: SQL formatter now properly respects `.editorconfig` `insert_final_newline` setting at file level.
+
+## 1.26.8 - 2026-01-15
+
+### Fixed
+
+- AWS: Fixed SSO credentials not refreshing after user re-authenticates via CLI, previously requiring VS Code restart.
+- DB2: Fixed connection failure on Windows due to CLI driver path not being resolved. #918
+- Results: Fixed date filter on datetime/timestamp columns not matching rows when using equals with date-only values. Now expands to match any time on that date.
+
+## 1.26.7 - 2026-01-14
+
+### Changed
+
+- H2: Added experimental support. #371 #788
+- Table View: Added loading status text ("Connecting...", "Loading data...") to provide feedback during slow initial database connections.
+
+### Fixed
+
+- Hive: Fixed column comments not appearing on Hive 2.x (legacy) servers. #669
+- MySQL: Fixed progressive schema loading still timing out on very large table counts. #862
+- PostgreSQL: Fixed introspection error on openGauss and PostgreSQL < 9.5 due to missing array_position function. #917
+
+## 1.26.6 - 2026-01-12
+
+### Changed
+
+- MySQL/Trino/Athena: Added experimental progressive schema loading for faster initial connections. Enable via editing connection, going to Advanced > Introspection settings. Includes on-demand detail fetching, background prefetch, and configurable cache TTL. #908 #875 #862
+
+## 1.26.4 - 2026-01-10
+
+### Changed
+
+- Opensearch: Added preview support. #874
+- Elasticsearch: Added Aliases, Scripts and Ingest Pipelines to explorer.
+
+## 1.26.2 - 2026-01-09
+
+### Changed
+
+- Tunnels: Added command tunnels for local proxy tools (cloud-sql-auth-proxy, kubectl port-forward, AWS SSM, etc.) with presets, variable substitution, and ready detection. #625
+- Tunnels: Added per-tunnel output channels for viewing tunnel logs via "View Logs" command.
+- SurrealDB: Added relationships and events for tables, and functions as well as auto complete support. #254
+- Results: Added setting to show column comments below column names in grid headers. #669
+
+### Fixed
+
+- Formatting: SQL formatter now respects `files.insertFinalNewline` setting from VS Code/EditorConfig.
+- BigQuery: Fixed CLONE and SNAPSHOT tables not appearing in the db explorer. CLONE tables now show in Tables, SNAPSHOT tables in a separate Snapshots section. #914
+
+## 1.26.1 - 2026-01-08
+
+### Fixed
+
+- Results: Fixed pivot mode calculating incorrect aggregates for decimal values with trailing zeros (e.g., 175.20). #913
+
+## 1.26.0 - 2026-01-08
+
+### Changed
+
+- SurrealDB: Added preview support for SurrealDB with namespace/database browsing, SurrealQL queries, and document editing. #254
+- InfluxDB: Added preview support for InfluxDB 3 with SQL query execution, line protocol writes, and soft/hard delete options. #168
+- Results: Column header tooltips now show datatype info and column comments (where available). #669
+- Inspector: NoSQL databases now allow the inspector JSON mode to be editable, as well as the form mode to add remove columns.
+- Inspector: If selecting multiple rows, you can now edit the value for all selected rows at once.
+- Inspector: Now shows the data type of each column in the form view and comments where available.
+
+### Fixed
+
+- MongoDB: You can now insert a document into a blank collection.
+- Editor: Fixed format-on-paste mangling pasted values like UUIDs by adding spaces around hyphens. #896
+
+## 1.24.1 - 2026-01-05
+
+### Changed
+
+- MSSQL: Added Named Pipe and LocalDB connection support for Windows, allowing connections via named pipes or LocalDB instance. #497
+- Neo4j/Memgraph: Added relationship visualization to entity diagrams, showing connections between Labels.
+
+### Fixed
+
+- Hive: Fixed introspection failure due to integer overflow in HiveServer2. #904
+
+## 1.24.0 - 2026-01-04
+
+### Changed
+
+- Neo4j/Memgraph: Added preview support. #572 #622 #617
+- PostgreSQL: Added "Truncate Cascade" option for tables to handle foreign key constraints.
+- Netezza: Added query cancellation support, removed from preview. #748
+- MSSQL: Added Windows Integrated Authentication (SSPI) (Testing).
+
+### Fixed
+
+- Connections: Fixed SSL/TLS settings not being preserved in "Copy Connection String" and "Import Connection String". #905
+- Hive: Not fetching all data during introspection. #904
+
 ## 1.23.4 - 2025-12-30
 
 ### Changed

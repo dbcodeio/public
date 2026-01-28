@@ -21,12 +21,15 @@ Connect to 40+ databases:
 	<img src="https://img.shields.io/badge/RavenDB-388EE9?style=flat" alt="RavenDB"/>
 	<img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white" alt="MariaDB"/>
 	<img src="https://img.shields.io/badge/DuckDB-FFF000?style=flat&logo=duckdb&logoColor=black" alt="DuckDB"/>
+	<img src="https://img.shields.io/badge/H2-0000BB?style=flat" alt="H2 Database"/>
 	<img src="https://img.shields.io/badge/Snowflake-29B5E8?style=flat&logo=snowflake&logoColor=white" alt="Snowflake"/>
 	<img src="https://img.shields.io/badge/BigQuery-669DF6?style=flat&logo=googlebigquery&logoColor=white" alt="BigQuery"/>
 	<img src="https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white" alt="Databricks"/>
 	<img src="https://img.shields.io/badge/ClickHouse-FFCC01?style=flat&logo=clickhouse&logoColor=black" alt="ClickHouse"/>
 	<img src="https://img.shields.io/badge/Cassandra-1287B1?style=flat&logo=apachecassandra&logoColor=white" alt="Cassandra"/>
 	<img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat&logo=elasticsearch&logoColor=white" alt="Elasticsearch"/>
+	<img src="https://img.shields.io/badge/OpenSearch-005EB8?style=flat&logo=opensearch&logoColor=white" alt="OpenSearch"/>
+	<img src="https://img.shields.io/badge/InfluxDB-22ADF6?style=flat&logo=influxdb&logoColor=white" alt="InfluxDB"/>
 	<img src="https://img.shields.io/badge/CockroachDB-6933FF?style=flat&logo=cockroachlabs&logoColor=white" alt="CockroachDB"/>
 	<img src="https://img.shields.io/badge/Trino-DD00A1?style=flat&logo=trino&logoColor=white" alt="Trino"/>
 	<img src="https://img.shields.io/badge/Hive-FDEE21?style=flat&logo=apachehive&logoColor=black" alt="Apache Hive"/>
@@ -54,6 +57,10 @@ Connect to 40+ databases:
 	<img src="https://img.shields.io/badge/RisingWave-0055FF?style=flat" alt="RisingWave"/>
 	<img src="https://img.shields.io/badge/Greenplum-6DB33F?style=flat" alt="Greenplum"/>
 	<img src="https://img.shields.io/badge/MS%20Access-A4373A?style=flat&logo=microsoftaccess&logoColor=white" alt="MS Access"/>
+	<img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat&logo=neo4j&logoColor=white" alt="Neo4j"/>
+	<img src="https://img.shields.io/badge/Memgraph-FB6E00?style=flat" alt="Memgraph"/>
+	<img src="https://img.shields.io/badge/SurrealDB-FF00A0?style=flat&logo=surrealdb&logoColor=white" alt="SurrealDB"/>
+	<img src="https://img.shields.io/badge/Salesforce-00A1E0?style=flat&logo=salesforce&logoColor=white" alt="Salesforce"/>
 </p>
 
 <p align="center">

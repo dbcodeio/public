@@ -107,7 +107,6 @@
   "Your computers locale format.": "Format ustawień regionalnych komputera.",
   "Format to display dates and times in.": "Format wyświetlania dat i godzin.",
   "Cloud Providers, Connections and Tunnels": "Dostawcy chmury, połączenia i tunele",
-  "Sparkle": "Migotanie",
   "Create New DBCode Notebook": "Utwórz nowy notes DBCode",
   "Create New SQL File": "Utwórz nowy plik SQL",
   "New SQL File": "Nowy plik SQL",
@@ -312,5 +311,13 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "Włącz sprawdzanie SQL (walidacja składni i semantyki). Wyłącz, aby ukryć wszystkie ostrzeżenia w plikach SQL.",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Domyślny tryb automatycznego zatwierdzania dla nowych przypiętych połączeń. Po wyłączeniu musisz ręcznie zatwierdzić lub wycofać zmiany.",
   "Exact value from database - no conversion or formatting applied.": "Dokładna wartość z bazy danych - bez konwersji i formatowania.",
-  "Enable DBCode SQL language server for diagnostics and completions.": "Włącz serwer języka SQL DBCode dla diagnostyki i uzupełnień."
+  "Truncate Cascade": "Obetnij kaskadowo",
+  "View Tunnel Logs": "Wyświetl logi tunelu",
+  "Show column comments below column names in result headers.": "Pokaż komentarze kolumn pod nazwami kolumn w nagłówkach wyników.",
+  "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "Polecenie do uruchomienia dla tuneli poleceń (np. cloud-sql-auth-proxy, kubectl)",
+  "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "Argumenty dla polecenia. Zmienne: {localPort}, {remoteHost}, {remotePort}, {database}",
+  "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "Wzorzec regex do dopasowania w stdout/stderr wskazujący gotowość tunelu",
+  "Timeout in milliseconds to wait for the tunnel to become ready": "Limit czasu w milisekundach oczekiwania na gotowość tunelu",
+  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Automatycznie wykrywaj połączenia z bazami danych z plików obszaru roboczego (`.env`, pliki konfiguracyjne itp.). Wyłącz, aby uniemożliwić wyświetlanie automatycznie wykrytych połączeń.",
+  "Compare Data With...": "Porównaj dane z..."
 }

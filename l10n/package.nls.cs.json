@@ -107,7 +107,6 @@
   "Your computers locale format.": "Formát národního prostředí vašeho počítače.",
   "Format to display dates and times in.": "Formát zobrazení data a času.",
   "Cloud Providers, Connections and Tunnels": "Poskytovatelé cloudu, připojení a tunely",
-  "Sparkle": "Sparkle",
   "Create New DBCode Notebook": "Vytvořit nový poznámkový blok DBCode",
   "Create New SQL File": "Vytvořit nový soubor SQL",
   "New SQL File": "Nový soubor SQL",
@@ -312,5 +311,13 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "Povolit kontrolu SQL (syntaktická a sémantická validace). Zakažte pro potlačení všech upozornění v SQL souborech.",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Výchozí režim automatického potvrzování pro nová připnutá připojení. Pokud je zakázáno, musíte změny potvrdit nebo vrátit ručně.",
   "Exact value from database - no conversion or formatting applied.": "Přesná hodnota z databáze - nebyla použita žádná konverze ani formátování.",
-  "Enable DBCode SQL language server for diagnostics and completions.": "Povolte jazykový server DBCode SQL pro diagnostiku a doplňování."
+  "Truncate Cascade": "Kaskádově zkrátit",
+  "View Tunnel Logs": "Zobrazit logy tunelu",
+  "Show column comments below column names in result headers.": "Zobrazit komentáře sloupců pod názvy sloupců v záhlavích výsledků.",
+  "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "Příkaz pro příkazové tunely (např. cloud-sql-auth-proxy, kubectl)",
+  "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "Argumenty pro příkaz. Proměnné: {localPort}, {remoteHost}, {remotePort}, {database}",
+  "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "Regex vzor pro hledání v stdout/stderr indikující, že tunel je připraven",
+  "Timeout in milliseconds to wait for the tunnel to become ready": "Časový limit v milisekundách pro čekání na připravenost tunelu",
+  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Automaticky zjišťovat databázová připojení ze souborů pracovního prostoru (`.env`, konfigurační soubory atd.). Zakázáním zabráníte zobrazování automaticky zjištěných připojení.",
+  "Compare Data With...": "Porovnat data s..."
 }

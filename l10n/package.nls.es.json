@@ -107,7 +107,6 @@
   "Your computers locale format.": "Formato regional de su equipo.",
   "Format to display dates and times in.": "Formato para mostrar fechas y horas.",
   "Cloud Providers, Connections and Tunnels": "Proveedores de nube, conexiones y túneles",
-  "Sparkle": "Brillo",
   "Create New DBCode Notebook": "Crear nuevo bloc de notas DBCode",
   "Create New SQL File": "Crear nuevo archivo SQL",
   "New SQL File": "Nuevo archivo SQL",
@@ -312,5 +311,13 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "Habilitar verificación SQL (validación sintáctica y semántica). Deshabilitar para suprimir todas las advertencias en archivos SQL.",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Modo de confirmación automática predeterminado para nuevas conexiones ancladas. Si está deshabilitado, debe confirmar o revertir los cambios manualmente.",
   "Exact value from database - no conversion or formatting applied.": "Valor exacto de la base de datos - sin conversión ni formato aplicado.",
-  "Enable DBCode SQL language server for diagnostics and completions.": "Habilitar el servidor de lenguaje SQL de DBCode para diagnósticos y completados."
+  "Truncate Cascade": "Truncar en cascada",
+  "View Tunnel Logs": "Ver registros del túnel",
+  "Show column comments below column names in result headers.": "Mostrar comentarios de columna debajo de los nombres de columna en los encabezados de resultados.",
+  "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "Comando a ejecutar para túneles de comando (ej: cloud-sql-auth-proxy, kubectl)",
+  "Arguments for the command. Variables: {localPort}, {remoteHost}, {remotePort}, {database}": "Argumentos para el comando. Variables: {localPort}, {remoteHost}, {remotePort}, {database}",
+  "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "Patrón regex para buscar en stdout/stderr que indica que el túnel está listo",
+  "Timeout in milliseconds to wait for the tunnel to become ready": "Tiempo de espera en milisegundos para que el túnel esté listo",
+  "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Descubrir automáticamente conexiones de base de datos desde archivos del espacio de trabajo (`.env`, archivos de configuración, etc.). Desactivar para evitar que aparezcan conexiones auto-descubiertas.",
+  "Compare Data With...": "Comparar datos con..."
 }
