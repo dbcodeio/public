@@ -319,5 +319,6 @@
   "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "터널이 준비되었음을 나타내는 stdout/stderr에서 일치시킬 정규식 패턴",
   "Timeout in milliseconds to wait for the tunnel to become ready": "터널이 준비될 때까지 기다리는 제한 시간(밀리초)",
   "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "작업 공간 파일(`.env`, 구성 파일 등)에서 데이터베이스 연결을 자동으로 검색합니다. 자동 검색된 연결이 표시되지 않도록 하려면 비활성화하십시오.",
-  "Compare Data With...": "데이터 비교..."
+  "Compare Data With...": "데이터 비교...",
+  "Keep short queries on a single line when their content is under this character length. Only applies when set.": "쿼리 내용이 이 문자 길이 미만일 때 짧은 쿼리를 한 줄로 유지합니다. 설정된 경우에만 적용됩니다."
 }

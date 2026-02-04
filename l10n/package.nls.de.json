@@ -319,5 +319,6 @@
   "Regex pattern to match in stdout/stderr indicating the tunnel is ready": "Regex-Muster für stdout/stderr, das anzeigt, dass der Tunnel bereit ist",
   "Timeout in milliseconds to wait for the tunnel to become ready": "Zeitüberschreitung in Millisekunden, um auf Tunnel-Bereitschaft zu warten",
   "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Datenbankverbindungen automatisch aus Arbeitsbereichsdateien (`.env`, Konfigurationsdateien usw.) erkennen. Deaktivieren, um zu verhindern, dass automatisch erkannte Verbindungen angezeigt werden.",
-  "Compare Data With...": "Daten vergleichen mit..."
+  "Compare Data With...": "Daten vergleichen mit...",
+  "Keep short queries on a single line when their content is under this character length. Only applies when set.": "Kurze Abfragen in einer Zeile belassen, wenn ihr Inhalt unter dieser Zeichenlänge liegt. Gilt nur, wenn festgelegt."
 }

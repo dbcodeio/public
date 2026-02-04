@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 1.26.17 - 2026-02-04
+
+### Changed
+
+- SQLite: Updated better-sqlite3-multiple-ciphers to 12.6.2. #936
+- DuckDB: Updated to version 1.4.4. #943
+- SQL Server: Added Read Only support for AlwaysOn Availability Group routing via ApplicationIntent=ReadOnly. #940
+
+### Fixed
+
+- BigQuery: Fixed stale credentials not being refreshed when re-authenticating via `gcloud auth application-default login`. 
+- BigQuery: Added clear error message for GCP RAPT session expiry instead of showing raw JSON error.
+- DB2: Fixed SSL certificate paths not being passed correctly. #945
+- DuckDB: Fixed "File Search Path" setting not applying to output operations (COPY TO, EXPORT). #944
+- Grid: Fixed boolean column filtering generating invalid SQL.
+- Editor: Execute shortcuts (Cmd/Win+Enter, Shift+Cmd/Win+Enter, Alt+Cmd/Win+Enter) now run the selected SQL when editing database objects (stored procedures, functions, triggers, etc), instead of applying the whole object.
+
 ## 1.26.16 - 2026-01-28
 
 ### Fixed

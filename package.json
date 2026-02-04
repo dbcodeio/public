@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.26.16",
+    "version": "1.26.17",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -1179,7 +1179,7 @@
                 },
                 "key": "shift+windows+enter",
                 "mac": "shift+cmd+enter",
-                "when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode"
+                "when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && (resourceScheme != dbcode || editorHasSelection)"
             },
             {
                 "command": "dbcode.editor.execute",
@@ -1188,7 +1188,7 @@
                 },
                 "key": "alt+windows+enter",
                 "mac": "alt+cmd+enter",
-                "when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode"
+                "when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && (resourceScheme != dbcode || editorHasSelection)"
             },
             {
                 "command": "dbcode.editor.copyQuery",
@@ -1203,10 +1203,16 @@
                 "when": "editorTextFocus && (editorLangId == sql || resourceFilename =~ /.sql$/)"
             },
             {
+                "command": "dbcode.editor.execute",
+                "key": "windows+enter",
+                "mac": "cmd+enter",
+                "when": "editorTextFocus && resourceScheme == dbcode && editorHasSelection"
+            },
+            {
                 "command": "dbcode.editor.apply",
                 "key": "windows+enter",
                 "mac": "cmd+enter",
-                "when": "editorTextFocus && resourceScheme == dbcode"
+                "when": "editorTextFocus && resourceScheme == dbcode && !editorHasSelection"
             },
             {
                 "command": "dbcode.connections.quickOpen",
@@ -5325,7 +5331,7 @@
         "@clickhouse/client": "^1.12.1",
         "@databricks/sql": "^1.12.0",
         "@date-fns/utc": "^2.1.0",
-        "@duckdb/node-api": "^1.4.2-r.1",
+        "@duckdb/node-api": "^1.4.4-r.1",
         "@elastic/elasticsearch": "^9.0.1",
         "@google-cloud/bigquery": "^8.1.1",
         "@google-cloud/resource-manager": "^6.2.1",
@@ -5349,7 +5355,7 @@
         "antlr4-c3": "^3.4.4",
         "antlr4ng": "^3.0.16",
         "base64-js": "^1.5.1",
-        "better-sqlite3-multiple-ciphers": "^12.4.1",
+        "better-sqlite3-multiple-ciphers": "^12.6.2",
         "cassandra-driver": "^4.8.0",
         "cbor-x": "^1.6.0",
         "dagre": "^0.8.5",
