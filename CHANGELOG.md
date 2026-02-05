@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.27.0 - 2026-02-04
+
+### Changed
+
+- DuckLake: In preview for connecting to DuckLake catalogs with local or database-backed metadata and local/S3/GCS data storage.
+- Iceberg: In preview for connecting to Apache Iceberg catalogs via AWS Glue or S3 Tables.
+- Formatting: Added `preserveShortStatements` setting to skip formatting for short SQL statements, leaving them exactly as written.
+- Connections: Added "Editor Connection Idle Timeout" setting to auto-release editor connections after a period of inactivity. Useful for serverless databases to prevent unexpected billing from keepalive queries. If there are uncommitted changes, a warning notification is shown with a grace period before auto-rolling back.
+
+### Fixed
+
+- Alter Table: Fixed alter table and hover actions not working. #928
+- Redis: Fixed MCP queries hanging and blocking the extension on large scans by yielding and configurable max scan limit. #946
+
 ## 1.26.17 - 2026-02-04
 
 ### Changed

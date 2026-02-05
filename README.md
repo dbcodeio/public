@@ -1,14 +1,10 @@
-# DBCode - Data Beside Code
+# DBCode - Database Client for VS Code
 
 <p align="center">
-	<a href="https://dbcode.io/docs" target="_blank">DOCS</a> | <a href="https://dbcode.io/changelog" target="_blank">CHANGELOG</a>  | <a href="https://discord.gg/FvAzEAHb9w" target="_blank">DISCORD</a>
+	<a href="https://dbcode.io/docs" target="_blank">DOCS</a> | <a href="https://dbcode.io/changelog" target="_blank">CHANGELOG</a> | <a href="https://discord.gg/FvAzEAHb9w" target="_blank">DISCORD</a>
 </p>
 
-For devs who'd rather ship than <strike>fumble</strike> alt-tab around.
-
-## Database Support
-
-Connect to 40+ databases:
+<p align="center">A database manager and SQL editor built into VS Code. Browse schemas, edit data, visualize queries, and manage 50+ databases without leaving your editor.</p>
 
 <p align="center">
 	<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
@@ -18,156 +14,124 @@ Connect to 40+ databases:
 	<img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white" alt="Oracle"/>
 	<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white" alt="MongoDB"/>
 	<img src="https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white" alt="Redis"/>
-	<img src="https://img.shields.io/badge/RavenDB-388EE9?style=flat" alt="RavenDB"/>
-	<img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white" alt="MariaDB"/>
 	<img src="https://img.shields.io/badge/DuckDB-FFF000?style=flat&logo=duckdb&logoColor=black" alt="DuckDB"/>
-	<img src="https://img.shields.io/badge/H2-0000BB?style=flat" alt="H2 Database"/>
 	<img src="https://img.shields.io/badge/Snowflake-29B5E8?style=flat&logo=snowflake&logoColor=white" alt="Snowflake"/>
 	<img src="https://img.shields.io/badge/BigQuery-669DF6?style=flat&logo=googlebigquery&logoColor=white" alt="BigQuery"/>
 	<img src="https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white" alt="Databricks"/>
 	<img src="https://img.shields.io/badge/ClickHouse-FFCC01?style=flat&logo=clickhouse&logoColor=black" alt="ClickHouse"/>
 	<img src="https://img.shields.io/badge/Cassandra-1287B1?style=flat&logo=apachecassandra&logoColor=white" alt="Cassandra"/>
 	<img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat&logo=elasticsearch&logoColor=white" alt="Elasticsearch"/>
-	<img src="https://img.shields.io/badge/OpenSearch-005EB8?style=flat&logo=opensearch&logoColor=white" alt="OpenSearch"/>
-	<img src="https://img.shields.io/badge/InfluxDB-22ADF6?style=flat&logo=influxdb&logoColor=white" alt="InfluxDB"/>
-	<img src="https://img.shields.io/badge/CockroachDB-6933FF?style=flat&logo=cockroachlabs&logoColor=white" alt="CockroachDB"/>
-	<img src="https://img.shields.io/badge/Trino-DD00A1?style=flat&logo=trino&logoColor=white" alt="Trino"/>
-	<img src="https://img.shields.io/badge/Hive-FDEE21?style=flat&logo=apachehive&logoColor=black" alt="Apache Hive"/>
-	<img src="https://img.shields.io/badge/Impala-00BCD4?style=flat" alt="Apache Impala"/>
+	<img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat&logo=neo4j&logoColor=white" alt="Neo4j"/>
 	<img src="https://img.shields.io/badge/Firebase-DD2C00?style=flat&logo=firebase&logoColor=white" alt="Firebase"/>
 	<img src="https://img.shields.io/badge/DynamoDB-4053D6?style=flat&logo=amazondynamodb&logoColor=white" alt="DynamoDB"/>
-	<img src="https://img.shields.io/badge/Redshift-8C4FFF?style=flat&logo=amazonredshift&logoColor=white" alt="Redshift"/>
-	<img src="https://img.shields.io/badge/Athena-232F3E?style=flat&logo=amazonaws&logoColor=white" alt="Athena"/>
-	<img src="https://img.shields.io/badge/Azure%20SQL-0078D4?style=flat&logo=microsoftazure&logoColor=white" alt="Azure SQL"/>
-	<img src="https://img.shields.io/badge/Synapse-0078D4?style=flat&logo=microsoftazure&logoColor=white" alt="Azure Synapse"/>
-	<img src="https://img.shields.io/badge/Dataverse-742774?style=flat&logo=dynamics365&logoColor=white" alt="Dataverse"/>
-	<img src="https://img.shields.io/badge/IBM%20Db2-052FAD?style=flat&logo=ibm&logoColor=white" alt="IBM Db2"/>
-	<img src="https://img.shields.io/badge/Netezza-052FAD?style=flat&logo=ibm&logoColor=white" alt="IBM Netezza"/>
-	<img src="https://img.shields.io/badge/Cloudflare%20D1-F38020?style=flat&logo=cloudflare&logoColor=white" alt="Cloudflare D1"/>
-	<img src="https://img.shields.io/badge/libSQL-4FF8D2?style=flat&logo=turso&logoColor=black" alt="libSQL"/>
-	<img src="https://img.shields.io/badge/MotherDuck-FFF000?style=flat&logo=duckdb&logoColor=black" alt="MotherDuck"/>
-	<img src="https://img.shields.io/badge/Timescale-FDB515?style=flat&logo=timescale&logoColor=black" alt="Timescale"/>
-	<img src="https://img.shields.io/badge/YugabyteDB-FF6E42?style=flat&logo=yugabytedb&logoColor=white" alt="YugabyteDB"/>
-	<img src="https://img.shields.io/badge/SingleStore-AA00FF?style=flat&logo=singlestore&logoColor=white" alt="SingleStore"/>
-	<img src="https://img.shields.io/badge/TiDB-DD0031?style=flat&logo=tidb&logoColor=white" alt="TiDB"/>
-	<img src="https://img.shields.io/badge/Doris-5694E5?style=flat&logo=apachedoris&logoColor=white" alt="Apache Doris"/>
-	<img src="https://img.shields.io/badge/StarRocks-00A1E5?style=flat" alt="StarRocks"/>
-	<img src="https://img.shields.io/badge/ScyllaDB-6CD5E7?style=flat&logo=scylladb&logoColor=black" alt="ScyllaDB"/>
-	<img src="https://img.shields.io/badge/QuestDB-B73CD4?style=flat&logo=questdb&logoColor=white" alt="QuestDB"/>
-	<img src="https://img.shields.io/badge/RisingWave-0055FF?style=flat" alt="RisingWave"/>
-	<img src="https://img.shields.io/badge/Greenplum-6DB33F?style=flat" alt="Greenplum"/>
-	<img src="https://img.shields.io/badge/MS%20Access-A4373A?style=flat&logo=microsoftaccess&logoColor=white" alt="MS Access"/>
-	<img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat&logo=neo4j&logoColor=white" alt="Neo4j"/>
-	<img src="https://img.shields.io/badge/Memgraph-FB6E00?style=flat" alt="Memgraph"/>
-	<img src="https://img.shields.io/badge/SurrealDB-FF00A0?style=flat&logo=surrealdb&logoColor=white" alt="SurrealDB"/>
-	<img src="https://img.shields.io/badge/Salesforce-00A1E0?style=flat&logo=salesforce&logoColor=white" alt="Salesforce"/>
+	<img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white" alt="MariaDB"/>
 </p>
 
 <p align="center">
-	<img src="https://img.shields.io/badge/CSV-217346?style=flat" alt="CSV"/>
-	<img src="https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoftexcel&logoColor=white" alt="Excel"/>
-	<img src="https://img.shields.io/badge/Parquet-50ABF1?style=flat&logo=apacheparquet&logoColor=white" alt="Parquet"/>
-	<img src="https://img.shields.io/badge/Avro-D12127?style=flat&logo=apachekafka&logoColor=white" alt="Avro"/>
+	<a href="https://dbcode.io">50+ supported databases, warehouses, lakehouses, and file formats</a>
 </p>
-
-[See all supported databases](https://dbcode.io)
 
 ## Data Viewing & Editing
 
-<img width="100%" alt="data-editor" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/editing.gif">
+<img width="100%" alt="VS Code database GUI - filter, sort, group, and edit data" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/editing.gif">
 
-<ul>
-	<li>⚡ Filter, Sort, and Group data with a few clicks</li>
-	<li>🔄 CRUD operations without writing SQL (I know, sometimes it feels like cheating)</li>
-	<li>✅ Changes verified before execution - because we all have that production horror story</li>
-</ul>
-
+- Filter, sort, and group data with a few clicks
+- Edit rows directly — insert, update, delete without writing SQL
+- Changes verified before execution so you don't have a production horror story
 
 ## Copilot Integration
 
-<img width="100%" alt="copilot" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/copilot.gif">
+<img width="100%" alt="GitHub Copilot database queries - natural language to SQL" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/copilot.gif">
 
-<p>Query your data with natural language. Ask schema questions, generate queries, create tables - because sometimes typing "SELECT * FROM" for the 100th time is just too much effort.</p>
-
+Query your data with natural language. Ask schema questions, generate queries, create tables.
 
 ## Entity Relationship Diagrams
 
-<img width="100%" alt="erd" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/erd.gif">
+<img width="100%" alt="Auto-generated ER diagrams from database schema" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/erd.gif">
 
-<p>Auto-generated diagrams that map your database structure. Your DBA will think you spent hours on this.</p>
+Auto-generated diagrams from your live database schema. Export as PDF, HTML or PNG.
 
-## Data Exploration
+## Foreign Key Navigation
 
-<img width="100%" alt="erd" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/relationships.gif">
+<img width="100%" alt="Navigate database foreign key relationships" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/relationships.gif">
 
-<p>Navigate foreign key relationships with a click. No JOINs required.</p>
+Click any foreign key value to jump to the referenced row. Navigate relationships without writing JOINs.
 
-## Custom SQL
+## SQL Editor
 
-<img width="100%" alt="custom SQL" src="https://github.com/dbcodeio/public/assets/1918994/650632b0-da26-4b98-9f66-5138a7db1e7e">
+<img width="100%" alt="VS Code SQL editor with intellisense and autocomplete" src="https://github.com/dbcodeio/public/assets/1918994/650632b0-da26-4b98-9f66-5138a7db1e7e">
 
-<p>Write and execute your own queries right within VS Code. For when you need to flex those SQL muscles.</p>
+Full SQL editor with database-specific syntax highlighting, autocomplete, and inline signature help.
 
+## SQL Intellisense
 
-## Inline SQL Help
+<img width="100%" alt="SQL autocomplete with table and column intellisense" src="https://github.com/dbcodeio/public/assets/1918994/1efd912b-7750-47d0-a2e9-7aaaff0b0c52">
 
-<img width="100%" alt="signature" src="https://github.com/dbcodeio/public/assets/1918994/1efd912b-7750-47d0-a2e9-7aaaff0b0c52">
-
-<ul>
-	<li>🔍 Database-specific SQL keywords - no more forgetting dialect differences</li>
-	<li>📊 Table/view/procedure intellisense with data types - because remembering every column name is for computers</li>
-</ul>
-
+- Database-specific SQL keywords and syntax
+- Table, view, and procedure autocomplete with column types
 
 ## Secure Report Sharing
 
-<img  height="300" alt="share" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/share.png">
+<img height="300" alt="Encrypted database report sharing" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/share.png">
 
-<p>Share reports securely with encryption - no credentials or data exposed. Your security team will finally stop giving you that look.</p>
+Share query results as encrypted reports. No credentials or raw data exposed.
 
-## Notebooks
+## Database Notebooks
 
-<img width="100%" alt="notebook" src="https://github.com/dbcodeio/public/assets/1918994/6295585e-f13f-46b7-98e1-80e850485db1">
+<img width="100%" alt="VS Code database notebooks - SQL and Python" src="https://github.com/dbcodeio/public/assets/1918994/6295585e-f13f-46b7-98e1-80e850485db1">
 
-<p>Use VS Code Notebooks for database work. Query, analyze, and document in one place.</p>
+SQL and Python cells in VS Code Notebooks. Query, analyze, and document in one place with Jupyter kernel integration.
 
-## Stored Procedures and Functions
+## Stored Procedures & Functions
 
-<img width="100%" alt="stored-procedure" src="https://github.com/dbcodeio/public/assets/1918994/dae92d32-13b7-4f90-8bcb-67116a5468cd">
+<img width="100%" alt="Edit stored procedures and functions in VS Code" src="https://github.com/dbcodeio/public/assets/1918994/dae92d32-13b7-4f90-8bcb-67116a5468cd">
 
-<p>Edit database logic in your favorite code editor. Say goodbye to those prehistoric database IDEs.</p>
-
+Edit and deploy database logic directly from VS Code. Full syntax support for PL/pgSQL, T-SQL, PL/SQL, and more.
 
 ## Data Visualization
 
-<img width="100%" alt="chart" src="https://github.com/dbcodeio/public/assets/1918994/d1d33ee9-9b3b-408f-9477-f208cf2adf87">
+<img width="100%" alt="Database query result charts and graphs" src="https://github.com/dbcodeio/public/assets/1918994/d1d33ee9-9b3b-408f-9477-f208cf2adf87">
 
-<p>Transform query results into charts and graphs. Impress stakeholders with minimal effort (I won't tell).</p>
+Transform query results into charts and graphs. Bar, line, pie, scatter, and more.
 
+## Data Compare
 
-## Additional Features
+Compare data between tables, databases, or connections. See differences side-by-side, generate sync scripts, or apply changes directly. [Learn more](https://dbcode.io/docs/data/compare)
+
+## Zero Config Connections
+
+Automatically discovers database connections from your project's `.env`, `application.properties`, `database.yml`, `settings.py`, and other config files. Supports Laravel, Django, Spring Boot, Node.js, Rails, and more. [Learn more](https://dbcode.io/docs/connections/zero-config)
+
+## Execution Plans
+
+Visualize EXPLAIN and ANALYZE output as interactive node graphs. Identify slow operations, see row estimates vs actuals, and drill into cost breakdowns. Supported for PostgreSQL, MySQL, SQL Server, and more. [Learn more](https://dbcode.io/docs/query/execution-plans)
+
+## More Features
 
 **Data**
 - **Import/Export**: CSV, Excel, JSON, Parquet, Avro
-- **Backup/Restore**: Native backup tools for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB
-- **File Formats**: Open CSV/Excel/Parquet/Avro files directly - edit and save back
+- **Backup/Restore**: Native tools for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB
+- **File Formats**: Open and edit CSV, Excel, Parquet, Avro files directly
 - **Data Formatters**: Lookup values from other tables, expand JSON columns
+- **[Inferred Relationships](https://dbcode.io/docs/data/relationships)**: Define relationships for databases without foreign keys (MongoDB, DynamoDB)
+- **[Data Search](https://dbcode.io/docs/data/search)**: Search across all columns in a table
 
 **Query & Analysis**
-- **Execution Plans**: Visualize EXPLAIN/ANALYZE output
 - **Transaction Control**: Manual commit/rollback with auto-commit toggle
 - **SQL Filters**: WHERE clause filtering with saved filters
 - **Query Parameters**: Reuse queries with different inputs
+- **[Query History](https://dbcode.io/docs/query/history)**: Full history with search, re-execute, and [sync across devices](https://dbcode.io/docs/query/history-sync)
 
 **Connectivity**
-- **Zero Config**: Auto-discovers connections from .env files (Laravel, Django, Spring, Node.js)
-- **Auth Profiles**: Centralized auth - OAuth, AWS SSO, 1Password, Vault
-- **SSL Auto Config**: Automatic SSL for [known hosts](https://dbcode.io/docs/connections/auto-ssl)
-- **SSH Tunnels**: Manual config or auto-discovery from SSH config
+- **[Auth Profiles](https://dbcode.io/docs/authentication-profiles)**: OAuth, AWS SSO, 1Password, HashiCorp Vault
+- **[SSL Auto Config](https://dbcode.io/docs/connections/auto-ssl)**: Automatic SSL for known hosts
+- **[SSH Tunnels](https://dbcode.io/docs/connections/ssh-tunnels)**: Manual config or auto-discovery from SSH config
+- **Command Tunnels**: Local proxy tools (cloud-sql-auth-proxy, kubectl port-forward, AWS SSM)
 
-**Notebooks & AI**
-- **Python Cells**: Jupyter kernel integration with SQL-to-Python injection
-- **Copilot Integration**: Drag tables to Copilot, natural language queries
+**AI**
+- **Copilot Chat**: Drag tables into Copilot, natural language queries
+- **[MCP Integration](https://dbcode.io/docs/ai/mcp)**: Model Context Protocol for AI tools with full schema context
+- **Inline Completion**: AI-powered SQL code completion
 
 **VS Code Integration**
 - **Theme Support**: Full compatibility with VS Code themes
@@ -177,19 +141,9 @@ Connect to 40+ databases:
 
 ## Pricing
 
-Core features are free, forever. Some advanced features require a subscription. See our [Pricing](https://dbcode.io/pricing) page.
+Core features are free, forever. Some advanced features require a subscription. See [Pricing](https://dbcode.io/pricing).
 
-## Contributors
-
-- [Pradeep Kumar](https://www.linkedin.com/in/pradeep-kumar-1722b6123/): Documentation, Testing
-- [Lanterns](https://github.com/L4nterns): Translation
-- [snickerjp](https://github.com/snickerjp): Translation
-- [intervisionlord](https://github.com/intervisionlord): Translation
-
-A heartfelt thank you to these incredible contributors who have generously donated their time and expertise. DBCode wouldn't be the same without their input.
 
 ## Telemetry
 
-We collect anonymous usage data when VS Code telemetry is enabled. This helps us improve the extension.
-
-Telemetry respects your VS Code settings - if disabled there, we collect nothing. See our [privacy policy](https://dbcode.io/legal/privacy-policy/).
+Anonymous usage data is collected when VS Code telemetry is enabled. Telemetry respects your VS Code settings if disabled there, we collect nothing. See our [privacy policy](https://dbcode.io/legal/privacy-policy/).
