@@ -320,5 +320,5 @@
   "Timeout in milliseconds to wait for the tunnel to become ready": "Limit czasu w milisekundach oczekiwania na gotowość tunelu",
   "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Automatycznie wykrywaj połączenia z bazami danych z plików obszaru roboczego (`.env`, pliki konfiguracyjne itp.). Wyłącz, aby uniemożliwić wyświetlanie automatycznie wykrytych połączeń.",
   "Compare Data With...": "Porównaj dane z...",
-  "Keep short queries on a single line when their content is under this character length. Only applies when set.": "Zachowaj krótkie zapytania w jednej linii, gdy ich zawartość jest krótsza niż ta długość znaków. Dotyczy tylko gdy ustawione."
+  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "Pomiń formatowanie dla instrukcji krótszych niż ta długość znaków, pozostawiając je dokładnie tak, jak zostały napisane. Ustaw na 0, aby wyłączyć."
 }

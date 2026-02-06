@@ -320,5 +320,5 @@
   "Timeout in milliseconds to wait for the tunnel to become ready": "等待隧道就绪的超时时间（毫秒）",
   "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "自动从工作区文件（`.env`、配置文件等）发现数据库连接。禁用以防止显示自动发现的连接。",
   "Compare Data With...": "比较数据...",
-  "Keep short queries on a single line when their content is under this character length. Only applies when set.": "当查询内容少于此字符长度时，将短查询保持在一行。仅在设置时适用。"
+  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "跳过对短于此字符长度的语句的格式化，保持原样。设置为 0 禁用。"
 }

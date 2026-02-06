@@ -320,5 +320,5 @@
   "Timeout in milliseconds to wait for the tunnel to become ready": "Tünelin hazır olmasını beklemek için milisaniye cinsinden zaman aşımı",
   "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Çalışma alanı dosyalarından (`.env`, yapılandırma dosyaları vb.) veritabanı bağlantılarını otomatik olarak keşfedin. Otomatik keşfedilen bağlantıların görünmesini engellemek için devre dışı bırakın.",
   "Compare Data With...": "Verileri karşılaştır...",
-  "Keep short queries on a single line when their content is under this character length. Only applies when set.": "Sorguların içeriği bu karakter uzunluğunun altında olduğunda kısa sorguları tek satırda tutun. Yalnızca ayarlandığında geçerlidir."
+  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "Bu karakter uzunluğundan daha kısa ifadelerin biçimlendirmesini atla, tam yazıldığı gibi bırak. Devre dışı bırakmak için 0 olarak ayarlayın."
 }

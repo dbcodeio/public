@@ -178,7 +178,7 @@
   "Number of blank lines between separate queries.": "Ƞŭŭḿƀḗḗř ǿǿƒ ƀŀȧȧƞķ ŀīƞḗḗş ƀḗḗŧẇḗḗḗḗƞ şḗḗƥȧȧřȧȧŧḗḗ ɋŭŭḗḗřīḗḗş.",
   "Remove spaces around operators (e.g., `age>=18` instead of `age >= 18`).": "Řḗḗḿǿǿṽḗḗ şƥȧȧƈḗḗş ȧȧřǿǿŭŭƞḓ ǿǿƥḗḗřȧȧŧǿǿřş (ḗḗ.ɠ., `ȧȧɠḗḗ>=18` īƞşŧḗḗȧȧḓ ǿǿƒ `ȧȧɠḗḗ >= 18`).",
   "Place semicolons on separate lines.": "Ƥŀȧȧƈḗḗ şḗḗḿīƈǿǿŀǿǿƞş ǿǿƞ şḗḗƥȧȧřȧȧŧḗḗ ŀīƞḗḗş.",
-  "Keep short queries on a single line when their content is under this character length. Only applies when set.": "Ķḗḗḗḗƥ şħǿǿřŧ ɋŭŭḗḗřīḗḗş ǿǿƞ ȧȧ şīƞɠŀḗḗ ŀīƞḗḗ ẇħḗḗƞ ŧħḗḗīř ƈǿǿƞŧḗḗƞŧ īş ŭŭƞḓḗḗř ŧħīş ƈħȧȧřȧȧƈŧḗḗř ŀḗḗƞɠŧħ. ǾǾƞŀẏ ȧȧƥƥŀīḗḗş ẇħḗḗƞ şḗḗŧ.",
+  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "Şķīƥ ƒǿǿřḿȧȧŧŧīƞɠ ƒǿǿř şŧȧȧŧḗḗḿḗḗƞŧş şħǿǿřŧḗḗř ŧħȧȧƞ ŧħīş ƈħȧȧřȧȧƈŧḗḗř ŀḗḗƞɠŧħ, ŀḗḗȧȧṽīƞɠ ŧħḗḗḿ ḗḗẋȧȧƈŧŀẏ ȧȧş ẇřīŧŧḗḗƞ. Şḗḗŧ ŧǿǿ 0 ŧǿǿ ḓīşȧȧƀŀḗḗ.",
   "Results": "Řḗḗşŭŭŀŧş",
   "Show results in the panel.": "Şħǿǿẇ řḗḗşŭŭŀŧş īƞ ŧħḗḗ ƥȧȧƞḗḗŀ.",
   "Show results beside the editor.": "Şħǿǿẇ řḗḗşŭŭŀŧş ƀḗḗşīḓḗḗ ŧħḗḗ ḗḗḓīŧǿǿř.",

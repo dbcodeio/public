@@ -320,5 +320,5 @@
   "Timeout in milliseconds to wait for the tunnel to become ready": "Časový limit v milisekundách pro čekání na připravenost tunelu",
   "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Automaticky zjišťovat databázová připojení ze souborů pracovního prostoru (`.env`, konfigurační soubory atd.). Zakázáním zabráníte zobrazování automaticky zjištěných připojení.",
   "Compare Data With...": "Porovnat data s...",
-  "Keep short queries on a single line when their content is under this character length. Only applies when set.": "Zachovat krátké dotazy na jednom řádku, pokud je jejich obsah kratší než tato délka znaků. Platí pouze pokud je nastaveno."
+  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "Přeskočit formátování příkazů kratších než tato délka znaků, ponechat je přesně tak, jak jsou napsány. Nastavte na 0 pro deaktivaci."
 }

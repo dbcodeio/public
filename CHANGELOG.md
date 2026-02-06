@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.27.1 - 2026-02-06
+
+### Changed
+
+- Access: Removed from preview, added support for views (Access Queries), indexes, foreign keys, and read-only mode. #546
+- H2: Removed preview badge - H2 Database driver is now stable. #371
+- Results: Added chart toolbar button with dropdown for quick chart creation from selection, with persistent chart type preference (Ctrl/Cmd+G). #921
+
+### Fixed
+
+- Autocomplete: Fixed keyword sort priority so SQL keywords (SELECT, etc.) appear before procedures/functions in completion results. #948
+- Redis: Fixed raw commands (KEYS, SCAN) still blocking the extension, changed abort signal handling. #946
+- DuckLake: Fixed Windows connection failure by normalizing backslashes to forward slashes in local catalog and data paths.
+
 ## 1.27.0 - 2026-02-04
 
 ### Changed
