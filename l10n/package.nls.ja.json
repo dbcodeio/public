@@ -320,5 +320,9 @@
   "Timeout in milliseconds to wait for the tunnel to become ready": "トンネルの準備完了を待機するタイムアウト（ミリ秒）",
   "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "ワークスペースファイル（`.env`、設定ファイルなど）からデータベース接続を自動検出します。自動検出された接続が表示されないようにするには無効にします。",
   "Compare Data With...": "データを比較...",
-  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "この文字長より短いステートメントの書式設定をスキップし、そのまま残します。0 に設定すると無効になります。"
+  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "この文字長より短いステートメントの書式設定をスキップし、そのまま残します。0 に設定すると無効になります。",
+  "Compact row spacing for more data on screen.": "画面上により多くのデータを表示するためのコンパクトな行間隔。",
+  "Default row spacing.": "デフォルトの行間隔。",
+  "Extra row spacing for readability.": "読みやすさのための追加の行間隔。",
+  "Controls the display density of data grid rows.": "データグリッド行の表示密度を制御します。"
 }

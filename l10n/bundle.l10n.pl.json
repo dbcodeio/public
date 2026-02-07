@@ -2963,5 +2963,14 @@
   "lake": "lake",
   "Name for the attached database. Defaults to \"lake\" if empty.": "Nazwa dołączonej bazy danych. Domyślnie \"lake\", jeśli puste.",
   "Re-authenticate": "Uwierzytelnij ponownie",
-  "GCP session expired. Re-authenticate to continue.": "Sesja GCP wygasła. Uwierzytelnij ponownie, aby kontynuować."
+  "GCP session expired. Re-authenticate to continue.": "Sesja GCP wygasła. Uwierzytelnij ponownie, aby kontynuować.",
+  "Display Density": "Gęstość wyświetlania",
+  "Compact": "Zwarta",
+  "Normal": "Normalna",
+  "Comfortable": "Wygodna",
+  "Grid Settings": "Ustawienia siatki",
+  "Sequences": "Sekwencje",
+  "Optional — existing catalogs already store the data path.": "Opcjonalne — istniejące katalogi już przechowują ścieżkę danych.",
+  "Override Data Path": "Nadpisz ścieżkę danych",
+  "Override the data path stored in the catalog with the one specified above.": "Nadpisuje ścieżkę danych przechowywaną w katalogu ścieżką określoną powyżej."
 }

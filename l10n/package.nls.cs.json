@@ -320,5 +320,9 @@
   "Timeout in milliseconds to wait for the tunnel to become ready": "Časový limit v milisekundách pro čekání na připravenost tunelu",
   "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Automaticky zjišťovat databázová připojení ze souborů pracovního prostoru (`.env`, konfigurační soubory atd.). Zakázáním zabráníte zobrazování automaticky zjištěných připojení.",
   "Compare Data With...": "Porovnat data s...",
-  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "Přeskočit formátování příkazů kratších než tato délka znaků, ponechat je přesně tak, jak jsou napsány. Nastavte na 0 pro deaktivaci."
+  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "Přeskočit formátování příkazů kratších než tato délka znaků, ponechat je přesně tak, jak jsou napsány. Nastavte na 0 pro deaktivaci.",
+  "Compact row spacing for more data on screen.": "Kompaktní řádkování pro více dat na obrazovce.",
+  "Default row spacing.": "Výchozí řádkování.",
+  "Extra row spacing for readability.": "Zvětšené řádkování pro lepší čitelnost.",
+  "Controls the display density of data grid rows.": "Ovládá hustotu zobrazení řádků datové mřížky."
 }

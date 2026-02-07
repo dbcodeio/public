@@ -320,5 +320,9 @@
   "Timeout in milliseconds to wait for the tunnel to become ready": "等待隧道就绪的超时时间（毫秒）",
   "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "自动从工作区文件（`.env`、配置文件等）发现数据库连接。禁用以防止显示自动发现的连接。",
   "Compare Data With...": "比较数据...",
-  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "跳过对短于此字符长度的语句的格式化，保持原样。设置为 0 禁用。"
+  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "跳过对短于此字符长度的语句的格式化，保持原样。设置为 0 禁用。",
+  "Compact row spacing for more data on screen.": "紧凑的行间距以在屏幕上显示更多数据。",
+  "Default row spacing.": "默认行间距。",
+  "Extra row spacing for readability.": "额外的行间距以提高可读性。",
+  "Controls the display density of data grid rows.": "控制数据网格行的显示密度。"
 }

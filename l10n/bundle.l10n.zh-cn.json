@@ -2963,5 +2963,14 @@
   "lake": "lake",
   "Name for the attached database. Defaults to \"lake\" if empty.": "附加数据库的名称。如果为空则默认为 \"lake\"。",
   "Re-authenticate": "重新认证",
-  "GCP session expired. Re-authenticate to continue.": "GCP 会话已过期。请重新认证以继续。"
+  "GCP session expired. Re-authenticate to continue.": "GCP 会话已过期。请重新认证以继续。",
+  "Display Density": "显示密度",
+  "Compact": "紧凑",
+  "Normal": "正常",
+  "Comfortable": "舒适",
+  "Grid Settings": "网格设置",
+  "Sequences": "序列",
+  "Optional — existing catalogs already store the data path.": "可选 — 现有目录已存储数据路径。",
+  "Override Data Path": "覆盖数据路径",
+  "Override the data path stored in the catalog with the one specified above.": "使用上面指定的路径覆盖目录中存储的数据路径。"
 }

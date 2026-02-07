@@ -2963,5 +2963,14 @@
   "lake": "lake",
   "Name for the attached database. Defaults to \"lake\" if empty.": "Ekli veritabanı için ad. Boşsa varsayılan \"lake\"dir.",
   "Re-authenticate": "Yeniden Kimlik Doğrula",
-  "GCP session expired. Re-authenticate to continue.": "GCP oturumu süresi doldu. Devam etmek için yeniden kimlik doğrulaması yapın."
+  "GCP session expired. Re-authenticate to continue.": "GCP oturumu süresi doldu. Devam etmek için yeniden kimlik doğrulaması yapın.",
+  "Display Density": "Görüntüleme yoğunluğu",
+  "Compact": "Kompakt",
+  "Normal": "Normal",
+  "Comfortable": "Rahat",
+  "Grid Settings": "Izgara ayarları",
+  "Sequences": "Diziler",
+  "Optional — existing catalogs already store the data path.": "İsteğe bağlı — mevcut kataloglar zaten veri yolunu saklar.",
+  "Override Data Path": "Veri yolunu geçersiz kıl",
+  "Override the data path stored in the catalog with the one specified above.": "Katalogda saklanan veri yolunu yukarıda belirtilen yolla geçersiz kılar."
 }

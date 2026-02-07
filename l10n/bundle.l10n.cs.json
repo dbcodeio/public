@@ -2963,5 +2963,14 @@
   "lake": "lake",
   "Name for the attached database. Defaults to \"lake\" if empty.": "Název pro připojenou databázi. Výchozí je \"lake\", pokud je prázdné.",
   "Re-authenticate": "Znovu autentizovat",
-  "GCP session expired. Re-authenticate to continue.": "Platnost relace GCP vypršela. Znovu se autentizujte pro pokračování."
+  "GCP session expired. Re-authenticate to continue.": "Platnost relace GCP vypršela. Znovu se autentizujte pro pokračování.",
+  "Display Density": "Hustota zobrazení",
+  "Compact": "Kompaktní",
+  "Normal": "Normální",
+  "Comfortable": "Pohodlné",
+  "Grid Settings": "Nastavení mřížky",
+  "Sequences": "Sekvence",
+  "Optional — existing catalogs already store the data path.": "Volitelné — stávající katalogy již ukládají cestu k datům.",
+  "Override Data Path": "Přepsat cestu k datům",
+  "Override the data path stored in the catalog with the one specified above.": "Přepíše cestu k datům uloženou v katalogu cestou uvedenou výše."
 }

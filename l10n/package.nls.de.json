@@ -320,5 +320,9 @@
   "Timeout in milliseconds to wait for the tunnel to become ready": "Zeitüberschreitung in Millisekunden, um auf Tunnel-Bereitschaft zu warten",
   "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Datenbankverbindungen automatisch aus Arbeitsbereichsdateien (`.env`, Konfigurationsdateien usw.) erkennen. Deaktivieren, um zu verhindern, dass automatisch erkannte Verbindungen angezeigt werden.",
   "Compare Data With...": "Daten vergleichen mit...",
-  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "Anweisungen kürzer als diese Zeichenlänge nicht formatieren, sondern exakt wie geschrieben belassen. Auf 0 setzen zum Deaktivieren."
+  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "Anweisungen kürzer als diese Zeichenlänge nicht formatieren, sondern exakt wie geschrieben belassen. Auf 0 setzen zum Deaktivieren.",
+  "Compact row spacing for more data on screen.": "Kompakter Zeilenabstand für mehr Daten auf dem Bildschirm.",
+  "Default row spacing.": "Standard-Zeilenabstand.",
+  "Extra row spacing for readability.": "Zusätzlicher Zeilenabstand für bessere Lesbarkeit.",
+  "Controls the display density of data grid rows.": "Steuert die Anzeigedichte der Datentabellenzeilen."
 }

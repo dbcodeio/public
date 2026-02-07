@@ -2963,5 +2963,14 @@
   "lake": "lake",
   "Name for the attached database. Defaults to \"lake\" if empty.": "연결된 데이터베이스의 이름입니다. 비어 있으면 기본값은 \"lake\"입니다.",
   "Re-authenticate": "다시 인증",
-  "GCP session expired. Re-authenticate to continue.": "GCP 세션이 만료되었습니다. 계속하려면 다시 인증하세요."
+  "GCP session expired. Re-authenticate to continue.": "GCP 세션이 만료되었습니다. 계속하려면 다시 인증하세요.",
+  "Display Density": "표시 밀도",
+  "Compact": "압축",
+  "Normal": "보통",
+  "Comfortable": "편안함",
+  "Grid Settings": "그리드 설정",
+  "Sequences": "시퀀스",
+  "Optional — existing catalogs already store the data path.": "선택 사항 — 기존 카탈로그에 이미 데이터 경로가 저장되어 있습니다.",
+  "Override Data Path": "데이터 경로 재정의",
+  "Override the data path stored in the catalog with the one specified above.": "카탈로그에 저장된 데이터 경로를 위에 지정된 경로로 재정의합니다."
 }

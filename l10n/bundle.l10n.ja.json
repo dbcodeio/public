@@ -2966,5 +2966,14 @@
   "lake": "lake",
   "Name for the attached database. Defaults to \"lake\" if empty.": "アタッチされたデータベースの名前。空の場合はデフォルトで \"lake\"。",
   "Re-authenticate": "再認証",
-  "GCP session expired. Re-authenticate to continue.": "GCP セッションの期限が切れました。続行するには再認証してください。"
+  "GCP session expired. Re-authenticate to continue.": "GCP セッションの期限が切れました。続行するには再認証してください。",
+  "Display Density": "表示密度",
+  "Compact": "コンパクト",
+  "Normal": "標準",
+  "Comfortable": "快適",
+  "Grid Settings": "グリッド設定",
+  "Sequences": "シーケンス",
+  "Optional — existing catalogs already store the data path.": "オプション — 既存のカタログには既にデータパスが保存されています。",
+  "Override Data Path": "データパスを上書き",
+  "Override the data path stored in the catalog with the one specified above.": "カタログに保存されているデータパスを上記で指定したものに上書きします。"
 }

@@ -320,5 +320,9 @@
   "Timeout in milliseconds to wait for the tunnel to become ready": "Tempo limite em milissegundos para aguardar o túnel ficar pronto",
   "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Descobrir automaticamente conexões de banco de dados de arquivos do espaço de trabalho (`.env`, arquivos de configuração, etc.). Desative para impedir que conexões descobertas automaticamente apareçam.",
   "Compare Data With...": "Comparar dados com...",
-  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "Pular formatação para instruções menores que este comprimento de caracteres, deixando-as exatamente como escritas. Defina como 0 para desativar."
+  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "Pular formatação para instruções menores que este comprimento de caracteres, deixando-as exatamente como escritas. Defina como 0 para desativar.",
+  "Compact row spacing for more data on screen.": "Espaçamento de linhas compacto para mais dados na tela.",
+  "Default row spacing.": "Espaçamento de linhas padrão.",
+  "Extra row spacing for readability.": "Espaçamento de linhas extra para legibilidade.",
+  "Controls the display density of data grid rows.": "Controla a densidade de exibição das linhas da grade de dados."
 }

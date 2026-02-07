@@ -320,5 +320,9 @@
   "Timeout in milliseconds to wait for the tunnel to become ready": "Таймаут в миллисекундах ожидания готовности туннеля",
   "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "Автоматически обнаруживать подключения к базам данных из файлов рабочего пространства (`.env`, конфигурационные файлы и т.д.). Отключите, чтобы предотвратить появление автоматически обнаруженных подключений.",
   "Compare Data With...": "Сравнить данные с...",
-  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "Не форматировать инструкции короче этой длины символов, оставляя их в точности как написано. Установить 0 для отключения."
+  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "Не форматировать инструкции короче этой длины символов, оставляя их в точности как написано. Установить 0 для отключения.",
+  "Compact row spacing for more data on screen.": "Компактный межстрочный интервал для большего количества данных на экране.",
+  "Default row spacing.": "Межстрочный интервал по умолчанию.",
+  "Extra row spacing for readability.": "Дополнительный межстрочный интервал для удобства чтения.",
+  "Controls the display density of data grid rows.": "Управляет плотностью отображения строк таблицы данных."
 }

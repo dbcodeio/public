@@ -320,5 +320,9 @@
   "Timeout in milliseconds to wait for the tunnel to become ready": "터널이 준비될 때까지 기다리는 제한 시간(밀리초)",
   "Automatically discover database connections from workspace files (`.env`, config files, etc.). Disable to prevent auto-discovered connections from appearing.": "작업 공간 파일(`.env`, 구성 파일 등)에서 데이터베이스 연결을 자동으로 검색합니다. 자동 검색된 연결이 표시되지 않도록 하려면 비활성화하십시오.",
   "Compare Data With...": "데이터 비교...",
-  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "이 문자 길이보다 짧은 문을 포맷하지 않고 그대로 둡니다. 0으로 설정하면 비활성화됩니다."
+  "Skip formatting for statements shorter than this character length, leaving them exactly as written. Set to 0 to disable.": "이 문자 길이보다 짧은 문을 포맷하지 않고 그대로 둡니다. 0으로 설정하면 비활성화됩니다.",
+  "Compact row spacing for more data on screen.": "화면에 더 많은 데이터를 표시하기 위한 압축 행 간격.",
+  "Default row spacing.": "기본 행 간격.",
+  "Extra row spacing for readability.": "가독성을 위한 추가 행 간격.",
+  "Controls the display density of data grid rows.": "데이터 그리드 행의 표시 밀도를 제어합니다."
 }

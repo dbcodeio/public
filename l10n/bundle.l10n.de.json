@@ -2963,5 +2963,14 @@
   "lake": "lake",
   "Name for the attached database. Defaults to \"lake\" if empty.": "Name für die angehängte Datenbank. Standard ist \"lake\", falls leer.",
   "Re-authenticate": "Erneut authentifizieren",
-  "GCP session expired. Re-authenticate to continue.": "GCP-Sitzung abgelaufen. Erneut authentifizieren, um fortzufahren."
+  "GCP session expired. Re-authenticate to continue.": "GCP-Sitzung abgelaufen. Erneut authentifizieren, um fortzufahren.",
+  "Display Density": "Anzeigedichte",
+  "Compact": "Kompakt",
+  "Normal": "Normal",
+  "Comfortable": "Komfortabel",
+  "Grid Settings": "Rastereinstellungen",
+  "Sequences": "Sequenzen",
+  "Optional — existing catalogs already store the data path.": "Optional — vorhandene Kataloge speichern bereits den Datenpfad.",
+  "Override Data Path": "Datenpfad überschreiben",
+  "Override the data path stored in the catalog with the one specified above.": "Überschreibt den im Katalog gespeicherten Datenpfad mit dem oben angegebenen."
 }

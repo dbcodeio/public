@@ -2963,5 +2963,14 @@
   "lake": "lake",
   "Name for the attached database. Defaults to \"lake\" if empty.": "Имя подключённой базы данных. По умолчанию \"lake\", если пусто.",
   "Re-authenticate": "Повторная аутентификация",
-  "GCP session expired. Re-authenticate to continue.": "Сеанс GCP истёк. Пройдите аутентификацию для продолжения."
+  "GCP session expired. Re-authenticate to continue.": "Сеанс GCP истёк. Пройдите аутентификацию для продолжения.",
+  "Display Density": "Плотность отображения",
+  "Compact": "Компактная",
+  "Normal": "Обычная",
+  "Comfortable": "Комфортная",
+  "Grid Settings": "Настройки таблицы",
+  "Sequences": "Последовательности",
+  "Optional — existing catalogs already store the data path.": "Необязательно — существующие каталоги уже хранят путь к данным.",
+  "Override Data Path": "Переопределить путь к данным",
+  "Override the data path stored in the catalog with the one specified above.": "Переопределяет путь к данным, сохраненный в каталоге, указанным выше."
 }

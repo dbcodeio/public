@@ -2963,5 +2963,14 @@
   "lake": "lake",
   "Name for the attached database. Defaults to \"lake\" if empty.": "附加資料庫的名稱。如果為空則預設為 \"lake\"。",
   "Re-authenticate": "重新驗證",
-  "GCP session expired. Re-authenticate to continue.": "GCP 工作階段已過期。請重新驗證以繼續。"
+  "GCP session expired. Re-authenticate to continue.": "GCP 工作階段已過期。請重新驗證以繼續。",
+  "Display Density": "顯示密度",
+  "Compact": "緊湊",
+  "Normal": "正常",
+  "Comfortable": "舒適",
+  "Grid Settings": "格線設定",
+  "Sequences": "序列",
+  "Optional — existing catalogs already store the data path.": "選擇性 — 現有目錄已儲存資料路徑。",
+  "Override Data Path": "覆寫資料路徑",
+  "Override the data path stored in the catalog with the one specified above.": "使用上面指定的路徑覆寫目錄中儲存的資料路徑。"
 }

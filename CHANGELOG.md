@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 1.27.2 - 2026-02-07
+
+### Changed
+
+- Sequences: Added introspection and DDL generation (PostgreSQL, Oracle, MSSQL, DuckDB, DB2, Snowflake, MariaDB).
+- Fabric: Added as stand alone connection type.
+- Results: Added display density toggle (compact/normal/comfortable) in top right corner.
+- DuckLake: Made data path optional for existing catalogs. Added Override Data Path option.
+- Releases: Added tagged releases to public repo. #950
+
+### Fixed
+
+- Execution: Fixed error line numbers in results panel not matching actual file position when executing from code lens or selection. #950
+- DuckLake: Improved Windows path normalization (lowercase drive letter, trailing slash).
+
 ## 1.27.1 - 2026-02-06
 
 ### Changed
