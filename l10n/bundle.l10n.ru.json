@@ -2972,5 +2972,8 @@
   "Sequences": "Последовательности",
   "Optional — existing catalogs already store the data path.": "Необязательно — существующие каталоги уже хранят путь к данным.",
   "Override Data Path": "Переопределить путь к данным",
-  "Override the data path stored in the catalog with the one specified above.": "Переопределяет путь к данным, сохраненный в каталоге, указанным выше."
+  "Override the data path stored in the catalog with the one specified above.": "Переопределяет путь к данным, сохраненный в каталоге, указанным выше.",
+  "PGlite Error": "Ошибка PGlite",
+  "In Memory": "В памяти",
+  "PGlite support does not include {0} scripting. Please raise a github issue to get it added!": "PGlite не поддерживает скрипты {0}. Создайте issue на GitHub, чтобы добавить поддержку!"
 }

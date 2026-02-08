@@ -2972,5 +2972,8 @@
   "Sequences": "Sequenze",
   "Optional — existing catalogs already store the data path.": "Facoltativo — i cataloghi esistenti memorizzano già il percorso dati.",
   "Override Data Path": "Sostituisci percorso dati",
-  "Override the data path stored in the catalog with the one specified above.": "Sostituisci il percorso dati memorizzato nel catalogo con quello specificato sopra."
+  "Override the data path stored in the catalog with the one specified above.": "Sostituisci il percorso dati memorizzato nel catalogo con quello specificato sopra.",
+  "PGlite Error": "Errore PGlite",
+  "In Memory": "In memoria",
+  "PGlite support does not include {0} scripting. Please raise a github issue to get it added!": "PGlite non supporta lo scripting {0}. Apri una issue su GitHub per richiederne l'aggiunta!"
 }

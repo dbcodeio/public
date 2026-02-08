@@ -2972,5 +2972,8 @@
   "Sequences": "Diziler",
   "Optional — existing catalogs already store the data path.": "İsteğe bağlı — mevcut kataloglar zaten veri yolunu saklar.",
   "Override Data Path": "Veri yolunu geçersiz kıl",
-  "Override the data path stored in the catalog with the one specified above.": "Katalogda saklanan veri yolunu yukarıda belirtilen yolla geçersiz kılar."
+  "Override the data path stored in the catalog with the one specified above.": "Katalogda saklanan veri yolunu yukarıda belirtilen yolla geçersiz kılar.",
+  "PGlite Error": "PGlite Hatası",
+  "In Memory": "Bellekte",
+  "PGlite support does not include {0} scripting. Please raise a github issue to get it added!": "PGlite {0} betiklerini desteklemiyor. Eklemek için lütfen GitHub'da bir issue açın!"
 }

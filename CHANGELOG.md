@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.27.3 - 2026-02-08
+
+### Fixed
+
+- Results: Fixed column header Ctrl/Cmd+click and Shift+click selection not working correctly for charting and copy. #921
+- Alter Table: Fixed empty columns generating invalid SQL (`ALTER TABLE ... ADD ;`). #916
+- BigQuery: Fixed RANGE data type displaying as `[object Object]` instead of `[start, end)`. #953
+- Oracle: Fixed introspection failing when user tables shadow dictionary views (e.g. ALL_TABLES). #947
+- MCP/Copilot: Fixed extension crash when AI tools return very large responses (e.g. Redis with large values). Redis bulk key listings now return metadata only, with full data available for single key lookups.
+
 ## 1.27.2 - 2026-02-07
 
 ### Changed

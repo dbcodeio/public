@@ -2972,5 +2972,8 @@
   "Sequences": "시퀀스",
   "Optional — existing catalogs already store the data path.": "선택 사항 — 기존 카탈로그에 이미 데이터 경로가 저장되어 있습니다.",
   "Override Data Path": "데이터 경로 재정의",
-  "Override the data path stored in the catalog with the one specified above.": "카탈로그에 저장된 데이터 경로를 위에 지정된 경로로 재정의합니다."
+  "Override the data path stored in the catalog with the one specified above.": "카탈로그에 저장된 데이터 경로를 위에 지정된 경로로 재정의합니다.",
+  "PGlite Error": "PGlite 오류",
+  "In Memory": "메모리 내",
+  "PGlite support does not include {0} scripting. Please raise a github issue to get it added!": "PGlite는 {0} 스크립트를 지원하지 않습니다. GitHub 이슈를 생성하여 추가를 요청하세요!"
 }

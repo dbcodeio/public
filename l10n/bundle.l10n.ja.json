@@ -2975,5 +2975,8 @@
   "Sequences": "シーケンス",
   "Optional — existing catalogs already store the data path.": "オプション — 既存のカタログには既にデータパスが保存されています。",
   "Override Data Path": "データパスを上書き",
-  "Override the data path stored in the catalog with the one specified above.": "カタログに保存されているデータパスを上記で指定したものに上書きします。"
+  "Override the data path stored in the catalog with the one specified above.": "カタログに保存されているデータパスを上記で指定したものに上書きします。",
+  "PGlite Error": "PGlite エラー",
+  "In Memory": "メモリ内",
+  "PGlite support does not include {0} scripting. Please raise a github issue to get it added!": "PGlite は {0} スクリプトをサポートしていません。GitHub で issue を作成してサポートを依頼してください！"
 }

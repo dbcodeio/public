@@ -2972,5 +2972,8 @@
   "Sequences": "Sekvence",
   "Optional — existing catalogs already store the data path.": "Volitelné — stávající katalogy již ukládají cestu k datům.",
   "Override Data Path": "Přepsat cestu k datům",
-  "Override the data path stored in the catalog with the one specified above.": "Přepíše cestu k datům uloženou v katalogu cestou uvedenou výše."
+  "Override the data path stored in the catalog with the one specified above.": "Přepíše cestu k datům uloženou v katalogu cestou uvedenou výše.",
+  "PGlite Error": "Chyba PGlite",
+  "In Memory": "V paměti",
+  "PGlite support does not include {0} scripting. Please raise a github issue to get it added!": "PGlite nepodporuje skripty {0}. Vytvořte prosím GitHub issue pro přidání podpory!"
 }
