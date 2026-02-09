@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.27.6 - 2026-02-09
+
+### Changed
+
+- Join: Join tables from the DB Explorer or results with configurable join type and column mapping. #849
+- Union: Union tables from the DB Explorer or results across tabs and connections.
+
+### Fixed
+
+- Completions: 'Select a connection' prompt now only appears once per session instead of on every keystroke.
+- BigQuery: Fixed Script CREATE (DDL) for functions. #955
+- Notebook: Fixed cell editor losing focus after executing a cell with Ctrl+Enter.
+- MongoDB: Fixed delete and update failing on documents with Binary/UUID _id fields (e.g. CosmosDB). #954
+
 ## 1.27.3 - 2026-02-08
 
 ### Fixed
