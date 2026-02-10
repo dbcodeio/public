@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.27.7 - 2026-02-10
+
+### Changed
+
+- Missing WHERE Detection: Warns before executing DELETE or UPDATE statements missing a WHERE clause. Configurable per role (allow/ask/deny). Available once per session for Core users, continuously for Pro.
+
+### Fixed
+
+- Results: Fixed right-click Filter By/Exclude not working for dates, booleans, and null values in the results grid. Also fixed context menu filters not triggering server-side queries in paging mode. #957
+- Results: Fixed Exclude filter to include filtering for null values. #957
+- Snowflake: Fixed introspection failing due to unquoted `INCREMENT` reserved keyword in sequences query. #956
+- Snowflake: Fixed regular tables not appearing in the tree when hybrid, transient, or dynamic tables exist.
+- Execution: Fixed standalone BEGIN/END blocks in SQL Server and Oracle grouping subsequent statements into one block. #958
+
 ## 1.27.6 - 2026-02-09
 
 ### Changed

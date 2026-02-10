@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.27.6",
+    "version": "1.27.7",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -4224,6 +4224,21 @@
                                     "%Ask if the statement should be executed.%",
                                     "%Deny the statement from being executed.%"
                                 ]
+                            },
+                            "missingWhere": {
+                                "type": "string",
+                                "default": "ask",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ],
+                                "markdownDescription": "%Action when DELETE or UPDATE is missing a WHERE clause.%"
                             }
                         },
                         "additionalProperties": false,
@@ -4241,7 +4256,8 @@
                             "maintenance": "allow",
                             "set/use": "allow",
                             "grant/revoke": "allow",
-                            "other": "allow"
+                            "other": "allow",
+                            "missingWhere": "ask"
                         }
                     },
                     "dbcode.connection.role.testing": {
@@ -4444,6 +4460,21 @@
                                     "%Ask if the statement should be executed.%",
                                     "%Deny the statement from being executed.%"
                                 ]
+                            },
+                            "missingWhere": {
+                                "type": "string",
+                                "default": "ask",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ],
+                                "markdownDescription": "%Action when DELETE or UPDATE is missing a WHERE clause.%"
                             }
                         },
                         "additionalProperties": false,
@@ -4461,7 +4492,8 @@
                             "maintenance": "allow",
                             "set/use": "allow",
                             "grant/revoke": "ask",
-                            "other": "ask"
+                            "other": "ask",
+                            "missingWhere": "ask"
                         }
                     },
                     "dbcode.connection.role.production": {
@@ -4664,6 +4696,21 @@
                                     "%Ask if the statement should be executed.%",
                                     "%Deny the statement from being executed.%"
                                 ]
+                            },
+                            "missingWhere": {
+                                "type": "string",
+                                "default": "deny",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ],
+                                "markdownDescription": "%Action when DELETE or UPDATE is missing a WHERE clause.%"
                             }
                         },
                         "additionalProperties": false,
@@ -4681,7 +4728,8 @@
                             "maintenance": "ask",
                             "set/use": "allow",
                             "grant/revoke": "deny",
-                            "other": "ask"
+                            "other": "ask",
+                            "missingWhere": "deny"
                         }
                     }
                 }
