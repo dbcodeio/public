@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.27.8 - 2026-02-12
+
+### Changed
+
+- AI: Added execution plan analysis.
+- AI: Added BOYK/local LLM support. Configure any OpenAI-compatible endpoint in settings under `dbcode.ai.customModel`. #816
+- Results: Added setting to control zebra striping in the grid.
+- MCP: Added configurable OAuth token expiry (`dbcode.ai.mcp.tokenExpiry`), default 1 day, max 90 days. #960
+
+### Fixed
+
+- MySQL: Fixed MariaDB derivative detection failing when `@@GLOBAL.version_comment` doesn't contain "mariadb" (e.g., Debian packages). #968
+- SQLite: Fixed truncate using unsupported `TRUNCATE TABLE` syntax, now uses `DELETE FROM`. #965
+- ClickHouse: Fixed query cancellation not killing the running query on the server. #962
+- PostgreSQL: Fixed backup/restore to use local tools first if on the path. #961
+
 ## 1.27.7 - 2026-02-10
 
 ### Changed

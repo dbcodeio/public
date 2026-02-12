@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.27.7",
+    "version": "1.27.8",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -506,6 +506,16 @@
             {
                 "command": "dbcode.ai.changeModel",
                 "title": "%Change AI Model%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.ai.chooseProvider",
+                "title": "%Choose AI Provider%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.ai.setApiKey",
+                "title": "%Set Custom Model API Key%",
                 "category": "DBCode"
             },
             {
@@ -3906,14 +3916,20 @@
                             "comfortable"
                         ],
                         "enumDescriptions": [
-                            "%Compact row spacing for more data on screen.%",
-                            "%Default row spacing.%",
-                            "%Extra row spacing for readability.%"
+                            "%Snug row spacing for more data on screen.%",
+                            "%Balanced row spacing.%",
+                            "%Relaxed row spacing for readability.%"
                         ],
-                        "markdownDescription": "%Controls the display density of data grid rows.%"
+                        "markdownDescription": "%Controls the row spacing of data grids.%"
+                    },
+                    "dbcode.rowBanding": {
+                        "order": 12,
+                        "type": "boolean",
+                        "default": true,
+                        "markdownDescription": "%Toggle zebra stripes (alternating row colors) in data grids.%"
                     },
                     "dbcode.showColumnComments": {
-                        "order": 12,
+                        "order": 13,
                         "type": "boolean",
                         "default": false,
                         "markdownDescription": "%Show column comments below column names in result headers.%"
@@ -3978,6 +3994,14 @@
                             "%No authorization required - use only in trusted environments.%"
                         ]
                     },
+                    "dbcode.ai.mcp.tokenExpiry": {
+                        "title": "%MCP OAuth Token Expiry%",
+                        "type": "number",
+                        "default": 1,
+                        "minimum": 1,
+                        "maximum": 90,
+                        "markdownDescription": "%Number of days before OAuth access tokens expire. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.%"
+                    },
                     "dbcode.ai.inlineCompletion": {
                         "title": "%Inline Completion%",
                         "type": "boolean",
@@ -3989,6 +4013,28 @@
                         "type": "string",
                         "default": "",
                         "description": "%The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.%"
+                    },
+                    "dbcode.ai.customModel.endpoint": {
+                        "title": "%Custom Model Endpoint%",
+                        "type": "string",
+                        "description": "%OpenAI-compatible API endpoint (e.g. http://localhost:11434 for Ollama, https://api.openai.com for OpenAI, https://api.groq.com/openai for Groq).%"
+                    },
+                    "dbcode.ai.customModel.model": {
+                        "title": "%Custom Model%",
+                        "type": "string",
+                        "description": "%Model name (e.g. codellama:7b-instruct, gpt-4o, llama-3.3-70b-versatile).%"
+                    },
+                    "dbcode.ai.customModel.timeout": {
+                        "title": "%Custom Model Timeout%",
+                        "type": "number",
+                        "default": 30,
+                        "description": "%Request timeout in seconds.%"
+                    },
+                    "dbcode.ai.customModel.only": {
+                        "title": "%Custom Model Only%",
+                        "type": "boolean",
+                        "default": false,
+                        "description": "%When enabled, only use the custom model. Do not fall back to Copilot or DBCode AI if unavailable.%"
                     }
                 }
             },
@@ -5506,7 +5552,6 @@
         "@vscode/chat-extension-utils": "^0.0.0-alpha.5",
         "@vscode/codicons": "^0.0.36",
         "@vscode/l10n": "^0.0.18",
-        "@vscode/prompt-tsx": "^0.3.0-alpha.21",
         "@xyflow/react": "^12.7.0",
         "ag-charts-enterprise": "^12.2.0",
         "ag-grid-enterprise": "^34.2.0",
