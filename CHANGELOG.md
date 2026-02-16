@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## 1.28.0 - 2026-02-16
+
+### Changed
+
+- Apache Kafka: In preview with topic browsing, JSON auto-expansion, message producing, consumer group visibility.
+- RabbitMQ: In preview with queue browsing, message peeking, exchange topology with bound queues, message publishing. 
+- Valkey: Added Valkey as a Redis derivative with its own icon and connection type. #970
+- AI: Inline completion now scopes context to the active statement instead of the entire document, reducing noise and improving suggestion quality.
+- Results: Changed duplicate row shortcut from Ctrl/Cmd+D to Ctrl/Cmd+Shift+D to free Ctrl/Cmd+D for fill-down (matching Excel/Sheets convention). #972
+- Editor: Active statement highlighting now includes leading and trailing comments.
+
+### Fixed
+
+- Azure SQL: Fixed stale Entra ID tokens requiring manual sign-out by automatically re-authenticating when token is rejected.
+- Azure: Fixed cloud provider connections failing with ENAMETOOLONG when Azure resource IDs are deeply nested. #963
+- MySQL/MariaDB: Fixed long-running queries failing with ER_SOCKET_UNEXPECTED_CLOSE when connecting through proxies or firewalls. #971
+- Results: Fixed "below" result location rearranging entire editor layout when using split editors. #973
+- Elasticsearch/OpenSearch: Fixed introspection failing with "HTTP line is larger than 4096 bytes" on clusters with many indices. #975
+
 ## 1.27.8 - 2026-02-12
 
 ### Changed
