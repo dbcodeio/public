@@ -340,5 +340,11 @@
   "Request timeout in seconds.": "요청 시간 초과(초).",
   "Custom Model Only": "사용자 정의 모델만",
   "When enabled, only use the custom model. Do not fall back to Copilot or DBCode AI if unavailable.": "활성화하면 사용자 정의 모델만 사용합니다. 사용할 수 없는 경우 Copilot 또는 DBCode AI로 대체하지 않습니다.",
-  "Action when DELETE or UPDATE is missing a WHERE clause.": "DELETE 또는 UPDATE에 WHERE 절이 없을 때 작업."
+  "Action when DELETE or UPDATE is missing a WHERE clause.": "DELETE 또는 UPDATE에 WHERE 절이 없을 때 작업.",
+  "Pause Stream": "스트림 일시 중지",
+  "Resume Stream": "스트림 재개",
+  "Stop Stream": "스트림 중지",
+  "Reveal Stream Tab": "스트림 탭 표시",
+  "Active Streams": "활성 스트림",
+  "Subscribe": "구독"
 }

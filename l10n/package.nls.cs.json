@@ -340,5 +340,11 @@
   "Request timeout in seconds.": "Časový limit požadavku v sekundách.",
   "Custom Model Only": "Pouze vlastní model",
   "When enabled, only use the custom model. Do not fall back to Copilot or DBCode AI if unavailable.": "Pokud je povoleno, používat pouze vlastní model. Nepřepínat na Copilot nebo DBCode AI, pokud není k dispozici.",
-  "Action when DELETE or UPDATE is missing a WHERE clause.": "Akce, když DELETE nebo UPDATE nemá klauzuli WHERE."
+  "Action when DELETE or UPDATE is missing a WHERE clause.": "Akce, když DELETE nebo UPDATE nemá klauzuli WHERE.",
+  "Pause Stream": "Pozastavit stream",
+  "Resume Stream": "Obnovit stream",
+  "Stop Stream": "Zastavit stream",
+  "Reveal Stream Tab": "Zobrazit kartu streamu",
+  "Active Streams": "Aktivní streamy",
+  "Subscribe": "Odebírat"
 }

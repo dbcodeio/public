@@ -340,5 +340,11 @@
   "Request timeout in seconds.": "Tempo limite da solicitação em segundos.",
   "Custom Model Only": "Somente modelo personalizado",
   "When enabled, only use the custom model. Do not fall back to Copilot or DBCode AI if unavailable.": "Quando habilitado, usar apenas o modelo personalizado. Não recorrer ao Copilot ou DBCode AI se indisponível.",
-  "Action when DELETE or UPDATE is missing a WHERE clause.": "Ação quando DELETE ou UPDATE não tem cláusula WHERE."
+  "Action when DELETE or UPDATE is missing a WHERE clause.": "Ação quando DELETE ou UPDATE não tem cláusula WHERE.",
+  "Pause Stream": "Pausar transmissão",
+  "Resume Stream": "Retomar transmissão",
+  "Stop Stream": "Parar transmissão",
+  "Reveal Stream Tab": "Mostrar aba de transmissão",
+  "Active Streams": "Transmissões ativas",
+  "Subscribe": "Inscrever-se"
 }

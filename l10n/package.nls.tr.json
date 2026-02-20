@@ -340,5 +340,11 @@
   "Request timeout in seconds.": "İstek zaman aşımı (saniye).",
   "Custom Model Only": "Yalnızca Özel Model",
   "When enabled, only use the custom model. Do not fall back to Copilot or DBCode AI if unavailable.": "Etkinleştirildiğinde, yalnızca özel modeli kullan. Kullanılamıyorsa Copilot veya DBCode AI'ye geri dönme.",
-  "Action when DELETE or UPDATE is missing a WHERE clause.": "DELETE veya UPDATE'te WHERE yan tümcesi eksik olduğunda eylem."
+  "Action when DELETE or UPDATE is missing a WHERE clause.": "DELETE veya UPDATE'te WHERE yan tümcesi eksik olduğunda eylem.",
+  "Pause Stream": "Akışı Duraklat",
+  "Resume Stream": "Akışı Sürdür",
+  "Stop Stream": "Akışı Durdur",
+  "Reveal Stream Tab": "Akış Sekmesini Göster",
+  "Active Streams": "Etkin Akışlar",
+  "Subscribe": "Abone Ol"
 }

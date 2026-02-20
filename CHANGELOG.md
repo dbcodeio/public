@@ -1,11 +1,38 @@
 # CHANGELOG
 
+## 1.28.2 - 2026-02-20
+
+### Changed
+
+- Streaming: Real-time message streaming for Kafka topics and RabbitMQ queues with LIVE indicator, event counter, throughput stats, and pause/stop controls in the grid status bar.
+- Streaming: Added PostgreSQL LISTEN/NOTIFY channel subscriptions via `LISTEN channel_name;` or right-click database → Subscribe.
+- Streaming: Added MongoDB Change Streams for collection subscriptions via `db.collection.watch()` or right-click collection → Subscribe. Requires a replica set or sharded cluster.
+- Streaming: Added Redis Pub/Sub channel subscriptions via `SUBSCRIBE channel_name` or right-click database → Subscribe.
+- Streaming: Added SurrealDB LIVE SELECT table subscriptions via `LIVE SELECT * FROM table;` or right-click table → Subscribe.
+- Active Streams: New view, showing all running streams grouped by connection.
+- Editing: JOIN query results are now editable. Columns unique to one table in the query are editable, while columns present in multiple tables are read-only. Primary keys are resolved automatically, or you can select key columns manually when saving.
+- Transpose: Field column is now sortable, click the header to sort field names alphabetically. #983
+- Results: Added "Clear This Column Sort" and "Clear All Column Sorts" options to the column header menu.
+
+### Fixed
+
+- Connections: Fixed stale connection error after dropping a database and refreshing. Refresh now cleans up connections for databases that no longer exist and avoids redundant database list queries. #966
+- MCP: Fixed autoStart not reliably starting the server on VS Code reload. #960
+- Export: Replaced Results Excel export, fixing non-numeric columns (VARCHAR, UUID, etc.) being formatted as numbers, improving file size and performance for large exports, and adding the SQL query as a second "Query" sheet. #980
+- Import: Fixed driver name mapping during JSON import causing names like "sqlserver" to not map to "mssql". #979
+- Results: Fixed Cmd/Ctrl+C not copying grid selection when a WHERE filter is active.
+- Results: Fixed horizontal overflow causing page-level scrolling.
+- ERD: Fixed saved node positions not being restored when reopening a diagram. #829
+- Redis: Fixed connection failing on managed Redis services (Google Cloud Memorystore, some AWS ElastiCache configurations) that block the CLIENT SETNAME command.
+- Language Server: Fixed ClickHouse parser not recognizing CTEs in INSERT...SELECT statements. #981
+- Transpose: Improved performance when entering transpose mode with large result sets. #983
+
 ## 1.28.0 - 2026-02-16
 
 ### Changed
 
 - Apache Kafka: In preview with topic browsing, JSON auto-expansion, message producing, consumer group visibility.
-- RabbitMQ: In preview with queue browsing, message peeking, exchange topology with bound queues, message publishing. 
+- RabbitMQ: In preview with queue browsing, message peeking, exchange topology with bound queues, message publishing.
 - Valkey: Added Valkey as a Redis derivative with its own icon and connection type. #970
 - AI: Inline completion now scopes context to the active statement instead of the entire document, reducing noise and improving suggestion quality.
 - Results: Changed duplicate row shortcut from Ctrl/Cmd+D to Ctrl/Cmd+Shift+D to free Ctrl/Cmd+D for fill-down (matching Excel/Sheets convention). #972

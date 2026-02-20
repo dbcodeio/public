@@ -2919,6 +2919,14 @@
         "publisher": "Andrei Kashcha"
     },
     {
+        "name": "amqplib",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "amqplib copyright (c) 2013, 2014\n                      Michael Bridgen <mikeb@squaremobius.net>\n\nThis package, \"amqplib\", is licensed under the MIT License. A copy may\nbe found in the file LICENSE-MIT in this directory, or downloaded from\nhttp://opensource.org/licenses/MIT.",
+        "repository": "https://github.com/amqp-node/amqplib",
+        "publisher": "Michael Bridgen"
+    },
+    {
         "name": "another-json-xml",
         "direct": true,
         "license": "ISC",
@@ -3369,6 +3377,14 @@
         "license": "MIT",
         "licenseTxt": "# Buffer Fill\n\nA [ponyfill](https://ponyfill.com) for `Buffer.fill`.\n\nWorks as Node.js: `v6.4.0` <br>\nWorks on Node.js: `v0.10.0`\n\n## Installation\n\n```sh\nnpm install --save buffer-fill\n```\n\n## Usage\n\n```js\nconst fill = require('buffer-fill')\nconst buf = Buffer.allocUnsafe(5)\n\nconsole.log(buf.fill(8))\n//=> <Buffer 08 08 08 08 08>\n\nconsole.log(buf.fill(9, 2, 4))\n//=> <Buffer 08 08 09 09 08>\n\nconsole.log(buf.fill('linus', 'latin1'))\n//=> <Buffer 6c 69 6e 75 73>\n\nconsole.log(buf.fill('\\u0222'))\n//=> <Buffer c8 a2 c8 a2 c8>\n```\n\n## API\n\n### fill(buf, value[, offset[, end]][, encoding])\n\n- `value` &lt;String&gt; | &lt;Buffer&gt; | &lt;Integer&gt; The value to fill `buf` with\n- `offset` &lt;Integer&gt; Where to start filling `buf`. **Default:** `0`\n- `end` &lt;Integer&gt; Where to stop filling `buf` (not inclusive). **Default:** `buf.length`\n- `encoding` &lt;String&gt; If `value` is a string, this is its encoding. **Default:** `'utf8'`\n- Return: &lt;Buffer&gt; A reference to `buf`\n\nFills `buf` with the specified `value`. If the `offset` and `end` are not given,\nthe entire `buf` will be filled. This is meant to be a small simplification to\nallow the creation and filling of a `Buffer` to be done on a single line.\n\nIf the final write of a `fill()` operation falls on a multi-byte character, then\nonly the first bytes of that character that fit into `buf` are written.\n\n## See also\n\n- [buffer-alloc-unsafe](https://github.com/LinusU/buffer-alloc-unsafe) A ponyfill for `Buffer.allocUnsafe`\n- [buffer-alloc](https://github.com/LinusU/buffer-alloc) A ponyfill for `Buffer.alloc`\n- [buffer-from](https://github.com/LinusU/buffer-from) A ponyfill for `Buffer.from`",
         "repository": "https://github.com/LinusU/buffer-fill"
+    },
+    {
+        "name": "buffer-more-ints",
+        "direct": false,
+        "license": "MIT",
+        "licenseTxt": "Copyright (c) 2012 David Wragg. All rights reserved.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to\ndeal in the Software without restriction, including without limitation the\nrights to use, copy, modify, merge, publish, distribute, sublicense, and/or\nsell copies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS\nIN THE SOFTWARE.",
+        "repository": "https://github.com/dpw/node-buffer-more-ints",
+        "publisher": "David Wragg"
     },
     {
         "name": "buffer",
@@ -5867,6 +5883,14 @@
         "publisher": "Jose F. Romaniello"
     },
     {
+        "name": "kafkajs",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "The MIT License\n\nCopyright (c) 2018 Túlio Ornelas (ornelas.tulio@gmail.com)\n\nPermission is hereby granted, free of charge,\nto any person obtaining a copy of this software and\nassociated documentation files (the \"Software\"), to\ndeal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify,\nmerge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom\nthe Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice\nshall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR\nANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+        "repository": "https://github.com/tulios/kafkajs",
+        "publisher": "Tulio Ornelas"
+    },
+    {
         "name": "kdbush",
         "direct": false,
         "license": "ISC",
@@ -7882,6 +7906,14 @@
         "repository": "https://github.com/ljharb/qs"
     },
     {
+        "name": "querystringify",
+        "direct": false,
+        "license": "MIT",
+        "licenseTxt": "The MIT License (MIT)\n\nCopyright (c) 2015 Unshift.io, Arnout Kazemier,  the Contributors.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+        "repository": "https://github.com/unshiftio/querystringify",
+        "publisher": "Arnout Kazemier"
+    },
+    {
         "name": "quickselect",
         "direct": false,
         "license": "ISC",
@@ -8191,6 +8223,14 @@
         "repository": "https://github.com/floatdrop/require-from-string",
         "publisher": "Vsevolod Strukchinsky",
         "url": "github.com/floatdrop"
+    },
+    {
+        "name": "requires-port",
+        "direct": false,
+        "license": "MIT",
+        "licenseTxt": "The MIT License (MIT)\n\nCopyright (c) 2015 Unshift.io, Arnout Kazemier,  the Contributors.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+        "repository": "https://github.com/unshiftio/requires-port",
+        "publisher": "Arnout Kazemier"
     },
     {
         "name": "resolve-protobuf-schema",
@@ -9384,6 +9424,14 @@
         "repository": "https://github.com/blakeembrey/change-case",
         "publisher": "Blake Embrey",
         "url": "http://blakeembrey.me"
+    },
+    {
+        "name": "url-parse",
+        "direct": false,
+        "license": "MIT",
+        "licenseTxt": "The MIT License (MIT)\n\nCopyright (c) 2015 Unshift.io, Arnout Kazemier,  the Contributors.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+        "repository": "https://github.com/unshiftio/url-parse",
+        "publisher": "Arnout Kazemier"
     },
     {
         "name": "use-callback-ref",

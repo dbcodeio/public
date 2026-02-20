@@ -340,5 +340,11 @@
   "Request timeout in seconds.": "請求逾時時間（秒）。",
   "Custom Model Only": "僅使用自訂模型",
   "When enabled, only use the custom model. Do not fall back to Copilot or DBCode AI if unavailable.": "啟用後，僅使用自訂模型。如果無法使用，不回退到 Copilot 或 DBCode AI。",
-  "Action when DELETE or UPDATE is missing a WHERE clause.": "當 DELETE 或 UPDATE 缺少 WHERE 子句時的動作。"
+  "Action when DELETE or UPDATE is missing a WHERE clause.": "當 DELETE 或 UPDATE 缺少 WHERE 子句時的動作。",
+  "Pause Stream": "暫停串流",
+  "Resume Stream": "繼續串流",
+  "Stop Stream": "停止串流",
+  "Reveal Stream Tab": "顯示串流分頁",
+  "Active Streams": "作用中串流",
+  "Subscribe": "訂閱"
 }

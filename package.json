@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.28.0",
+    "version": "1.28.2",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -810,6 +810,12 @@
                 "icon": "$(edit)"
             },
             {
+                "command": "dbcode.item.subscribe",
+                "title": "%Subscribe%",
+                "category": "DBCode",
+                "icon": "$(radio-tower)"
+            },
+            {
                 "command": "dbcode.database.backup",
                 "title": "%Backup Database%",
                 "category": "DBCode",
@@ -1183,6 +1189,29 @@
                 "title": "%Authentication Profiles Help%",
                 "category": "DBCode",
                 "icon": "$(question)"
+            },
+            {
+                "command": "dbcode.streams.pause",
+                "title": "%Pause Stream%",
+                "category": "DBCode",
+                "icon": "$(debug-pause)"
+            },
+            {
+                "command": "dbcode.streams.resume",
+                "title": "%Resume Stream%",
+                "category": "DBCode",
+                "icon": "$(debug-start)"
+            },
+            {
+                "command": "dbcode.streams.stop",
+                "title": "%Stop Stream%",
+                "category": "DBCode",
+                "icon": "$(debug-stop)"
+            },
+            {
+                "command": "dbcode.streams.reveal",
+                "title": "%Reveal Stream Tab%",
+                "category": "DBCode"
             }
         ],
         "keybindings": [
@@ -1306,6 +1335,11 @@
                 {
                     "id": "dbcode.account.view",
                     "name": "%Account%"
+                },
+                {
+                    "id": "dbcode.streams.view",
+                    "name": "%Active Streams%",
+                    "when": "dbcode.hasActiveStreams"
                 }
             ],
             "dbcodePanelContainer": [
@@ -1655,6 +1689,11 @@
                     "group": "3operation@2"
                 },
                 {
+                    "command": "dbcode.item.subscribe",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~subscribe~/",
+                    "group": "3operation@3"
+                },
+                {
                     "command": "dbcode.database.backup",
                     "when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~backup~/",
                     "group": "4backup@1"
@@ -1890,6 +1929,11 @@
                     "group": "3modify@2"
                 },
                 {
+                    "command": "dbcode.item.subscribe",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~subscribe~/",
+                    "group": "2actoin@6"
+                },
+                {
                     "command": "dbcode.item.truncate",
                     "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~truncate~/",
                     "group": "9destructive@2"
@@ -1927,6 +1971,21 @@
                 {
                     "command": "dbcode.authProfiles.tree.delete",
                     "when": "view == dbcode.authProfiles.view",
+                    "group": "inline@2"
+                },
+                {
+                    "command": "dbcode.streams.pause",
+                    "when": "view == dbcode.streams.view && viewItem == streamRunning",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.streams.resume",
+                    "when": "view == dbcode.streams.view && viewItem == streamPaused",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.streams.stop",
+                    "when": "view == dbcode.streams.view && (viewItem == streamRunning || viewItem == streamPaused)",
                     "group": "inline@2"
                 }
             ],

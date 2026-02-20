@@ -340,5 +340,11 @@
   "Request timeout in seconds.": "请求超时时间（秒）。",
   "Custom Model Only": "仅使用自定义模型",
   "When enabled, only use the custom model. Do not fall back to Copilot or DBCode AI if unavailable.": "启用后，仅使用自定义模型。如果不可用，不回退到 Copilot 或 DBCode AI。",
-  "Action when DELETE or UPDATE is missing a WHERE clause.": "当 DELETE 或 UPDATE 缺少 WHERE 子句时的操作。"
+  "Action when DELETE or UPDATE is missing a WHERE clause.": "当 DELETE 或 UPDATE 缺少 WHERE 子句时的操作。",
+  "Pause Stream": "暂停流",
+  "Resume Stream": "恢复流",
+  "Stop Stream": "停止流",
+  "Reveal Stream Tab": "显示流标签页",
+  "Active Streams": "活动流",
+  "Subscribe": "订阅"
 }
