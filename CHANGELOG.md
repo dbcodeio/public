@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.28.4 - 2026-02-23
+
+### Fixed
+
+- Results: Fixed clicking in the grid sidebar (Inspector, Columns, etc.) stealing focus from the panel.
+- Results: Fixed Saved Filters popup not appearing when clicked.
+
 ## 1.28.3 - 2026-02-23
 
 ### Changed
