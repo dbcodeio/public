@@ -175,8 +175,6 @@
   "The schema of the default connection if supported.": "Destekleniyorsa varsayılan bağlantının şeması.",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "Çalışma alanı için varsayılan bağlantı. Şu komutla ayarlanabilir: DBCode: Çalışma Alanı Varsayılan Bağlantısını Seç.",
   "Refresh Connected Connections": "Bağlı Bağlantıları Yenile",
-  "Inline Completion Model ID": "Satır İçi Tamamlama Model ID'si",
-  "The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.": "Yüklendiğinde/etkinleştirildiğinde satır içi tamamlama için Copilot uzantısıyla kullanılan model. Copilot kurulu değilse DBCode'un barındırdığı llama 3 modeli kullanılır.",
   "Delete All Favorites": "Tüm Sık Kullanılanları Sil",
   "Delete Favorite": "Sık Kullanılandan Sil",
   "Add to DBCode Favorites": "DBCode Sık Kullanılanlara Ekle",

@@ -2770,7 +2770,6 @@
   "Salesforce requires OAuth authentication. Please configure an auth profile.": "Salesforce には OAuth 認証が必要です。認証プロファイルを設定してください。",
   "Salesforce requires OAuth2 authentication profile": "Salesforce には OAuth2 認証プロファイルが必要です",
   "Salesforce OAuth did not return an instance URL. Please re-authenticate.": "Salesforce OAuth がインスタンス URL を返しませんでした。再認証してください。",
-  "cols": "列",
   "Unlink grid scrolling": "グリッドスクロールのリンク解除",
   "Link grid scrolling": "グリッドスクロールのリンク",
   "Width (bytes)": "幅（バイト）",
@@ -3031,7 +3030,6 @@
   "Execution denied: missing WHERE clause": "実行が拒否されました：WHERE 句がありません",
   "Change Provider": "プロバイダーを変更",
   "{0} failed: {1}. Switched to {2}.": "{0} が失敗しました：{1}。{2} に切り替えました。",
-  "Enter the model name (e.g. codellama:7b-instruct, gpt-4o)": "モデル名を入力してください（例：codellama:7b-instruct、gpt-4o）",
   "DBCode AI uses a fixed model. To use a different provider, run \"Choose AI Provider\".": "DBCode AI は固定モデルを使用します。別のプロバイダーを使用するには、「AI プロバイダーを選択」を実行してください。",
   "Copilot": "Copilot",
   "{0} models available": "{0} 個のモデルが利用可能",
@@ -3167,5 +3165,8 @@
   "Enter channel name to listen on (PostgreSQL LISTEN)": "リッスンするチャンネル名を入力してください（PostgreSQL LISTEN）",
   "Invalid channel name": "無効なチャンネル名",
   "Change Streams require a replica set or sharded cluster. {0}": "変更ストリームにはレプリカセットまたはシャードクラスターが必要です。{0}",
-  "Change Stream Error": "変更ストリームエラー"
+  "Change Stream Error": "変更ストリームエラー",
+  "Completed": "完了",
+  "Duration": "所要時間",
+  "Enter the model name (e.g. codellama:7b-instruct, gpt-4o-mini)": "モデル名を入力してください（例: codellama:7b-instruct、gpt-4o-mini）"
 }

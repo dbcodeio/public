@@ -175,8 +175,6 @@
   "The schema of the default connection if supported.": "기본 연결의 스키마(지원되는 경우)",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "작업 영역의 기본 연결입니다. 다음 명령으로 설정할 수 있습니다: DBCode: 작업 영역 기본 연결 선택",
   "Refresh Connected Connections": "연결된 항목 새로 고침",
-  "Inline Completion Model ID": "인라인 완성 모델 ID",
-  "The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.": "Copilot 확장 프로그램이 설치/활성화된 경우 인라인 완성에 사용되는 모델입니다. Copilot이 설치되지 않은 경우 DBCode에서 호스팅하는 Llama 3 모델이 사용됩니다.",
   "Delete All Favorites": "모든 즐겨찾기 삭제",
   "Delete Favorite": "즐겨찾기 삭제",
   "Add to DBCode Favorites": "DBCode 즐겨찾기에 추가",

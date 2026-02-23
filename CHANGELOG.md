@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 1.28.3 - 2026-02-23
+
+### Changed
+
+- Editor: Changed execute keyboard shortcut from Cmd/Win+Enter to Ctrl+Enter for cross-platform consistency.
+- Streaming: Added Firebase Firestore snapshot subscriptions for real-time collection changes. Right-click a collection → Subscribe.
+- Streaming: Added RavenDB Changes API subscriptions for real-time document changes. Right-click a collection → Subscribe.
+
+### Fixed
+
+- Editor: SQL Statements are executed individually when multiple statements are selected, allowing faster result returns, error handling, and correct tab identification. #967
+- PostgreSQL: Error messages now include additional context from the database (where, detail, hint) when available.
+- SQLite: Fixed attached databases showing as "Default" after refreshing when a non-main database was last browsed. #984
+- RavenDB: Fixed error before connection is established. #986
+- Results: Clicking empty space around rows now focuses the grid for keyboard navigation. #985
+- AI: Copilot model selection no longer auto-selects the first available model which could silently consume credits on expensive models. Now uses Copilot's 'gpt-4o-mini' family by default as recommended by CoPilot for completion. Removed the `dbcode.ai.modelId` setting.
+- Connections: Fixed saving connections erroring in some cases.
+
 ## 1.28.2 - 2026-02-20
 
 ### Changed

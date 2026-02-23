@@ -2767,7 +2767,6 @@
   "Salesforce requires OAuth authentication. Please configure an auth profile.": "Salesforce 需要 OAuth 驗證。請設定驗證設定檔。",
   "Salesforce requires OAuth2 authentication profile": "Salesforce 需要 OAuth2 驗證設定檔",
   "Salesforce OAuth did not return an instance URL. Please re-authenticate.": "Salesforce OAuth 未傳回執行個體 URL。請重新進行驗證。",
-  "cols": "欄",
   "Unlink grid scrolling": "取消連結格線捲動",
   "Link grid scrolling": "連結格線捲動",
   "Width (bytes)": "寬度（位元組）",
@@ -3028,7 +3027,6 @@
   "Execution denied: missing WHERE clause": "執行被拒絕：缺少 WHERE 子句",
   "Change Provider": "變更提供者",
   "{0} failed: {1}. Switched to {2}.": "{0} 失敗：{1}。已切換到 {2}。",
-  "Enter the model name (e.g. codellama:7b-instruct, gpt-4o)": "輸入模型名稱（例如 codellama:7b-instruct、gpt-4o）",
   "DBCode AI uses a fixed model. To use a different provider, run \"Choose AI Provider\".": "DBCode AI 使用固定模型。要使用其他提供者，請執行「選擇 AI 提供者」。",
   "Copilot": "Copilot",
   "{0} models available": "{0} 個模型可用",
@@ -3164,5 +3162,8 @@
   "Enter channel name to listen on (PostgreSQL LISTEN)": "輸入要監聽的頻道名稱（PostgreSQL LISTEN）",
   "Invalid channel name": "無效的頻道名稱",
   "Change Streams require a replica set or sharded cluster. {0}": "變更串流需要複本集或分片叢集。{0}",
-  "Change Stream Error": "變更串流錯誤"
+  "Change Stream Error": "變更串流錯誤",
+  "Completed": "已完成",
+  "Duration": "持續時間",
+  "Enter the model name (e.g. codellama:7b-instruct, gpt-4o-mini)": "輸入模型名稱（如 codellama:7b-instruct、gpt-4o-mini）"
 }

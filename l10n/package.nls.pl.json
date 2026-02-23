@@ -175,8 +175,6 @@
   "The schema of the default connection if supported.": "Schemat domyślnego połączenia, jeśli obsługiwany.",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "Domyślne połączenie dla obszaru roboczego. Można ustawić poleceniem: DBCode: Wybierz domyślne połączenie obszaru roboczego.",
   "Refresh Connected Connections": "Odśwież aktywne połączenia",
-  "Inline Completion Model ID": "Identyfikator modelu uzupełniania w linii",
-  "The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.": "Model używany z rozszerzeniem Copilot do uzupełniania w linii. Jeśli Copilot nie jest zainstalowany, zostanie użyty hostowany model llama 3 firmy DBCode.",
   "Delete All Favorites": "Usuń wszystkie ulubione",
   "Delete Favorite": "Usuń ulubione",
   "Add to DBCode Favorites": "Dodaj do ulubionych DBCode",

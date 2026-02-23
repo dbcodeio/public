@@ -238,8 +238,6 @@
   "Number of days before OAuth access tokens expire. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "Ƞŭŭḿƀḗḗř ǿǿƒ ḓȧȧẏş ƀḗḗƒǿǿřḗḗ ǾǾȦȦŭŭŧħ ȧȧƈƈḗḗşş ŧǿǿķḗḗƞş ḗḗẋƥīřḗḗ. Īƞƈřḗḗȧȧşḗḗ ŧǿǿ řḗḗḓŭŭƈḗḗ ħǿǿẇ ǿǿƒŧḗḗƞ ḾƇƤ ƈŀīḗḗƞŧş ƞḗḗḗḗḓ ŧǿǿ řḗḗ-ȧȧŭŭŧħḗḗƞŧīƈȧȧŧḗḗ. Ḓḗḗƒȧȧŭŭŀŧ īş 1 ḓȧȧẏ.",
   "Inline Completion": "Īƞŀīƞḗḗ Ƈǿǿḿƥŀḗḗŧīǿǿƞ",
   "Generate inline completions using AI (Uses Copilot if installed/enabled, otherwise DBCode's hosted llama 3).": "Ɠḗḗƞḗḗřȧȧŧḗḗ īƞŀīƞḗḗ ƈǿǿḿƥŀḗḗŧīǿǿƞş ŭŭşīƞɠ ȦȦĪ (ŬŬşḗḗş Ƈǿǿƥīŀǿǿŧ īƒ īƞşŧȧȧŀŀḗḗḓ/ḗḗƞȧȧƀŀḗḗḓ, ǿǿŧħḗḗřẇīşḗḗ ḒƁƇǿǿḓḗḗ'ş ħǿǿşŧḗḗḓ ŀŀȧȧḿȧȧ 3).",
-  "Inline Completion Model ID": "Īƞŀīƞḗḗ Ƈǿǿḿƥŀḗḗŧīǿǿƞ Ḿǿǿḓḗḗŀ ĪḒ",
-  "The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.": "Ŧħḗḗ ḿǿǿḓḗḗŀ ŭŭşḗḗḓ ẇīŧħ ŧħḗḗ Ƈǿǿƥīŀǿǿŧ ḗḗẋŧḗḗƞşīǿǿƞ ƒǿǿř īƞŀīƞḗḗ ƈǿǿḿƥŀḗḗŧīǿǿƞ ẇħḗḗƞ īƞşŧȧȧŀŀḗḗḓ/ḗḗƞȧȧƀŀḗḗḓ. Īƒ Ƈǿǿƥīŀǿǿŧ īş ƞǿǿŧ īƞşŧȧȧŀŀḗḗḓ ḒƁƇǿǿḓḗḗ'ş ħǿǿşŧḗḗḓ ŀŀȧȧḿȧȧ 3 ḿǿǿḓḗḗŀ ẇīŀŀ ƀḗḗ ŭŭşḗḗḓ.",
   "Custom Model Endpoint": "Ƈŭŭşŧǿǿḿ Ḿǿǿḓḗḗŀ ḖḖƞḓƥǿǿīƞŧ",
   "OpenAI-compatible API endpoint (e.g. http://localhost:11434 for Ollama, https://api.openai.com for OpenAI, https://api.groq.com/openai for Groq).": "ǾǾƥḗḗƞȦȦĪ-ƈǿǿḿƥȧȧŧīƀŀḗḗ ȦȦƤĪ ḗḗƞḓƥǿǿīƞŧ (ḗḗ.ɠ. ħŧŧƥ://ŀǿǿƈȧȧŀħǿǿşŧ:11434 ƒǿǿř ǾǾŀŀȧȧḿȧȧ, ħŧŧƥş://ȧȧƥī.ǿǿƥḗḗƞȧȧī.ƈǿǿḿ ƒǿǿř ǾǾƥḗḗƞȦȦĪ, ħŧŧƥş://ȧȧƥī.ɠřǿǿɋ.ƈǿǿḿ/ǿǿƥḗḗƞȧȧī ƒǿǿř Ɠřǿǿɋ).",
   "Custom Model": "Ƈŭŭşŧǿǿḿ Ḿǿǿḓḗḗŀ",

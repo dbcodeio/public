@@ -2767,7 +2767,6 @@
   "Salesforce requires OAuth authentication. Please configure an auth profile.": "Salesforce, OAuth kimlik doğrulaması gerektirir. Lütfen bir kimlik doğrulama profili yapılandırın.",
   "Salesforce requires OAuth2 authentication profile": "Salesforce, OAuth2 kimlik doğrulama profili gerektirir",
   "Salesforce OAuth did not return an instance URL. Please re-authenticate.": "Salesforce OAuth bir örnek URL'si döndürmedi. Lütfen yeniden kimlik doğrulaması yapın.",
-  "cols": "süt.",
   "Unlink grid scrolling": "Kılavuz kaydırmayı ayır",
   "Link grid scrolling": "Kılavuz kaydırmayı bağla",
   "Width (bytes)": "Genişlik (bayt)",
@@ -3028,7 +3027,6 @@
   "Execution denied: missing WHERE clause": "Yürütme reddedildi: WHERE yan tümcesi eksik",
   "Change Provider": "Sağlayıcıyı değiştir",
   "{0} failed: {1}. Switched to {2}.": "{0} başarısız oldu: {1}. {2} ile değiştirildi.",
-  "Enter the model name (e.g. codellama:7b-instruct, gpt-4o)": "Model adını girin (örn. codellama:7b-instruct, gpt-4o)",
   "DBCode AI uses a fixed model. To use a different provider, run \"Choose AI Provider\".": "DBCode AI sabit bir model kullanır. Farklı bir sağlayıcı kullanmak için \"AI Sağlayıcısı Seç\" komutunu çalıştırın.",
   "Copilot": "Copilot",
   "{0} models available": "{0} model mevcut",
@@ -3164,5 +3162,8 @@
   "Enter channel name to listen on (PostgreSQL LISTEN)": "Dinlenecek kanal adını girin (PostgreSQL LISTEN)",
   "Invalid channel name": "Geçersiz kanal adı",
   "Change Streams require a replica set or sharded cluster. {0}": "Değişiklik Akışları için bir çoğaltma kümesi veya parçalı küme gerekir. {0}",
-  "Change Stream Error": "Değişiklik Akışı Hatası"
+  "Change Stream Error": "Değişiklik Akışı Hatası",
+  "Completed": "Tamamlandı",
+  "Duration": "Süre",
+  "Enter the model name (e.g. codellama:7b-instruct, gpt-4o-mini)": "Model adını girin (ör. codellama:7b-instruct, gpt-4o-mini)"
 }

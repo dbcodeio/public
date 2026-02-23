@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.28.2",
+    "version": "1.28.3",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -1217,8 +1217,8 @@
         "keybindings": [
             {
                 "command": "dbcode.editor.execute",
-                "key": "windows+enter",
-                "mac": "cmd+enter",
+                "key": "ctrl+enter",
+                "mac": "ctrl+enter",
                 "when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode"
             },
             {
@@ -1226,8 +1226,8 @@
                 "args": {
                     "shiftKey": true
                 },
-                "key": "shift+windows+enter",
-                "mac": "shift+cmd+enter",
+                "key": "shift+ctrl+enter",
+                "mac": "shift+ctrl+enter",
                 "when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && (resourceScheme != dbcode || editorHasSelection)"
             },
             {
@@ -1235,8 +1235,8 @@
                 "args": {
                     "altKey": true
                 },
-                "key": "alt+windows+enter",
-                "mac": "alt+cmd+enter",
+                "key": "alt+ctrl+enter",
+                "mac": "alt+ctrl+enter",
                 "when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && (resourceScheme != dbcode || editorHasSelection)"
             },
             {
@@ -1253,14 +1253,14 @@
             },
             {
                 "command": "dbcode.editor.execute",
-                "key": "windows+enter",
-                "mac": "cmd+enter",
+                "key": "ctrl+enter",
+                "mac": "ctrl+enter",
                 "when": "editorTextFocus && resourceScheme == dbcode && editorHasSelection"
             },
             {
                 "command": "dbcode.editor.apply",
-                "key": "windows+enter",
-                "mac": "cmd+enter",
+                "key": "ctrl+enter",
+                "mac": "ctrl+enter",
                 "when": "editorTextFocus && resourceScheme == dbcode && !editorHasSelection"
             },
             {
@@ -4087,12 +4087,6 @@
                         "type": "boolean",
                         "default": true,
                         "description": "%Generate inline completions using AI (Uses Copilot if installed/enabled, otherwise DBCode's hosted llama 3).%"
-                    },
-                    "dbcode.ai.modelId": {
-                        "title": "%Inline Completion Model ID%",
-                        "type": "string",
-                        "default": "",
-                        "description": "%The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.%"
                     },
                     "dbcode.ai.customModel.endpoint": {
                         "title": "%Custom Model Endpoint%",

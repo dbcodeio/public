@@ -175,8 +175,6 @@
   "The schema of the default connection if supported.": "Schéma výchozího připojení, pokud je podporováno.",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "Výchozí připojení pro pracovní prostor. Lze nastavit příkazem: DBCode: Vybrat výchozí připojení pracovního prostoru.",
   "Refresh Connected Connections": "Obnovit aktivní připojení",
-  "Inline Completion Model ID": "ID modelu inline dokončování",
-  "The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.": "Model používaný s rozšířením Copilot pro inline dokončování. Pokud není Copilot nainstalován, použije se hostovaný model llama 3 od DBCode.",
   "Delete All Favorites": "Smazat všechny oblíbené položky",
   "Delete Favorite": "Smazat oblíbenou položku",
   "Add to DBCode Favorites": "Přidat do oblíbených DBCode",

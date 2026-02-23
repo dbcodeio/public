@@ -2767,7 +2767,6 @@
   "Salesforce requires OAuth authentication. Please configure an auth profile.": "Salesforce에는 OAuth 인증이 필요합니다. 인증 프로필을 구성하세요.",
   "Salesforce requires OAuth2 authentication profile": "Salesforce에는 OAuth2 인증 프로필이 필요합니다",
   "Salesforce OAuth did not return an instance URL. Please re-authenticate.": "Salesforce OAuth가 인스턴스 URL을 반환하지 않았습니다. 다시 인증하세요.",
-  "cols": "열",
   "Unlink grid scrolling": "그리드 스크롤 연결 해제",
   "Link grid scrolling": "그리드 스크롤 연결",
   "Width (bytes)": "너비(바이트)",
@@ -3028,7 +3027,6 @@
   "Execution denied: missing WHERE clause": "실행 거부됨: WHERE 절 누락",
   "Change Provider": "공급자 변경",
   "{0} failed: {1}. Switched to {2}.": "{0} 실패: {1}. {2}(으)로 전환되었습니다.",
-  "Enter the model name (e.g. codellama:7b-instruct, gpt-4o)": "모델 이름을 입력하세요(예: codellama:7b-instruct, gpt-4o)",
   "DBCode AI uses a fixed model. To use a different provider, run \"Choose AI Provider\".": "DBCode AI는 고정 모델을 사용합니다. 다른 공급자를 사용하려면 \"AI 공급자 선택\"을 실행하세요.",
   "Copilot": "Copilot",
   "{0} models available": "{0}개의 모델 사용 가능",
@@ -3164,5 +3162,8 @@
   "Enter channel name to listen on (PostgreSQL LISTEN)": "수신할 채널 이름 입력 (PostgreSQL LISTEN)",
   "Invalid channel name": "잘못된 채널 이름",
   "Change Streams require a replica set or sharded cluster. {0}": "변경 스트림에는 복제본 세트 또는 샤드 클러스터가 필요합니다. {0}",
-  "Change Stream Error": "변경 스트림 오류"
+  "Change Stream Error": "변경 스트림 오류",
+  "Completed": "완료됨",
+  "Duration": "소요 시간",
+  "Enter the model name (e.g. codellama:7b-instruct, gpt-4o-mini)": "모델 이름을 입력하세요 (예: codellama:7b-instruct, gpt-4o-mini)"
 }

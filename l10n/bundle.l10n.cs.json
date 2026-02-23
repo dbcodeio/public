@@ -2767,7 +2767,6 @@
   "Salesforce requires OAuth authentication. Please configure an auth profile.": "Salesforce vyžaduje ověření OAuth. Nakonfigurujte ověřovací profil.",
   "Salesforce requires OAuth2 authentication profile": "Salesforce vyžaduje ověřovací profil OAuth2",
   "Salesforce OAuth did not return an instance URL. Please re-authenticate.": "Salesforce OAuth nevrátilo URL instance. Ověřte se znovu.",
-  "cols": "sl.",
   "Unlink grid scrolling": "Odpojit posun mřížek",
   "Link grid scrolling": "Propojit posun mřížek",
   "Width (bytes)": "Šířka (bajty)",
@@ -3028,7 +3027,6 @@
   "Execution denied: missing WHERE clause": "Provádění zamítnuto: chybí klauzule WHERE",
   "Change Provider": "Změnit poskytovatele",
   "{0} failed: {1}. Switched to {2}.": "{0} selhalo: {1}. Přepnuto na {2}.",
-  "Enter the model name (e.g. codellama:7b-instruct, gpt-4o)": "Zadejte název modelu (např. codellama:7b-instruct, gpt-4o)",
   "DBCode AI uses a fixed model. To use a different provider, run \"Choose AI Provider\".": "DBCode AI používá pevný model. Chcete-li použít jiného poskytovatele, spusťte „Vybrat poskytovatele AI\".",
   "Copilot": "Copilot",
   "{0} models available": "K dispozici {0} modelů",
@@ -3164,5 +3162,8 @@
   "Enter channel name to listen on (PostgreSQL LISTEN)": "Zadejte název kanálu k naslouchání (PostgreSQL LISTEN)",
   "Invalid channel name": "Neplatný název kanálu",
   "Change Streams require a replica set or sharded cluster. {0}": "Streamy změn vyžadují sadu replik nebo sdílený cluster. {0}",
-  "Change Stream Error": "Chyba streamu změn"
+  "Change Stream Error": "Chyba streamu změn",
+  "Completed": "Dokončeno",
+  "Duration": "Trvání",
+  "Enter the model name (e.g. codellama:7b-instruct, gpt-4o-mini)": "Zadejte název modelu (např. codellama:7b-instruct, gpt-4o-mini)"
 }

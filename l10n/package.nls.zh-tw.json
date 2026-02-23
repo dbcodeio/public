@@ -175,8 +175,6 @@
   "The schema of the default connection if supported.": "預設連線的架構（如果支援）。",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "工作區的預設連線。可以使用命令設定：DBCode: 選擇工作區預設連線。",
   "Refresh Connected Connections": "重新整理已連線的連線",
-  "Inline Completion Model ID": "內聯完成模型 ID",
-  "The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.": "與 Copilot 擴充功能搭配使用的模型，用於安裝/啟用時的內聯完成。如果未安裝 Copilot，則將使用 DBCode 託管的 llama 3 模型。",
   "Delete All Favorites": "刪除所有我的最愛",
   "Delete Favorite": "刪除我的最愛",
   "Add to DBCode Favorites": "新增至 DBCode 我的最愛",

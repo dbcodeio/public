@@ -2767,7 +2767,6 @@
   "Salesforce requires OAuth authentication. Please configure an auth profile.": "Salesforce richiede l'autenticazione OAuth. Configurare un profilo di autenticazione.",
   "Salesforce requires OAuth2 authentication profile": "Salesforce richiede un profilo di autenticazione OAuth2",
   "Salesforce OAuth did not return an instance URL. Please re-authenticate.": "OAuth di Salesforce non ha restituito un URL dell'istanza. Effettuare nuovamente l'autenticazione.",
-  "cols": "col.",
   "Unlink grid scrolling": "Scollega scorrimento griglie",
   "Link grid scrolling": "Collega scorrimento griglie",
   "Width (bytes)": "Larghezza (byte)",
@@ -3028,7 +3027,6 @@
   "Execution denied: missing WHERE clause": "Esecuzione negata: clausola WHERE mancante",
   "Change Provider": "Cambia provider",
   "{0} failed: {1}. Switched to {2}.": "{0} fallito: {1}. Passato a {2}.",
-  "Enter the model name (e.g. codellama:7b-instruct, gpt-4o)": "Inserisci il nome del modello (es. codellama:7b-instruct, gpt-4o)",
   "DBCode AI uses a fixed model. To use a different provider, run \"Choose AI Provider\".": "DBCode AI utilizza un modello fisso. Per utilizzare un provider diverso, esegui \"Scegli provider AI\".",
   "Copilot": "Copilot",
   "{0} models available": "{0} modelli disponibili",
@@ -3164,5 +3162,8 @@
   "Enter channel name to listen on (PostgreSQL LISTEN)": "Inserisci il nome del canale su cui ascoltare (PostgreSQL LISTEN)",
   "Invalid channel name": "Nome del canale non valido",
   "Change Streams require a replica set or sharded cluster. {0}": "I flussi di modifiche richiedono un replica set o un cluster shardato. {0}",
-  "Change Stream Error": "Errore del flusso di modifiche"
+  "Change Stream Error": "Errore del flusso di modifiche",
+  "Completed": "Completato",
+  "Duration": "Durata",
+  "Enter the model name (e.g. codellama:7b-instruct, gpt-4o-mini)": "Inserisci il nome del modello (es. codellama:7b-instruct, gpt-4o-mini)"
 }

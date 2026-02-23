@@ -175,8 +175,6 @@
   "The schema of the default connection if supported.": "既定の接続のスキーマ (サポートされている場合)。",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "ワークスペースの既定の接続。コマンド「DBCode: ワークスペースの既定の接続を選択」で設定できます。",
   "Refresh Connected Connections": "接続済み接続の更新",
-  "Inline Completion Model ID": "インライン補完モデル ID",
-  "The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.": "Copilot 拡張機能がインストール/有効化されている場合にインライン補完で使用されるモデル。Copilot がインストールされていない場合は、DBCode のホスト型 llama 3 モデルが使用されます。",
   "Delete All Favorites": "すべてのお気に入りを削除",
   "Delete Favorite": "お気に入りを削除",
   "Add to DBCode Favorites": "DBCode のお気に入りに追加",

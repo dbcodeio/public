@@ -2767,7 +2767,6 @@
   "Salesforce requires OAuth authentication. Please configure an auth profile.": "Salesforce требует аутентификацию OAuth. Настройте профиль аутентификации.",
   "Salesforce requires OAuth2 authentication profile": "Salesforce требует профиль аутентификации OAuth2",
   "Salesforce OAuth did not return an instance URL. Please re-authenticate.": "OAuth Salesforce не вернул URL экземпляра. Пройдите аутентификацию повторно.",
-  "cols": "стб.",
   "Unlink grid scrolling": "Отвязать прокрутку сеток",
   "Link grid scrolling": "Связать прокрутку сеток",
   "Width (bytes)": "Ширина (байт)",
@@ -3028,7 +3027,6 @@
   "Execution denied: missing WHERE clause": "Выполнение запрещено: отсутствует условие WHERE",
   "Change Provider": "Изменить провайдера",
   "{0} failed: {1}. Switched to {2}.": "Ошибка {0}: {1}. Переключено на {2}.",
-  "Enter the model name (e.g. codellama:7b-instruct, gpt-4o)": "Введите имя модели (например, codellama:7b-instruct, gpt-4o)",
   "DBCode AI uses a fixed model. To use a different provider, run \"Choose AI Provider\".": "DBCode AI использует фиксированную модель. Чтобы использовать другого провайдера, выполните «Выбрать провайдера ИИ».",
   "Copilot": "Copilot",
   "{0} models available": "Доступно моделей: {0}",
@@ -3164,5 +3162,8 @@
   "Enter channel name to listen on (PostgreSQL LISTEN)": "Введите имя канала для прослушивания (PostgreSQL LISTEN)",
   "Invalid channel name": "Недопустимое имя канала",
   "Change Streams require a replica set or sharded cluster. {0}": "Для потоков изменений требуется набор реплик или шардированный кластер. {0}",
-  "Change Stream Error": "Ошибка потока изменений"
+  "Change Stream Error": "Ошибка потока изменений",
+  "Completed": "Завершено",
+  "Duration": "Длительность",
+  "Enter the model name (e.g. codellama:7b-instruct, gpt-4o-mini)": "Введите название модели (например, codellama:7b-instruct, gpt-4o-mini)"
 }
