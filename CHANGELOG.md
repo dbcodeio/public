@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.28.5 - 2026-02-25
+
+### Changed
+
+- Query Builder: Visual query builder for constructing SELECT queries with a drag-and-drop. Add tables, configure joins, select columns, set filters, GROUP BY, HAVING, ORDER BY, DISTINCT, and LIMIT. Includes AI assistance for natural language query building, Save/Save As to Favorites.
+- AI: AI Assist panel for results. Manipulate query results using natural language. Filter, sort, group, pivot, chart, and more without touching the grid UI.
+- Favorites: Favorites folder now appears at the top of database nodes in the connection tree, showing favorites tied to that database. #982
+
+### Fixed
+
+- Results: Fixed grid jumping to the first column when clicking a column header while scrolled right. #988
+- Export: Excel export performance improved ~2.5x and file size reduced ~60% using compression.
+
 ## 1.28.4 - 2026-02-23
 
 ### Fixed
