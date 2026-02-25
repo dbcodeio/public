@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.27.3",
+    "version": "1.28.5",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -509,6 +509,16 @@
                 "category": "DBCode"
             },
             {
+                "command": "dbcode.ai.chooseProvider",
+                "title": "%Choose AI Provider%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.ai.setApiKey",
+                "title": "%Set Custom Model API Key%",
+                "category": "DBCode"
+            },
+            {
                 "command": "dbcode.notebook.new",
                 "title": "%Create New DBCode Notebook%",
                 "shortTitle": "%DBCode Notebook%",
@@ -556,6 +566,13 @@
                 "title": "%Create New SQL File%",
                 "shortTitle": "%New SQL File%",
                 "icon": "$(new-file)",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.queryBuilder.open",
+                "title": "%Open Query Builder%",
+                "shortTitle": "%Query Builder%",
+                "icon": "$(code-oss)",
                 "category": "DBCode"
             },
             {
@@ -800,6 +817,12 @@
                 "icon": "$(edit)"
             },
             {
+                "command": "dbcode.item.subscribe",
+                "title": "%Subscribe%",
+                "category": "DBCode",
+                "icon": "$(radio-tower)"
+            },
+            {
                 "command": "dbcode.database.backup",
                 "title": "%Backup Database%",
                 "category": "DBCode",
@@ -1004,7 +1027,17 @@
             },
             {
                 "command": "dbcode.table.compareWith",
-                "title": "%Compare Data With...%",
+                "title": "%Compare Data...%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.table.joinWith",
+                "title": "%Join...%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.table.unionWith",
+                "title": "%Union...%",
                 "category": "DBCode"
             },
             {
@@ -1163,13 +1196,36 @@
                 "title": "%Authentication Profiles Help%",
                 "category": "DBCode",
                 "icon": "$(question)"
+            },
+            {
+                "command": "dbcode.streams.pause",
+                "title": "%Pause Stream%",
+                "category": "DBCode",
+                "icon": "$(debug-pause)"
+            },
+            {
+                "command": "dbcode.streams.resume",
+                "title": "%Resume Stream%",
+                "category": "DBCode",
+                "icon": "$(debug-start)"
+            },
+            {
+                "command": "dbcode.streams.stop",
+                "title": "%Stop Stream%",
+                "category": "DBCode",
+                "icon": "$(debug-stop)"
+            },
+            {
+                "command": "dbcode.streams.reveal",
+                "title": "%Reveal Stream Tab%",
+                "category": "DBCode"
             }
         ],
         "keybindings": [
             {
                 "command": "dbcode.editor.execute",
-                "key": "windows+enter",
-                "mac": "cmd+enter",
+                "key": "ctrl+enter",
+                "mac": "ctrl+enter",
                 "when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode"
             },
             {
@@ -1177,8 +1233,8 @@
                 "args": {
                     "shiftKey": true
                 },
-                "key": "shift+windows+enter",
-                "mac": "shift+cmd+enter",
+                "key": "shift+ctrl+enter",
+                "mac": "shift+ctrl+enter",
                 "when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && (resourceScheme != dbcode || editorHasSelection)"
             },
             {
@@ -1186,8 +1242,8 @@
                 "args": {
                     "altKey": true
                 },
-                "key": "alt+windows+enter",
-                "mac": "alt+cmd+enter",
+                "key": "alt+ctrl+enter",
+                "mac": "alt+ctrl+enter",
                 "when": "editorTextFocus && !notebookCellListFocused && (editorLangId == sql || resourceFilename =~ /.sql$/) && (resourceScheme != dbcode || editorHasSelection)"
             },
             {
@@ -1204,14 +1260,14 @@
             },
             {
                 "command": "dbcode.editor.execute",
-                "key": "windows+enter",
-                "mac": "cmd+enter",
+                "key": "ctrl+enter",
+                "mac": "ctrl+enter",
                 "when": "editorTextFocus && resourceScheme == dbcode && editorHasSelection"
             },
             {
                 "command": "dbcode.editor.apply",
-                "key": "windows+enter",
-                "mac": "cmd+enter",
+                "key": "ctrl+enter",
+                "mac": "ctrl+enter",
                 "when": "editorTextFocus && resourceScheme == dbcode && !editorHasSelection"
             },
             {
@@ -1286,6 +1342,11 @@
                 {
                     "id": "dbcode.account.view",
                     "name": "%Account%"
+                },
+                {
+                    "id": "dbcode.streams.view",
+                    "name": "%Active Streams%",
+                    "when": "dbcode.hasActiveStreams"
                 }
             ],
             "dbcodePanelContainer": [
@@ -1581,7 +1642,7 @@
                 },
                 {
                     "command": "dbcode.favorites.remove",
-                    "when": "view == dbcode.favorites.view && (viewItem =~ /~deletable~/)",
+                    "when": "(view == dbcode.favorites.view || view == dbcode.connections.view) && (viewItem =~ /~deletable~/)",
                     "group": "inline@2"
                 },
                 {
@@ -1613,6 +1674,11 @@
                     "command": "dbcode.notebook.new",
                     "when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~newNotebook~/",
                     "group": "inline@2"
+                },
+                {
+                    "command": "dbcode.queryBuilder.open",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~queryBuilder~/",
+                    "group": "inline@3"
                 },
                 {
                     "command": "dbcode.connections.sqlFile",
@@ -1625,6 +1691,11 @@
                     "group": "1open@2"
                 },
                 {
+                    "command": "dbcode.queryBuilder.open",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~queryBuilder~/",
+                    "group": "1open@3"
+                },
+                {
                     "command": "dbcode.connections.refresh",
                     "when": "view == dbcode.connections.view && viewItem =~ /^database-/",
                     "group": "2connection@1"
@@ -1633,6 +1704,11 @@
                     "command": "dbcode.connections.execfile",
                     "when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~execFile~/",
                     "group": "3operation@2"
+                },
+                {
+                    "command": "dbcode.item.subscribe",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~subscribe~/",
+                    "group": "3operation@3"
                 },
                 {
                     "command": "dbcode.database.backup",
@@ -1835,9 +1911,44 @@
                     "group": "2actoin@3"
                 },
                 {
+                    "command": "dbcode.table.joinWith",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^table-/",
+                    "group": "2actoin@4"
+                },
+                {
+                    "command": "dbcode.table.joinWith",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^view-/",
+                    "group": "2actoin@4"
+                },
+                {
+                    "command": "dbcode.table.joinWith",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^materializedView-/",
+                    "group": "2actoin@4"
+                },
+                {
+                    "command": "dbcode.table.unionWith",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^table-/",
+                    "group": "2actoin@5"
+                },
+                {
+                    "command": "dbcode.table.unionWith",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^view-/",
+                    "group": "2actoin@5"
+                },
+                {
+                    "command": "dbcode.table.unionWith",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^materializedView-/",
+                    "group": "2actoin@5"
+                },
+                {
                     "command": "dbcode.item.rename",
                     "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~rename~/",
                     "group": "3modify@2"
+                },
+                {
+                    "command": "dbcode.item.subscribe",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~subscribe~/",
+                    "group": "2actoin@6"
                 },
                 {
                     "command": "dbcode.item.truncate",
@@ -1877,6 +1988,21 @@
                 {
                     "command": "dbcode.authProfiles.tree.delete",
                     "when": "view == dbcode.authProfiles.view",
+                    "group": "inline@2"
+                },
+                {
+                    "command": "dbcode.streams.pause",
+                    "when": "view == dbcode.streams.view && viewItem == streamRunning",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.streams.resume",
+                    "when": "view == dbcode.streams.view && viewItem == streamPaused",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.streams.stop",
+                    "when": "view == dbcode.streams.view && (viewItem == streamRunning || viewItem == streamPaused)",
                     "group": "inline@2"
                 }
             ],
@@ -2065,8 +2191,8 @@
                 "id": "dbcode.insertMatchedParameterBackground",
                 "description": "%Insert matched parameter background%",
                 "defaults": {
-                    "dark": "#ffffff0d",
-                    "light": "#ffffff0d"
+                    "dark": "#7655FF28",
+                    "light": "#7655FF28"
                 }
             },
             {
@@ -2579,942 +2705,984 @@
                     "fontCharacter": "\\ea1c"
                 }
             },
+            "dbcode-combine": {
+                "description": "Combine",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea1d"
+                }
+            },
             "dbcode-commit": {
                 "description": "Commit",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea1d"
+                    "fontCharacter": "\\ea1e"
                 }
             },
             "dbcode-consistency": {
                 "description": "Consistency",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea1e"
+                    "fontCharacter": "\\ea1f"
                 }
             },
             "dbcode-constraint": {
                 "description": "Constraint",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea1f"
+                    "fontCharacter": "\\ea20"
                 }
             },
             "dbcode-crash-recovery": {
                 "description": "Crash Recovery",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea20"
+                    "fontCharacter": "\\ea21"
                 }
             },
             "dbcode-crud": {
                 "description": "Crud",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea21"
+                    "fontCharacter": "\\ea22"
                 }
             },
             "dbcode-csv": {
                 "description": "Csv",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea22"
+                    "fontCharacter": "\\ea23"
                 }
             },
             "dbcode-cursor": {
                 "description": "Cursor",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea23"
+                    "fontCharacter": "\\ea24"
                 }
             },
             "dbcode-d1": {
                 "description": "D1",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea24"
+                    "fontCharacter": "\\ea25"
                 }
             },
             "dbcode-data-source": {
                 "description": "Data Source",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea25"
+                    "fontCharacter": "\\ea26"
                 }
             },
             "dbcode-databricks": {
                 "description": "Databricks",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea26"
+                    "fontCharacter": "\\ea27"
                 }
             },
             "dbcode-dataverse": {
                 "description": "Dataverse",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea27"
+                    "fontCharacter": "\\ea28"
                 }
             },
             "dbcode-date": {
                 "description": "Date",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea28"
+                    "fontCharacter": "\\ea29"
                 }
             },
             "dbcode-datetime": {
                 "description": "Datetime",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea29"
+                    "fontCharacter": "\\ea2a"
                 }
             },
             "dbcode-datetimetz": {
                 "description": "Datetimetz",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea2a"
+                    "fontCharacter": "\\ea2b"
                 }
             },
             "dbcode-db2": {
                 "description": "Db2",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea2b"
+                    "fontCharacter": "\\ea2c"
                 }
             },
             "dbcode-ddl": {
                 "description": "Ddl",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea2c"
+                    "fontCharacter": "\\ea2d"
                 }
             },
             "dbcode-deadlock": {
                 "description": "Deadlock",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea2d"
+                    "fontCharacter": "\\ea2e"
                 }
             },
             "dbcode-dependency": {
                 "description": "Dependency",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea2e"
+                    "fontCharacter": "\\ea2f"
                 }
             },
             "dbcode-deployment": {
                 "description": "Deployment",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea2f"
+                    "fontCharacter": "\\ea30"
                 }
             },
             "dbcode-diff": {
                 "description": "Diff",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea30"
+                    "fontCharacter": "\\ea31"
                 }
             },
             "dbcode-doris": {
                 "description": "Doris",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea31"
+                    "fontCharacter": "\\ea32"
                 }
             },
             "dbcode-duckdb": {
                 "description": "Duckdb",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea32"
+                    "fontCharacter": "\\ea33"
                 }
             },
             "dbcode-ducklake": {
                 "description": "Ducklake",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea33"
+                    "fontCharacter": "\\ea34"
                 }
             },
             "dbcode-durability": {
                 "description": "Durability",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea34"
+                    "fontCharacter": "\\ea35"
                 }
             },
             "dbcode-dynamodb": {
                 "description": "Dynamodb",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea35"
+                    "fontCharacter": "\\ea36"
                 }
             },
             "dbcode-elasticsearch": {
                 "description": "Elasticsearch",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea36"
+                    "fontCharacter": "\\ea37"
                 }
             },
             "dbcode-encryption": {
                 "description": "Encryption",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea37"
+                    "fontCharacter": "\\ea38"
                 }
             },
             "dbcode-enum-member": {
                 "description": "Enum Member",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea38"
+                    "fontCharacter": "\\ea39"
                 }
             },
             "dbcode-enum": {
                 "description": "Enum",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea39"
+                    "fontCharacter": "\\ea3a"
                 }
             },
             "dbcode-excel": {
                 "description": "Excel",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea3a"
+                    "fontCharacter": "\\ea3b"
                 }
             },
             "dbcode-external-table": {
                 "description": "External Table",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea3b"
+                    "fontCharacter": "\\ea3c"
                 }
             },
             "dbcode-fabric": {
                 "description": "Fabric",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea3c"
+                    "fontCharacter": "\\ea3d"
                 }
             },
             "dbcode-failure": {
                 "description": "Failure",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea3d"
+                    "fontCharacter": "\\ea3e"
                 }
             },
             "dbcode-firebase": {
                 "description": "Firebase",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea3e"
+                    "fontCharacter": "\\ea3f"
                 }
             },
             "dbcode-foreign-data-wrapper": {
                 "description": "Foreign Data Wrapper",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea3f"
+                    "fontCharacter": "\\ea40"
                 }
             },
             "dbcode-foreign-key": {
                 "description": "Foreign Key",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea40"
+                    "fontCharacter": "\\ea41"
                 }
             },
             "dbcode-function": {
                 "description": "Function",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea41"
+                    "fontCharacter": "\\ea42"
                 }
             },
             "dbcode-geography": {
                 "description": "Geography",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea42"
+                    "fontCharacter": "\\ea43"
                 }
             },
             "dbcode-geometry": {
                 "description": "Geometry",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea43"
+                    "fontCharacter": "\\ea44"
                 }
             },
             "dbcode-greenplum": {
                 "description": "Greenplum",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea44"
+                    "fontCharacter": "\\ea45"
                 }
             },
             "dbcode-h2": {
                 "description": "H2",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea45"
+                    "fontCharacter": "\\ea46"
                 }
             },
             "dbcode-hierarchy": {
                 "description": "Hierarchy",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea46"
+                    "fontCharacter": "\\ea47"
                 }
             },
             "dbcode-hint": {
                 "description": "Hint",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea47"
+                    "fontCharacter": "\\ea48"
                 }
             },
             "dbcode-hive": {
                 "description": "Hive",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea48"
+                    "fontCharacter": "\\ea49"
                 }
             },
             "dbcode-iceberg": {
                 "description": "Iceberg",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea49"
+                    "fontCharacter": "\\ea4a"
                 }
             },
             "dbcode-impala": {
                 "description": "Impala",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea4a"
+                    "fontCharacter": "\\ea4b"
                 }
             },
             "dbcode-import": {
                 "description": "Import",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea4b"
+                    "fontCharacter": "\\ea4c"
                 }
             },
             "dbcode-index": {
                 "description": "Index",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea4c"
+                    "fontCharacter": "\\ea4d"
                 }
             },
             "dbcode-influxdb": {
                 "description": "Influxdb",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea4d"
+                    "fontCharacter": "\\ea4e"
                 }
             },
             "dbcode-insert": {
                 "description": "Insert",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea4e"
+                    "fontCharacter": "\\ea4f"
                 }
             },
             "dbcode-ip": {
                 "description": "Ip",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea4f"
+                    "fontCharacter": "\\ea50"
                 }
             },
             "dbcode-isolation": {
                 "description": "Isolation",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea50"
+                    "fontCharacter": "\\ea51"
                 }
             },
             "dbcode-issue": {
                 "description": "Issue",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea51"
+                    "fontCharacter": "\\ea52"
                 }
             },
             "dbcode-json": {
                 "description": "Json",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea52"
+                    "fontCharacter": "\\ea53"
+                }
+            },
+            "dbcode-kafka": {
+                "description": "Kafka",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea54"
                 }
             },
             "dbcode-key": {
                 "description": "Key",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea53"
+                    "fontCharacter": "\\ea55"
                 }
             },
             "dbcode-libsql": {
                 "description": "Libsql",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea54"
+                    "fontCharacter": "\\ea56"
                 }
             },
             "dbcode-license": {
                 "description": "License",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea55"
+                    "fontCharacter": "\\ea57"
                 }
             },
             "dbcode-mac": {
                 "description": "Mac",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea56"
+                    "fontCharacter": "\\ea58"
                 }
             },
             "dbcode-mainteance": {
                 "description": "Mainteance",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea57"
+                    "fontCharacter": "\\ea59"
                 }
             },
             "dbcode-mariadb": {
                 "description": "Mariadb",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea58"
+                    "fontCharacter": "\\ea5a"
                 }
             },
             "dbcode-materialized-view": {
                 "description": "Materialized View",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea59"
+                    "fontCharacter": "\\ea5b"
                 }
             },
             "dbcode-memgraph": {
                 "description": "Memgraph",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea5a"
+                    "fontCharacter": "\\ea5c"
                 }
             },
             "dbcode-merge": {
                 "description": "Merge",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea5b"
+                    "fontCharacter": "\\ea5d"
                 }
             },
             "dbcode-microsoft": {
                 "description": "Microsoft",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea5c"
+                    "fontCharacter": "\\ea5e"
                 }
             },
             "dbcode-migration": {
                 "description": "Migration",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea5d"
+                    "fontCharacter": "\\ea5f"
                 }
             },
             "dbcode-mongodb": {
                 "description": "Mongodb",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea5e"
+                    "fontCharacter": "\\ea60"
                 }
             },
             "dbcode-motherduck": {
                 "description": "Motherduck",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea5f"
+                    "fontCharacter": "\\ea61"
                 }
             },
             "dbcode-mssql": {
                 "description": "Mssql",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea60"
+                    "fontCharacter": "\\ea62"
                 }
             },
             "dbcode-mysql": {
                 "description": "Mysql",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea61"
+                    "fontCharacter": "\\ea63"
                 }
             },
             "dbcode-neo4j": {
                 "description": "Neo4j",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea62"
+                    "fontCharacter": "\\ea64"
                 }
             },
             "dbcode-netezza": {
                 "description": "Netezza",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea63"
+                    "fontCharacter": "\\ea65"
                 }
             },
             "dbcode-normalization": {
                 "description": "Normalization",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea64"
+                    "fontCharacter": "\\ea66"
                 }
             },
             "dbcode-null": {
                 "description": "Null",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea65"
+                    "fontCharacter": "\\ea67"
                 }
             },
             "dbcode-number": {
                 "description": "Number",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea66"
+                    "fontCharacter": "\\ea68"
                 }
             },
             "dbcode-odbc": {
                 "description": "Odbc",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea67"
+                    "fontCharacter": "\\ea69"
                 }
             },
             "dbcode-olap": {
                 "description": "Olap",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea68"
+                    "fontCharacter": "\\ea6a"
                 }
             },
             "dbcode-oltp": {
                 "description": "Oltp",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea69"
+                    "fontCharacter": "\\ea6b"
                 }
             },
             "dbcode-opensearch": {
                 "description": "Opensearch",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea6a"
+                    "fontCharacter": "\\ea6c"
                 }
             },
             "dbcode-optimizer": {
                 "description": "Optimizer",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea6b"
+                    "fontCharacter": "\\ea6d"
                 }
             },
             "dbcode-oracle": {
                 "description": "Oracle",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea6c"
+                    "fontCharacter": "\\ea6e"
                 }
             },
             "dbcode-parameters": {
                 "description": "Parameters",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea6d"
+                    "fontCharacter": "\\ea6f"
                 }
             },
             "dbcode-parquet": {
                 "description": "Parquet",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea6e"
+                    "fontCharacter": "\\ea70"
                 }
             },
             "dbcode-pivot": {
                 "description": "Pivot",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea6f"
+                    "fontCharacter": "\\ea71"
                 }
             },
             "dbcode-policy": {
                 "description": "Policy",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea70"
+                    "fontCharacter": "\\ea72"
                 }
             },
             "dbcode-postgres": {
                 "description": "Postgres",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea71"
+                    "fontCharacter": "\\ea73"
                 }
             },
             "dbcode-primary-key": {
                 "description": "Primary Key",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea72"
+                    "fontCharacter": "\\ea74"
                 }
             },
             "dbcode-procedure": {
                 "description": "Procedure",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea73"
+                    "fontCharacter": "\\ea75"
+                }
+            },
+            "dbcode-query-builder": {
+                "description": "Query Builder",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea76"
                 }
             },
             "dbcode-query": {
                 "description": "Query",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea74"
+                    "fontCharacter": "\\ea77"
                 }
             },
             "dbcode-questdb": {
                 "description": "Questdb",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea75"
+                    "fontCharacter": "\\ea78"
+                }
+            },
+            "dbcode-rabbitmq": {
+                "description": "Rabbitmq",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\ea79"
                 }
             },
             "dbcode-ravendb": {
                 "description": "Ravendb",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea76"
+                    "fontCharacter": "\\ea7a"
                 }
             },
             "dbcode-read": {
                 "description": "Read",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea77"
+                    "fontCharacter": "\\ea7b"
                 }
             },
             "dbcode-recovery": {
                 "description": "Recovery",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea78"
+                    "fontCharacter": "\\ea7c"
                 }
             },
             "dbcode-redis": {
                 "description": "Redis",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea79"
+                    "fontCharacter": "\\ea7d"
                 }
             },
             "dbcode-redshift": {
                 "description": "Redshift",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea7a"
+                    "fontCharacter": "\\ea7e"
                 }
             },
             "dbcode-relational-database": {
                 "description": "Relational Database",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea7b"
+                    "fontCharacter": "\\ea7f"
                 }
             },
             "dbcode-replication": {
                 "description": "Replication",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea7c"
+                    "fontCharacter": "\\ea80"
                 }
             },
             "dbcode-return": {
                 "description": "Return",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea7d"
+                    "fontCharacter": "\\ea81"
                 }
             },
             "dbcode-risingwave": {
                 "description": "Risingwave",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea7e"
+                    "fontCharacter": "\\ea82"
                 }
             },
             "dbcode-rollback": {
                 "description": "Rollback",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea7f"
+                    "fontCharacter": "\\ea83"
                 }
             },
             "dbcode-salesforce": {
                 "description": "Salesforce",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea80"
+                    "fontCharacter": "\\ea84"
                 }
             },
             "dbcode-schema": {
                 "description": "Schema",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea81"
+                    "fontCharacter": "\\ea85"
                 }
             },
             "dbcode-scylla": {
                 "description": "Scylla",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea82"
+                    "fontCharacter": "\\ea86"
                 }
             },
             "dbcode-select": {
                 "description": "Select",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea83"
+                    "fontCharacter": "\\ea87"
                 }
             },
             "dbcode-sequence": {
                 "description": "Sequence",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea84"
+                    "fontCharacter": "\\ea88"
                 }
             },
             "dbcode-server": {
                 "description": "Server",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea85"
+                    "fontCharacter": "\\ea89"
                 }
             },
             "dbcode-singlestore": {
                 "description": "Singlestore",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea86"
+                    "fontCharacter": "\\ea8a"
                 }
             },
             "dbcode-snowflake": {
                 "description": "Snowflake",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea87"
+                    "fontCharacter": "\\ea8b"
                 }
             },
             "dbcode-sort": {
                 "description": "Sort",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea88"
+                    "fontCharacter": "\\ea8c"
                 }
             },
             "dbcode-split": {
                 "description": "Split",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea89"
+                    "fontCharacter": "\\ea8d"
                 }
             },
             "dbcode-sql": {
                 "description": "Sql",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea8a"
+                    "fontCharacter": "\\ea8e"
                 }
             },
             "dbcode-sqlite": {
                 "description": "Sqlite",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea8b"
+                    "fontCharacter": "\\ea8f"
                 }
             },
             "dbcode-starrocks": {
                 "description": "Starrocks",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea8c"
+                    "fontCharacter": "\\ea90"
                 }
             },
             "dbcode-string": {
                 "description": "String",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea8d"
+                    "fontCharacter": "\\ea91"
                 }
             },
             "dbcode-surrealdb": {
                 "description": "Surrealdb",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea8e"
+                    "fontCharacter": "\\ea92"
                 }
             },
             "dbcode-system-table": {
                 "description": "System Table",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea8f"
+                    "fontCharacter": "\\ea93"
                 }
             },
             "dbcode-table": {
                 "description": "Table",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea90"
+                    "fontCharacter": "\\ea94"
                 }
             },
             "dbcode-tidb": {
                 "description": "Tidb",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea91"
+                    "fontCharacter": "\\ea95"
                 }
             },
             "dbcode-time": {
                 "description": "Time",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea92"
+                    "fontCharacter": "\\ea96"
                 }
             },
             "dbcode-timescale": {
                 "description": "Timescale",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea93"
+                    "fontCharacter": "\\ea97"
                 }
             },
             "dbcode-timetz": {
                 "description": "Timetz",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea94"
+                    "fontCharacter": "\\ea98"
                 }
             },
             "dbcode-transpose": {
                 "description": "Transpose",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea95"
+                    "fontCharacter": "\\ea99"
                 }
             },
             "dbcode-trigger": {
                 "description": "Trigger",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea96"
+                    "fontCharacter": "\\ea9a"
                 }
             },
             "dbcode-trino": {
                 "description": "Trino",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea97"
+                    "fontCharacter": "\\ea9b"
                 }
             },
             "dbcode-type": {
                 "description": "Type",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea98"
+                    "fontCharacter": "\\ea9c"
                 }
             },
             "dbcode-unique-constraint": {
                 "description": "Unique Constraint",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea99"
+                    "fontCharacter": "\\ea9d"
                 }
             },
             "dbcode-unknown": {
                 "description": "Unknown",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea9a"
+                    "fontCharacter": "\\ea9e"
                 }
             },
             "dbcode-update": {
                 "description": "Update",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea9b"
+                    "fontCharacter": "\\ea9f"
                 }
             },
             "dbcode-uuid": {
                 "description": "Uuid",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea9c"
+                    "fontCharacter": "\\eaa0"
+                }
+            },
+            "dbcode-valkey": {
+                "description": "Valkey",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\eaa1"
                 }
             },
             "dbcode-vector": {
                 "description": "Vector",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea9d"
+                    "fontCharacter": "\\eaa2"
+                }
+            },
+            "dbcode-venn": {
+                "description": "Venn",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\eaa3"
                 }
             },
             "dbcode-view": {
                 "description": "View",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea9e"
+                    "fontCharacter": "\\eaa4"
                 }
             },
             "dbcode-vm": {
                 "description": "Vm",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ea9f"
+                    "fontCharacter": "\\eaa5"
                 }
             },
             "dbcode-void": {
                 "description": "Void",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eaa0"
+                    "fontCharacter": "\\eaa6"
                 }
             },
             "dbcode-xml": {
                 "description": "Xml",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eaa1"
+                    "fontCharacter": "\\eaa7"
                 }
             },
             "dbcode-yugabyte": {
                 "description": "Yugabyte",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eaa2"
+                    "fontCharacter": "\\eaa8"
                 }
             }
         },
@@ -3852,14 +4020,20 @@
                             "comfortable"
                         ],
                         "enumDescriptions": [
-                            "%Compact row spacing for more data on screen.%",
-                            "%Default row spacing.%",
-                            "%Extra row spacing for readability.%"
+                            "%Snug row spacing for more data on screen.%",
+                            "%Balanced row spacing.%",
+                            "%Relaxed row spacing for readability.%"
                         ],
-                        "markdownDescription": "%Controls the display density of data grid rows.%"
+                        "markdownDescription": "%Controls the row spacing of data grids.%"
+                    },
+                    "dbcode.rowBanding": {
+                        "order": 12,
+                        "type": "boolean",
+                        "default": true,
+                        "markdownDescription": "%Toggle zebra stripes (alternating row colors) in data grids.%"
                     },
                     "dbcode.showColumnComments": {
-                        "order": 12,
+                        "order": 13,
                         "type": "boolean",
                         "default": false,
                         "markdownDescription": "%Show column comments below column names in result headers.%"
@@ -3924,17 +4098,41 @@
                             "%No authorization required - use only in trusted environments.%"
                         ]
                     },
+                    "dbcode.ai.mcp.tokenExpiry": {
+                        "title": "%MCP OAuth Token Expiry%",
+                        "type": "number",
+                        "default": 1,
+                        "minimum": 1,
+                        "maximum": 90,
+                        "markdownDescription": "%Number of days before OAuth access tokens expire. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.%"
+                    },
                     "dbcode.ai.inlineCompletion": {
                         "title": "%Inline Completion%",
                         "type": "boolean",
                         "default": true,
                         "description": "%Generate inline completions using AI (Uses Copilot if installed/enabled, otherwise DBCode's hosted llama 3).%"
                     },
-                    "dbcode.ai.modelId": {
-                        "title": "%Inline Completion Model ID%",
+                    "dbcode.ai.customModel.endpoint": {
+                        "title": "%Custom Model Endpoint%",
                         "type": "string",
-                        "default": "",
-                        "description": "%The model used with the Copilot extension for inline completion when installed/enabled. If Copilot is not installed DBCode's hosted llama 3 model will be used.%"
+                        "description": "%OpenAI-compatible API endpoint (e.g. http://localhost:11434 for Ollama, https://api.openai.com for OpenAI, https://api.groq.com/openai for Groq).%"
+                    },
+                    "dbcode.ai.customModel.model": {
+                        "title": "%Custom Model%",
+                        "type": "string",
+                        "description": "%Model name (e.g. codellama:7b-instruct, gpt-4o, llama-3.3-70b-versatile).%"
+                    },
+                    "dbcode.ai.customModel.timeout": {
+                        "title": "%Custom Model Timeout%",
+                        "type": "number",
+                        "default": 30,
+                        "description": "%Request timeout in seconds.%"
+                    },
+                    "dbcode.ai.customModel.only": {
+                        "title": "%Custom Model Only%",
+                        "type": "boolean",
+                        "default": false,
+                        "description": "%When enabled, only use the custom model. Do not fall back to Copilot or DBCode AI if unavailable.%"
                     }
                 }
             },
@@ -4170,6 +4368,21 @@
                                     "%Ask if the statement should be executed.%",
                                     "%Deny the statement from being executed.%"
                                 ]
+                            },
+                            "missingWhere": {
+                                "type": "string",
+                                "default": "ask",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ],
+                                "markdownDescription": "%Action when DELETE or UPDATE is missing a WHERE clause.%"
                             }
                         },
                         "additionalProperties": false,
@@ -4187,7 +4400,8 @@
                             "maintenance": "allow",
                             "set/use": "allow",
                             "grant/revoke": "allow",
-                            "other": "allow"
+                            "other": "allow",
+                            "missingWhere": "ask"
                         }
                     },
                     "dbcode.connection.role.testing": {
@@ -4390,6 +4604,21 @@
                                     "%Ask if the statement should be executed.%",
                                     "%Deny the statement from being executed.%"
                                 ]
+                            },
+                            "missingWhere": {
+                                "type": "string",
+                                "default": "ask",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ],
+                                "markdownDescription": "%Action when DELETE or UPDATE is missing a WHERE clause.%"
                             }
                         },
                         "additionalProperties": false,
@@ -4407,7 +4636,8 @@
                             "maintenance": "allow",
                             "set/use": "allow",
                             "grant/revoke": "ask",
-                            "other": "ask"
+                            "other": "ask",
+                            "missingWhere": "ask"
                         }
                     },
                     "dbcode.connection.role.production": {
@@ -4610,6 +4840,21 @@
                                     "%Ask if the statement should be executed.%",
                                     "%Deny the statement from being executed.%"
                                 ]
+                            },
+                            "missingWhere": {
+                                "type": "string",
+                                "default": "deny",
+                                "enum": [
+                                    "allow",
+                                    "ask",
+                                    "deny"
+                                ],
+                                "enumDescriptions": [
+                                    "%Allow the statement to be executed.%",
+                                    "%Ask if the statement should be executed.%",
+                                    "%Deny the statement from being executed.%"
+                                ],
+                                "markdownDescription": "%Action when DELETE or UPDATE is missing a WHERE clause.%"
                             }
                         },
                         "additionalProperties": false,
@@ -4627,7 +4872,8 @@
                             "maintenance": "ask",
                             "set/use": "allow",
                             "grant/revoke": "deny",
-                            "other": "ask"
+                            "other": "ask",
+                            "missingWhere": "deny"
                         }
                     }
                 }
@@ -5294,6 +5540,7 @@
         "test": "NODE_OPTIONS='--max-old-space-size=8192' vitest run",
         "test:unit": "NODE_OPTIONS='--max-old-space-size=8192' vitest run --project unit",
         "test:unit:coverage": "NODE_OPTIONS='--max-old-space-size=8192' vitest run --project unit --coverage",
+        "test:langserver": "NODE_OPTIONS='--max-old-space-size=8192' vitest run --project langserver",
         "test:integration": "NODE_OPTIONS='--max-old-space-size=8192' vitest run --project integration",
         "esbuild": "npx tsx ./scripts/build.ts",
         "prepare": "husky install",
@@ -5318,6 +5565,7 @@
         "@azure/keyvault-secrets": "^4.8.0",
         "@biomejs/biome": "^2.1.2",
         "@socketsecurity/cli": "^1.0.0",
+        "@types/amqplib": "^0.10.8",
         "@types/big.js": "^6.2.2",
         "@types/glob": "^8.1.0",
         "@types/html-escaper": "^3.0.2",
@@ -5387,6 +5635,8 @@
         "@date-fns/utc": "^2.1.0",
         "@duckdb/node-api": "^1.4.4-r.1",
         "@elastic/elasticsearch": "^9.0.1",
+        "@electric-sql/pglite": "^0.3.15",
+        "@electric-sql/pglite-tools": "^0.2.20",
         "@google-cloud/bigquery": "^8.1.1",
         "@google-cloud/resource-manager": "^6.2.1",
         "@influxdata/influxdb3-client": "^1.4.0",
@@ -5401,10 +5651,10 @@
         "@vscode/chat-extension-utils": "^0.0.0-alpha.5",
         "@vscode/codicons": "^0.0.36",
         "@vscode/l10n": "^0.0.18",
-        "@vscode/prompt-tsx": "^0.3.0-alpha.21",
         "@xyflow/react": "^12.7.0",
         "ag-charts-enterprise": "^12.2.0",
-        "ag-grid-enterprise": "^34.2.0",
+        "ag-grid-enterprise": "^34.3.1",
+        "amqplib": "^0.10.9",
         "another-json-xml": "^2.0.7",
         "antlr4-c3": "^3.4.4",
         "antlr4ng": "^3.0.16",
@@ -5434,6 +5684,7 @@
         "json-diff": "^1.0.6",
         "jspdf": "^3.0.1",
         "jwt-decode": "^4.0.0",
+        "kafkajs": "^2.2.4",
         "lit": "^3.2.1",
         "lodash-es": "^4.17.21",
         "maplibre-gl": "^5.7.1",

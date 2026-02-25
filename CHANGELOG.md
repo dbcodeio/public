@@ -1,5 +1,133 @@
 # CHANGELOG
 
+## 1.28.5 - 2026-02-25
+
+### Changed
+
+- Query Builder: Visual query builder for constructing SELECT queries with a drag-and-drop. Add tables, configure joins, select columns, set filters, GROUP BY, HAVING, ORDER BY, DISTINCT, and LIMIT. Includes AI assistance for natural language query building, Save/Save As to Favorites.
+- AI: AI Assist panel for results. Manipulate query results using natural language. Filter, sort, group, pivot, chart, and more without touching the grid UI.
+- Favorites: Favorites folder now appears at the top of database nodes in the connection tree, showing favorites tied to that database. #982
+
+### Fixed
+
+- Results: Fixed grid jumping to the first column when clicking a column header while scrolled right. #988
+- Export: Excel export performance improved ~2.5x and file size reduced ~60% using compression.
+
+## 1.28.4 - 2026-02-23
+
+### Fixed
+
+- Results: Fixed clicking in the grid sidebar (Inspector, Columns, etc.) stealing focus from the panel.
+- Results: Fixed Saved Filters popup not appearing when clicked.
+
+## 1.28.3 - 2026-02-23
+
+### Changed
+
+- Editor: Changed execute keyboard shortcut from Cmd/Win+Enter to Ctrl+Enter for cross-platform consistency.
+- Streaming: Added Firebase Firestore snapshot subscriptions for real-time collection changes. Right-click a collection → Subscribe.
+- Streaming: Added RavenDB Changes API subscriptions for real-time document changes. Right-click a collection → Subscribe.
+
+### Fixed
+
+- Editor: SQL Statements are executed individually when multiple statements are selected, allowing faster result returns, error handling, and correct tab identification. #967
+- PostgreSQL: Error messages now include additional context from the database (where, detail, hint) when available.
+- SQLite: Fixed attached databases showing as "Default" after refreshing when a non-main database was last browsed. #984
+- RavenDB: Fixed error before connection is established. #986
+- Results: Clicking empty space around rows now focuses the grid for keyboard navigation. #985
+- AI: Copilot model selection no longer auto-selects the first available model which could silently consume credits on expensive models. Now uses Copilot's 'gpt-4o-mini' family by default as recommended by CoPilot for completion. Removed the `dbcode.ai.modelId` setting.
+- Connections: Fixed saving connections erroring in some cases.
+
+## 1.28.2 - 2026-02-20
+
+### Changed
+
+- Streaming: Real-time message streaming for Kafka topics and RabbitMQ queues with LIVE indicator, event counter, throughput stats, and pause/stop controls in the grid status bar.
+- Streaming: Added PostgreSQL LISTEN/NOTIFY channel subscriptions via `LISTEN channel_name;` or right-click database → Subscribe.
+- Streaming: Added MongoDB Change Streams for collection subscriptions via `db.collection.watch()` or right-click collection → Subscribe. Requires a replica set or sharded cluster.
+- Streaming: Added Redis Pub/Sub channel subscriptions via `SUBSCRIBE channel_name` or right-click database → Subscribe.
+- Streaming: Added SurrealDB LIVE SELECT table subscriptions via `LIVE SELECT * FROM table;` or right-click table → Subscribe.
+- Active Streams: New view, showing all running streams grouped by connection.
+- Editing: JOIN query results are now editable. Columns unique to one table in the query are editable, while columns present in multiple tables are read-only. Primary keys are resolved automatically, or you can select key columns manually when saving.
+- Transpose: Field column is now sortable, click the header to sort field names alphabetically. #983
+- Results: Added "Clear This Column Sort" and "Clear All Column Sorts" options to the column header menu.
+
+### Fixed
+
+- Connections: Fixed stale connection error after dropping a database and refreshing. Refresh now cleans up connections for databases that no longer exist and avoids redundant database list queries. #966
+- MCP: Fixed autoStart not reliably starting the server on VS Code reload. #960
+- Export: Replaced Results Excel export, fixing non-numeric columns (VARCHAR, UUID, etc.) being formatted as numbers, improving file size and performance for large exports, and adding the SQL query as a second "Query" sheet. #980
+- Import: Fixed driver name mapping during JSON import causing names like "sqlserver" to not map to "mssql". #979
+- Results: Fixed Cmd/Ctrl+C not copying grid selection when a WHERE filter is active.
+- Results: Fixed horizontal overflow causing page-level scrolling.
+- ERD: Fixed saved node positions not being restored when reopening a diagram. #829
+- Redis: Fixed connection failing on managed Redis services (Google Cloud Memorystore, some AWS ElastiCache configurations) that block the CLIENT SETNAME command.
+- Language Server: Fixed ClickHouse parser not recognizing CTEs in INSERT...SELECT statements. #981
+- Transpose: Improved performance when entering transpose mode with large result sets. #983
+
+## 1.28.0 - 2026-02-16
+
+### Changed
+
+- Apache Kafka: In preview with topic browsing, JSON auto-expansion, message producing, consumer group visibility.
+- RabbitMQ: In preview with queue browsing, message peeking, exchange topology with bound queues, message publishing.
+- Valkey: Added Valkey as a Redis derivative with its own icon and connection type. #970
+- AI: Inline completion now scopes context to the active statement instead of the entire document, reducing noise and improving suggestion quality.
+- Results: Changed duplicate row shortcut from Ctrl/Cmd+D to Ctrl/Cmd+Shift+D to free Ctrl/Cmd+D for fill-down (matching Excel/Sheets convention). #972
+- Editor: Active statement highlighting now includes leading and trailing comments.
+
+### Fixed
+
+- Azure SQL: Fixed stale Entra ID tokens requiring manual sign-out by automatically re-authenticating when token is rejected.
+- Azure: Fixed cloud provider connections failing with ENAMETOOLONG when Azure resource IDs are deeply nested. #963
+- MySQL/MariaDB: Fixed long-running queries failing with ER_SOCKET_UNEXPECTED_CLOSE when connecting through proxies or firewalls. #971
+- Results: Fixed "below" result location rearranging entire editor layout when using split editors. #973
+- Elasticsearch/OpenSearch: Fixed introspection failing with "HTTP line is larger than 4096 bytes" on clusters with many indices. #975
+
+## 1.27.8 - 2026-02-12
+
+### Changed
+
+- AI: Added execution plan analysis.
+- AI: Added BOYK/local LLM support. Configure any OpenAI-compatible endpoint in settings under `dbcode.ai.customModel`. #816
+- Results: Added setting to control zebra striping in the grid.
+- MCP: Added configurable OAuth token expiry (`dbcode.ai.mcp.tokenExpiry`), default 1 day, max 90 days. #960
+
+### Fixed
+
+- MySQL: Fixed MariaDB derivative detection failing when `@@GLOBAL.version_comment` doesn't contain "mariadb" (e.g., Debian packages). #968
+- SQLite: Fixed truncate using unsupported `TRUNCATE TABLE` syntax, now uses `DELETE FROM`. #965
+- ClickHouse: Fixed query cancellation not killing the running query on the server. #962
+- PostgreSQL: Fixed backup/restore to use local tools first if on the path. #961
+
+## 1.27.7 - 2026-02-10
+
+### Changed
+
+- Missing WHERE Detection: Warns before executing DELETE or UPDATE statements missing a WHERE clause. Configurable per role (allow/ask/deny). Available once per session for Core users, continuously for Pro.
+
+### Fixed
+
+- Results: Fixed right-click Filter By/Exclude not working for dates, booleans, and null values in the results grid. Also fixed context menu filters not triggering server-side queries in paging mode. #957
+- Results: Fixed Exclude filter to include filtering for null values. #957
+- Snowflake: Fixed introspection failing due to unquoted `INCREMENT` reserved keyword in sequences query. #956
+- Snowflake: Fixed regular tables not appearing in the tree when hybrid, transient, or dynamic tables exist.
+- Execution: Fixed standalone BEGIN/END blocks in SQL Server and Oracle grouping subsequent statements into one block. #958
+
+## 1.27.6 - 2026-02-09
+
+### Changed
+
+- Join: Join tables from the DB Explorer or results with configurable join type and column mapping. #849
+- Union: Union tables from the DB Explorer or results across tabs and connections.
+
+### Fixed
+
+- Completions: 'Select a connection' prompt now only appears once per session instead of on every keystroke.
+- BigQuery: Fixed Script CREATE (DDL) for functions. #955
+- Notebook: Fixed cell editor losing focus after executing a cell with Ctrl+Enter.
+- MongoDB: Fixed delete and update failing on documents with Binary/UUID _id fields (e.g. CosmosDB). #954
+
 ## 1.27.3 - 2026-02-08
 
 ### Fixed
