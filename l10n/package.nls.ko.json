@@ -344,5 +344,7 @@
   "Stop Stream": "스트림 중지",
   "Reveal Stream Tab": "스트림 탭 표시",
   "Active Streams": "활성 스트림",
-  "Subscribe": "구독"
+  "Subscribe": "구독",
+  "Open Query Builder": "쿼리 빌더 열기",
+  "Query Builder": "쿼리 빌더"
 }

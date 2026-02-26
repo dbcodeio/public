@@ -344,5 +344,7 @@
   "Stop Stream": "Akışı Durdur",
   "Reveal Stream Tab": "Akış Sekmesini Göster",
   "Active Streams": "Etkin Akışlar",
-  "Subscribe": "Abone Ol"
+  "Subscribe": "Abone Ol",
+  "Open Query Builder": "Sorgu oluşturucuyu aç",
+  "Query Builder": "Sorgu Oluşturucu"
 }

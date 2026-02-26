@@ -344,5 +344,7 @@
   "Stop Stream": "Parar transmissão",
   "Reveal Stream Tab": "Mostrar aba de transmissão",
   "Active Streams": "Transmissões ativas",
-  "Subscribe": "Inscrever-se"
+  "Subscribe": "Inscrever-se",
+  "Open Query Builder": "Abrir construtor de consultas",
+  "Query Builder": "Construtor de consultas"
 }

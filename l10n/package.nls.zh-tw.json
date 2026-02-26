@@ -344,5 +344,7 @@
   "Stop Stream": "停止串流",
   "Reveal Stream Tab": "顯示串流分頁",
   "Active Streams": "作用中串流",
-  "Subscribe": "訂閱"
+  "Subscribe": "訂閱",
+  "Open Query Builder": "開啟查詢產生器",
+  "Query Builder": "查詢產生器"
 }

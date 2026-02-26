@@ -344,5 +344,7 @@
   "Stop Stream": "停止流",
   "Reveal Stream Tab": "显示流标签页",
   "Active Streams": "活动流",
-  "Subscribe": "订阅"
+  "Subscribe": "订阅",
+  "Open Query Builder": "打开查询生成器",
+  "Query Builder": "查询生成器"
 }

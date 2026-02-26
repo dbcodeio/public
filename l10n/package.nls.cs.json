@@ -344,5 +344,7 @@
   "Stop Stream": "Zastavit stream",
   "Reveal Stream Tab": "Zobrazit kartu streamu",
   "Active Streams": "Aktivní streamy",
-  "Subscribe": "Odebírat"
+  "Subscribe": "Odebírat",
+  "Open Query Builder": "Otevřít tvůrce dotazů",
+  "Query Builder": "Tvůrce dotazů"
 }

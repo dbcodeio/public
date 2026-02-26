@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.28.7 - 2026-02-26
+
+### Changed
+
+- IBM I: Added preview support for IBM I (AS/400) databases. #976
+- SQLite: Added sqlite-regex extension (PCRE2 regular expressions). #992
+- SQLite: Enabled `load_extension()` for loading custom extensions via post-connection SQL. #992
+- Excel Export: Replaced SheetJS with custom XLSX writer using Shared String Table deduplication, producing ~60% smaller files. #980
+- Export: All grid exports now use the native VS Code save dialog with Open File/Open Folder/Copy Path actions. #796
+
+### Fixed
+
+- MySQL: Fixed compatibility with ShardingSphere-proxy and other MySQL proxies that don't support IFNULL. #987
+
 ## 1.28.5 - 2026-02-25
 
 ### Changed

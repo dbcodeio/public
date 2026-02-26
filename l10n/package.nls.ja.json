@@ -344,5 +344,7 @@
   "Stop Stream": "ストリームを停止",
   "Reveal Stream Tab": "ストリームタブを表示",
   "Active Streams": "アクティブなストリーム",
-  "Subscribe": "登録"
+  "Subscribe": "登録",
+  "Open Query Builder": "クエリビルダーを開く",
+  "Query Builder": "クエリビルダー"
 }

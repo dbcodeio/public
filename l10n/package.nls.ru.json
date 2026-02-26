@@ -344,5 +344,7 @@
   "Stop Stream": "Остановить поток",
   "Reveal Stream Tab": "Показать вкладку потока",
   "Active Streams": "Активные потоки",
-  "Subscribe": "Подписаться"
+  "Subscribe": "Подписаться",
+  "Open Query Builder": "Открыть конструктор запросов",
+  "Query Builder": "Конструктор запросов"
 }

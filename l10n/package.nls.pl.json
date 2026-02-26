@@ -344,5 +344,7 @@
   "Stop Stream": "Zatrzymaj strumień",
   "Reveal Stream Tab": "Pokaż kartę strumienia",
   "Active Streams": "Aktywne strumienie",
-  "Subscribe": "Subskrybuj"
+  "Subscribe": "Subskrybuj",
+  "Open Query Builder": "Otwórz kreator zapytań",
+  "Query Builder": "Kreator zapytań"
 }

@@ -344,5 +344,7 @@
   "Stop Stream": "Stream stoppen",
   "Reveal Stream Tab": "Stream-Tab anzeigen",
   "Active Streams": "Aktive Streams",
-  "Subscribe": "Abonnieren"
+  "Subscribe": "Abonnieren",
+  "Open Query Builder": "Abfrage-Generator öffnen",
+  "Query Builder": "Abfrage-Generator"
 }

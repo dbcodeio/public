@@ -344,5 +344,7 @@
   "Stop Stream": "Arrêter le flux",
   "Reveal Stream Tab": "Afficher l'onglet de flux",
   "Active Streams": "Flux actifs",
-  "Subscribe": "S'abonner"
+  "Subscribe": "S'abonner",
+  "Open Query Builder": "Ouvrir le générateur de requêtes",
+  "Query Builder": "Générateur de requêtes"
 }
