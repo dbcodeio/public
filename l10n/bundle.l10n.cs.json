@@ -1253,10 +1253,6 @@
   "Connection will be established through SSH tunnel": "Připojení bude navázáno prostřednictvím SSH tunelu",
   "External Tables": "Externí tabulky",
   "Start Trial": "Spustit zkušební verzi",
-  "Pro feature detected: Unlock {0}?": "Detekována Pro funkce: Odemknout {0}?",
-  "Start a free 14-day trial — no credit card required — or sign in if you've already leveled up.": "Spusťte bezplatnou 14denní zkušební verzi bez platební karty nebo se přihlaste, pokud již máte prémiový účet.",
-  "{0} needs a valid license. Your trial or license has expired. Purchase a license to keep using this feature.": "{0} vyžaduje platnou licenci. Platnost vaší zkušební verze nebo licence vypršela. Zakupte si licenci, abyste mohli tuto funkci nadále používat.",
-  "Time's Up": "Čas vypršel",
   "Select items to include, or type a SQL like or not like eg: like value%": "Vyberte položky k zahrnutí nebo zadejte SQL výraz like nebo not like, např.: like hodnota%",
   "Quick Script": "Rychlý skript",
   "The {0} script action is not supported": "Akce skriptu {0} není podporována",
@@ -3213,5 +3209,14 @@
   "Exported to {0}": "Exportováno do {0}",
   "Favorites": "Oblíbené",
   "Regular expressions via PCRE2": "Regulární výrazy přes PCRE2",
-  "IBM i does not support {0} scripting.": "IBM i nepodporuje skriptování {0}."
+  "IBM i does not support {0} scripting.": "IBM i nepodporuje skriptování {0}.",
+  "Query Builder": "Tvůrce dotazů",
+  "Open Query Builder": "Otevřít tvůrce dotazů",
+  "Needs to be re added": "Je třeba znovu přidat",
+  "This favorite was saved in an older format. Remove it and re-add from the connection tree.": "Tento oblíbený byl uložen ve starším formátu. Odeberte ho a přidejte znovu ze stromu připojení.",
+  "{0} is a Pro feature": "{0} je funkce Pro",
+  "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "Vyzkoušejte zdarma po dobu 7 dnů — bez kreditní karty. Již máte předplatné? Přihlaste se a začněte.",
+  "Your trial or subscription has expired. Renew your license to continue using {0}.": "Vaše zkušební verze nebo předplatné vypršelo. Obnovte licenci, abyste mohli dále používat {0}.",
+  "View Plans": "Zobrazit plány",
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Některá pole obsahují pole (arrays). Režim SQL může vrátit pouze první hodnotu. Otevřete tabulku přes průzkumník pro úplné hodnoty polí."
 }

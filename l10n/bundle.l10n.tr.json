@@ -1253,10 +1253,6 @@
   "Connection will be established through SSH tunnel": "Bağlantı SSH tüneli üzerinden kurulacak",
   "External Tables": "Harici Tablolar",
   "Start Trial": "Denemeyi Başlat",
-  "Pro feature detected: Unlock {0}?": "Pro özelliği algılandı: {0} kilidi açılsın mı?",
-  "Start a free 14-day trial — no credit card required — or sign in if you've already leveled up.": "14 günlük ücretsiz deneme sürümünü başlatın — kredi kartı gerekmez — veya zaten hesabınız varsa oturum açın.",
-  "{0} needs a valid license. Your trial or license has expired. Purchase a license to keep using this feature.": "{0} geçerli bir lisansa ihtiyaç duyuyor. Deneme süreniz veya lisansınızın süresi doldu. Bu özelliği kullanmaya devam etmek için bir lisans satın alın.",
-  "Time's Up": "Süre Doldu",
   "Select items to include, or type a SQL like or not like eg: like value%": "Dahil edilecek öğeleri seçin veya SQL like/not like kullanın, örnek: like deger%",
   "Quick Script": "Hızlı Script",
   "The {0} script action is not supported": "{0} script işlemi desteklenmiyor",
@@ -3213,5 +3209,14 @@
   "Exported to {0}": "{0} konumuna dışa aktarıldı",
   "Favorites": "Sık Kullanılanlar",
   "Regular expressions via PCRE2": "PCRE2 aracılığıyla düzenli ifadeler",
-  "IBM i does not support {0} scripting.": "IBM i, {0} komut dosyasını desteklemiyor."
+  "IBM i does not support {0} scripting.": "IBM i, {0} komut dosyasını desteklemiyor.",
+  "Query Builder": "Sorgu Oluşturucu",
+  "Open Query Builder": "Sorgu Oluşturucuyu Aç",
+  "Needs to be re added": "Yeniden eklenmesi gerekiyor",
+  "This favorite was saved in an older format. Remove it and re-add from the connection tree.": "Bu sık kullanılan daha eski bir biçimde kaydedildi. Kaldırın ve bağlantı ağacından yeniden ekleyin.",
+  "{0} is a Pro feature": "{0} bir Pro özelliğidir",
+  "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "7 gün ücretsiz deneyin — kredi kartı gerekmez. Zaten aboneliğiniz var mı? Başlamak için oturum açın.",
+  "Your trial or subscription has expired. Renew your license to continue using {0}.": "Deneme süreniz veya aboneliğiniz sona erdi. {0} kullanmaya devam etmek için lisansınızı yenileyin.",
+  "View Plans": "Planları Görüntüle",
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Bazı alanlar diziler içeriyor. SQL modu yalnızca ilk değeri döndürebilir. Tüm dizi değerleri için tabloyu gezgin aracılığıyla açın."
 }

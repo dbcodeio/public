@@ -1253,10 +1253,6 @@
   "Connection will be established through SSH tunnel": "La connexion sera établie via un tunnel SSH",
   "External Tables": "Tables externes",
   "Start Trial": "Démarrer l'essai",
-  "Pro feature detected: Unlock {0}?": "Fonctionnalité Pro détectée : Déverrouiller {0} ?",
-  "Start a free 14-day trial — no credit card required — or sign in if you've already leveled up.": "Démarrez un essai gratuit de 14 jours sans carte bancaire, ou connectez-vous si vous avez déjà une licence.",
-  "{0} needs a valid license. Your trial or license has expired. Purchase a license to keep using this feature.": "{0} nécessite une licence valide. Votre essai ou licence a expiré. Achetez une licence pour continuer à utiliser cette fonctionnalité.",
-  "Time's Up": "Temps écoulé",
   "Select items to include, or type a SQL like or not like eg: like value%": "Sélectionnez les éléments à inclure, ou tapez une condition SQL like ou not like, par exemple : like valeur%",
   "Quick Script": "Script rapide",
   "The {0} script action is not supported": "L'action de script {0} n'est pas prise en charge",
@@ -3213,5 +3209,14 @@
   "Exported to {0}": "Exporté vers {0}",
   "Favorites": "Favoris",
   "Regular expressions via PCRE2": "Expressions régulières via PCRE2",
-  "IBM i does not support {0} scripting.": "IBM i ne prend pas en charge les scripts {0}."
+  "IBM i does not support {0} scripting.": "IBM i ne prend pas en charge les scripts {0}.",
+  "Query Builder": "Générateur de requêtes",
+  "Open Query Builder": "Ouvrir le générateur de requêtes",
+  "Needs to be re added": "Doit être réajouté",
+  "This favorite was saved in an older format. Remove it and re-add from the connection tree.": "Ce favori a été enregistré dans un ancien format. Supprimez-le et rajoutez-le depuis l'arborescence de connexions.",
+  "{0} is a Pro feature": "{0} est une fonctionnalité Pro",
+  "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "Essayez gratuitement pendant 7 jours — aucune carte bancaire requise. Déjà abonné ? Connectez-vous pour commencer.",
+  "Your trial or subscription has expired. Renew your license to continue using {0}.": "Votre essai ou abonnement a expiré. Renouvelez votre licence pour continuer à utiliser {0}.",
+  "View Plans": "Voir les plans",
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Certains champs contiennent des tableaux. Le mode SQL ne peut retourner que la première valeur. Ouvrez la table via l'explorateur pour les valeurs complètes."
 }

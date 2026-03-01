@@ -400,10 +400,6 @@
   "Connection will be established through SSH tunnel": "A conexão será estabelecida através de túnel SSH",
   "External Tables": "Tabelas externas",
   "Start Trial": "Iniciar teste gratuito",
-  "Pro feature detected: Unlock {0}?": "Recurso Pro detectado: desbloquear {0}?",
-  "Start a free 14-day trial — no credit card required — or sign in if you've already leveled up.": "Inicie uma avaliação gratuita de 14 dias — sem cartão de crédito — ou faça login se já possui uma conta.",
-  "{0} needs a valid license. Your trial or license has expired. Purchase a license to keep using this feature.": "{0} precisa de uma licença válida. Sua avaliação ou licença expirou. Adquira uma licença para continuar usando este recurso.",
-  "Time's Up": "Tempo esgotado",
   "Select items to include, or type a SQL like or not like eg: like value%": "Selecione os itens a incluir ou digite SQL com like ou not like, ex: like value%",
   "Quick Script": "Script rápido",
   "The {0} script action is not supported": "A ação de script {0} não é suportada",
@@ -2386,5 +2382,14 @@
   "Exported to {0}": "Exportado para {0}",
   "Favorites": "Favoritos",
   "Regular expressions via PCRE2": "Expressões regulares via PCRE2",
-  "IBM i does not support {0} scripting.": "O IBM i não suporta scripts {0}."
+  "IBM i does not support {0} scripting.": "O IBM i não suporta scripts {0}.",
+  "Query Builder": "Construtor de consultas",
+  "Open Query Builder": "Abrir o construtor de consultas",
+  "Needs to be re added": "Precisa ser adicionado novamente",
+  "This favorite was saved in an older format. Remove it and re-add from the connection tree.": "Este favorito foi salvo em um formato antigo. Remova-o e adicione-o novamente pela árvore de conexões.",
+  "{0} is a Pro feature": "{0} é um recurso Pro",
+  "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "Experimente gratuitamente por 7 dias — sem cartão de crédito. Já tem uma assinatura? Entre para começar.",
+  "Your trial or subscription has expired. Renew your license to continue using {0}.": "Seu período de avaliação ou assinatura expirou. Renove sua licença para continuar usando {0}.",
+  "View Plans": "Ver planos",
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Alguns campos contêm arrays. O modo SQL só pode retornar o primeiro valor. Abra a tabela pelo explorador para ver todos os valores dos arrays."
 }

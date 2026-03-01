@@ -1253,10 +1253,6 @@
   "Connection will be established through SSH tunnel": "Подключение будет установлено через SSH-туннель",
   "External Tables": "Внешние таблицы",
   "Start Trial": "Начать пробный период",
-  "Pro feature detected: Unlock {0}?": "Обнаружена Pro-функция: разблокировать {0}?",
-  "Start a free 14-day trial — no credit card required — or sign in if you've already leveled up.": "Начните бесплатный 14-дневный пробный период — без кредитной карты — или войдите, если у вас уже есть доступ.",
-  "{0} needs a valid license. Your trial or license has expired. Purchase a license to keep using this feature.": "{0} требуется действующая лицензия. Срок действия пробного периода или лицензии истек. Приобретите лицензию для продолжения использования этой функции.",
-  "Time's Up": "Время истекло",
   "Select items to include, or type a SQL like or not like eg: like value%": "Выберите элементы для включения или введите SQL LIKE или NOT LIKE, например: LIKE value%",
   "Quick Script": "Быстрый скрипт",
   "The {0} script action is not supported": "Действие скрипта {0} не поддерживается",
@@ -3213,5 +3209,14 @@
   "Exported to {0}": "Экспортировано в {0}",
   "Favorites": "Избранное",
   "Regular expressions via PCRE2": "Регулярные выражения через PCRE2",
-  "IBM i does not support {0} scripting.": "IBM i не поддерживает скрипты {0}."
+  "IBM i does not support {0} scripting.": "IBM i не поддерживает скрипты {0}.",
+  "Query Builder": "Конструктор запросов",
+  "Open Query Builder": "Открыть конструктор запросов",
+  "Needs to be re added": "Необходимо добавить заново",
+  "This favorite was saved in an older format. Remove it and re-add from the connection tree.": "Этот избранный элемент сохранён в устаревшем формате. Удалите его и добавьте заново из дерева подключений.",
+  "{0} is a Pro feature": "{0} — функция Pro",
+  "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "Попробуйте бесплатно 7 дней — без банковской карты. Уже есть подписка? Войдите, чтобы начать.",
+  "Your trial or subscription has expired. Renew your license to continue using {0}.": "Ваш пробный период или подписка истекла. Обновите лицензию, чтобы продолжить использование {0}.",
+  "View Plans": "Просмотр планов",
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Некоторые поля содержат массивы. Режим SQL может вернуть только первое значение. Откройте таблицу через проводник для полных значений массивов."
 }

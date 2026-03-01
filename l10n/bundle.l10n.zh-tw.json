@@ -1253,10 +1253,6 @@
   "Connection will be established through SSH tunnel": "將透過 SSH 通道建立連線",
   "External Tables": "外部資料表",
   "Start Trial": "開始試用",
-  "Pro feature detected: Unlock {0}?": "偵測到 Pro 功能：解鎖 {0}？",
-  "Start a free 14-day trial — no credit card required — or sign in if you've already leveled up.": "開始 14 天免費試用 — 無需信用卡 — 如果您已升級，請登入。",
-  "{0} needs a valid license. Your trial or license has expired. Purchase a license to keep using this feature.": "{0} 需要有效授權。您的試用或授權已過期。請購買授權以繼續使用此功能。",
-  "Time's Up": "時間到",
   "Select items to include, or type a SQL like or not like eg: like value%": "選擇要包含的項目，或輸入 SQL like 或 not like，例如：like value%",
   "Quick Script": "快速指令碼",
   "The {0} script action is not supported": "不支援 {0} 指令碼動作",
@@ -3213,5 +3209,14 @@
   "Exported to {0}": "已匯出至 {0}",
   "Favorites": "我的最愛",
   "Regular expressions via PCRE2": "透過 PCRE2 的正則表達式",
-  "IBM i does not support {0} scripting.": "IBM i 不支援 {0} 指令碼。"
+  "IBM i does not support {0} scripting.": "IBM i 不支援 {0} 指令碼。",
+  "Query Builder": "查詢建構器",
+  "Open Query Builder": "開啟查詢建構器",
+  "Needs to be re added": "需要重新新增",
+  "This favorite was saved in an older format. Remove it and re-add from the connection tree.": "此我的最愛以舊格式儲存。請將其刪除並從連線樹重新新增。",
+  "{0} is a Pro feature": "{0} 是 Pro 功能",
+  "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "免費試用 7 天，無需信用卡。已有訂閱？登入即可開始使用。",
+  "Your trial or subscription has expired. Renew your license to continue using {0}.": "您的試用期或訂閱已過期。請續訂授權以繼續使用 {0}。",
+  "View Plans": "檢視方案",
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "某些欄位包含陣列。SQL 模式只能傳回第一個值。透過檔案總管開啟資料表以取得完整的陣列值。"
 }

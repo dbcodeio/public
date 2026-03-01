@@ -1253,10 +1253,6 @@
   "Connection will be established through SSH tunnel": "将通过 SSH 隧道建立连接",
   "External Tables": "外部表",
   "Start Trial": "开始试用",
-  "Pro feature detected: Unlock {0}?": "检测到 Pro 功能：解锁 {0}？",
-  "Start a free 14-day trial — no credit card required — or sign in if you've already leveled up.": "开始 14 天免费试用 — 无需信用卡 — 如果您已升级，请登录。",
-  "{0} needs a valid license. Your trial or license has expired. Purchase a license to keep using this feature.": "{0} 需要有效的许可证。您的试用或许可证已过期。购买许可证以继续使用此功能。",
-  "Time's Up": "时间已到",
   "Select items to include, or type a SQL like or not like eg: like value%": "选择要包含的项，或输入 SQL like 或 not like，例如：like value%",
   "Quick Script": "快速脚本",
   "The {0} script action is not supported": "不支持 {0} 脚本操作",
@@ -3213,5 +3209,14 @@
   "Exported to {0}": "已导出到 {0}",
   "Favorites": "收藏夹",
   "Regular expressions via PCRE2": "通过 PCRE2 的正则表达式",
-  "IBM i does not support {0} scripting.": "IBM i 不支持 {0} 脚本。"
+  "IBM i does not support {0} scripting.": "IBM i 不支持 {0} 脚本。",
+  "Query Builder": "查询构建器",
+  "Open Query Builder": "打开查询构建器",
+  "Needs to be re added": "需要重新添加",
+  "This favorite was saved in an older format. Remove it and re-add from the connection tree.": "此收藏夹以旧格式保存。请将其删除并从连接树中重新添加。",
+  "{0} is a Pro feature": "{0} 是 Pro 功能",
+  "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "免费试用 7 天，无需信用卡。已有订阅？登录即可开始使用。",
+  "Your trial or subscription has expired. Renew your license to continue using {0}.": "您的试用期或订阅已过期。请续订许可证以继续使用 {0}。",
+  "View Plans": "查看计划",
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "某些字段包含数组。SQL 模式只能返回第一个值。通过资源管理器打开表以获取完整的数组值。"
 }

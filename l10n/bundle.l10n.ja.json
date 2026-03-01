@@ -1256,10 +1256,6 @@
   "Connection will be established through SSH tunnel": "SSH トンネル経由で接続します",
   "External Tables": "外部テーブル",
   "Start Trial": "トライアル開始",
-  "Pro feature detected: Unlock {0}?": "Pro 機能が検出されました: {0} のロックを解除しますか?",
-  "Start a free 14-day trial — no credit card required — or sign in if you've already leveled up.": "14 日間の無料トライアルを開始 (クレジットカード不要)、または既にアップグレード済みの場合はサインインしてください。",
-  "{0} needs a valid license. Your trial or license has expired. Purchase a license to keep using this feature.": "{0} には有効なライセンスが必要です。トライアルまたはライセンスの有効期限が切れています。この機能を引き続き使用するにはライセンスを購入してください。",
-  "Time's Up": "期限切れ",
   "Select items to include, or type a SQL like or not like eg: like value%": "含める項目を選択するか、SQL の like または not like を入力 (例: like value%)",
   "Quick Script": "クイックスクリプト",
   "The {0} script action is not supported": "{0} スクリプトアクションはサポートされていません",
@@ -3216,5 +3212,14 @@
   "Exported to {0}": "{0} にエクスポートしました",
   "Favorites": "お気に入り",
   "Regular expressions via PCRE2": "PCRE2 による正規表現",
-  "IBM i does not support {0} scripting.": "IBM i は {0} スクリプトをサポートしていません。"
+  "IBM i does not support {0} scripting.": "IBM i は {0} スクリプトをサポートしていません。",
+  "Query Builder": "クエリビルダー",
+  "Open Query Builder": "クエリビルダーを開く",
+  "Needs to be re added": "再追加が必要です",
+  "This favorite was saved in an older format. Remove it and re-add from the connection tree.": "このお気に入りは古い形式で保存されています。削除して接続ツリーから再追加してください。",
+  "{0} is a Pro feature": "{0} は Pro 機能です",
+  "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "7日間無料でお試しください — クレジットカード不要。既にサブスクリプションをお持ちですか？サインインして始めましょう。",
+  "Your trial or subscription has expired. Renew your license to continue using {0}.": "トライアルまたはサブスクリプションの有効期限が切れました。{0} の使用を続けるにはライセンスを更新してください。",
+  "View Plans": "プランを見る",
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "一部のフィールドには配列が含まれています。SQLモードは最初の値のみ返せます。配列の全値を表示するには、エクスプローラーからテーブルを開いてください。"
 }

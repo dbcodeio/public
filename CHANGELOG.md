@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.28.8 - 2026-03-01
+
+### Fixed
+
+- Snowflake: Fixed "terminated connection" errors during introspection by validating pooled connections before use. #998
+- MySQL: Fixed full compatibility with ShardingSphere-proxy. #987
+- Trino/Athena: Progressive schema loading is now enabled by default, preventing a single table with corrupted metadata from blocking introspection. #997
+- Favorites: Fixed favorites panel hanging indefinitely on startup. #995
+- DB2: Fixed DML statements (INSERT, UPDATE, DELETE) always reporting "0 rows affected". #996
+- Elasticsearch: Fixed connection failure on Elasticsearch versions prior to 7.16 due to unsupported SHOW CATALOGS command. #994
+
 ## 1.28.7 - 2026-02-26
 
 ### Changed

@@ -1253,10 +1253,6 @@
   "Connection will be established through SSH tunnel": "SSH 터널을 통해 연결이 설정됩니다",
   "External Tables": "외부 테이블",
   "Start Trial": "평가판 시작",
-  "Pro feature detected: Unlock {0}?": "Pro 기능 감지됨: {0}을(를) 잠금 해제하시겠습니까?",
-  "Start a free 14-day trial — no credit card required — or sign in if you've already leveled up.": "신용카드 없이 14일 무료 평가판을 시작하거나 이미 업그레이드한 경우 로그인하세요.",
-  "{0} needs a valid license. Your trial or license has expired. Purchase a license to keep using this feature.": "{0}에 유효한 라이선스가 필요합니다. 평가판 또는 라이선스가 만료되었습니다. 이 기능을 계속 사용하려면 라이선스를 구입하세요.",
-  "Time's Up": "시간 종료",
   "Select items to include, or type a SQL like or not like eg: like value%": "포함할 항목을 선택하거나 SQL like 또는 not like를 입력하세요(예: like value%)",
   "Quick Script": "빠른 스크립트",
   "The {0} script action is not supported": "{0} 스크립트 작업은 지원되지 않습니다",
@@ -3213,5 +3209,14 @@
   "Exported to {0}": "{0}(으)로 내보냈습니다",
   "Favorites": "즐겨찾기",
   "Regular expressions via PCRE2": "PCRE2를 통한 정규식",
-  "IBM i does not support {0} scripting.": "IBM i는 {0} 스크립팅을 지원하지 않습니다."
+  "IBM i does not support {0} scripting.": "IBM i는 {0} 스크립팅을 지원하지 않습니다.",
+  "Query Builder": "쿼리 빌더",
+  "Open Query Builder": "쿼리 빌더 열기",
+  "Needs to be re added": "다시 추가해야 합니다",
+  "This favorite was saved in an older format. Remove it and re-add from the connection tree.": "이 즐겨찾기는 이전 형식으로 저장되었습니다. 삭제 후 연결 트리에서 다시 추가하세요.",
+  "{0} is a Pro feature": "{0}은(는) Pro 기능입니다",
+  "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "7일 무료 체험 — 신용카드 불필요. 이미 구독 중이신가요? 로그인하여 시작하세요.",
+  "Your trial or subscription has expired. Renew your license to continue using {0}.": "체험 또는 구독이 만료되었습니다. {0} 사용을 계속하려면 라이선스를 갱신하세요.",
+  "View Plans": "플랜 보기",
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "일부 필드에 배열이 포함되어 있습니다. SQL 모드는 첫 번째 값만 반환할 수 있습니다. 전체 배열 값을 보려면 탐색기에서 테이블을 여세요."
 }
