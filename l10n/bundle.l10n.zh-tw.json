@@ -1331,7 +1331,6 @@
   "You are about to execute the entire document. Do you want to continue?": "您即將執行整個文件。是否要繼續？",
   "Unwrap Column Text": "取消文字換行",
   "Wrap Column Text": "文字換行",
-  "Generating export...": "正在產生匯出...",
   "Password (Optional)": "密碼（選填）",
   "Note: PDF encryption provides basic protection but can be bypassed. It prevents casual access to content.": "注意：PDF 加密提供基本保護，但可被繞過。它可防止隨意存取內容。",
   "Theme": "主題",
@@ -3218,5 +3217,15 @@
   "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "免費試用 7 天，無需信用卡。已有訂閱？登入即可開始使用。",
   "Your trial or subscription has expired. Renew your license to continue using {0}.": "您的試用期或訂閱已過期。請續訂授權以繼續使用 {0}。",
   "View Plans": "檢視方案",
-  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "某些欄位包含陣列。SQL 模式只能傳回第一個值。透過檔案總管開啟資料表以取得完整的陣列值。"
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "某些欄位包含陣列。SQL 模式只能傳回第一個值。透過檔案總管開啟資料表以取得完整的陣列值。",
+  "Preparing export...": "正在準備匯出...",
+  "Saving file...": "正在儲存檔案...",
+  "Fetching all rows...": "正在擷取所有列...",
+  "Extracting data...": "正在擷取資料...",
+  "Zoom out": "縮小",
+  "Zoom in": "放大",
+  "computed": "計算",
+  "ariaSparklineChartDescription": "走勢圖 - ${chartType} 顯示 ${count} 個值，範圍從 ${min} 到 ${max}。起始值 ${start}，終止值 ${end}。",
+  "ariaSparklineChartDescriptionSingleValue": "走勢圖 - ${chartType} 顯示 1 個值，${value}。",
+  "ariaSparklineChartDescriptionEmpty": "走勢圖 - ${chartType} 無值。"
 }

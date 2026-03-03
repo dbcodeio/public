@@ -1331,7 +1331,6 @@
   "You are about to execute the entire document. Do you want to continue?": "Вы собираетесь выполнить весь документ. Продолжить?",
   "Unwrap Column Text": "Развернуть текст столбца",
   "Wrap Column Text": "Переносить текст столбца",
-  "Generating export...": "Создание экспорта...",
   "Password (Optional)": "Пароль (необязательно)",
   "Note: PDF encryption provides basic protection but can be bypassed. It prevents casual access to content.": "Примечание: Шифрование PDF обеспечивает базовую защиту, но может быть обойдено. Предотвращает случайный доступ к содержимому.",
   "Theme": "Тема",
@@ -3218,5 +3217,15 @@
   "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "Попробуйте бесплатно 7 дней — без банковской карты. Уже есть подписка? Войдите, чтобы начать.",
   "Your trial or subscription has expired. Renew your license to continue using {0}.": "Ваш пробный период или подписка истекла. Обновите лицензию, чтобы продолжить использование {0}.",
   "View Plans": "Просмотр планов",
-  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Некоторые поля содержат массивы. Режим SQL может вернуть только первое значение. Откройте таблицу через проводник для полных значений массивов."
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Некоторые поля содержат массивы. Режим SQL может вернуть только первое значение. Откройте таблицу через проводник для полных значений массивов.",
+  "Preparing export...": "Подготовка экспорта...",
+  "Saving file...": "Сохранение файла...",
+  "Fetching all rows...": "Загрузка всех строк...",
+  "Extracting data...": "Извлечение данных...",
+  "Zoom out": "Уменьшить",
+  "Zoom in": "Увеличить",
+  "computed": "вычисляемое",
+  "ariaSparklineChartDescription": "Sparkline - ${chartType} отображает ${count} значений от ${min} до ${max}. Начинается с ${start}, заканчивается ${end}.",
+  "ariaSparklineChartDescriptionSingleValue": "Sparkline - ${chartType} отображает 1 значение, ${value}.",
+  "ariaSparklineChartDescriptionEmpty": "Sparkline - ${chartType} не содержит значений."
 }

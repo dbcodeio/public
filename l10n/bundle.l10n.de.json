@@ -1331,7 +1331,6 @@
   "You are about to execute the entire document. Do you want to continue?": "Sie sind im Begriff, das gesamte Dokument auszuführen. Möchten Sie fortfahren?",
   "Unwrap Column Text": "Spaltentext nicht umbrechen",
   "Wrap Column Text": "Spaltentext umbrechen",
-  "Generating export...": "Export wird generiert...",
   "Password (Optional)": "Passwort (optional)",
   "Note: PDF encryption provides basic protection but can be bypassed. It prevents casual access to content.": "Hinweis: Die PDF-Verschlüsselung bietet grundlegenden Schutz, kann aber umgangen werden. Sie verhindert gelegentlichen Zugriff auf Inhalte.",
   "Theme": "Design",
@@ -3218,5 +3217,15 @@
   "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "7 Tage kostenlos testen — keine Kreditkarte erforderlich. Bereits abonniert? Anmelden, um loszulegen.",
   "Your trial or subscription has expired. Renew your license to continue using {0}.": "Ihre Testversion oder Ihr Abonnement ist abgelaufen. Erneuern Sie Ihre Lizenz, um {0} weiter zu verwenden.",
   "View Plans": "Pläne anzeigen",
-  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Einige Felder enthalten Arrays. Der SQL-Modus kann nur den ersten Wert zurückgeben. Öffnen Sie die Tabelle über den Explorer für vollständige Array-Werte."
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Einige Felder enthalten Arrays. Der SQL-Modus kann nur den ersten Wert zurückgeben. Öffnen Sie die Tabelle über den Explorer für vollständige Array-Werte.",
+  "Preparing export...": "Export wird vorbereitet...",
+  "Saving file...": "Datei wird gespeichert...",
+  "Fetching all rows...": "Alle Zeilen werden abgerufen...",
+  "Extracting data...": "Daten werden extrahiert...",
+  "Zoom out": "Herauszoomen",
+  "Zoom in": "Hineinzoomen",
+  "computed": "berechnet",
+  "ariaSparklineChartDescription": "Sparkline - ${chartType} zeigt ${count} Werte zwischen ${min} und ${max}. Beginnt bei ${start} und endet bei ${end}.",
+  "ariaSparklineChartDescriptionSingleValue": "Sparkline - ${chartType} zeigt 1 Wert, ${value}.",
+  "ariaSparklineChartDescriptionEmpty": "Sparkline - ${chartType} zeigt keine Werte."
 }

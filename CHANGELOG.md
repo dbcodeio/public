@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 1.28.9 - 2026-03-03
+
+### Changed
+
+- Export: Added progress overlay with status messages and cancel button during file exports. #980
+- PostgreSQL: Added progressive schema loading for faster connections to databases with large schemas. #894 #878
+- Explorer: Databases within a connection are now sorted alphabetically, with the configured database pinned to the top. #923
+
+### Fixed
+
+- Redshift: Fixed database dropdown only showing the connected database instead of all databases.
+- BigQuery: Script CREATE (DDL) for stored procedures now includes `IN` prefix for input parameters, matching BigQuery Console output. #1000
+- SQLite/LibSQL: Fixed computed (generated) columns not appearing in the explorer.
+- IBM i: Fixed missing tables, views and tunnel routing issues. #976
+
 ## 1.28.8 - 2026-03-01
 
 ### Fixed

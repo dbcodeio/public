@@ -1331,7 +1331,6 @@
   "You are about to execute the entire document. Do you want to continue?": "전체 문서를 실행하려고 합니다. 계속하시겠습니까?",
   "Unwrap Column Text": "열 텍스트 줄바꿈 해제",
   "Wrap Column Text": "열 텍스트 줄바꿈",
-  "Generating export...": "내보내기 생성 중...",
   "Password (Optional)": "비밀번호(선택 사항)",
   "Note: PDF encryption provides basic protection but can be bypassed. It prevents casual access to content.": "참고: PDF 암호화는 기본적인 보호 기능을 제공하지만 우회할 수 있습니다. 콘텐츠에 대한 무단 액세스를 방지합니다.",
   "Theme": "테마",
@@ -3218,5 +3217,15 @@
   "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "7일 무료 체험 — 신용카드 불필요. 이미 구독 중이신가요? 로그인하여 시작하세요.",
   "Your trial or subscription has expired. Renew your license to continue using {0}.": "체험 또는 구독이 만료되었습니다. {0} 사용을 계속하려면 라이선스를 갱신하세요.",
   "View Plans": "플랜 보기",
-  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "일부 필드에 배열이 포함되어 있습니다. SQL 모드는 첫 번째 값만 반환할 수 있습니다. 전체 배열 값을 보려면 탐색기에서 테이블을 여세요."
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "일부 필드에 배열이 포함되어 있습니다. SQL 모드는 첫 번째 값만 반환할 수 있습니다. 전체 배열 값을 보려면 탐색기에서 테이블을 여세요.",
+  "Preparing export...": "내보내기 준비 중...",
+  "Saving file...": "파일 저장 중...",
+  "Fetching all rows...": "모든 행 가져오는 중...",
+  "Extracting data...": "데이터 추출 중...",
+  "Zoom out": "축소",
+  "Zoom in": "확대",
+  "computed": "계산됨",
+  "ariaSparklineChartDescription": "스파크라인 - ${chartType}은 ${min}에서 ${max} 사이의 ${count}개 값을 표시합니다. ${start}에서 시작하여 ${end}에서 끝납니다.",
+  "ariaSparklineChartDescriptionSingleValue": "스파크라인 - ${chartType}은 값 1개, ${value}를 표시합니다.",
+  "ariaSparklineChartDescriptionEmpty": "스파크라인 - ${chartType}에 표시할 값이 없습니다."
 }

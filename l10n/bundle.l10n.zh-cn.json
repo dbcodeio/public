@@ -1331,7 +1331,6 @@
   "You are about to execute the entire document. Do you want to continue?": "您将要执行整个文档。是否继续？",
   "Unwrap Column Text": "取消换行",
   "Wrap Column Text": "自动换行",
-  "Generating export...": "正在生成导出...",
   "Password (Optional)": "密码（可选）",
   "Note: PDF encryption provides basic protection but can be bypassed. It prevents casual access to content.": "注意：PDF 加密提供基本保护，但可被绕过。它可防止随意访问内容。",
   "Theme": "主题",
@@ -3218,5 +3217,15 @@
   "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "免费试用 7 天，无需信用卡。已有订阅？登录即可开始使用。",
   "Your trial or subscription has expired. Renew your license to continue using {0}.": "您的试用期或订阅已过期。请续订许可证以继续使用 {0}。",
   "View Plans": "查看计划",
-  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "某些字段包含数组。SQL 模式只能返回第一个值。通过资源管理器打开表以获取完整的数组值。"
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "某些字段包含数组。SQL 模式只能返回第一个值。通过资源管理器打开表以获取完整的数组值。",
+  "Preparing export...": "正在准备导出...",
+  "Saving file...": "正在保存文件...",
+  "Fetching all rows...": "正在获取所有行...",
+  "Extracting data...": "正在提取数据...",
+  "Zoom out": "缩小",
+  "Zoom in": "放大",
+  "computed": "计算",
+  "ariaSparklineChartDescription": "迷你图 - ${chartType} 显示 ${count} 个值，范围从 ${min} 到 ${max}。起始值 ${start}，终止值 ${end}。",
+  "ariaSparklineChartDescriptionSingleValue": "迷你图 - ${chartType} 显示 1 个值，${value}。",
+  "ariaSparklineChartDescriptionEmpty": "迷你图 - ${chartType} 无值。"
 }

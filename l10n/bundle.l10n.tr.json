@@ -1331,7 +1331,6 @@
   "You are about to execute the entire document. Do you want to continue?": "Tüm belgeyi yürütmek üzeresiniz. Devam etmek istiyor musunuz?",
   "Unwrap Column Text": "Sütun metnini aç",
   "Wrap Column Text": "Sütun metnini kaydır",
-  "Generating export...": "Dışa aktarma oluşturuluyor...",
   "Password (Optional)": "Şifre (İsteğe bağlı)",
   "Note: PDF encryption provides basic protection but can be bypassed. It prevents casual access to content.": "Not: PDF şifrelemesi temel koruma sağlar ancak atlanabilir. İçeriğe sıradan erişimi engeller.",
   "Theme": "Tema",
@@ -3218,5 +3217,15 @@
   "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "7 gün ücretsiz deneyin — kredi kartı gerekmez. Zaten aboneliğiniz var mı? Başlamak için oturum açın.",
   "Your trial or subscription has expired. Renew your license to continue using {0}.": "Deneme süreniz veya aboneliğiniz sona erdi. {0} kullanmaya devam etmek için lisansınızı yenileyin.",
   "View Plans": "Planları Görüntüle",
-  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Bazı alanlar diziler içeriyor. SQL modu yalnızca ilk değeri döndürebilir. Tüm dizi değerleri için tabloyu gezgin aracılığıyla açın."
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Bazı alanlar diziler içeriyor. SQL modu yalnızca ilk değeri döndürebilir. Tüm dizi değerleri için tabloyu gezgin aracılığıyla açın.",
+  "Preparing export...": "Dışa aktarma hazırlanıyor...",
+  "Saving file...": "Dosya kaydediliyor...",
+  "Fetching all rows...": "Tüm satırlar getiriliyor...",
+  "Extracting data...": "Veriler ayıklanıyor...",
+  "Zoom out": "Uzaklaştır",
+  "Zoom in": "Yaklaştır",
+  "computed": "hesaplanan",
+  "ariaSparklineChartDescription": "Sparkline - ${chartType}, ${min} ile ${max} arasında ${count} değer gösteriyor. ${start} ile başlar ve ${end} ile biter.",
+  "ariaSparklineChartDescriptionSingleValue": "Sparkline - ${chartType}, 1 değer gösteriyor: ${value}.",
+  "ariaSparklineChartDescriptionEmpty": "Sparkline - ${chartType} değer göstermiyor."
 }

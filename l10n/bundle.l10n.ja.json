@@ -1334,7 +1334,6 @@
   "You are about to execute the entire document. Do you want to continue?": "ドキュメント全体を実行しようとしています。続行しますか?",
   "Unwrap Column Text": "列テキストの折り返しを解除",
   "Wrap Column Text": "列テキストを折り返す",
-  "Generating export...": "エクスポート生成中...",
   "Password (Optional)": "パスワード (オプション)",
   "Note: PDF encryption provides basic protection but can be bypassed. It prevents casual access to content.": "注: PDF暗号化は基本的な保護を提供しますが、回避される可能性があります。通常のアクセスを防ぐことができます。",
   "Theme": "テーマ",
@@ -3221,5 +3220,15 @@
   "Try it free for 7 days — no credit card required. Already have a subscription? Sign in to get started.": "7日間無料でお試しください — クレジットカード不要。既にサブスクリプションをお持ちですか？サインインして始めましょう。",
   "Your trial or subscription has expired. Renew your license to continue using {0}.": "トライアルまたはサブスクリプションの有効期限が切れました。{0} の使用を続けるにはライセンスを更新してください。",
   "View Plans": "プランを見る",
-  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "一部のフィールドには配列が含まれています。SQLモードは最初の値のみ返せます。配列の全値を表示するには、エクスプローラーからテーブルを開いてください。"
+  "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "一部のフィールドには配列が含まれています。SQLモードは最初の値のみ返せます。配列の全値を表示するには、エクスプローラーからテーブルを開いてください。",
+  "Preparing export...": "エクスポートを準備中...",
+  "Saving file...": "ファイルを保存中...",
+  "Fetching all rows...": "すべての行を取得中...",
+  "Extracting data...": "データを抽出中...",
+  "Zoom out": "ズームアウト",
+  "Zoom in": "ズームイン",
+  "computed": "計算済み",
+  "ariaSparklineChartDescription": "スパークライン - ${chartType} が ${count} 個の値（${min}〜${max}）を表示中。${start} で始まり ${end} で終わります。",
+  "ariaSparklineChartDescriptionSingleValue": "スパークライン - ${chartType} が 1 個の値 ${value} を表示中。",
+  "ariaSparklineChartDescriptionEmpty": "スパークライン - ${chartType} に値がありません。"
 }
