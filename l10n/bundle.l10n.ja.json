@@ -3222,7 +3222,6 @@
   "View Plans": "プランを見る",
   "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "一部のフィールドには配列が含まれています。SQLモードは最初の値のみ返せます。配列の全値を表示するには、エクスプローラーからテーブルを開いてください。",
   "Preparing export...": "エクスポートを準備中...",
-  "Saving file...": "ファイルを保存中...",
   "Fetching all rows...": "すべての行を取得中...",
   "Extracting data...": "データを抽出中...",
   "Zoom out": "ズームアウト",
@@ -3230,5 +3229,10 @@
   "computed": "計算済み",
   "ariaSparklineChartDescription": "スパークライン - ${chartType} が ${count} 個の値（${min}〜${max}）を表示中。${start} で始まり ${end} で終わります。",
   "ariaSparklineChartDescriptionSingleValue": "スパークライン - ${chartType} が 1 個の値 ${value} を表示中。",
-  "ariaSparklineChartDescriptionEmpty": "スパークライン - ${chartType} に値がありません。"
+  "ariaSparklineChartDescriptionEmpty": "スパークライン - ${chartType} に値がありません。",
+  "Export Options": "エクスポートオプション",
+  "Save locally": "ローカルに保存",
+  "Export locally": "ローカルにエクスポート",
+  "Load More...": "さらに読み込む...",
+  "Showing {0} of {1}": "{1} 件中 {0} 件を表示"
 }

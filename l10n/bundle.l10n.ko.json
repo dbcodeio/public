@@ -3219,7 +3219,6 @@
   "View Plans": "플랜 보기",
   "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "일부 필드에 배열이 포함되어 있습니다. SQL 모드는 첫 번째 값만 반환할 수 있습니다. 전체 배열 값을 보려면 탐색기에서 테이블을 여세요.",
   "Preparing export...": "내보내기 준비 중...",
-  "Saving file...": "파일 저장 중...",
   "Fetching all rows...": "모든 행 가져오는 중...",
   "Extracting data...": "데이터 추출 중...",
   "Zoom out": "축소",
@@ -3227,5 +3226,10 @@
   "computed": "계산됨",
   "ariaSparklineChartDescription": "스파크라인 - ${chartType}은 ${min}에서 ${max} 사이의 ${count}개 값을 표시합니다. ${start}에서 시작하여 ${end}에서 끝납니다.",
   "ariaSparklineChartDescriptionSingleValue": "스파크라인 - ${chartType}은 값 1개, ${value}를 표시합니다.",
-  "ariaSparklineChartDescriptionEmpty": "스파크라인 - ${chartType}에 표시할 값이 없습니다."
+  "ariaSparklineChartDescriptionEmpty": "스파크라인 - ${chartType}에 표시할 값이 없습니다.",
+  "Export Options": "내보내기 옵션",
+  "Save locally": "로컬에 저장",
+  "Export locally": "로컬로 내보내기",
+  "Load More...": "더 불러오기...",
+  "Showing {0} of {1}": "{1}개 중 {0}개 표시"
 }

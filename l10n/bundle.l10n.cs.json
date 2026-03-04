@@ -3219,7 +3219,6 @@
   "View Plans": "Zobrazit plány",
   "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Některá pole obsahují pole (arrays). Režim SQL může vrátit pouze první hodnotu. Otevřete tabulku přes průzkumník pro úplné hodnoty polí.",
   "Preparing export...": "Příprava exportu...",
-  "Saving file...": "Ukládání souboru...",
   "Fetching all rows...": "Načítání všech řádků...",
   "Extracting data...": "Extrakce dat...",
   "Zoom out": "Oddálit",
@@ -3227,5 +3226,10 @@
   "computed": "vypočítáno",
   "ariaSparklineChartDescription": "Sparkline - ${chartType} zobrazuje ${count} hodnot mezi ${min} a ${max}. Začíná na ${start} a končí na ${end}.",
   "ariaSparklineChartDescriptionSingleValue": "Sparkline - ${chartType} zobrazuje 1 hodnotu, ${value}.",
-  "ariaSparklineChartDescriptionEmpty": "Sparkline - ${chartType} nezobrazuje žádné hodnoty."
+  "ariaSparklineChartDescriptionEmpty": "Sparkline - ${chartType} nezobrazuje žádné hodnoty.",
+  "Export Options": "Možnosti exportu",
+  "Save locally": "Uložit lokálně",
+  "Export locally": "Exportovat lokálně",
+  "Load More...": "Načíst další...",
+  "Showing {0} of {1}": "Zobrazeno {0} z {1}"
 }

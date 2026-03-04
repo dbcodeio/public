@@ -3219,7 +3219,6 @@
   "View Plans": "Planları Görüntüle",
   "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Bazı alanlar diziler içeriyor. SQL modu yalnızca ilk değeri döndürebilir. Tüm dizi değerleri için tabloyu gezgin aracılığıyla açın.",
   "Preparing export...": "Dışa aktarma hazırlanıyor...",
-  "Saving file...": "Dosya kaydediliyor...",
   "Fetching all rows...": "Tüm satırlar getiriliyor...",
   "Extracting data...": "Veriler ayıklanıyor...",
   "Zoom out": "Uzaklaştır",
@@ -3227,5 +3226,10 @@
   "computed": "hesaplanan",
   "ariaSparklineChartDescription": "Sparkline - ${chartType}, ${min} ile ${max} arasında ${count} değer gösteriyor. ${start} ile başlar ve ${end} ile biter.",
   "ariaSparklineChartDescriptionSingleValue": "Sparkline - ${chartType}, 1 değer gösteriyor: ${value}.",
-  "ariaSparklineChartDescriptionEmpty": "Sparkline - ${chartType} değer göstermiyor."
+  "ariaSparklineChartDescriptionEmpty": "Sparkline - ${chartType} değer göstermiyor.",
+  "Export Options": "Dışa aktarma seçenekleri",
+  "Save locally": "Yerel olarak kaydet",
+  "Export locally": "Yerel olarak dışa aktar",
+  "Load More...": "Daha fazla yükle...",
+  "Showing {0} of {1}": "{1} öğenin {0} tanesi gösteriliyor"
 }

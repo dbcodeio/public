@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.28.10 - 2026-03-04
+
+### Changed
+
+- Export: Added "Save locally" option to exporting results when connected via VS Code Remote (SSH/WSL/DevContainer) to save exports to local machine instead of remote filesystem. #1001
+- Oracle: Added progressive schema loading for faster connections to databases with large schemas. #907
+
+### Fixed
+
+- Results: Fixed grid jumping to top-left when clicking scrollbars. #988
+- Notebooks: Fixed export from notebook results not triggering the save dialog. #1001
+- IBM i: Fixed LIMIT syntax error when opening tables on older IBM i versions by using FETCH FIRST/OFFSET ROWS syntax. #976
+- IBM i: Fixed SSH tunnel connections by setting portNumber to bypass the AS/400 port mapper. #976
+
 ## 1.28.9 - 2026-03-03
 
 ### Changed

@@ -3219,7 +3219,6 @@
   "View Plans": "Visualizza piani",
   "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Alcuni campi contengono array. La modalità SQL può restituire solo il primo valore. Apri la tabella tramite l'explorer per i valori completi degli array.",
   "Preparing export...": "Preparazione esportazione...",
-  "Saving file...": "Salvataggio file...",
   "Fetching all rows...": "Recupero di tutte le righe...",
   "Extracting data...": "Estrazione dati...",
   "Zoom out": "Zoom indietro",
@@ -3227,5 +3226,10 @@
   "computed": "calcolato",
   "ariaSparklineChartDescription": "Sparkline - ${chartType} con ${count} valori tra ${min} e ${max}. Inizia a ${start} e finisce a ${end}.",
   "ariaSparklineChartDescriptionSingleValue": "Sparkline - ${chartType} con 1 valore, ${value}.",
-  "ariaSparklineChartDescriptionEmpty": "Sparkline - ${chartType} senza valori."
+  "ariaSparklineChartDescriptionEmpty": "Sparkline - ${chartType} senza valori.",
+  "Export Options": "Opzioni di esportazione",
+  "Save locally": "Salva localmente",
+  "Export locally": "Esporta localmente",
+  "Load More...": "Carica altri...",
+  "Showing {0} of {1}": "Visualizzazione di {0} di {1}"
 }

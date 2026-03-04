@@ -3219,7 +3219,6 @@
   "View Plans": "Просмотр планов",
   "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "Некоторые поля содержат массивы. Режим SQL может вернуть только первое значение. Откройте таблицу через проводник для полных значений массивов.",
   "Preparing export...": "Подготовка экспорта...",
-  "Saving file...": "Сохранение файла...",
   "Fetching all rows...": "Загрузка всех строк...",
   "Extracting data...": "Извлечение данных...",
   "Zoom out": "Уменьшить",
@@ -3227,5 +3226,10 @@
   "computed": "вычисляемое",
   "ariaSparklineChartDescription": "Sparkline - ${chartType} отображает ${count} значений от ${min} до ${max}. Начинается с ${start}, заканчивается ${end}.",
   "ariaSparklineChartDescriptionSingleValue": "Sparkline - ${chartType} отображает 1 значение, ${value}.",
-  "ariaSparklineChartDescriptionEmpty": "Sparkline - ${chartType} не содержит значений."
+  "ariaSparklineChartDescriptionEmpty": "Sparkline - ${chartType} не содержит значений.",
+  "Export Options": "Параметры экспорта",
+  "Save locally": "Сохранить локально",
+  "Export locally": "Экспортировать локально",
+  "Load More...": "Загрузить ещё...",
+  "Showing {0} of {1}": "Показано {0} из {1}"
 }

@@ -3219,7 +3219,6 @@
   "View Plans": "查看计划",
   "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "某些字段包含数组。SQL 模式只能返回第一个值。通过资源管理器打开表以获取完整的数组值。",
   "Preparing export...": "正在准备导出...",
-  "Saving file...": "正在保存文件...",
   "Fetching all rows...": "正在获取所有行...",
   "Extracting data...": "正在提取数据...",
   "Zoom out": "缩小",
@@ -3227,5 +3226,10 @@
   "computed": "计算",
   "ariaSparklineChartDescription": "迷你图 - ${chartType} 显示 ${count} 个值，范围从 ${min} 到 ${max}。起始值 ${start}，终止值 ${end}。",
   "ariaSparklineChartDescriptionSingleValue": "迷你图 - ${chartType} 显示 1 个值，${value}。",
-  "ariaSparklineChartDescriptionEmpty": "迷你图 - ${chartType} 无值。"
+  "ariaSparklineChartDescriptionEmpty": "迷你图 - ${chartType} 无值。",
+  "Export Options": "导出选项",
+  "Save locally": "本地保存",
+  "Export locally": "本地导出",
+  "Load More...": "加载更多...",
+  "Showing {0} of {1}": "显示 {0}（共 {1}）"
 }

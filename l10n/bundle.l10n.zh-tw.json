@@ -3219,7 +3219,6 @@
   "View Plans": "檢視方案",
   "Some fields contain arrays. SQL mode can only return the first value. Open the table via the explorer for full array values.": "某些欄位包含陣列。SQL 模式只能傳回第一個值。透過檔案總管開啟資料表以取得完整的陣列值。",
   "Preparing export...": "正在準備匯出...",
-  "Saving file...": "正在儲存檔案...",
   "Fetching all rows...": "正在擷取所有列...",
   "Extracting data...": "正在擷取資料...",
   "Zoom out": "縮小",
@@ -3227,5 +3226,10 @@
   "computed": "計算",
   "ariaSparklineChartDescription": "走勢圖 - ${chartType} 顯示 ${count} 個值，範圍從 ${min} 到 ${max}。起始值 ${start}，終止值 ${end}。",
   "ariaSparklineChartDescriptionSingleValue": "走勢圖 - ${chartType} 顯示 1 個值，${value}。",
-  "ariaSparklineChartDescriptionEmpty": "走勢圖 - ${chartType} 無值。"
+  "ariaSparklineChartDescriptionEmpty": "走勢圖 - ${chartType} 無值。",
+  "Export Options": "匯出選項",
+  "Save locally": "本機儲存",
+  "Export locally": "本機匯出",
+  "Load More...": "載入更多...",
+  "Showing {0} of {1}": "顯示 {0}（共 {1}）"
 }
