@@ -111,7 +111,6 @@
   "Create New SQL File": "新しい SQL ファイルを作成",
   "New SQL File": "新しい SQL ファイル",
   "Execute SQL File": "SQL ファイルを実行",
-  "Discover Connections with DBCode": "DBCode で接続を検出",
   "Results": "結果",
   "Paginate results.": "結果をページ分割します。",
   "Execute Selection with DBCode": "DBCode で選択範囲を実行",
@@ -346,5 +345,10 @@
   "Active Streams": "アクティブなストリーム",
   "Subscribe": "登録",
   "Open Query Builder": "クエリビルダーを開く",
-  "Query Builder": "クエリビルダー"
+  "Query Builder": "クエリビルダー",
+  "Watch Folder with DBCode": "DBCode でフォルダーを監視",
+  "Watched Folders": "監視フォルダー",
+  "Watched Folder ID": "監視フォルダー ID",
+  "Watched Folder Name": "監視フォルダー名",
+  "Watched Folder Path": "監視フォルダーのパス"
 }

@@ -3234,5 +3234,14 @@
   "Save locally": "ローカルに保存",
   "Export locally": "ローカルにエクスポート",
   "Load More...": "さらに読み込む...",
-  "Showing {0} of {1}": "{1} 件中 {0} 件を表示"
+  "Showing {0} of {1}": "{1} 件中 {0} 件を表示",
+  "This folder is already being watched.": "このフォルダーはすでに監視されています。",
+  "Workspace Settings": "ワークスペースの設定",
+  "Portable with this project": "このプロジェクトとともに持ち運び可能",
+  "Global Settings": "グローバル設定",
+  "Available everywhere": "どこでも利用可能",
+  "Where should this watched folder be stored?": "この監視フォルダーをどこに保存しますか？",
+  "Stop watching folder {0}?": "フォルダー {0} の監視を停止しますか？",
+  "Enter new name for the watched folder": "監視フォルダーの新しい名前を入力してください",
+  "Database file \"{0}\" was deleted while connected. The connection may no longer work.": "データベースファイル「{0}」が接続中に削除されました。接続が機能しなくなる可能性があります。"
 }

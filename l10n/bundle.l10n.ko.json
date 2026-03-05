@@ -3231,5 +3231,14 @@
   "Save locally": "로컬에 저장",
   "Export locally": "로컬로 내보내기",
   "Load More...": "더 불러오기...",
-  "Showing {0} of {1}": "{1}개 중 {0}개 표시"
+  "Showing {0} of {1}": "{1}개 중 {0}개 표시",
+  "This folder is already being watched.": "이 폴더는 이미 감시 중입니다.",
+  "Workspace Settings": "작업 영역 설정",
+  "Portable with this project": "이 프로젝트와 함께 이식 가능",
+  "Global Settings": "전역 설정",
+  "Available everywhere": "어디서나 사용 가능",
+  "Where should this watched folder be stored?": "이 감시 폴더를 어디에 저장하시겠습니까?",
+  "Stop watching folder {0}?": "폴더 {0} 감시를 중지하시겠습니까?",
+  "Enter new name for the watched folder": "감시 폴더의 새 이름을 입력하세요",
+  "Database file \"{0}\" was deleted while connected. The connection may no longer work.": "연결 중에 데이터베이스 파일 \"{0}\"이(가) 삭제되었습니다. 연결이 더 이상 작동하지 않을 수 있습니다."
 }

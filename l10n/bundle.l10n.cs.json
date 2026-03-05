@@ -3231,5 +3231,14 @@
   "Save locally": "Uložit lokálně",
   "Export locally": "Exportovat lokálně",
   "Load More...": "Načíst další...",
-  "Showing {0} of {1}": "Zobrazeno {0} z {1}"
+  "Showing {0} of {1}": "Zobrazeno {0} z {1}",
+  "This folder is already being watched.": "Tato složka je již sledována.",
+  "Workspace Settings": "Nastavení pracovního prostoru",
+  "Portable with this project": "Přenosné s tímto projektem",
+  "Global Settings": "Globální nastavení",
+  "Available everywhere": "Dostupné všude",
+  "Where should this watched folder be stored?": "Kde má být tato sledovaná složka uložena?",
+  "Stop watching folder {0}?": "Zastavit sledování složky {0}?",
+  "Enter new name for the watched folder": "Zadejte nový název pro sledovanou složku",
+  "Database file \"{0}\" was deleted while connected. The connection may no longer work.": "Soubor databáze „{0}\" byl odstraněn během připojení. Připojení již nemusí fungovat."
 }

@@ -3231,5 +3231,14 @@
   "Save locally": "Lokal speichern",
   "Export locally": "Lokal exportieren",
   "Load More...": "Mehr laden...",
-  "Showing {0} of {1}": "{0} von {1} angezeigt"
+  "Showing {0} of {1}": "{0} von {1} angezeigt",
+  "This folder is already being watched.": "Dieser Ordner wird bereits überwacht.",
+  "Workspace Settings": "Arbeitsbereichseinstellungen",
+  "Portable with this project": "Portabel mit diesem Projekt",
+  "Global Settings": "Globale Einstellungen",
+  "Available everywhere": "Überall verfügbar",
+  "Where should this watched folder be stored?": "Wo soll dieser überwachte Ordner gespeichert werden?",
+  "Stop watching folder {0}?": "Überwachung des Ordners {0} beenden?",
+  "Enter new name for the watched folder": "Neuen Namen für den überwachten Ordner eingeben",
+  "Database file \"{0}\" was deleted while connected. The connection may no longer work.": "Die Datenbankdatei „{0}\" wurde während der Verbindung gelöscht. Die Verbindung funktioniert möglicherweise nicht mehr."
 }

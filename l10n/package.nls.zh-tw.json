@@ -111,7 +111,6 @@
   "Create New SQL File": "建立新的 SQL 檔案",
   "New SQL File": "新增 SQL 檔案",
   "Execute SQL File": "執行 SQL 檔案",
-  "Discover Connections with DBCode": "使用 DBCode 探索連接",
   "Results": "結果",
   "Paginate results.": "分頁顯示結果。",
   "Execute Selection with DBCode": "使用 DBCode 執行選取範圍",
@@ -346,5 +345,10 @@
   "Active Streams": "作用中串流",
   "Subscribe": "訂閱",
   "Open Query Builder": "開啟查詢產生器",
-  "Query Builder": "查詢產生器"
+  "Query Builder": "查詢產生器",
+  "Watch Folder with DBCode": "使用 DBCode 監看資料夾",
+  "Watched Folders": "監看的資料夾",
+  "Watched Folder ID": "監看資料夾 ID",
+  "Watched Folder Name": "監看資料夾名稱",
+  "Watched Folder Path": "監看資料夾路徑"
 }

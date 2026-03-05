@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 1.28.11 - 2026-03-05
+
+### Changed
+
+- SQL Server: Added progressive schema loading for faster connections to databases with large schemas (SQL Server, Azure SQL, Azure Synapse, Fabric, Dataverse).
+- Watched Folders: Watch folders of SQLite, DuckDB, and Access database files. Right-click any folder in the VS Code explorer to add it. Discovered connections appear nested by subfolder structure with live file watching for changes.
+- Access: Added zero-config discovery support for .mdb and .accdb files.
+
+### Fixed
+
+- Editor: Fixed clipboard shortcuts (copy, cut, paste, select all) not working in Monaco editor popups. #1003
+- Oracle: Fixed date format setting being ignored for DATE and TIMESTAMP columns. #1004
+- Oracle: Fixed TIMESTAMP columns exporting with incorrect format in SQL INSERT statements.
+- Connection Picker: Fixed picker showing "No items found" when selecting a connection that hasn't been cached yet, now waits for the connection to resolve. #990
+- Explorer: Fixed connection retry loops and state management when connections fail or introspection errors occur.
+- Favorites: Fixed dragging filtered tree items to favorites not working.
+
 ## 1.28.10 - 2026-03-04
 
 ### Changed

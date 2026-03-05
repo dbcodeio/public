@@ -3231,5 +3231,14 @@
   "Save locally": "Yerel olarak kaydet",
   "Export locally": "Yerel olarak dışa aktar",
   "Load More...": "Daha fazla yükle...",
-  "Showing {0} of {1}": "{1} öğenin {0} tanesi gösteriliyor"
+  "Showing {0} of {1}": "{1} öğenin {0} tanesi gösteriliyor",
+  "This folder is already being watched.": "Bu klasör zaten izleniyor.",
+  "Workspace Settings": "Çalışma alanı ayarları",
+  "Portable with this project": "Bu projeyle taşınabilir",
+  "Global Settings": "Genel ayarlar",
+  "Available everywhere": "Her yerde kullanılabilir",
+  "Where should this watched folder be stored?": "Bu izlenen klasör nerede saklanmalı?",
+  "Stop watching folder {0}?": "{0} klasörünü izlemeyi durdur?",
+  "Enter new name for the watched folder": "İzlenen klasör için yeni ad girin",
+  "Database file \"{0}\" was deleted while connected. The connection may no longer work.": "Bağlantı kuruluyken \"{0}\" veritabanı dosyası silindi. Bağlantı artık çalışmayabilir."
 }

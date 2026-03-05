@@ -2404,5 +2404,14 @@
   "Save locally": "Salvar localmente",
   "Export locally": "Exportar localmente",
   "Load More...": "Carregar mais...",
-  "Showing {0} of {1}": "Exibindo {0} de {1}"
+  "Showing {0} of {1}": "Exibindo {0} de {1}",
+  "This folder is already being watched.": "Esta pasta já está sendo monitorada.",
+  "Workspace Settings": "Configurações do espaço de trabalho",
+  "Portable with this project": "Portátil com este projeto",
+  "Global Settings": "Configurações globais",
+  "Available everywhere": "Disponível em qualquer lugar",
+  "Where should this watched folder be stored?": "Onde esta pasta monitorada deve ser armazenada?",
+  "Stop watching folder {0}?": "Parar de monitorar a pasta {0}?",
+  "Enter new name for the watched folder": "Insira um novo nome para a pasta monitorada",
+  "Database file \"{0}\" was deleted while connected. The connection may no longer work.": "O arquivo de banco de dados \"{0}\" foi excluído durante a conexão. A conexão pode não funcionar mais."
 }

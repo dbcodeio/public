@@ -111,7 +111,6 @@
   "Create New SQL File": "创建新的 SQL 文件",
   "New SQL File": "新建 SQL 文件",
   "Execute SQL File": "执行 SQL 文件",
-  "Discover Connections with DBCode": "使用 DBCode 发现连接",
   "Results": "结果",
   "Paginate results.": "分页显示结果。",
   "Execute Selection with DBCode": "使用 DBCode 执行选定内容",
@@ -346,5 +345,10 @@
   "Active Streams": "活动流",
   "Subscribe": "订阅",
   "Open Query Builder": "打开查询生成器",
-  "Query Builder": "查询生成器"
+  "Query Builder": "查询生成器",
+  "Watch Folder with DBCode": "使用 DBCode 监视文件夹",
+  "Watched Folders": "监视的文件夹",
+  "Watched Folder ID": "监视文件夹 ID",
+  "Watched Folder Name": "监视文件夹名称",
+  "Watched Folder Path": "监视文件夹路径"
 }

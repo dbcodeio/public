@@ -111,7 +111,6 @@
   "Create New SQL File": "Yeni SQL Dosyası Oluştur",
   "New SQL File": "Yeni SQL Dosyası",
   "Execute SQL File": "SQL Dosyasını Çalıştır",
-  "Discover Connections with DBCode": "DBCode ile Bağlantıları Keşfet",
   "Results": "Sonuçlar",
   "Paginate results.": "Sonuçları sayfalara ayır.",
   "Execute Selection with DBCode": "DBCode ile Seçimi Çalıştır",
@@ -346,5 +345,10 @@
   "Active Streams": "Etkin Akışlar",
   "Subscribe": "Abone Ol",
   "Open Query Builder": "Sorgu oluşturucuyu aç",
-  "Query Builder": "Sorgu Oluşturucu"
+  "Query Builder": "Sorgu Oluşturucu",
+  "Watch Folder with DBCode": "DBCode ile klasörü izle",
+  "Watched Folders": "İzlenen klasörler",
+  "Watched Folder ID": "İzlenen klasör kimliği",
+  "Watched Folder Name": "İzlenen klasör adı",
+  "Watched Folder Path": "İzlenen klasör yolu"
 }

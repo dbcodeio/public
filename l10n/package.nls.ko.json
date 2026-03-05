@@ -111,7 +111,6 @@
   "Create New SQL File": "새 SQL 파일 만들기",
   "New SQL File": "새 SQL 파일",
   "Execute SQL File": "SQL 파일 실행",
-  "Discover Connections with DBCode": "DBCode로 연결 검색",
   "Results": "결과",
   "Paginate results.": "결과 페이지 매김",
   "Execute Selection with DBCode": "DBCode로 선택 영역 실행",
@@ -346,5 +345,10 @@
   "Active Streams": "활성 스트림",
   "Subscribe": "구독",
   "Open Query Builder": "쿼리 빌더 열기",
-  "Query Builder": "쿼리 빌더"
+  "Query Builder": "쿼리 빌더",
+  "Watch Folder with DBCode": "DBCode로 폴더 감시",
+  "Watched Folders": "감시 폴더",
+  "Watched Folder ID": "감시 폴더 ID",
+  "Watched Folder Name": "감시 폴더 이름",
+  "Watched Folder Path": "감시 폴더 경로"
 }

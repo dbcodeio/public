@@ -3231,5 +3231,14 @@
   "Save locally": "本地保存",
   "Export locally": "本地导出",
   "Load More...": "加载更多...",
-  "Showing {0} of {1}": "显示 {0}（共 {1}）"
+  "Showing {0} of {1}": "显示 {0}（共 {1}）",
+  "This folder is already being watched.": "此文件夹已在监视中。",
+  "Workspace Settings": "工作区设置",
+  "Portable with this project": "随此项目携带",
+  "Global Settings": "全局设置",
+  "Available everywhere": "随处可用",
+  "Where should this watched folder be stored?": "应将此监视文件夹存储在哪里？",
+  "Stop watching folder {0}?": "停止监视文件夹 {0}？",
+  "Enter new name for the watched folder": "输入监视文件夹的新名称",
+  "Database file \"{0}\" was deleted while connected. The connection may no longer work.": "数据库文件\"{0}\"在连接时已被删除。连接可能不再有效。"
 }

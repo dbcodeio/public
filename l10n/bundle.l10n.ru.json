@@ -3231,5 +3231,14 @@
   "Save locally": "Сохранить локально",
   "Export locally": "Экспортировать локально",
   "Load More...": "Загрузить ещё...",
-  "Showing {0} of {1}": "Показано {0} из {1}"
+  "Showing {0} of {1}": "Показано {0} из {1}",
+  "This folder is already being watched.": "Эта папка уже отслеживается.",
+  "Workspace Settings": "Настройки рабочей области",
+  "Portable with this project": "Портативные с этим проектом",
+  "Global Settings": "Глобальные настройки",
+  "Available everywhere": "Доступно везде",
+  "Where should this watched folder be stored?": "Где сохранить эту отслеживаемую папку?",
+  "Stop watching folder {0}?": "Прекратить отслеживание папки {0}?",
+  "Enter new name for the watched folder": "Введите новое имя для отслеживаемой папки",
+  "Database file \"{0}\" was deleted while connected. The connection may no longer work.": "Файл базы данных «{0}» был удалён во время соединения. Соединение может больше не работать."
 }

@@ -111,7 +111,6 @@
   "Create New SQL File": "Создать новый файл SQL",
   "New SQL File": "Новый файл SQL",
   "Execute SQL File": "Выполнить файл SQL",
-  "Discover Connections with DBCode": "Обнаружить подключения с DBCode",
   "Results": "Результаты",
   "Paginate results.": "Разбивать результаты по страницам.",
   "Execute Selection with DBCode": "Выполнить выделенное с DBCode",
@@ -346,5 +345,10 @@
   "Active Streams": "Активные потоки",
   "Subscribe": "Подписаться",
   "Open Query Builder": "Открыть конструктор запросов",
-  "Query Builder": "Конструктор запросов"
+  "Query Builder": "Конструктор запросов",
+  "Watch Folder with DBCode": "Отслеживать папку с DBCode",
+  "Watched Folders": "Отслеживаемые папки",
+  "Watched Folder ID": "ID отслеживаемой папки",
+  "Watched Folder Name": "Имя отслеживаемой папки",
+  "Watched Folder Path": "Путь к отслеживаемой папке"
 }

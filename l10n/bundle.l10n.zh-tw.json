@@ -3231,5 +3231,14 @@
   "Save locally": "本機儲存",
   "Export locally": "本機匯出",
   "Load More...": "載入更多...",
-  "Showing {0} of {1}": "顯示 {0}（共 {1}）"
+  "Showing {0} of {1}": "顯示 {0}（共 {1}）",
+  "This folder is already being watched.": "此資料夾已在監看中。",
+  "Workspace Settings": "工作區設定",
+  "Portable with this project": "隨此專案攜帶",
+  "Global Settings": "全域設定",
+  "Available everywhere": "隨處可用",
+  "Where should this watched folder be stored?": "此監看資料夾應儲存在哪裡？",
+  "Stop watching folder {0}?": "停止監看資料夾 {0}？",
+  "Enter new name for the watched folder": "輸入監看資料夾的新名稱",
+  "Database file \"{0}\" was deleted while connected. The connection may no longer work.": "資料庫檔案「{0}」在連線時已被刪除。連線可能不再有效。"
 }

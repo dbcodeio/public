@@ -111,7 +111,6 @@
   "Create New SQL File": "Vytvořit nový soubor SQL",
   "New SQL File": "Nový soubor SQL",
   "Execute SQL File": "Spustit soubor SQL",
-  "Discover Connections with DBCode": "Objevte připojení s DBCode",
   "Results": "Výsledky",
   "Paginate results.": "Stránkovat výsledky.",
   "Execute Selection with DBCode": "Provést výběr pomocí DBCode",
@@ -346,5 +345,10 @@
   "Active Streams": "Aktivní streamy",
   "Subscribe": "Odebírat",
   "Open Query Builder": "Otevřít tvůrce dotazů",
-  "Query Builder": "Tvůrce dotazů"
+  "Query Builder": "Tvůrce dotazů",
+  "Watch Folder with DBCode": "Sledovat složku s DBCode",
+  "Watched Folders": "Sledované složky",
+  "Watched Folder ID": "ID sledované složky",
+  "Watched Folder Name": "Název sledované složky",
+  "Watched Folder Path": "Cesta sledované složky"
 }

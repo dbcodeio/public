@@ -111,7 +111,6 @@
   "Create New SQL File": "Utwórz nowy plik SQL",
   "New SQL File": "Nowy plik SQL",
   "Execute SQL File": "Wykonaj plik SQL",
-  "Discover Connections with DBCode": "Odkryj połączenia za pomocą DBCode",
   "Results": "Wyniki",
   "Paginate results.": "Stronicuj wyniki.",
   "Execute Selection with DBCode": "Wykonaj zaznaczenie za pomocą DBCode",
@@ -346,5 +345,10 @@
   "Active Streams": "Aktywne strumienie",
   "Subscribe": "Subskrybuj",
   "Open Query Builder": "Otwórz kreator zapytań",
-  "Query Builder": "Kreator zapytań"
+  "Query Builder": "Kreator zapytań",
+  "Watch Folder with DBCode": "Obserwuj folder z DBCode",
+  "Watched Folders": "Obserwowane foldery",
+  "Watched Folder ID": "ID obserwowanego folderu",
+  "Watched Folder Name": "Nazwa obserwowanego folderu",
+  "Watched Folder Path": "Ścieżka obserwowanego folderu"
 }
