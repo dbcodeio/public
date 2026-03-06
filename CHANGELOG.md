@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.28.13 - 2026-03-06
+
+### Changed
+
+- Explore (Preview): New data exploration panel for tables, views, and queries. Analyze dimensions and measures with interactive charts (bar, line, area, pie/donut, scatter), value filtering, date bucketing, calculated fields, and FK drill-down navigation. Available from the tree context menu or the grid toolbar.
+- DuckDB: Added progressive schema loading for faster connections to databases with large schemas.
+- Results: Added "Unstack" option to split stacked result tabs back into individual tabs. #1007
+
+### Fixed
+
+- Parameters: Fixed parameters being incorrectly detected inside SQL comments (single-line `--` and block `/* */`). #1008
+- Supabase: Fixed connections failing on newer Supabase projects by using the Management API for temporary credentials instead of SQL-based user creation.
+- Results: Fixed tab wrapping and scroll navigation not working. #1006
+
 ## 1.28.11 - 2026-03-05
 
 ### Changed
