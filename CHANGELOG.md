@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 1.28.15 - 2026-03-08
+
+### Changed
+
+- Library: New Library panel replaces Favorites, supporting saved scripts, Query Builder queries, Explore views, and file references organised under Project and Personal scopes with drag-and-drop, folders.
+- Favorites: Now shown only within a connection, and stored as part of the connection configuration for portability.
+- Formatters: Added "Binary as JSON" predefined formatter to decode hex-encoded BLOB data as JSON. #1011
+- ClickHouse: Added progressive schema loading for faster connections to databases with large schemas.
+
+### Fixed
+
+- Formatters: Fixed custom formatter showing false validation errors when the formatter targets specific data formats (e.g. hex-encoded JSON). #1011
+- Elasticsearch: Fixed connection failure (`ProductNotSupportedError`) on Elasticsearch versions prior to 7.14. #1012
+- Proxy: Fixed HTTP-based drivers (ClickHouse, BigQuery) not respecting `http.noProxy` VS Code settings. #1010
+
 ## 1.28.13 - 2026-03-06
 
 ### Changed

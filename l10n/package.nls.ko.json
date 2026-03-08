@@ -174,10 +174,6 @@
   "The schema of the default connection if supported.": "기본 연결의 스키마(지원되는 경우)",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "작업 영역의 기본 연결입니다. 다음 명령으로 설정할 수 있습니다: DBCode: 작업 영역 기본 연결 선택",
   "Refresh Connected Connections": "연결된 항목 새로 고침",
-  "Delete All Favorites": "모든 즐겨찾기 삭제",
-  "Delete Favorite": "즐겨찾기 삭제",
-  "Add to DBCode Favorites": "DBCode 즐겨찾기에 추가",
-  "Favorites": "즐겨찾기",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "SQL 명령을 기록하려면 기록을 활성화하세요.",
   "Generate Key for License": "라이선스 키 생성",
   "Generate License from Key": "키로 라이선스 생성",
@@ -351,5 +347,11 @@
   "Watched Folder ID": "감시 폴더 ID",
   "Watched Folder Name": "감시 폴더 이름",
   "Watched Folder Path": "감시 폴더 경로",
-  "Explore": "탐색"
+  "Explore": "탐색",
+  "Add to Favorites": "즐겨찾기에 추가",
+  "Remove from Favorites": "즐겨찾기에서 제거",
+  "Add to DBCode Library": "DBCode 라이브러리에 추가",
+  "Create Folder": "폴더 만들기",
+  "Reveal in File Explorer": "파일 탐색기에서 표시",
+  "Library": "라이브러리"
 }

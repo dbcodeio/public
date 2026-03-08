@@ -174,10 +174,6 @@
   "The schema of the default connection if supported.": "Схема подключения по умолчанию (если поддерживается).",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "Подключение по умолчанию для рабочей области. Настраивается командой: DBCode: Выбрать подключение рабочей области по умолчанию.",
   "Refresh Connected Connections": "Обновить активные подключения",
-  "Delete All Favorites": "Удалить все избранное",
-  "Delete Favorite": "Удалить из избранного",
-  "Add to DBCode Favorites": "Добавить в избранное DBCode",
-  "Favorites": "Избранное",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "Включите историю для записи SQL команд.",
   "Generate Key for License": "Сгенерировать ключ для лицензии",
   "Generate License from Key": "Создать лицензию из ключа",
@@ -351,5 +347,11 @@
   "Watched Folder ID": "ID отслеживаемой папки",
   "Watched Folder Name": "Имя отслеживаемой папки",
   "Watched Folder Path": "Путь к отслеживаемой папке",
-  "Explore": "Обзор"
+  "Explore": "Обзор",
+  "Add to Favorites": "Добавить в избранное",
+  "Remove from Favorites": "Удалить из избранного",
+  "Add to DBCode Library": "Добавить в библиотеку DBCode",
+  "Create Folder": "Создать папку",
+  "Reveal in File Explorer": "Показать в проводнике",
+  "Library": "Библиотека"
 }

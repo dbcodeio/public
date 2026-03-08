@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Connect to PostgreSQL, MySQL, SQL Server, SQLite, Mongo, Oracle, DuckDB and other major databases. AI queries. Create and edit tables, data, functions and procedures. Graph your data. Share reports. And more!",
     "publisher": "dbcode",
-    "version": "1.28.13",
+    "version": "1.28.15",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -581,6 +581,18 @@
                 "category": "DBCode"
             },
             {
+                "command": "dbcode.connection.addFavorite",
+                "title": "%Add to Favorites%",
+                "category": "DBCode",
+                "icon": "$(star-empty)"
+            },
+            {
+                "command": "dbcode.connection.removeFavorite",
+                "title": "%Remove from Favorites%",
+                "category": "DBCode",
+                "icon": "$(close)"
+            },
+            {
                 "command": "dbcode.editor.open",
                 "title": "%Load%",
                 "category": "DBCode"
@@ -745,28 +757,10 @@
                 "icon": "$(output)"
             },
             {
-                "command": "dbcode.favorites.removeAll",
-                "title": "%Delete All Favorites%",
-                "category": "DBCode",
-                "icon": "$(clear-all)"
-            },
-            {
-                "command": "dbcode.favorites.remove",
-                "title": "%Delete Favorite%",
+                "command": "dbcode.library.delete",
+                "title": "%Delete%",
                 "category": "DBCode",
                 "icon": "$(trash)"
-            },
-            {
-                "command": "dbcode.favorites.expandAll",
-                "title": "%Expand All%",
-                "category": "DBCode",
-                "icon": "$(expand-all)"
-            },
-            {
-                "command": "dbcode.favorites.collapseAll",
-                "title": "%Collapse All%",
-                "category": "DBCode",
-                "icon": "$(collapse-all)"
             },
             {
                 "command": "dbcode.filters.edit",
@@ -900,10 +894,37 @@
                 "category": "DBCode"
             },
             {
-                "command": "dbcode.favorites.addScript",
-                "title": "%Add to DBCode Favorites%",
+                "command": "dbcode.library.addScript",
+                "title": "%Add to DBCode Library%",
                 "category": "DBCode",
                 "icon": "$(star)"
+            },
+            {
+                "command": "dbcode.library.createFolder",
+                "title": "%Create Folder%",
+                "category": "DBCode",
+                "icon": "$(new-folder)"
+            },
+            {
+                "command": "dbcode.library.rename",
+                "title": "%Rename%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.library.openItem",
+                "title": "%Open%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.library.revealFile",
+                "title": "%Reveal in File Explorer%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.library.refresh",
+                "title": "%Refresh%",
+                "category": "DBCode",
+                "icon": "$(refresh)"
             },
             {
                 "command": "dbcode.connections.group",
@@ -1356,8 +1377,8 @@
                     "name": "%Authentication Profiles%"
                 },
                 {
-                    "id": "dbcode.favorites.view",
-                    "name": "%Favorites%"
+                    "id": "dbcode.library.view",
+                    "name": "%Library%"
                 },
                 {
                     "id": "dbcode.history.view",
@@ -1513,11 +1534,6 @@
                     "group": "navigation@4"
                 },
                 {
-                    "command": "dbcode.favorites.removeAll",
-                    "when": "view == dbcode.favorites.view",
-                    "group": "navigation@4"
-                },
-                {
                     "command": "dbcode.tunnels.add",
                     "when": "view == dbcode.tunnels.view",
                     "group": "navigation"
@@ -1551,6 +1567,11 @@
                     "command": "dbcode.authProfiles.help",
                     "when": "view == dbcode.authProfiles.view",
                     "group": "navigation@3"
+                },
+                {
+                    "command": "dbcode.library.refresh",
+                    "when": "view == dbcode.library.view",
+                    "group": "navigation"
                 }
             ],
             "view/item/context": [
@@ -1665,9 +1686,39 @@
                     "group": "inline@3"
                 },
                 {
-                    "command": "dbcode.favorites.remove",
-                    "when": "(view == dbcode.favorites.view || view == dbcode.connections.view) && (viewItem =~ /~deletable~/)",
+                    "command": "dbcode.library.delete",
+                    "when": "(view == dbcode.library.view || view == dbcode.connections.view) && (viewItem =~ /~deletable~/)",
                     "group": "inline@2"
+                },
+                {
+                    "when": "view == dbcode.library.view && (viewItem =~ /library-root-/ || viewItem =~ /library-folder-/)",
+                    "command": "dbcode.library.createFolder",
+                    "group": "2manage@1"
+                },
+                {
+                    "when": "view == dbcode.library.view && viewItem =~ /library-(folder|script|querybuilder|explore|file)-/",
+                    "command": "dbcode.library.rename",
+                    "group": "2manage@2"
+                },
+                {
+                    "when": "view == dbcode.library.view && viewItem =~ /library-file-/",
+                    "command": "dbcode.library.revealFile",
+                    "group": "2manage@3"
+                },
+                {
+                    "when": "view == dbcode.connections.view && viewItem =~ /~click~|~openLimit~|~scriptSelect~|~scriptDDL~/ && !(viewItem =~ /~connFavorite~/)",
+                    "command": "dbcode.connection.addFavorite",
+                    "group": "zzzommon@0"
+                },
+                {
+                    "when": "view == dbcode.connections.view && viewItem =~ /~connFavorite~/",
+                    "command": "dbcode.connection.removeFavorite",
+                    "group": "inline@1"
+                },
+                {
+                    "when": "view == dbcode.connections.view && viewItem =~ /~connFavorite~/",
+                    "command": "dbcode.connection.removeFavorite",
+                    "group": "zzzommon@0"
                 },
                 {
                     "command": "dbcode.filters.edit",
@@ -1681,12 +1732,12 @@
                 },
                 {
                     "command": "dbcode.filters.edit",
-                    "when": "view == dbcode.favorites.view && viewItem =~ /^filter-/",
+                    "when": "view == dbcode.library.view && viewItem =~ /^filter-/",
                     "group": "inline@1"
                 },
                 {
                     "command": "dbcode.filters.delete",
-                    "when": "view == dbcode.favorites.view && viewItem =~ /^filter-/",
+                    "when": "view == dbcode.library.view && viewItem =~ /^filter-/",
                     "group": "inline@2"
                 },
                 {
@@ -2006,12 +2057,12 @@
                 },
                 {
                     "command": "dbcode.filters.edit",
-                    "when": "view == dbcode.favorites.view && viewItem =~ /^filter-/",
+                    "when": "view == dbcode.library.view && viewItem =~ /^filter-/",
                     "group": "1filter@1"
                 },
                 {
                     "command": "dbcode.filters.delete",
-                    "when": "view == dbcode.favorites.view && viewItem =~ /^filter-/",
+                    "when": "view == dbcode.library.view && viewItem =~ /^filter-/",
                     "group": "1filter@2"
                 },
                 {
@@ -2111,8 +2162,8 @@
                     "group": "navigation@1.5"
                 },
                 {
-                    "when": "resourceLangId == sql && editorHasSelection",
-                    "command": "dbcode.favorites.addScript",
+                    "when": "resourceLangId == sql",
+                    "command": "dbcode.library.addScript",
                     "group": "navigation@2"
                 },
                 {

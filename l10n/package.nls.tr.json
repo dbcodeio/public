@@ -174,10 +174,6 @@
   "The schema of the default connection if supported.": "Destekleniyorsa varsayılan bağlantının şeması.",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "Çalışma alanı için varsayılan bağlantı. Şu komutla ayarlanabilir: DBCode: Çalışma Alanı Varsayılan Bağlantısını Seç.",
   "Refresh Connected Connections": "Bağlı Bağlantıları Yenile",
-  "Delete All Favorites": "Tüm Sık Kullanılanları Sil",
-  "Delete Favorite": "Sık Kullanılandan Sil",
-  "Add to DBCode Favorites": "DBCode Sık Kullanılanlara Ekle",
-  "Favorites": "Sık Kullanılanlar",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "SQL komutlarını kaydetmek için Geçmiş'i etkinleştir.",
   "Generate Key for License": "Lisans için Anahtar Oluştur",
   "Generate License from Key": "Anahtardan Lisans Oluştur",
@@ -351,5 +347,11 @@
   "Watched Folder ID": "İzlenen klasör kimliği",
   "Watched Folder Name": "İzlenen klasör adı",
   "Watched Folder Path": "İzlenen klasör yolu",
-  "Explore": "Keşfet"
+  "Explore": "Keşfet",
+  "Add to Favorites": "Favorilere ekle",
+  "Remove from Favorites": "Favorilerden kaldır",
+  "Add to DBCode Library": "DBCode Kitaplığına ekle",
+  "Create Folder": "Klasör oluştur",
+  "Reveal in File Explorer": "Dosya gezgininde göster",
+  "Library": "Kitaplık"
 }

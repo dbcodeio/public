@@ -174,10 +174,6 @@
   "The schema of the default connection if supported.": "O esquema da conexão padrão, se suportado.",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "A conexão padrão para o workspace. Pode ser definida com o comando: DBCode: Selecionar Conexão Padrão do Workspace.",
   "Refresh Connected Connections": "Atualizar Conexões Conectadas",
-  "Delete All Favorites": "Excluir Todos os Favoritos",
-  "Delete Favorite": "Excluir Favorito",
-  "Add to DBCode Favorites": "Adicionar aos Favoritos do DBCode",
-  "Favorites": "Favoritos",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "Habilite o Histórico para registrar comandos SQL.",
   "Generate Key for License": "Gerar Chave para Licença",
   "Generate License from Key": "Gerar Licença a partir da Chave",
@@ -351,5 +347,11 @@
   "Watched Folder ID": "ID da pasta monitorada",
   "Watched Folder Name": "Nome da pasta monitorada",
   "Watched Folder Path": "Caminho da pasta monitorada",
-  "Explore": "Explorar"
+  "Explore": "Explorar",
+  "Add to Favorites": "Adicionar aos favoritos",
+  "Remove from Favorites": "Remover dos favoritos",
+  "Add to DBCode Library": "Adicionar à biblioteca DBCode",
+  "Create Folder": "Criar pasta",
+  "Reveal in File Explorer": "Revelar no explorador de arquivos",
+  "Library": "Biblioteca"
 }

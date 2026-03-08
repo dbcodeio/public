@@ -174,10 +174,6 @@
   "The schema of the default connection if supported.": "默认连接的模式（如果支持）。",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "工作区的默认连接。可通过命令设置：DBCode：选择工作区默认连接。",
   "Refresh Connected Connections": "刷新已连接的连接",
-  "Delete All Favorites": "删除所有收藏",
-  "Delete Favorite": "删除收藏",
-  "Add to DBCode Favorites": "添加到 DBCode 收藏",
-  "Favorites": "收藏",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "启用历史记录以记录 SQL 命令。",
   "Generate Key for License": "为许可证生成密钥",
   "Generate License from Key": "从密钥生成许可证",
@@ -351,5 +347,11 @@
   "Watched Folder ID": "监视文件夹 ID",
   "Watched Folder Name": "监视文件夹名称",
   "Watched Folder Path": "监视文件夹路径",
-  "Explore": "探索"
+  "Explore": "探索",
+  "Add to Favorites": "添加到收藏夹",
+  "Remove from Favorites": "从收藏夹移除",
+  "Add to DBCode Library": "添加到 DBCode 库",
+  "Create Folder": "新建文件夹",
+  "Reveal in File Explorer": "在文件资源管理器中显示",
+  "Library": "库"
 }

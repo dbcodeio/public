@@ -174,10 +174,6 @@
   "The schema of the default connection if supported.": "Schéma výchozího připojení, pokud je podporováno.",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "Výchozí připojení pro pracovní prostor. Lze nastavit příkazem: DBCode: Vybrat výchozí připojení pracovního prostoru.",
   "Refresh Connected Connections": "Obnovit aktivní připojení",
-  "Delete All Favorites": "Smazat všechny oblíbené položky",
-  "Delete Favorite": "Smazat oblíbenou položku",
-  "Add to DBCode Favorites": "Přidat do oblíbených DBCode",
-  "Favorites": "Oblíbené položky",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "Povolit Historii pro záznam SQL příkazů.",
   "Generate Key for License": "Vygenerovat klíč pro licenci",
   "Generate License from Key": "Vygenerovat licenci z klíče",
@@ -351,5 +347,11 @@
   "Watched Folder ID": "ID sledované složky",
   "Watched Folder Name": "Název sledované složky",
   "Watched Folder Path": "Cesta sledované složky",
-  "Explore": "Prozkoumat"
+  "Explore": "Prozkoumat",
+  "Add to Favorites": "Přidat do oblíbených",
+  "Remove from Favorites": "Odebrat z oblíbených",
+  "Add to DBCode Library": "Přidat do knihovny DBCode",
+  "Create Folder": "Vytvořit složku",
+  "Reveal in File Explorer": "Zobrazit v průzkumníku souborů",
+  "Library": "Knihovna"
 }

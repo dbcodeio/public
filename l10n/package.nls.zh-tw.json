@@ -174,10 +174,6 @@
   "The schema of the default connection if supported.": "預設連線的架構（如果支援）。",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "工作區的預設連線。可以使用命令設定：DBCode: 選擇工作區預設連線。",
   "Refresh Connected Connections": "重新整理已連線的連線",
-  "Delete All Favorites": "刪除所有我的最愛",
-  "Delete Favorite": "刪除我的最愛",
-  "Add to DBCode Favorites": "新增至 DBCode 我的最愛",
-  "Favorites": "我的最愛",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "啟用歷史記錄以記錄 SQL 命令。",
   "Generate Key for License": "為授權產生金鑰",
   "Generate License from Key": "從金鑰產生授權",
@@ -351,5 +347,11 @@
   "Watched Folder ID": "監看資料夾 ID",
   "Watched Folder Name": "監看資料夾名稱",
   "Watched Folder Path": "監看資料夾路徑",
-  "Explore": "探索"
+  "Explore": "探索",
+  "Add to Favorites": "新增至我的最愛",
+  "Remove from Favorites": "從我的最愛移除",
+  "Add to DBCode Library": "新增至 DBCode 程式庫",
+  "Create Folder": "建立資料夾",
+  "Reveal in File Explorer": "在檔案總管中顯示",
+  "Library": "程式庫"
 }
