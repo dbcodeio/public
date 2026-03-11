@@ -63,7 +63,6 @@
   "Username": "用户名",
   "Password": "密码",
   "Enable SSL": "启用 SSL",
-  "Trust server certificate": "信任服务器证书",
   "Save password": "保存密码",
   "It will not be saved, you will be prompted for it when connecting each time.": "密码不会被保存，每次连接时都会提示您输入。",
   "It will not be saved, you will be prompted for it ONCE when connecting each time VSCode starts.": "密码不会被保存，每次 VSCode 启动时首次连接会提示您输入一次。",
@@ -353,5 +352,6 @@
   "Add to DBCode Library": "添加到 DBCode 库",
   "Create Folder": "新建文件夹",
   "Reveal in File Explorer": "在文件资源管理器中显示",
-  "Library": "库"
+  "Library": "库",
+  "SSL certificate verification level": "SSL 证书验证级别"
 }

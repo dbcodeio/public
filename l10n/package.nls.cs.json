@@ -63,7 +63,6 @@
   "Username": "Uživatelské jméno",
   "Password": "Heslo",
   "Enable SSL": "Povolit SSL",
-  "Trust server certificate": "Důvěřovat certifikátu serveru",
   "Save password": "Uložit heslo",
   "It will not be saved, you will be prompted for it when connecting each time.": "Nebude uloženo, budete vyzváni k jeho zadání při každém připojení.",
   "It will not be saved, you will be prompted for it ONCE when connecting each time VSCode starts.": "Nebude uloženo, budete vyzváni k jeho zadání JEDNOU při každém spuštění VSCode.",
@@ -353,5 +352,6 @@
   "Add to DBCode Library": "Přidat do knihovny DBCode",
   "Create Folder": "Vytvořit složku",
   "Reveal in File Explorer": "Zobrazit v průzkumníku souborů",
-  "Library": "Knihovna"
+  "Library": "Knihovna",
+  "SSL certificate verification level": "Úroveň ověření SSL certifikátu"
 }

@@ -63,7 +63,6 @@
   "Username": "사용자 이름",
   "Password": "비밀번호",
   "Enable SSL": "SSL 사용",
-  "Trust server certificate": "서버 인증서 신뢰",
   "Save password": "비밀번호 저장",
   "It will not be saved, you will be prompted for it when connecting each time.": "저장되지 않으며, 연결할 때마다 입력하라는 메시지가 표시됩니다.",
   "It will not be saved, you will be prompted for it ONCE when connecting each time VSCode starts.": "저장되지 않으며, VSCode가 시작될 때마다 연결 시 한 번만 입력하라는 메시지가 표시됩니다.",
@@ -353,5 +352,6 @@
   "Add to DBCode Library": "DBCode 라이브러리에 추가",
   "Create Folder": "폴더 만들기",
   "Reveal in File Explorer": "파일 탐색기에서 표시",
-  "Library": "라이브러리"
+  "Library": "라이브러리",
+  "SSL certificate verification level": "SSL 인증서 확인 수준"
 }

@@ -63,7 +63,6 @@
   "Username": "Nombre de usuario",
   "Password": "Contraseña",
   "Enable SSL": "Habilitar SSL",
-  "Trust server certificate": "Confiar en el certificado del servidor",
   "Save password": "Guardar contraseña",
   "It will not be saved, you will be prompted for it when connecting each time.": "No se guardará, se le solicitará cada vez que se conecte.",
   "It will not be saved, you will be prompted for it ONCE when connecting each time VSCode starts.": "No se guardará, se le solicitará UNA VEZ cada vez que inicie VSCode.",
@@ -353,5 +352,6 @@
   "Add to DBCode Library": "Agregar a la biblioteca DBCode",
   "Create Folder": "Crear carpeta",
   "Reveal in File Explorer": "Mostrar en el explorador de archivos",
-  "Library": "Biblioteca"
+  "Library": "Biblioteca",
+  "SSL certificate verification level": "Nivel de verificación del certificado SSL"
 }

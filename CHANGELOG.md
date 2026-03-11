@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## 1.28.16 - 2026-03-11
+
+### Changed
+
+- Explore: Out of preview, supports tables, views and queries with interactive charts, value filtering, date bucketing, calculated fields, and FK drill-down navigation.
+- Query Builder: Added NOT IN operator to WHERE and HAVING filter dropdowns.
+- Connections: SSL "Trust Server Certificate" replaced with "Certificate Verification" dropdown. New "Verify CA Only" option verifies the certificate chain but skips hostname checking. #1017
+- Editor: Green checkmark gutter indicator on successful query execution.
+- SQLite, libSQL, D1: Added progressive schema loading for faster connections and isolated error handling per table. #1014
+- Snowflake: Added progressive schema loading for faster connections and isolated error handling per table.
+- DB Explorer: Added filtering at the schema and database level to show/hide object categories (Tables, Views, Procedures, etc.).
+
+### Fixed
+
+- Snowflake: Enabled MFA token caching for password auth to avoid repeated prompts. #1019
+- Execution: Fixed Execute button not appearing for SQL statements after BEGIN/COMMIT transaction blocks.
+- ClickHouse: Fixed introspection failure for read-only users without access to system.data_skipping_indices. #1018
+- SSL: Fixed HTTPS-based drivers (ClickHouse, Trino, Elasticsearch, OpenSearch, RavenDB) failing SSL connections with self-signed or CA-only certificates when VS Code proxy support is enabled. #1010
+
 ## 1.28.15 - 2026-03-08
 
 ### Changed

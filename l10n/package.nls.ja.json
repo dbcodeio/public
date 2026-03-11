@@ -63,7 +63,6 @@
   "Username": "ユーザー名",
   "Password": "パスワード",
   "Enable SSL": "SSLを有効にする",
-  "Trust server certificate": "サーバー証明書を信頼する",
   "Save password": "パスワードを保存",
   "It will not be saved, you will be prompted for it when connecting each time.": "保存されません。接続するたびに入力を求められます。",
   "It will not be saved, you will be prompted for it ONCE when connecting each time VSCode starts.": "保存されません。VSCode起動後の初回接続時に1回だけ入力を求められます。",
@@ -353,5 +352,6 @@
   "Add to DBCode Library": "DBCode ライブラリに追加",
   "Create Folder": "フォルダーの作成",
   "Reveal in File Explorer": "ファイル エクスプローラーで表示",
-  "Library": "ライブラリ"
+  "Library": "ライブラリ",
+  "SSL certificate verification level": "SSL証明書の検証レベル"
 }

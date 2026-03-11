@@ -283,7 +283,7 @@
   "Password": "Ƥȧȧşşẇǿǿřḓ",
   "The key to encrypt the password with when saving.": "Ŧħḗḗ ķḗḗẏ ŧǿǿ ḗḗƞƈřẏƥŧ ŧħḗḗ ƥȧȧşşẇǿǿřḓ ẇīŧħ ẇħḗḗƞ şȧȧṽīƞɠ.",
   "Enable SSL": "ḖḖƞȧȧƀŀḗḗ ŞŞĿ",
-  "Trust server certificate": "Ŧřŭŭşŧ şḗḗřṽḗḗř ƈḗḗřŧīƒīƈȧȧŧḗḗ",
+  "SSL certificate verification level": "ŞŞĿ ƈḗḗřŧīƒīƈȧȧŧḗḗ ṽḗḗřīƒīƈȧȧŧīǿǿƞ ŀḗḗṽḗḗŀ",
   "Save password": "Şȧȧṽḗḗ ƥȧȧşşẇǿǿřḓ",
   "It will not be saved, you will be prompted for it when connecting each time.": "Īŧ ẇīŀŀ ƞǿǿŧ ƀḗḗ şȧȧṽḗḗḓ, ẏǿǿŭŭ ẇīŀŀ ƀḗḗ ƥřǿǿḿƥŧḗḗḓ ƒǿǿř īŧ ẇħḗḗƞ ƈǿǿƞƞḗḗƈŧīƞɠ ḗḗȧȧƈħ ŧīḿḗḗ.",
   "It will not be saved, you will be prompted for it ONCE when connecting each time VSCode starts.": "Īŧ ẇīŀŀ ƞǿǿŧ ƀḗḗ şȧȧṽḗḗḓ, ẏǿǿŭŭ ẇīŀŀ ƀḗḗ ƥřǿǿḿƥŧḗḗḓ ƒǿǿř īŧ ǾǾȠƇḖḖ ẇħḗḗƞ ƈǿǿƞƞḗḗƈŧīƞɠ ḗḗȧȧƈħ ŧīḿḗḗ ṼŞƇǿǿḓḗḗ şŧȧȧřŧş.",

@@ -63,7 +63,6 @@
   "Username": "Имя пользователя",
   "Password": "Пароль",
   "Enable SSL": "Включить SSL",
-  "Trust server certificate": "Доверять сертификату сервера",
   "Save password": "Сохранить пароль",
   "It will not be saved, you will be prompted for it when connecting each time.": "Пароль не будет сохранен, вам нужно будет вводить его при каждом подключении.",
   "It will not be saved, you will be prompted for it ONCE when connecting each time VSCode starts.": "Пароль не будет сохранен, вам нужно будет ввести его ОДИН раз при каждом запуске VSCode.",
@@ -353,5 +352,6 @@
   "Add to DBCode Library": "Добавить в библиотеку DBCode",
   "Create Folder": "Создать папку",
   "Reveal in File Explorer": "Показать в проводнике",
-  "Library": "Библиотека"
+  "Library": "Библиотека",
+  "SSL certificate verification level": "Уровень проверки SSL-сертификата"
 }

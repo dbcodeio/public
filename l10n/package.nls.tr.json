@@ -63,7 +63,6 @@
   "Username": "Kullanıcı adı",
   "Password": "Parola",
   "Enable SSL": "SSL'yi etkinleştir",
-  "Trust server certificate": "Sunucu sertifikasına güven",
   "Save password": "Parolayı kaydet",
   "It will not be saved, you will be prompted for it when connecting each time.": "Kaydedilmeyecek, her bağlantıda sizden istenecek.",
   "It will not be saved, you will be prompted for it ONCE when connecting each time VSCode starts.": "Kaydedilmeyecek, VSCode her başlatıldığında bağlantıda BİR KEZ istenecek.",
@@ -353,5 +352,6 @@
   "Add to DBCode Library": "DBCode Kitaplığına ekle",
   "Create Folder": "Klasör oluştur",
   "Reveal in File Explorer": "Dosya gezgininde göster",
-  "Library": "Kitaplık"
+  "Library": "Kitaplık",
+  "SSL certificate verification level": "SSL sertifika doğrulama düzeyi"
 }
