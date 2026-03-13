@@ -175,7 +175,6 @@
   "Refresh Connected Connections": "重新整理已連線的連線",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "啟用歷史記錄以記錄 SQL 命令。",
   "Generate Key for License": "為授權產生金鑰",
-  "Generate License from Key": "從金鑰產生授權",
   "Install License": "安裝授權",
   "Highlight color": "醒目提示顏色",
   "Active statement background": "使用中語句背景",

@@ -175,7 +175,6 @@
   "Refresh Connected Connections": "연결된 항목 새로 고침",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "SQL 명령을 기록하려면 기록을 활성화하세요.",
   "Generate Key for License": "라이선스 키 생성",
-  "Generate License from Key": "키로 라이선스 생성",
   "Install License": "라이선스 설치",
   "Highlight color": "강조 색상",
   "Active statement background": "활성 구문 배경",

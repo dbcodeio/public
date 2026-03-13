@@ -3376,8 +3376,11 @@
   "No instances found.": "Žádné instance nenalezeny.",
   "Unable to fetch databases. Please enter manually.": "Nelze načíst databáze. Zadejte ručně.",
   "No databases found.": "Žádné databáze nenalezeny.",
-  "Spanner does not support {0} scripting.": "Spanner nepodporuje skriptování {0}.",
   "Sybase ASE requires Command authentication profile": "Sybase ASE vyžaduje profil ověřování Command",
   "Sequence {0} not found": "Sekvence {0} nenalezena",
-  "Sybase ASE does not support {0} scripting.": "Sybase ASE nepodporuje skriptování {0}."
+  "Sybase ASE does not support {0} scripting.": "Sybase ASE nepodporuje skriptování {0}.",
+  "Resolving...": "Probíhá řešení...",
+  "Unable to save connection: {0}": "Připojení nelze uložit: {0}",
+  "Offline License ({0})": "Offline licence ({0})",
+  "Could not find DDL for {0} {1}.": "DDL pro {0} {1} nebylo nalezeno."
 }

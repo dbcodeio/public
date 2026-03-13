@@ -3376,8 +3376,11 @@
   "No instances found.": "未找到实例。",
   "Unable to fetch databases. Please enter manually.": "无法获取数据库，请手动输入。",
   "No databases found.": "未找到数据库。",
-  "Spanner does not support {0} scripting.": "Spanner 不支持 {0} 脚本。",
   "Sybase ASE requires Command authentication profile": "Sybase ASE 需要 Command 身份验证配置文件",
   "Sequence {0} not found": "序列 {0} 未找到",
-  "Sybase ASE does not support {0} scripting.": "Sybase ASE 不支持 {0} 脚本。"
+  "Sybase ASE does not support {0} scripting.": "Sybase ASE 不支持 {0} 脚本。",
+  "Resolving...": "正在解析...",
+  "Unable to save connection: {0}": "无法保存连接：{0}",
+  "Offline License ({0})": "离线许可证（{0}）",
+  "Could not find DDL for {0} {1}.": "找不到 {0} {1} 的 DDL。"
 }

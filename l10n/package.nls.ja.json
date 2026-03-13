@@ -175,7 +175,6 @@
   "Refresh Connected Connections": "接続済み接続の更新",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "履歴を有効にして SQL コマンドを記録します。",
   "Generate Key for License": "ライセンスキーの生成",
-  "Generate License from Key": "キーからライセンスを生成",
   "Install License": "ライセンスのインストール",
   "Highlight color": "ハイライト色",
   "Active statement background": "アクティブなステートメントの背景色",

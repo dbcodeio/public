@@ -175,7 +175,6 @@
   "Refresh Connected Connections": "Bağlı Bağlantıları Yenile",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "SQL komutlarını kaydetmek için Geçmiş'i etkinleştir.",
   "Generate Key for License": "Lisans için Anahtar Oluştur",
-  "Generate License from Key": "Anahtardan Lisans Oluştur",
   "Install License": "Lisans Yükle",
   "Highlight color": "Vurgulama rengi",
   "Active statement background": "Aktif ifade arka planı",

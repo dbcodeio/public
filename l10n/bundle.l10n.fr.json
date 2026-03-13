@@ -3376,8 +3376,11 @@
   "No instances found.": "Aucune instance trouvée.",
   "Unable to fetch databases. Please enter manually.": "Impossible de récupérer les bases de données. Veuillez saisir manuellement.",
   "No databases found.": "Aucune base de données trouvée.",
-  "Spanner does not support {0} scripting.": "Spanner ne prend pas en charge les scripts {0}.",
   "Sybase ASE requires Command authentication profile": "Sybase ASE nécessite un profil d'authentification Command",
   "Sequence {0} not found": "Séquence {0} introuvable",
-  "Sybase ASE does not support {0} scripting.": "Sybase ASE ne prend pas en charge les scripts {0}."
+  "Sybase ASE does not support {0} scripting.": "Sybase ASE ne prend pas en charge les scripts {0}.",
+  "Resolving...": "Résolution en cours...",
+  "Unable to save connection: {0}": "Impossible d'enregistrer la connexion : {0}",
+  "Offline License ({0})": "Licence hors ligne ({0})",
+  "Could not find DDL for {0} {1}.": "DDL introuvable pour {0} {1}."
 }

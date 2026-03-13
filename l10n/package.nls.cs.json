@@ -175,7 +175,6 @@
   "Refresh Connected Connections": "Obnovit aktivní připojení",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "Povolit Historii pro záznam SQL příkazů.",
   "Generate Key for License": "Vygenerovat klíč pro licenci",
-  "Generate License from Key": "Vygenerovat licenci z klíče",
   "Install License": "Nainstalovat licenci",
   "Highlight color": "Barva zvýraznění",
   "Active statement background": "Pozadí aktivního příkazu",

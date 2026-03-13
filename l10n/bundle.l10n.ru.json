@@ -3376,8 +3376,11 @@
   "No instances found.": "Экземпляры не найдены.",
   "Unable to fetch databases. Please enter manually.": "Не удалось получить базы данных. Введите вручную.",
   "No databases found.": "Базы данных не найдены.",
-  "Spanner does not support {0} scripting.": "Spanner не поддерживает скрипты {0}.",
   "Sybase ASE requires Command authentication profile": "Sybase ASE требует профиль аутентификации Command",
   "Sequence {0} not found": "Последовательность {0} не найдена",
-  "Sybase ASE does not support {0} scripting.": "Sybase ASE не поддерживает скрипты {0}."
+  "Sybase ASE does not support {0} scripting.": "Sybase ASE не поддерживает скрипты {0}.",
+  "Resolving...": "Выполняется разрешение...",
+  "Unable to save connection: {0}": "Не удалось сохранить подключение: {0}",
+  "Offline License ({0})": "Автономная лицензия ({0})",
+  "Could not find DDL for {0} {1}.": "DDL для {0} {1} не найден."
 }

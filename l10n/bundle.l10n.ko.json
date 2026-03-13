@@ -3376,8 +3376,11 @@
   "No instances found.": "인스턴스를 찾을 수 없습니다.",
   "Unable to fetch databases. Please enter manually.": "데이터베이스를 가져올 수 없습니다. 직접 입력하세요.",
   "No databases found.": "데이터베이스를 찾을 수 없습니다.",
-  "Spanner does not support {0} scripting.": "Spanner는 {0} 스크립팅을 지원하지 않습니다.",
   "Sybase ASE requires Command authentication profile": "Sybase ASE에는 Command 인증 프로필이 필요합니다",
   "Sequence {0} not found": "시퀀스 {0}을(를) 찾을 수 없습니다",
-  "Sybase ASE does not support {0} scripting.": "Sybase ASE는 {0} 스크립팅을 지원하지 않습니다."
+  "Sybase ASE does not support {0} scripting.": "Sybase ASE는 {0} 스크립팅을 지원하지 않습니다.",
+  "Resolving...": "확인 중...",
+  "Unable to save connection: {0}": "연결을 저장할 수 없습니다: {0}",
+  "Offline License ({0})": "오프라인 라이선스 ({0})",
+  "Could not find DDL for {0} {1}.": "{0} {1}에 대한 DDL을 찾을 수 없습니다."
 }

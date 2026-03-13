@@ -175,7 +175,6 @@
   "Refresh Connected Connections": "Actualiser les connexions actives",
   "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "Activer l'historique pour enregistrer les commandes SQL.",
   "Generate Key for License": "Générer la clé de licence",
-  "Generate License from Key": "Générer la licence à partir de la clé",
   "Install License": "Installer la licence",
   "Highlight color": "Couleur de surbrillance",
   "Active statement background": "Arrière-plan de l'instruction active",

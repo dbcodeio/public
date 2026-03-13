@@ -3379,8 +3379,11 @@
   "No instances found.": "インスタンスが見つかりません。",
   "Unable to fetch databases. Please enter manually.": "データベースを取得できません。手動で入力してください。",
   "No databases found.": "データベースが見つかりません。",
-  "Spanner does not support {0} scripting.": "Spanner は {0} スクリプトをサポートしていません。",
   "Sybase ASE requires Command authentication profile": "Sybase ASE には Command 認証プロファイルが必要です",
   "Sequence {0} not found": "シーケンス {0} が見つかりません",
-  "Sybase ASE does not support {0} scripting.": "Sybase ASE は {0} スクリプトをサポートしていません。"
+  "Sybase ASE does not support {0} scripting.": "Sybase ASE は {0} スクリプトをサポートしていません。",
+  "Resolving...": "解決中...",
+  "Unable to save connection: {0}": "接続を保存できません: {0}",
+  "Offline License ({0})": "オフラインライセンス ({0})",
+  "Could not find DDL for {0} {1}.": "{0} {1} の DDL が見つかりませんでした。"
 }

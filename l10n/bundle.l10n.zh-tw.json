@@ -3376,8 +3376,11 @@
   "No instances found.": "找不到執行個體。",
   "Unable to fetch databases. Please enter manually.": "無法擷取資料庫，請手動輸入。",
   "No databases found.": "找不到資料庫。",
-  "Spanner does not support {0} scripting.": "Spanner 不支援 {0} 指令碼。",
   "Sybase ASE requires Command authentication profile": "Sybase ASE 需要 Command 驗證設定檔",
   "Sequence {0} not found": "找不到序列 {0}",
-  "Sybase ASE does not support {0} scripting.": "Sybase ASE 不支援 {0} 指令碼。"
+  "Sybase ASE does not support {0} scripting.": "Sybase ASE 不支援 {0} 指令碼。",
+  "Resolving...": "正在解析...",
+  "Unable to save connection: {0}": "無法儲存連線：{0}",
+  "Offline License ({0})": "離線授權（{0}）",
+  "Could not find DDL for {0} {1}.": "找不到 {0} {1} 的 DDL。"
 }

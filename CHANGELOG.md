@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.29.0 - 2026-03-13
+
+### Changed
+
+- SAP ASE (Sybase): Added in preview, requires Java.
+- Google Cloud Spanner: Added in preview with support for ADC, Service Account, and Emulator authentication.
+- Notebook Export: Python cell outputs (DataFrames, plots, print output) are now included in exports.
+- Notebook Export: Python code blocks now have syntax highlighting.
+
+### Fixed
+
+- Notebook Export: Fixed PDF and HTML exports not downloading.
+- Snowflake: Unified SSO and password auth paths so MFA/SSO only prompts once per connection. #1019
+- Grid: Fixed relation icon resolving the wrong foreign key when a different cell was focused. #1022
+- Snowflake: Fixed Go to Definition failing for tables and views in non-default schemas by using schema-qualified names in GET_DDL calls. #1021
+
 ## 1.28.16 - 2026-03-11
 
 ### Changed

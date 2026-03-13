@@ -3376,8 +3376,11 @@
   "No instances found.": "Örnek bulunamadı.",
   "Unable to fetch databases. Please enter manually.": "Veritabanları alınamadı. Lütfen manuel olarak girin.",
   "No databases found.": "Veritabanı bulunamadı.",
-  "Spanner does not support {0} scripting.": "Spanner, {0} betik oluşturmayı desteklemiyor.",
   "Sybase ASE requires Command authentication profile": "Sybase ASE, Command kimlik doğrulama profili gerektiriyor",
   "Sequence {0} not found": "{0} dizisi bulunamadı",
-  "Sybase ASE does not support {0} scripting.": "Sybase ASE, {0} betik oluşturmayı desteklemiyor."
+  "Sybase ASE does not support {0} scripting.": "Sybase ASE, {0} betik oluşturmayı desteklemiyor.",
+  "Resolving...": "Çözümleniyor...",
+  "Unable to save connection: {0}": "Bağlantı kaydedilemedi: {0}",
+  "Offline License ({0})": "Çevrimdışı Lisans ({0})",
+  "Could not find DDL for {0} {1}.": "{0} {1} için DDL bulunamadı."
 }
