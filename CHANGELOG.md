@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.31.1 - 2026-05-05
+
+### Fixed
+
+- Redshift: Fixed SELECT queries always reporting "Success, 0 rows affected" since 1.30.7. #1090
+- IBM i: Fixed SSH tunnel connections failing with `ExtendedIllegalStateException: socketProperties: Property was not changed`. #976
+
 ## 1.31.0 - 2026-05-04
 
 ### Changed
