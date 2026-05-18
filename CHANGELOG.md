@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## 1.31.2 - 2026-05-18
+
+### Changed
+
+- SQL Server: Lowered minimum supported version from 2012 to 2008/R2.
+- MongoDB: Bumped driver from 6.14.0 to 6.21.0, picking up SRV/TXT DNS retry on timeout and several TLS improvements.
+
+### Fixed
+
+- Apache Doris: Introspection no longer fails with `Unknown table 'dual'` on Doris 2.1.x. #1098
+- IBM i, Firebird, Derby, Sybase, Aerospike, PGlite, Pinot, Spanner, Qdrant: Existing connections created before these drivers moved to progressive introspection no longer fail tree expand with "Use v3 progressive introspection". #1099
+- ERD: Relationship cardinality (1:1, 1:N, N:1) is detected again instead of every edge rendering as N:N.
+- ERD: Multiple inferred relationships from the same source column to different targets are now all rendered. #1100
+- Oracle: Introspection no longer fails with `ORA-00904: "AI"."VISIBILITY"` on Oracle 10g. #1096
+- SQL Server: `CREATE OR ALTER` rewrite no longer fails on 2012, 2014, and pre-SP1 2016 — falls back to `IF OBJECT_ID … DROP` + `CREATE` for any pre-2016 server.
+- MongoDB: Fixed mongodb+srv:// connection issue. #1091
+- MongoDB: Multi-host connection strings (`mongodb://h1:port,h2:port,h3:port/...`) can now be pasted via Import Connection String. #1091
+- Webviews: A malformed VS Code color theme no longer fails every DBCode panel with "An error occurred while loading view" — syntax highlighting falls back to a bundled default theme. #1093
+- Oracle: Applying an edited package from the explorer now recreates both the spec and the body.
+
 ## 1.31.1 - 2026-05-05
 
 ### Fixed
