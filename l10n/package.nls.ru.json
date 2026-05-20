@@ -370,5 +370,7 @@
   "MCP HTTP Server Allow External Connections": "Внешние подключения к HTTP-серверу MCP",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers. Requires OAuth authorization. When disabled, the HTTP server only accepts connections from localhost.": "Разрешает подключения к HTTP-серверу MCP с других машин или Dev Containers. Требует авторизации OAuth. При отключении HTTP-сервер принимает только подключения с localhost.",
   "MCP HTTP Server OAuth Token Expiry": "Срок действия токенов OAuth HTTP-сервера MCP",
-  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "Количество дней до истечения срока действия токенов доступа OAuth на HTTP-сервере MCP. Увеличьте, чтобы снизить частоту повторной аутентификации клиентов MCP. По умолчанию: 1 день."
+  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "Количество дней до истечения срока действия токенов доступа OAuth на HTTP-сервере MCP. Увеличьте, чтобы снизить частоту повторной аутентификации клиентов MCP. По умолчанию: 1 день.",
+  "Set Embedding Model": "Установить модель векторного представления",
+  "Copy Qualified Name": "Копировать полное имя"
 }

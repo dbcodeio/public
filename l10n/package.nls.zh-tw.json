@@ -370,5 +370,7 @@
   "MCP HTTP Server Allow External Connections": "MCP HTTP 伺服器允許外部連線",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers. Requires OAuth authorization. When disabled, the HTTP server only accepts connections from localhost.": "允許從其他電腦或 Dev Containers 連線至 HTTP MCP 伺服器。需要 OAuth 授權。停用時，HTTP 伺服器僅接受來自 localhost 的連線。",
   "MCP HTTP Server OAuth Token Expiry": "MCP HTTP 伺服器 OAuth 權杖到期",
-  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "HTTP MCP 伺服器上 OAuth 存取權杖的到期天數。增加此值可減少 MCP 用戶端重新驗證的頻率。預設為 1 天。"
+  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "HTTP MCP 伺服器上 OAuth 存取權杖的到期天數。增加此值可減少 MCP 用戶端重新驗證的頻率。預設為 1 天。",
+  "Set Embedding Model": "設定嵌入模型",
+  "Copy Qualified Name": "複製限定名稱"
 }

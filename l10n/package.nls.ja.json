@@ -370,5 +370,7 @@
   "MCP HTTP Server Allow External Connections": "MCP HTTP サーバー外部接続を許可",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers. Requires OAuth authorization. When disabled, the HTTP server only accepts connections from localhost.": "他のマシンまたは Dev Containers から HTTP MCP サーバーへの接続を許可します。OAuth 認証が必要です。無効の場合、HTTP サーバーは localhost からの接続のみ受け付けます。",
   "MCP HTTP Server OAuth Token Expiry": "MCP HTTP サーバー OAuth トークン有効期限",
-  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "HTTP MCP サーバー上の OAuth アクセストークンが期限切れになるまでの日数。MCP クライアントの再認証頻度を下げるには増やしてください。デフォルトは 1 日です。"
+  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "HTTP MCP サーバー上の OAuth アクセストークンが期限切れになるまでの日数。MCP クライアントの再認証頻度を下げるには増やしてください。デフォルトは 1 日です。",
+  "Set Embedding Model": "埋め込みモデルを設定",
+  "Copy Qualified Name": "修飾名をコピー"
 }

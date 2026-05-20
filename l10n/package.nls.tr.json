@@ -370,5 +370,7 @@
   "MCP HTTP Server Allow External Connections": "MCP HTTP Sunucusuna Harici Bağlantılara İzin Ver",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers. Requires OAuth authorization. When disabled, the HTTP server only accepts connections from localhost.": "Diğer makinelerden veya Dev Containers'dan HTTP MCP sunucusuna bağlantılara izin verir. OAuth yetkilendirmesi gerektirir. Devre dışı bırakıldığında HTTP sunucusu yalnızca localhost'tan gelen bağlantıları kabul eder.",
   "MCP HTTP Server OAuth Token Expiry": "MCP HTTP Sunucusu OAuth Token Süresi Dolumu",
-  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "HTTP MCP sunucusundaki OAuth erişim tokenlarının sona ermesine kadar geçen gün sayısı. MCP istemcilerinin yeniden kimlik doğrulaması sıklığını azaltmak için artırın. Varsayılan 1 gündür."
+  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "HTTP MCP sunucusundaki OAuth erişim tokenlarının sona ermesine kadar geçen gün sayısı. MCP istemcilerinin yeniden kimlik doğrulaması sıklığını azaltmak için artırın. Varsayılan 1 gündür.",
+  "Set Embedding Model": "Gömme Modelini Ayarla",
+  "Copy Qualified Name": "Nitelikli adı kopyala"
 }

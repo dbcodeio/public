@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 1.32.0 - 2026-05-20
+
+### Changed
+
+- Firebird: Preview support released. #492
+- Qdrant: Preview vector-database driver. #475
+- ClickHouse: `jdbc:ch://` connection URLs are now recognized when pasting a JDBC URL into the connection dialog.
+- DB Explorer: New "Copy Qualified Name" copying the fully-qualified, escapeed if needed name (e.g. `schema.table`, `database.table`).
+
+
+### Fixed
+
+- MySQL/MariaDB: Introspection no longer fails with a syntax error near `where false`. Regression from 1.31.2. #1103
+- ClickHouse: Restricted users without `system.parts` access no longer fail with "Not enough privileges".
+- ERD: Removing an inferred-relationship mapping now also clears the relationship line from the diagram. #1100
+- MongoDB: Fixed "is not a function" error when reading collections that store UUIDs as legacy `Binary` or mix UUID and non-UUID values in the same field. #1101
+
 ## 1.31.2 - 2026-05-18
 
 ### Changed

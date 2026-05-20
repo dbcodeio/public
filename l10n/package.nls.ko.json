@@ -370,5 +370,7 @@
   "MCP HTTP Server Allow External Connections": "MCP HTTP 서버 외부 연결 허용",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers. Requires OAuth authorization. When disabled, the HTTP server only accepts connections from localhost.": "다른 컴퓨터 또는 Dev Containers에서 HTTP MCP 서버로의 연결을 허용합니다. OAuth 인증이 필요합니다. 비활성화된 경우 HTTP 서버는 localhost의 연결만 허용합니다.",
   "MCP HTTP Server OAuth Token Expiry": "MCP HTTP 서버 OAuth 토큰 만료",
-  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "HTTP MCP 서버에서 OAuth 액세스 토큰이 만료되기까지의 일 수입니다. MCP 클라이언트의 재인증 빈도를 줄이려면 늘리세요. 기본값은 1일입니다."
+  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "HTTP MCP 서버에서 OAuth 액세스 토큰이 만료되기까지의 일 수입니다. MCP 클라이언트의 재인증 빈도를 줄이려면 늘리세요. 기본값은 1일입니다.",
+  "Set Embedding Model": "임베딩 모델 설정",
+  "Copy Qualified Name": "정규화된 이름 복사"
 }

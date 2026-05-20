@@ -370,5 +370,7 @@
   "MCP HTTP Server Allow External Connections": "MCP HTTP-Server externe Verbindungen",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers. Requires OAuth authorization. When disabled, the HTTP server only accepts connections from localhost.": "Erlaubt Verbindungen zum HTTP-MCP-Server von anderen Computern oder Dev Containers. Erfordert OAuth-Autorisierung. Deaktiviert akzeptiert der HTTP-Server nur Verbindungen von localhost.",
   "MCP HTTP Server OAuth Token Expiry": "MCP HTTP-Server OAuth-Token-Ablauf",
-  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "Anzahl der Tage, bevor OAuth-Zugriffstoken auf dem HTTP-MCP-Server ablaufen. Erhöhen, um die Häufigkeit der erneuten Authentifizierung von MCP-Clients zu reduzieren. Standard: 1 Tag."
+  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "Anzahl der Tage, bevor OAuth-Zugriffstoken auf dem HTTP-MCP-Server ablaufen. Erhöhen, um die Häufigkeit der erneuten Authentifizierung von MCP-Clients zu reduzieren. Standard: 1 Tag.",
+  "Set Embedding Model": "Einbettungsmodell festlegen",
+  "Copy Qualified Name": "Qualifizierten Namen kopieren"
 }

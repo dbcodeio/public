@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 50+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
     "publisher": "dbcode",
-    "version": "1.31.2",
+    "version": "1.32.0",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -741,6 +741,12 @@
                 "icon": "$(copy)"
             },
             {
+                "command": "dbcode.connections.copyQualifiedName",
+                "title": "%Copy Qualified Name%",
+                "category": "DBCode",
+                "icon": "$(copy)"
+            },
+            {
                 "command": "dbcode.connections.add",
                 "title": "%Add Connection%",
                 "category": "DBCode",
@@ -929,6 +935,12 @@
                 "title": "%Subscribe%",
                 "category": "DBCode",
                 "icon": "$(radio-tower)"
+            },
+            {
+                "command": "dbcode.item.setEmbedding",
+                "title": "%Set Embedding Model%",
+                "category": "DBCode",
+                "icon": "$(symbol-misc)"
             },
             {
                 "command": "dbcode.database.backup",
@@ -2112,6 +2124,11 @@
                     "group": "zzzommon@1"
                 },
                 {
+                    "command": "dbcode.connections.copyQualifiedName",
+                    "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || viewItem =~ /^view-/ || viewItem =~ /^materializedView-/)",
+                    "group": "zzzommon@2"
+                },
+                {
                     "command": "dbcode.table.openLimit",
                     "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~openLimit~/",
                     "group": "1open@1"
@@ -2210,6 +2227,11 @@
                     "command": "dbcode.item.subscribe",
                     "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~subscribe~/",
                     "group": "2actoin@6"
+                },
+                {
+                    "command": "dbcode.item.setEmbedding",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~setEmbedding~/",
+                    "group": "2actoin@7"
                 },
                 {
                     "command": "dbcode.item.truncate",
@@ -4021,60 +4043,67 @@
                     "fontCharacter": "\\eaad"
                 }
             },
+            "dbcode-vector-search": {
+                "description": "Vector Search",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\eaae"
+                }
+            },
             "dbcode-vector": {
                 "description": "Vector",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eaae"
+                    "fontCharacter": "\\eaaf"
                 }
             },
             "dbcode-venn": {
                 "description": "Venn",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eaaf"
+                    "fontCharacter": "\\eab0"
                 }
             },
             "dbcode-view": {
                 "description": "View",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eab0"
+                    "fontCharacter": "\\eab1"
                 }
             },
             "dbcode-vm": {
                 "description": "Vm",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eab1"
+                    "fontCharacter": "\\eab2"
                 }
             },
             "dbcode-void": {
                 "description": "Void",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eab2"
+                    "fontCharacter": "\\eab3"
                 }
             },
             "dbcode-watched-folder": {
                 "description": "Watched Folder",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eab3"
+                    "fontCharacter": "\\eab4"
                 }
             },
             "dbcode-xml": {
                 "description": "Xml",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eab4"
+                    "fontCharacter": "\\eab5"
                 }
             },
             "dbcode-yugabyte": {
                 "description": "Yugabyte",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eab5"
+                    "fontCharacter": "\\eab6"
                 }
             }
         },

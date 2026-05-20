@@ -370,5 +370,7 @@
   "MCP HTTP Server Allow External Connections": "Povolit externí připojení k HTTP serveru MCP",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers. Requires OAuth authorization. When disabled, the HTTP server only accepts connections from localhost.": "Povoluje připojení k HTTP serveru MCP z jiných počítačů nebo Dev Containers. Vyžaduje autorizaci OAuth. Po vypnutí server HTTP přijímá pouze připojení z localhostu.",
   "MCP HTTP Server OAuth Token Expiry": "Vypršení platnosti tokenů OAuth HTTP serveru MCP",
-  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "Počet dní před vypršením platnosti přístupových tokenů OAuth na HTTP serveru MCP. Zvýšením snížíte frekvenci opakovaného ověřování klientů MCP. Výchozí hodnota je 1 den."
+  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "Počet dní před vypršením platnosti přístupových tokenů OAuth na HTTP serveru MCP. Zvýšením snížíte frekvenci opakovaného ověřování klientů MCP. Výchozí hodnota je 1 den.",
+  "Set Embedding Model": "Nastavit model vkládání",
+  "Copy Qualified Name": "Kopírovat kvalifikovaný název"
 }

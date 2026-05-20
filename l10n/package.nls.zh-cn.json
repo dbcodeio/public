@@ -370,5 +370,7 @@
   "MCP HTTP Server Allow External Connections": "MCP HTTP 服务器允许外部连接",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers. Requires OAuth authorization. When disabled, the HTTP server only accepts connections from localhost.": "允许从其他计算机或 Dev Containers 连接到 HTTP MCP 服务器。需要 OAuth 授权。禁用时，HTTP 服务器仅接受来自 localhost 的连接。",
   "MCP HTTP Server OAuth Token Expiry": "MCP HTTP 服务器 OAuth 令牌过期",
-  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "HTTP MCP 服务器上 OAuth 访问令牌的过期天数。增大此值可减少 MCP 客户端重新验证的频率。默认值为 1 天。"
+  "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "HTTP MCP 服务器上 OAuth 访问令牌的过期天数。增大此值可减少 MCP 客户端重新验证的频率。默认值为 1 天。",
+  "Set Embedding Model": "设置嵌入模型",
+  "Copy Qualified Name": "复制限定名称"
 }
