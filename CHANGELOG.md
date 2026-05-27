@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 1.32.1 - 2026-05-26
+
+### Changed
+
+- ChromaDB: Preview released. 
+- Milvus: Preview released. #1122
+- Results: Multi-statement scripts now show a Run tab with live progress, per-statement detail, and an error summary, instead of one tab per statement. DML/DDL statements flow into the Run tab and output log; SELECTs still get their own tabs, with extra results stacked into an overflow, configurable via the setting `dbcode.stackThreshold`. #967
+
+
+### Fixed
+
+- Notebooks/DuckDB: Stopping a running cell now actually interrupts the query. #1105
+- DuckDB/Firebird/Pinot: autocomplete now works for these connections.
+- PostgreSQL: Editor autocomplete no longer silently stops working on SQL containing operators (`<<`, `>>`, `<>`, `>=`, `<=`), dollar-quoted strings, or block comments. 
+- PostgreSQL: Typing `EXPLAIN ...` directly in the editor now works. #1107
+- SQL Server: Script CREATE (DDL) for tables now generates a best-effort CREATE TABLE script (columns, PK/UQ/FK/CHECK constraints, indexes with INCLUDE/filter, extended properties, temporal/partition/graph table clauses, Synapse DISTRIBUTION). Output includes a header listing what is and isn't covered. Previously errored with "MS SQL does not have table in getObject". #866 #1016 #1084
+
+
 ## 1.32.0 - 2026-05-20
 
 ### Changed
