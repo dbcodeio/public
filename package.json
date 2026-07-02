@@ -2,9 +2,9 @@
     "name": "dbcode",
     "displayName": "DBCode - SQL & Database Client for Postgres, MySQL, MongoDB & more",
     "pricing": "Free",
-    "description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 50+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
+    "description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 80+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
     "publisher": "dbcode",
-    "version": "1.35.6",
+    "version": "1.35.7",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -27,6 +27,7 @@
         "sql",
         "sql client",
         "database client",
+        "sql editor",
         "postgres",
         "postgresql",
         "mysql",
@@ -42,17 +43,16 @@
         "duckdb",
         "clickhouse",
         "redis",
-        "cassandra",
         "dbeaver alternative",
         "datagrip alternative",
         "tableplus alternative",
         "erd",
-        "schema",
-        "query",
         "notebook",
         "copilot",
         "mcp",
-        "ai"
+        "ai",
+        "cursor",
+        "windsurf"
     ],
     "categories": [
         "Other",
@@ -6402,7 +6402,6 @@
         "test:integration": "NODE_OPTIONS='--max-old-space-size=8192' vitest run --project integration",
         "esbuild": "tsx ./scripts/build.ts",
         "prepare": "husky install",
-        "postinstall": "patch-package",
         "version": "tsx ./scripts/changelog.ts && git add CHANGELOG.md changelog.d",
         "check-types:file": "node ./scripts/check-types-file.js",
         "check-types": "node ./scripts/check-types.js",
@@ -6472,7 +6471,6 @@
         "oci-objectstorage": "^2.103.0",
         "oci-secrets": "^2.103.0",
         "openai": "^4.86.1",
-        "patch-package": "^8.0.0",
         "source-map": "^0.7.4",
         "svgtofont": "^6.3.1",
         "teradatasql": "20.0.61",
@@ -6629,7 +6627,6 @@
             "protobufjs": ">=7.6.3 <8",
             "hono": ">=4.12.25 <5",
             "thrift": ">=0.23.0 <0.24",
-            "tmp": ">=0.2.7 <0.3",
             "serialize-javascript": ">=7.0.5 <8",
             "diff": ">=8.0.3 <9",
             "brace-expansion@5": ">=5.0.6 <6",
@@ -6653,10 +6650,25 @@
             "ibm_db",
             "lz4",
             "oracledb",
-            "patch-package",
             "snowflake-sdk",
             "ssh2",
             "ttf2woff2"
-        ]
+        ],
+        "patchedDependencies": {
+            "@databricks/sql@1.13.0": "patches/@databricks__sql@1.13.0.patch",
+            "@influxdata/influxdb3-client@1.4.0": "patches/@influxdata__influxdb3-client@1.4.0.patch",
+            "@redis/client@1.6.1": "patches/@redis__client@1.6.1.patch",
+            "ag-grid-enterprise@34.3.1": "patches/ag-grid-enterprise@34.3.1.patch",
+            "apache-arrow@19.0.1": "patches/apache-arrow@19.0.1.patch",
+            "ibm_db@4.0.1": "patches/ibm_db@4.0.1.patch",
+            "mariadb@3.4.2": "patches/mariadb@3.4.2.patch",
+            "monaco-editor@0.52.2": "patches/monaco-editor@0.52.2.patch",
+            "node-firebird@2.3.0": "patches/node-firebird@2.3.0.patch",
+            "oracledb@6.10.0": "patches/oracledb@6.10.0.patch",
+            "postgres@3.4.7": "patches/postgres@3.4.7.patch",
+            "snowflake-sdk@2.3.4": "patches/snowflake-sdk@2.3.4.patch",
+            "sql-formatter@15.7.3": "patches/sql-formatter@15.7.3.patch",
+            "tedious@18.6.1": "patches/tedious@18.6.1.patch"
+        }
     }
 }

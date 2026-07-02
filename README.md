@@ -9,7 +9,7 @@
 
 <p align="center"><strong>A modern database client for VS Code, Cursor, and Windsurf - with first-class Copilot and MCP integration.</strong></p>
 
-<p align="center">Browse schemas, edit data, visualize queries, and manage 50+ databases without leaving your editor. SQL Notebooks, auto-generated ER diagrams, and secure report sharing.</p>
+<p align="center">Write SQL with IntelliSense, edit table data in place, and manage 80+ databases without leaving your editor. SQL Notebooks, auto-generated ER diagrams, charts, and secure report sharing built in.</p>
 
 <p align="center"><sub>Available on the <a href="https://marketplace.visualstudio.com/items?itemName=DBCode.dbcode">VS Code Marketplace</a> and <a href="https://open-vsx.org/extension/DBCode/dbcode">OpenVSX</a> (for Cursor, Windsurf, and other VS Code forks).</sub></p>
 
@@ -35,24 +35,33 @@
 </p>
 
 <p align="center">
-	<a href="https://dbcode.io">50+ supported databases, warehouses, lakehouses, and file formats</a>
+	<a href="https://dbcode.io">80+ supported databases, warehouses, lakehouses, and file formats</a>
 </p>
+
+- **SQL databases**: PostgreSQL, MySQL, SQL Server, SQLite, MariaDB, Oracle, Azure SQL, IBM DB2, IBM i (AS/400), CockroachDB, TiDB, TimescaleDB, YugabyteDB, SingleStore, H2, Firebird, Apache Derby, Microsoft Access, SAP ASE (Sybase), Dameng, KingbaseES, libSQL, PGlite, Cloudflare D1, Google Cloud Spanner
+- **Warehouses & analytics**: Snowflake, BigQuery, Redshift, Databricks, ClickHouse, DuckDB, MotherDuck, Amazon Athena, Azure Synapse, Microsoft Fabric, Teradata, Vertica, Netezza, Exasol, Greenplum, Apache Doris, StarRocks, Apache Druid, Apache Pinot, Apache Hive, Apache Impala, Trino, Cube
+- **Lakehouses**: Apache Iceberg, DuckLake
+- **NoSQL & document**: MongoDB, Amazon DocumentDB, Apache CouchDB, Couchbase, RavenDB, Firebase, DynamoDB, Cassandra, ScyllaDB, Aerospike, Elasticsearch, OpenSearch, SurrealDB, TypeDB, Redis, Memcached
+- **Graph & vector**: Neo4j, Memgraph, Pinecone, Chroma, Milvus, Qdrant, Weaviate, LanceDB
+- **Streaming & time series**: InfluxDB, QuestDB, RisingWave, Apache Kafka, RabbitMQ
+- **SaaS & app platforms**: Salesforce, Microsoft Dataverse, Bunny
+- **Files**: CSV, Excel, Parquet, Avro
 
 ## Data Viewing & Editing
 
 <img width="100%" alt="VS Code database GUI - filter, sort, group, and edit data" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/editing.gif">
 
 - Filter, sort, and group data with a few clicks
-- Edit rows directly — insert, update, delete without writing SQL
+- Edit rows directly: insert, update, delete without writing SQL
 - Changes verified before execution so you don't have a production horror story
 
-## Copilot Integration
+## AI & Copilot Integration
 
 <img width="100%" alt="GitHub Copilot database queries - natural language to SQL" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/copilot.gif">
 
 Query your data with natural language. Ask schema questions, generate queries, create tables.
 
-## Entity Relationship Diagrams
+## Entity Relationship Diagrams (ERD)
 
 <img width="100%" alt="Auto-generated ER diagrams from database schema" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/erd.gif">
 
@@ -64,13 +73,11 @@ Auto-generated diagrams from your live database schema. Export as PDF, HTML or P
 
 Click any foreign key value to jump to the referenced row. Navigate relationships without writing JOINs.
 
-## SQL Editor
+## SQL Editor with IntelliSense & Autocomplete
 
 <img width="100%" alt="VS Code SQL editor with intellisense and autocomplete" src="https://github.com/dbcodeio/public/assets/1918994/650632b0-da26-4b98-9f66-5138a7db1e7e">
 
 Full SQL editor with database-specific syntax highlighting, autocomplete, and inline signature help.
-
-## SQL Intellisense
 
 <img width="100%" alt="SQL autocomplete with table and column intellisense" src="https://github.com/dbcodeio/public/assets/1918994/1efd912b-7750-47d0-a2e9-7aaaff0b0c52">
 
@@ -83,7 +90,7 @@ Full SQL editor with database-specific syntax highlighting, autocomplete, and in
 
 Share query results as encrypted reports. No credentials or raw data exposed.
 
-## Database Notebooks
+## SQL Notebooks
 
 <img width="100%" alt="VS Code database notebooks - SQL and Python" src="https://github.com/dbcodeio/public/assets/1918994/6295585e-f13f-46b7-98e1-80e850485db1">
 
@@ -109,7 +116,7 @@ Compare data between tables, databases, or connections. See differences side-by-
 
 Automatically discovers database connections from your project's `.env`, `application.properties`, `database.yml`, `settings.py`, and other config files. Supports Laravel, Django, Spring Boot, Node.js, Rails, and more. [Learn more](https://dbcode.io/docs/connections/zero-config)
 
-## Execution Plans
+## Query Execution Plans (EXPLAIN)
 
 Visualize EXPLAIN and ANALYZE output as interactive node graphs. Identify slow operations, see row estimates vs actuals, and drill into cost breakdowns. Supported for PostgreSQL, MySQL, SQL Server, and more. [Learn more](https://dbcode.io/docs/query/execution-plans)
 
@@ -146,11 +153,16 @@ Visualize EXPLAIN and ANALYZE output as interactive node graphs. Identify slow o
 
 [All Features](https://dbcode.io/features/) · [Documentation](https://dbcode.io/docs)
 
-## Coming from another tool?
+## Works with VS Code, Cursor & Windsurf
 
-- **From DBeaver?** Same multi-database coverage, with native AI built in - inside VS Code, Cursor, or Windsurf.
-- **From DataGrip?** Power-user database tooling without leaving your editor or paying JetBrains pricing.
-- **From TablePlus?** Cross-platform, no separate app to alt-tab to, integrated with your AI assistant.
+DBCode runs anywhere VS Code does. Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=DBCode.dbcode), or from [OpenVSX](https://open-vsx.org/extension/DBCode/dbcode) for Cursor, Windsurf, VSCodium, and other VS Code forks. Your connections, saved queries, and AI integration work the same in every editor.
+
+## Coming from DBeaver, DataGrip, TablePlus, or SQLTools?
+
+- **From DBeaver?** The same multi-database coverage - Postgres, MySQL, SQL Server, Oracle, and 80+ more - with native AI built in, and no separate Java app to run.
+- **From DataGrip?** Power-user features like execution plans, data compare, and stored procedure editing, without leaving your editor or paying JetBrains pricing.
+- **From TablePlus?** Cross-platform and integrated: no separate app to alt-tab to, with Copilot and MCP built in.
+- **From SQLTools?** Everything you use it for, plus inline data editing, ER diagrams, NoSQL support, and native AI - one extension, no per-database driver installs.
 
 [See the full comparison →](https://dbcode.io/compare)
 

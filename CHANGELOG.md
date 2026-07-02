@@ -1,8 +1,18 @@
 # CHANGELOG
 
-## 1.35.6 - 2026-07-01
+## 1.35.7 - 2026-07-02
 
-## 1.35.5 - 2026-07-01
+### Changed
+
+- Authentication Profiles: Restyled the editor to match the connection form.
+- Explore: Clicking a field now charts it instantly (over time when a date column exists); measures, grouping and split-by live in one composer.
+- Tunnels: Restyled the editor; it now opens inline over the connection form.
+
+### Fixed
+
+- Drivers: PostgreSQL tools, MongoDB tools, and SqlPackage no longer re-download after every extension or VS Code update. #1150
+
+## 1.35.6 - 2026-07-01
 
 ### Changed
 
