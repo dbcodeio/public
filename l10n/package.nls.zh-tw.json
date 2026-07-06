@@ -386,5 +386,6 @@
   "Glob matched against the file's workspace-relative path, e.g. `85/mc85/**`.": "與檔案工作區相對路徑比對的 Glob，例如 `85/mc85/**`。",
   "Set Folder Connection with DBCode": "使用 DBCode 設定資料夾連線",
   "The connection. Use the Set Folder Connection with DBCode command to fill this in.": "連線。使用「使用 DBCode 設定資料夾連線」命令來填寫此項。",
-  "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "設定資料夾的預設連線和資料庫。DBCode 將其用於資料夾內開啟的 SQL 檔案，並支援子資料夾繼承。"
+  "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "設定資料夾的預設連線和資料庫。DBCode 將其用於資料夾內開啟的 SQL 檔案，並支援子資料夾繼承。",
+  "Cancel Connection Attempt": "取消連線嘗試"
 }

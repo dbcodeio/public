@@ -38,15 +38,6 @@
 	<a href="https://dbcode.io">80+ supported databases, warehouses, lakehouses, and file formats</a>
 </p>
 
-- **SQL databases**: PostgreSQL, MySQL, SQL Server, SQLite, MariaDB, Oracle, Azure SQL, IBM DB2, IBM i (AS/400), CockroachDB, TiDB, TimescaleDB, YugabyteDB, SingleStore, H2, Firebird, Apache Derby, Microsoft Access, SAP ASE (Sybase), Dameng, KingbaseES, libSQL, PGlite, Cloudflare D1, Google Cloud Spanner
-- **Warehouses & analytics**: Snowflake, BigQuery, Redshift, Databricks, ClickHouse, DuckDB, MotherDuck, Amazon Athena, Azure Synapse, Microsoft Fabric, Teradata, Vertica, Netezza, Exasol, Greenplum, Apache Doris, StarRocks, Apache Druid, Apache Pinot, Apache Hive, Apache Impala, Trino, Cube
-- **Lakehouses**: Apache Iceberg, DuckLake
-- **NoSQL & document**: MongoDB, Amazon DocumentDB, Apache CouchDB, Couchbase, RavenDB, Firebase, DynamoDB, Cassandra, ScyllaDB, Aerospike, Elasticsearch, OpenSearch, SurrealDB, TypeDB, Redis, Memcached
-- **Graph & vector**: Neo4j, Memgraph, Pinecone, Chroma, Milvus, Qdrant, Weaviate, LanceDB
-- **Streaming & time series**: InfluxDB, QuestDB, RisingWave, Apache Kafka, RabbitMQ
-- **SaaS & app platforms**: Salesforce, Microsoft Dataverse, Bunny
-- **Files**: CSV, Excel, Parquet, Avro
-
 ## Data Viewing & Editing
 
 <img width="100%" alt="VS Code database GUI - filter, sort, group, and edit data" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/editing.gif">
@@ -152,6 +143,17 @@ Visualize EXPLAIN and ANALYZE output as interactive node graphs. Identify slow o
 - **Localization**: Available in all VS Code supported languages
 
 [All Features](https://dbcode.io/features/) · [Documentation](https://dbcode.io/docs)
+
+## Supported Databases
+
+- **SQL databases**: PostgreSQL, MySQL, SQL Server, SQLite, MariaDB, Oracle, Azure SQL, IBM DB2, IBM i (AS/400), CockroachDB, TiDB, TimescaleDB, YugabyteDB, SingleStore, H2, Firebird, Apache Derby, Microsoft Access, SAP ASE (Sybase), Dameng, KingbaseES, libSQL, PGlite, Cloudflare D1, Google Cloud Spanner
+- **Warehouses & analytics**: Snowflake, BigQuery, Redshift, Databricks, ClickHouse, DuckDB, MotherDuck, Amazon Athena, Azure Synapse, Microsoft Fabric, Teradata, Vertica, Netezza, Exasol, Greenplum, Apache Doris, StarRocks, Apache Druid, Apache Pinot, Apache Hive, Apache Impala, Trino, Cube
+- **Lakehouses**: Apache Iceberg, DuckLake
+- **NoSQL & document**: MongoDB, Amazon DocumentDB, Apache CouchDB, Couchbase, RavenDB, Firebase, DynamoDB, Cassandra, ScyllaDB, Aerospike, Elasticsearch, OpenSearch, SurrealDB, TypeDB, Redis, Memcached
+- **Graph & vector**: Neo4j, Memgraph, Pinecone, Chroma, Milvus, Qdrant, Weaviate, LanceDB
+- **Streaming & time series**: InfluxDB, QuestDB, RisingWave, Apache Kafka, RabbitMQ
+- **SaaS & app platforms**: Salesforce, Microsoft Dataverse, Bunny
+- **Files**: CSV, Excel, Parquet, Avro
 
 ## Works with VS Code, Cursor & Windsurf
 

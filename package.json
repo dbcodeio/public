@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 80+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
     "publisher": "dbcode",
-    "version": "1.35.7",
+    "version": "1.35.8",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -878,6 +878,12 @@
                 "title": "%Disconnect%",
                 "category": "DBCode",
                 "icon": "$(debug-disconnect)"
+            },
+            {
+                "command": "dbcode.connections.cancelConnect",
+                "title": "%Cancel Connection Attempt%",
+                "category": "DBCode",
+                "icon": "$(stop-circle)"
             },
             {
                 "command": "dbcode.connections.treeRefresh",
@@ -2203,18 +2209,28 @@
                     "group": "1connected@2"
                 },
                 {
+                    "command": "dbcode.connections.cancelConnect",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~cancelconnect~/",
+                    "group": "1connected@2"
+                },
+                {
                     "command": "dbcode.server.monitor",
                     "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~monitoring~/",
                     "group": "1connected@3"
                 },
                 {
                     "command": "dbcode.connections.refresh",
-                    "when": "view == dbcode.connections.view && viewItem =~ /^connection-/",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && !(viewItem =~ /~cancelconnect~/)",
                     "group": "1connected@1"
                 },
                 {
                     "command": "dbcode.connections.disconnect",
                     "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~disconnect~/",
+                    "group": "inline@1"
+                },
+                {
+                    "command": "dbcode.connections.cancelConnect",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~cancelconnect~/",
                     "group": "inline@1"
                 },
                 {
@@ -5924,7 +5940,35 @@
                                         "iceberg",
                                         "fabric",
                                         "bunny",
-                                        "memcached"
+                                        "memcached",
+                                        "aerospike",
+                                        "documentdb",
+                                        "valkey",
+                                        "opensearch",
+                                        "vertica",
+                                        "derby",
+                                        "h2",
+                                        "ibmi",
+                                        "pglite",
+                                        "pinot",
+                                        "couchbase",
+                                        "couchdb",
+                                        "druid",
+                                        "surrealdb",
+                                        "sybase",
+                                        "kafka",
+                                        "rabbitmq",
+                                        "qdrant",
+                                        "chromadb",
+                                        "weaviate",
+                                        "milvus",
+                                        "lancedb",
+                                        "pinecone",
+                                        "exasol",
+                                        "firebird",
+                                        "dameng",
+                                        "teradata",
+                                        "typedb"
                                     ]
                                 },
                                 "connectionTimeout": {
@@ -6668,7 +6712,8 @@
             "postgres@3.4.7": "patches/postgres@3.4.7.patch",
             "snowflake-sdk@2.3.4": "patches/snowflake-sdk@2.3.4.patch",
             "sql-formatter@15.7.3": "patches/sql-formatter@15.7.3.patch",
-            "tedious@18.6.1": "patches/tedious@18.6.1.patch"
+            "tedious@18.6.1": "patches/tedious@18.6.1.patch",
+            "vscode-messenger@0.4.5": "patches/vscode-messenger@0.4.5.patch"
         }
     }
 }

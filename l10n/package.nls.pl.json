@@ -386,5 +386,6 @@
   "Glob matched against the file's workspace-relative path, e.g. `85/mc85/**`.": "Glob dopasowywany do ścieżki pliku względem obszaru roboczego, np. `85/mc85/**`.",
   "Set Folder Connection with DBCode": "Ustaw połączenie folderu z DBCode",
   "The connection. Use the Set Folder Connection with DBCode command to fill this in.": "Połączenie. Użyj polecenia Ustaw połączenie folderu z DBCode, aby je uzupełnić.",
-  "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "Ustaw domyślne połączenie i bazę danych folderu. DBCode używa ich dla plików SQL otwartych w folderze, z dziedziczeniem podfolderów."
+  "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "Ustaw domyślne połączenie i bazę danych folderu. DBCode używa ich dla plików SQL otwartych w folderze, z dziedziczeniem podfolderów.",
+  "Cancel Connection Attempt": "Anuluj próbę połączenia"
 }

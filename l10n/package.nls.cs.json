@@ -386,5 +386,6 @@
   "Glob matched against the file's workspace-relative path, e.g. `85/mc85/**`.": "Glob porovnávaný s cestou souboru relativní k pracovnímu prostoru, např. `85/mc85/**`.",
   "Set Folder Connection with DBCode": "Nastavit připojení složky pomocí DBCode",
   "The connection. Use the Set Folder Connection with DBCode command to fill this in.": "Připojení. K jeho vyplnění použijte příkaz Nastavit připojení složky pomocí DBCode.",
-  "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "Nastavte výchozí připojení a databázi složky. DBCode je použije pro SQL soubory otevřené ve složce, s dědičností do podsložek."
+  "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "Nastavte výchozí připojení a databázi složky. DBCode je použije pro SQL soubory otevřené ve složce, s dědičností do podsložek.",
+  "Cancel Connection Attempt": "Zrušit pokus o připojení"
 }

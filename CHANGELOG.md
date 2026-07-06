@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.35.8 - 2026-07-06
+
+### Changed
+
+- Connections: Added a cancel action while a connection is connecting. #1151
+- Explore: Added previous-period and previous-year comparison to time charts.
+
+### Fixed
+
+- Connections: Fixed connections getting stuck connecting, needing a reload to recover. #1151
+- Kafka: Apply SASL and SSL settings when connecting. #1152
+
 ## 1.35.7 - 2026-07-02
 
 ### Changed

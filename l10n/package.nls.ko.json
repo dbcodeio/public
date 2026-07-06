@@ -386,5 +386,6 @@
   "Glob matched against the file's workspace-relative path, e.g. `85/mc85/**`.": "파일의 작업 영역 상대 경로와 일치하는 Glob(예: `85/mc85/**`).",
   "Set Folder Connection with DBCode": "DBCode로 폴더 연결 설정",
   "The connection. Use the Set Folder Connection with DBCode command to fill this in.": "연결입니다. 'DBCode로 폴더 연결 설정' 명령을 사용하여 입력하세요.",
-  "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "폴더의 기본 연결 및 데이터베이스를 설정합니다. DBCode는 폴더 내에서 열린 SQL 파일에 이를 사용하며, 하위 폴더에 상속됩니다."
+  "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "폴더의 기본 연결 및 데이터베이스를 설정합니다. DBCode는 폴더 내에서 열린 SQL 파일에 이를 사용하며, 하위 폴더에 상속됩니다.",
+  "Cancel Connection Attempt": "연결 시도 취소"
 }

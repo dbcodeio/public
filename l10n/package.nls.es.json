@@ -386,5 +386,6 @@
   "Glob matched against the file's workspace-relative path, e.g. `85/mc85/**`.": "Glob comparado con la ruta relativa al espacio de trabajo del archivo, p. ej. `85/mc85/**`.",
   "Set Folder Connection with DBCode": "Establecer conexión de carpeta con DBCode",
   "The connection. Use the Set Folder Connection with DBCode command to fill this in.": "La conexión. Usa el comando Establecer conexión de carpeta con DBCode para completarla.",
-  "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "Establece la conexión y base de datos predeterminadas de una carpeta. DBCode las usa para archivos SQL abiertos en la carpeta, con herencia de subcarpetas."
+  "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "Establece la conexión y base de datos predeterminadas de una carpeta. DBCode las usa para archivos SQL abiertos en la carpeta, con herencia de subcarpetas.",
+  "Cancel Connection Attempt": "Cancelar intento de conexión"
 }
