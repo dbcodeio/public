@@ -4476,5 +4476,18 @@
   "Pick a grain to trend over {0}": "選擇粒度以檢視 {0} 內的趨勢",
   "at": "於",
   "vs": "vs",
-  "First {0} rows only - trends may be misleading": "僅顯示前 {0} 列 - 趨勢可能不準確"
+  "First {0} rows only - trends may be misleading": "僅顯示前 {0} 列 - 趨勢可能不準確",
+  "Open LanceDB data from a local folder.": "從本機資料夾開啟 LanceDB 資料。",
+  "S3": "S3",
+  "Open LanceDB data from Amazon S3 or an S3-compatible store.": "從 Amazon S3 或相容 S3 的儲存體開啟 LanceDB 資料。",
+  "S3 URI": "S3 URI",
+  "S3 Endpoint": "S3 端點",
+  "Optional endpoint for S3-compatible stores such as MinIO, R2, or Tigris.": "適用於 MinIO、R2 或 Tigris 等相容 S3 儲存體的選用端點。",
+  "S3 Region": "S3 區域",
+  "Optional region override. Most S3-compatible stores require a region value.": "選用的區域覆寫。大多數相容 S3 的儲存體都需要區域值。",
+  "Allow HTTP": "允許 HTTP",
+  "Allow non-TLS S3 endpoints, usually only for local development.": "允許非 TLS 的 S3 端點，通常僅用於本機開發。",
+  "LanceDB requires an S3 URI.": "LanceDB 需要 S3 URI。",
+  "LanceDB S3 storage requires an AWS authentication profile.": "LanceDB S3 儲存體需要 AWS 驗證設定檔。",
+  "pdfExport": "匯出 PDF"
 }

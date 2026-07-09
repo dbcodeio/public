@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.35.9 - 2026-07-09
+
+### Changed
+
+- Explore: Drag across a time chart to zoom into a date range; double-click to reset.
+- LanceDB: Added S3 and S3-compatible database URI connections.
+
+### Fixed
+
+- SQL Server: Fixed DECLARE variables and temp tables being split into separate batches at each semicolon on Fabric and Synapse. #1158
+- Impala: Fixed introspection failing with "Restarting of fetch requires enabling of query result caching". #1162
+
 ## 1.35.8 - 2026-07-06
 
 ### Changed

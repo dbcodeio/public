@@ -4476,5 +4476,18 @@
   "Pick a grain to trend over {0}": "{0} 동안의 추세를 보려면 세분화 수준을 선택하세요",
   "at": "시점",
   "vs": "vs",
-  "First {0} rows only - trends may be misleading": "처음 {0}개 행만 표시 - 추세가 부정확할 수 있음"
+  "First {0} rows only - trends may be misleading": "처음 {0}개 행만 표시 - 추세가 부정확할 수 있음",
+  "Open LanceDB data from a local folder.": "로컬 폴더에서 LanceDB 데이터를 엽니다.",
+  "S3": "S3",
+  "Open LanceDB data from Amazon S3 or an S3-compatible store.": "Amazon S3 또는 S3 호환 스토리지에서 LanceDB 데이터를 엽니다.",
+  "S3 URI": "S3 URI",
+  "S3 Endpoint": "S3 엔드포인트",
+  "Optional endpoint for S3-compatible stores such as MinIO, R2, or Tigris.": "MinIO, R2, Tigris와 같은 S3 호환 스토리지용 선택적 엔드포인트입니다.",
+  "S3 Region": "S3 리전",
+  "Optional region override. Most S3-compatible stores require a region value.": "선택적 리전 재정의입니다. 대부분의 S3 호환 스토리지는 리전 값이 필요합니다.",
+  "Allow HTTP": "HTTP 허용",
+  "Allow non-TLS S3 endpoints, usually only for local development.": "비 TLS S3 엔드포인트를 허용합니다. 일반적으로 로컬 개발에서만 사용합니다.",
+  "LanceDB requires an S3 URI.": "LanceDB에는 S3 URI가 필요합니다.",
+  "LanceDB S3 storage requires an AWS authentication profile.": "LanceDB S3 스토리지에는 AWS 인증 프로필이 필요합니다.",
+  "pdfExport": "PDF 내보내기"
 }

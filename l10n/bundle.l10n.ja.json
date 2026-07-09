@@ -4479,5 +4479,18 @@
   "Pick a grain to trend over {0}": "{0}の推移を見るには粒度を選択してください",
   "at": "時点",
   "vs": "vs",
-  "First {0} rows only - trends may be misleading": "最初の{0}行のみ - 傾向が誤解を招く可能性があります"
+  "First {0} rows only - trends may be misleading": "最初の{0}行のみ - 傾向が誤解を招く可能性があります",
+  "Open LanceDB data from a local folder.": "ローカルフォルダーから LanceDB データを開きます。",
+  "S3": "S3",
+  "Open LanceDB data from Amazon S3 or an S3-compatible store.": "Amazon S3 または S3 互換ストレージから LanceDB データを開きます。",
+  "S3 URI": "S3 URI",
+  "S3 Endpoint": "S3 エンドポイント",
+  "Optional endpoint for S3-compatible stores such as MinIO, R2, or Tigris.": "MinIO、R2、Tigris などの S3 互換ストレージ用のオプションのエンドポイント。",
+  "S3 Region": "S3 リージョン",
+  "Optional region override. Most S3-compatible stores require a region value.": "オプションのリージョン上書き。ほとんどの S3 互換ストレージではリージョン値が必要です。",
+  "Allow HTTP": "HTTP を許可",
+  "Allow non-TLS S3 endpoints, usually only for local development.": "非 TLS の S3 エンドポイントを許可します。通常はローカル開発でのみ使用します。",
+  "LanceDB requires an S3 URI.": "LanceDB には S3 URI が必要です。",
+  "LanceDB S3 storage requires an AWS authentication profile.": "LanceDB の S3 ストレージには AWS 認証プロファイルが必要です。",
+  "pdfExport": "PDF エクスポート"
 }

@@ -4476,5 +4476,18 @@
   "Pick a grain to trend over {0}": "Scegli una granularità per visualizzare l'andamento su {0}",
   "at": "a",
   "vs": "vs",
-  "First {0} rows only - trends may be misleading": "Solo le prime {0} righe - le tendenze potrebbero essere fuorvianti"
+  "First {0} rows only - trends may be misleading": "Solo le prime {0} righe - le tendenze potrebbero essere fuorvianti",
+  "Open LanceDB data from a local folder.": "Apri i dati LanceDB da una cartella locale.",
+  "S3": "S3",
+  "Open LanceDB data from Amazon S3 or an S3-compatible store.": "Apri i dati LanceDB da Amazon S3 o da uno storage compatibile con S3.",
+  "S3 URI": "URI S3",
+  "S3 Endpoint": "Endpoint S3",
+  "Optional endpoint for S3-compatible stores such as MinIO, R2, or Tigris.": "Endpoint facoltativo per storage compatibili con S3 come MinIO, R2 o Tigris.",
+  "S3 Region": "Regione S3",
+  "Optional region override. Most S3-compatible stores require a region value.": "Override facoltativo della regione. La maggior parte degli storage compatibili con S3 richiede una regione.",
+  "Allow HTTP": "Consenti HTTP",
+  "Allow non-TLS S3 endpoints, usually only for local development.": "Consenti endpoint S3 non TLS, generalmente solo per lo sviluppo locale.",
+  "LanceDB requires an S3 URI.": "LanceDB richiede un URI S3.",
+  "LanceDB S3 storage requires an AWS authentication profile.": "L'archiviazione S3 di LanceDB richiede un profilo di autenticazione AWS.",
+  "pdfExport": "Esporta PDF"
 }

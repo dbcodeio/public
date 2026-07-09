@@ -4476,5 +4476,18 @@
   "Pick a grain to trend over {0}": "Vyberte granularitu pro zobrazení trendu za {0}",
   "at": "v",
   "vs": "vs",
-  "First {0} rows only - trends may be misleading": "Pouze prvních {0} řádků - trendy mohou být zavádějící"
+  "First {0} rows only - trends may be misleading": "Pouze prvních {0} řádků - trendy mohou být zavádějící",
+  "Open LanceDB data from a local folder.": "Otevřít data LanceDB z místní složky.",
+  "S3": "S3",
+  "Open LanceDB data from Amazon S3 or an S3-compatible store.": "Otevřít data LanceDB z Amazon S3 nebo úložiště kompatibilního s S3.",
+  "S3 URI": "S3 URI",
+  "S3 Endpoint": "Koncový bod S3",
+  "Optional endpoint for S3-compatible stores such as MinIO, R2, or Tigris.": "Volitelný koncový bod pro úložiště kompatibilní s S3, jako je MinIO, R2 nebo Tigris.",
+  "S3 Region": "Oblast S3",
+  "Optional region override. Most S3-compatible stores require a region value.": "Volitelné přepsání oblasti. Většina úložišť kompatibilních s S3 vyžaduje hodnotu oblasti.",
+  "Allow HTTP": "Povolit HTTP",
+  "Allow non-TLS S3 endpoints, usually only for local development.": "Povolit koncové body S3 bez TLS, obvykle jen pro místní vývoj.",
+  "LanceDB requires an S3 URI.": "LanceDB vyžaduje S3 URI.",
+  "LanceDB S3 storage requires an AWS authentication profile.": "Úložiště S3 v LanceDB vyžaduje ověřovací profil AWS.",
+  "pdfExport": "Export do PDF"
 }

@@ -4476,5 +4476,18 @@
   "Pick a grain to trend over {0}": "Выберите детализацию, чтобы увидеть тренд за {0}",
   "at": "в",
   "vs": "vs",
-  "First {0} rows only - trends may be misleading": "Только первые {0} строк - тренды могут быть неточными"
+  "First {0} rows only - trends may be misleading": "Только первые {0} строк - тренды могут быть неточными",
+  "Open LanceDB data from a local folder.": "Открыть данные LanceDB из локальной папки.",
+  "S3": "S3",
+  "Open LanceDB data from Amazon S3 or an S3-compatible store.": "Открыть данные LanceDB из Amazon S3 или S3-совместимого хранилища.",
+  "S3 URI": "URI S3",
+  "S3 Endpoint": "Конечная точка S3",
+  "Optional endpoint for S3-compatible stores such as MinIO, R2, or Tigris.": "Необязательная конечная точка для S3-совместимых хранилищ, таких как MinIO, R2 или Tigris.",
+  "S3 Region": "Регион S3",
+  "Optional region override. Most S3-compatible stores require a region value.": "Необязательное переопределение региона. Большинству S3-совместимых хранилищ требуется значение региона.",
+  "Allow HTTP": "Разрешить HTTP",
+  "Allow non-TLS S3 endpoints, usually only for local development.": "Разрешить конечные точки S3 без TLS, обычно только для локальной разработки.",
+  "LanceDB requires an S3 URI.": "LanceDB требует URI S3.",
+  "LanceDB S3 storage requires an AWS authentication profile.": "Хранилище S3 в LanceDB требует профиль аутентификации AWS.",
+  "pdfExport": "Экспорт в PDF"
 }

@@ -4476,5 +4476,18 @@
   "Pick a grain to trend over {0}": "Wählen Sie eine Granularität für den Trend über {0}",
   "at": "bei",
   "vs": "vs.",
-  "First {0} rows only - trends may be misleading": "Nur die ersten {0} Zeilen - Trends können irreführend sein"
+  "First {0} rows only - trends may be misleading": "Nur die ersten {0} Zeilen - Trends können irreführend sein",
+  "Open LanceDB data from a local folder.": "LanceDB-Daten aus einem lokalen Ordner öffnen.",
+  "S3": "S3",
+  "Open LanceDB data from Amazon S3 or an S3-compatible store.": "LanceDB-Daten aus Amazon S3 oder einem S3-kompatiblen Speicher öffnen.",
+  "S3 URI": "S3-URI",
+  "S3 Endpoint": "S3-Endpunkt",
+  "Optional endpoint for S3-compatible stores such as MinIO, R2, or Tigris.": "Optionaler Endpunkt für S3-kompatible Speicher wie MinIO, R2 oder Tigris.",
+  "S3 Region": "S3-Region",
+  "Optional region override. Most S3-compatible stores require a region value.": "Optionale Regionsüberschreibung. Die meisten S3-kompatiblen Speicher erfordern eine Region.",
+  "Allow HTTP": "HTTP zulassen",
+  "Allow non-TLS S3 endpoints, usually only for local development.": "Nicht-TLS-S3-Endpunkte zulassen, normalerweise nur für die lokale Entwicklung.",
+  "LanceDB requires an S3 URI.": "LanceDB erfordert eine S3-URI.",
+  "LanceDB S3 storage requires an AWS authentication profile.": "LanceDB-S3-Speicher erfordert ein AWS-Authentifizierungsprofil.",
+  "pdfExport": "PDF-Export"
 }

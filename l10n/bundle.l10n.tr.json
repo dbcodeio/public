@@ -4476,5 +4476,18 @@
   "Pick a grain to trend over {0}": "{0} için eğilimi görmek üzere bir ayrıntı düzeyi seçin",
   "at": "itibarıyla",
   "vs": "vs",
-  "First {0} rows only - trends may be misleading": "Yalnızca ilk {0} satır - eğilimler yanıltıcı olabilir"
+  "First {0} rows only - trends may be misleading": "Yalnızca ilk {0} satır - eğilimler yanıltıcı olabilir",
+  "Open LanceDB data from a local folder.": "LanceDB verilerini yerel bir klasörden açın.",
+  "S3": "S3",
+  "Open LanceDB data from Amazon S3 or an S3-compatible store.": "LanceDB verilerini Amazon S3'ten veya S3 uyumlu bir depolamadan açın.",
+  "S3 URI": "S3 URI",
+  "S3 Endpoint": "S3 Uç Noktası",
+  "Optional endpoint for S3-compatible stores such as MinIO, R2, or Tigris.": "MinIO, R2 veya Tigris gibi S3 uyumlu depolamalar için isteğe bağlı uç nokta.",
+  "S3 Region": "S3 Bölgesi",
+  "Optional region override. Most S3-compatible stores require a region value.": "İsteğe bağlı bölge geçersiz kılma. Çoğu S3 uyumlu depolama bir bölge değeri gerektirir.",
+  "Allow HTTP": "HTTP'ye İzin Ver",
+  "Allow non-TLS S3 endpoints, usually only for local development.": "TLS olmayan S3 uç noktalarına izin ver, genellikle yalnızca yerel geliştirme için.",
+  "LanceDB requires an S3 URI.": "LanceDB bir S3 URI'si gerektirir.",
+  "LanceDB S3 storage requires an AWS authentication profile.": "LanceDB S3 depolaması bir AWS kimlik doğrulama profili gerektirir.",
+  "pdfExport": "PDF Dışa Aktar"
 }
