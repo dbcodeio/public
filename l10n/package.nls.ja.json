@@ -387,5 +387,6 @@
   "Set Folder Connection with DBCode": "DBCode でフォルダー接続を設定",
   "The connection. Use the Set Folder Connection with DBCode command to fill this in.": "接続。「DBCode でフォルダー接続を設定」コマンドを使用して入力してください。",
   "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "フォルダーの既定の接続とデータベースを設定します。DBCode はフォルダー内で開いた SQL ファイルに使用し、サブフォルダーに継承されます。",
-  "Cancel Connection Attempt": "接続の試行をキャンセル"
+  "Cancel Connection Attempt": "接続の試行をキャンセル",
+  "Compiled SQL": "コンパイル済み SQL"
 }

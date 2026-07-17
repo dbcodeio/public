@@ -1,5 +1,33 @@
 # CHANGELOG
 
+## 1.36.0 - 2026-07-17
+
+### Changed
+
+- Cloudflare D1: One connection now covers an account; databases are listed under it and picked by name instead of hand-entering IDs.
+- DuckDB: Added signature help and hover documentation for DuckDB's built-in functions, generated from DuckDB's own metadata. #1171
+- Explore: open the current exploration as SQL, including time grain, split by, calculated fields, and query results.
+- SAP HANA: Preview support added.
+- Results: Jump to a column by name with Ctrl/Cmd+Shift+O or Ctrl/Cmd+F12. #1157
+- Commands: Context-menu-only commands are no longer shown in the command palette.
+- Commands: Export Data and Search can now be run from the command palette.
+- PostHog: New driver, browse projects and query analytics data with HogQL (Preview).
+- Cloudflare R2 SQL: Preview support for querying R2 Data Catalog (Apache Iceberg) tables; one connection per account with catalog buckets as databases, including via the Cloudflare cloud provider.
+- Row limit prompt: choices now scale to the configured cap, with keep-default and custom-value options.
+- Stripe: Preview support for browsing Stripe data (customers, charges, invoices, subscriptions, and more) with a read-only API key.
+
+### Fixed
+
+- SQL Server: Fabric and Synapse serverless now page with OFFSET/FETCH instead of over-fetching every row up to the offset. #1158
+- Explorer: Drop and Truncate again apply to every selected item, not just the right-clicked one. #344
+- CouchDB/Couchbase: Dropping a database or bucket, and flushing a bucket, now ask for confirmation first.
+- Fabric: Columns created without an explicit NULL/NOT NULL now default to nullable, matching SSMS. #1173
+- Import: Fixed "Cannot read properties of undefined" when running Import Data from the command palette; it now prompts for the destination connection. #1164
+- JDBC drivers: Fixed "Cannot read properties of undefined (reading 'header')" connection error on Linux.
+- Kafka: Unknown or unsupported editor commands now return a clear error instead of echoing the command back.
+- Kafka: Topics no longer show empty results when consumer group startup is slow; tail reads wait for the group join and broker errors surface instead of an empty grid.
+- PostgreSQL: Fixed introspection failures on PostgreSQL 9.2 and compatible forks such as openGauss and GBase 8a MPP. #1170
+
 ## 1.35.9 - 2026-07-09
 
 ### Changed

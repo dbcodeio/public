@@ -387,5 +387,6 @@
   "Set Folder Connection with DBCode": "Установить подключение папки с DBCode",
   "The connection. Use the Set Folder Connection with DBCode command to fill this in.": "Подключение. Используйте команду «Установить подключение папки с DBCode», чтобы заполнить это поле.",
   "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "Задайте подключение и базу данных по умолчанию для папки. DBCode использует их для SQL-файлов в папке, с наследованием подпапок.",
-  "Cancel Connection Attempt": "Отменить попытку подключения"
+  "Cancel Connection Attempt": "Отменить попытку подключения",
+  "Compiled SQL": "Скомпилированный SQL"
 }

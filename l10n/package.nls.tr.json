@@ -387,5 +387,6 @@
   "Set Folder Connection with DBCode": "DBCode ile Klasör Bağlantısını Ayarla",
   "The connection. Use the Set Folder Connection with DBCode command to fill this in.": "Bağlantı. Bunu doldurmak için DBCode ile Klasör Bağlantısını Ayarla komutunu kullanın.",
   "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "Bir klasörün varsayılan bağlantısını ve veritabanını ayarlayın. DBCode bunu klasördeki SQL dosyaları için kullanır ve alt klasörlere devredilir.",
-  "Cancel Connection Attempt": "Bağlantı Denemesini İptal Et"
+  "Cancel Connection Attempt": "Bağlantı Denemesini İptal Et",
+  "Compiled SQL": "Derlenmiş SQL"
 }
