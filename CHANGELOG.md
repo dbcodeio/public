@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.36.1 - 2026-07-17
+
+### Fixed
+
+- SQL Server: Fixed all connections failing with "Error initializing mssql driver: f is not a constructor". #1174
+
 ## 1.36.0 - 2026-07-17
 
 ### Changed
