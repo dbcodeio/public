@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.36.2 - 2026-07-20
+
+### Changed
+
+- AI: Copilot requests now default to Copilot's Auto model selection instead of gpt-4o-mini.
+- Tunnels: SSH libraries now load on first tunnel use instead of at startup.
+- Grid: the AI panel now converses about your data - it writes and runs SQL in place when the source can be re-queried, and applies grid or chart actions for presentation requests.
+
+### Fixed
+
+- Connections: Driver initialization failures are now written to the output panel, not just the popup.
+- Kafka: Read messages from LZ4, Snappy, and ZSTD compressed topics; previously only gzip worked and compressed topics showed no messages.
+- Fixed a "navigator is now a global in nodejs" error logged in the extension host during activation.
+- PostgreSQL: Fixed Unix socket connections falling back to a TCP host connection.
+- Snowflake: Fixed transient, hybrid, and dynamic tables not appearing in the object tree. #1177
+
 ## 1.36.1 - 2026-07-17
 
 ### Fixed

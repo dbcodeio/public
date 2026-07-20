@@ -832,6 +832,14 @@
         "publisher": "GitHub Inc."
     },
     {
+        "name": "fzstd",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "MIT License\n\nCopyright (c) 2020 Arjun Barrett\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+        "repository": "https://github.com/101arrowz/fzstd",
+        "publisher": "Arjun Barrett"
+    },
+    {
         "name": "glob",
         "direct": false,
         "license": "BlueOak-1.0.0",
@@ -1094,6 +1102,14 @@
         "publisher": "Jose F. Romaniello"
     },
     {
+        "name": "kafkajs-snappy",
+        "direct": true,
+        "license": "MIT",
+        "licenseTxt": "The MIT License\n\nCopyright (c) 2018 Túlio Ornelas (ornelas.tulio@gmail.com)\n\nPermission is hereby granted, free of charge,\nto any person obtaining a copy of this software and\nassociated documentation files (the \"Software\"), to\ndeal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify,\nmerge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom\nthe Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice\nshall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR\nANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+        "repository": "https://github.com/tulios/kafkajs-snappy",
+        "publisher": "Tulio Ornelas"
+    },
+    {
         "name": "kafkajs",
         "direct": true,
         "license": "MIT",
@@ -1212,6 +1228,14 @@
         "licenseTxt": "# Blue Oak Model License\n\nVersion 1.0.0\n\n## Purpose\n\nThis license gives everyone as much permission to work with\nthis software as possible, while protecting contributors\nfrom liability.\n\n## Acceptance\n\nIn order to receive this license, you must agree to its\nrules.  The rules of this license are both obligations\nunder that agreement and conditions to your license.\nYou must not do anything with this software that triggers\na rule that you cannot or will not follow.\n\n## Copyright\n\nEach contributor licenses you to do everything with this\nsoftware that would otherwise infringe that contributor's\ncopyright in it.\n\n## Notices\n\nYou must ensure that everyone who gets a copy of\nany part of this software from you, with or without\nchanges, also gets the text of this license or a link to\n<https://blueoakcouncil.org/license/1.0.0>.\n\n## Excuse\n\nIf anyone notifies you in writing that you have not\ncomplied with [Notices](#notices), you can keep your\nlicense by taking all practical steps to comply within 30\ndays after the notice.  If you do not do so, your license\nends immediately.\n\n## Patent\n\nEach contributor licenses you to do everything with this\nsoftware that would otherwise infringe any patent claims\nthey can license or become able to license.\n\n## Reliability\n\nNo contributor can revoke this license.\n\n## No Liability\n\n***As far as the law allows, this software comes as is,\nwithout any warranty or condition, and no contributor\nwill be liable to anyone for any damages related to this\nsoftware or this license, under any kind of legal claim.***",
         "repository": "https://github.com/isaacs/node-lru-cache",
         "publisher": "Isaac Z. Schlueter"
+    },
+    {
+        "name": "lz4js",
+        "direct": true,
+        "license": "ISC",
+        "licenseTxt": "# Lz4.js [![NPM version](https://badge.fury.io/js/lz4js.svg)](https://www.npmjs.com/package/lz4js) [![Build Status](https://travis-ci.org/Benzinga/lz4js.svg?branch=master)](https://travis-ci.org/Benzinga/lz4js) [![codecov](https://codecov.io/gh/Benzinga/lz4js/branch/master/graph/badge.svg)](https://codecov.io/gh/Benzinga/lz4js)\nLz4.js is an implementation of Lz4 designed to be used in web browsers. It contains no dependencies on external libraries or Node.JS, though it is organized as a set of CommonJS modules. It is recommended to use Browserify or WebPack to bundle this for the web browser.\n\n## Installation\n```\nnpm install lz4js\n```\n\n## Usage\n```javascript\nvar lz4 = require(\"lz4js\");\nvar fs = require(\"fs\");\n\n// Compress 128 bytes of zero.\nvar compressed = lz4.compress(new Array(128));\n\n// Decompress.\nvar decompressed = lz4.decompress(compressed);\n\n// Compress file.bin to file.lz4.\nvar data = fs.readFileSync(\"file.bin\");\ncompressed = Buffer.from(lz4.compress(data));\nfs.writeFileSync('file.lz4', compressed);\n```\n\n> **Note**: The high-level `compress` and `decompress` functions deal with framed Lz4 data and do not support raw block data nor legacy Lz4 blocks.\n\n## API\nThe API accepts either `Array`s or `Uint8Array`s. Arrays are expected to be arrays of unsigned 8-bit values. The API will return `Uint8Array`s if the browser supports them, or `Array`s otherwise.\n\n  - `compress(buffer: Array, maxSize: Number): Array`\n\n    Compresses a buffer using Lz4. maxSize sets bounds on the output length; it is recommended to not specify this unless you know what you're doing.\n    Any unused buffer data will be sliced before the buffer is returned.\n\n  - `decompress(buffer: Array, maxSize: Number): Array`\n\n    Decompresses a buffer using Lz4. maxSize sets bounds on the output length; if you know the output length, this will reduce memory usage somewhat.\n    Any unused buffer data will be sliced before the buffer is returned.",
+        "repository": "https://github.com/Benzinga/lz4js",
+        "publisher": "John Chadwick"
     },
     {
         "name": "magic-bytes.js",
