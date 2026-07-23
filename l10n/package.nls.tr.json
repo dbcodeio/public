@@ -388,5 +388,8 @@
   "The connection. Use the Set Folder Connection with DBCode command to fill this in.": "Bağlantı. Bunu doldurmak için DBCode ile Klasör Bağlantısını Ayarla komutunu kullanın.",
   "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "Bir klasörün varsayılan bağlantısını ve veritabanını ayarlayın. DBCode bunu klasördeki SQL dosyaları için kullanır ve alt klasörlere devredilir.",
   "Cancel Connection Attempt": "Bağlantı Denemesini İptal Et",
-  "Compiled SQL": "Derlenmiş SQL"
+  "Compiled SQL": "Derlenmiş SQL",
+  "Debug": "Hata Ayıkla",
+  "Database Routine Debugger": "Veritabanı Yordamı Hata Ayıklayıcısı",
+  "Include the query as a separate Query worksheet in Excel exports.": "Sorguyu Excel dışa aktarımlarına ayrı bir Query çalışma sayfası olarak ekleyin."
 }

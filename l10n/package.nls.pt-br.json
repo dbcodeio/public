@@ -388,5 +388,8 @@
   "The connection. Use the Set Folder Connection with DBCode command to fill this in.": "A conexão. Use o comando Definir conexão de pasta com DBCode para preenchê-la.",
   "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "Defina a conexão e o banco de dados padrão de uma pasta. O DBCode os usa para arquivos SQL abertos na pasta, com herança de subpastas.",
   "Cancel Connection Attempt": "Cancelar tentativa de conexão",
-  "Compiled SQL": "SQL compilado"
+  "Compiled SQL": "SQL compilado",
+  "Debug": "Depurar",
+  "Database Routine Debugger": "Depurador de rotinas de banco de dados",
+  "Include the query as a separate Query worksheet in Excel exports.": "Incluir a consulta como uma planilha Query separada nas exportações do Excel."
 }

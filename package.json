@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 80+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
     "publisher": "dbcode",
-    "version": "1.36.2",
+    "version": "1.36.3",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -66,7 +66,8 @@
         "onStartupFinished",
         "onRenderer:dbcode-notebook",
         "onNotebook:dbcode-notebook",
-        "onLanguage:sql"
+        "onLanguage:sql",
+        "onDebugResolve:dbcode"
     ],
     "main": "./out/extension/extension.js",
     "l10n": "./l10n",
@@ -614,6 +615,12 @@
                 "title": "%Drop%",
                 "category": "DBCode",
                 "icon": "$(trash)"
+            },
+            {
+                "command": "dbcode.debug.routine",
+                "title": "%Debug%",
+                "category": "DBCode",
+                "icon": "$(debug-alt)"
             },
             {
                 "command": "dbcode.auth.signin",
@@ -1776,6 +1783,10 @@
                     "when": "false"
                 },
                 {
+                    "command": "dbcode.debug.routine",
+                    "when": "false"
+                },
+                {
                     "command": "dbcode.item.create",
                     "when": "false"
                 },
@@ -2289,6 +2300,11 @@
                     "group": "9destructive@9"
                 },
                 {
+                    "command": "dbcode.debug.routine",
+                    "when": "view == dbcode.connections.view && viewItem =~ /~debug~/",
+                    "group": "3modify@4"
+                },
+                {
                     "command": "dbcode.account.portal",
                     "when": "view == dbcode.account.view && viewItem =~ /^license(-offline)?-active$/",
                     "group": "inline"
@@ -2510,7 +2526,7 @@
                 },
                 {
                     "command": "dbcode.connections.execfile",
-                    "when": "view == dbcode.connections.view && viewItem =~ /^database-/ && viewItem =~ /~execFile~/",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^(database|connection)-/ && viewItem =~ /~execFile~/",
                     "group": "3operation@2"
                 },
                 {
@@ -2913,6 +2929,11 @@
                     "group": "navigation@1"
                 },
                 {
+                    "command": "dbcode.debug.routine",
+                    "when": "editorLangId == sql && resourceScheme == dbcode && dbcode.editor.canDebug",
+                    "group": "navigation@1.5"
+                },
+                {
                     "command": "dbcode.editor.executeExplain",
                     "when": "(editorLangId == sql || resourceFilename =~ /.sql$/) && resourceScheme != dbcode && dbcode.editor.hasExplain",
                     "group": "navigation@2"
@@ -2973,6 +2994,11 @@
                     "when": "resourceLangId == sql && !editorHasSelection && resourceScheme == dbcode",
                     "command": "dbcode.editor.apply",
                     "group": "navigatio@1"
+                },
+                {
+                    "when": "resourceLangId == sql && !editorHasSelection && resourceScheme == dbcode && dbcode.editor.canDebug",
+                    "command": "dbcode.debug.routine",
+                    "group": "navigatio@2"
                 },
                 {
                     "when": "resourceLangId == sql && dbcode.editor.tableContextAvailable",
@@ -5261,6 +5287,12 @@
                         "type": "boolean",
                         "default": false,
                         "markdownDescription": "%Show column comments below column names in result headers.%"
+                    },
+                    "dbcode.export.includeQueryInExcel": {
+                        "order": 14,
+                        "type": "boolean",
+                        "default": true,
+                        "markdownDescription": "%Include the query as a separate Query worksheet in Excel exports.%"
                     }
                 }
             },
@@ -6829,6 +6861,20 @@
                     }
                 }
             }
+        ],
+        "debuggers": [
+            {
+                "type": "dbcode",
+                "label": "%Database Routine Debugger%",
+                "languages": [
+                    "sql"
+                ]
+            }
+        ],
+        "breakpoints": [
+            {
+                "language": "sql"
+            }
         ]
     },
     "scripts": {
@@ -6965,6 +7011,8 @@
         "@vscode-elements/elements": "1.17.0",
         "@vscode/chat-extension-utils": "^0.0.0-alpha.5",
         "@vscode/codicons": "^0.0.36",
+        "@vscode/debugadapter": "^1.68.0",
+        "@vscode/debugprotocol": "^1.68.0",
         "@vscode/l10n": "^0.0.18",
         "@xyflow/react": "^12.7.0",
         "@zilliz/milvus2-sdk-node": "^3.0.0",
@@ -7040,7 +7088,7 @@
         "sshpk": "^1.18.0",
         "surrealdb": "^2.0.3",
         "tablemark": "^3.1.0",
-        "tar": "^7.5.16",
+        "tar": "^7.5.20",
         "tinycolor2": "^1.6.0",
         "trino-client": "^0.2.7",
         "tunnel-ssh": "^5.2.0",

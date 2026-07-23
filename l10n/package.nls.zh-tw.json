@@ -388,5 +388,8 @@
   "The connection. Use the Set Folder Connection with DBCode command to fill this in.": "連線。使用「使用 DBCode 設定資料夾連線」命令來填寫此項。",
   "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "設定資料夾的預設連線和資料庫。DBCode 將其用於資料夾內開啟的 SQL 檔案，並支援子資料夾繼承。",
   "Cancel Connection Attempt": "取消連線嘗試",
-  "Compiled SQL": "已編譯 SQL"
+  "Compiled SQL": "已編譯 SQL",
+  "Debug": "偵錯",
+  "Database Routine Debugger": "資料庫常式偵錯工具",
+  "Include the query as a separate Query worksheet in Excel exports.": "在 Excel 匯出中將查詢納入為獨立的「Query」工作表。"
 }

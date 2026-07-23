@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## 1.36.3 - 2026-07-23
+
+### Changed
+
+- Export: Added a setting and export-panel option to omit SQL query sheets from Excel files. #1172
+- DB Explorer: Execute SQL files directly from supported connection nodes. #1176
+- Editor: Replaced generic VALUES help with positional INSERT column and datatype hints.
+- Debugger: Debug PL/pgSQL functions and procedures with breakpoints, stepping, variables, and watches. #1169
+- Grid: Added styled HTML output for copy, open, and export.
+
+### Fixed
+
+- Connections: Database picker retries now connect on cache misses and close cleanly on failure or cancellation. #1151
+- Connections: The status bar now shows active connection attempts with a cancel option. #1151
+- Editor: Fixed autocomplete quoting for identifiers in INSERT, UPDATE, and incomplete SELECT statements.
+- Grid: Copy HTML as rich clipboard content.
+- Connections: Allowed automatic SSL settings to be changed for recognized database hosts.
+- Results: Parameterized queries now group their output-log entries under the SQL instead of the raw execution id.
+- Results: Fixed multi-statement queries focusing the wrong result tab.
+
 ## 1.36.2 - 2026-07-20
 
 ### Changed

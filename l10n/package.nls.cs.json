@@ -388,5 +388,8 @@
   "The connection. Use the Set Folder Connection with DBCode command to fill this in.": "Připojení. K jeho vyplnění použijte příkaz Nastavit připojení složky pomocí DBCode.",
   "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "Nastavte výchozí připojení a databázi složky. DBCode je použije pro SQL soubory otevřené ve složce, s dědičností do podsložek.",
   "Cancel Connection Attempt": "Zrušit pokus o připojení",
-  "Compiled SQL": "Zkompilované SQL"
+  "Compiled SQL": "Zkompilované SQL",
+  "Debug": "Ladit",
+  "Database Routine Debugger": "Ladicí program databázových rutin",
+  "Include the query as a separate Query worksheet in Excel exports.": "Zahrnout dotaz do exportu Excelu jako samostatný list Query."
 }

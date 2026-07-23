@@ -388,5 +388,8 @@
   "The connection. Use the Set Folder Connection with DBCode command to fill this in.": "La connexion. Utilisez la commande Définir la connexion du dossier avec DBCode pour la renseigner.",
   "Set a folder's default connection and database. DBCode uses it for SQL files you open inside the folder, with subfolder inheritance.": "Définissez la connexion et la base de données par défaut d'un dossier. DBCode les utilise pour les fichiers SQL ouverts dans ce dossier, avec héritage des sous-dossiers.",
   "Cancel Connection Attempt": "Annuler la tentative de connexion",
-  "Compiled SQL": "SQL compilé"
+  "Compiled SQL": "SQL compilé",
+  "Debug": "Déboguer",
+  "Database Routine Debugger": "Débogueur de routine de base de données",
+  "Include the query as a separate Query worksheet in Excel exports.": "Inclure la requête dans une feuille de calcul Query distincte lors des exportations Excel."
 }

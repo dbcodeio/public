@@ -23,6 +23,7 @@
   "Alter": "ȦȦŀŧḗḗř",
   "Create": "Ƈřḗḗȧȧŧḗḗ",
   "Drop": "Ḓřǿǿƥ",
+  "Debug": "Ḓḗḗƀŭŭɠ",
   "Sign In": "Şīɠƞ Īƞ",
   "History: Change Passphrase": "Ħīşŧǿǿřẏ: Ƈħȧȧƞɠḗḗ Ƥȧȧşşƥħřȧȧşḗḗ",
   "History: Reset Local Encryption (this device)": "Ħīşŧǿǿřẏ: Řḗḗşḗḗŧ Ŀǿǿƈȧȧŀ ḖḖƞƈřẏƥŧīǿǿƞ (ŧħīş ḓḗḗṽīƈḗḗ)",
@@ -256,6 +257,7 @@
   "Controls the row spacing of data grids.": "Ƈǿǿƞŧřǿǿŀş ŧħḗḗ řǿǿẇ şƥȧȧƈīƞɠ ǿǿƒ ḓȧȧŧȧȧ ɠřīḓş.",
   "Toggle zebra stripes (alternating row colors) in data grids.": "Ŧǿǿɠɠŀḗḗ ẑḗḗƀřȧȧ şŧřīƥḗḗş (ȧȧŀŧḗḗřƞȧȧŧīƞɠ řǿǿẇ ƈǿǿŀǿǿřş) īƞ ḓȧȧŧȧȧ ɠřīḓş.",
   "Show column comments below column names in result headers.": "Şħǿǿẇ ƈǿǿŀŭŭḿƞ ƈǿǿḿḿḗḗƞŧş ƀḗḗŀǿǿẇ ƈǿǿŀŭŭḿƞ ƞȧȧḿḗḗş īƞ řḗḗşŭŭŀŧ ħḗḗȧȧḓḗḗřş.",
+  "Include the query as a separate Query worksheet in Excel exports.": "Īƞƈŀŭŭḓḗḗ ŧħḗḗ ɋŭŭḗḗřẏ ȧȧş ȧȧ şḗḗƥȧȧřȧȧŧḗḗ Ɋŭŭḗḗřẏ ẇǿǿřķşħḗḗḗḗŧ īƞ ḖḖẋƈḗḗŀ ḗḗẋƥǿǿřŧş.",
   "Data Formats": "Ḓȧȧŧȧȧ Ƒǿǿřḿȧȧŧş",
   "Show dates in your computers timezone when dates contain a timezone.": "Şħǿǿẇ ḓȧȧŧḗḗş īƞ ẏǿǿŭŭř ƈǿǿḿƥŭŭŧḗḗřş ŧīḿḗḗẑǿǿƞḗḗ ẇħḗḗƞ ḓȧȧŧḗḗş ƈǿǿƞŧȧȧīƞ ȧȧ ŧīḿḗḗẑǿǿƞḗḗ.",
   "Exact value from database - no conversion or formatting applied.": "ḖḖẋȧȧƈŧ ṽȧȧŀŭŭḗḗ ƒřǿǿḿ ḓȧȧŧȧȧƀȧȧşḗḗ - ƞǿǿ ƈǿǿƞṽḗḗřşīǿǿƞ ǿǿř ƒǿǿřḿȧȧŧŧīƞɠ ȧȧƥƥŀīḗḗḓ.",
@@ -388,5 +390,6 @@
   "Transactions": "Ŧřȧȧƞşȧȧƈŧīǿǿƞş",
   "Warn when a transaction has been open for this many minutes. Set to 0 to disable warnings.": "Ẇȧȧřƞ ẇħḗḗƞ ȧȧ ŧřȧȧƞşȧȧƈŧīǿǿƞ ħȧȧş ƀḗḗḗḗƞ ǿǿƥḗḗƞ ƒǿǿř ŧħīş ḿȧȧƞẏ ḿīƞŭŭŧḗḗş. Şḗḗŧ ŧǿǿ 0 ŧǿǿ ḓīşȧȧƀŀḗḗ ẇȧȧřƞīƞɠş.",
   "Automatically rollback the transaction when a query fails. Use with caution.": "ȦȦŭŭŧǿǿḿȧȧŧīƈȧȧŀŀẏ řǿǿŀŀƀȧȧƈķ ŧħḗḗ ŧřȧȧƞşȧȧƈŧīǿǿƞ ẇħḗḗƞ ȧȧ ɋŭŭḗḗřẏ ƒȧȧīŀş. ŬŬşḗḗ ẇīŧħ ƈȧȧŭŭŧīǿǿƞ.",
-  "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Ḓḗḗƒȧȧŭŭŀŧ ȧȧŭŭŧǿǿ-ƈǿǿḿḿīŧ ḿǿǿḓḗḗ ƒǿǿř ƞḗḗẇ ƥīƞƞḗḗḓ ƈǿǿƞƞḗḗƈŧīǿǿƞş. Ẇħḗḗƞ ḓīşȧȧƀŀḗḗḓ, ẏǿǿŭŭ ḿŭŭşŧ ḿȧȧƞŭŭȧȧŀŀẏ ƈǿǿḿḿīŧ ǿǿř řǿǿŀŀƀȧȧƈķ ƈħȧȧƞɠḗḗş."
+  "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Ḓḗḗƒȧȧŭŭŀŧ ȧȧŭŭŧǿǿ-ƈǿǿḿḿīŧ ḿǿǿḓḗḗ ƒǿǿř ƞḗḗẇ ƥīƞƞḗḗḓ ƈǿǿƞƞḗḗƈŧīǿǿƞş. Ẇħḗḗƞ ḓīşȧȧƀŀḗḗḓ, ẏǿǿŭŭ ḿŭŭşŧ ḿȧȧƞŭŭȧȧŀŀẏ ƈǿǿḿḿīŧ ǿǿř řǿǿŀŀƀȧȧƈķ ƈħȧȧƞɠḗḗş.",
+  "Database Routine Debugger": "Ḓȧȧŧȧȧƀȧȧşḗḗ Řǿǿŭŭŧīƞḗḗ Ḓḗḗƀŭŭɠɠḗḗř"
 }
