@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.36.4 - 2026-07-24
+
+### Changed
+
+- Db2: Added native SQL PL procedure debugging for Db2 LUW connections.
+- Apache Druid: Removed from Preview and disabled unsupported datasource DDL scripting.
+- PostgreSQL: Added Kerberos/GSSAPI for compatible connections, debugging, table DDL, backup, and restore, plus Windows SSPI for connections and debugging.
+
+### Fixed
+
+- Editor: Stopped SQL analysis that ran for more than five seconds so large stored procedures no longer lock up the editor.
+
 ## 1.36.3 - 2026-07-23
 
 ### Changed
