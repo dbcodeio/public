@@ -26,12 +26,16 @@ jobs:
       HUSKY: '0'
     steps:
       - name: Record what this run is building
+        env:
+          VERSION: ${{ github.event.client_payload.version }}
+          SHA: ${{ github.event.client_payload.sha }}
+          ACTOR: ${{ github.event.client_payload.actor }}
         run: |
           {
-            echo "## Release ${{ github.event.client_payload.version }}"
+            echo "## Release $VERSION"
             echo
-            echo "- source commit: \`${{ github.event.client_payload.sha }}\`"
-            echo "- initiated by: @${{ github.event.client_payload.actor }}"
+            echo "- source commit: \`$SHA\`"
+            echo "- initiated by: @$ACTOR"
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Checkout private source
