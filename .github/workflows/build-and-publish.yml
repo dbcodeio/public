@@ -4,6 +4,14 @@ name: Build and publish
 # it, and publishes. The source is never written to this repository; it is checked
 # out with a read-only deploy key and discarded with the runner.
 #
+# actions/attest-build-provenance signs only this repo's own OIDC claims, so the
+# dispatch payload's source commit never reaches the attestation directly. We
+# bind the two ourselves: the "Stamp build provenance" step writes the source
+# commit into build-provenance.json inside the checked-out tree, before
+# packaging, so it becomes part of the vsix the attestation signs. The binding
+# is indirect, through the artifact digest, but it is what makes the claimed
+# commit tamper-evident.
+#
 # DO NOT ADD A pull_request OR pull_request_target TRIGGER.
 #
 # This repo is public and holds the publishing credentials. The absence of a PR
@@ -59,6 +67,20 @@ jobs:
           ref: ${{ github.event.client_payload.sha }}
           ssh-key: ${{ secrets.SOURCE_DEPLOY_KEY }}
           persist-credentials: false
+
+      - name: Stamp build provenance
+        env:
+          SHA: ${{ github.event.client_payload.sha }}
+          VERSION: ${{ github.event.client_payload.version }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          jq -n \
+            --arg sourceRepository "https://github.com/dbcodeio/vscode-private" \
+            --arg sourceCommit "$SHA" \
+            --arg version "$VERSION" \
+            --arg buildWorkflowRun "$RUN_URL" \
+            '{sourceRepository: $sourceRepository, sourceCommit: $sourceCommit, version: $version, buildWorkflowRun: $buildWorkflowRun}' \
+            > build-provenance.json
 
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
 
