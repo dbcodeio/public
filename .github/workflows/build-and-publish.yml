@@ -1,0 +1,111 @@
+name: Build and publish
+
+# Builds the DBCode extension from the private source at an exact commit, attests
+# it, and publishes. The source is never written to this repository; it is checked
+# out with a read-only deploy key and discarded with the runner.
+#
+# actions/attest-build-provenance signs only this repo's own OIDC claims, so the
+# dispatch payload's source commit never reaches the attestation directly. We
+# bind the two ourselves: the "Stamp build provenance" step writes the source
+# commit into build-provenance.json inside the checked-out tree, before
+# packaging, so it becomes part of the vsix the attestation signs. The binding
+# is indirect, through the artifact digest, but it is what makes the claimed
+# commit tamper-evident.
+#
+# DO NOT ADD A pull_request OR pull_request_target TRIGGER.
+#
+# This repo is public and holds the publishing credentials. The absence of a PR
+# trigger is what keeps them unreachable. pull_request_target is the specific
+# trap: unlike pull_request, it hands secrets to forked code.
+#
+# PR CI belongs in a separate workflow with no secrets, not a trigger here.
+on:
+  repository_dispatch:
+    types: [release]
+
+concurrency:
+  group: publish-${{ github.event.client_payload.version }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    env:
+      HUSKY: '0'
+    steps:
+      - name: Validate dispatch payload
+        env:
+          SHA: ${{ github.event.client_payload.sha }}
+        run: |
+          if [[ ! "$SHA" =~ ^[0-9a-fA-F]{40}$ ]]; then
+            echo "::error::Rejected commit sha (must be exactly 40 hex characters): $SHA"
+            exit 1
+          fi
+
+      - name: Record what this run is building
+        env:
+          VERSION: ${{ github.event.client_payload.version }}
+          SHA: ${{ github.event.client_payload.sha }}
+          ACTOR: ${{ github.event.client_payload.actor }}
+        run: |
+          {
+            echo "## Release $VERSION"
+            echo
+            echo "- source commit: \`$SHA\`"
+            echo "- initiated by: @$ACTOR"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Checkout private source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: dbcodeio/vscode-private
+          ref: ${{ github.event.client_payload.sha }}
+          ssh-key: ${{ secrets.SOURCE_DEPLOY_KEY }}
+          persist-credentials: false
+
+      - name: Stamp build provenance
+        env:
+          SHA: ${{ github.event.client_payload.sha }}
+          VERSION: ${{ github.event.client_payload.version }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          jq -n \
+            --arg sourceRepository "https://github.com/dbcodeio/vscode-private" \
+            --arg sourceCommit "$SHA" \
+            --arg version "$VERSION" \
+            --arg buildWorkflowRun "$RUN_URL" \
+            '{sourceRepository: $sourceRepository, sourceCommit: $sourceCommit, version: $version, buildWorkflowRun: $buildWorkflowRun}' \
+            > build-provenance.json
+
+      - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22.12'
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Verify release translation catalogs
+        run: pnpm exec tsx scripts/translation-fragments.ts verify-release
+
+      - name: Package
+        run: pnpm dlx @vscode/vsce@3.9.2 package --no-dependencies --no-git-tag-version --no-update-package-json --allow-package-secrets privatekey
+        env:
+          NODE_OPTIONS: --max-old-space-size=6144
+
+      - name: Attest
+        uses: actions/attest-build-provenance@0f67c3f4856b2e3261c31976d6725780e5e4c373 # v4.1.1
+        with:
+          subject-path: '*.vsix'
+
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: extension
+          path: '*.vsix'
+          if-no-files-found: error
