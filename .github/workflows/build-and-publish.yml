@@ -22,6 +22,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: read
       id-token: write
@@ -29,6 +30,15 @@ jobs:
     env:
       HUSKY: '0'
     steps:
+      - name: Validate dispatch payload
+        env:
+          SHA: ${{ github.event.client_payload.sha }}
+        run: |
+          if [[ ! "$SHA" =~ ^[0-9a-fA-F]{40}$ ]]; then
+            echo "::error::Rejected commit sha (must be exactly 40 hex characters): $SHA"
+            exit 1
+          fi
+
       - name: Record what this run is building
         env:
           VERSION: ${{ github.event.client_payload.version }}
@@ -54,7 +64,7 @@ jobs:
 
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 22.12
+          node-version: '22.12'
           cache: 'pnpm'
 
       - run: pnpm install --frozen-lockfile
@@ -64,6 +74,8 @@ jobs:
 
       - name: Package
         run: pnpm dlx @vscode/vsce@3.9.2 package --no-dependencies --no-git-tag-version --no-update-package-json --allow-package-secrets privatekey
+        env:
+          NODE_OPTIONS: --max-old-space-size=6144
 
       - name: Attest
         uses: actions/attest-build-provenance@0f67c3f4856b2e3261c31976d6725780e5e4c373 # v4.1.1
