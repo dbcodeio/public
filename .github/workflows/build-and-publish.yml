@@ -4,9 +4,13 @@ name: Build and publish
 # it, and publishes. The source is never written to this repository; it is checked
 # out with a read-only deploy key and discarded with the runner.
 #
-# There is deliberately no pull_request trigger. This repository has forks and
-# forking cannot be disabled on a public repository, so trigger design is what
-# keeps a fork pull request from ever reaching the credentials below.
+# DO NOT ADD A pull_request OR pull_request_target TRIGGER.
+#
+# This repo is public and holds the publishing credentials. The absence of a PR
+# trigger is what keeps them unreachable. pull_request_target is the specific
+# trap: unlike pull_request, it hands secrets to forked code.
+#
+# PR CI belongs in a separate workflow with no secrets, not a trigger here.
 on:
   repository_dispatch:
     types: [release]
