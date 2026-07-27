@@ -18,6 +18,11 @@ on:
         required: true
         default: '42.2.0'
 
+# Default for every job. The build jobs only read the repo and upload artifacts,
+# so they need nothing more. A job that needs write declares its own block.
+permissions:
+  contents: read
+
 jobs:
   build:
     strategy:
