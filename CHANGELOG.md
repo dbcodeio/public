@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## 1.36.5 - 2026-07-27
+
+### Changed
+
+- CouchDB: Moved out of Preview.
+- Databricks: Improved suggestions and validation for joins, DML, and DDL statements.
+- DuckLake: Moved out of Preview.
+- Exasol: Moved out of Preview.
+- Apache Kafka: Moved out of Preview.
+- Security: MCP OAuth now only redirects to a URI the client registered.
+- MongoDB: Query with plain SQL (SELECT/INSERT/UPDATE/DELETE) alongside the existing shell.
+- Oracle: Added Thin-mode debugging for supported standalone procedures and functions.
+- Security: Downloaded driver packages can no longer unpack files outside their install folder.
+- Salesforce: Moved out of Preview.
+- Security: The published SBOM now covers every supported platform rather than the one it was generated on.
+- Stripe: Query with SQL (SELECT with pushdown filters).
+
+### Fixed
+
+- Grid: Fixed values containing a backslash breaking PostgreSQL array, RavenDB, and InfluxDB writes.
+- Databricks: Prevented capped query results from over-buffering CloudFetch downloads.
+- Export: Fixed corrupt Excel files when a sheet name contains a quote.
+- Connections: Cloud host detection now matches on the full domain suffix instead of anywhere in the host.
+- Editor: Improved SQL completion and diagnostics performance in large files.
+- PostgreSQL: Fixed Integrated (Kerberos) authentication failing on Windows when SSPI requires a continuation round. #1178
+
 ## 1.36.4 - 2026-07-24
 
 ### Changed

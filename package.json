@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 80+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
     "publisher": "dbcode",
-    "version": "1.36.4",
+    "version": "1.36.5",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -6881,6 +6881,7 @@
         "vscode:prepublish": "pnpm run vsixprepare",
         "vsixprepare": "pnpm run esbuild -- --minify",
         "package": "pnpm dlx @vscode/vsce@3.9.2 package --no-dependencies",
+        "sbom": "tsx ./scripts/sbom.ts",
         "lint:file": "biome check --write",
         "watch": "npm run dev:build & npm run dev:server",
         "dev:build": "npm run esbuild -- --sourcemap --watch",
@@ -6966,6 +6967,7 @@
         "oci-objectstorage": "^2.103.0",
         "oci-secrets": "^2.103.0",
         "openai": "^4.86.1",
+        "smol-toml": "1.7.0",
         "source-map": "^0.7.4",
         "svgtofont": "^6.3.1",
         "teradatasql": "20.0.61",
@@ -7120,16 +7122,18 @@
             "tedious": "18.6.1",
             "vitest": "4.1.8",
             "@vitest/coverage-v8": "4.1.8",
-            "axios": ">=1.16.0 <2",
+            "axios": ">=1.18.0 <2",
             "ws@^5.2.0": "5.2.5",
             "uuid": ">=12.0.1 <15",
             "qs": ">=6.15.2 <7",
-            "protobufjs": ">=7.6.3 <8",
-            "hono": ">=4.12.25 <5",
+            "protobufjs": ">=7.6.5 <8",
+            "hono": ">=4.12.27 <5",
             "thrift": ">=0.23.0 <0.24",
             "serialize-javascript": ">=7.0.5 <8",
             "diff": ">=8.0.3 <9",
-            "brace-expansion@5": ">=5.0.6 <6",
+            "brace-expansion@1": ">=1.1.16 <2",
+            "brace-expansion@2": ">=2.1.2 <3",
+            "brace-expansion@5": ">=5.0.7 <6",
             "markdown-it": ">=14.2.0 <15",
             "vite": "6.4.3",
             "js-yaml": ">=4.2.0 <5",
@@ -7137,7 +7141,17 @@
             "@grpc/grpc-js": ">=1.14.4 <2",
             "@opentelemetry/core": ">=2.8.0 <3",
             "esbuild": ">=0.28.1 <0.29",
-            "websocket-driver": ">=0.7.5 <0.8"
+            "websocket-driver": ">=0.7.5 <0.8",
+            "@hono/node-server": ">=2.0.5 <3",
+            "adm-zip": ">=0.6.0 <0.7",
+            "body-parser": ">=2.3.0 <3",
+            "dompurify": ">=3.4.12 <4",
+            "fast-uri": ">=3.1.4 <4",
+            "form-data@2": ">=2.5.6 <3",
+            "form-data@4": ">=4.0.6 <5",
+            "linkify-it": ">=5.0.2 <6",
+            "undici@6": ">=6.27.0 <7",
+            "undici@7": ">=7.28.0 <8"
         },
         "onlyBuiltDependencies": [
             "@biomejs/biome",
@@ -7171,7 +7185,8 @@
             "sql-formatter@15.7.3": "patches/sql-formatter@15.7.3.patch",
             "tedious@18.6.1": "patches/tedious@18.6.1.patch",
             "vscode-messenger@0.4.5": "patches/vscode-messenger@0.4.5.patch",
-            "java-bridge@2.8.0": "patches/java-bridge@2.8.0.patch"
+            "java-bridge@2.8.0": "patches/java-bridge@2.8.0.patch",
+            "antlr4-c3@3.4.4": "patches/antlr4-c3@3.4.4.patch"
         }
     }
 }
