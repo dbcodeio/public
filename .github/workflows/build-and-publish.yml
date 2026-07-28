@@ -5,6 +5,11 @@ name: Build and publish
 # repository; it is checked out with a read-only deploy key and discarded with the
 # runner.
 #
+# This workflow validates nothing about the source. Release-readiness checks, such
+# as translation catalog assembly, live in the private release workflow and run
+# before it pushes the bump and dispatches here. This builds the commit it is
+# handed.
+#
 # actions/attest-build-provenance signs only this repo's own OIDC claims, so the
 # dispatch payload's source commit never reaches the attestation directly. We
 # bind the two ourselves: the "Stamp build provenance" step writes the source
@@ -94,9 +99,6 @@ jobs:
           cache: 'pnpm'
 
       - run: pnpm install --frozen-lockfile
-
-      - name: Verify release translation catalogs
-        run: pnpm exec tsx scripts/translation-fragments.ts verify-release
 
       - name: Package
         run: pnpm dlx @vscode/vsce@3.9.2 package --no-dependencies --no-git-tag-version --no-update-package-json --allow-package-secrets privatekey
