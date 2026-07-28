@@ -16,6 +16,11 @@ on:
         required: true
         default: '20'
 
+# Default for every job. The build jobs only read the repo and upload artifacts,
+# so they need nothing more. `collect` overrides this with what it actually needs.
+permissions:
+  contents: read
+
 jobs:
   build-linux:
     # glibc builds run in a Debian container (glibc 2.31, <= the VS Code remote-server floor).
