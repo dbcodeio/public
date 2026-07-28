@@ -1,5 +1,7 @@
 # DBCode - SQL & Database Client for VS Code
 
+[![MCP Toplist](https://mcptoplist.com/badge/glama%2Fdbcodeio%2Fpublic.svg)](https://mcptoplist.com/server/glama%2Fdbcodeio%2Fpublic)
+
 <p align="center">
 	<a href="https://marketplace.visualstudio.com/items?itemName=DBCode.dbcode"><img src="https://vsmarketplacebadges.dev/installs-short/DBCode.dbcode.svg?label=Marketplace%20Installs&color=blue" alt="VS Code Marketplace Installs"/></a>
 	<a href="https://open-vsx.org/extension/DBCode/dbcode"><img src="https://img.shields.io/open-vsx/dt/DBCode/dbcode?label=OpenVSX%20Downloads&color=blue" alt="OpenVSX Downloads"/></a>
