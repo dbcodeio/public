@@ -1,7 +1,8 @@
 name: Build and publish
 
 # Builds the DBCode extension from the private source at an exact commit, scans it
-# for malware, attests it, and publishes. The source is never written to this
+# for malware, attests it, syncs release content into this repo, creates the GitHub
+# release, and publishes to both marketplaces. The source is never written to this
 # repository; it is checked out with a read-only deploy key and discarded with the
 # runner.
 #
@@ -18,10 +19,18 @@ name: Build and publish
 # is indirect, through the artifact digest, but it is what makes the claimed
 # commit tamper-evident.
 #
-# Attestation runs last, in its own job, only after both antivirus gates pass.
+# Attestation runs last among the gates, only after both antivirus gates pass.
 # Sigstore transparency-log entries are permanent and public, so we sign only
 # artifacts that cleared every gate, rather than logging attestations for builds
 # that were rejected and never shipped.
+#
+# Everything that syncs content, creates the release, or publishes runs only after
+# attest, both directly and transitively through needs:, so nothing ships anything
+# for a build the AV gates or attestation have not cleared. The sync payload (the
+# small set of files that need to land in this repo, not the whole workspace) is
+# staged and uploaded as its own artifact in build, and downloaded by the job that
+# performs the sync - jobs do not share a workspace, and syncing cannot run inside
+# build because at that point the AV gates have not run yet.
 #
 # DO NOT ADD A pull_request OR pull_request_target TRIGGER.
 #
@@ -109,6 +118,23 @@ jobs:
         with:
           name: extension
           path: '*.vsix'
+          if-no-files-found: error
+
+      - name: Stage sync payload
+        # Exactly the files the sync job pushes to this repo's main, laid out to
+        # match their destination paths (root, l10n/, public/). Nothing else from
+        # this workspace is uploaded.
+        run: |
+          mkdir -p sync-payload/l10n sync-payload/public
+          cp README.md CHANGELOG.md licenses.json sbom.cdx.json LICENSE package.json sync-payload/
+          cp package.nls.*.json sync-payload/l10n/
+          cp l10n/* sync-payload/l10n/
+          cp out/public/* sync-payload/public/
+
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: sync-payload
+          path: sync-payload
           if-no-files-found: error
 
   # Antivirus gate - ClamAV scan of the packaged vsix. Fails the release if
@@ -204,3 +230,149 @@ jobs:
         uses: actions/attest-build-provenance@0f67c3f4856b2e3261c31976d6725780e5e4c373 # v4.1.1
         with:
           subject-path: '*.vsix'
+
+  # Syncs release content (README, CHANGELOG, licenses, sbom, package.json, l10n,
+  # public/) into this repo's main branch. This repo IS the public repo, so there is
+  # no separate clone-and-push-elsewhere step, we just check ourselves out and commit.
+  # GITHUB_TOKEN cannot push to main once the branch ruleset is in place, so this
+  # pushes over SSH with the deploy key, the ruleset's only bypass actor.
+  sync-content:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    needs: [attest]
+    if: success()
+    steps:
+      - name: Checkout public repo
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ssh-key: ${{ secrets.PUBLIC_RELEASE_DEPLOY_KEY }}
+
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: sync-payload
+          path: sync-payload
+
+      - name: Sync content and push
+        run: |
+          cp sync-payload/README.md sync-payload/CHANGELOG.md sync-payload/licenses.json \
+            sync-payload/sbom.cdx.json sync-payload/LICENSE sync-payload/package.json .
+          cp sync-payload/l10n/* l10n/
+          cp sync-payload/public/* public/
+          git config user.name "Actions CI"
+          git config user.email "username@users.noreply.github.com"
+          git add README.md CHANGELOG.md licenses.json sbom.cdx.json LICENSE package.json l10n public
+          git diff --cached --quiet || git commit -m "Update README, CHANGELOG, package.json, l10n, licenses and public scripts"
+          git push origin HEAD:main
+
+  # Creates the GitHub release on this repo with the vsix and SBOM attached. Idempotent:
+  # skips if the release already exists. Uses GITHUB_TOKEN, not the deploy key, because
+  # creating a release is not a branch push, so it is unaffected by the ruleset. Runs
+  # after sync-content so the release notes' CHANGELOG link is live when the release
+  # appears.
+  create-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    needs: [attest, sync-content]
+    if: success()
+    steps:
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: extension
+          path: extension
+
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: sync-payload
+          path: sync-payload
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          VERSION=$(jq -r .version sync-payload/package.json)
+          if gh release view "v${VERSION}" --repo "$REPO" &>/dev/null; then
+            echo "Release v${VERSION} already exists, skipping"
+            exit 0
+          fi
+          VSIX=$(find extension -iname '*.vsix' | head -1)
+          # SBOM rides along so every released version has an immutable one that
+          # procurement can fetch without asking us.
+          gh release create "v${VERSION}" "$VSIX" sync-payload/sbom.cdx.json \
+            --repo "$REPO" \
+            --title "v${VERSION}" \
+            --notes "See [CHANGELOG](https://github.com/dbcodeio/public/blob/main/CHANGELOG.md) for details." \
+            --latest
+
+  publish-marketplace:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions: {}
+    needs: [attest, create-release]
+    if: success()
+    steps:
+      - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
+        # No checkout in this job, so action-setup can't read the pnpm version from
+        # package.json - pin it explicitly (keep in sync with packageManager).
+        with:
+          version: 10.33.4
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22.12'
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: extension
+      - name: Publish to VS Code Marketplace
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: |
+          VSIX=$(find . -iname '*.vsix')
+          pnpm dlx @vscode/vsce@3.9.2 publish --no-git-tag-version --no-update-package-json --packagePath "$VSIX"
+
+  publish-open-vsx:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions: {}
+    needs: [attest, create-release]
+    if: success()
+    steps:
+      - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
+        # No checkout in this job, so action-setup can't read the pnpm version from
+        # package.json - pin it explicitly (keep in sync with packageManager).
+        with:
+          version: 10.33.4
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22.12'
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: extension
+      - name: Publish to Open VSX
+        env:
+          OVSX_PAT: ${{ secrets.OPEN_VSX_TOKEN }}
+        run: |
+          VSIX=$(find . -iname '*.vsix')
+          pnpm dlx ovsx@1.0.2 publish "$VSIX" -p "$OVSX_PAT"
+
+  # Triggers the www repo workflow to update the website changelog.
+  trigger-www-repo-workflow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions: {}
+    needs: [attest, create-release]
+    if: success()
+    steps:
+      - uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          github-token: ${{ secrets.TOKEN_FOR_WWW_REPO_ACTIONS }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'dbcodeio',
+              repo: 'www',
+              workflow_id: 'ci.yml',
+              ref: 'main'
+            })
