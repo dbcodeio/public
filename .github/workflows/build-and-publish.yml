@@ -44,7 +44,10 @@ on:
     types: [release]
 
 concurrency:
-  group: publish-${{ github.event.client_payload.version }}
+  # Keyed on the workflow, not the version: two releases must queue behind each
+  # other, never run concurrently. Different versions racing would let two
+  # sync-content jobs push to main at once.
+  group: publish
   cancel-in-progress: false
 
 jobs:
@@ -85,6 +88,40 @@ jobs:
           ref: ${{ github.event.client_payload.sha }}
           ssh-key: ${{ secrets.SOURCE_DEPLOY_KEY }}
           persist-credentials: false
+          fetch-tags: true
+
+      - name: Verify the dispatched commit matches the release tag and version
+        # The only prior check was a 40-hex shape check on the sha: this workflow's
+        # repository_dispatch trigger accepts any sha, unlike the old push: tags: v*
+        # trigger that only let a tagged commit ship. Restore that guarantee: the
+        # private repo's v<version> tag must point at the dispatched commit, and the
+        # checked-out package.json must report that same version. client_payload
+        # fields are attacker-shaped, so they are read only via env:, never
+        # interpolated into this script. fetch-tags above pulled every tag while
+        # SOURCE_DEPLOY_KEY was still live; persist-credentials: false tears the key
+        # down right after checkout, so this check is local-only (git rev-parse, no
+        # network) and works whether or not the tag actually matches.
+        env:
+          SHA: ${{ github.event.client_payload.sha }}
+          VERSION: ${{ github.event.client_payload.version }}
+        run: |
+          set -euo pipefail
+          if ! tagged=$(git rev-parse --verify "refs/tags/v${VERSION}^{commit}" 2>/dev/null); then
+            echo "::error::Tag v${VERSION} not found in dbcodeio/vscode-private"
+            exit 1
+          fi
+          tagged_lc=$(echo "$tagged" | tr '[:upper:]' '[:lower:]')
+          sha_lc=$(echo "$SHA" | tr '[:upper:]' '[:lower:]')
+          if [ "$tagged_lc" != "$sha_lc" ]; then
+            echo "::error::v${VERSION} points at $tagged, not the dispatched commit $SHA"
+            exit 1
+          fi
+          pkg=$(jq -r .version package.json)
+          if [ "$pkg" != "$VERSION" ]; then
+            echo "::error::package.json is $pkg, dispatch said $VERSION"
+            exit 1
+          fi
+          echo "Verified: v${VERSION} == $SHA, package.json version == $VERSION"
 
       - name: Stamp build provenance
         env:
@@ -119,6 +156,10 @@ jobs:
           name: extension
           path: '*.vsix'
           if-no-files-found: error
+          # This repo is public, so run artifacts are readable by any GitHub user, and
+          # this one is uploaded before either AV gate or attestation runs. Keep it
+          # around only long enough to move bytes to the next job in this run.
+          retention-days: 1
 
       - name: Stage sync payload
         # Exactly the files the sync job pushes to this repo's main, laid out to
@@ -127,7 +168,7 @@ jobs:
         run: |
           mkdir -p sync-payload/l10n sync-payload/public
           cp README.md CHANGELOG.md licenses.json sbom.cdx.json LICENSE package.json sync-payload/
-          cp package.nls.*.json sync-payload/l10n/
+          cp package.nls*.json sync-payload/l10n/
           cp l10n/* sync-payload/l10n/
           cp out/public/* sync-payload/public/
 
@@ -136,6 +177,7 @@ jobs:
           name: sync-payload
           path: sync-payload
           if-no-files-found: error
+          retention-days: 1
 
   # Antivirus gate - ClamAV scan of the packaged vsix. Fails the release if
   # ClamAV flags anything in the artifact a customer's AV could block. The mangled
@@ -146,7 +188,6 @@ jobs:
     timeout-minutes: 15
     permissions: {}
     needs: [build]
-    if: success()
     steps:
       - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
@@ -177,7 +218,6 @@ jobs:
     timeout-minutes: 15
     permissions: {}
     needs: [build]
-    if: success()
     steps:
       - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
@@ -221,7 +261,6 @@ jobs:
       id-token: write
       attestations: write
     needs: [build, scan-clamav, scan-defender]
-    if: success()
     steps:
       - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
@@ -242,11 +281,17 @@ jobs:
     permissions:
       contents: read
     needs: [attest]
-    if: success()
+    outputs:
+      sha: ${{ steps.push.outputs.sha }}
     steps:
       - name: Checkout public repo
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          # repository_dispatch's github.sha is public main's head at DISPATCH time,
+          # not now: the build plus both AV gates plus attestation take 12-25 minutes,
+          # long enough for another commit to land on main in between. An explicit
+          # ref: main checks out the branch tip instead of that stale sha.
+          ref: main
           ssh-key: ${{ secrets.PUBLIC_RELEASE_DEPLOY_KEY }}
 
       - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
@@ -255,6 +300,7 @@ jobs:
           path: sync-payload
 
       - name: Sync content and push
+        id: push
         run: |
           cp sync-payload/README.md sync-payload/CHANGELOG.md sync-payload/licenses.json \
             sync-payload/sbom.cdx.json sync-payload/LICENSE sync-payload/package.json .
@@ -264,20 +310,28 @@ jobs:
           git config user.email "username@users.noreply.github.com"
           git add README.md CHANGELOG.md licenses.json sbom.cdx.json LICENSE package.json l10n public
           git diff --cached --quiet || git commit -m "Update README, CHANGELOG, package.json, l10n, licenses and public scripts"
+          # Close the remaining window between checkout and push: reconcile with
+          # whatever landed on main in the meantime instead of pushing blind. Still
+          # authenticates with the deploy key persisted by the checkout step above
+          # (persist-credentials defaults to true there), never GITHUB_TOKEN.
+          git fetch origin main
+          git rebase origin/main
           git push origin HEAD:main
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
   # Creates the GitHub release on this repo with the vsix and SBOM attached. Idempotent:
-  # skips if the release already exists. Uses GITHUB_TOKEN, not the deploy key, because
-  # creating a release is not a branch push, so it is unaffected by the ruleset. Runs
-  # after sync-content so the release notes' CHANGELOG link is live when the release
-  # appears.
+  # skips only once the vsix asset is actually attached, and repairs a release that
+  # exists without one rather than treating its mere existence as success. Uses
+  # GITHUB_TOKEN, not the deploy key, because creating a release is not a branch push,
+  # so it is unaffected by the ruleset. Runs after sync-content so the release notes'
+  # CHANGELOG link is live when the release appears, and targets the exact commit
+  # sync-content pushed rather than whatever main happens to be when this job runs.
   create-release:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
       contents: write
     needs: [attest, sync-content]
-    if: success()
     steps:
       - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
@@ -293,19 +347,33 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
+          SHA: ${{ needs.sync-content.outputs.sha }}
         run: |
           VERSION=$(jq -r .version sync-payload/package.json)
-          if gh release view "v${VERSION}" --repo "$REPO" &>/dev/null; then
-            echo "Release v${VERSION} already exists, skipping"
+          VSIX=$(find extension -iname '*.vsix' | head -1)
+          # gh release create makes the release object first and uploads assets after,
+          # so a failed upload leaves a release that exists with no vsix attached. A
+          # bare "does the release exist" check would then treat that as success on
+          # re-run. Check for the asset itself, and repair rather than skip if it is
+          # missing.
+          if gh release view "v${VERSION}" --repo "$REPO" --json assets \
+               --jq '.assets[].name' 2>/dev/null | grep -q '\.vsix$'; then
+            echo "Release v${VERSION} already complete, skipping"
             exit 0
           fi
-          VSIX=$(find extension -iname '*.vsix' | head -1)
+          if gh release view "v${VERSION}" --repo "$REPO" &>/dev/null; then
+            echo "Release v${VERSION} exists but is missing the vsix asset, repairing"
+            gh release upload "v${VERSION}" "$VSIX" sync-payload/sbom.cdx.json \
+              --repo "$REPO" --clobber
+            exit 0
+          fi
           # SBOM rides along so every released version has an immutable one that
           # procurement can fetch without asking us.
           gh release create "v${VERSION}" "$VSIX" sync-payload/sbom.cdx.json \
             --repo "$REPO" \
             --title "v${VERSION}" \
             --notes "See [CHANGELOG](https://github.com/dbcodeio/public/blob/main/CHANGELOG.md) for details." \
+            --target "$SHA" \
             --latest
 
   publish-marketplace:
@@ -313,7 +381,6 @@ jobs:
     timeout-minutes: 10
     permissions: {}
     needs: [attest, create-release]
-    if: success()
     steps:
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
         # No checkout in this job, so action-setup can't read the pnpm version from
@@ -330,7 +397,7 @@ jobs:
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
         run: |
-          VSIX=$(find . -iname '*.vsix')
+          VSIX=$(find . -iname '*.vsix' | head -1)
           pnpm dlx @vscode/vsce@3.9.2 publish --no-git-tag-version --no-update-package-json --packagePath "$VSIX"
 
   publish-open-vsx:
@@ -338,7 +405,6 @@ jobs:
     timeout-minutes: 10
     permissions: {}
     needs: [attest, create-release]
-    if: success()
     steps:
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
         # No checkout in this job, so action-setup can't read the pnpm version from
@@ -355,8 +421,10 @@ jobs:
         env:
           OVSX_PAT: ${{ secrets.OPEN_VSX_TOKEN }}
         run: |
-          VSIX=$(find . -iname '*.vsix')
-          pnpm dlx ovsx@1.0.2 publish "$VSIX" -p "$OVSX_PAT"
+          VSIX=$(find . -iname '*.vsix' | head -1)
+          # OVSX_PAT is already in the environment; ovsx reads it from there. Passing
+          # -p "$OVSX_PAT" too would put the token on the process command line.
+          pnpm dlx ovsx@1.0.2 publish "$VSIX"
 
   # Triggers the www repo workflow to update the website changelog.
   trigger-www-repo-workflow:
@@ -364,7 +432,6 @@ jobs:
     timeout-minutes: 5
     permissions: {}
     needs: [attest, create-release]
-    if: success()
     steps:
       - uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
