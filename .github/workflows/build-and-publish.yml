@@ -382,9 +382,17 @@ jobs:
     permissions: {}
     needs: [attest, create-release]
     steps:
+      # Sparse checkout of the pinned tooling only. The repository root holds the
+      # extension's own package.json, synced there on every release, so installing
+      # from the root would resolve the extension's dependency tree instead.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          sparse-checkout: .github/release-tools
+          persist-credentials: false
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
-        # No checkout in this job, so action-setup can't read the pnpm version from
-        # package.json - pin it explicitly (keep in sync with packageManager).
+        # Only .github/release-tools is checked out, so action-setup cannot find a
+        # package.json at the root - pin explicitly (keep in sync with its
+        # packageManager field).
         with:
           version: 10.33.4
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
@@ -393,12 +401,18 @@ jobs:
       - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
           name: extension
+          path: extension
+      # --frozen-lockfile so nothing resolves at release time: every transitive
+      # dependency is pinned by integrity hash before VSCE_PAT is in scope.
+      - run: pnpm install --frozen-lockfile
+        working-directory: .github/release-tools
       - name: Publish to VS Code Marketplace
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
         run: |
-          VSIX=$(find . -iname '*.vsix' | head -1)
-          pnpm dlx @vscode/vsce@3.9.2 publish --no-git-tag-version --no-update-package-json --packagePath "$VSIX"
+          VSIX=$(find extension -iname '*.vsix' | head -1)
+          ./.github/release-tools/node_modules/.bin/vsce publish \
+            --no-git-tag-version --no-update-package-json --packagePath "$VSIX"
 
   publish-open-vsx:
     runs-on: ubuntu-latest
@@ -406,9 +420,13 @@ jobs:
     permissions: {}
     needs: [attest, create-release]
     steps:
+      # Sparse checkout of the pinned tooling only. See the note in
+      # publish-marketplace for why the repository root is not used.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          sparse-checkout: .github/release-tools
+          persist-credentials: false
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
-        # No checkout in this job, so action-setup can't read the pnpm version from
-        # package.json - pin it explicitly (keep in sync with packageManager).
         with:
           version: 10.33.4
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
@@ -417,14 +435,17 @@ jobs:
       - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
           name: extension
+          path: extension
+      - run: pnpm install --frozen-lockfile
+        working-directory: .github/release-tools
       - name: Publish to Open VSX
         env:
           OVSX_PAT: ${{ secrets.OPEN_VSX_TOKEN }}
         run: |
-          VSIX=$(find . -iname '*.vsix' | head -1)
+          VSIX=$(find extension -iname '*.vsix' | head -1)
           # OVSX_PAT is already in the environment; ovsx reads it from there. Passing
           # -p "$OVSX_PAT" too would put the token on the process command line.
-          pnpm dlx ovsx@1.0.2 publish "$VSIX"
+          ./.github/release-tools/node_modules/.bin/ovsx publish "$VSIX"
 
   # Triggers the www repo workflow to update the website changelog.
   trigger-www-repo-workflow:
