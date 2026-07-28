@@ -1,44 +1,18 @@
 name: Build and publish
 
-# Builds the DBCode extension from the private source at an exact commit, scans it
-# for malware, attests it, syncs release content into this repo, creates the GitHub
-# release, and publishes to both marketplaces. The source is never written to this
-# repository; it is checked out with a read-only deploy key and discarded with the
-# runner.
+# Builds, scans, attests and publishes DBCode from private source at an exact
+# commit. The source is checked out with a read-only deploy key and discarded with
+# the runner. Release-readiness checks belong to the private release workflow; this
+# builds the commit it is handed.
 #
-# This workflow validates nothing about the source. Release-readiness checks, such
-# as translation catalog assembly, live in the private release workflow and run
-# before it pushes the bump and dispatches here. This builds the commit it is
-# handed.
+# attest-build-provenance signs only this repo's OIDC claims, so the source commit
+# never reaches the attestation directly. "Stamp build provenance" writes it into
+# build-provenance.json before packaging, so the signed digest covers it.
 #
-# actions/attest-build-provenance signs only this repo's own OIDC claims, so the
-# dispatch payload's source commit never reaches the attestation directly. We
-# bind the two ourselves: the "Stamp build provenance" step writes the source
-# commit into build-provenance.json inside the checked-out tree, before
-# packaging, so it becomes part of the vsix the attestation signs. The binding
-# is indirect, through the artifact digest, but it is what makes the claimed
-# commit tamper-evident.
-#
-# Attestation runs last among the gates, only after both antivirus gates pass.
-# Sigstore transparency-log entries are permanent and public, so we sign only
-# artifacts that cleared every gate, rather than logging attestations for builds
-# that were rejected and never shipped.
-#
-# Everything that syncs content, creates the release, or publishes runs only after
-# attest, both directly and transitively through needs:, so nothing ships anything
-# for a build the AV gates or attestation have not cleared. The sync payload (the
-# small set of files that need to land in this repo, not the whole workspace) is
-# staged and uploaded as its own artifact in build, and downloaded by the job that
-# performs the sync - jobs do not share a workspace, and syncing cannot run inside
-# build because at that point the AV gates have not run yet.
-#
-# DO NOT ADD A pull_request OR pull_request_target TRIGGER.
-#
-# This repo is public and holds the publishing credentials. The absence of a PR
-# trigger is what keeps them unreachable. pull_request_target is the specific
-# trap: unlike pull_request, it hands secrets to forked code.
-#
-# PR CI belongs in a separate workflow with no secrets, not a trigger here.
+# DO NOT ADD A pull_request OR pull_request_target TRIGGER. This repo is public and
+# holds the publishing credentials; the absence of a PR trigger is what keeps them
+# unreachable. pull_request_target is the specific trap: unlike pull_request, it
+# hands secrets to forked code.
 on:
   repository_dispatch:
     types: [release]
@@ -91,16 +65,9 @@ jobs:
           fetch-tags: true
 
       - name: Verify the dispatched commit matches the release tag and version
-        # The only prior check was a 40-hex shape check on the sha: this workflow's
-        # repository_dispatch trigger accepts any sha, unlike the old push: tags: v*
-        # trigger that only let a tagged commit ship. Restore that guarantee: the
-        # private repo's v<version> tag must point at the dispatched commit, and the
-        # checked-out package.json must report that same version. client_payload
-        # fields are attacker-shaped, so they are read only via env:, never
-        # interpolated into this script. fetch-tags above pulled every tag while
-        # SOURCE_DEPLOY_KEY was still live; persist-credentials: false tears the key
-        # down right after checkout, so this check is local-only (git rev-parse, no
-        # network) and works whether or not the tag actually matches.
+        # repository_dispatch accepts any sha, unlike the old push: tags: v* trigger
+        # that only let a tagged commit ship. This restores that guarantee. Local-only:
+        # fetch-tags pulled the tags while the deploy key was still live.
         env:
           SHA: ${{ github.event.client_payload.sha }}
           VERSION: ${{ github.event.client_payload.version }}
@@ -146,8 +113,11 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      # pnpm exec, not dlx: vsce is a pinned devDependency of the private repo, so the
+      # install above fixes its whole tree from the lockfile. This step produces the
+      # bytes users install, so it is the one that most needs to not resolve anything.
       - name: Package
-        run: pnpm dlx @vscode/vsce@3.9.2 package --no-dependencies --no-git-tag-version --no-update-package-json --allow-package-secrets privatekey
+        run: pnpm exec vsce package --no-dependencies --no-git-tag-version --no-update-package-json --allow-package-secrets privatekey
         env:
           NODE_OPTIONS: --max-old-space-size=6144
 
@@ -248,12 +218,9 @@ jobs:
             exit 1
           }
 
-  # Attestation happens only after both antivirus gates pass, and only here: Sigstore
-  # transparency-log entries are permanent and public, so we sign artifacts that cleared
-  # every gate rather than logging attestations for builds that were rejected and never
-  # shipped. Downloads the same "extension" artifact the scans just cleared and attests
-  # that exact file - actions/upload-artifact and actions/download-artifact round-trip
-  # file bytes unchanged, so the digest this signs matches the one the scans checked.
+  # After both AV gates, never before: Sigstore entries are permanent and public, so we
+  # sign only what cleared every gate. Artifact round-trip preserves bytes, so the digest
+  # signed here is the one the scans checked.
   attest:
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -270,11 +237,9 @@ jobs:
         with:
           subject-path: '*.vsix'
 
-  # Syncs release content (README, CHANGELOG, licenses, sbom, package.json, l10n,
-  # public/) into this repo's main branch. This repo IS the public repo, so there is
-  # no separate clone-and-push-elsewhere step, we just check ourselves out and commit.
-  # GITHUB_TOKEN cannot push to main once the branch ruleset is in place, so this
-  # pushes over SSH with the deploy key, the ruleset's only bypass actor.
+  # Syncs release content into this repo's main. Pushes over SSH with the deploy key:
+  # GITHUB_TOKEN cannot push to main under the branch ruleset, the key is its only
+  # bypass actor.
   sync-content:
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -319,13 +284,9 @@ jobs:
           git push origin HEAD:main
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
-  # Creates the GitHub release on this repo with the vsix and SBOM attached. Idempotent:
-  # skips only once the vsix asset is actually attached, and repairs a release that
-  # exists without one rather than treating its mere existence as success. Uses
-  # GITHUB_TOKEN, not the deploy key, because creating a release is not a branch push,
-  # so it is unaffected by the ruleset. Runs after sync-content so the release notes'
-  # CHANGELOG link is live when the release appears, and targets the exact commit
-  # sync-content pushed rather than whatever main happens to be when this job runs.
+  # Creates the GitHub release with the vsix and SBOM. GITHUB_TOKEN is enough: creating
+  # a release is not a branch push. Runs after sync-content so the CHANGELOG link works,
+  # and targets the commit it pushed.
   create-release:
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -351,11 +312,8 @@ jobs:
         run: |
           VERSION=$(jq -r .version sync-payload/package.json)
           VSIX=$(find extension -iname '*.vsix' | head -1)
-          # gh release create makes the release object first and uploads assets after,
-          # so a failed upload leaves a release that exists with no vsix attached. A
-          # bare "does the release exist" check would then treat that as success on
-          # re-run. Check for the asset itself, and repair rather than skip if it is
-          # missing.
+          # gh release create makes the release before uploading assets, so a failed
+          # upload leaves one with no vsix. Check for the asset, not the release.
           if gh release view "v${VERSION}" --repo "$REPO" --json assets \
                --jq '.assets[].name' 2>/dev/null | grep -q '\.vsix$'; then
             echo "Release v${VERSION} already complete, skipping"
