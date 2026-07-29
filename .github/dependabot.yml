@@ -1,0 +1,23 @@
+version: 2
+
+# Keeps the SHA pins in .github/workflows current. Dependabot rewrites both the
+# sha and the trailing "# vX.Y.Z" comment, so pins stay readable.
+#
+# Actions only. The root package.json is generated from the private source repo
+# on build and release, so it must never be updated from here.
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    # Ignore releases younger than a week (supply-chain quarantine, matching
+    # the minimum-release-age we use for npm).
+    cooldown:
+      default-days: 7
+    # One PR for all action bumps rather than one per action.
+    groups:
+      github-actions:
+        patterns:
+          - '*'
+    commit-message:
+      prefix: ci
