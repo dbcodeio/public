@@ -292,7 +292,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "SQL denetimini etkinleştir (sözdizimi ve anlamsal doğrulama). SQL dosyalarındaki tüm uyarıları gizlemek için devre dışı bırakın.",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Yeni sabitlenmiş bağlantılar için varsayılan otomatik onaylama modu. Devre dışı bırakıldığında, değişiklikleri manuel olarak onaylamanız veya geri almanız gerekir.",
   "Exact value from database - no conversion or formatting applied.": "Veritabanından tam değer - dönüştürme veya biçimlendirme uygulanmadı.",
-  "Truncate Cascade": "Basamaklı kısalt",
   "View Tunnel Logs": "Tünel günlüklerini görüntüle",
   "Show column comments below column names in result headers.": "Sonuç başlıklarında sütun adlarının altında sütun yorumlarını göster.",
   "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "Komut tünelleri için çalıştırılacak komut (örn: cloud-sql-auth-proxy, kubectl)",
@@ -391,5 +390,7 @@
   "Compiled SQL": "Derlenmiş SQL",
   "Debug": "Hata Ayıkla",
   "Database Routine Debugger": "Veritabanı Yordamı Hata Ayıklayıcısı",
-  "Include the query as a separate Query worksheet in Excel exports.": "Sorguyu Excel dışa aktarımlarına ayrı bir Query çalışma sayfası olarak ekleyin."
+  "Include the query as a separate Query worksheet in Excel exports.": "Sorguyu Excel dışa aktarımlarına ayrı bir Query çalışma sayfası olarak ekleyin.",
+  "Open With Connection...": "Bağlantıyla Aç...",
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Sonuç araç çubuğuna sabitlenen eylemler. Bir tablo menüsü öğesine sağ tıklayıp Araç Çubuğuna Sabitle seçeneğini belirleyerek ekleyin."
 }

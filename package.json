@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 80+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
     "publisher": "dbcode",
-    "version": "1.36.5",
+    "version": "1.36.6",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -1218,6 +1218,11 @@
                 "category": "DBCode"
             },
             {
+                "command": "dbcode.library.openItemWith",
+                "title": "%Open With Connection...%",
+                "category": "DBCode"
+            },
+            {
                 "command": "dbcode.library.revealFile",
                 "title": "%Reveal in File Explorer%",
                 "category": "DBCode"
@@ -1401,11 +1406,6 @@
             {
                 "command": "dbcode.item.truncate",
                 "title": "%Truncate%",
-                "category": "DBCode"
-            },
-            {
-                "command": "dbcode.item.truncateCascade",
-                "title": "%Truncate Cascade%",
                 "category": "DBCode"
             },
             {
@@ -1823,10 +1823,6 @@
                     "when": "false"
                 },
                 {
-                    "command": "dbcode.item.truncateCascade",
-                    "when": "false"
-                },
-                {
                     "command": "dbcode.database.create",
                     "when": "false"
                 },
@@ -2008,6 +2004,10 @@
                 },
                 {
                     "command": "dbcode.library.openItem",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.library.openItemWith",
                     "when": "false"
                 },
                 {
@@ -2455,6 +2455,11 @@
                     "group": "2manage@3"
                 },
                 {
+                    "when": "view == dbcode.library.view && viewItem =~ /library-(script|querybuilder)-|~sqlfile~/",
+                    "command": "dbcode.library.openItemWith",
+                    "group": "1open@1"
+                },
+                {
                     "when": "view == dbcode.connections.view && viewItem =~ /~click~|~openLimit~|~scriptSelect~|~scriptDDL~/ && !(viewItem =~ /~connFavorite~/)",
                     "command": "dbcode.connection.addFavorite",
                     "group": "zzzommon@0"
@@ -2828,11 +2833,6 @@
                     "command": "dbcode.item.truncate",
                     "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~truncate~/",
                     "group": "9destructive@2"
-                },
-                {
-                    "command": "dbcode.item.truncateCascade",
-                    "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~truncateCascade~/",
-                    "group": "9destructive@3"
                 },
                 {
                     "command": "dbcode.filters.edit",
@@ -5293,6 +5293,26 @@
                         "type": "boolean",
                         "default": true,
                         "markdownDescription": "%Include the query as a separate Query worksheet in Excel exports.%"
+                    },
+                    "dbcode.grid.toolbarPins": {
+                        "type": "array",
+                        "default": [],
+                        "scope": "application",
+                        "markdownDescription": "%Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.%",
+                        "items": {
+                            "type": "object",
+                            "required": [
+                                "id"
+                            ],
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "label": {
+                                    "type": "string"
+                                }
+                            }
+                        }
                     }
                 }
             },
@@ -6880,7 +6900,7 @@
     "scripts": {
         "vscode:prepublish": "pnpm run vsixprepare",
         "vsixprepare": "pnpm run esbuild -- --minify",
-        "package": "pnpm dlx @vscode/vsce@3.9.2 package --no-dependencies",
+        "package": "pnpm exec vsce package --no-dependencies",
         "sbom": "tsx ./scripts/sbom.ts",
         "lint:file": "biome check --write",
         "watch": "npm run dev:build & npm run dev:server",
@@ -6949,6 +6969,7 @@
         "@types/ws": "^8.18.1",
         "@vitest/coverage-v8": "^4.1.8",
         "@vscode/l10n-dev": "^0.0.35",
+        "@vscode/vsce": "3.9.2",
         "apache-arrow": "19.0.1",
         "big.js": "^6.2.2",
         "dmdb": "1.0.49630",

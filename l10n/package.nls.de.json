@@ -292,7 +292,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "SQL-Prüfung aktivieren (Syntax- und semantische Validierung). Deaktivieren, um alle Warnungen in SQL-Dateien zu unterdrücken.",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Standard-Auto-Commit-Modus für neue angepinnte Verbindungen. Bei Deaktivierung müssen Änderungen manuell committet oder zurückgesetzt werden.",
   "Exact value from database - no conversion or formatting applied.": "Exakter Wert aus der Datenbank - keine Konvertierung oder Formatierung angewendet.",
-  "Truncate Cascade": "Kaskadierend leeren",
   "View Tunnel Logs": "Tunnel-Protokolle anzeigen",
   "Show column comments below column names in result headers.": "Spaltenkommentare unter Spaltennamen in Ergebnisüberschriften anzeigen.",
   "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "Befehl für Befehls-Tunnel (z.B. cloud-sql-auth-proxy, kubectl)",
@@ -391,5 +390,7 @@
   "Compiled SQL": "Kompiliertes SQL",
   "Debug": "Debuggen",
   "Database Routine Debugger": "Debugger für Datenbankroutinen",
-  "Include the query as a separate Query worksheet in Excel exports.": "Die Abfrage bei Excel-Exporten als separates Arbeitsblatt „Query“ einschließen."
+  "Include the query as a separate Query worksheet in Excel exports.": "Die Abfrage bei Excel-Exporten als separates Arbeitsblatt „Query“ einschließen.",
+  "Open With Connection...": "Mit Verbindung öffnen...",
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Aktionen, die an die Ergebnis-Symbolleiste angeheftet sind. Fügen Sie eine hinzu, indem Sie mit der rechten Maustaste auf einen Menüpunkt des Rasters klicken und An die Symbolleiste anheften auswählen."
 }

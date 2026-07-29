@@ -292,7 +292,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "啟用 SQL 檢查（語法和語意驗證）。停用以隱藏 SQL 檔案中的所有警告。",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "新釘選連線的預設自動認可模式。停用時，必須手動認可或復原變更。",
   "Exact value from database - no conversion or formatting applied.": "資料庫中的確切值 - 未套用任何轉換或格式化。",
-  "Truncate Cascade": "階層式截斷",
   "View Tunnel Logs": "檢視通道記錄檔",
   "Show column comments below column names in result headers.": "在結果標題的欄名下方顯示欄註解。",
   "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "命令通道要執行的命令（例如：cloud-sql-auth-proxy、kubectl）",
@@ -391,5 +390,7 @@
   "Compiled SQL": "已編譯 SQL",
   "Debug": "偵錯",
   "Database Routine Debugger": "資料庫常式偵錯工具",
-  "Include the query as a separate Query worksheet in Excel exports.": "在 Excel 匯出中將查詢納入為獨立的「Query」工作表。"
+  "Include the query as a separate Query worksheet in Excel exports.": "在 Excel 匯出中將查詢納入為獨立的「Query」工作表。",
+  "Open With Connection...": "使用連線開啟...",
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "釘選在結果工具列上的動作。在格線選單項目上按右鍵並選擇「釘選到工具列」即可新增。"
 }

@@ -292,7 +292,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "Abilita il controllo SQL (validazione sintattica e semantica). Disabilitare per eliminare tutti gli avvisi nei file SQL.",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Modalità auto-commit predefinita per le nuove connessioni fissate. Se disabilitata, è necessario confermare o annullare le modifiche manualmente.",
   "Exact value from database - no conversion or formatting applied.": "Valore esatto dal database - nessuna conversione o formattazione applicata.",
-  "Truncate Cascade": "Tronca a cascata",
   "View Tunnel Logs": "Visualizza log tunnel",
   "Show column comments below column names in result headers.": "Mostra i commenti delle colonne sotto i nomi delle colonne nelle intestazioni dei risultati.",
   "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "Comando da eseguire per i tunnel di comando (es: cloud-sql-auth-proxy, kubectl)",
@@ -391,5 +390,7 @@
   "Compiled SQL": "SQL compilato",
   "Debug": "Debug",
   "Database Routine Debugger": "Debugger di routine del database",
-  "Include the query as a separate Query worksheet in Excel exports.": "Includi la query come foglio di lavoro Query separato nelle esportazioni Excel."
+  "Include the query as a separate Query worksheet in Excel exports.": "Includi la query come foglio di lavoro Query separato nelle esportazioni Excel.",
+  "Open With Connection...": "Apri con connessione...",
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Azioni fissate sulla barra degli strumenti dei risultati. Aggiungine una facendo clic con il pulsante destro su una voce del menu della griglia e scegliendo Fissa sulla barra degli strumenti."
 }

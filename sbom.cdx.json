@@ -1,16 +1,16 @@
 {
 	"bomFormat": "CycloneDX",
 	"specVersion": "1.6",
-	"serialNumber": "urn:uuid:839b672b-1b23-04e1-904f-1ace304c6870",
+	"serialNumber": "urn:uuid:615f42a2-91ab-8eb2-8479-7781cf8bca6e",
 	"version": 1,
 	"metadata": {
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.36.4",
+			"version": "1.36.5",
 			"publisher": "dbcode",
 			"description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 80+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
-			"purl": "pkg:generic/dbcode@1.36.4",
+			"purl": "pkg:generic/dbcode@1.36.5",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -1757,26 +1757,6 @@
 			"name": "@babel/helper-string-parser",
 			"version": "7.29.7",
 			"purl": "pkg:npm/%40babel%2Fhelper-string-parser@7.29.7",
-			"licenses": [
-				{
-					"license": {
-						"id": "MIT"
-					}
-				}
-			],
-			"publisher": "The Babel Team (https://babel.dev/team)",
-			"externalReferences": [
-				{
-					"type": "website",
-					"url": "https://github.com/babel/babel"
-				}
-			]
-		},
-		{
-			"type": "library",
-			"name": "@babel/helper-validator-identifier",
-			"version": "7.28.5",
-			"purl": "pkg:npm/%40babel%2Fhelper-validator-identifier@7.28.5",
 			"licenses": [
 				{
 					"license": {

@@ -292,7 +292,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "Activer la vérification SQL (validation syntaxique et sémantique). Désactiver pour supprimer tous les avertissements dans les fichiers SQL.",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "Mode de validation automatique par défaut pour les nouvelles connexions épinglées. Si désactivé, vous devez valider ou annuler les modifications manuellement.",
   "Exact value from database - no conversion or formatting applied.": "Valeur exacte de la base de données - aucune conversion ou mise en forme appliquée.",
-  "Truncate Cascade": "Tronquer en cascade",
   "View Tunnel Logs": "Voir les journaux du tunnel",
   "Show column comments below column names in result headers.": "Afficher les commentaires de colonne sous les noms de colonne dans les en-têtes de résultat.",
   "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "Commande à exécuter pour les tunnels de commande (ex : cloud-sql-auth-proxy, kubectl)",
@@ -391,5 +390,7 @@
   "Compiled SQL": "SQL compilé",
   "Debug": "Déboguer",
   "Database Routine Debugger": "Débogueur de routine de base de données",
-  "Include the query as a separate Query worksheet in Excel exports.": "Inclure la requête dans une feuille de calcul Query distincte lors des exportations Excel."
+  "Include the query as a separate Query worksheet in Excel exports.": "Inclure la requête dans une feuille de calcul Query distincte lors des exportations Excel.",
+  "Open With Connection...": "Ouvrir avec la connexion...",
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Actions épinglées à la barre d'outils des résultats. Ajoutez-en une en effectuant un clic droit sur un élément du menu de la grille, puis en choisissant Épingler à la barre d'outils."
 }

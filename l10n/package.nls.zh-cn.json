@@ -292,7 +292,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "启用 SQL 检查（语法和语义验证）。禁用以隐藏 SQL 文件中的所有警告。",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "新固定连接的默认自动提交模式。禁用时，必须手动提交或回滚更改。",
   "Exact value from database - no conversion or formatting applied.": "数据库中的精确值 - 未应用任何转换或格式化。",
-  "Truncate Cascade": "级联截断",
   "View Tunnel Logs": "查看隧道日志",
   "Show column comments below column names in result headers.": "在结果标题的列名下方显示列注释。",
   "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "命令隧道要运行的命令（例如：cloud-sql-auth-proxy、kubectl）",
@@ -391,5 +390,7 @@
   "Compiled SQL": "已编译 SQL",
   "Debug": "调试",
   "Database Routine Debugger": "数据库例程调试器",
-  "Include the query as a separate Query worksheet in Excel exports.": "在 Excel 导出中将查询包含为单独的“Query”工作表。"
+  "Include the query as a separate Query worksheet in Excel exports.": "在 Excel 导出中将查询包含为单独的“Query”工作表。",
+  "Open With Connection...": "使用连接打开...",
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "固定在结果工具栏上的操作。右键点击网格菜单项并选择“固定到工具栏”即可添加。"
 }

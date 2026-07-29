@@ -292,7 +292,6 @@
   "Enable SQL linting (syntax and semantic validation). Disable to suppress all linting warnings in SQL files.": "SQL 린팅 활성화(구문 및 의미 검증). 비활성화하면 SQL 파일의 모든 경고가 숨겨집니다.",
   "Default auto-commit mode for new pinned connections. When disabled, you must manually commit or rollback changes.": "새 고정된 연결의 기본 자동 커밋 모드. 비활성화 시 변경 사항을 수동으로 커밋하거나 롤백해야 합니다.",
   "Exact value from database - no conversion or formatting applied.": "데이터베이스의 정확한 값 - 변환이나 서식 적용 없음.",
-  "Truncate Cascade": "계단식 자르기",
   "View Tunnel Logs": "터널 로그 보기",
   "Show column comments below column names in result headers.": "결과 헤더의 열 이름 아래에 열 설명을 표시합니다.",
   "Command to run for command tunnels (e.g., cloud-sql-auth-proxy, kubectl)": "명령 터널에서 실행할 명령(예: cloud-sql-auth-proxy, kubectl)",
@@ -391,5 +390,7 @@
   "Compiled SQL": "컴파일된 SQL",
   "Debug": "디버그",
   "Database Routine Debugger": "데이터베이스 루틴 디버거",
-  "Include the query as a separate Query worksheet in Excel exports.": "Excel 내보내기에 쿼리를 별도의 Query 워크시트로 포함합니다."
+  "Include the query as a separate Query worksheet in Excel exports.": "Excel 내보내기에 쿼리를 별도의 Query 워크시트로 포함합니다.",
+  "Open With Connection...": "연결을 선택하여 열기...",
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "결과 도구 모음에 고정된 작업입니다. 그리드 메뉴 항목을 마우스 오른쪽 버튼으로 클릭하고 도구 모음에 고정을 선택하면 추가됩니다."
 }

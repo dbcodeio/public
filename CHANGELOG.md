@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## 1.36.6 - 2026-07-29
+
+### Changed
+
+- Free tier: Visual data editing, transaction control, read-only connections and roles, missing WHERE detection, unlimited history, favorites and library, and the MCP server are now free for everyone.
+- Free tier: Query parameters, view and routine definitions, file editing, post-connection SQL, saved filters, authentication profiles, .sql file execution, folder connections and watched folders, notebook connection lock, Python injection, transpose, column expand, formatters, quick script, and scratch files are also now free.
+- DB Explorer: Drop and Truncate now offer a cascade option on databases that support it.
+- Library: Right-click a saved script, query, or SQL file to open it against a connection you pick.
+- Results: Pin copy, export, open, share, select all and clear filters/sorts actions to the results toolbar from its + button.
+
+### Fixed
+
+- Editor: Reuse SQL statement boundaries and ignore stale active-statement updates.
+- DB Explorer: Dropping several objects at once now refreshes the tree when part of the batch fails.
+- Databricks: Restored fast result downloads on row-limited queries while keeping their memory use bounded.
+- DB Explorer: Favorites now only appear under the database they were added in, not every database on the connection.
+- Editor: Kept autocomplete focused on the current statement in multi-statement SQL.
+- Connections: Editor connection idle timeout no longer releases a connection while a query is still running.
+- PostgreSQL: Fixed missing Partitions for tables in schemas outside the search path, and for partitions that are themselves partitioned.
+
 ## 1.36.5 - 2026-07-27
 
 ### Changed
