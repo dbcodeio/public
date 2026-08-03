@@ -162,7 +162,7 @@ DBCode runs anywhere VS Code does. Install from the [VS Code Marketplace](https:
 ## Coming from DBeaver, DataGrip, TablePlus, or SQLTools?
 
 - **From DBeaver?** The same multi-database coverage - Postgres, MySQL, SQL Server, Oracle, and 80+ more - with native AI built in, and no separate Java app to run.
-- **From DataGrip?** Power-user features like execution plans, data compare, and stored procedure editing, without leaving your editor or paying JetBrains pricing.
+- **From DataGrip?** Power-user features like execution plans, data compare, and stored procedure editing, without leaving your editor or JetBrains' commercial pricing.
 - **From TablePlus?** Cross-platform and integrated: no separate app to alt-tab to, with Copilot and MCP built in.
 - **From SQLTools?** Everything you use it for, plus inline data editing, ER diagrams, NoSQL support, and native AI - one extension, no per-database driver installs.
 
@@ -170,7 +170,9 @@ DBCode runs anywhere VS Code does. Install from the [VS Code Marketplace](https:
 
 ## Pricing
 
-Core features are free, forever. Some advanced features require a subscription. See [Pricing](https://dbcode.io/pricing).
+Free for everyone, including commercial use and teams of any size: browsing, querying, and editing data, notebooks, ER diagrams and charts, transaction control, read-only connections and roles, missing WHERE detection, unlimited query history, favorites, the library, schema-aware Copilot tools, the MCP server for your AI agent, and more.
+
+Pro adds AI assistance, data tooling, sync and sharing, and cloud provider integrations. Team adds role-based feature control and centralized seat management. See [Pricing](https://dbcode.io/pricing).
 
 
 ## Telemetry

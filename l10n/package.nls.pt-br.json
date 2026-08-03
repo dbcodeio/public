@@ -392,5 +392,12 @@
   "Database Routine Debugger": "Depurador de rotinas de banco de dados",
   "Include the query as a separate Query worksheet in Excel exports.": "Incluir a consulta como uma planilha Query separada nas exportações do Excel.",
   "Open With Connection...": "Abrir com conexão...",
-  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Ações fixadas na barra de ferramentas de resultados. Adicione uma clicando com o botão direito em um item do menu da grade e escolhendo Fixar na barra de ferramentas."
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Ações fixadas na barra de ferramentas de resultados. Adicione uma clicando com o botão direito em um item do menu da grade e escolhendo Fixar na barra de ferramentas.",
+  "Set Migrations Folder...": "Definir pasta de migrações...",
+  "Refresh Migrations": "Atualizar migrações",
+  "Copy Migrate Command": "Copiar comando de migração",
+  "Copy Repair Command": "Copiar comando de reparo",
+  "Copy Resolve Command": "Copiar comando de resolução",
+  "Security": "Segurança",
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "Desativa os serviços online hospedados pelo DBCode e os downloads automáticos de drivers, ferramentas e extensões de mecanismos de banco de dados. As conexões de banco de dados e sua autenticação, os provedores de IA configurados pelo usuário, as importações de provedores de nuvem, os recursos de webview necessários e os blocos de mapa permanecem disponíveis. [Saiba mais](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)."
 }

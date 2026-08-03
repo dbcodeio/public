@@ -1,5 +1,33 @@
 # CHANGELOG
 
+## 1.36.7 - 2026-08-03
+
+### Changed
+
+- Aerospike: Moved out of Preview.
+- Couchbase: Removed the Preview status.
+- Security: Added a machine-wide setting to disable DBCode online services and automatic dependency downloads.
+- Iceberg: Moved out of Preview.
+- Memgraph: Moved out of Preview.
+- DB Explorer: Detects Flyway, Prisma, and Rails migrations and shows their status in the connection tree.
+- PostHog: Removed the Preview status.
+- Power BI: Added Preview semantic model browsing and DAX query execution.
+- Query Builder: The SQL panel can now be collapsed and expanded from its toolbar.
+- SQLite: Added a Custom Extensions field for loading your own extension files on connect. #1189
+- SQLite: Progressive schema loading is now on by default.
+- SAP ASE (Sybase): Moved out of Preview.
+- TypeDB: Removed the Preview status.
+
+### Fixed
+
+- Connections: Missing transient connections no longer show an error notification after restart. #1193
+- Cloud providers: Stop failed tree expansions from reopening the same error repeatedly, and add provider-specific Refresh that discards cached children and reconnects.
+- CSV: Opened files directly in the grid without prompts or sidebar changes. #1191
+- Explore: Fixed labels not appearing on pie and donut charts. #1187
+- Export: Fixed "Invalid string length" when exporting large result sets. #1188
+- Results: Very large query results no longer exhaust memory or fail to load.
+- Supabase: Reliably connect with temporary pooler credentials and safely report known provisioning failures.
+
 ## 1.36.6 - 2026-07-29
 
 ### Changed

@@ -392,5 +392,12 @@
   "Database Routine Debugger": "Depurador de rutinas de base de datos",
   "Include the query as a separate Query worksheet in Excel exports.": "Incluir la consulta como una hoja de cálculo Query independiente en las exportaciones de Excel.",
   "Open With Connection...": "Abrir con conexión...",
-  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Acciones ancladas a la barra de herramientas de resultados. Agrega una haciendo clic con el botón derecho en un elemento del menú de la cuadrícula y eligiendo Anclar a la barra de herramientas."
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Acciones ancladas a la barra de herramientas de resultados. Agrega una haciendo clic con el botón derecho en un elemento del menú de la cuadrícula y eligiendo Anclar a la barra de herramientas.",
+  "Set Migrations Folder...": "Establecer carpeta de migraciones...",
+  "Refresh Migrations": "Actualizar migraciones",
+  "Copy Migrate Command": "Copiar comando de migración",
+  "Copy Repair Command": "Copiar comando de reparación",
+  "Copy Resolve Command": "Copiar comando de resolución",
+  "Security": "Seguridad",
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "Deshabilita los servicios en línea alojados por DBCode y las descargas automáticas de controladores, herramientas y extensiones del motor de base de datos. Las conexiones a bases de datos y su autenticación, los proveedores de IA configurados por el usuario, las importaciones de proveedores de nube, los recursos de webview necesarios y los mosaicos de mapas siguen disponibles. [Más información](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)."
 }

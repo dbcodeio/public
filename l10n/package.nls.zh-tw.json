@@ -392,5 +392,12 @@
   "Database Routine Debugger": "資料庫常式偵錯工具",
   "Include the query as a separate Query worksheet in Excel exports.": "在 Excel 匯出中將查詢納入為獨立的「Query」工作表。",
   "Open With Connection...": "使用連線開啟...",
-  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "釘選在結果工具列上的動作。在格線選單項目上按右鍵並選擇「釘選到工具列」即可新增。"
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "釘選在結果工具列上的動作。在格線選單項目上按右鍵並選擇「釘選到工具列」即可新增。",
+  "Set Migrations Folder...": "設定遷移資料夾...",
+  "Refresh Migrations": "重新整理遷移",
+  "Copy Migrate Command": "複製遷移命令",
+  "Copy Repair Command": "複製修復命令",
+  "Copy Resolve Command": "複製解決命令",
+  "Security": "安全性",
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "停用由 DBCode 託管的線上服務，以及驅動程式、工具和資料庫引擎擴充功能的自動下載。資料庫連線及其驗證、使用者設定的 AI 提供者、雲端提供者匯入、必要的 webview 資源和地圖圖塊仍可使用。[深入瞭解](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)。"
 }

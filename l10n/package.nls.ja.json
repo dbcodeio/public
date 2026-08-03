@@ -392,5 +392,12 @@
   "Database Routine Debugger": "データベースルーチンデバッガー",
   "Include the query as a separate Query worksheet in Excel exports.": "Excel エクスポートにクエリを別の「Query」ワークシートとして含めます。",
   "Open With Connection...": "接続を指定して開く...",
-  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "結果ツールバーにピン留めされた操作です。グリッドメニューの項目を右クリックして「ツールバーにピン留め」を選択すると追加できます。"
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "結果ツールバーにピン留めされた操作です。グリッドメニューの項目を右クリックして「ツールバーにピン留め」を選択すると追加できます。",
+  "Set Migrations Folder...": "マイグレーションフォルダーを設定...",
+  "Refresh Migrations": "マイグレーションを更新",
+  "Copy Migrate Command": "マイグレーションコマンドをコピー",
+  "Copy Repair Command": "修復コマンドをコピー",
+  "Copy Resolve Command": "解決コマンドをコピー",
+  "Security": "セキュリティ",
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "DBCode がホストするオンラインサービスと、ドライバー、ツール、データベースエンジン拡張機能の自動ダウンロードを無効にします。データベース接続とその認証、ユーザーが設定した AI プロバイダー、クラウドプロバイダーからのインポート、必要な webview アセット、マップタイルは引き続き利用できます。[詳細](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)。"
 }

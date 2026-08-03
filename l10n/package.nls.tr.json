@@ -392,5 +392,12 @@
   "Database Routine Debugger": "Veritabanı Yordamı Hata Ayıklayıcısı",
   "Include the query as a separate Query worksheet in Excel exports.": "Sorguyu Excel dışa aktarımlarına ayrı bir Query çalışma sayfası olarak ekleyin.",
   "Open With Connection...": "Bağlantıyla Aç...",
-  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Sonuç araç çubuğuna sabitlenen eylemler. Bir tablo menüsü öğesine sağ tıklayıp Araç Çubuğuna Sabitle seçeneğini belirleyerek ekleyin."
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Sonuç araç çubuğuna sabitlenen eylemler. Bir tablo menüsü öğesine sağ tıklayıp Araç Çubuğuna Sabitle seçeneğini belirleyerek ekleyin.",
+  "Set Migrations Folder...": "Geçiş klasörünü ayarla...",
+  "Refresh Migrations": "Geçişleri yenile",
+  "Copy Migrate Command": "Geçiş komutunu kopyala",
+  "Copy Repair Command": "Onarım komutunu kopyala",
+  "Copy Resolve Command": "Çözümleme komutunu kopyala",
+  "Security": "Güvenlik",
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "DBCode tarafından barındırılan çevrimiçi hizmetleri ve sürücülerin, araçların ve veritabanı motoru uzantılarının otomatik indirilmesini devre dışı bırakır. Veritabanı bağlantıları ve kimlik doğrulamaları, kullanıcı tarafından yapılandırılan yapay zeka sağlayıcıları, bulut sağlayıcısı içe aktarmaları, gerekli webview varlıkları ve harita döşemeleri kullanılabilir kalır. [Daha fazla bilgi](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)."
 }

@@ -392,5 +392,12 @@
   "Database Routine Debugger": "데이터베이스 루틴 디버거",
   "Include the query as a separate Query worksheet in Excel exports.": "Excel 내보내기에 쿼리를 별도의 Query 워크시트로 포함합니다.",
   "Open With Connection...": "연결을 선택하여 열기...",
-  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "결과 도구 모음에 고정된 작업입니다. 그리드 메뉴 항목을 마우스 오른쪽 버튼으로 클릭하고 도구 모음에 고정을 선택하면 추가됩니다."
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "결과 도구 모음에 고정된 작업입니다. 그리드 메뉴 항목을 마우스 오른쪽 버튼으로 클릭하고 도구 모음에 고정을 선택하면 추가됩니다.",
+  "Set Migrations Folder...": "마이그레이션 폴더 설정...",
+  "Refresh Migrations": "마이그레이션 새로고침",
+  "Copy Migrate Command": "마이그레이션 명령 복사",
+  "Copy Repair Command": "복구 명령 복사",
+  "Copy Resolve Command": "해결 명령 복사",
+  "Security": "보안",
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "DBCode에서 호스팅하는 온라인 서비스와 드라이버, 도구 및 데이터베이스 엔진 확장의 자동 다운로드를 비활성화합니다. 데이터베이스 연결과 인증, 사용자가 구성한 AI 공급자, 클라우드 공급자 가져오기, 필수 webview 자산 및 지도 타일은 계속 사용할 수 있습니다. [자세히 알아보기](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)."
 }

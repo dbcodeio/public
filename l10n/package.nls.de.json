@@ -392,5 +392,12 @@
   "Database Routine Debugger": "Debugger für Datenbankroutinen",
   "Include the query as a separate Query worksheet in Excel exports.": "Die Abfrage bei Excel-Exporten als separates Arbeitsblatt „Query“ einschließen.",
   "Open With Connection...": "Mit Verbindung öffnen...",
-  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Aktionen, die an die Ergebnis-Symbolleiste angeheftet sind. Fügen Sie eine hinzu, indem Sie mit der rechten Maustaste auf einen Menüpunkt des Rasters klicken und An die Symbolleiste anheften auswählen."
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Aktionen, die an die Ergebnis-Symbolleiste angeheftet sind. Fügen Sie eine hinzu, indem Sie mit der rechten Maustaste auf einen Menüpunkt des Rasters klicken und An die Symbolleiste anheften auswählen.",
+  "Set Migrations Folder...": "Migrationsordner festlegen...",
+  "Refresh Migrations": "Migrationen aktualisieren",
+  "Copy Migrate Command": "Migrationsbefehl kopieren",
+  "Copy Repair Command": "Reparaturbefehl kopieren",
+  "Copy Resolve Command": "Auflösungsbefehl kopieren",
+  "Security": "Sicherheit",
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "Deaktiviert die von DBCode gehosteten Onlinedienste und automatische Downloads von Treibern, Tools und Datenbank-Engine-Erweiterungen. Datenbankverbindungen und deren Authentifizierung, benutzerdefinierte KI-Anbieter, Cloudanbieter-Importe, erforderliche Webview-Ressourcen und Kartenkacheln bleiben verfügbar. [Weitere Informationen](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)."
 }

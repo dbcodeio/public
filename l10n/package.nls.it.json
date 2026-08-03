@@ -392,5 +392,12 @@
   "Database Routine Debugger": "Debugger di routine del database",
   "Include the query as a separate Query worksheet in Excel exports.": "Includi la query come foglio di lavoro Query separato nelle esportazioni Excel.",
   "Open With Connection...": "Apri con connessione...",
-  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Azioni fissate sulla barra degli strumenti dei risultati. Aggiungine una facendo clic con il pulsante destro su una voce del menu della griglia e scegliendo Fissa sulla barra degli strumenti."
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Azioni fissate sulla barra degli strumenti dei risultati. Aggiungine una facendo clic con il pulsante destro su una voce del menu della griglia e scegliendo Fissa sulla barra degli strumenti.",
+  "Set Migrations Folder...": "Imposta cartella delle migrazioni...",
+  "Refresh Migrations": "Aggiorna migrazioni",
+  "Copy Migrate Command": "Copia comando di migrazione",
+  "Copy Repair Command": "Copia comando di riparazione",
+  "Copy Resolve Command": "Copia comando di risoluzione",
+  "Security": "Sicurezza",
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "Disabilita i servizi online ospitati da DBCode e i download automatici di driver, strumenti ed estensioni dei motori di database. Le connessioni ai database e la relativa autenticazione, i provider di IA configurati dall'utente, le importazioni dai provider cloud, le risorse webview necessarie e i riquadri mappa restano disponibili. [Ulteriori informazioni](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)."
 }

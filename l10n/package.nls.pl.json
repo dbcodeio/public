@@ -392,5 +392,12 @@
   "Database Routine Debugger": "Debuger procedur bazy danych",
   "Include the query as a separate Query worksheet in Excel exports.": "Dołącz zapytanie jako osobny arkusz Query w eksportach programu Excel.",
   "Open With Connection...": "Otwórz z połączeniem...",
-  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Akcje przypięte do paska narzędzi wyników. Dodaj akcję, klikając prawym przyciskiem myszy element menu siatki i wybierając opcję Przypnij do paska narzędzi."
+  "Actions pinned to the results toolbar. Add one by right-clicking a grid menu item and choosing Pin to Toolbar.": "Akcje przypięte do paska narzędzi wyników. Dodaj akcję, klikając prawym przyciskiem myszy element menu siatki i wybierając opcję Przypnij do paska narzędzi.",
+  "Set Migrations Folder...": "Ustaw folder migracji...",
+  "Refresh Migrations": "Odśwież migracje",
+  "Copy Migrate Command": "Kopiuj polecenie migracji",
+  "Copy Repair Command": "Kopiuj polecenie naprawy",
+  "Copy Resolve Command": "Kopiuj polecenie rozwiązania",
+  "Security": "Bezpieczeństwo",
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "Wyłącza usługi online hostowane przez DBCode oraz automatyczne pobieranie sterowników, narzędzi i rozszerzeń silników baz danych. Połączenia z bazami danych i ich uwierzytelnianie, dostawcy AI skonfigurowani przez użytkownika, importy dostawców chmurowych, wymagane zasoby webview i kafelki map pozostają dostępne. [Dowiedz się więcej](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)."
 }
