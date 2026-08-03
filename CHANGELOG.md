@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.36.8 - 2026-08-03
+
+### Fixed
+
+- Language server: Fixed a crash when loading older cached schemas.
+- MariaDB: Fixed execution plans showing a single empty node for INSERT, UPDATE, DELETE, UNION and sorted queries.
+- MySQL: Fixed execution plans showing a single empty node.
+
 ## 1.36.7 - 2026-08-03
 
 ### Changed

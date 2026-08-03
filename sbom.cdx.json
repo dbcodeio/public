@@ -1,16 +1,16 @@
 {
 	"bomFormat": "CycloneDX",
 	"specVersion": "1.6",
-	"serialNumber": "urn:uuid:615f42a2-91ab-8eb2-8479-7781cf8bca6e",
+	"serialNumber": "urn:uuid:fa9b8ff3-803d-3234-e4ca-8f5822f5a751",
 	"version": 1,
 	"metadata": {
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.36.7",
+			"version": "1.36.8",
 			"publisher": "dbcode",
 			"description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 80+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
-			"purl": "pkg:generic/dbcode@1.36.7",
+			"purl": "pkg:generic/dbcode@1.36.8",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -9961,8 +9961,8 @@
 		{
 			"type": "library",
 			"name": "brace-expansion",
-			"version": "5.0.7",
-			"purl": "pkg:npm/brace-expansion@5.0.7",
+			"version": "5.0.8",
+			"purl": "pkg:npm/brace-expansion@5.0.8",
 			"licenses": [
 				{
 					"license": {
@@ -24256,8 +24256,8 @@
 		{
 			"type": "library",
 			"name": "tar",
-			"version": "7.5.20",
-			"purl": "pkg:npm/tar@7.5.20",
+			"version": "7.5.22",
+			"purl": "pkg:npm/tar@7.5.22",
 			"licenses": [
 				{
 					"license": {
