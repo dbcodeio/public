@@ -1,0 +1,44 @@
+name: Marketplace identity setup
+
+# TEMPORARY. One-time setup for Entra ID marketplace publishing; delete this file
+# once build-and-publish.yml publishes with --azure-credential.
+#
+# Run 1: the profile step prints a JSON whose "id" field is the managed
+# identity's Azure DevOps profile id. That id is the only identifier the
+# marketplace's Members list accepts, and it only exists after the identity
+# first requests an Azure DevOps token, which that step triggers. The verify
+# step then fails, because the identity is not yet a publisher member.
+#
+# Between runs: on marketplace.visualstudio.com/manage, add that id as a member
+# of the dbcode publisher with the Contributor role.
+#
+# Run 2: verify passes. Nothing is published; verify-pat only checks rights.
+#
+# workflow_dispatch only. Same rule as build-and-publish.yml: no PR triggers in
+# this repo, ever.
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  identity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    # The federated credential is bound to this environment, and the AZURE_*
+    # secrets live on it.
+    environment: marketplace
+    permissions:
+      id-token: write
+    steps:
+      - uses: azure/login@f5d393ae46f8fde4be8b75f32e3fc50e654ad0ca # v3.0.1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          allow-no-subscriptions: true
+
+      - name: Azure DevOps profile id
+        run: az rest -u https://app.vssps.visualstudio.com/_apis/profile/profiles/me --resource 499b84ac-1321-427f-aa17-267ca6975798
+
+      - name: Verify publish rights
+        run: npx --yes @vscode/vsce@3.9.2 verify-pat dbcode --azure-credential
