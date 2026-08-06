@@ -337,7 +337,14 @@ jobs:
   publish-marketplace:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    permissions: {}
+    # No PAT: global Azure DevOps PATs retire 2026-12-01. azure/login exchanges
+    # this job's OIDC token for an Entra ID session as the managed identity that
+    # is a member of the dbcode publisher. The federated credential trusts
+    # exactly this repo + this environment, and the AZURE_* secrets live on the
+    # environment, so both require `environment: marketplace` here.
+    environment: marketplace
+    permissions:
+      id-token: write
     needs: [attest, create-release]
     steps:
       # Sparse checkout of the pinned tooling only. The repository root holds the
@@ -361,16 +368,21 @@ jobs:
           name: extension
           path: extension
       # --frozen-lockfile so nothing resolves at release time: every transitive
-      # dependency is pinned by integrity hash before VSCE_PAT is in scope.
+      # dependency is pinned by integrity hash before the Azure session exists.
       - run: pnpm install --frozen-lockfile
         working-directory: .github/release-tools
+      - uses: azure/login@f5d393ae46f8fde4be8b75f32e3fc50e654ad0ca # v3.0.1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          # The identity holds no Azure RBAC at all; it exists only to mint
+          # Azure DevOps tokens for the marketplace.
+          allow-no-subscriptions: true
       - name: Publish to VS Code Marketplace
-        env:
-          VSCE_PAT: ${{ secrets.VSCE_PAT }}
         run: |
           VSIX=$(find extension -iname '*.vsix' | head -1)
           ./.github/release-tools/node_modules/.bin/vsce publish \
-            --no-git-tag-version --no-update-package-json --packagePath "$VSIX"
+            --no-git-tag-version --no-update-package-json --azure-credential --packagePath "$VSIX"
 
   publish-open-vsx:
     runs-on: ubuntu-latest
