@@ -107,8 +107,6 @@
   "Format to display dates and times in.": "顯示日期和時間的格式。",
   "Cloud Providers, Connections and Tunnels": "雲端供應商、連接與通道",
   "Create New DBCode Notebook": "建立新的 DBCode 筆記本",
-  "Create New SQL File": "建立新的 SQL 檔案",
-  "New SQL File": "新增 SQL 檔案",
   "Execute SQL File": "執行 SQL 檔案",
   "Results": "結果",
   "Paginate results.": "分頁顯示結果。",
@@ -399,5 +397,7 @@
   "Copy Repair Command": "複製修復命令",
   "Copy Resolve Command": "複製解決命令",
   "Security": "安全性",
-  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "停用由 DBCode 託管的線上服務，以及驅動程式、工具和資料庫引擎擴充功能的自動下載。資料庫連線及其驗證、使用者設定的 AI 提供者、雲端提供者匯入、必要的 webview 資源和地圖圖塊仍可使用。[深入瞭解](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)。"
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "停用由 DBCode 託管的線上服務，以及驅動程式、工具和資料庫引擎擴充功能的自動下載。資料庫連線及其驗證、使用者設定的 AI 提供者、雲端提供者匯入、必要的 webview 資源和地圖圖塊仍可使用。[深入瞭解](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)。",
+  "Create New File": "建立新檔案",
+  "New File": "新增檔案"
 }

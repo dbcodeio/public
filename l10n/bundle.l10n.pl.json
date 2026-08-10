@@ -1630,7 +1630,6 @@
   "NOT NULL": "NOT NULL",
   "Create": "Utwórz",
   "No metrics available": "Brak dostępnych metryk",
-  "Failed to load the DBCode panel, please try again.": "Nie udało się załadować panelu DBCode, spróbuj ponownie.",
   "Execution Time": "Czas wykonania",
   "CPU Time": "Czas CPU",
   "Queue Time": "Czas w kolejce",
@@ -4710,7 +4709,6 @@
   "Power BI measures metadata is unavailable for this connection.": "Metadane miar Power BI są niedostępne dla tego połączenia.",
   "Power BI relationships metadata is unavailable for this connection.": "Metadane relacji Power BI są niedostępne dla tego połączenia.",
   "Power BI request failed: {0}": "Żądanie Power BI nie powiodło się: {0}",
-  "Power BI request failed: {0} ({1})": "Żądanie Power BI nie powiodło się: {0} ({1})",
   "Power BI authentication method is required.": "Wymagana jest metoda uwierzytelniania Power BI.",
   "Power BI authentication method is not supported.": "Metoda uwierzytelniania Power BI nie jest obsługiwana.",
   "Power BI authentication profile is required.": "Wymagany jest profil uwierzytelniania Power BI.",
@@ -4728,5 +4726,12 @@
   "View Supabase issue": "Wyświetl zgłoszenie Supabase",
   "Supabase could not issue temporary database credentials{0}": "Supabase nie mógł wydać tymczasowych danych logowania do bazy danych{0}",
   "Failed to create Supabase login role": "Nie udało się utworzyć roli logowania Supabase",
-  "Failed to retrieve Supabase pooler configuration": "Nie udało się pobrać konfiguracji poolera Supabase"
+  "Failed to retrieve Supabase pooler configuration": "Nie udało się pobrać konfiguracji poolera Supabase",
+  "The DBCode panel did not become ready": "Panel DBCode nie był gotowy",
+  "Troubleshooting": "Rozwiązywanie problemów",
+  "Reload Window": "Załaduj okno ponownie",
+  "The DBCode panel didn't load. This is usually a VS Code webview problem rather than DBCode.": "Panel DBCode nie został załadowany. Zwykle jest to problem Webview w VS Code, a nie DBCode.",
+  "{0} Refreshing credentials also failed: {1}": "{0} Odświeżenie poświadczeń również się nie powiodło: {1}",
+  "Power BI denied this request: {0} See {1}": "Usługa Power BI odrzuciła to żądanie: {0} Zobacz {1}",
+  "Power BI denied this request. See {0}": "Usługa Power BI odrzuciła to żądanie. Zobacz {0}"
 }

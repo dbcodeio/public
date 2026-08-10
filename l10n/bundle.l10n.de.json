@@ -1630,7 +1630,6 @@
   "NOT NULL": "NOT NULL",
   "Create": "Erstellen",
   "No metrics available": "Keine Metriken verfügbar",
-  "Failed to load the DBCode panel, please try again.": "Laden des DBCode-Panels fehlgeschlagen. Bitte erneut versuchen.",
   "Execution Time": "Ausführungszeit",
   "CPU Time": "CPU-Zeit",
   "Queue Time": "Wartezeit",
@@ -4710,7 +4709,6 @@
   "Power BI measures metadata is unavailable for this connection.": "Die Metadaten der Power BI-Kennzahlen sind für diese Verbindung nicht verfügbar.",
   "Power BI relationships metadata is unavailable for this connection.": "Die Metadaten der Power BI-Beziehungen sind für diese Verbindung nicht verfügbar.",
   "Power BI request failed: {0}": "Power BI-Anfrage fehlgeschlagen: {0}",
-  "Power BI request failed: {0} ({1})": "Power BI-Anfrage fehlgeschlagen: {0} ({1})",
   "Power BI authentication method is required.": "Eine Power BI-Authentifizierungsmethode ist erforderlich.",
   "Power BI authentication method is not supported.": "Die Power BI-Authentifizierungsmethode wird nicht unterstützt.",
   "Power BI authentication profile is required.": "Ein Power BI-Authentifizierungsprofil ist erforderlich.",
@@ -4728,5 +4726,12 @@
   "View Supabase issue": "Supabase-Issue anzeigen",
   "Supabase could not issue temporary database credentials{0}": "Supabase konnte keine temporären Datenbankzugangsdaten ausstellen{0}",
   "Failed to create Supabase login role": "Supabase-Anmelderolle konnte nicht erstellt werden",
-  "Failed to retrieve Supabase pooler configuration": "Supabase-Pooler-Konfiguration konnte nicht abgerufen werden"
+  "Failed to retrieve Supabase pooler configuration": "Supabase-Pooler-Konfiguration konnte nicht abgerufen werden",
+  "The DBCode panel did not become ready": "Das DBCode-Panel wurde nicht einsatzbereit",
+  "Troubleshooting": "Problembehandlung",
+  "Reload Window": "Fenster neu laden",
+  "The DBCode panel didn't load. This is usually a VS Code webview problem rather than DBCode.": "Das DBCode-Panel wurde nicht geladen. In der Regel liegt das Problem an der Webview von VS Code und nicht an DBCode.",
+  "{0} Refreshing credentials also failed: {1}": "{0} Das Aktualisieren der Anmeldeinformationen ist ebenfalls fehlgeschlagen: {1}",
+  "Power BI denied this request: {0} See {1}": "Power BI hat diese Anforderung abgelehnt: {0} Siehe {1}",
+  "Power BI denied this request. See {0}": "Power BI hat diese Anforderung abgelehnt. Siehe {0}"
 }

@@ -107,8 +107,6 @@
   "Format to display dates and times in.": "Formát zobrazení data a času.",
   "Cloud Providers, Connections and Tunnels": "Poskytovatelé cloudu, připojení a tunely",
   "Create New DBCode Notebook": "Vytvořit nový poznámkový blok DBCode",
-  "Create New SQL File": "Vytvořit nový soubor SQL",
-  "New SQL File": "Nový soubor SQL",
   "Execute SQL File": "Spustit soubor SQL",
   "Results": "Výsledky",
   "Paginate results.": "Stránkovat výsledky.",
@@ -399,5 +397,7 @@
   "Copy Repair Command": "Kopírovat příkaz opravy",
   "Copy Resolve Command": "Kopírovat příkaz vyřešení",
   "Security": "Zabezpečení",
-  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "Vypne online služby hostované službou DBCode a automatické stahování ovladačů, nástrojů a rozšíření databázových modulů. Databázová připojení a jejich ověřování, uživatelem nakonfigurovaní poskytovatelé AI, importy od cloudových poskytovatelů, požadované prostředky webview a mapové dlaždice zůstanou dostupné. [Další informace](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)."
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "Vypne online služby hostované službou DBCode a automatické stahování ovladačů, nástrojů a rozšíření databázových modulů. Databázová připojení a jejich ověřování, uživatelem nakonfigurovaní poskytovatelé AI, importy od cloudových poskytovatelů, požadované prostředky webview a mapové dlaždice zůstanou dostupné. [Další informace](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).",
+  "Create New File": "Vytvořit nový soubor",
+  "New File": "Nový soubor"
 }

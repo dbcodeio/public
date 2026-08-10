@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## 1.36.9 - 2026-08-10
+
+### Changed
+
+- Power BI: Added DAX autocomplete for functions, tables, columns, and measures.
+- Editor: SQL syntax highlighting now follows the connected database's dialect (string escapes, comments, keywords).
+- DB Explorer: Partitions and Weaviate tenants now use a distinct icon.
+- Power BI: Query and scratch files now use the .dax extension.
+- PostgreSQL: Schemas now show a Partitions folder, and partitioned tables report their partition count and total size.
+
+### Fixed
+
+- Redis, Memcached, Firebase: Results in a multi-statement batch now show the statement that produced them.
+- PostgreSQL: Fixed partitions being invisible when they live in a different schema from their table.
+- Editor: Fixed Go to Definition resolving object names inside SQL comments and strings.
+- Inspector: Fixed map view not rendering MULTIPOLYGON and other multi-part geometries. #1199
+- SQL editor: Fixed MySQL scripts using DELIMITER directives being treated as one executable statement.
+- Power BI: Tables, columns, and measures now list alphabetically. #1190
+- Google Cloud Spanner: Fixed connections failing with "Cannot find module 'google-gax'". #1198
+- Redis, Firebase, PostgreSQL: Results from statements running before a SUBSCRIBE, snapshot or LISTEN are no longer dropped.
+- Panels: Panels that fail to load now link troubleshooting instead of hanging or showing an internal timeout.
+
 ## 1.36.8 - 2026-08-03
 
 ### Fixed

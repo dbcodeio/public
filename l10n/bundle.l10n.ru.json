@@ -1630,7 +1630,6 @@
   "NOT NULL": "NOT NULL",
   "Create": "Создать",
   "No metrics available": "Метрики недоступны",
-  "Failed to load the DBCode panel, please try again.": "Не удалось загрузить панель DBCode, попробуйте снова.",
   "Execution Time": "Время выполнения",
   "CPU Time": "Процессорное время",
   "Queue Time": "Время ожидания",
@@ -4710,7 +4709,6 @@
   "Power BI measures metadata is unavailable for this connection.": "Метаданные мер Power BI недоступны для этого подключения.",
   "Power BI relationships metadata is unavailable for this connection.": "Метаданные связей Power BI недоступны для этого подключения.",
   "Power BI request failed: {0}": "Сбой запроса Power BI: {0}",
-  "Power BI request failed: {0} ({1})": "Сбой запроса Power BI: {0} ({1})",
   "Power BI authentication method is required.": "Требуется метод аутентификации Power BI.",
   "Power BI authentication method is not supported.": "Метод аутентификации Power BI не поддерживается.",
   "Power BI authentication profile is required.": "Требуется профиль аутентификации Power BI.",
@@ -4728,5 +4726,12 @@
   "View Supabase issue": "Открыть проблему Supabase",
   "Supabase could not issue temporary database credentials{0}": "Supabase не удалось выдать временные учетные данные базы данных{0}",
   "Failed to create Supabase login role": "Не удалось создать роль входа Supabase",
-  "Failed to retrieve Supabase pooler configuration": "Не удалось получить конфигурацию пулера Supabase"
+  "Failed to retrieve Supabase pooler configuration": "Не удалось получить конфигурацию пулера Supabase",
+  "The DBCode panel did not become ready": "Панель DBCode не перешла в состояние готовности",
+  "Troubleshooting": "Устранение неполадок",
+  "Reload Window": "Перезагрузить окно",
+  "The DBCode panel didn't load. This is usually a VS Code webview problem rather than DBCode.": "Панель DBCode не загрузилась. Обычно это проблема Webview в VS Code, а не DBCode.",
+  "{0} Refreshing credentials also failed: {1}": "{0} Обновить учетные данные также не удалось: {1}",
+  "Power BI denied this request: {0} See {1}": "Power BI отклонил этот запрос: {0} См. {1}",
+  "Power BI denied this request. See {0}": "Power BI отклонил этот запрос. См. {0}"
 }

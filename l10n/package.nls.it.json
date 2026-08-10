@@ -107,8 +107,6 @@
   "Format to display dates and times in.": "Formato di visualizzazione per date e ore.",
   "Cloud Providers, Connections and Tunnels": "Provider cloud, connessioni e tunnel",
   "Create New DBCode Notebook": "Crea nuovo notebook DBCode",
-  "Create New SQL File": "Crea nuovo file SQL",
-  "New SQL File": "Nuovo file SQL",
   "Execute SQL File": "Esegui file SQL",
   "Results": "Risultati",
   "Paginate results.": "Pagina i risultati.",
@@ -399,5 +397,7 @@
   "Copy Repair Command": "Copia comando di riparazione",
   "Copy Resolve Command": "Copia comando di risoluzione",
   "Security": "Sicurezza",
-  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "Disabilita i servizi online ospitati da DBCode e i download automatici di driver, strumenti ed estensioni dei motori di database. Le connessioni ai database e la relativa autenticazione, i provider di IA configurati dall'utente, le importazioni dai provider cloud, le risorse webview necessarie e i riquadri mappa restano disponibili. [Ulteriori informazioni](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)."
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "Disabilita i servizi online ospitati da DBCode e i download automatici di driver, strumenti ed estensioni dei motori di database. Le connessioni ai database e la relativa autenticazione, i provider di IA configurati dall'utente, le importazioni dai provider cloud, le risorse webview necessarie e i riquadri mappa restano disponibili. [Ulteriori informazioni](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).",
+  "Create New File": "Crea nuovo file",
+  "New File": "Nuovo file"
 }

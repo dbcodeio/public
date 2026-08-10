@@ -107,8 +107,6 @@
   "Format to display dates and times in.": "Format wyświetlania dat i godzin.",
   "Cloud Providers, Connections and Tunnels": "Dostawcy chmury, połączenia i tunele",
   "Create New DBCode Notebook": "Utwórz nowy notes DBCode",
-  "Create New SQL File": "Utwórz nowy plik SQL",
-  "New SQL File": "Nowy plik SQL",
   "Execute SQL File": "Wykonaj plik SQL",
   "Results": "Wyniki",
   "Paginate results.": "Stronicuj wyniki.",
@@ -399,5 +397,7 @@
   "Copy Repair Command": "Kopiuj polecenie naprawy",
   "Copy Resolve Command": "Kopiuj polecenie rozwiązania",
   "Security": "Bezpieczeństwo",
-  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "Wyłącza usługi online hostowane przez DBCode oraz automatyczne pobieranie sterowników, narzędzi i rozszerzeń silników baz danych. Połączenia z bazami danych i ich uwierzytelnianie, dostawcy AI skonfigurowani przez użytkownika, importy dostawców chmurowych, wymagane zasoby webview i kafelki map pozostają dostępne. [Dowiedz się więcej](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)."
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "Wyłącza usługi online hostowane przez DBCode oraz automatyczne pobieranie sterowników, narzędzi i rozszerzeń silników baz danych. Połączenia z bazami danych i ich uwierzytelnianie, dostawcy AI skonfigurowani przez użytkownika, importy dostawców chmurowych, wymagane zasoby webview i kafelki map pozostają dostępne. [Dowiedz się więcej](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).",
+  "Create New File": "Utwórz nowy plik",
+  "New File": "Nowy plik"
 }

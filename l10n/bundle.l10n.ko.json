@@ -1630,7 +1630,6 @@
   "NOT NULL": "NOT NULL",
   "Create": "생성",
   "No metrics available": "사용 가능한 메트릭 없음",
-  "Failed to load the DBCode panel, please try again.": "DBCode 패널 로드 실패. 다시 시도하십시오.",
   "Execution Time": "실행 시간",
   "CPU Time": "CPU 시간",
   "Queue Time": "대기 시간",
@@ -4710,7 +4709,6 @@
   "Power BI measures metadata is unavailable for this connection.": "이 연결에서는 Power BI 측정값 메타데이터를 사용할 수 없습니다.",
   "Power BI relationships metadata is unavailable for this connection.": "이 연결에서는 Power BI 관계 메타데이터를 사용할 수 없습니다.",
   "Power BI request failed: {0}": "Power BI 요청 실패: {0}",
-  "Power BI request failed: {0} ({1})": "Power BI 요청 실패: {0}({1})",
   "Power BI authentication method is required.": "Power BI 인증 방법이 필요합니다.",
   "Power BI authentication method is not supported.": "Power BI 인증 방법은 지원되지 않습니다.",
   "Power BI authentication profile is required.": "Power BI 인증 프로필이 필요합니다.",
@@ -4728,5 +4726,12 @@
   "View Supabase issue": "Supabase 이슈 보기",
   "Supabase could not issue temporary database credentials{0}": "Supabase에서 임시 데이터베이스 자격 증명을 발급하지 못했습니다{0}",
   "Failed to create Supabase login role": "Supabase 로그인 역할을 만들지 못했습니다",
-  "Failed to retrieve Supabase pooler configuration": "Supabase 풀러 구성을 가져오지 못했습니다"
+  "Failed to retrieve Supabase pooler configuration": "Supabase 풀러 구성을 가져오지 못했습니다",
+  "The DBCode panel did not become ready": "DBCode 패널이 준비되지 않았습니다",
+  "Troubleshooting": "문제 해결",
+  "Reload Window": "창 다시 로드",
+  "The DBCode panel didn't load. This is usually a VS Code webview problem rather than DBCode.": "DBCode 패널이 로드되지 않았습니다. 일반적으로 DBCode가 아닌 VS Code Webview 문제입니다.",
+  "{0} Refreshing credentials also failed: {1}": "{0} 자격 증명 새로 고침에도 실패했습니다: {1}",
+  "Power BI denied this request: {0} See {1}": "Power BI가 이 요청을 거부했습니다: {0} {1} 를 참조하세요.",
+  "Power BI denied this request. See {0}": "Power BI가 이 요청을 거부했습니다. {0} 를 참조하세요."
 }

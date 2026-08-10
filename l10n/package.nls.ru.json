@@ -107,8 +107,6 @@
   "Format to display dates and times in.": "Формат отображения даты и времени.",
   "Cloud Providers, Connections and Tunnels": "Облачные провайдеры, подключения и туннели",
   "Create New DBCode Notebook": "Создать новый блокнот DBCode",
-  "Create New SQL File": "Создать новый файл SQL",
-  "New SQL File": "Новый файл SQL",
   "Execute SQL File": "Выполнить файл SQL",
   "Results": "Результаты",
   "Paginate results.": "Разбивать результаты по страницам.",
@@ -399,5 +397,7 @@
   "Copy Repair Command": "Копировать команду восстановления",
   "Copy Resolve Command": "Копировать команду разрешения",
   "Security": "Безопасность",
-  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "Отключает онлайн-сервисы, размещенные в DBCode, и автоматическую загрузку драйверов, инструментов и расширений СУБД. Подключения к базам данных и их аутентификация, настроенные пользователем поставщики ИИ, импорт из облачных провайдеров, необходимые ресурсы webview и фрагменты карт остаются доступными. [Подробнее](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)."
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "Отключает онлайн-сервисы, размещенные в DBCode, и автоматическую загрузку драйверов, инструментов и расширений СУБД. Подключения к базам данных и их аутентификация, настроенные пользователем поставщики ИИ, импорт из облачных провайдеров, необходимые ресурсы webview и фрагменты карт остаются доступными. [Подробнее](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).",
+  "Create New File": "Создать новый файл",
+  "New File": "Новый файл"
 }

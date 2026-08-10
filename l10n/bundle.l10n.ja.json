@@ -1630,7 +1630,6 @@
   "NOT NULL": "NOT NULL",
   "Create": "作成",
   "No metrics available": "利用可能なメトリックがありません",
-  "Failed to load the DBCode panel, please try again.": "DBCodeパネルの読み込みに失敗しました。もう一度お試しください。",
   "Execution Time": "実行時間",
   "CPU Time": "CPU時間",
   "Queue Time": "キュー時間",
@@ -4710,7 +4709,6 @@
   "Power BI measures metadata is unavailable for this connection.": "この接続では Power BI メジャーのメタデータを使用できません。",
   "Power BI relationships metadata is unavailable for this connection.": "この接続では Power BI リレーションシップのメタデータを使用できません。",
   "Power BI request failed: {0}": "Power BI 要求が失敗しました: {0}",
-  "Power BI request failed: {0} ({1})": "Power BI 要求が失敗しました: {0}（{1}）",
   "Power BI authentication method is required.": "Power BI の認証方法が必要です。",
   "Power BI authentication method is not supported.": "Power BI の認証方法はサポートされていません。",
   "Power BI authentication profile is required.": "Power BI の認証プロファイルが必要です。",
@@ -4728,5 +4726,12 @@
   "View Supabase issue": "Supabase の問題を表示",
   "Supabase could not issue temporary database credentials{0}": "Supabase は一時的なデータベース認証情報を発行できませんでした{0}",
   "Failed to create Supabase login role": "Supabase のログインロールを作成できませんでした",
-  "Failed to retrieve Supabase pooler configuration": "Supabase プーラーの構成を取得できませんでした"
+  "Failed to retrieve Supabase pooler configuration": "Supabase プーラーの構成を取得できませんでした",
+  "The DBCode panel did not become ready": "DBCode パネルの準備が完了しませんでした",
+  "Troubleshooting": "トラブルシューティング",
+  "Reload Window": "ウィンドウを再読み込み",
+  "The DBCode panel didn't load. This is usually a VS Code webview problem rather than DBCode.": "DBCode パネルを読み込めませんでした。通常、これは DBCode ではなく VS Code の Webview の問題です。",
+  "{0} Refreshing credentials also failed: {1}": "{0} 資格情報の更新にも失敗しました: {1}",
+  "Power BI denied this request: {0} See {1}": "Power BI がこの要求を拒否しました: {0} {1} を参照してください。",
+  "Power BI denied this request. See {0}": "Power BI がこの要求を拒否しました。{0} を参照してください。"
 }

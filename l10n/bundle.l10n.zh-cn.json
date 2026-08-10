@@ -1630,7 +1630,6 @@
   "NOT NULL": "NOT NULL",
   "Create": "创建",
   "No metrics available": "无可用指标",
-  "Failed to load the DBCode panel, please try again.": "加载 DBCode 面板失败，请重试。",
   "Execution Time": "执行时间",
   "CPU Time": "CPU 时间",
   "Queue Time": "队列时间",
@@ -4710,7 +4709,6 @@
   "Power BI measures metadata is unavailable for this connection.": "此连接无法使用 Power BI 度量值元数据。",
   "Power BI relationships metadata is unavailable for this connection.": "此连接无法使用 Power BI 关系元数据。",
   "Power BI request failed: {0}": "Power BI 请求失败：{0}",
-  "Power BI request failed: {0} ({1})": "Power BI 请求失败：{0}（{1}）",
   "Power BI authentication method is required.": "需要 Power BI 身份验证方法。",
   "Power BI authentication method is not supported.": "不支持 Power BI 身份验证方法。",
   "Power BI authentication profile is required.": "需要 Power BI 身份验证配置文件。",
@@ -4728,5 +4726,12 @@
   "View Supabase issue": "查看 Supabase 问题",
   "Supabase could not issue temporary database credentials{0}": "Supabase 无法颁发临时数据库凭据{0}",
   "Failed to create Supabase login role": "无法创建 Supabase 登录角色",
-  "Failed to retrieve Supabase pooler configuration": "无法获取 Supabase 连接池配置"
+  "Failed to retrieve Supabase pooler configuration": "无法获取 Supabase 连接池配置",
+  "The DBCode panel did not become ready": "DBCode 面板未就绪",
+  "Troubleshooting": "故障排除",
+  "Reload Window": "重新加载窗口",
+  "The DBCode panel didn't load. This is usually a VS Code webview problem rather than DBCode.": "DBCode 面板未加载。这通常是 VS Code Webview 的问题，而不是 DBCode 的问题。",
+  "{0} Refreshing credentials also failed: {1}": "{0} 刷新凭据也失败了：{1}",
+  "Power BI denied this request: {0} See {1}": "Power BI 拒绝了此请求：{0} 请参阅 {1}",
+  "Power BI denied this request. See {0}": "Power BI 拒绝了此请求。请参阅 {0}"
 }

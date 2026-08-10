@@ -1630,7 +1630,6 @@
   "NOT NULL": "NOT NULL",
   "Create": "Oluştur",
   "No metrics available": "Kullanılabilir metrik yok",
-  "Failed to load the DBCode panel, please try again.": "DBCode paneli yüklenemedi, lütfen tekrar deneyin.",
   "Execution Time": "Yürütme Süresi",
   "CPU Time": "CPU Süresi",
   "Queue Time": "Kuyruk Süresi",
@@ -4710,7 +4709,6 @@
   "Power BI measures metadata is unavailable for this connection.": "Power BI ölçü meta verileri bu bağlantı için kullanılamıyor.",
   "Power BI relationships metadata is unavailable for this connection.": "Power BI ilişki meta verileri bu bağlantı için kullanılamıyor.",
   "Power BI request failed: {0}": "Power BI isteği başarısız oldu: {0}",
-  "Power BI request failed: {0} ({1})": "Power BI isteği başarısız oldu: {0} ({1})",
   "Power BI authentication method is required.": "Power BI kimlik doğrulama yöntemi gerekli.",
   "Power BI authentication method is not supported.": "Power BI kimlik doğrulama yöntemi desteklenmiyor.",
   "Power BI authentication profile is required.": "Power BI kimlik doğrulama profili gerekli.",
@@ -4728,5 +4726,12 @@
   "View Supabase issue": "Supabase sorununu görüntüle",
   "Supabase could not issue temporary database credentials{0}": "Supabase geçici veritabanı kimlik bilgileri sağlayamadı{0}",
   "Failed to create Supabase login role": "Supabase oturum açma rolü oluşturulamadı",
-  "Failed to retrieve Supabase pooler configuration": "Supabase havuzlayıcı yapılandırması alınamadı"
+  "Failed to retrieve Supabase pooler configuration": "Supabase havuzlayıcı yapılandırması alınamadı",
+  "The DBCode panel did not become ready": "DBCode paneli hazır duruma gelmedi",
+  "Troubleshooting": "Sorun giderme",
+  "Reload Window": "Pencereyi yeniden yükle",
+  "The DBCode panel didn't load. This is usually a VS Code webview problem rather than DBCode.": "DBCode paneli yüklenmedi. Bu genellikle DBCode yerine VS Code Webview ile ilgili bir sorundur.",
+  "{0} Refreshing credentials also failed: {1}": "{0} Kimlik bilgilerini yenileme de başarısız oldu: {1}",
+  "Power BI denied this request: {0} See {1}": "Power BI bu isteği reddetti: {0} Bkz. {1}",
+  "Power BI denied this request. See {0}": "Power BI bu isteği reddetti. Bkz. {0}"
 }

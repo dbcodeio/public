@@ -1630,7 +1630,6 @@
   "NOT NULL": "NOT NULL",
   "Create": "Vytvořit",
   "No metrics available": "Žádné metriky nejsou k dispozici",
-  "Failed to load the DBCode panel, please try again.": "Načtení panelu DBCode selhalo, zkuste to prosím znovu.",
   "Execution Time": "Čas provedení",
   "CPU Time": "Čas CPU",
   "Queue Time": "Čas ve frontě",
@@ -4710,7 +4709,6 @@
   "Power BI measures metadata is unavailable for this connection.": "Metadata měr Power BI nejsou pro toto připojení k dispozici.",
   "Power BI relationships metadata is unavailable for this connection.": "Metadata relací Power BI nejsou pro toto připojení k dispozici.",
   "Power BI request failed: {0}": "Požadavek Power BI selhal: {0}",
-  "Power BI request failed: {0} ({1})": "Požadavek Power BI selhal: {0} ({1})",
   "Power BI authentication method is required.": "Je vyžadována metoda ověřování Power BI.",
   "Power BI authentication method is not supported.": "Metoda ověřování Power BI není podporována.",
   "Power BI authentication profile is required.": "Je vyžadován profil ověřování Power BI.",
@@ -4728,5 +4726,12 @@
   "View Supabase issue": "Zobrazit problém Supabase",
   "Supabase could not issue temporary database credentials{0}": "Supabase nemohl vydat dočasné přihlašovací údaje k databázi{0}",
   "Failed to create Supabase login role": "Nepodařilo se vytvořit přihlašovací roli Supabase",
-  "Failed to retrieve Supabase pooler configuration": "Nepodařilo se načíst konfiguraci pooleru Supabase"
+  "Failed to retrieve Supabase pooler configuration": "Nepodařilo se načíst konfiguraci pooleru Supabase",
+  "The DBCode panel did not become ready": "Panel DBCode nebyl připraven",
+  "Troubleshooting": "Řešení potíží",
+  "Reload Window": "Znovu načíst okno",
+  "The DBCode panel didn't load. This is usually a VS Code webview problem rather than DBCode.": "Panel DBCode se nenačetl. Obvykle jde o problém Webview ve VS Code, nikoli DBCode.",
+  "{0} Refreshing credentials also failed: {1}": "{0} Obnovení přihlašovacích údajů se také nezdařilo: {1}",
+  "Power BI denied this request: {0} See {1}": "Power BI tento požadavek zamítl: {0} Viz {1}",
+  "Power BI denied this request. See {0}": "Power BI tento požadavek zamítl. Viz {0}"
 }

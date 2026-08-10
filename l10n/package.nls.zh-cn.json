@@ -107,8 +107,6 @@
   "Format to display dates and times in.": "日期和时间的显示格式。",
   "Cloud Providers, Connections and Tunnels": "云提供商、连接和隧道",
   "Create New DBCode Notebook": "创建新的 DBCode 笔记本",
-  "Create New SQL File": "创建新的 SQL 文件",
-  "New SQL File": "新建 SQL 文件",
   "Execute SQL File": "执行 SQL 文件",
   "Results": "结果",
   "Paginate results.": "分页显示结果。",
@@ -399,5 +397,7 @@
   "Copy Repair Command": "复制修复命令",
   "Copy Resolve Command": "复制解决命令",
   "Security": "安全",
-  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "禁用由 DBCode 托管的在线服务，以及驱动程序、工具和数据库引擎扩展的自动下载。数据库连接及其身份验证、用户配置的 AI 提供商、云提供商导入、所需的 webview 资源和地图图块仍可用。[了解详情](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)。"
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "禁用由 DBCode 托管的在线服务，以及驱动程序、工具和数据库引擎扩展的自动下载。数据库连接及其身份验证、用户配置的 AI 提供商、云提供商导入、所需的 webview 资源和地图图块仍可用。[了解详情](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)。",
+  "Create New File": "新建文件",
+  "New File": "新建文件"
 }

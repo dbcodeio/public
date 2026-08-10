@@ -107,8 +107,6 @@
   "Format to display dates and times in.": "日付と時刻の表示形式。",
   "Cloud Providers, Connections and Tunnels": "クラウドプロバイダー、接続、トンネル",
   "Create New DBCode Notebook": "新しい DBCode ノートブックを作成",
-  "Create New SQL File": "新しい SQL ファイルを作成",
-  "New SQL File": "新しい SQL ファイル",
   "Execute SQL File": "SQL ファイルを実行",
   "Results": "結果",
   "Paginate results.": "結果をページ分割します。",
@@ -399,5 +397,7 @@
   "Copy Repair Command": "修復コマンドをコピー",
   "Copy Resolve Command": "解決コマンドをコピー",
   "Security": "セキュリティ",
-  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "DBCode がホストするオンラインサービスと、ドライバー、ツール、データベースエンジン拡張機能の自動ダウンロードを無効にします。データベース接続とその認証、ユーザーが設定した AI プロバイダー、クラウドプロバイダーからのインポート、必要な webview アセット、マップタイルは引き続き利用できます。[詳細](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)。"
+  "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "DBCode がホストするオンラインサービスと、ドライバー、ツール、データベースエンジン拡張機能の自動ダウンロードを無効にします。データベース接続とその認証、ユーザーが設定した AI プロバイダー、クラウドプロバイダーからのインポート、必要な webview アセット、マップタイルは引き続き利用できます。[詳細](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)。",
+  "Create New File": "新しいファイルを作成",
+  "New File": "新しいファイル"
 }
