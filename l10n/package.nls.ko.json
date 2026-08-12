@@ -398,6 +398,8 @@
   "Copy Resolve Command": "해결 명령 복사",
   "Security": "보안",
   "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "DBCode에서 호스팅하는 온라인 서비스와 드라이버, 도구 및 데이터베이스 엔진 확장의 자동 다운로드를 비활성화합니다. 데이터베이스 연결과 인증, 사용자가 구성한 AI 공급자, 클라우드 공급자 가져오기, 필수 webview 자산 및 지도 타일은 계속 사용할 수 있습니다. [자세히 알아보기](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).",
-  "Create New File": "새 파일 만들기",
-  "New File": "새 파일"
+  "Open Query File": "쿼리 파일 열기",
+  "Query File": "쿼리 파일",
+  "New Query File": "새 쿼리 파일",
+  "Scratch Files...": "스크래치 파일..."
 }

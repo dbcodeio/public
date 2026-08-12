@@ -398,6 +398,8 @@
   "Copy Resolve Command": "Çözümleme komutunu kopyala",
   "Security": "Güvenlik",
   "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "DBCode tarafından barındırılan çevrimiçi hizmetleri ve sürücülerin, araçların ve veritabanı motoru uzantılarının otomatik indirilmesini devre dışı bırakır. Veritabanı bağlantıları ve kimlik doğrulamaları, kullanıcı tarafından yapılandırılan yapay zeka sağlayıcıları, bulut sağlayıcısı içe aktarmaları, gerekli webview varlıkları ve harita döşemeleri kullanılabilir kalır. [Daha fazla bilgi](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).",
-  "Create New File": "Yeni dosya oluştur",
-  "New File": "Yeni dosya"
+  "Open Query File": "Sorgu dosyasını aç",
+  "Query File": "Sorgu dosyası",
+  "New Query File": "Yeni sorgu dosyası",
+  "Scratch Files...": "Taslak Dosyalar..."
 }

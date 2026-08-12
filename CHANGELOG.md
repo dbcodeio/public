@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## 1.36.10 - 2026-08-12
+
+### Changed
+
+- Elasticsearch, OpenSearch: Query and scratch files now use the .es extension.
+- Editor: SQL completion suggests a column's enum values after comparisons, IN lists, and UPDATE SET.
+- PostgreSQL: Script DDL for enum, domain and composite types from the schema tree.
+- DB Explorer: The new file icon now opens your current query file, with new context menu items to create another query file or browse scratch files.
+- Tunnels: RabbitMQ, Apache Pinot, and Weaviate now work through an SSH tunnel.
+
+### Fixed
+
+- Editor: Fixed autocomplete inside bracketed or quoted identifiers containing spaces, dots, or accents. #1200
+- Grid: Enum cell editors no longer list the column default alongside the enum values.
+- Notebook: Fixed execution plans filling the whole notebook and scrolling endlessly; the plan grid is now resizable like other notebook grids.
+- PostgreSQL: Sequences and materialized views no longer appear under Types in the schema tree.
+- PostgreSQL: Backup and restore work through SSH tunnels on IPv6-first systems.
+- Tunnels: Fixed an error after a dropped tunnel when the next query reached the closed forward.
+- Tunnels: SSH reconnect now retries with backoff, and shared tunnels survive closing one of their connections.
+
 ## 1.36.9 - 2026-08-10
 
 ### Changed

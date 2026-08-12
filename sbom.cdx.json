@@ -1,16 +1,16 @@
 {
 	"bomFormat": "CycloneDX",
 	"specVersion": "1.6",
-	"serialNumber": "urn:uuid:c9c5e612-465d-fdfe-10ec-e0bd038509d7",
+	"serialNumber": "urn:uuid:01e23f9c-5931-a4f1-5f98-629ff7ddd1f3",
 	"version": 1,
 	"metadata": {
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.36.9",
+			"version": "1.36.10",
 			"publisher": "dbcode",
 			"description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 80+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
-			"purl": "pkg:generic/dbcode@1.36.9",
+			"purl": "pkg:generic/dbcode@1.36.10",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -12471,8 +12471,8 @@
 		{
 			"type": "library",
 			"name": "dompurify",
-			"version": "3.4.12",
-			"purl": "pkg:npm/dompurify@3.4.12",
+			"version": "3.4.13",
+			"purl": "pkg:npm/dompurify@3.4.13",
 			"licenses": [
 				{
 					"expression": "(MPL-2.0 OR Apache-2.0)"
@@ -15295,8 +15295,8 @@
 		{
 			"type": "library",
 			"name": "hono",
-			"version": "4.12.31",
-			"purl": "pkg:npm/hono@4.12.31",
+			"version": "4.13.0",
+			"purl": "pkg:npm/hono@4.13.0",
 			"licenses": [
 				{
 					"license": {
@@ -24949,26 +24949,6 @@
 				{
 					"type": "website",
 					"url": "https://github.com/mikeal/tunnel-agent"
-				}
-			]
-		},
-		{
-			"type": "library",
-			"name": "tunnel-ssh",
-			"version": "5.2.0",
-			"purl": "pkg:npm/tunnel-ssh@5.2.0",
-			"licenses": [
-				{
-					"license": {
-						"id": "MIT"
-					}
-				}
-			],
-			"publisher": "Christoph Hagenbrock",
-			"externalReferences": [
-				{
-					"type": "website",
-					"url": "https://github.com/agebrock/tunnel-ssh"
 				}
 			]
 		},

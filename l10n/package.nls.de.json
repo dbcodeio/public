@@ -398,6 +398,8 @@
   "Copy Resolve Command": "Auflösungsbefehl kopieren",
   "Security": "Sicherheit",
   "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "Deaktiviert die von DBCode gehosteten Onlinedienste und automatische Downloads von Treibern, Tools und Datenbank-Engine-Erweiterungen. Datenbankverbindungen und deren Authentifizierung, benutzerdefinierte KI-Anbieter, Cloudanbieter-Importe, erforderliche Webview-Ressourcen und Kartenkacheln bleiben verfügbar. [Weitere Informationen](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).",
-  "Create New File": "Neue Datei erstellen",
-  "New File": "Neue Datei"
+  "Open Query File": "Abfragedatei öffnen",
+  "Query File": "Abfragedatei",
+  "New Query File": "Neue Abfragedatei",
+  "Scratch Files...": "Arbeitsdateien..."
 }

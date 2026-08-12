@@ -398,6 +398,8 @@
   "Copy Resolve Command": "复制解决命令",
   "Security": "安全",
   "Disable DBCode-hosted online services and automatic driver, tool, and database engine extension downloads. Database connections and their authentication, user-configured AI providers, cloud-provider imports, required webview assets, and map tiles remain available. [Learn more](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services).": "禁用由 DBCode 托管的在线服务，以及驱动程序、工具和数据库引擎扩展的自动下载。数据库连接及其身份验证、用户配置的 AI 提供商、云提供商导入、所需的 webview 资源和地图图块仍可用。[了解详情](https://dbcode.io/docs/security/network-egress#disable-dbcode-online-services)。",
-  "Create New File": "新建文件",
-  "New File": "新建文件"
+  "Open Query File": "打开查询文件",
+  "Query File": "查询文件",
+  "New Query File": "新建查询文件",
+  "Scratch Files...": "临时文件..."
 }
