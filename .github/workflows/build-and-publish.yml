@@ -104,7 +104,7 @@ jobs:
             '{sourceRepository: $sourceRepository, sourceCommit: $sourceCommit, version: $version, buildWorkflowRun: $buildWorkflowRun}' \
             > build-provenance.json
 
-      - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
+      - uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6.0.10
 
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
@@ -233,7 +233,7 @@ jobs:
         with:
           name: extension
       - name: Attest
-        uses: actions/attest-build-provenance@0f67c3f4856b2e3261c31976d6725780e5e4c373 # v4.1.1
+        uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
         with:
           subject-path: '*.vsix'
 
@@ -354,7 +354,7 @@ jobs:
         with:
           sparse-checkout: .github/release-tools
           persist-credentials: false
-      - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
+      - uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6.0.10
         # Only .github/release-tools is checked out, so action-setup cannot find a
         # package.json at the root - pin explicitly (keep in sync with its
         # packageManager field).
@@ -396,7 +396,7 @@ jobs:
         with:
           sparse-checkout: .github/release-tools
           persist-credentials: false
-      - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
+      - uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6.0.10
         with:
           version: 10.33.4
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
