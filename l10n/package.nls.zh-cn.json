@@ -401,5 +401,6 @@
   "Open Query File": "打开查询文件",
   "Query File": "查询文件",
   "New Query File": "新建查询文件",
-  "Scratch Files...": "临时文件..."
+  "Scratch Files...": "临时文件...",
+  "Disable": "禁用"
 }

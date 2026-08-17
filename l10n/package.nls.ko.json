@@ -401,5 +401,6 @@
   "Open Query File": "쿼리 파일 열기",
   "Query File": "쿼리 파일",
   "New Query File": "새 쿼리 파일",
-  "Scratch Files...": "스크래치 파일..."
+  "Scratch Files...": "스크래치 파일...",
+  "Disable": "비활성화"
 }

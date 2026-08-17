@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## 1.36.11 - 2026-08-17
+
+### Changed
+
+- History: Shows whether a query came from you or an AI agent, with the client name.
+- AI tools: The execute-query tool applies your row-limit setting by default and lets the agent override it (pass 0 for a full result, e.g. a stored procedure); truncated results are flagged.
+- AI tools: Team permission roles now apply to MCP and Copilot tools, including data copy.
+- Synonyms: Added progressive loading for synonyms and aliases across supported databases.
+- MySQL, MariaDB: Manage scheduled events in the explorer on Progressive Loading connections.
+- Oracle: Progressive loading always lists Oracle-maintained schemas and all public synonyms; the include toggle now applies to legacy loading only.
+- Oracle: new connections enable Progressive Loading by default.
+- Oracle: Added private and public synonyms to progressive loading schemas.
+- Scratch files: Added per-file deletion to the scratch file picker.
+
+### Fixed
+
+- Derby: Fixed Drop on a synonym sending an invalid statement.
+- MySQL: Preserved routine definers and added a warning when they differ from the connected account.
+- Scratch files: Prevented connections with matching names and databases from sharing the same file.
+
 ## 1.36.10 - 2026-08-12
 
 ### Changed

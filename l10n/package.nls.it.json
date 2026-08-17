@@ -401,5 +401,6 @@
   "Open Query File": "Apri file di query",
   "Query File": "File di query",
   "New Query File": "Nuovo file di query",
-  "Scratch Files...": "File temporanei..."
+  "Scratch Files...": "File temporanei...",
+  "Disable": "Disattiva"
 }

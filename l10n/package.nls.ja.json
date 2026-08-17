@@ -401,5 +401,6 @@
   "Open Query File": "クエリファイルを開く",
   "Query File": "クエリファイル",
   "New Query File": "新しいクエリファイル",
-  "Scratch Files...": "スクラッチファイル..."
+  "Scratch Files...": "スクラッチファイル...",
+  "Disable": "無効化"
 }
