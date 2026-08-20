@@ -151,7 +151,6 @@
   "Retrieve Schemas": "Şemaları Al",
   "Retrieve Tables": "Tabloları Al",
   "Execute Query": "Sorgu Çalıştır",
-  "Executes a query in the specified database and optional schema.": "Belirtilen veritabanında ve isteğe bağlı şemada bir sorgu çalıştırır.",
   "Quick Open": "Hızlı Aç",
   "Wrap tabs in the results, rather than scroll (requires a restart to take effect).": "Sekmeleri kaydırmak yerine sonuçlarda kaydır (etkili olması için yeniden başlatma gerekir).",
   "Script": "Betik",
@@ -210,7 +209,6 @@
   "Backup Database": "Veritabanını Yedekle",
   "Restore Database": "Veritabanını Geri Yükle",
   "Execute DML": "DML Çalıştır",
-  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema.": "Belirtilen veritabanı ve isteğe bağlı şemada bir DML deyimi (INSERT, UPDATE, DELETE) çalıştırır.",
   "Execute DDL": "DDL Çalıştır",
   "Executes a DDL statement (CREATE, DROP, ALTER, TRUNCATE, etc.) in the specified database and optional schema.": "Belirtilen veritabanı ve isteğe bağlı şemada bir DDL deyimi (CREATE, DROP, ALTER, TRUNCATE, vb.) çalıştırır.",
   "OAuth 2.1 with PKCE - secure authentication with user approval dialogs.": "PKCE ile OAuth 2.1 - kullanıcı onay iletişim kutuları ile güvenli kimlik doğrulama.",
@@ -402,5 +400,7 @@
   "Query File": "Sorgu dosyası",
   "New Query File": "Yeni sorgu dosyası",
   "Scratch Files...": "Taslak Dosyalar...",
-  "Disable": "Devre dışı bırak"
+  "Disable": "Devre dışı bırak",
+  "Executes a query in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "Belirtilen veritabanında ve isteğe bağlı şemada bir sorgu çalıştırır. Hedef bağlantının sürücüsünün desteklediği sorgu dilini kullanın (bağlantının type değeriyle tanımlanır).",
+  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "Belirtilen veritabanında ve isteğe bağlı şemada bir DML ifadesi (INSERT, UPDATE, DELETE) çalıştırır. Hedef bağlantının sürücüsünün desteklediği sorgu dilini kullanın (bağlantının type değeriyle tanımlanır)."
 }

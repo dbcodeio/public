@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 1.36.12 - 2026-08-20
+
+### Changed
+
+- SQL Server: Manage Agent jobs in the explorer.
+- AI tools: MongoDB connections now accept native MongoDB syntax (find, aggregate, CRUD) and SQL from MCP and Copilot agents.
+- Completions: SQL keyword suggestions now follow the keyword case setting, defaulting to match the case you type.
+- Library: Saved SQL is now a real, editable SQL file; existing snippets convert automatically.
+- MongoDB: The editor now flags errors in mongosh queries as you type.
+- MongoDB: mongosh queries in the editor now have syntax highlighting, including comments.
+- Oracle: Manage Scheduler jobs in the explorer on Progressive Loading connections.
+- Postgres: Added a Scheduled Jobs container for pg_cron - browse, enable/disable, drop, and script scheduled jobs.
+- Snowflake: Manage tasks in the explorer on Progressive Loading connections.
+
+### Fixed
+
+- MongoDB: Regex values now display as /pattern/flags instead of [object Object].
+
 ## 1.36.11 - 2026-08-17
 
 ### Changed

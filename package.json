@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 80+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
     "publisher": "dbcode",
-    "version": "1.36.11",
+    "version": "1.36.12",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -227,8 +227,8 @@
                 "canBeReferencedInPrompt": true,
                 "displayName": "%Execute Query%",
                 "icon": "out/resources/logos/icon_color.svg",
-                "modelDescription": "Executes a read-only query (SELECT) in the specified database and optional schema. For data modification (INSERT, UPDATE, DELETE, etc), use dbcode-execute-dml. For schema changes (CREATE, DROP, ALTER, etc), use dbcode-execute-ddl.",
-                "userDescription": "%Executes a query in the specified database and optional schema.%",
+                "modelDescription": "Executes a read-only query (SELECT) in the specified database and optional schema. For data modification (INSERT, UPDATE, DELETE, etc), use dbcode-execute-dml. For schema changes (CREATE, DROP, ALTER, etc), use dbcode-execute-ddl. Use the query language supported by the target connection's driver (identified by the connection's type).",
+                "userDescription": "%Executes a query in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).%",
                 "inputSchema": {
                     "type": "object",
                     "properties": {
@@ -276,8 +276,8 @@
                 "canBeReferencedInPrompt": true,
                 "displayName": "%Execute DML%",
                 "icon": "out/resources/logos/icon_color.svg",
-                "modelDescription": "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use this tool when you need to modify data. For read-only queries, use dbcode-execute-query. For schema changes, use dbcode-execute-ddl.",
-                "userDescription": "%Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema.%",
+                "modelDescription": "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use this tool when you need to modify data. For read-only queries, use dbcode-execute-query. For schema changes, use dbcode-execute-ddl. Use the query language supported by the target connection's driver (identified by the connection's type).",
+                "userDescription": "%Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).%",
                 "inputSchema": {
                     "type": "object",
                     "properties": {
@@ -2541,7 +2541,7 @@
                     "group": "2manage@1"
                 },
                 {
-                    "when": "view == dbcode.library.view && viewItem =~ /library-(folder|script|querybuilder|explore|file)-/",
+                    "when": "view == dbcode.library.view && viewItem =~ /library-(folder|querybuilder|explore|file)-/",
                     "command": "dbcode.library.rename",
                     "group": "2manage@2"
                 },
@@ -2551,12 +2551,12 @@
                     "group": "2manage@3"
                 },
                 {
-                    "when": "view == dbcode.library.view && viewItem =~ /library-(script|querybuilder)-|~sqlfile~/",
+                    "when": "view == dbcode.library.view && viewItem =~ /library-(querybuilder)-|~sqlfile~/",
                     "command": "dbcode.library.openItemWith",
                     "group": "1open@1"
                 },
                 {
-                    "when": "view == dbcode.connections.view && viewItem =~ /~click~|~openLimit~|~scriptSelect~|~scriptDDL~/ && !(viewItem =~ /~connFavorite~/)",
+                    "when": "view == dbcode.connections.view && viewItem =~ /~click~|~openLimit~|~scriptSelect~|~scriptDDL~/ && !(viewItem =~ /~connFavorite~/) && !(viewItem =~ /~noFavorite~/)",
                     "command": "dbcode.connection.addFavorite",
                     "group": "zzzommon@0"
                 },
