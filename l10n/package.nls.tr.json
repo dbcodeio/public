@@ -402,5 +402,8 @@
   "Scratch Files...": "Taslak Dosyalar...",
   "Disable": "Devre dışı bırak",
   "Executes a query in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "Belirtilen veritabanında ve isteğe bağlı şemada bir sorgu çalıştırır. Hedef bağlantının sürücüsünün desteklediği sorgu dilini kullanın (bağlantının type değeriyle tanımlanır).",
-  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "Belirtilen veritabanında ve isteğe bağlı şemada bir DML ifadesi (INSERT, UPDATE, DELETE) çalıştırır. Hedef bağlantının sürücüsünün desteklediği sorgu dilini kullanın (bağlantının type değeriyle tanımlanır)."
+  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "Belirtilen veritabanında ve isteğe bağlı şemada bir DML ifadesi (INSERT, UPDATE, DELETE) çalıştırır. Hedef bağlantının sürücüsünün desteklediği sorgu dilini kullanın (bağlantının type değeriyle tanımlanır).",
+  "By Name": "Ada göre",
+  "By Status": "Duruma göre",
+  "By Row Count": "Satır sayısına göre"
 }

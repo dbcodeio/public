@@ -402,5 +402,8 @@
   "Scratch Files...": "临时文件...",
   "Disable": "禁用",
   "Executes a query in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "在指定的数据库和可选架构中执行查询。请使用目标连接的驱动程序所支持的查询语言（由连接的 type 标识）。",
-  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "在指定的数据库和可选架构中执行 DML 语句（INSERT、UPDATE、DELETE）。请使用目标连接的驱动程序所支持的查询语言（由连接的 type 标识）。"
+  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "在指定的数据库和可选架构中执行 DML 语句（INSERT、UPDATE、DELETE）。请使用目标连接的驱动程序所支持的查询语言（由连接的 type 标识）。",
+  "By Name": "按名称",
+  "By Status": "按状态",
+  "By Row Count": "按行数"
 }

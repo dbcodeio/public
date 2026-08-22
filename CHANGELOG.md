@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 1.36.13 - 2026-08-22
+
+### Changed
+
+- Results: Copy or export a selection as SQL UPDATE statements, using the primary key (or columns you pick) for the WHERE clause. #1205
+- Explorer: Filter tables by row count, including hide-empty (right-click a tables container, Filter). #1156
+- Explorer: Scheduled job icons are now tinted green when the job is enabled and dimmed when disabled. #1204
+- Explorer: Filter scheduled jobs by status (right-click a jobs container, Filter). #1204
+- Editor: Hovering a mongosh method (find, aggregate, updateOne, and more) now shows its signature, parameters, and a docs link.
+- Synonyms: Added refresh, table-like actions, saved filters, and Drop and Rename support across databases.
+- Monitoring: Database-specific Top Queries are now available through PostgreSQL pg_stat_statements and SQL Server Query Store.
+
+### Fixed
+
+- ClickHouse: Added autocomplete, parameter guidance, and return-column details for common built-in table functions. #811
+- IBM i: Aliases pointing at a remote database no longer stall schema loading.
+- SQL Server: Fixed connecting hanging when a schema has synonyms that point at a linked server or another database. #1206
+
 ## 1.36.12 - 2026-08-20
 
 ### Changed

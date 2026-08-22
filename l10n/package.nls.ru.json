@@ -402,5 +402,8 @@
   "Scratch Files...": "Черновики...",
   "Disable": "Отключить",
   "Executes a query in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "Выполняет запрос в указанной базе данных и необязательной схеме. Используйте язык запросов, поддерживаемый драйвером целевого подключения (определяется по type подключения).",
-  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "Выполняет оператор DML (INSERT, UPDATE, DELETE) в указанной базе данных и необязательной схеме. Используйте язык запросов, поддерживаемый драйвером целевого подключения (определяется по type подключения)."
+  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "Выполняет оператор DML (INSERT, UPDATE, DELETE) в указанной базе данных и необязательной схеме. Используйте язык запросов, поддерживаемый драйвером целевого подключения (определяется по type подключения).",
+  "By Name": "По имени",
+  "By Status": "По статусу",
+  "By Row Count": "По количеству строк"
 }

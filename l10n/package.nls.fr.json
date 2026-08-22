@@ -402,5 +402,8 @@
   "Scratch Files...": "Fichiers de travail...",
   "Disable": "Désactiver",
   "Executes a query in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "Exécute une requête dans la base de données spécifiée et le schéma facultatif. Utilisez le langage de requête pris en charge par le pilote de la connexion cible (identifié par le type de la connexion).",
-  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "Exécute une instruction DML (INSERT, UPDATE, DELETE) dans la base de données spécifiée et le schéma facultatif. Utilisez le langage de requête pris en charge par le pilote de la connexion cible (identifié par le type de la connexion)."
+  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "Exécute une instruction DML (INSERT, UPDATE, DELETE) dans la base de données spécifiée et le schéma facultatif. Utilisez le langage de requête pris en charge par le pilote de la connexion cible (identifié par le type de la connexion).",
+  "By Name": "Par nom",
+  "By Status": "Par statut",
+  "By Row Count": "Par nombre de lignes"
 }

@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 80+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
     "publisher": "dbcode",
-    "version": "1.36.12",
+    "version": "1.36.13",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -1028,6 +1028,21 @@
                 "category": "DBCode"
             },
             {
+                "command": "dbcode.connections.filterByName",
+                "title": "%By Name%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.connections.filterByStatus",
+                "title": "%By Status%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.connections.filterByRowCount",
+                "title": "%By Row Count%",
+                "category": "DBCode"
+            },
+            {
                 "command": "dbcode.providers.remove",
                 "title": "%Delete Provider%",
                 "category": "DBCode",
@@ -1999,6 +2014,18 @@
                     "when": "false"
                 },
                 {
+                    "command": "dbcode.connections.filterByName",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.connections.filterByStatus",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.connections.filterByRowCount",
+                    "when": "false"
+                },
+                {
                     "command": "dbcode.connections.edit",
                     "when": "false"
                 },
@@ -2792,18 +2819,13 @@
                 },
                 {
                     "command": "dbcode.tables.diagram",
-                    "when": "view == dbcode.connections.view && (viewItem =~ /^tables-/ || viewItem =~ /^table-/ || viewItem =~ /^partition-/) && viewItem =~ /~diagram~/",
+                    "when": "view == dbcode.connections.view && (viewItem =~ /^tables-/ || viewItem =~ /^table-/ || viewItem =~ /^partition-/ || viewItem =~ /^synonym-/) && viewItem =~ /~diagram~/",
                     "group": "3info@1"
                 },
                 {
-                    "command": "dbcode.connections.filterItems",
+                    "submenu": "dbcode.submenu.filter",
                     "when": "view == dbcode.connections.view && viewItem =~ /~filter~/",
                     "group": "zdisplay@1"
-                },
-                {
-                    "command": "dbcode.connections.filterItemsClear",
-                    "when": "view == dbcode.connections.view && viewItem =~ /~filtered~/",
-                    "group": "zdisplay@2"
                 },
                 {
                     "command": "dbcode.connections.copyElementLabel",
@@ -2812,12 +2834,12 @@
                 },
                 {
                     "command": "dbcode.connections.copyQualifiedName",
-                    "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || viewItem =~ /^view-/ || viewItem =~ /^materializedView-/)",
+                    "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || viewItem =~ /^view-/ || viewItem =~ /^materializedView-/ || viewItem =~ /^synonym-/)",
                     "group": "zzzommon@2"
                 },
                 {
                     "command": "dbcode.table.openLimit",
-                    "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || viewItem =~ /^partition-/) && viewItem =~ /~openLimit~/",
+                    "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || viewItem =~ /^partition-/ || viewItem =~ /^synonym-/) && viewItem =~ /~openLimit~/",
                     "group": "1open@1"
                 },
                 {
@@ -2837,7 +2859,7 @@
                 },
                 {
                     "command": "dbcode.table.import",
-                    "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || viewItem =~ /^partition-/) && viewItem =~ /~import~/",
+                    "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || viewItem =~ /^partition-/ || viewItem =~ /^synonym-/) && viewItem =~ /~import~/",
                     "group": "2actoin@1"
                 },
                 {
@@ -2852,7 +2874,7 @@
                 },
                 {
                     "command": "dbcode.table.compareWith",
-                    "when": "view == dbcode.connections.view && viewItem =~ /^table-/",
+                    "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || (viewItem =~ /^synonym-/ && viewItem =~ /~scriptSelect~/))",
                     "group": "2actoin@3"
                 },
                 {
@@ -2867,7 +2889,7 @@
                 },
                 {
                     "command": "dbcode.table.joinWith",
-                    "when": "view == dbcode.connections.view && viewItem =~ /^table-/",
+                    "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || (viewItem =~ /^synonym-/ && viewItem =~ /~scriptSelect~/))",
                     "group": "2actoin@4"
                 },
                 {
@@ -2882,7 +2904,7 @@
                 },
                 {
                     "command": "dbcode.table.unionWith",
-                    "when": "view == dbcode.connections.view && viewItem =~ /^table-/",
+                    "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || (viewItem =~ /^synonym-/ && viewItem =~ /~scriptSelect~/))",
                     "group": "2actoin@5"
                 },
                 {
@@ -2907,7 +2929,7 @@
                 },
                 {
                     "command": "dbcode.item.rename",
-                    "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~rename~/",
+                    "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || viewItem =~ /^synonym-/) && viewItem =~ /~rename~/",
                     "group": "3modify@2"
                 },
                 {
@@ -3242,12 +3264,38 @@
                     "command": "dbcode.script.ddl",
                     "group": "open@10"
                 }
+            ],
+            "dbcode.submenu.filter": [
+                {
+                    "when": "view == dbcode.connections.view && viewItem =~ /~filter~/",
+                    "command": "dbcode.connections.filterByName",
+                    "group": "filter@1"
+                },
+                {
+                    "when": "view == dbcode.connections.view && viewItem =~ /~fdim-status~/",
+                    "command": "dbcode.connections.filterByStatus",
+                    "group": "filter@2"
+                },
+                {
+                    "when": "view == dbcode.connections.view && viewItem =~ /~fdim-rows~/",
+                    "command": "dbcode.connections.filterByRowCount",
+                    "group": "filter@3"
+                },
+                {
+                    "when": "view == dbcode.connections.view && viewItem =~ /~filtered~/",
+                    "command": "dbcode.connections.filterItemsClear",
+                    "group": "filter@9"
+                }
             ]
         },
         "submenus": [
             {
                 "id": "dbcode.submenu.script",
                 "label": "%Script%"
+            },
+            {
+                "id": "dbcode.submenu.filter",
+                "label": "%Filter%"
             }
         ],
         "colors": [
@@ -7385,7 +7433,9 @@
             "brace-expansion@5": ">=5.0.9 <6",
             "markdown-it": ">=14.2.0 <15",
             "vite": "6.4.3",
-            "js-yaml": ">=4.2.0 <5",
+            "js-yaml": ">=4.3.1 <5",
+            "nanoid": ">=3.3.16 <4",
+            "postcss": ">=8.5.23 <9",
             "@babel/core": ">=7.29.6 <8",
             "@grpc/grpc-js": ">=1.14.4 <2",
             "@opentelemetry/core": ">=2.8.0 <3",

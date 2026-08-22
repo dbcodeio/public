@@ -402,5 +402,8 @@
   "Scratch Files...": "스크래치 파일...",
   "Disable": "비활성화",
   "Executes a query in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "지정된 데이터베이스 및 선택적 스키마에서 쿼리를 실행합니다. 대상 연결의 드라이버가 지원하는 쿼리 언어를 사용하세요(연결의 type으로 식별됨).",
-  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "지정된 데이터베이스 및 선택적 스키마에서 DML 문(INSERT, UPDATE, DELETE)을 실행합니다. 대상 연결의 드라이버가 지원하는 쿼리 언어를 사용하세요(연결의 type으로 식별됨)."
+  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "지정된 데이터베이스 및 선택적 스키마에서 DML 문(INSERT, UPDATE, DELETE)을 실행합니다. 대상 연결의 드라이버가 지원하는 쿼리 언어를 사용하세요(연결의 type으로 식별됨).",
+  "By Name": "이름별",
+  "By Status": "상태별",
+  "By Row Count": "행 수별"
 }

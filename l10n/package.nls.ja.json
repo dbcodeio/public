@@ -402,5 +402,8 @@
   "Scratch Files...": "スクラッチファイル...",
   "Disable": "無効化",
   "Executes a query in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "指定されたデータベースと省略可能なスキーマでクエリを実行します。対象の接続のドライバーがサポートするクエリ言語を使用してください（接続の type で識別されます）。",
-  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "指定されたデータベースと省略可能なスキーマで DML ステートメント（INSERT、UPDATE、DELETE）を実行します。対象の接続のドライバーがサポートするクエリ言語を使用してください（接続の type で識別されます）。"
+  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "指定されたデータベースと省略可能なスキーマで DML ステートメント（INSERT、UPDATE、DELETE）を実行します。対象の接続のドライバーがサポートするクエリ言語を使用してください（接続の type で識別されます）。",
+  "By Name": "名前で",
+  "By Status": "ステータスで",
+  "By Row Count": "行数で"
 }

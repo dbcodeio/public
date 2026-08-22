@@ -402,5 +402,8 @@
   "Scratch Files...": "Pracovní soubory...",
   "Disable": "Zakázat",
   "Executes a query in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "Provede dotaz v zadané databázi a volitelném schématu. Použijte dotazovací jazyk podporovaný ovladačem cílového připojení (určený podle type připojení).",
-  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "Provede příkaz DML (INSERT, UPDATE, DELETE) v zadané databázi a volitelném schématu. Použijte dotazovací jazyk podporovaný ovladačem cílového připojení (určený podle type připojení)."
+  "Executes a DML statement (INSERT, UPDATE, DELETE) in the specified database and optional schema. Use the query language supported by the target connection's driver (identified by the connection's type).": "Provede příkaz DML (INSERT, UPDATE, DELETE) v zadané databázi a volitelném schématu. Použijte dotazovací jazyk podporovaný ovladačem cílového připojení (určený podle type připojení).",
+  "By Name": "Podle názvu",
+  "By Status": "Podle stavu",
+  "By Row Count": "Podle počtu řádků"
 }
