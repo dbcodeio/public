@@ -1,5 +1,30 @@
 # CHANGELOG
 
+## 1.36.14 - 2026-08-24
+
+### Changed
+
+- ClickHouse: Autocomplete, hover, and signature help for built-in functions and table functions, without listing them in the explorer. #811
+- Explorer: Right-click a connection or database and choose Search to search just that subtree; the tree search is now labelled Search instead of Filter.
+- Explorer: Connection search now offers to search unopened databases too.
+- Explorer: Search now finds objects in unopened schemas, loading as it goes, with progress and cancel.
+- Explorer: Color a job's icon red when its last run failed.
+- Explorer: Open a job's run history from the history icon on the job or its context menu.
+- Postgres: Manage pgAgent jobs in the explorer - browse, enable/disable, drop, and view run history.
+- RabbitMQ: Moved out of preview.
+- RabbitMQ: Added a server monitoring view with overview metrics, connections, channels, queues, nodes, and cluster info.
+- Explorer: Renamed the table Search action to Search Data, matching Export Data, Import Data and Compare Data.
+
+### Fixed
+
+- Results: A single statement that returns multiple results (a DECLARE block, an EXEC of a stored procedure) now groups into the batch summary instead of opening a result tab per rowcount.
+- ClickHouse: CREATE FUNCTION and DROP FUNCTION no longer flagged as syntax errors in the editor.
+- Oracle: Render INTERVAL columns as readable values instead of [object Object].
+- RabbitMQ: The stop button now cancels an in-flight query, and management API requests time out instead of hanging on an unreachable broker.
+- RabbitMQ: A JSON null in a message field no longer displays as the string "null".
+- RabbitMQ: Apply SSL certificate settings (CA, client cert, verification mode) to both AMQPS and the management API.
+- Editor: SQLite table autocomplete no longer disappears after typing a table name prefix. #1207
+
 ## 1.36.13 - 2026-08-22
 
 ### Changed

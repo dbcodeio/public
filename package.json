@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 80+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
     "publisher": "dbcode",
-    "version": "1.36.13",
+    "version": "1.36.14",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -1007,15 +1007,33 @@
             },
             {
                 "command": "dbcode.connections.filter",
-                "title": "%Filter%",
+                "title": "%Search%",
                 "category": "DBCode",
-                "icon": "$(extensions-filter)"
+                "icon": "$(search)"
             },
             {
                 "command": "dbcode.connections.filterClear",
-                "title": "%Clear Filter%",
+                "title": "%Clear Search%",
                 "category": "DBCode",
-                "icon": "$(extensions-clear-search-results)"
+                "icon": "$(search-stop)"
+            },
+            {
+                "command": "dbcode.connections.searchHere",
+                "title": "%Search%",
+                "category": "DBCode",
+                "icon": "$(search)"
+            },
+            {
+                "command": "dbcode.connections.searchCancel",
+                "title": "%Cancel search%",
+                "category": "DBCode",
+                "icon": "$(stop-circle)"
+            },
+            {
+                "command": "dbcode.connections.searchDatabase",
+                "title": "%Search database%",
+                "category": "DBCode",
+                "icon": "$(search)"
             },
             {
                 "command": "dbcode.connections.filterItems",
@@ -1464,6 +1482,12 @@
                 "category": "DBCode"
             },
             {
+                "command": "dbcode.job.history",
+                "title": "%History%",
+                "icon": "$(history)",
+                "category": "DBCode"
+            },
+            {
                 "command": "dbcode.server.monitor",
                 "title": "%Server Monitor%",
                 "icon": "$(pulse)",
@@ -1583,7 +1607,7 @@
             },
             {
                 "command": "dbcode.table.search",
-                "title": "%Search...%",
+                "title": "%Search Data...%",
                 "category": "DBCode",
                 "icon": "$(search)"
             },
@@ -2011,6 +2035,18 @@
                 },
                 {
                     "command": "dbcode.connections.filterItemsClear",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.connections.searchHere",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.connections.searchCancel",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.connections.searchDatabase",
                     "when": "false"
                 },
                 {
@@ -2828,6 +2864,16 @@
                     "group": "zdisplay@1"
                 },
                 {
+                    "command": "dbcode.connections.searchHere",
+                    "when": "view == dbcode.connections.view && (viewItem =~ /^connection-/ || viewItem =~ /^database-/)",
+                    "group": "zdisplay@2"
+                },
+                {
+                    "command": "dbcode.connections.filterClear",
+                    "when": "view == dbcode.connections.view && viewItem == searchSummary",
+                    "group": "inline"
+                },
+                {
                     "command": "dbcode.connections.copyElementLabel",
                     "when": "view == dbcode.connections.view",
                     "group": "zzzommon@1"
@@ -2925,6 +2971,16 @@
                 {
                     "command": "dbcode.table.explore",
                     "when": "view == dbcode.connections.view && viewItem =~ /~explore~/",
+                    "group": "inline"
+                },
+                {
+                    "command": "dbcode.job.history",
+                    "when": "view == dbcode.connections.view && viewItem =~ /~history~/",
+                    "group": "1open@3"
+                },
+                {
+                    "command": "dbcode.job.history",
+                    "when": "view == dbcode.connections.view && viewItem =~ /~history~/",
                     "group": "inline"
                 },
                 {
