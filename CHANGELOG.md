@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.36.15 - 2026-08-24
+
+### Fixed
+
+- Explorer: Opening a large database without Progressive Loading no longer freezes the extension while indexing object names. #1206
+
 ## 1.36.14 - 2026-08-24
 
 ### Changed
