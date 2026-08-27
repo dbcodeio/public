@@ -163,7 +163,6 @@
   "The schema of the default connection if supported.": "Schéma výchozího připojení, pokud je podporováno.",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "Výchozí připojení pro pracovní prostor. Lze nastavit příkazem: DBCode: Vybrat výchozí připojení pracovního prostoru.",
   "Refresh Connected Connections": "Obnovit aktivní připojení",
-  "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "Povolit Historii pro záznam SQL příkazů.",
   "Generate Key for License": "Vygenerovat klíč pro licenci",
   "Install License": "Nainstalovat licenci",
   "Highlight color": "Barva zvýraznění",
@@ -409,5 +408,15 @@
   "Clear Search": "Vymazat hledání",
   "Cancel search": "Zrušit hledání",
   "Search database": "Hledat v databázi",
-  "Search Data...": "Hledat data..."
+  "Search Data...": "Hledat data...",
+  "Describe Table": "Popsat tabulku",
+  "Refresh Data": "Aktualizovat data",
+  "Cancel": "Zrušit",
+  "Group by Session": "Seskupit podle relace",
+  "Group by Connection": "Seskupit podle připojení",
+  "View Refresh History": "Zobrazit historii aktualizací",
+  "Inspect": "Prozkoumat",
+  "Activity": "Aktivita",
+  "AI Roles": "Role AI",
+  "Custom AI roles used to restrict agent access to connections.": "Vlastní role AI používané k omezení přístupu agentů k připojením."
 }

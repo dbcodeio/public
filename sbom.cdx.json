@@ -1,16 +1,16 @@
 {
 	"bomFormat": "CycloneDX",
 	"specVersion": "1.6",
-	"serialNumber": "urn:uuid:01e23f9c-5931-a4f1-5f98-629ff7ddd1f3",
+	"serialNumber": "urn:uuid:aa45d94d-bd72-1424-cb34-d50f530e2f0e",
 	"version": 1,
 	"metadata": {
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.36.15",
+			"version": "1.36.16",
 			"publisher": "dbcode",
 			"description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 80+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
-			"purl": "pkg:generic/dbcode@1.36.15",
+			"purl": "pkg:generic/dbcode@1.36.16",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -9661,6 +9661,12 @@
 					"url": "https://github.com/m4heshd/better-sqlite3-multiple-ciphers"
 				}
 			]
+		},
+		{
+			"type": "library",
+			"name": "better-sqlite3-multiple-ciphers",
+			"version": "13.0.3",
+			"purl": "pkg:npm/better-sqlite3-multiple-ciphers@13.0.3"
 		},
 		{
 			"type": "library",
@@ -19563,6 +19569,12 @@
 					"url": "https://github.com/nodejs/node-addon-api"
 				}
 			]
+		},
+		{
+			"type": "library",
+			"name": "node-addon-api",
+			"version": "8.9.2",
+			"purl": "pkg:npm/node-addon-api@8.9.2"
 		},
 		{
 			"type": "library",

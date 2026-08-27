@@ -163,7 +163,6 @@
   "The schema of the default connection if supported.": "Lo schema della connessione predefinita, se supportato.",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "La connessione predefinita per il workspace. Può essere impostata con il comando: DBCode: Seleziona connessione predefinita workspace.",
   "Refresh Connected Connections": "Aggiorna connessioni attive",
-  "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "Abilita la cronologia per registrare i comandi SQL.",
   "Generate Key for License": "Genera chiave per licenza",
   "Install License": "Installa licenza",
   "Highlight color": "Colore evidenziazione",
@@ -409,5 +408,15 @@
   "Clear Search": "Cancella ricerca",
   "Cancel search": "Annulla ricerca",
   "Search database": "Cerca nel database",
-  "Search Data...": "Cerca dati..."
+  "Search Data...": "Cerca dati...",
+  "Describe Table": "Descrivi tabella",
+  "Refresh Data": "Aggiorna dati",
+  "Cancel": "Annulla",
+  "Group by Session": "Raggruppa per sessione",
+  "Group by Connection": "Raggruppa per connessione",
+  "View Refresh History": "Visualizza cronologia aggiornamenti",
+  "Inspect": "Ispeziona",
+  "Activity": "Attività",
+  "AI Roles": "Ruoli IA",
+  "Custom AI roles used to restrict agent access to connections.": "Ruoli IA personalizzati usati per limitare l'accesso degli agenti alle connessioni."
 }

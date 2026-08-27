@@ -163,7 +163,6 @@
   "The schema of the default connection if supported.": "Destekleniyorsa varsayılan bağlantının şeması.",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "Çalışma alanı için varsayılan bağlantı. Şu komutla ayarlanabilir: DBCode: Çalışma Alanı Varsayılan Bağlantısını Seç.",
   "Refresh Connected Connections": "Bağlı Bağlantıları Yenile",
-  "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "SQL komutlarını kaydetmek için Geçmiş'i etkinleştir.",
   "Generate Key for License": "Lisans için Anahtar Oluştur",
   "Install License": "Lisans Yükle",
   "Highlight color": "Vurgulama rengi",
@@ -409,5 +408,15 @@
   "Clear Search": "Aramayı temizle",
   "Cancel search": "Aramayı iptal et",
   "Search database": "Veritabanında ara",
-  "Search Data...": "Verilerde ara..."
+  "Search Data...": "Verilerde ara...",
+  "Describe Table": "Tabloyu Açıkla",
+  "Refresh Data": "Verileri yenile",
+  "Cancel": "İptal",
+  "Group by Session": "Oturuma göre grupla",
+  "Group by Connection": "Bağlantıya göre grupla",
+  "View Refresh History": "Yenileme geçmişini görüntüle",
+  "Inspect": "İncele",
+  "Activity": "Etkinlik",
+  "AI Roles": "AI Rolleri",
+  "Custom AI roles used to restrict agent access to connections.": "Aracıların bağlantılara erişimini kısıtlamak için kullanılan özel AI rolleri."
 }

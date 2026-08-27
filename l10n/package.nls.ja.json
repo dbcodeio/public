@@ -163,7 +163,6 @@
   "The schema of the default connection if supported.": "既定の接続のスキーマ (サポートされている場合)。",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "ワークスペースの既定の接続。コマンド「DBCode: ワークスペースの既定の接続を選択」で設定できます。",
   "Refresh Connected Connections": "接続済み接続の更新",
-  "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "履歴を有効にして SQL コマンドを記録します。",
   "Generate Key for License": "ライセンスキーの生成",
   "Install License": "ライセンスのインストール",
   "Highlight color": "ハイライト色",
@@ -409,5 +408,15 @@
   "Clear Search": "検索をクリア",
   "Cancel search": "検索をキャンセル",
   "Search database": "データベースを検索",
-  "Search Data...": "データを検索..."
+  "Search Data...": "データを検索...",
+  "Describe Table": "テーブルの記述",
+  "Refresh Data": "データの更新",
+  "Cancel": "キャンセル",
+  "Group by Session": "セッションでグループ化",
+  "Group by Connection": "接続でグループ化",
+  "View Refresh History": "更新履歴の表示",
+  "Inspect": "検査",
+  "Activity": "アクティビティ",
+  "AI Roles": "AI ロール",
+  "Custom AI roles used to restrict agent access to connections.": "接続へのエージェントアクセスを制限するカスタム AI ロール。"
 }

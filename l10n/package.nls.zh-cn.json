@@ -163,7 +163,6 @@
   "The schema of the default connection if supported.": "默认连接的模式（如果支持）。",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "工作区的默认连接。可通过命令设置：DBCode：选择工作区默认连接。",
   "Refresh Connected Connections": "刷新已连接的连接",
-  "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "启用历史记录以记录 SQL 命令。",
   "Generate Key for License": "为许可证生成密钥",
   "Install License": "安装许可证",
   "Highlight color": "高亮颜色",
@@ -409,5 +408,15 @@
   "Clear Search": "清除搜索",
   "Cancel search": "取消搜索",
   "Search database": "搜索数据库",
-  "Search Data...": "搜索数据..."
+  "Search Data...": "搜索数据...",
+  "Describe Table": "描述表",
+  "Refresh Data": "刷新数据",
+  "Cancel": "取消",
+  "Group by Session": "按会话分组",
+  "Group by Connection": "按连接分组",
+  "View Refresh History": "查看刷新历史记录",
+  "Inspect": "检查",
+  "Activity": "活动",
+  "AI Roles": "AI 角色",
+  "Custom AI roles used to restrict agent access to connections.": "用于限制代理访问连接的自定义 AI 角色。"
 }

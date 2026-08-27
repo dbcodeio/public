@@ -163,7 +163,6 @@
   "The schema of the default connection if supported.": "預設連線的架構（如果支援）。",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "工作區的預設連線。可以使用命令設定：DBCode: 選擇工作區預設連線。",
   "Refresh Connected Connections": "重新整理已連線的連線",
-  "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "啟用歷史記錄以記錄 SQL 命令。",
   "Generate Key for License": "為授權產生金鑰",
   "Install License": "安裝授權",
   "Highlight color": "醒目提示顏色",
@@ -409,5 +408,15 @@
   "Clear Search": "清除搜尋",
   "Cancel search": "取消搜尋",
   "Search database": "搜尋資料庫",
-  "Search Data...": "搜尋資料..."
+  "Search Data...": "搜尋資料...",
+  "Describe Table": "描述資料表",
+  "Refresh Data": "重新整理資料",
+  "Cancel": "取消",
+  "Group by Session": "依工作階段分組",
+  "Group by Connection": "依連線分組",
+  "View Refresh History": "檢視重新整理記錄",
+  "Inspect": "檢查",
+  "Activity": "活動",
+  "AI Roles": "AI 角色",
+  "Custom AI roles used to restrict agent access to connections.": "用來限制代理程式存取連線的自訂 AI 角色。"
 }

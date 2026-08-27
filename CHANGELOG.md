@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## 1.36.16 - 2026-08-27
+
+### Changed
+
+- Activity: New Active section shows in-flight AI and user queries with a cancel action, and history can be grouped by session and filtered by actor.
+- AI tools: Added per-connection AI roles with restrictive permissions and reviewable approvals.
+- AI Tools: Added a describe-table tool that returns a table's columns, primary key, foreign keys, and indexes.
+- Power BI: Refresh (process) semantic models and view refresh history from the explorer; turn off Read Only to enable refresh. #1190
+- Explorer: Added a read-only Security node listing server-scoped users, roles, and logins (PostgreSQL, SQL Server, MySQL/MariaDB); click a principal to open an inspector showing its overview, memberships, and server-level grants.
+- SQLite: Updated the bundled SQLite engine to 3.53.4 (better-sqlite3 v13, N-API).
+- DBCode now requires VS Code 1.101.0 or later.
+
+### Fixed
+
+- Editor: Fixed Go to Definition sometimes leaving an empty editor with a save prompt instead of opening the object. #1208
+- Explorer: Filter Items now hides the Monitoring node and connection-scope folders when they are unchecked.
+- AI Tools: Fixed schema and table retrieval returning nothing on connections that use progressive introspection.
+- Doris: SelectDB Core is now recognized as Doris, so introspection no longer fails with a parser error. #1209
+
 ## 1.36.15 - 2026-08-24
 
 ### Fixed

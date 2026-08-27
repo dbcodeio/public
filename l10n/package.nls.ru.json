@@ -163,7 +163,6 @@
   "The schema of the default connection if supported.": "Схема подключения по умолчанию (если поддерживается).",
   "The default connection for the workspace. Can be set with the command: DBCode: Select Workspace Default Connection.": "Подключение по умолчанию для рабочей области. Настраивается командой: DBCode: Выбрать подключение рабочей области по умолчанию.",
   "Refresh Connected Connections": "Обновить активные подключения",
-  "Enable History to record SQL commands.\n[Enable history](command:dbcode.history.enable)": "Включите историю для записи SQL команд.",
   "Generate Key for License": "Сгенерировать ключ для лицензии",
   "Install License": "Установить лицензию",
   "Highlight color": "Цвет подсветки",
@@ -409,5 +408,15 @@
   "Clear Search": "Очистить поиск",
   "Cancel search": "Отменить поиск",
   "Search database": "Искать в базе данных",
-  "Search Data...": "Поиск данных..."
+  "Search Data...": "Поиск данных...",
+  "Describe Table": "Описать таблицу",
+  "Refresh Data": "Обновить данные",
+  "Cancel": "Отмена",
+  "Group by Session": "Группировать по сеансу",
+  "Group by Connection": "Группировать по подключению",
+  "View Refresh History": "Просмотреть журнал обновлений",
+  "Inspect": "Просмотреть",
+  "Activity": "Активность",
+  "AI Roles": "Роли ИИ",
+  "Custom AI roles used to restrict agent access to connections.": "Пользовательские роли ИИ для ограничения доступа агентов к подключениям."
 }
