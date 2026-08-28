@@ -418,5 +418,16 @@
   "Inspect": "Prozkoumat",
   "Activity": "Aktivita",
   "AI Roles": "Role AI",
-  "Custom AI roles used to restrict agent access to connections.": "Vlastní role AI používané k omezení přístupu agentů k připojením."
+  "Custom AI roles used to restrict agent access to connections.": "Vlastní role AI používané k omezení přístupu agentů k připojením.",
+  "Get Started with DBCode": "Začínáme s DBCode",
+  "Connect a database, explore your data, and put your AI assistant to work.": "Připojte databázi, prozkoumejte svá data a zapojte do práce svého asistenta AI.",
+  "Connect your database": "Připojte svou databázi",
+  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "Přidejte připojení k libovolné z více než 90 databází - nebo jen vložte připojovací řetězec a DBCode formulář vyplní za vás.\n[Přidat připojení](command:dbcode.walkthrough.addConnection)",
+  "No database handy? Explore a sample": "Nemáte po ruce databázi? Prozkoumejte ukázku",
+  "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "Otevřete přibalenou ukázkovou databázi Sakila a vyzkoušejte datovou mřížku, filtry a editor SQL na skutečných datech.\n[Otevřít ukázkovou databázi](command:dbcode.walkthrough.sample)",
+  "Put your AI assistant to work": "Zapojte do práce svého asistenta AI",
+  "Your editor's AI agent can query, explain, and change your databases through DBCode's built-in tools.\n[Enable AI Tools](command:dbcode.walkthrough.ai)\n[Connect an External Agent](command:dbcode.walkthrough.agent)": "Agent AI vašeho editoru může dotazovat, vysvětlovat a měnit vaše databáze pomocí vestavěných nástrojů DBCode.\n[Povolit nástroje AI](command:dbcode.walkthrough.ai)\n[Připojit externího agenta](command:dbcode.walkthrough.agent)",
+  "Enable AI Tools in This Editor": "Povolit nástroje AI v tomto editoru",
+  "Connect an AI Agent": "Připojit agenta AI",
+  "Default height (in pixels) of a notebook result grid. You can still drag the bottom border of any grid to resize it, and that height is saved with the notebook.": "Výchozí výška (v pixelech) mřížky výsledků v poznámkovém bloku. Velikost můžete stále změnit přetažením spodního okraje libovolné mřížky a tato výška se uloží spolu s poznámkovým blokem."
 }

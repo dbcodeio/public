@@ -418,5 +418,16 @@
   "Inspect": "Просмотреть",
   "Activity": "Активность",
   "AI Roles": "Роли ИИ",
-  "Custom AI roles used to restrict agent access to connections.": "Пользовательские роли ИИ для ограничения доступа агентов к подключениям."
+  "Custom AI roles used to restrict agent access to connections.": "Пользовательские роли ИИ для ограничения доступа агентов к подключениям.",
+  "Get Started with DBCode": "Начало работы с DBCode",
+  "Connect a database, explore your data, and put your AI assistant to work.": "Подключите базу данных, изучите свои данные и поручите работу ИИ-ассистенту.",
+  "Connect your database": "Подключите вашу базу данных",
+  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "Добавьте подключение к любой из 90+ баз данных - или просто вставьте строку подключения, и DBCode заполнит форму за вас.\n[Добавить подключение](command:dbcode.walkthrough.addConnection)",
+  "No database handy? Explore a sample": "Нет базы данных под рукой? Изучите пример",
+  "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "Откройте встроенную демонстрационную базу данных Sakila и попробуйте таблицу данных, фильтры и редактор SQL на реальных данных.\n[Открыть демо-базу](command:dbcode.walkthrough.sample)",
+  "Put your AI assistant to work": "Поручите работу ИИ-ассистенту",
+  "Your editor's AI agent can query, explain, and change your databases through DBCode's built-in tools.\n[Enable AI Tools](command:dbcode.walkthrough.ai)\n[Connect an External Agent](command:dbcode.walkthrough.agent)": "ИИ-агент вашего редактора может выполнять запросы, объяснять и изменять ваши базы данных с помощью встроенных инструментов DBCode.\n[Включить инструменты ИИ](command:dbcode.walkthrough.ai)\n[Подключить внешнего агента](command:dbcode.walkthrough.agent)",
+  "Enable AI Tools in This Editor": "Включить инструменты ИИ в этом редакторе",
+  "Connect an AI Agent": "Подключить ИИ-агента",
+  "Default height (in pixels) of a notebook result grid. You can still drag the bottom border of any grid to resize it, and that height is saved with the notebook.": "Высота по умолчанию (в пикселях) таблицы результатов в блокноте. Вы по-прежнему можете перетащить нижнюю границу любой таблицы, чтобы изменить её размер, и эта высота сохраняется вместе с блокнотом."
 }

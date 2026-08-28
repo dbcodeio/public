@@ -7,9 +7,9 @@
 	<a href="https://discord.gg/FvAzEAHb9w"><img src="https://img.shields.io/discord/1257023271002570804?label=Discord&color=blue&logo=discord&logoColor=white" alt="Discord"/></a>
 </p>
 
-<p align="center"><strong>A modern database client for VS Code, Cursor, and Windsurf - with first-class Copilot and MCP integration.</strong></p>
+<p align="center"><strong>A modern database client for VS Code, Cursor, Windsurf, Antigravity, and Kiro - and the database layer for your AI agent, with built-in MCP and Copilot tools.</strong></p>
 
-<p align="center">Write SQL with IntelliSense, edit table data in place, and manage 80+ databases without leaving your editor. SQL Notebooks, auto-generated ER diagrams, charts, and secure report sharing built in.</p>
+<p align="center">Write SQL with IntelliSense, edit table data in place, and manage 90+ databases without leaving your editor. SQL Notebooks, auto-generated ER diagrams, charts, and secure report sharing built in.</p>
 
 <p align="center"><sub>Available on the <a href="https://marketplace.visualstudio.com/items?itemName=DBCode.dbcode">VS Code Marketplace</a> and <a href="https://open-vsx.org/extension/DBCode/dbcode">OpenVSX</a> (for Cursor, Windsurf, and other VS Code forks).</sub></p>
 
@@ -35,7 +35,7 @@
 </p>
 
 <p align="center">
-	<a href="https://dbcode.io">80+ supported databases, warehouses, lakehouses, and file formats</a>
+	<a href="https://dbcode.io">90+ supported databases, warehouses, lakehouses, and file formats</a>
 </p>
 
 ## Data Viewing & Editing
@@ -51,6 +51,8 @@
 <img width="100%" alt="GitHub Copilot database queries - natural language to SQL" src="https://raw.githubusercontent.com/dbcodeio/public/main/public/videos/copilot.gif">
 
 Query your data with natural language. Ask schema questions, generate queries, create tables.
+
+Your editor's AI agent gets full database access through DBCode's built-in MCP tools - registered automatically in VS Code (Copilot) and Cursor, one click in Antigravity, Windsurf, and Kiro, and available to external agents like Claude Code via `DBCode: Connect an AI Agent`. Agents use your existing connections, with AI permissions you control per connection. [Learn more](https://dbcode.io/docs/ai/mcp)
 
 ## Entity Relationship Diagrams (ERD)
 
@@ -161,7 +163,7 @@ DBCode runs anywhere VS Code does. Install from the [VS Code Marketplace](https:
 
 ## Coming from DBeaver, DataGrip, TablePlus, or SQLTools?
 
-- **From DBeaver?** The same multi-database coverage - Postgres, MySQL, SQL Server, Oracle, and 80+ more - with native AI built in, and no separate Java app to run.
+- **From DBeaver?** The same multi-database coverage - Postgres, MySQL, SQL Server, Oracle, and 90+ more - with native AI built in, and no separate Java app to run.
 - **From DataGrip?** Power-user features like execution plans, data compare, and stored procedure editing, without leaving your editor or JetBrains' commercial pricing.
 - **From TablePlus?** Cross-platform and integrated: no separate app to alt-tab to, with Copilot and MCP built in.
 - **From SQLTools?** Everything you use it for, plus inline data editing, ER diagrams, NoSQL support, and native AI - one extension, no per-database driver installs.

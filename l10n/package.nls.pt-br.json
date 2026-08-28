@@ -418,5 +418,16 @@
   "Inspect": "Inspecionar",
   "Activity": "Atividade",
   "AI Roles": "Funções de IA",
-  "Custom AI roles used to restrict agent access to connections.": "Funções de IA personalizadas usadas para restringir o acesso de agentes às conexões."
+  "Custom AI roles used to restrict agent access to connections.": "Funções de IA personalizadas usadas para restringir o acesso de agentes às conexões.",
+  "Get Started with DBCode": "Primeiros passos com o DBCode",
+  "Connect a database, explore your data, and put your AI assistant to work.": "Conecte um banco de dados, explore seus dados e coloque seu assistente de IA para trabalhar.",
+  "Connect your database": "Conecte seu banco de dados",
+  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "Adicione uma conexão para qualquer um dos mais de 90 bancos de dados - ou simplesmente cole uma string de conexão e o DBCode preencherá o formulário para você.\n[Adicionar conexão](command:dbcode.walkthrough.addConnection)",
+  "No database handy? Explore a sample": "Sem banco de dados à mão? Explore um exemplo",
+  "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "Abra o banco de dados de exemplo Sakila incluído e experimente a grade de dados, os filtros e o editor SQL com dados reais.\n[Abrir banco de dados de exemplo](command:dbcode.walkthrough.sample)",
+  "Put your AI assistant to work": "Coloque seu assistente de IA para trabalhar",
+  "Your editor's AI agent can query, explain, and change your databases through DBCode's built-in tools.\n[Enable AI Tools](command:dbcode.walkthrough.ai)\n[Connect an External Agent](command:dbcode.walkthrough.agent)": "O agente de IA do seu editor pode consultar, explicar e alterar seus bancos de dados por meio das ferramentas integradas do DBCode.\n[Habilitar ferramentas de IA](command:dbcode.walkthrough.ai)\n[Conectar um agente externo](command:dbcode.walkthrough.agent)",
+  "Enable AI Tools in This Editor": "Habilitar ferramentas de IA neste editor",
+  "Connect an AI Agent": "Conectar um agente de IA",
+  "Default height (in pixels) of a notebook result grid. You can still drag the bottom border of any grid to resize it, and that height is saved with the notebook.": "Altura padrão (em pixels) de uma grade de resultados do notebook. Você ainda pode arrastar a borda inferior de qualquer grade para redimensioná-la, e essa altura é salva com o notebook."
 }

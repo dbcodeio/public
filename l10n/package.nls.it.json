@@ -418,5 +418,16 @@
   "Inspect": "Ispeziona",
   "Activity": "Attività",
   "AI Roles": "Ruoli IA",
-  "Custom AI roles used to restrict agent access to connections.": "Ruoli IA personalizzati usati per limitare l'accesso degli agenti alle connessioni."
+  "Custom AI roles used to restrict agent access to connections.": "Ruoli IA personalizzati usati per limitare l'accesso degli agenti alle connessioni.",
+  "Get Started with DBCode": "Inizia con DBCode",
+  "Connect a database, explore your data, and put your AI assistant to work.": "Collega un database, esplora i tuoi dati e metti al lavoro il tuo assistente IA.",
+  "Connect your database": "Collega il tuo database",
+  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "Aggiungi una connessione per uno degli oltre 90 database supportati, oppure incolla una stringa di connessione e DBCode compilerà il modulo per te.\n[Aggiungi connessione](command:dbcode.walkthrough.addConnection)",
+  "No database handy? Explore a sample": "Nessun database a portata di mano? Esplora un esempio",
+  "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "Apri il database di esempio Sakila incluso e prova la griglia dati, i filtri e l'editor SQL su dati reali.\n[Apri database di esempio](command:dbcode.walkthrough.sample)",
+  "Put your AI assistant to work": "Metti al lavoro il tuo assistente IA",
+  "Your editor's AI agent can query, explain, and change your databases through DBCode's built-in tools.\n[Enable AI Tools](command:dbcode.walkthrough.ai)\n[Connect an External Agent](command:dbcode.walkthrough.agent)": "L'agente IA del tuo editor può interrogare, spiegare e modificare i tuoi database tramite gli strumenti integrati di DBCode.\n[Abilita strumenti IA](command:dbcode.walkthrough.ai)\n[Collega un agente esterno](command:dbcode.walkthrough.agent)",
+  "Enable AI Tools in This Editor": "Abilita gli strumenti IA in questo editor",
+  "Connect an AI Agent": "Collega un agente IA",
+  "Default height (in pixels) of a notebook result grid. You can still drag the bottom border of any grid to resize it, and that height is saved with the notebook.": "Altezza predefinita (in pixel) di una griglia dei risultati del notebook. Puoi comunque trascinare il bordo inferiore di una griglia per ridimensionarla e tale altezza viene salvata con il notebook."
 }

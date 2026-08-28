@@ -418,5 +418,16 @@
   "Inspect": "İncele",
   "Activity": "Etkinlik",
   "AI Roles": "AI Rolleri",
-  "Custom AI roles used to restrict agent access to connections.": "Aracıların bağlantılara erişimini kısıtlamak için kullanılan özel AI rolleri."
+  "Custom AI roles used to restrict agent access to connections.": "Aracıların bağlantılara erişimini kısıtlamak için kullanılan özel AI rolleri.",
+  "Get Started with DBCode": "DBCode'a Başlarken",
+  "Connect a database, explore your data, and put your AI assistant to work.": "Bir veritabanı bağlayın, verilerinizi keşfedin ve yapay zeka asistanınızı işe koyun.",
+  "Connect your database": "Veritabanınızı bağlayın",
+  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "90'den fazla veritabanından herhangi biri için bağlantı ekleyin - veya yalnızca bir bağlantı dizesi yapıştırın, DBCode formu sizin için doldursun.\n[Bağlantı Ekle](command:dbcode.walkthrough.addConnection)",
+  "No database handy? Explore a sample": "Elinizde veritabanı yok mu? Bir örneği keşfedin",
+  "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "Paketle gelen Sakila örnek veritabanını açın ve veri tablosunu, filtreleri ve SQL düzenleyicisini gerçek verilerle deneyin.\n[Örnek Veritabanını Aç](command:dbcode.walkthrough.sample)",
+  "Put your AI assistant to work": "Yapay zeka asistanınızı işe koyun",
+  "Your editor's AI agent can query, explain, and change your databases through DBCode's built-in tools.\n[Enable AI Tools](command:dbcode.walkthrough.ai)\n[Connect an External Agent](command:dbcode.walkthrough.agent)": "Düzenleyicinizin yapay zeka aracısı, DBCode'un yerleşik araçlarıyla veritabanlarınızı sorgulayabilir, açıklayabilir ve değiştirebilir.\n[Yapay Zeka Araçlarını Etkinleştir](command:dbcode.walkthrough.ai)\n[Harici Aracı Bağla](command:dbcode.walkthrough.agent)",
+  "Enable AI Tools in This Editor": "Bu Düzenleyicide Yapay Zeka Araçlarını Etkinleştir",
+  "Connect an AI Agent": "Yapay Zeka Aracısı Bağla",
+  "Default height (in pixels) of a notebook result grid. You can still drag the bottom border of any grid to resize it, and that height is saved with the notebook.": "Not defteri sonuç tablosunun varsayılan yüksekliği (piksel cinsinden). Herhangi bir tablonun alt kenarını sürükleyerek yeniden boyutlandırmaya devam edebilirsiniz ve bu yükseklik not defteriyle birlikte kaydedilir."
 }

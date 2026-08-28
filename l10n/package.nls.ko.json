@@ -418,5 +418,16 @@
   "Inspect": "검사",
   "Activity": "활동",
   "AI Roles": "AI 역할",
-  "Custom AI roles used to restrict agent access to connections.": "에이전트의 연결 액세스를 제한하는 사용자 지정 AI 역할입니다."
+  "Custom AI roles used to restrict agent access to connections.": "에이전트의 연결 액세스를 제한하는 사용자 지정 AI 역할입니다.",
+  "Get Started with DBCode": "DBCode 시작하기",
+  "Connect a database, explore your data, and put your AI assistant to work.": "데이터베이스를 연결하고, 데이터를 탐색하고, AI 어시스턴트를 활용해 보세요.",
+  "Connect your database": "데이터베이스 연결",
+  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "80개 이상의 데이터베이스 중 원하는 것에 대한 연결을 추가하세요. 연결 문자열을 붙여넣기만 하면 DBCode가 양식을 자동으로 채워줍니다.\n[연결 추가](command:dbcode.walkthrough.addConnection)",
+  "No database handy? Explore a sample": "사용할 데이터베이스가 없나요? 샘플을 살펴보세요",
+  "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "번들로 제공되는 Sakila 샘플 데이터베이스를 열고 실제 데이터로 데이터 그리드, 필터, SQL 편집기를 사용해 보세요.\n[샘플 데이터베이스 열기](command:dbcode.walkthrough.sample)",
+  "Put your AI assistant to work": "AI 어시스턴트 활용하기",
+  "Your editor's AI agent can query, explain, and change your databases through DBCode's built-in tools.\n[Enable AI Tools](command:dbcode.walkthrough.ai)\n[Connect an External Agent](command:dbcode.walkthrough.agent)": "편집기의 AI 에이전트가 DBCode의 내장 도구를 통해 데이터베이스를 쿼리하고, 설명하고, 변경할 수 있습니다.\n[AI 도구 사용](command:dbcode.walkthrough.ai)\n[외부 에이전트 연결](command:dbcode.walkthrough.agent)",
+  "Enable AI Tools in This Editor": "이 편집기에서 AI 도구 사용",
+  "Connect an AI Agent": "AI 에이전트 연결",
+  "Default height (in pixels) of a notebook result grid. You can still drag the bottom border of any grid to resize it, and that height is saved with the notebook.": "노트북 결과 그리드의 기본 높이(픽셀)입니다. 그리드의 아래쪽 경계를 드래그하여 크기를 조정할 수 있으며, 해당 높이는 노트북과 함께 저장됩니다."
 }

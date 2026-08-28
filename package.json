@@ -2,9 +2,9 @@
     "name": "dbcode",
     "displayName": "DBCode - SQL & Database Client for Postgres, MySQL, MongoDB & more",
     "pricing": "Free",
-    "description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 80+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
+    "description": "Database client for VS Code, Cursor, Windsurf, Antigravity & Kiro - and the database layer for your AI agent, with built-in MCP & Copilot tools. 90+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus.",
     "publisher": "dbcode",
-    "version": "1.36.16",
+    "version": "1.36.18",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -577,6 +577,10 @@
                         "batchSize": {
                             "type": "number",
                             "description": "Rows per insert batch (default 1000). Lower it if the destination rejects large statements (e.g. packet/size limits); raise it for fewer round-trips."
+                        },
+                        "maskSensitiveData": {
+                            "type": "string",
+                            "description": "Set to 'true' to allow copying from a source with masked sensitive columns. Masked values (not raw data) are written to the destination. Without it the copy fails if masking applies."
                         }
                     },
                     "required": [
@@ -638,6 +642,49 @@
                     }
                 ],
                 "priority": "option"
+            }
+        ],
+        "walkthroughs": [
+            {
+                "id": "dbcode.gettingStarted",
+                "title": "%Get Started with DBCode%",
+                "description": "%Connect a database, explore your data, and put your AI assistant to work.%",
+                "steps": [
+                    {
+                        "id": "connect",
+                        "title": "%Connect your database%",
+                        "description": "%Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)%",
+                        "media": {
+                            "markdown": "walkthrough/connect.md"
+                        },
+                        "completionEvents": [
+                            "onCommand:dbcode.connections.add"
+                        ]
+                    },
+                    {
+                        "id": "sample",
+                        "title": "%No database handy? Explore a sample%",
+                        "description": "%Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)%",
+                        "media": {
+                            "markdown": "walkthrough/sample.md"
+                        },
+                        "completionEvents": [
+                            "onCommand:dbcode.connections.sample"
+                        ]
+                    },
+                    {
+                        "id": "ai",
+                        "title": "%Put your AI assistant to work%",
+                        "description": "%Your editor's AI agent can query, explain, and change your databases through DBCode's built-in tools.\n[Enable AI Tools](command:dbcode.walkthrough.ai)\n[Connect an External Agent](command:dbcode.walkthrough.agent)%",
+                        "media": {
+                            "markdown": "walkthrough/ai.md"
+                        },
+                        "completionEvents": [
+                            "onCommand:dbcode.mcp.enableAiTools",
+                            "onCommand:dbcode.mcp.connectAgent"
+                        ]
+                    }
+                ]
             }
         ],
         "commands": [
@@ -1633,6 +1680,16 @@
             {
                 "command": "dbcode.mcp.oauth.revokeTokens",
                 "title": "%MCP HTTP Server: Revoke All OAuth Tokens%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.mcp.enableAiTools",
+                "title": "%Enable AI Tools in This Editor%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.mcp.connectAgent",
+                "title": "%Connect an AI Agent%",
                 "category": "DBCode"
             },
             {
@@ -5630,6 +5687,13 @@
                         "type": "number",
                         "default": 3,
                         "markdownDescription": "%Number of tabs to keep per notebook output cell (set to 0 for no tabs).%"
+                    },
+                    "dbcode.notebook.resultGridHeight": {
+                        "order": 3,
+                        "type": "number",
+                        "default": 320,
+                        "minimum": 120,
+                        "markdownDescription": "%Default height (in pixels) of a notebook result grid. You can still drag the bottom border of any grid to resize it, and that height is saved with the notebook.%"
                     },
                     "dbcode.stackThreshold": {
                         "order": 2,

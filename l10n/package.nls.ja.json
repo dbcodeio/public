@@ -418,5 +418,16 @@
   "Inspect": "検査",
   "Activity": "アクティビティ",
   "AI Roles": "AI ロール",
-  "Custom AI roles used to restrict agent access to connections.": "接続へのエージェントアクセスを制限するカスタム AI ロール。"
+  "Custom AI roles used to restrict agent access to connections.": "接続へのエージェントアクセスを制限するカスタム AI ロール。",
+  "Get Started with DBCode": "DBCode をはじめる",
+  "Connect a database, explore your data, and put your AI assistant to work.": "データベースに接続し、データを探索し、AI アシスタントを活用しましょう。",
+  "Connect your database": "データベースに接続する",
+  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "90 種類以上のデータベースへの接続を追加できます。接続文字列を貼り付けるだけで、DBCode がフォームに自動入力します。\n[接続を追加](command:dbcode.walkthrough.addConnection)",
+  "No database handy? Explore a sample": "データベースが手元にない場合は、サンプルをお試しください",
+  "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "同梱の Sakila サンプルデータベースを開いて、実際のデータでデータグリッド、フィルター、SQL エディターを試してみましょう。\n[サンプルデータベースを開く](command:dbcode.walkthrough.sample)",
+  "Put your AI assistant to work": "AI アシスタントを活用する",
+  "Your editor's AI agent can query, explain, and change your databases through DBCode's built-in tools.\n[Enable AI Tools](command:dbcode.walkthrough.ai)\n[Connect an External Agent](command:dbcode.walkthrough.agent)": "エディターの AI エージェントは、DBCode の組み込みツールを通じてデータベースのクエリ、説明、変更を行えます。\n[AI ツールを有効化](command:dbcode.walkthrough.ai)\n[外部エージェントを接続](command:dbcode.walkthrough.agent)",
+  "Enable AI Tools in This Editor": "このエディターで AI ツールを有効化",
+  "Connect an AI Agent": "AI エージェントを接続",
+  "Default height (in pixels) of a notebook result grid. You can still drag the bottom border of any grid to resize it, and that height is saved with the notebook.": "ノートブックの結果グリッドの既定の高さ（ピクセル単位）。グリッドの下端をドラッグしてサイズを変更でき、その高さはノートブックとともに保存されます。"
 }

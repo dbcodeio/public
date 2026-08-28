@@ -1,5 +1,26 @@
 # CHANGELOG
 
+## 1.36.18 - 2026-08-28
+
+## 1.36.17 - 2026-08-28
+
+### Changed
+
+- AI: Mask sensitive data in results returned to AI agents, with per-connection rules and built-in PII detection.
+- AI: One-click MCP setup in Antigravity, Windsurf, and Kiro, plus a new "Connect an AI Agent" command for Claude Code and other external MCP clients.
+- MongoDB: Nested document and array cells now show and edit as plain JSON instead of Extended JSON wrappers (no more `$numberInt`), while Long, Decimal, ObjectId, and dates keep their exact types.
+- Notebook: Added a setting for the default result grid height (drag the grid's bottom border to resize individually).
+- Security Inspector: Role/login attributes now show as on/off switches, with account health, password state, and richer grant details across PostgreSQL, SQL Server, and MySQL/MariaDB.
+- Getting started: New walkthrough covering connecting a database, the sample database, and AI assistant setup.
+
+### Fixed
+
+- Data grid: Invalid SQL filter errors now appear below the filter bar instead of being hidden.
+- MongoDB: Data grid now supports SQL WHERE filtering, including nested document keys like `"a.b.c"`. #851
+- Connections: Fixed Copy Connection String for MariaDB, TiDB, SingleStore, Doris and StarRocks.
+- Security Inspector: Fixed MySQL "Max Connections" mislabel (it is per-hour) and added the simultaneous-connection limit; roles no longer show account-only fields.
+- Results: Refresh now keeps you on the current page instead of jumping back to the first.
+
 ## 1.36.16 - 2026-08-27
 
 ### Changed

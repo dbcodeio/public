@@ -7,10 +7,10 @@
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.36.16",
+			"version": "1.36.18",
 			"publisher": "dbcode",
-			"description": "Database client for VS Code, Cursor & Windsurf with first-class Copilot & MCP integration. 80+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus - inside your editor.",
-			"purl": "pkg:generic/dbcode@1.36.16",
+			"description": "Database client for VS Code, Cursor, Windsurf, Antigravity & Kiro - and the database layer for your AI agent, with built-in MCP & Copilot tools. 90+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus.",
+			"purl": "pkg:generic/dbcode@1.36.18",
 			"externalReferences": [
 				{
 					"type": "website",

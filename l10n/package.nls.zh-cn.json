@@ -418,5 +418,16 @@
   "Inspect": "检查",
   "Activity": "活动",
   "AI Roles": "AI 角色",
-  "Custom AI roles used to restrict agent access to connections.": "用于限制代理访问连接的自定义 AI 角色。"
+  "Custom AI roles used to restrict agent access to connections.": "用于限制代理访问连接的自定义 AI 角色。",
+  "Get Started with DBCode": "DBCode 入门",
+  "Connect a database, explore your data, and put your AI assistant to work.": "连接数据库，探索您的数据，让 AI 助手为您工作。",
+  "Connect your database": "连接您的数据库",
+  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "为 90 多种数据库中的任意一种添加连接 - 或直接粘贴连接字符串，DBCode 会为您自动填写表单。\n[添加连接](command:dbcode.walkthrough.addConnection)",
+  "No database handy? Explore a sample": "手边没有数据库？探索示例数据库",
+  "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "打开内置的 Sakila 示例数据库，在真实数据上试用数据网格、筛选器和 SQL 编辑器。\n[打开示例数据库](command:dbcode.walkthrough.sample)",
+  "Put your AI assistant to work": "让 AI 助手为您工作",
+  "Your editor's AI agent can query, explain, and change your databases through DBCode's built-in tools.\n[Enable AI Tools](command:dbcode.walkthrough.ai)\n[Connect an External Agent](command:dbcode.walkthrough.agent)": "您编辑器的 AI 代理可以通过 DBCode 的内置工具查询、解释和更改您的数据库。\n[启用 AI 工具](command:dbcode.walkthrough.ai)\n[连接外部代理](command:dbcode.walkthrough.agent)",
+  "Enable AI Tools in This Editor": "在此编辑器中启用 AI 工具",
+  "Connect an AI Agent": "连接 AI 代理",
+  "Default height (in pixels) of a notebook result grid. You can still drag the bottom border of any grid to resize it, and that height is saved with the notebook.": "笔记本结果网格的默认高度（以像素为单位）。你仍然可以拖动任意网格的底部边框来调整其大小，该高度会随笔记本一起保存。"
 }
