@@ -5267,5 +5267,14 @@
   "Password Last Set": "Ultima impostazione password",
   "Days Until Expiration": "Giorni alla scadenza",
   "Cannot store \"{0}\" in field \"{1}\": a wrapper field would be silently dropped": "Impossibile salvare \"{0}\" nel campo \"{1}\": un campo wrapper verrebbe eliminato automaticamente",
-  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "Impossibile confrontare \"{0}\" con il campo \"{1}\": un campo wrapper verrebbe eliminato automaticamente"
+  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "Impossibile confrontare \"{0}\" con il campo \"{1}\": un campo wrapper verrebbe eliminato automaticamente",
+  "Started At": "Avviato il",
+  "Database Disk Size": "Dimensioni su disco dei database",
+  "-- This DDL was synthesized by DBCode from immudb COLUMNS() and INDEXES() catalog metadata. Verify before running in production.": "-- Questo DDL è stato sintetizzato da DBCode dai metadati del catalogo COLUMNS() e INDEXES() di immudb. Verificalo prima di eseguirlo in produzione.",
+  "immudb Command authentication profile is missing": "Il profilo di autenticazione Command di immudb è mancante",
+  "immudb requires a Command authentication profile": "immudb richiede un profilo di autenticazione Command",
+  "immudb connection timed out after {0} seconds": "La connessione a immudb è scaduta dopo {0} secondi",
+  "Could not load the DuckDB Arrow extension (needed to read Arrow files). Check your internet connection and try again: {0}": "Impossibile caricare l'estensione Arrow di DuckDB (necessaria per leggere i file Arrow). Controlla la connessione a Internet e riprova: {0}",
+  "This Arrow file uses a compression codec DuckDB cannot read (LZ4). Re-save it uncompressed, with ZSTD, or as Parquet.": "Questo file Arrow utilizza un codec di compressione che DuckDB non può leggere (LZ4). Salvalo di nuovo senza compressione, con ZSTD o come Parquet.",
+  "Failed to open Arrow file: {0}": "Impossibile aprire il file Arrow: {0}"
 }

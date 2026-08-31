@@ -5267,5 +5267,14 @@
   "Password Last Set": "Ostatnie ustawienie hasła",
   "Days Until Expiration": "Dni do wygaśnięcia",
   "Cannot store \"{0}\" in field \"{1}\": a wrapper field would be silently dropped": "Nie można zapisać \"{0}\" w polu \"{1}\": pole opakowania zostałoby po cichu odrzucone",
-  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "Nie można porównać \"{0}\" z polem \"{1}\": pole opakowania zostałoby po cichu odrzucone"
+  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "Nie można porównać \"{0}\" z polem \"{1}\": pole opakowania zostałoby po cichu odrzucone",
+  "Started At": "Czas uruchomienia",
+  "Database Disk Size": "Rozmiar baz danych na dysku",
+  "-- This DDL was synthesized by DBCode from immudb COLUMNS() and INDEXES() catalog metadata. Verify before running in production.": "-- Ten DDL został zsyntetyzowany przez DBCode na podstawie metadanych katalogu COLUMNS() i INDEXES() bazy immudb. Zweryfikuj go przed uruchomieniem w środowisku produkcyjnym.",
+  "immudb Command authentication profile is missing": "Brakuje profilu uwierzytelniania Command dla immudb",
+  "immudb requires a Command authentication profile": "immudb wymaga profilu uwierzytelniania Command",
+  "immudb connection timed out after {0} seconds": "Limit czasu połączenia z immudb upłynął po {0} s",
+  "Could not load the DuckDB Arrow extension (needed to read Arrow files). Check your internet connection and try again: {0}": "Nie można załadować rozszerzenia Arrow dla DuckDB (wymaganego do odczytu plików Arrow). Sprawdź połączenie internetowe i spróbuj ponownie: {0}",
+  "This Arrow file uses a compression codec DuckDB cannot read (LZ4). Re-save it uncompressed, with ZSTD, or as Parquet.": "Ten plik Arrow używa kodeka kompresji, którego DuckDB nie może odczytać (LZ4). Zapisz go ponownie bez kompresji, z kodekiem ZSTD lub jako Parquet.",
+  "Failed to open Arrow file: {0}": "Nie można otworzyć pliku Arrow: {0}"
 }

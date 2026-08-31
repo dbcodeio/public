@@ -5267,5 +5267,14 @@
   "Password Last Set": "비밀번호 마지막 설정",
   "Days Until Expiration": "만료까지 남은 일수",
   "Cannot store \"{0}\" in field \"{1}\": a wrapper field would be silently dropped": "\"{0}\"을(를) 필드 \"{1}\"에 저장할 수 없습니다: 래퍼 필드가 자동으로 삭제됩니다",
-  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "\"{0}\"을(를) 필드 \"{1}\"과(와) 비교할 수 없습니다: 래퍼 필드가 자동으로 삭제됩니다"
+  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "\"{0}\"을(를) 필드 \"{1}\"과(와) 비교할 수 없습니다: 래퍼 필드가 자동으로 삭제됩니다",
+  "Started At": "시작 시간",
+  "Database Disk Size": "데이터베이스 디스크 크기",
+  "-- This DDL was synthesized by DBCode from immudb COLUMNS() and INDEXES() catalog metadata. Verify before running in production.": "-- 이 DDL은 DBCode가 immudb의 COLUMNS() 및 INDEXES() 카탈로그 메타데이터를 바탕으로 합성했습니다. 프로덕션에서 실행하기 전에 확인하세요.",
+  "immudb Command authentication profile is missing": "immudb Command 인증 프로필이 없습니다",
+  "immudb requires a Command authentication profile": "immudb에는 Command 인증 프로필이 필요합니다",
+  "immudb connection timed out after {0} seconds": "immudb 연결이 {0}초 후 시간 초과되었습니다",
+  "Could not load the DuckDB Arrow extension (needed to read Arrow files). Check your internet connection and try again: {0}": "DuckDB Arrow 확장(Arrow 파일을 읽는 데 필요)을 로드할 수 없습니다. 인터넷 연결을 확인한 후 다시 시도하세요: {0}",
+  "This Arrow file uses a compression codec DuckDB cannot read (LZ4). Re-save it uncompressed, with ZSTD, or as Parquet.": "이 Arrow 파일은 DuckDB가 읽을 수 없는 압축 코덱(LZ4)을 사용합니다. 압축하지 않거나 ZSTD 또는 Parquet 형식으로 다시 저장하세요.",
+  "Failed to open Arrow file: {0}": "Arrow 파일을 열지 못했습니다: {0}"
 }

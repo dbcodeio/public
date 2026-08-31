@@ -5267,5 +5267,14 @@
   "Password Last Set": "密码上次设置时间",
   "Days Until Expiration": "距过期天数",
   "Cannot store \"{0}\" in field \"{1}\": a wrapper field would be silently dropped": "无法将 \"{0}\" 存储到字段 \"{1}\"：包装字段将被静默丢弃",
-  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "无法将 \"{0}\" 与字段 \"{1}\" 进行比较：包装字段将被静默丢弃"
+  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "无法将 \"{0}\" 与字段 \"{1}\" 进行比较：包装字段将被静默丢弃",
+  "Started At": "启动时间",
+  "Database Disk Size": "数据库磁盘大小",
+  "-- This DDL was synthesized by DBCode from immudb COLUMNS() and INDEXES() catalog metadata. Verify before running in production.": "-- 此 DDL 由 DBCode 根据 immudb 的 COLUMNS() 和 INDEXES() 目录元数据合成。请在生产环境中运行前进行验证。",
+  "immudb Command authentication profile is missing": "缺少 immudb 的 Command 身份验证配置文件",
+  "immudb requires a Command authentication profile": "immudb 需要 Command 身份验证配置文件",
+  "immudb connection timed out after {0} seconds": "immudb 连接在 {0} 秒后超时",
+  "Could not load the DuckDB Arrow extension (needed to read Arrow files). Check your internet connection and try again: {0}": "无法加载 DuckDB Arrow 扩展（读取 Arrow 文件所需）。请检查网络连接后重试：{0}",
+  "This Arrow file uses a compression codec DuckDB cannot read (LZ4). Re-save it uncompressed, with ZSTD, or as Parquet.": "此 Arrow 文件使用了 DuckDB 无法读取的压缩编解码器 (LZ4)。请以未压缩、ZSTD 或 Parquet 格式重新保存。",
+  "Failed to open Arrow file: {0}": "无法打开 Arrow 文件：{0}"
 }

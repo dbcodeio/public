@@ -5267,5 +5267,14 @@
   "Password Last Set": "Última definición de la contraseña",
   "Days Until Expiration": "Días hasta la caducidad",
   "Cannot store \"{0}\" in field \"{1}\": a wrapper field would be silently dropped": "No se puede guardar \"{0}\" en el campo \"{1}\": un campo contenedor se descartaría silenciosamente",
-  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "No se puede comparar \"{0}\" con el campo \"{1}\": un campo contenedor se descartaría silenciosamente"
+  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "No se puede comparar \"{0}\" con el campo \"{1}\": un campo contenedor se descartaría silenciosamente",
+  "Started At": "Iniciado el",
+  "Database Disk Size": "Tamaño en disco de las bases de datos",
+  "-- This DDL was synthesized by DBCode from immudb COLUMNS() and INDEXES() catalog metadata. Verify before running in production.": "-- Este DDL fue sintetizado por DBCode a partir de los metadatos de catálogo COLUMNS() e INDEXES() de immudb. Verifíquelo antes de ejecutarlo en producción.",
+  "immudb Command authentication profile is missing": "Falta el perfil de autenticación Command de immudb",
+  "immudb requires a Command authentication profile": "immudb requiere un perfil de autenticación Command",
+  "immudb connection timed out after {0} seconds": "La conexión a immudb agotó el tiempo de espera después de {0} segundos",
+  "Could not load the DuckDB Arrow extension (needed to read Arrow files). Check your internet connection and try again: {0}": "No se pudo cargar la extensión Arrow de DuckDB (necesaria para leer archivos Arrow). Comprueba tu conexión a Internet e inténtalo de nuevo: {0}",
+  "This Arrow file uses a compression codec DuckDB cannot read (LZ4). Re-save it uncompressed, with ZSTD, or as Parquet.": "Este archivo Arrow usa un códec de compresión que DuckDB no puede leer (LZ4). Vuelve a guardarlo sin comprimir, con ZSTD o como Parquet.",
+  "Failed to open Arrow file: {0}": "No se pudo abrir el archivo Arrow: {0}"
 }

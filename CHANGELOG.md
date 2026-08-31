@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.37.0 - 2026-08-31
+
+### Changed
+
+- AnalyticDB for MySQL: Added support for connecting to Alibaba Cloud AnalyticDB for MySQL. #363
+- Arrow: Added support for opening, querying, and exporting Apache Arrow (.arrow) files. #771
+- Query Builder: Added support for CSV, Excel, Parquet, Avro, and Arrow file connections.
+- Connections: Discovery now reads Spring Boot application.properties/yml, Rails database.yml, and Django settings.py at their conventional paths.
+- immudb: Added Preview support for native gRPC connections, database and table browsing, data editing, and supported DDL. #672
+- MySQL and MariaDB: New connections now use progressive schema loading (load schema on demand) by default.
+
+### Fixed
+
+- MariaDB: Schema introspection no longer fails when optional metadata (application-time periods, routines, or events) is unreadable. #1212
+- PostgreSQL: A single rejected catalog query no longer aborts progressive schema loading (seen on Hologres Oracle-compat builds). #1104
+
 ## 1.36.18 - 2026-08-28
 
 ## 1.36.17 - 2026-08-28

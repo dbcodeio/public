@@ -5267,5 +5267,14 @@
   "Password Last Set": "Parolanın Son Ayarlanması",
   "Days Until Expiration": "Süre Dolumuna Kalan Gün",
   "Cannot store \"{0}\" in field \"{1}\": a wrapper field would be silently dropped": "\"{0}\" değeri \"{1}\" alanına kaydedilemiyor: bir sarmalayıcı alanı sessizce atılır",
-  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "\"{0}\" değeri \"{1}\" alanıyla karşılaştırılamıyor: bir sarmalayıcı alanı sessizce atılır"
+  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "\"{0}\" değeri \"{1}\" alanıyla karşılaştırılamıyor: bir sarmalayıcı alanı sessizce atılır",
+  "Started At": "Başlatılma zamanı",
+  "Database Disk Size": "Veritabanlarının disk boyutu",
+  "-- This DDL was synthesized by DBCode from immudb COLUMNS() and INDEXES() catalog metadata. Verify before running in production.": "-- Bu DDL, DBCode tarafından immudb COLUMNS() ve INDEXES() katalog meta verilerinden sentezlendi. Üretimde çalıştırmadan önce doğrulayın.",
+  "immudb Command authentication profile is missing": "immudb için Command kimlik doğrulama profili eksik",
+  "immudb requires a Command authentication profile": "immudb bir Command kimlik doğrulama profili gerektirir",
+  "immudb connection timed out after {0} seconds": "immudb bağlantısı {0} saniye sonra zaman aşımına uğradı",
+  "Could not load the DuckDB Arrow extension (needed to read Arrow files). Check your internet connection and try again: {0}": "DuckDB Arrow uzantısı (Arrow dosyalarını okumak için gerekli) yüklenemedi. İnternet bağlantınızı kontrol edip yeniden deneyin: {0}",
+  "This Arrow file uses a compression codec DuckDB cannot read (LZ4). Re-save it uncompressed, with ZSTD, or as Parquet.": "Bu Arrow dosyası DuckDB'nin okuyamadığı bir sıkıştırma codec'i (LZ4) kullanıyor. Dosyayı sıkıştırmasız, ZSTD ile veya Parquet olarak yeniden kaydedin.",
+  "Failed to open Arrow file: {0}": "Arrow dosyası açılamadı: {0}"
 }

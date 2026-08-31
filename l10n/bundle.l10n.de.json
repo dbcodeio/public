@@ -5267,5 +5267,14 @@
   "Password Last Set": "Kennwort zuletzt festgelegt",
   "Days Until Expiration": "Tage bis zum Ablauf",
   "Cannot store \"{0}\" in field \"{1}\": a wrapper field would be silently dropped": "\"{0}\" kann im Feld \"{1}\" nicht gespeichert werden: Ein Wrapper-Feld würde stillschweigend verworfen",
-  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "\"{0}\" kann nicht mit dem Feld \"{1}\" verglichen werden: Ein Wrapper-Feld würde stillschweigend verworfen"
+  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "\"{0}\" kann nicht mit dem Feld \"{1}\" verglichen werden: Ein Wrapper-Feld würde stillschweigend verworfen",
+  "Started At": "Gestartet am",
+  "Database Disk Size": "Festplattenbelegung der Datenbanken",
+  "-- This DDL was synthesized by DBCode from immudb COLUMNS() and INDEXES() catalog metadata. Verify before running in production.": "-- Dieses DDL wurde von DBCode aus den immudb-Katalogmetadaten COLUMNS() und INDEXES() synthetisiert. Vor der Ausführung in der Produktion prüfen.",
+  "immudb Command authentication profile is missing": "Das Command-Authentifizierungsprofil für immudb fehlt",
+  "immudb requires a Command authentication profile": "immudb erfordert ein Command-Authentifizierungsprofil",
+  "immudb connection timed out after {0} seconds": "Zeitüberschreitung der immudb-Verbindung nach {0} Sekunden",
+  "Could not load the DuckDB Arrow extension (needed to read Arrow files). Check your internet connection and try again: {0}": "Die DuckDB-Arrow-Erweiterung (zum Lesen von Arrow-Dateien erforderlich) konnte nicht geladen werden. Überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut: {0}",
+  "This Arrow file uses a compression codec DuckDB cannot read (LZ4). Re-save it uncompressed, with ZSTD, or as Parquet.": "Diese Arrow-Datei verwendet einen Komprimierungscodec, den DuckDB nicht lesen kann (LZ4). Speichern Sie sie unkomprimiert, mit ZSTD oder als Parquet neu.",
+  "Failed to open Arrow file: {0}": "Fehler beim Öffnen der Arrow-Datei: {0}"
 }

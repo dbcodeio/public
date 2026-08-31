@@ -5267,5 +5267,14 @@
   "Password Last Set": "パスワード最終設定",
   "Days Until Expiration": "有効期限までの日数",
   "Cannot store \"{0}\" in field \"{1}\": a wrapper field would be silently dropped": "\"{0}\" をフィールド \"{1}\" に保存できません：ラッパーフィールドが暗黙的に破棄されます",
-  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "\"{0}\" をフィールド \"{1}\" と比較できません：ラッパーフィールドが暗黙的に破棄されます"
+  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "\"{0}\" をフィールド \"{1}\" と比較できません：ラッパーフィールドが暗黙的に破棄されます",
+  "Started At": "起動日時",
+  "Database Disk Size": "データベースのディスクサイズ",
+  "-- This DDL was synthesized by DBCode from immudb COLUMNS() and INDEXES() catalog metadata. Verify before running in production.": "-- この DDL は、immudb の COLUMNS() および INDEXES() カタログメタデータから DBCode によって合成されました。本番環境で実行する前に検証してください。",
+  "immudb Command authentication profile is missing": "immudb の Command 認証プロファイルがありません",
+  "immudb requires a Command authentication profile": "immudb には Command 認証プロファイルが必要です",
+  "immudb connection timed out after {0} seconds": "immudb 接続は {0} 秒後にタイムアウトしました",
+  "Could not load the DuckDB Arrow extension (needed to read Arrow files). Check your internet connection and try again: {0}": "DuckDB Arrow 拡張機能（Arrow ファイルの読み取りに必要）を読み込めませんでした。インターネット接続を確認して、もう一度お試しください: {0}",
+  "This Arrow file uses a compression codec DuckDB cannot read (LZ4). Re-save it uncompressed, with ZSTD, or as Parquet.": "この Arrow ファイルは DuckDB が読み取れない圧縮コーデック (LZ4) を使用しています。非圧縮、ZSTD、または Parquet 形式で保存し直してください。",
+  "Failed to open Arrow file: {0}": "Arrow ファイルを開けませんでした: {0}"
 }

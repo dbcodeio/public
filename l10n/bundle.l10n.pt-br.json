@@ -5267,5 +5267,14 @@
   "Password Last Set": "Última definição da senha",
   "Days Until Expiration": "Dias até a expiração",
   "Cannot store \"{0}\" in field \"{1}\": a wrapper field would be silently dropped": "Não é possível armazenar \"{0}\" no campo \"{1}\": um campo de wrapper seria descartado silenciosamente",
-  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "Não é possível comparar \"{0}\" com o campo \"{1}\": um campo de wrapper seria descartado silenciosamente"
+  "Cannot compare \"{0}\" to field \"{1}\": a wrapper field would be silently dropped": "Não é possível comparar \"{0}\" com o campo \"{1}\": um campo de wrapper seria descartado silenciosamente",
+  "Started At": "Iniciado em",
+  "Database Disk Size": "Tamanho dos bancos de dados em disco",
+  "-- This DDL was synthesized by DBCode from immudb COLUMNS() and INDEXES() catalog metadata. Verify before running in production.": "-- Este DDL foi sintetizado pelo DBCode a partir dos metadados de catálogo COLUMNS() e INDEXES() do immudb. Verifique-o antes de executar em produção.",
+  "immudb Command authentication profile is missing": "O perfil de autenticação Command do immudb está ausente",
+  "immudb requires a Command authentication profile": "O immudb requer um perfil de autenticação Command",
+  "immudb connection timed out after {0} seconds": "A conexão com o immudb expirou após {0} segundos",
+  "Could not load the DuckDB Arrow extension (needed to read Arrow files). Check your internet connection and try again: {0}": "Não foi possível carregar a extensão Arrow do DuckDB (necessária para ler arquivos Arrow). Verifique sua conexão com a internet e tente novamente: {0}",
+  "This Arrow file uses a compression codec DuckDB cannot read (LZ4). Re-save it uncompressed, with ZSTD, or as Parquet.": "Este arquivo Arrow usa um codec de compactação que o DuckDB não consegue ler (LZ4). Salve-o novamente sem compactação, com ZSTD ou como Parquet.",
+  "Failed to open Arrow file: {0}": "Falha ao abrir o arquivo Arrow: {0}"
 }

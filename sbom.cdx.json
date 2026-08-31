@@ -1,16 +1,16 @@
 {
 	"bomFormat": "CycloneDX",
 	"specVersion": "1.6",
-	"serialNumber": "urn:uuid:aa45d94d-bd72-1424-cb34-d50f530e2f0e",
+	"serialNumber": "urn:uuid:8a01e73d-dc19-6ef6-27a5-231295f9451d",
 	"version": 1,
 	"metadata": {
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.36.18",
+			"version": "1.37.0",
 			"publisher": "dbcode",
 			"description": "Database client for VS Code, Cursor, Windsurf, Antigravity & Kiro - and the database layer for your AI agent, with built-in MCP & Copilot tools. 90+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus.",
-			"purl": "pkg:generic/dbcode@1.36.18",
+			"purl": "pkg:generic/dbcode@1.37.0",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -17468,6 +17468,26 @@
 		{
 			"type": "library",
 			"name": "lru-cache",
+			"version": "11.5.2",
+			"purl": "pkg:npm/lru-cache@11.5.2",
+			"licenses": [
+				{
+					"license": {
+						"id": "BlueOak-1.0.0"
+					}
+				}
+			],
+			"publisher": "Isaac Z. Schlueter <i@izs.me>",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/isaacs/node-lru-cache"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "lru-cache",
 			"version": "5.1.1",
 			"purl": "pkg:npm/lru-cache@5.1.1",
 			"licenses": [
@@ -17667,8 +17687,8 @@
 		{
 			"type": "library",
 			"name": "mariadb",
-			"version": "3.4.2",
-			"purl": "pkg:npm/mariadb@3.4.2",
+			"version": "3.5.3",
+			"purl": "pkg:npm/mariadb@3.5.3",
 			"licenses": [
 				{
 					"license": {
