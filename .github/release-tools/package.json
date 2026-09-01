@@ -2,7 +2,7 @@
 	"name": "dbcode-release-tools",
 	"private": true,
 	"description": "Publishing tools, pinned by the lockfile. Not at the repo root: the extension's package.json is synced there.",
-	"packageManager": "pnpm@10.33.4",
+	"packageManager": "pnpm@11.25.0",
 	"devDependencies": {
 		"@vscode/vsce": "3.9.2",
 		"ovsx": "1.0.2"
