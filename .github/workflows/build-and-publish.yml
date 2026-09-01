@@ -104,7 +104,10 @@ jobs:
             '{sourceRepository: $sourceRepository, sourceCommit: $sourceCommit, version: $version, buildWorkflowRun: $buildWorkflowRun}' \
             > build-provenance.json
 
-      - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
+      # version read from the checked-out package.json's `packageManager` field
+      - uses: pnpm/setup@703c52620218391530e48b9e8870d5c0082e1b9b # v2.1.0
+        with:
+          install: 'false'
 
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
@@ -354,12 +357,12 @@ jobs:
         with:
           sparse-checkout: .github/release-tools
           persist-credentials: false
-      - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
-        # Only .github/release-tools is checked out, so action-setup cannot find a
-        # package.json at the root - pin explicitly (keep in sync with its
-        # packageManager field).
+      - uses: pnpm/setup@703c52620218391530e48b9e8870d5c0082e1b9b # v2.1.0
+        # Only .github/release-tools is checked out, so there is no package.json at
+        # the root - pin explicitly (keep in sync with its packageManager field).
         with:
-          version: 10.33.4
+          version: 11.25.0
+          install: 'false'
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: '22.12'
@@ -396,9 +399,12 @@ jobs:
         with:
           sparse-checkout: .github/release-tools
           persist-credentials: false
-      - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
+      - uses: pnpm/setup@703c52620218391530e48b9e8870d5c0082e1b9b # v2.1.0
+        # Only .github/release-tools is checked out, so there is no package.json at
+        # the root - pin explicitly (keep in sync with its packageManager field).
         with:
-          version: 10.33.4
+          version: 11.25.0
+          install: 'false'
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: '22.12'

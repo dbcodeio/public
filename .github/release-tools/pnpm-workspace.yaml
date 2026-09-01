@@ -1,0 +1,4 @@
+# pnpm 11: build scripts need an explicit allow/deny; neither is needed here.
+allowBuilds:
+  "@vscode/vsce-sign": false
+  keytar: false
