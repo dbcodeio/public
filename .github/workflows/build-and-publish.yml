@@ -360,10 +360,13 @@ jobs:
           sparse-checkout: .github/release-tools
           persist-credentials: false
       - uses: pnpm/setup@703c52620218391530e48b9e8870d5c0082e1b9b # v2.1.0
-        # Only .github/release-tools is checked out, so there is no package.json at
-        # the root - pin explicitly (keep in sync with its packageManager field).
+        # Read the pnpm version from the release-tools manifest, not the root.
+        # Cone-mode sparse checkout still materializes the root package.json (the
+        # extension's, synced on every release); pointing at release-tools reads
+        # its packageManager instead, so a pinned version can't collide with the
+        # extension's.
         with:
-          version: 11.25.0
+          working-directory: .github/release-tools
           install: 'false'
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
@@ -402,10 +405,13 @@ jobs:
           sparse-checkout: .github/release-tools
           persist-credentials: false
       - uses: pnpm/setup@703c52620218391530e48b9e8870d5c0082e1b9b # v2.1.0
-        # Only .github/release-tools is checked out, so there is no package.json at
-        # the root - pin explicitly (keep in sync with its packageManager field).
+        # Read the pnpm version from the release-tools manifest, not the root.
+        # Cone-mode sparse checkout still materializes the root package.json (the
+        # extension's, synced on every release); pointing at release-tools reads
+        # its packageManager instead, so a pinned version can't collide with the
+        # extension's.
         with:
-          version: 11.25.0
+          working-directory: .github/release-tools
           install: 'false'
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
