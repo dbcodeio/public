@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 1.38.0 - 2026-09-03
+
+### Changed
+
+- Editor: COMMENT ON statements are now classified as DDL for role permissions and schema refresh.
+- GridGain: Added Preview support. #564
+- Apache Ignite: Added Preview support. #1056
+- General: Added a one-time prompt asking for a review.
+- Tables: New table designer for PostgreSQL, MySQL/MariaDB, and SQL Server: create and alter with SQL preview and per-statement results.
+- Timeplus Proton: Preview support added. #468
+
+### Fixed
+
+- ClickHouse: Schema loading now retries a dropped keep-alive connection instead of failing with "socket hang up". #1214
+- Results: Column header filter and menu buttons now toggle their popup closed on a second click instead of reopening it. #825
+- Connection Colors: Fixed the color appearing on unrelated editor tabs. #1215
+
 ## 1.37.0 - 2026-08-31
 
 ### Changed

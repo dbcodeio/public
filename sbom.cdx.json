@@ -1,16 +1,16 @@
 {
 	"bomFormat": "CycloneDX",
 	"specVersion": "1.6",
-	"serialNumber": "urn:uuid:8a01e73d-dc19-6ef6-27a5-231295f9451d",
+	"serialNumber": "urn:uuid:22057818-57e3-6361-25c8-56b79214c5c1",
 	"version": 1,
 	"metadata": {
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.37.0",
+			"version": "1.38.0",
 			"publisher": "dbcode",
 			"description": "Database client for VS Code, Cursor, Windsurf, Antigravity & Kiro - and the database layer for your AI agent, with built-in MCP & Copilot tools. 90+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus.",
-			"purl": "pkg:generic/dbcode@1.37.0",
+			"purl": "pkg:generic/dbcode@1.38.0",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -6862,6 +6862,25 @@
 		},
 		{
 			"type": "library",
+			"name": "@timeplus/proton-javascript-driver",
+			"version": "0.1.4",
+			"purl": "pkg:npm/%40timeplus%2Fproton-javascript-driver@0.1.4",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/timeplus-io/proton-javascript-driver"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@tiptap/core",
 			"version": "2.27.2",
 			"purl": "pkg:npm/%40tiptap%2Fcore@2.27.2",
@@ -9587,8 +9606,8 @@
 		{
 			"type": "library",
 			"name": "baseline-browser-mapping",
-			"version": "2.10.27",
-			"purl": "pkg:npm/baseline-browser-mapping@2.10.27",
+			"version": "2.11.19",
+			"purl": "pkg:npm/baseline-browser-mapping@2.11.19",
 			"licenses": [
 				{
 					"license": {
@@ -9666,7 +9685,21 @@
 			"type": "library",
 			"name": "better-sqlite3-multiple-ciphers",
 			"version": "13.0.3",
-			"purl": "pkg:npm/better-sqlite3-multiple-ciphers@13.0.3"
+			"purl": "pkg:npm/better-sqlite3-multiple-ciphers@13.0.3",
+			"licenses": [
+				{
+					"license": {
+						"id": "MIT"
+					}
+				}
+			],
+			"publisher": "Mahesh Bandara Wijerathna (m4heshd) <m4heshd@gmail.com>",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/m4heshd/better-sqlite3-multiple-ciphers"
+				}
+			]
 		},
 		{
 			"type": "library",
@@ -10046,8 +10079,8 @@
 		{
 			"type": "library",
 			"name": "browserslist",
-			"version": "4.28.2",
-			"purl": "pkg:npm/browserslist@4.28.2",
+			"version": "4.28.8",
+			"purl": "pkg:npm/browserslist@4.28.8",
 			"licenses": [
 				{
 					"license": {
@@ -10383,8 +10416,8 @@
 		{
 			"type": "library",
 			"name": "caniuse-lite",
-			"version": "1.0.30001792",
-			"purl": "pkg:npm/caniuse-lite@1.0.30001792",
+			"version": "1.0.30001810",
+			"purl": "pkg:npm/caniuse-lite@1.0.30001810",
 			"licenses": [
 				{
 					"license": {
@@ -12714,8 +12747,8 @@
 		{
 			"type": "library",
 			"name": "electron-to-chromium",
-			"version": "1.5.352",
-			"purl": "pkg:npm/electron-to-chromium@1.5.352",
+			"version": "1.5.415",
+			"purl": "pkg:npm/electron-to-chromium@1.5.415",
 			"licenses": [
 				{
 					"license": {
@@ -13485,8 +13518,8 @@
 		{
 			"type": "library",
 			"name": "fast-uri",
-			"version": "3.1.5",
-			"purl": "pkg:npm/fast-uri@3.1.5",
+			"version": "3.1.6",
+			"purl": "pkg:npm/fast-uri@3.1.6",
 			"licenses": [
 				{
 					"license": {
@@ -15703,6 +15736,26 @@
 			"name": "iconv-lite",
 			"version": "0.7.2",
 			"purl": "pkg:npm/iconv-lite@0.7.2",
+			"licenses": [
+				{
+					"license": {
+						"id": "MIT"
+					}
+				}
+			],
+			"publisher": "Alexander Shtuchkin <ashtuchkin@gmail.com>",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/pillarjs/iconv-lite"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "iconv-lite",
+			"version": "0.7.3",
+			"purl": "pkg:npm/iconv-lite@0.7.3",
 			"licenses": [
 				{
 					"license": {
@@ -19217,8 +19270,8 @@
 		{
 			"type": "library",
 			"name": "mysql2",
-			"version": "3.22.3",
-			"purl": "pkg:npm/mysql2@3.22.3",
+			"version": "3.24.2",
+			"purl": "pkg:npm/mysql2@3.24.2",
 			"licenses": [
 				{
 					"license": {
@@ -19594,7 +19647,20 @@
 			"type": "library",
 			"name": "node-addon-api",
 			"version": "8.9.2",
-			"purl": "pkg:npm/node-addon-api@8.9.2"
+			"purl": "pkg:npm/node-addon-api@8.9.2",
+			"licenses": [
+				{
+					"license": {
+						"id": "MIT"
+					}
+				}
+			],
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/nodejs/node-addon-api"
+				}
+			]
 		},
 		{
 			"type": "library",
@@ -19757,8 +19823,8 @@
 		{
 			"type": "library",
 			"name": "node-releases",
-			"version": "2.0.38",
-			"purl": "pkg:npm/node-releases@2.0.38",
+			"version": "2.0.53",
+			"purl": "pkg:npm/node-releases@2.0.53",
 			"licenses": [
 				{
 					"license": {
@@ -23673,8 +23739,8 @@
 		{
 			"type": "library",
 			"name": "sql-escaper",
-			"version": "1.3.3",
-			"purl": "pkg:npm/sql-escaper@1.3.3",
+			"version": "1.5.1",
+			"purl": "pkg:npm/sql-escaper@1.5.1",
 			"licenses": [
 				{
 					"license": {
@@ -25477,8 +25543,8 @@
 		{
 			"type": "library",
 			"name": "update-browserslist-db",
-			"version": "1.2.3",
-			"purl": "pkg:npm/update-browserslist-db@1.2.3",
+			"version": "1.3.1",
+			"purl": "pkg:npm/update-browserslist-db@1.3.1",
 			"licenses": [
 				{
 					"license": {
@@ -25486,7 +25552,7 @@
 					}
 				}
 			],
-			"publisher": "Andrey Sitnik <andrey@sitnik.ru>",
+			"publisher": "Andrey Sitnik <andrey@sitnik.es>",
 			"externalReferences": [
 				{
 					"type": "website",
