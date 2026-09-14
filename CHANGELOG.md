@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 1.38.4 - 2026-09-14
+
+### Changed
+
+- CLI: `dbcode introspect` refreshes a connection's database or schema from the terminal.
+- CLI: `dbcode mcp` serves the DBCode MCP tools itself when no editor is running, under the same roles, licence and masking rules.
+- CLI: `dbcode open` opens a tab of its own; `--preview` keeps the preview behaviour. New tables are found without a manual refresh.
+- Cube: Moved out of Preview.
+- Connections: Secondary secrets can now be stored in the OS secret store.
+- Oracle: Progressive loading now hides Oracle-maintained schemas and their public synonyms (SYS and similar) by default; enable "Include Oracle Maintained Schemas" to show them.
+- Table Designer: The plan now shows its success and failure paths as a branching flow, and a running apply can be cancelled.
+
+### Fixed
+
+- AI tools: Query, schema, and copy tools now require an explicit database when the connection has more than one. #1231
+- Oracle: Fixed schema loading failing with ORA-01795 on databases with more than 1000 owners. #1230
+- Oracle: Fixed TIMESTAMP and INTERVAL columns showing a doubled precision such as TIMESTAMP(3)(3).
+
 ## 1.38.3 - 2026-09-11
 
 ### Changed
