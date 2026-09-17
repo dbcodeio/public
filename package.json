@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Database client for VS Code, Cursor, Windsurf, Antigravity & Kiro - and the database layer for your AI agent, with built-in MCP & Copilot tools. 90+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus.",
     "publisher": "dbcode",
-    "version": "1.38.4",
+    "version": "1.38.5",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -673,6 +673,17 @@
                         },
                         "completionEvents": [
                             "onCommand:dbcode.connections.sample"
+                        ]
+                    },
+                    {
+                        "id": "explore",
+                        "title": "%Explore a table without SQL%",
+                        "description": "%Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)%",
+                        "media": {
+                            "markdown": "walkthrough/explore.md"
+                        },
+                        "completionEvents": [
+                            "onCommand:dbcode.table.explore"
                         ]
                     },
                     {
@@ -3027,6 +3038,11 @@
                     "command": "dbcode.server.monitor",
                     "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~monitoring~/",
                     "group": "1connected@3"
+                },
+                {
+                    "command": "dbcode.server.monitor",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^connection-/ && viewItem =~ /~monitoring~/",
+                    "group": "inline"
                 },
                 {
                     "command": "dbcode.connections.refresh",

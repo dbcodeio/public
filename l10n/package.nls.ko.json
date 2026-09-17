@@ -439,5 +439,7 @@
   "Install CLI": "CLI 설치",
   "Per-group metadata (color) keyed by group path. Managed via the group right-click menu.": "그룹 경로를 키로 하는 그룹별 메타데이터(색상). 그룹 마우스 오른쪽 버튼 메뉴에서 관리합니다.",
   "Uninstall CLI": "CLI 제거",
-  "Allow connections to the HTTP MCP server from other machines or Dev Containers by binding to all network interfaces. When disabled, the HTTP server only accepts connections from localhost. With OAuth these connections are authenticated; with No Authentication the server is exposed to your network with no access control, so only enable that combination on a trusted, private network.": "서버를 모든 네트워크 인터페이스에 바인딩하여 다른 컴퓨터나 Dev Containers에서 HTTP MCP 서버에 연결할 수 있도록 허용합니다. 비활성화하면 HTTP 서버는 localhost의 연결만 수락합니다. OAuth를 사용하면 이러한 연결이 인증되지만, 인증 없음을 사용하면 서버가 아무런 액세스 제어 없이 네트워크에 노출되므로 이 조합은 신뢰할 수 있는 사설 네트워크에서만 사용하십시오."
+  "Allow connections to the HTTP MCP server from other machines or Dev Containers by binding to all network interfaces. When disabled, the HTTP server only accepts connections from localhost. With OAuth these connections are authenticated; with No Authentication the server is exposed to your network with no access control, so only enable that combination on a trusted, private network.": "서버를 모든 네트워크 인터페이스에 바인딩하여 다른 컴퓨터나 Dev Containers에서 HTTP MCP 서버에 연결할 수 있도록 허용합니다. 비활성화하면 HTTP 서버는 localhost의 연결만 수락합니다. OAuth를 사용하면 이러한 연결이 인증되지만, 인증 없음을 사용하면 서버가 아무런 액세스 제어 없이 네트워크에 노출되므로 이 조합은 신뢰할 수 있는 사설 네트워크에서만 사용하십시오.",
+  "Explore a table without SQL": "SQL 없이 테이블 탐색",
+  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "샘플에서 테이블을 선택하면 SQL을 작성하지 않고도 차트, 필터, 관련 행 드릴다운을 사용할 수 있습니다.\n[샘플 탐색](command:dbcode.walkthrough.explore)"
 }

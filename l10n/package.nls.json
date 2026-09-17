@@ -26,6 +26,8 @@
     "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)",
     "No database handy? Explore a sample": "No database handy? Explore a sample",
     "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)",
+    "Explore a table without SQL": "Explore a table without SQL",
+    "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)",
     "Put your AI assistant to work": "Put your AI assistant to work",
     "Your editor's AI agent can query, explain, and change your databases through DBCode's built-in tools.\n[Enable AI Tools](command:dbcode.walkthrough.ai)\n[Connect an External Agent](command:dbcode.walkthrough.agent)": "Your editor's AI agent can query, explain, and change your databases through DBCode's built-in tools.\n[Enable AI Tools](command:dbcode.walkthrough.ai)\n[Connect an External Agent](command:dbcode.walkthrough.agent)",
     "Open": "Open",

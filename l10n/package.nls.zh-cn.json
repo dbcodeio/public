@@ -439,5 +439,7 @@
   "Install CLI": "安装 CLI",
   "Per-group metadata (color) keyed by group path. Managed via the group right-click menu.": "按分组路径索引的分组元数据（颜色）。通过分组右键菜单管理。",
   "Uninstall CLI": "卸载 CLI",
-  "Allow connections to the HTTP MCP server from other machines or Dev Containers by binding to all network interfaces. When disabled, the HTTP server only accepts connections from localhost. With OAuth these connections are authenticated; with No Authentication the server is exposed to your network with no access control, so only enable that combination on a trusted, private network.": "通过绑定到所有网络接口，允许其他计算机或 Dev Containers 连接到 HTTP MCP 服务器。禁用时，HTTP 服务器仅接受来自 localhost 的连接。使用 OAuth 时这些连接会经过身份验证；使用“无身份验证”时，服务器将在没有任何访问控制的情况下暴露给您的网络，因此请仅在受信任的专用网络中启用该组合。"
+  "Allow connections to the HTTP MCP server from other machines or Dev Containers by binding to all network interfaces. When disabled, the HTTP server only accepts connections from localhost. With OAuth these connections are authenticated; with No Authentication the server is exposed to your network with no access control, so only enable that combination on a trusted, private network.": "通过绑定到所有网络接口，允许其他计算机或 Dev Containers 连接到 HTTP MCP 服务器。禁用时，HTTP 服务器仅接受来自 localhost 的连接。使用 OAuth 时这些连接会经过身份验证；使用“无身份验证”时，服务器将在没有任何访问控制的情况下暴露给您的网络，因此请仅在受信任的专用网络中启用该组合。",
+  "Explore a table without SQL": "无需 SQL 即可探索表",
+  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "从示例中选择一个表，即可获得图表、筛选器和关联行的钻取，无需编写 SQL。\n[探索示例](command:dbcode.walkthrough.explore)"
 }

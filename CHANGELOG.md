@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.38.5 - 2026-09-17
+
+### Changed
+
+- File connections: Parquet, Arrow, and Avro tables now show a Metadata node with the file's embedded key/value metadata.
+- Files: CSV, Excel, Parquet and Arrow rows can be edited without selecting key columns, including duplicate rows. #1191
+- InfluxDB: Added support for InfluxDB 2.x via a version selector on the connection, using InfluxQL. #1234
+
+### Fixed
+
+- AI: The inline completion sign-in hint now shows once per window instead of on every pause.
+- DB2: Fixed z/OS detection so connections no longer fail on the LUW-only SYSIBMADM.ENV_INST_INFO view. #1015
+- Connections: Test now opens or reuses the connection's tunnel before connecting. #1232
+
 ## 1.38.4 - 2026-09-14
 
 ### Changed
