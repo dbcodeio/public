@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "Database client for VS Code, Cursor, Windsurf, Antigravity & Kiro - and the database layer for your AI agent, with built-in MCP & Copilot tools. 90+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus.",
     "publisher": "dbcode",
-    "version": "1.38.5",
+    "version": "1.38.6",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -84,7 +84,7 @@
                 "canBeReferencedInPrompt": true,
                 "displayName": "%Retrieve Connections%",
                 "icon": "out/resources/logos/icon_color.svg",
-                "modelDescription": "Retrieve available connections. Returns a list of connections, including the name, id, type. The connection id and connection name values are required to access the other dbcode tools.",
+                "modelDescription": "Retrieve available connections. Returns a list of connections, including the name, id, type, and the connection's configured default database (the 'database' field, present only when a default database is configured; absent otherwise). The connection id and connection name values are required to access the other dbcode tools.",
                 "inputSchema": {
                     "type": "object",
                     "properties": {}
@@ -118,7 +118,7 @@
                 "toolReferenceName": "dbcode-getDatabases",
                 "canBeReferencedInPrompt": true,
                 "displayName": "%Retrieve Databases%",
-                "modelDescription": "Retrieve all available databases for a specified connection.",
+                "modelDescription": "Retrieve all available databases for a specified connection. Each database has a 'default' flag; the one marked true is the connection's default database, a good starting point when the user does not name a database.",
                 "icon": "out/resources/logos/icon_color.svg",
                 "inputSchema": {
                     "type": "object",
@@ -944,8 +944,7 @@
             },
             {
                 "command": "dbcode.queryBuilder.open",
-                "title": "%Open Query Builder%",
-                "shortTitle": "%Query Builder%",
+                "title": "%Query Builder%",
                 "icon": "$(code-oss)",
                 "category": "DBCode"
             },
@@ -3287,6 +3286,16 @@
                 {
                     "command": "dbcode.table.explore",
                     "when": "view == dbcode.connections.view && viewItem =~ /~explore~/",
+                    "group": "inline"
+                },
+                {
+                    "command": "dbcode.queryBuilder.open",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~queryBuilder~/",
+                    "group": "1open@3"
+                },
+                {
+                    "command": "dbcode.queryBuilder.open",
+                    "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~queryBuilder~/",
                     "group": "inline"
                 },
                 {
@@ -6008,6 +6017,18 @@
                         "type": "boolean",
                         "default": true,
                         "markdownDescription": "%Toggle zebra stripes (alternating row colors) in data grids.%"
+                    },
+                    "dbcode.syntaxHighlighting": {
+                        "order": 12,
+                        "type": "boolean",
+                        "default": true,
+                        "markdownDescription": "%Syntax-highlight cell values in data grids (currently JSON, arrays and XML).%"
+                    },
+                    "dbcode.rightAlignNumbers": {
+                        "order": 12,
+                        "type": "boolean",
+                        "default": true,
+                        "markdownDescription": "%Right-align numeric values in data grid cells.%"
                     },
                     "dbcode.showColumnComments": {
                         "order": 13,

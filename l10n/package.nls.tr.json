@@ -319,7 +319,6 @@
   "Reveal Stream Tab": "Akış Sekmesini Göster",
   "Active Streams": "Etkin Akışlar",
   "Subscribe": "Abone Ol",
-  "Open Query Builder": "Sorgu oluşturucuyu aç",
   "Query Builder": "Sorgu Oluşturucu",
   "Watch Folder with DBCode": "DBCode ile klasörü izle",
   "Watched Folders": "İzlenen klasörler",
@@ -441,5 +440,7 @@
   "Uninstall CLI": "CLI'yi kaldır",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers by binding to all network interfaces. When disabled, the HTTP server only accepts connections from localhost. With OAuth these connections are authenticated; with No Authentication the server is exposed to your network with no access control, so only enable that combination on a trusted, private network.": "Sunucuyu tüm ağ arabirimlerine bağlayarak HTTP MCP sunucusuna diğer makinelerden veya Dev Containers'tan bağlantılara izin verin. Devre dışı bırakıldığında HTTP sunucusu yalnızca localhost bağlantılarını kabul eder. OAuth ile bu bağlantılar kimlik doğrulamasından geçer; kimlik doğrulaması olmadan ise sunucu herhangi bir erişim denetimi olmadan ağınıza açılır; bu nedenle bu kombinasyonu yalnızca güvenilir, özel bir ağda etkinleştirin.",
   "Explore a table without SQL": "SQL olmadan bir tabloyu keşfedin",
-  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Örnekten bir tablo seçin; SQL yazmadan grafikler, filtreler ve ilişkili satırlara ayrıntılı geçiş elde edin.\n[Örneği Keşfet](command:dbcode.walkthrough.explore)"
+  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Örnekten bir tablo seçin; SQL yazmadan grafikler, filtreler ve ilişkili satırlara ayrıntılı geçiş elde edin.\n[Örneği Keşfet](command:dbcode.walkthrough.explore)",
+  "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "Veri kılavuzlarında hücre değerlerini söz dizimine göre vurgula (şu anda JSON, diziler ve XML).",
+  "Right-align numeric values in data grid cells.": "Veri kılavuzu hücrelerinde sayısal değerleri sağa hizala."
 }

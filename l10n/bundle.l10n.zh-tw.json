@@ -5808,5 +5808,14 @@
   "Permanently delete measurement {0}? This deletes all of its data and cannot be undone.": "永久刪除測量值 {0}？這會刪除其所有資料，且無法復原。",
   "Measurement {0} deleted": "測量值 {0} 已刪除",
   "File changed on disk since this data was loaded. Refresh and try again.": "自載入此資料以來，磁碟上的檔案已變更。請重新整理後再試一次。",
-  "System": "系統"
+  "System": "系統",
+  "Display": "顯示",
+  "Syntax Highlight Cells": "儲存格語法醒目提示",
+  "Right-align Numbers": "數字靠右對齊",
+  "Open in Query Builder": "在查詢產生器中開啟",
+  "Deselect All": "取消全選",
+  "Hide tables without relationships": "隱藏沒有關聯的資料表",
+  "Load": "載入",
+  "Load tables for {0} schemas?": "要為 {0} 個結構描述載入資料表嗎？",
+  "Each schema is introspected separately, which can take a moment on a large database.": "每個結構描述會個別檢索，在大型資料庫上可能需要一些時間。"
 }

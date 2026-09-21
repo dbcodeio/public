@@ -5808,5 +5808,14 @@
   "Permanently delete measurement {0}? This deletes all of its data and cannot be undone.": "メジャーメント {0} を完全に削除しますか？そのすべてのデータが削除され、この操作は元に戻せません。",
   "Measurement {0} deleted": "メジャーメント {0} を削除しました",
   "File changed on disk since this data was loaded. Refresh and try again.": "このデータを読み込んだ後にディスク上のファイルが変更されました。更新してからやり直してください。",
-  "System": "システム"
+  "System": "システム",
+  "Display": "表示",
+  "Syntax Highlight Cells": "セルの構文を強調表示",
+  "Right-align Numbers": "数値を右揃え",
+  "Open in Query Builder": "クエリビルダーで開く",
+  "Deselect All": "すべて選択解除",
+  "Hide tables without relationships": "リレーションシップのないテーブルを非表示",
+  "Load": "読み込み",
+  "Load tables for {0} schemas?": "{0} 個のスキーマのテーブルを読み込みますか？",
+  "Each schema is introspected separately, which can take a moment on a large database.": "各スキーマは個別に読み込まれるため、大規模なデータベースでは時間がかかる場合があります。"
 }

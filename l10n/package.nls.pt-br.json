@@ -319,7 +319,6 @@
   "Reveal Stream Tab": "Mostrar aba de transmissão",
   "Active Streams": "Transmissões ativas",
   "Subscribe": "Inscrever-se",
-  "Open Query Builder": "Abrir construtor de consultas",
   "Query Builder": "Construtor de consultas",
   "Watch Folder with DBCode": "Monitorar pasta com DBCode",
   "Watched Folders": "Pastas monitoradas",
@@ -441,5 +440,7 @@
   "Uninstall CLI": "Desinstalar a CLI",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers by binding to all network interfaces. When disabled, the HTTP server only accepts connections from localhost. With OAuth these connections are authenticated; with No Authentication the server is exposed to your network with no access control, so only enable that combination on a trusted, private network.": "Permitir conexões ao servidor MCP HTTP de outras máquinas ou Dev Containers vinculando o servidor a todas as interfaces de rede. Quando desativado, o servidor HTTP aceita apenas conexões de localhost. Com OAuth, essas conexões são autenticadas; sem autenticação, o servidor fica exposto à sua rede sem nenhum controle de acesso, então habilite essa combinação somente em uma rede privada confiável.",
   "Explore a table without SQL": "Explore uma tabela sem SQL",
-  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Escolha uma tabela do exemplo e obtenha gráficos, filtros e detalhamento em linhas relacionadas, tudo sem escrever SQL.\n[Explorar o exemplo](command:dbcode.walkthrough.explore)"
+  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Escolha uma tabela do exemplo e obtenha gráficos, filtros e detalhamento em linhas relacionadas, tudo sem escrever SQL.\n[Explorar o exemplo](command:dbcode.walkthrough.explore)",
+  "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "Realçar a sintaxe dos valores das células nas grades de dados (atualmente JSON, arrays e XML).",
+  "Right-align numeric values in data grid cells.": "Alinhar à direita os valores numéricos nas células das grades de dados."
 }

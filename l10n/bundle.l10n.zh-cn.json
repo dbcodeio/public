@@ -5808,5 +5808,14 @@
   "Permanently delete measurement {0}? This deletes all of its data and cannot be undone.": "永久删除测量值 {0}？这将删除其所有数据，且无法撤消。",
   "Measurement {0} deleted": "测量值 {0} 已删除",
   "File changed on disk since this data was loaded. Refresh and try again.": "自加载此数据以来，磁盘上的文件已更改。请刷新后重试。",
-  "System": "系统"
+  "System": "系统",
+  "Display": "显示",
+  "Syntax Highlight Cells": "单元格语法高亮",
+  "Right-align Numbers": "数字右对齐",
+  "Open in Query Builder": "在查询生成器中打开",
+  "Deselect All": "取消全选",
+  "Hide tables without relationships": "隐藏无关系的表",
+  "Load": "加载",
+  "Load tables for {0} schemas?": "为 {0} 个架构加载表吗？",
+  "Each schema is introspected separately, which can take a moment on a large database.": "每个架构会单独检索，在大型数据库上可能需要一些时间。"
 }

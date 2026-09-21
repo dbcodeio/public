@@ -319,7 +319,6 @@
   "Reveal Stream Tab": "Zobrazit kartu streamu",
   "Active Streams": "Aktivní streamy",
   "Subscribe": "Odebírat",
-  "Open Query Builder": "Otevřít tvůrce dotazů",
   "Query Builder": "Tvůrce dotazů",
   "Watch Folder with DBCode": "Sledovat složku s DBCode",
   "Watched Folders": "Sledované složky",
@@ -441,5 +440,7 @@
   "Uninstall CLI": "Odinstalovat CLI",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers by binding to all network interfaces. When disabled, the HTTP server only accepts connections from localhost. With OAuth these connections are authenticated; with No Authentication the server is exposed to your network with no access control, so only enable that combination on a trusted, private network.": "Povolit připojení k HTTP serveru MCP z jiných počítačů nebo Dev Containers navázáním serveru na všechna síťová rozhraní. Když je vypnuto, HTTP server přijímá připojení pouze z localhost. S OAuth jsou tato připojení ověřená; bez ověřování je server vystaven vaší síti bez jakékoli kontroly přístupu, proto tuto kombinaci povolte pouze v důvěryhodné soukromé síti.",
   "Explore a table without SQL": "Prozkoumejte tabulku bez SQL",
-  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Vyberte tabulku z ukázky a získejte grafy, filtry a procházení souvisejících řádků, to vše bez psaní SQL.\n[Prozkoumat ukázku](command:dbcode.walkthrough.explore)"
+  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Vyberte tabulku z ukázky a získejte grafy, filtry a procházení souvisejících řádků, to vše bez psaní SQL.\n[Prozkoumat ukázku](command:dbcode.walkthrough.explore)",
+  "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "Zvýraznit syntaxi hodnot buněk v datových mřížkách (aktuálně JSON, pole a XML).",
+  "Right-align numeric values in data grid cells.": "Zarovnat číselné hodnoty v buňkách datových mřížek doprava."
 }

@@ -5808,5 +5808,14 @@
   "Permanently delete measurement {0}? This deletes all of its data and cannot be undone.": "¿Eliminar permanentemente la medición {0}? Esto elimina todos sus datos y no se puede deshacer.",
   "Measurement {0} deleted": "Medición {0} eliminada",
   "File changed on disk since this data was loaded. Refresh and try again.": "El archivo cambió en el disco desde que se cargaron estos datos. Actualice y vuelva a intentarlo.",
-  "System": "Sistema"
+  "System": "Sistema",
+  "Display": "Visualización",
+  "Syntax Highlight Cells": "Resaltar sintaxis en celdas",
+  "Right-align Numbers": "Alinear números a la derecha",
+  "Open in Query Builder": "Abrir en el generador de consultas",
+  "Deselect All": "Deseleccionar todo",
+  "Hide tables without relationships": "Ocultar tablas sin relaciones",
+  "Load": "Cargar",
+  "Load tables for {0} schemas?": "¿Cargar las tablas de {0} esquemas?",
+  "Each schema is introspected separately, which can take a moment on a large database.": "Cada esquema se analiza por separado, lo que puede tardar un momento en una base de datos grande."
 }

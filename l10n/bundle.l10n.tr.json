@@ -5808,5 +5808,14 @@
   "Permanently delete measurement {0}? This deletes all of its data and cannot be undone.": "{0} ölçümü kalıcı olarak silinsin mi? Bu, tüm verilerini siler ve bu işlem geri alınamaz.",
   "Measurement {0} deleted": "{0} ölçümü silindi",
   "File changed on disk since this data was loaded. Refresh and try again.": "Bu veriler yüklendikten sonra dosya diskte değiştirildi. Yenileyip tekrar deneyin.",
-  "System": "Sistem"
+  "System": "Sistem",
+  "Display": "Görünüm",
+  "Syntax Highlight Cells": "Hücrelerde Söz Dizimi Vurgusu",
+  "Right-align Numbers": "Sayıları Sağa Hizala",
+  "Open in Query Builder": "Sorgu oluşturucuda aç",
+  "Deselect All": "Tümünün seçimini kaldır",
+  "Hide tables without relationships": "İlişkisi olmayan tabloları gizle",
+  "Load": "Yükle",
+  "Load tables for {0} schemas?": "{0} şema için tablolar yüklensin mi?",
+  "Each schema is introspected separately, which can take a moment on a large database.": "Her şema ayrı ayrı taranır; bu, büyük bir veritabanında biraz zaman alabilir."
 }

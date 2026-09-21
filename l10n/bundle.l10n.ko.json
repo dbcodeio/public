@@ -5808,5 +5808,14 @@
   "Permanently delete measurement {0}? This deletes all of its data and cannot be undone.": "측정값 {0}을(를) 영구적으로 삭제하시겠습니까? 모든 데이터가 삭제되며 이 작업은 취소할 수 없습니다.",
   "Measurement {0} deleted": "측정값 {0}이(가) 삭제되었습니다",
   "File changed on disk since this data was loaded. Refresh and try again.": "이 데이터를 불러온 이후 디스크의 파일이 변경되었습니다. 새로 고친 후 다시 시도하세요.",
-  "System": "시스템"
+  "System": "시스템",
+  "Display": "표시",
+  "Syntax Highlight Cells": "셀 구문 강조",
+  "Right-align Numbers": "숫자 오른쪽 정렬",
+  "Open in Query Builder": "쿼리 빌더에서 열기",
+  "Deselect All": "모두 선택 해제",
+  "Hide tables without relationships": "관계가 없는 테이블 숨기기",
+  "Load": "로드",
+  "Load tables for {0} schemas?": "{0}개 스키마의 테이블을 로드하시겠습니까?",
+  "Each schema is introspected separately, which can take a moment on a large database.": "각 스키마는 개별적으로 검사되므로 대규모 데이터베이스에서는 시간이 걸릴 수 있습니다."
 }

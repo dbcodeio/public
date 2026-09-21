@@ -319,7 +319,6 @@
   "Reveal Stream Tab": "Afficher l'onglet de flux",
   "Active Streams": "Flux actifs",
   "Subscribe": "S'abonner",
-  "Open Query Builder": "Ouvrir le générateur de requêtes",
   "Query Builder": "Générateur de requêtes",
   "Watch Folder with DBCode": "Surveiller le dossier avec DBCode",
   "Watched Folders": "Dossiers surveillés",
@@ -441,5 +440,7 @@
   "Uninstall CLI": "Désinstaller la CLI",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers by binding to all network interfaces. When disabled, the HTTP server only accepts connections from localhost. With OAuth these connections are authenticated; with No Authentication the server is exposed to your network with no access control, so only enable that combination on a trusted, private network.": "Autoriser les connexions au serveur MCP HTTP depuis d'autres machines ou des Dev Containers en liant le serveur à toutes les interfaces réseau. Lorsque cette option est désactivée, le serveur HTTP n'accepte que les connexions depuis localhost. Avec OAuth, ces connexions sont authentifiées ; sans authentification, le serveur est exposé à votre réseau sans aucun contrôle d'accès : n'activez cette combinaison que sur un réseau privé de confiance.",
   "Explore a table without SQL": "Explorer une table sans SQL",
-  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Choisissez une table de l'exemple et obtenez des graphiques, des filtres et une exploration des lignes liées, sans écrire de SQL.\n[Explorer l'exemple](command:dbcode.walkthrough.explore)"
+  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Choisissez une table de l'exemple et obtenez des graphiques, des filtres et une exploration des lignes liées, sans écrire de SQL.\n[Explorer l'exemple](command:dbcode.walkthrough.explore)",
+  "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "Colorer la syntaxe des valeurs de cellule dans les grilles de données (actuellement JSON, tableaux et XML).",
+  "Right-align numeric values in data grid cells.": "Aligner les valeurs numériques à droite dans les cellules des grilles de données."
 }

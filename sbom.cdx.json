@@ -1,16 +1,16 @@
 {
 	"bomFormat": "CycloneDX",
 	"specVersion": "1.6",
-	"serialNumber": "urn:uuid:54946bbe-7bbe-438c-b0e8-a605a48ea387",
+	"serialNumber": "urn:uuid:44488e9e-aace-e578-8993-6913328ab30f",
 	"version": 1,
 	"metadata": {
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.38.5",
+			"version": "1.38.6",
 			"publisher": "dbcode",
 			"description": "Database client for VS Code, Cursor, Windsurf, Antigravity & Kiro - and the database layer for your AI agent, with built-in MCP & Copilot tools. 90+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus.",
-			"purl": "pkg:generic/dbcode@1.38.5",
+			"purl": "pkg:generic/dbcode@1.38.6",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -8571,8 +8571,8 @@
 		{
 			"type": "library",
 			"name": "adm-zip",
-			"version": "0.6.0",
-			"purl": "pkg:npm/adm-zip@0.6.0",
+			"version": "0.6.1",
+			"purl": "pkg:npm/adm-zip@0.6.1",
 			"licenses": [
 				{
 					"license": {

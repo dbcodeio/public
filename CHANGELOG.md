@@ -1,5 +1,34 @@
 # CHANGELOG
 
+## 1.38.6 - 2026-09-21
+
+### Changed
+
+- AI tools: The connection list now includes each connection's default database, and the database list flags the default database.
+- ERD: The schema picker now lists every schema and loads a schema's tables on demand when you select it.
+- ERD: Auto-layout now sizes tables from their content and groups tables without relationships into a compact block, with a toolbar toggle to hide them.
+- Results: JSON messages in the output log (such as a RAISE NOTICE payload) are now syntax-colored.
+- Results: Output log messages now show a formatted tooltip on hover, with JSON pretty-printed.
+- Query Builder: The aggregate dropdown offers COUNT DISTINCT, SUM DISTINCT and AVG DISTINCT.
+- Query Builder: Can be opened from a table's context menu, hover icon or grid toolbar.
+- Query Builder: Tables added to the canvas are placed to the right, not below.
+- Cloudflare R2 SQL: Moved out of Preview.
+- Results: Numeric values in data grid cells are now right-aligned, toggle it in the grid settings menu or with `dbcode.rightAlignNumbers`.
+- Stripe: Moved out of Preview.
+- Results: Cell values in data grids are now syntax-highlighted (JSON, arrays and XML), toggle it in the grid settings menu or with `dbcode.syntaxHighlighting`.
+
+### Fixed
+
+- ERD: Fixed the schema picker not selecting or deselecting schemas when clicked. #1237
+- ERD: Refreshing a table no longer snaps the diagram back to the default schema.
+- SQL Server: Fabric and Synapse serverless no longer probe unsupported metadata views, fixing introspection errors and a stall. #1235
+- PostgreSQL: Notice messages now keep their raw text so a JSON payload stays intact, and show the severity as the action.
+- Query Builder: AI-generated filter values are no longer double-quoted in the SQL.
+- Query Builder: Joins on more than one column pair now draw a line for every pair instead of only the first.
+- Query Builder: WHERE and ORDER BY column dropdowns follow the table column order, so columns added via Add column no longer sink to the bottom.
+- Editor: Fixed qualified table autocomplete disappearing after the first character in MySQL/MariaDB/BigQuery and Oracle. #1238
+- Stripe: Deep grid paging no longer refetches from the first page each time.
+
 ## 1.38.5 - 2026-09-17
 
 ### Changed

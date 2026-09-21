@@ -5808,5 +5808,14 @@
   "Permanently delete measurement {0}? This deletes all of its data and cannot be undone.": "Trvale odstranit měření {0}? Tím se odstraní všechna jeho data a tuto akci nelze vrátit zpět.",
   "Measurement {0} deleted": "Měření {0} bylo odstraněno",
   "File changed on disk since this data was loaded. Refresh and try again.": "Soubor na disku byl od načtení těchto dat změněn. Obnovte data a zkuste to znovu.",
-  "System": "Systém"
+  "System": "Systém",
+  "Display": "Zobrazení",
+  "Syntax Highlight Cells": "Zvýraznění syntaxe v buňkách",
+  "Right-align Numbers": "Zarovnat čísla doprava",
+  "Open in Query Builder": "Otevřít v tvůrci dotazů",
+  "Deselect All": "Zrušit výběr všech",
+  "Hide tables without relationships": "Skrýt tabulky bez vztahů",
+  "Load": "Načíst",
+  "Load tables for {0} schemas?": "Načíst tabulky pro {0} schémat?",
+  "Each schema is introspected separately, which can take a moment on a large database.": "Každé schéma se načítá zvlášť, což může u velké databáze chvíli trvat."
 }

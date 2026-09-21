@@ -319,7 +319,6 @@
   "Reveal Stream Tab": "顯示串流分頁",
   "Active Streams": "作用中串流",
   "Subscribe": "訂閱",
-  "Open Query Builder": "開啟查詢產生器",
   "Query Builder": "查詢產生器",
   "Watch Folder with DBCode": "使用 DBCode 監看資料夾",
   "Watched Folders": "監看的資料夾",
@@ -441,5 +440,7 @@
   "Uninstall CLI": "解除安裝 CLI",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers by binding to all network interfaces. When disabled, the HTTP server only accepts connections from localhost. With OAuth these connections are authenticated; with No Authentication the server is exposed to your network with no access control, so only enable that combination on a trusted, private network.": "透過繫結到所有網路介面，允許其他電腦或 Dev Containers 連線到 HTTP MCP 伺服器。停用時，HTTP 伺服器僅接受來自 localhost 的連線。使用 OAuth 時這些連線會經過驗證；使用「無驗證」時，伺服器將在沒有任何存取控制的情況下公開給您的網路，因此請僅在受信任的專用網路中啟用該組合。",
   "Explore a table without SQL": "不用 SQL 探索資料表",
-  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "從範例中選擇一個資料表，即可取得圖表、篩選器和關聯資料列的鑽研，無需撰寫 SQL。\n[探索範例](command:dbcode.walkthrough.explore)"
+  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "從範例中選擇一個資料表，即可取得圖表、篩選器和關聯資料列的鑽研，無需撰寫 SQL。\n[探索範例](command:dbcode.walkthrough.explore)",
+  "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "在資料格線中對儲存格值進行語法醒目提示（目前支援 JSON、陣列與 XML）。",
+  "Right-align numeric values in data grid cells.": "在資料格線儲存格中將數值靠右對齊。"
 }

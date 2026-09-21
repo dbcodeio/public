@@ -319,7 +319,6 @@
   "Reveal Stream Tab": "ストリームタブを表示",
   "Active Streams": "アクティブなストリーム",
   "Subscribe": "登録",
-  "Open Query Builder": "クエリビルダーを開く",
   "Query Builder": "クエリビルダー",
   "Watch Folder with DBCode": "DBCode でフォルダーを監視",
   "Watched Folders": "監視フォルダー",
@@ -441,5 +440,7 @@
   "Uninstall CLI": "CLI をアンインストール",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers by binding to all network interfaces. When disabled, the HTTP server only accepts connections from localhost. With OAuth these connections are authenticated; with No Authentication the server is exposed to your network with no access control, so only enable that combination on a trusted, private network.": "サーバーをすべてのネットワークインターフェイスにバインドすることで、他のマシンや Dev Containers から HTTP MCP サーバーへの接続を許可します。無効の場合、HTTP サーバーは localhost からの接続のみを受け入れます。OAuth ではこれらの接続は認証されますが、認証なしの場合はサーバーがアクセス制御なしでネットワークに公開されるため、この組み合わせは信頼できるプライベートネットワークでのみ有効にしてください。",
   "Explore a table without SQL": "SQL なしでテーブルを探索",
-  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "サンプルからテーブルを選ぶと、SQL を書かずにチャート、フィルター、関連行へのドリルダウンが使えます。\n[サンプルを探索](command:dbcode.walkthrough.explore)"
+  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "サンプルからテーブルを選ぶと、SQL を書かずにチャート、フィルター、関連行へのドリルダウンが使えます。\n[サンプルを探索](command:dbcode.walkthrough.explore)",
+  "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "データグリッドのセル値を構文強調表示します（現在は JSON、配列、XML）。",
+  "Right-align numeric values in data grid cells.": "データグリッドのセル内で数値を右揃えにします。"
 }

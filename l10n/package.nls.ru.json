@@ -319,7 +319,6 @@
   "Reveal Stream Tab": "Показать вкладку потока",
   "Active Streams": "Активные потоки",
   "Subscribe": "Подписаться",
-  "Open Query Builder": "Открыть конструктор запросов",
   "Query Builder": "Конструктор запросов",
   "Watch Folder with DBCode": "Отслеживать папку с DBCode",
   "Watched Folders": "Отслеживаемые папки",
@@ -441,5 +440,7 @@
   "Uninstall CLI": "Удалить CLI",
   "Allow connections to the HTTP MCP server from other machines or Dev Containers by binding to all network interfaces. When disabled, the HTTP server only accepts connections from localhost. With OAuth these connections are authenticated; with No Authentication the server is exposed to your network with no access control, so only enable that combination on a trusted, private network.": "Разрешить подключения к HTTP-серверу MCP с других компьютеров или из Dev Containers, привязывая сервер ко всем сетевым интерфейсам. Когда отключено, HTTP-сервер принимает подключения только с localhost. С OAuth эти подключения аутентифицируются; без аутентификации сервер открыт для вашей сети без какого-либо контроля доступа, поэтому включайте эту комбинацию только в доверенной частной сети.",
   "Explore a table without SQL": "Исследуйте таблицу без SQL",
-  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Выберите таблицу из примера и получите диаграммы, фильтры и переход к связанным строкам без написания SQL.\n[Исследовать пример](command:dbcode.walkthrough.explore)"
+  "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Выберите таблицу из примера и получите диаграммы, фильтры и переход к связанным строкам без написания SQL.\n[Исследовать пример](command:dbcode.walkthrough.explore)",
+  "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "Подсвечивать синтаксис значений ячеек в таблицах данных (сейчас JSON, массивы и XML).",
+  "Right-align numeric values in data grid cells.": "Выравнивать числовые значения по правому краю в ячейках таблиц данных."
 }

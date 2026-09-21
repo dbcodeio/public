@@ -5808,5 +5808,14 @@
   "Permanently delete measurement {0}? This deletes all of its data and cannot be undone.": "Удалить измерение {0} безвозвратно? Это приведет к удалению всех его данных, и это действие необратимо.",
   "Measurement {0} deleted": "Измерение {0} удалено",
   "File changed on disk since this data was loaded. Refresh and try again.": "Файл на диске изменился после загрузки этих данных. Обновите данные и повторите попытку.",
-  "System": "Система"
+  "System": "Система",
+  "Display": "Отображение",
+  "Syntax Highlight Cells": "Подсветка синтаксиса в ячейках",
+  "Right-align Numbers": "Числа по правому краю",
+  "Open in Query Builder": "Открыть в конструкторе запросов",
+  "Deselect All": "Снять выделение со всех",
+  "Hide tables without relationships": "Скрыть таблицы без связей",
+  "Load": "Загрузить",
+  "Load tables for {0} schemas?": "Загрузить таблицы для {0} схем?",
+  "Each schema is introspected separately, which can take a moment on a large database.": "Каждая схема анализируется отдельно, что может занять некоторое время в большой базе данных."
 }
