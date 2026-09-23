@@ -1,5 +1,28 @@
 # CHANGELOG
 
+## 1.38.7 - 2026-09-23
+
+### Changed
+
+- Results: Column and right-click menus list the active filters, and picking one jumps to its column.
+- Results: Grid scroll bars now show only while hovering the grid.
+- Results: Shift+Space selects the row, Ctrl+Space selects the column.
+- Results: Tab on the last cell of an editable table adds a new row.
+- Table Designer: A failed MySQL or MariaDB apply now restores the keys, indexes and constraints it had dropped.
+- Table Designer: Oracle tables open in the designer.
+- Query Builder: The + button on a Columns row adds the same column to the SELECT again.
+- Query Builder: Pick WHERE and ORDER BY columns from a searchable list, and pick a WHERE value from the column's data or another column.
+- SAP ASE (Sybase): Added a Character Set connection option.
+- Editor: New untitled and unassigned `.sql` files now use the workspace default connection. #1241
+
+### Fixed
+
+- DB2: Fixed z/OS schema introspection failing on index, column, constraint, check, trigger, routine and sequence queries. #1015
+- Data: Fixed the inline WHERE filter erroring on tables whose name is a reserved word, like SQL Server `[user]`.
+- Results: Fixed the cell tooltip failing to open on number, boolean and JSON values.
+- SAP ASE (Sybase): Pasted jdbc:jtds:sybase:// connection strings now import.
+- Transactions: Fixed status bar Commit, Rollback and Auto-Commit toggle in non-English VS Code. #1241
+
 ## 1.38.6 - 2026-09-21
 
 ### Changed
