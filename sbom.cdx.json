@@ -1,16 +1,16 @@
 {
 	"bomFormat": "CycloneDX",
 	"specVersion": "1.6",
-	"serialNumber": "urn:uuid:44488e9e-aace-e578-8993-6913328ab30f",
+	"serialNumber": "urn:uuid:ee7f623c-2953-d6e5-638c-a2600fdd7a5f",
 	"version": 1,
 	"metadata": {
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.38.7",
+			"version": "1.38.9",
 			"publisher": "dbcode",
 			"description": "Database client for VS Code, Cursor, Windsurf, Antigravity & Kiro - and the database layer for your AI agent, with built-in MCP & Copilot tools. 90+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus.",
-			"purl": "pkg:generic/dbcode@1.38.7",
+			"purl": "pkg:generic/dbcode@1.38.9",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -2454,8 +2454,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-api",
-			"version": "1.5.3-r.2",
-			"purl": "pkg:npm/%40duckdb%2Fnode-api@1.5.3-r.2",
+			"version": "1.5.5-r.5",
+			"purl": "pkg:npm/%40duckdb%2Fnode-api@1.5.5-r.5",
 			"licenses": [
 				{
 					"license": {
@@ -2473,8 +2473,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings",
-			"version": "1.5.3-r.2",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings@1.5.3-r.2",
+			"version": "1.5.5-r.5",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings@1.5.5-r.5",
 			"licenses": [
 				{
 					"license": {
@@ -2492,8 +2492,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-darwin-arm64",
-			"version": "1.5.3-r.2",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-darwin-arm64@1.5.3-r.2",
+			"version": "1.5.5-r.5",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-darwin-arm64@1.5.5-r.5",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -2522,8 +2522,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-darwin-x64",
-			"version": "1.5.3-r.2",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-darwin-x64@1.5.3-r.2",
+			"version": "1.5.5-r.5",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-darwin-x64@1.5.5-r.5",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -2552,8 +2552,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-linux-arm64",
-			"version": "1.5.3-r.2",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-arm64@1.5.3-r.2",
+			"version": "1.5.5-r.5",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-arm64@1.5.5-r.5",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -2586,8 +2586,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-linux-arm64-musl",
-			"version": "1.5.3-r.2",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-arm64-musl@1.5.3-r.2",
+			"version": "1.5.5-r.5",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-arm64-musl@1.5.5-r.5",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -2620,8 +2620,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-linux-x64",
-			"version": "1.5.3-r.2",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-x64@1.5.3-r.2",
+			"version": "1.5.5-r.5",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-x64@1.5.5-r.5",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -2654,8 +2654,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-linux-x64-musl",
-			"version": "1.5.3-r.2",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-x64-musl@1.5.3-r.2",
+			"version": "1.5.5-r.5",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-x64-musl@1.5.5-r.5",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -2688,8 +2688,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-win32-arm64",
-			"version": "1.5.3-r.2",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-win32-arm64@1.5.3-r.2",
+			"version": "1.5.5-r.5",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-win32-arm64@1.5.5-r.5",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -2718,8 +2718,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-win32-x64",
-			"version": "1.5.3-r.2",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-win32-x64@1.5.3-r.2",
+			"version": "1.5.5-r.5",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-win32-x64@1.5.5-r.5",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -3525,8 +3525,8 @@
 		{
 			"type": "library",
 			"name": "@grpc/grpc-js",
-			"version": "1.14.4",
-			"purl": "pkg:npm/%40grpc%2Fgrpc-js@1.14.4",
+			"version": "1.14.5",
+			"purl": "pkg:npm/%40grpc%2Fgrpc-js@1.14.5",
 			"licenses": [
 				{
 					"license": {
@@ -9447,8 +9447,8 @@
 		{
 			"type": "library",
 			"name": "axios",
-			"version": "1.18.1",
-			"purl": "pkg:npm/axios@1.18.1",
+			"version": "1.20.0",
+			"purl": "pkg:npm/axios@1.20.0",
 			"licenses": [
 				{
 					"license": {
@@ -9940,8 +9940,8 @@
 		{
 			"type": "library",
 			"name": "brace-expansion",
-			"version": "1.1.18",
-			"purl": "pkg:npm/brace-expansion@1.1.18",
+			"version": "1.1.21",
+			"purl": "pkg:npm/brace-expansion@1.1.21",
 			"licenses": [
 				{
 					"license": {
@@ -9960,8 +9960,8 @@
 		{
 			"type": "library",
 			"name": "brace-expansion",
-			"version": "2.1.4",
-			"purl": "pkg:npm/brace-expansion@2.1.4",
+			"version": "2.1.7",
+			"purl": "pkg:npm/brace-expansion@2.1.7",
 			"licenses": [
 				{
 					"license": {
@@ -9980,8 +9980,8 @@
 		{
 			"type": "library",
 			"name": "brace-expansion",
-			"version": "5.0.9",
-			"purl": "pkg:npm/brace-expansion@5.0.9",
+			"version": "5.0.12",
+			"purl": "pkg:npm/brace-expansion@5.0.12",
 			"licenses": [
 				{
 					"license": {
@@ -12529,8 +12529,8 @@
 		{
 			"type": "library",
 			"name": "dompurify",
-			"version": "3.4.13",
-			"purl": "pkg:npm/dompurify@3.4.13",
+			"version": "3.4.16",
+			"purl": "pkg:npm/dompurify@3.4.16",
 			"licenses": [
 				{
 					"expression": "(MPL-2.0 OR Apache-2.0)"
@@ -13537,8 +13537,8 @@
 		{
 			"type": "library",
 			"name": "fast-uri",
-			"version": "3.1.6",
-			"purl": "pkg:npm/fast-uri@3.1.6",
+			"version": "3.1.8",
+			"purl": "pkg:npm/fast-uri@3.1.8",
 			"licenses": [
 				{
 					"license": {
@@ -15353,8 +15353,8 @@
 		{
 			"type": "library",
 			"name": "hono",
-			"version": "4.13.5",
-			"purl": "pkg:npm/hono@4.13.5",
+			"version": "4.13.9",
+			"purl": "pkg:npm/hono@4.13.9",
 			"licenses": [
 				{
 					"license": {
@@ -15951,8 +15951,8 @@
 		{
 			"type": "library",
 			"name": "ip-address",
-			"version": "10.3.1",
-			"purl": "pkg:npm/ip-address@10.3.1",
+			"version": "10.7.2",
+			"purl": "pkg:npm/ip-address@10.7.2",
 			"licenses": [
 				{
 					"license": {
@@ -17837,8 +17837,8 @@
 		{
 			"type": "library",
 			"name": "markdown-it",
-			"version": "14.2.0",
-			"purl": "pkg:npm/markdown-it@14.2.0",
+			"version": "14.3.2",
+			"purl": "pkg:npm/markdown-it@14.3.2",
 			"licenses": [
 				{
 					"license": {
@@ -19169,8 +19169,8 @@
 		{
 			"type": "library",
 			"name": "moment",
-			"version": "2.30.1",
-			"purl": "pkg:npm/moment@2.30.1",
+			"version": "2.31.0",
+			"purl": "pkg:npm/moment@2.31.0",
 			"licenses": [
 				{
 					"license": {
@@ -19178,11 +19178,10 @@
 					}
 				}
 			],
-			"publisher": "Iskren Ivov Chernev <iskren.chernev@gmail.com> (https://github.com/ichernev)",
 			"externalReferences": [
 				{
 					"type": "website",
-					"url": "https://github.com/moment/moment"
+					"url": "github:moment/moment"
 				}
 			]
 		},
@@ -21947,8 +21946,8 @@
 		{
 			"type": "library",
 			"name": "qs",
-			"version": "6.15.2",
-			"purl": "pkg:npm/qs@6.15.2",
+			"version": "6.16.0",
+			"purl": "pkg:npm/qs@6.16.0",
 			"licenses": [
 				{
 					"license": {
@@ -23437,8 +23436,8 @@
 		{
 			"type": "library",
 			"name": "side-channel",
-			"version": "1.1.0",
-			"purl": "pkg:npm/side-channel@1.1.0",
+			"version": "1.1.1",
+			"purl": "pkg:npm/side-channel@1.1.1",
 			"licenses": [
 				{
 					"license": {
@@ -25403,8 +25402,8 @@
 		{
 			"type": "library",
 			"name": "undici",
-			"version": "6.28.0",
-			"purl": "pkg:npm/undici@6.28.0",
+			"version": "6.28.1",
+			"purl": "pkg:npm/undici@6.28.1",
 			"licenses": [
 				{
 					"license": {
@@ -25422,8 +25421,8 @@
 		{
 			"type": "library",
 			"name": "undici",
-			"version": "7.29.0",
-			"purl": "pkg:npm/undici@7.29.0",
+			"version": "7.29.1",
+			"purl": "pkg:npm/undici@7.29.1",
 			"licenses": [
 				{
 					"license": {

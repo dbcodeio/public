@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## 1.38.9 - 2026-10-02
+
+## 1.38.8 - 2026-10-02
+
+### Changed
+
+- Authentication Profiles: Added a Test button for command profiles. #1251
+- Dameng: Moved out of Preview.
+- DuckDB: Updated to version 1.5.5. #1244
+- Results: Run tab rows now jump to their statement in the editor and support multi-select copy. #1248
+- SAP HANA: Moved out of Preview.
+- MariaDB: Added Integrated (Kerberos) authentication, including Windows SSPI. #1249
+
+### Fixed
+
+- Authentication Profiles: Command expiry can be read in seconds, minutes or ISO dates. #1250
+- Authentication Profiles: Commands that write warnings to stderr no longer fail.
+- MariaDB: Fixed tables not loading on MariaDB 10.0 and 10.1. #1247
+
 ## 1.38.7 - 2026-09-23
 
 ### Changed
