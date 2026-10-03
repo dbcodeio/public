@@ -6,7 +6,9 @@ name: Publish MCP launcher
 # so it does not follow extension releases.
 #
 # Versions are not kept in the repo: package.json and server.json hold 0.0.0, and
-# each run publishes the next patch after the version npm already has.
+# each run publishes the next patch after the version npm already has. If npm is
+# ahead of the MCP Registry (an earlier run failed after the npm publish), a run
+# registers that version instead of publishing a new one.
 #
 # npm: trusted publishing (this workflow's OIDC identity), no token stored.
 # MCP Registry: DNS auth for dbcode.io; MCP_REGISTRY_KEY is the hex Ed25519
@@ -45,21 +47,49 @@ jobs:
       - name: Test
         run: npm test
 
-      - name: Set the next version
+      - name: Pick the version
+        id: version
         run: |
           if [ "$(jq -r .mcpName package.json)" != "$(jq -r .name server.json)" ]; then
             echo "::error::package.json mcpName does not match server.json name"
             exit 1
           fi
-          current=$(npm view @dbcode/mcp version)
-          next=$(node -p "const [a, b, c] = '$current'.split('.').map(Number); [a, b, c + 1].join('.')")
-          npm version "$next" --no-git-tag-version
-          jq --arg v "$next" '.version = $v | .packages[0].version = $v' server.json > server.json.tmp
+          on_npm=$(npm view @dbcode/mcp version)
+          on_registry=$(curl -fsS "https://registry.modelcontextprotocol.io/v0.1/servers?search=$(jq -r .name server.json)&version=latest" | jq -r '.servers[0].server.version // ""')
+          # npm ahead of the registry means an earlier run published to npm but not the
+          # registry: register that version instead of publishing another.
+          if [ "$on_npm" != "$on_registry" ]; then
+            version=$on_npm
+            echo "publish_npm=false" >> "$GITHUB_OUTPUT"
+            echo "Registering $version (npm has it, the registry has ${on_registry:-nothing})"
+          else
+            version=$(node -p "const [a, b, c] = '$on_npm'.split('.').map(Number); [a, b, c + 1].join('.')")
+            echo "publish_npm=true" >> "$GITHUB_OUTPUT"
+            echo "Publishing $version (npm and the registry have $on_npm)"
+          fi
+          npm version "$version" --no-git-tag-version
+          jq --arg v "$version" '.version = $v | .packages[0].version = $v' server.json > server.json.tmp
           mv server.json.tmp server.json
-          echo "Publishing $next (npm had $current)"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
 
       - name: Publish to npm
+        if: steps.version.outputs.publish_npm == 'true'
         run: npm publish --access public
+
+      - name: Wait for npm to serve the version
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          # A new version takes a minute or two to appear; the registry checks npm for it.
+          for attempt in $(seq 1 30); do
+            if [ "$(curl -fsS "https://registry.npmjs.org/@dbcode%2fmcp/$VERSION" | jq -r .version 2>/dev/null)" = "$VERSION" ]; then
+              echo "npm serves $VERSION"
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "::error::npm still does not serve $VERSION after 5 minutes; re-run this workflow to register it"
+          exit 1
 
       - name: Install mcp-publisher
         env:
