@@ -1,0 +1,76 @@
+name: Publish MCP launcher
+
+# Publishes @dbcode/mcp (the `npx` launcher for DBCode's MCP server, in mcp/) to
+# npm, then its server.json to the official MCP Registry as io.dbcode/dbcode.
+# Run by hand when mcp/ changes: the launcher starts whatever DBCode is installed,
+# so it does not follow extension releases.
+#
+# npm: trusted publishing (this workflow's OIDC identity), no token stored.
+# MCP Registry: DNS auth for dbcode.io; MCP_REGISTRY_KEY is the hex Ed25519
+# private key whose public half is in dbcode.io's TXT record.
+#
+# DO NOT ADD A pull_request OR pull_request_target TRIGGER (see build-and-publish.yml).
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: publish-mcp
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    defaults:
+      run:
+        working-directory: mcp
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+
+      - name: Test
+        run: npm test
+
+      - name: Check versions agree
+        run: |
+          pkg=$(jq -r .version package.json)
+          for v in "$(jq -r .version server.json)" "$(jq -r '.packages[0].version' server.json)"; do
+            if [ "$v" != "$pkg" ]; then
+              echo "::error::server.json version $v does not match package.json $pkg"
+              exit 1
+            fi
+          done
+          if [ "$(jq -r .mcpName package.json)" != "$(jq -r .name server.json)" ]; then
+            echo "::error::package.json mcpName does not match server.json name"
+            exit 1
+          fi
+
+      - name: Publish to npm
+        run: npm publish --access public
+
+      - name: Install mcp-publisher
+        env:
+          VERSION: v1.8.1
+          SHA256: a06c9096dcb9727c13555b6be26c7effa707b01f06a4c561ba7a3635443cf2cc
+        run: |
+          curl -fsSL -o "$RUNNER_TEMP/mcp-publisher.tar.gz" "https://github.com/modelcontextprotocol/registry/releases/download/${VERSION}/mcp-publisher_linux_amd64.tar.gz"
+          echo "${SHA256}  $RUNNER_TEMP/mcp-publisher.tar.gz" | sha256sum -c -
+          tar -xzf "$RUNNER_TEMP/mcp-publisher.tar.gz" -C "$RUNNER_TEMP" mcp-publisher
+
+      - name: Publish to the MCP Registry
+        env:
+          MCP_REGISTRY_KEY: ${{ secrets.MCP_REGISTRY_KEY }}
+        run: |
+          "$RUNNER_TEMP/mcp-publisher" login dns --domain dbcode.io --private-key "$MCP_REGISTRY_KEY"
+          "$RUNNER_TEMP/mcp-publisher" publish

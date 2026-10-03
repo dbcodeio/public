@@ -1,0 +1,38 @@
+{
+    "name": "@dbcode/mcp",
+    "version": "1.0.0",
+    "description": "MCP server for DBCode: lets AI agents query your databases through your DBCode connections.",
+    "mcpName": "io.dbcode/dbcode",
+    "bin": {
+        "dbcode-mcp": "index.js"
+    },
+    "files": [
+        "index.js",
+        "locate.js"
+    ],
+    "scripts": {
+        "test": "node --test"
+    },
+    "engines": {
+        "node": ">=22.14"
+    },
+    "keywords": [
+        "mcp",
+        "model-context-protocol",
+        "database",
+        "sql",
+        "postgres",
+        "mysql",
+        "sql-server",
+        "mongodb",
+        "dbcode"
+    ],
+    "homepage": "https://dbcode.io/docs/ai/mcp",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dbcodeio/public.git",
+        "directory": "mcp"
+    },
+    "bugs": "https://github.com/dbcodeio/public/issues",
+    "license": "MIT"
+}
