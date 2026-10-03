@@ -44,4 +44,4 @@ If you use DBCode in more than one editor, choose which editor's connections the
 "args": ["-y", "@dbcode/mcp", "--app", "Cursor"]
 ```
 
-Values: `Code`, `Code - Insiders`, `Cursor`, `Windsurf`, `VSCodium`, `Antigravity`, `Kiro`.
+Values: `Code`, `Code - Insiders`, `Cursor`, `Windsurf`, `VSCodium`, `Antigravity IDE`, `Antigravity`, `Kiro`.
