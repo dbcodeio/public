@@ -2,7 +2,7 @@
 
 Let your AI agent query your databases through [DBCode](https://dbcode.io), using the connections you already have in DBCode.
 
-DBCode works with 90+ databases, including PostgreSQL, MySQL, SQL Server, Oracle, SQLite, MongoDB, ClickHouse and Snowflake.
+DBCode works with 100+ databases, including PostgreSQL, MySQL, SQL Server, Oracle, SQLite, MongoDB, ClickHouse and Snowflake.
 
 ## Requirements
 
@@ -44,4 +44,4 @@ If you use DBCode in more than one editor, choose which editor's connections the
 "args": ["-y", "@dbcode/mcp", "--app", "Cursor"]
 ```
 
-Values: `Code`, `Code - Insiders`, `Cursor`, `Windsurf`, `VSCodium`, `Antigravity IDE`, `Antigravity`, `Kiro`.
+Values (not case-sensitive): `Code`, `Code - Insiders`, `Cursor`, `Windsurf`, `VSCodium`, `Antigravity IDE`, `Antigravity`, `Kiro`.
