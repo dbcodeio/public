@@ -1,6 +1,6 @@
 {
     "name": "@dbcode/mcp",
-    "version": "1.0.0",
+    "version": "0.0.0",
     "description": "MCP server for DBCode: lets AI agents query your databases through your DBCode connections.",
     "mcpName": "io.dbcode/dbcode",
     "bin": {
