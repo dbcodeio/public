@@ -2,8 +2,11 @@ name: Publish MCP launcher
 
 # Publishes @dbcode/mcp (the `npx` launcher for DBCode's MCP server, in mcp/) to
 # npm, then its server.json to the official MCP Registry as io.dbcode/dbcode.
-# Run by hand when mcp/ changes: the launcher starts whatever DBCode is installed,
+# Run by hand when mcp/ changes. The launcher starts whatever DBCode is installed,
 # so it does not follow extension releases.
+#
+# Versions are not kept in the repo: package.json and server.json hold 0.0.0, and
+# each run publishes the next patch after the version npm already has.
 #
 # npm: trusted publishing (this workflow's OIDC identity), no token stored.
 # MCP Registry: DNS auth for dbcode.io; MCP_REGISTRY_KEY is the hex Ed25519
@@ -42,19 +45,18 @@ jobs:
       - name: Test
         run: npm test
 
-      - name: Check versions agree
+      - name: Set the next version
         run: |
-          pkg=$(jq -r .version package.json)
-          for v in "$(jq -r .version server.json)" "$(jq -r '.packages[0].version' server.json)"; do
-            if [ "$v" != "$pkg" ]; then
-              echo "::error::server.json version $v does not match package.json $pkg"
-              exit 1
-            fi
-          done
           if [ "$(jq -r .mcpName package.json)" != "$(jq -r .name server.json)" ]; then
             echo "::error::package.json mcpName does not match server.json name"
             exit 1
           fi
+          current=$(npm view @dbcode/mcp version)
+          next=$(node -p "const [a, b, c] = '$current'.split('.').map(Number); [a, b, c + 1].join('.')")
+          npm version "$next" --no-git-tag-version
+          jq --arg v "$next" '.version = $v | .packages[0].version = $v' server.json > server.json.tmp
+          mv server.json.tmp server.json
+          echo "Publishing $next (npm had $current)"
 
       - name: Publish to npm
         run: npm publish --access public

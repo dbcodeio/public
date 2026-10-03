@@ -17,9 +17,32 @@ DBCode works with 100+ databases, including PostgreSQL, MySQL, SQL Server, Oracl
 claude mcp add dbcode -- npx -y @dbcode/mcp
 ```
 
-### Cursor, Windsurf, Claude Desktop and other clients
+### Codex
 
-Add this to the client's MCP configuration:
+```bash
+codex mcp add dbcode -- npx -y @dbcode/mcp
+```
+
+### GitHub Copilot CLI
+
+Add this to `~/.copilot/mcp-config.json`:
+
+```json
+{
+  "mcpServers": {
+    "dbcode": {
+      "type": "local",
+      "command": "npx",
+      "args": ["-y", "@dbcode/mcp"],
+      "tools": ["*"]
+    }
+  }
+}
+```
+
+### Gemini CLI, Claude Desktop, Cursor, Windsurf and other clients
+
+Add this to the client's MCP configuration (for Gemini CLI, `~/.gemini/settings.json`; for Claude Desktop, `claude_desktop_config.json`):
 
 ```json
 {
