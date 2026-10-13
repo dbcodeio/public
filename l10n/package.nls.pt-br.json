@@ -93,7 +93,6 @@
   "Connection options specific to the driver.": "Opções de conexão específicas do driver.",
   "Tunnel Password (for password or key authentication.": "Senha do Túnel (para autenticação por senha ou chave).",
   "Number of records to store per database.": "Número de registros a armazenar por banco de dados.",
-  "Generate inline completions using AI (Uses Copilot if installed/enabled, otherwise DBCode's hosted llama 3).": "Gerar completações em linha usando IA (usa o Copilot se instalado/habilitado, caso contrário, o llama 3 hospedado do DBCode).",
   "Apply connection color to the active editor tab lower border.": "Aplicar a cor da conexão à borda inferior da guia do editor ativo.",
   "Apply connection color to the active editor tab top border.": "Aplicar a cor da conexão à borda superior da guia do editor ativo.",
   "Apply connection color to the active editor tab background.": "Aplicar a cor da conexão ao plano de fundo da guia do editor ativo.",
@@ -442,5 +441,6 @@
   "Explore a table without SQL": "Explore uma tabela sem SQL",
   "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Escolha uma tabela do exemplo e obtenha gráficos, filtros e detalhamento em linhas relacionadas, tudo sem escrever SQL.\n[Explorar o exemplo](command:dbcode.walkthrough.explore)",
   "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "Realçar a sintaxe dos valores das células nas grades de dados (atualmente JSON, arrays e XML).",
-  "Right-align numeric values in data grid cells.": "Alinhar à direita os valores numéricos nas células das grades de dados."
+  "Right-align numeric values in data grid cells.": "Alinhar à direita os valores numéricos nas células das grades de dados.",
+  "Generate inline completions using AI. Uses your custom model when it is the active AI provider, otherwise DBCode AI.": "Gerar conclusões embutidas usando IA. Usa seu modelo personalizado quando ele é o provedor de IA ativo; caso contrário, o DBCode AI."
 }

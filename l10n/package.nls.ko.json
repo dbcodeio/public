@@ -93,7 +93,6 @@
   "Connection options specific to the driver.": "드라이버별 연결 옵션입니다.",
   "Tunnel Password (for password or key authentication.": "터널 비밀번호(비밀번호 또는 키 인증용)",
   "Number of records to store per database.": "데이터베이스당 저장할 레코드 수입니다.",
-  "Generate inline completions using AI (Uses Copilot if installed/enabled, otherwise DBCode's hosted llama 3).": "AI를 사용하여 인라인 자동 완성 생성(Copilot이 설치/활성화된 경우 사용, 그렇지 않으면 DBCode의 호스팅된 llama 3 사용).",
   "Apply connection color to the active editor tab lower border.": "활성 편집기 탭 하단 테두리에 연결 색상을 적용합니다.",
   "Apply connection color to the active editor tab top border.": "활성 편집기 탭 상단 테두리에 연결 색상을 적용합니다.",
   "Apply connection color to the active editor tab background.": "활성 편집기 탭 배경에 연결 색상을 적용합니다.",
@@ -442,5 +441,6 @@
   "Explore a table without SQL": "SQL 없이 테이블 탐색",
   "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "샘플에서 테이블을 선택하면 SQL을 작성하지 않고도 차트, 필터, 관련 행 드릴다운을 사용할 수 있습니다.\n[샘플 탐색](command:dbcode.walkthrough.explore)",
   "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "데이터 그리드에서 셀 값을 구문 강조합니다(현재 JSON, 배열 및 XML).",
-  "Right-align numeric values in data grid cells.": "데이터 그리드 셀에서 숫자 값을 오른쪽으로 정렬합니다."
+  "Right-align numeric values in data grid cells.": "데이터 그리드 셀에서 숫자 값을 오른쪽으로 정렬합니다.",
+  "Generate inline completions using AI. Uses your custom model when it is the active AI provider, otherwise DBCode AI.": "AI를 사용하여 인라인 완성을 생성합니다. 사용자 지정 모델이 활성 AI 공급자인 경우 해당 모델을 사용하고, 그렇지 않으면 DBCode AI를 사용합니다."
 }

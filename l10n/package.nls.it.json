@@ -93,7 +93,6 @@
   "Connection options specific to the driver.": "Opzioni di connessione specifiche del driver.",
   "Tunnel Password (for password or key authentication.": "Password tunnel (per autenticazione con password o chiave).",
   "Number of records to store per database.": "Numero di record da memorizzare per database.",
-  "Generate inline completions using AI (Uses Copilot if installed/enabled, otherwise DBCode's hosted llama 3).": "Genera completamenti inline usando l'AI (usa Copilot se installato/abilitato, altrimenti llama 3 ospitato da DBCode).",
   "Apply connection color to the active editor tab lower border.": "Applica il colore della connessione al bordo inferiore della scheda dell'editor attivo.",
   "Apply connection color to the active editor tab top border.": "Applica il colore della connessione al bordo superiore della scheda dell'editor attivo.",
   "Apply connection color to the active editor tab background.": "Applica il colore della connessione allo sfondo della scheda dell'editor attivo.",
@@ -442,5 +441,6 @@
   "Explore a table without SQL": "Esplora una tabella senza SQL",
   "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Scegli una tabella dal database di esempio e ottieni grafici, filtri e drill-down nelle righe correlate, senza scrivere SQL.\n[Esplora l'esempio](command:dbcode.walkthrough.explore)",
   "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "Evidenzia la sintassi dei valori delle celle nelle griglie dati (attualmente JSON, array e XML).",
-  "Right-align numeric values in data grid cells.": "Allinea a destra i valori numerici nelle celle delle griglie dati."
+  "Right-align numeric values in data grid cells.": "Allinea a destra i valori numerici nelle celle delle griglie dati.",
+  "Generate inline completions using AI. Uses your custom model when it is the active AI provider, otherwise DBCode AI.": "Genera completamenti inline con l'IA. Usa il tuo modello personalizzato quando è il provider di IA attivo, altrimenti DBCode AI."
 }

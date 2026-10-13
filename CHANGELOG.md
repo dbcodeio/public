@@ -1,5 +1,37 @@
 # CHANGELOG
 
+## 1.38.10 - 2026-10-13
+
+### Changed
+
+- Editor: Execute shows the run as Connecting straight away, and an unreachable server reports its error once instead of retrying.
+- Oracle: Added a Connect As option (SYSDBA, SYSOPER, SYSBACKUP, SYSDG, SYSKM) for administrative logins such as SYS.
+- Connections: Added AWS IAM authentication for Amazon RDS and Aurora PostgreSQL, MySQL, and MariaDB through AWS auth profiles.
+- Connections: Re-authenticate runs `az login` for Azure CLI auth profiles.
+- Results: Result tabs show the file that ran them, and switching editors selects that file's latest result.
+
+### Fixed
+
+- Auth Profiles: AWS profiles with temporary credentials, such as from aws-azure-login, now pick up refreshed credentials without reconnecting.
+- Results: Fixed the panel sometimes showing no tab after running a query.
+- CLI: `--app` and editor auto-detection find Antigravity IDE's connections.
+- Editor: Fixed CodeLens icons sitting flush against their labels.
+- Editor: Fixed a failed connection showing "message must be set" instead of its error.
+- Editor: Fixed Execute doing nothing until a window reload after a connection went stale.
+- AI: Inline completions no longer use Copilot, so they don't consume Copilot premium requests.
+- MCP: `describe-table` now finds views, external tables and system tables. #1258
+- AI: Antigravity, Kiro and Windsurf agents keep their DBCode connection after DBCode updates.
+- openGauss: Fixed expanding a schema failing with "column s.synlink does not exist".
+- PostgreSQL: Fixed backup failing with "server version mismatch" when the installed pg_dump is older than the server (macOS and Windows).
+- QuestDB: Fixed Drop and Truncate table failing with "unexpected token [.]".
+- Redshift: Fixed IAM authentication with AWS auth profiles failing with "Auth profile did not return a password". #1256
+- Redshift: Fixed IAM authentication on Redshift Serverless workgroups.
+- Backup/Restore: Fixed MySQL and SQLite restores failing when a database name or file path contains spaces or shell characters.
+- MySQL: Fixed table details failing on ShardingSphere with "SQL federation does not support".
+- Snowflake: Fixed queries failing with "Unknown role" when a Security Role is set.
+- TiDB: Fixed Explain and Analyze failing with "explain format 'json' is not supported now".
+- Results: Fixed the cell tooltip covering the right-click menu.
+
 ## 1.38.9 - 2026-10-02
 
 ## 1.38.8 - 2026-10-02

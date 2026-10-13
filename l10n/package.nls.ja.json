@@ -93,7 +93,6 @@
   "Connection options specific to the driver.": "ドライバー固有の接続オプション。",
   "Tunnel Password (for password or key authentication.": "トンネルパスワード（パスワード認証またはキー認証用）。",
   "Number of records to store per database.": "データベースごとに保存するレコード数。",
-  "Generate inline completions using AI (Uses Copilot if installed/enabled, otherwise DBCode's hosted llama 3).": "AIを使用してインライン補完を生成します（Copilotがインストールされている場合はそれを使用、それ以外の場合はDBCodeのホストしているllama 3を使用）。",
   "Apply connection color to the active editor tab lower border.": "アクティブなエディタータブの下枠に接続色を適用します。",
   "Apply connection color to the active editor tab top border.": "アクティブなエディタータブの上枠に接続色を適用します。",
   "Apply connection color to the active editor tab background.": "アクティブなエディタータブの背景に接続色を適用します。",
@@ -442,5 +441,6 @@
   "Explore a table without SQL": "SQL なしでテーブルを探索",
   "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "サンプルからテーブルを選ぶと、SQL を書かずにチャート、フィルター、関連行へのドリルダウンが使えます。\n[サンプルを探索](command:dbcode.walkthrough.explore)",
   "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "データグリッドのセル値を構文強調表示します（現在は JSON、配列、XML）。",
-  "Right-align numeric values in data grid cells.": "データグリッドのセル内で数値を右揃えにします。"
+  "Right-align numeric values in data grid cells.": "データグリッドのセル内で数値を右揃えにします。",
+  "Generate inline completions using AI. Uses your custom model when it is the active AI provider, otherwise DBCode AI.": "AI を使用してインライン補完を生成します。カスタム モデルがアクティブな AI プロバイダーの場合はそれを使用し、それ以外の場合は DBCode AI を使用します。"
 }

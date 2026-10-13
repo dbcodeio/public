@@ -93,7 +93,6 @@
   "Connection options specific to the driver.": "Opcje połączenia specyficzne dla sterownika.",
   "Tunnel Password (for password or key authentication.": "Hasło tunelu (dla uwierzytelniania hasłem lub kluczem).",
   "Number of records to store per database.": "Liczba rekordów do przechowywania na bazę danych.",
-  "Generate inline completions using AI (Uses Copilot if installed/enabled, otherwise DBCode's hosted llama 3).": "Generuj automatyczne uzupełnianie przy użyciu AI (wykorzystuje Copilot jeśli zainstalowany/włączony, w przeciwnym razie hostowany llama 3 DBCode).",
   "Apply connection color to the active editor tab lower border.": "Zastosuj kolor połączenia do dolnej krawędzi aktywnej karty edytora.",
   "Apply connection color to the active editor tab top border.": "Zastosuj kolor połączenia do górnej krawędzi aktywnej karty edytora.",
   "Apply connection color to the active editor tab background.": "Zastosuj kolor połączenia do tła aktywnej karty edytora.",
@@ -442,5 +441,6 @@
   "Explore a table without SQL": "Eksploruj tabelę bez SQL",
   "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Wybierz tabelę z przykładu i uzyskaj wykresy, filtry oraz przechodzenie do powiązanych wierszy, wszystko bez pisania SQL.\n[Eksploruj przykład](command:dbcode.walkthrough.explore)",
   "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "Podświetlaj składnię wartości komórek w siatkach danych (obecnie JSON, tablice i XML).",
-  "Right-align numeric values in data grid cells.": "Wyrównaj wartości liczbowe do prawej w komórkach siatek danych."
+  "Right-align numeric values in data grid cells.": "Wyrównaj wartości liczbowe do prawej w komórkach siatek danych.",
+  "Generate inline completions using AI. Uses your custom model when it is the active AI provider, otherwise DBCode AI.": "Generuj uzupełnienia w wierszu za pomocą AI. Używa Twojego modelu niestandardowego, gdy jest aktywnym dostawcą AI, w przeciwnym razie DBCode AI."
 }

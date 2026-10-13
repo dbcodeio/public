@@ -331,7 +331,7 @@
   "MCP HTTP Server OAuth Token Expiry": "ḾƇƤ ĦŦŦƤ Şḗḗřṽḗḗř ǾǾȦȦŭŭŧħ Ŧǿǿķḗḗƞ ḖḖẋƥīřẏ",
   "Number of days before OAuth access tokens expire on the HTTP MCP server. Increase to reduce how often MCP clients need to re-authenticate. Default is 1 day.": "Ƞŭŭḿƀḗḗř ǿǿƒ ḓȧȧẏş ƀḗḗƒǿǿřḗḗ ǾǾȦȦŭŭŧħ ȧȧƈƈḗḗşş ŧǿǿķḗḗƞş ḗḗẋƥīřḗḗ ǿǿƞ ŧħḗḗ ĦŦŦƤ ḾƇƤ şḗḗřṽḗḗř. Īƞƈřḗḗȧȧşḗḗ ŧǿǿ řḗḗḓŭŭƈḗḗ ħǿǿẇ ǿǿƒŧḗḗƞ ḾƇƤ ƈŀīḗḗƞŧş ƞḗḗḗḗḓ ŧǿǿ řḗḗ-ȧȧŭŭŧħḗḗƞŧīƈȧȧŧḗḗ. Ḓḗḗƒȧȧŭŭŀŧ īş 1 ḓȧȧẏ.",
   "Inline Completion": "Īƞŀīƞḗḗ Ƈǿǿḿƥŀḗḗŧīǿǿƞ",
-  "Generate inline completions using AI (Uses Copilot if installed/enabled, otherwise DBCode's hosted llama 3).": "Ɠḗḗƞḗḗřȧȧŧḗḗ īƞŀīƞḗḗ ƈǿǿḿƥŀḗḗŧīǿǿƞş ŭŭşīƞɠ ȦȦĪ (ŬŬşḗḗş Ƈǿǿƥīŀǿǿŧ īƒ īƞşŧȧȧŀŀḗḗḓ/ḗḗƞȧȧƀŀḗḗḓ, ǿǿŧħḗḗřẇīşḗḗ ḒƁƇǿǿḓḗḗ'ş ħǿǿşŧḗḗḓ ŀŀȧȧḿȧȧ 3).",
+  "Generate inline completions using AI. Uses your custom model when it is the active AI provider, otherwise DBCode AI.": "Ɠḗḗƞḗḗřȧȧŧḗḗ īƞŀīƞḗḗ ƈǿǿḿƥŀḗḗŧīǿǿƞş ŭŭşīƞɠ ȦȦĪ. ŬŬşḗḗş ẏǿǿŭŭř ƈŭŭşŧǿǿḿ ḿǿǿḓḗḗŀ ẇħḗḗƞ īŧ īş ŧħḗḗ ȧȧƈŧīṽḗḗ ȦȦĪ ƥřǿǿṽīḓḗḗř, ǿǿŧħḗḗřẇīşḗḗ ḒƁƇǿǿḓḗḗ ȦȦĪ.",
   "Custom Model Endpoint": "Ƈŭŭşŧǿǿḿ Ḿǿǿḓḗḗŀ ḖḖƞḓƥǿǿīƞŧ",
   "OpenAI-compatible API endpoint (e.g. http://localhost:11434 for Ollama, https://api.openai.com for OpenAI, https://api.groq.com/openai for Groq).": "ǾǾƥḗḗƞȦȦĪ-ƈǿǿḿƥȧȧŧīƀŀḗḗ ȦȦƤĪ ḗḗƞḓƥǿǿīƞŧ (ḗḗ.ɠ. ħŧŧƥ://ŀǿǿƈȧȧŀħǿǿşŧ:11434 ƒǿǿř ǾǾŀŀȧȧḿȧȧ, ħŧŧƥş://ȧȧƥī.ǿǿƥḗḗƞȧȧī.ƈǿǿḿ ƒǿǿř ǾǾƥḗḗƞȦȦĪ, ħŧŧƥş://ȧȧƥī.ɠřǿǿɋ.ƈǿǿḿ/ǿǿƥḗḗƞȧȧī ƒǿǿř Ɠřǿǿɋ).",
   "Custom Model": "Ƈŭŭşŧǿǿḿ Ḿǿǿḓḗḗŀ",

@@ -93,7 +93,6 @@
   "Connection options specific to the driver.": "驅動程式專用的連線選項。",
   "Tunnel Password (for password or key authentication.": "通道密碼(用於密碼或金鑰驗證)。",
   "Number of records to store per database.": "每個資料庫儲存的記錄數量。",
-  "Generate inline completions using AI (Uses Copilot if installed/enabled, otherwise DBCode's hosted llama 3).": "使用 AI 生成行內自動完成(若已安裝/啟用 Copilot 則使用 Copilot,否則使用 DBCode 託管的 llama 3)。",
   "Apply connection color to the active editor tab lower border.": "將連線顏色套用至作用中編輯器分頁的下框線。",
   "Apply connection color to the active editor tab top border.": "將連線顏色套用至作用中編輯器分頁的上框線。",
   "Apply connection color to the active editor tab background.": "將連線顏色套用至作用中編輯器分頁的背景。",
@@ -442,5 +441,6 @@
   "Explore a table without SQL": "不用 SQL 探索資料表",
   "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "從範例中選擇一個資料表，即可取得圖表、篩選器和關聯資料列的鑽研，無需撰寫 SQL。\n[探索範例](command:dbcode.walkthrough.explore)",
   "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "在資料格線中對儲存格值進行語法醒目提示（目前支援 JSON、陣列與 XML）。",
-  "Right-align numeric values in data grid cells.": "在資料格線儲存格中將數值靠右對齊。"
+  "Right-align numeric values in data grid cells.": "在資料格線儲存格中將數值靠右對齊。",
+  "Generate inline completions using AI. Uses your custom model when it is the active AI provider, otherwise DBCode AI.": "使用 AI 產生內嵌補全。當自訂模型為目前的 AI 提供者時使用該模型，否則使用 DBCode AI。"
 }

@@ -93,7 +93,6 @@
   "Connection options specific to the driver.": "Opciones de conexión específicas del controlador.",
   "Tunnel Password (for password or key authentication.": "Contraseña del túnel (para autenticación por contraseña o clave).",
   "Number of records to store per database.": "Número de registros a almacenar por base de datos.",
-  "Generate inline completions using AI (Uses Copilot if installed/enabled, otherwise DBCode's hosted llama 3).": "Generar autocompletado en línea usando IA (usa Copilot si está instalado/habilitado, de lo contrario usa llama 3 alojado por DBCode).",
   "Apply connection color to the active editor tab lower border.": "Aplicar color de conexión al borde inferior de la pestaña del editor activo.",
   "Apply connection color to the active editor tab top border.": "Aplicar color de conexión al borde superior de la pestaña del editor activo.",
   "Apply connection color to the active editor tab background.": "Aplicar color de conexión al fondo de la pestaña del editor activo.",
@@ -442,5 +441,6 @@
   "Explore a table without SQL": "Explora una tabla sin SQL",
   "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Elige una tabla del ejemplo y obtén gráficos, filtros y navegación a filas relacionadas, todo sin escribir SQL.\n[Explorar el ejemplo](command:dbcode.walkthrough.explore)",
   "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "Resaltar la sintaxis de los valores de celda en las cuadrículas de datos (actualmente JSON, matrices y XML).",
-  "Right-align numeric values in data grid cells.": "Alinear a la derecha los valores numéricos en las celdas de las cuadrículas de datos."
+  "Right-align numeric values in data grid cells.": "Alinear a la derecha los valores numéricos en las celdas de las cuadrículas de datos.",
+  "Generate inline completions using AI. Uses your custom model when it is the active AI provider, otherwise DBCode AI.": "Generar completados en línea con IA. Usa tu modelo personalizado cuando es el proveedor de IA activo; de lo contrario, DBCode AI."
 }

@@ -1,16 +1,16 @@
 {
 	"bomFormat": "CycloneDX",
 	"specVersion": "1.6",
-	"serialNumber": "urn:uuid:ee7f623c-2953-d6e5-638c-a2600fdd7a5f",
+	"serialNumber": "urn:uuid:2661ae7a-bdc7-eb19-e3c6-3447ddb71417",
 	"version": 1,
 	"metadata": {
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.38.9",
+			"version": "1.38.10",
 			"publisher": "dbcode",
 			"description": "Database client for VS Code, Cursor, Windsurf, Antigravity & Kiro - and the database layer for your AI agent, with built-in MCP & Copilot tools. 90+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus.",
-			"purl": "pkg:generic/dbcode@1.38.9",
+			"purl": "pkg:generic/dbcode@1.38.10",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -234,6 +234,26 @@
 		},
 		{
 			"type": "library",
+			"name": "@aws-sdk/checksums",
+			"version": "3.1001.1",
+			"purl": "pkg:npm/%40aws-sdk%2Fchecksums@3.1001.1",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@aws-sdk/client-athena",
 			"version": "3.1044.0",
 			"purl": "pkg:npm/%40aws-sdk%2Fclient-athena@3.1044.0",
@@ -314,6 +334,26 @@
 		},
 		{
 			"type": "library",
+			"name": "@aws-sdk/client-redshift-serverless",
+			"version": "3.1144.0",
+			"purl": "pkg:npm/%40aws-sdk%2Fclient-redshift-serverless@3.1144.0",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@aws-sdk/client-s3",
 			"version": "3.1044.0",
 			"purl": "pkg:npm/%40aws-sdk%2Fclient-s3@3.1044.0",
@@ -334,9 +374,29 @@
 		},
 		{
 			"type": "library",
+			"name": "@aws-sdk/client-s3",
+			"version": "3.1146.0",
+			"purl": "pkg:npm/%40aws-sdk%2Fclient-s3@3.1146.0",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@aws-sdk/client-sts",
-			"version": "3.1044.0",
-			"purl": "pkg:npm/%40aws-sdk%2Fclient-sts@3.1044.0",
+			"version": "3.1146.0",
+			"purl": "pkg:npm/%40aws-sdk%2Fclient-sts@3.1146.0",
 			"licenses": [
 				{
 					"license": {
@@ -357,6 +417,26 @@
 			"name": "@aws-sdk/core",
 			"version": "3.974.8",
 			"purl": "pkg:npm/%40aws-sdk%2Fcore@3.974.8",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@aws-sdk/core",
+			"version": "3.978.1",
+			"purl": "pkg:npm/%40aws-sdk%2Fcore@3.978.1",
 			"licenses": [
 				{
 					"license": {
@@ -414,9 +494,49 @@
 		},
 		{
 			"type": "library",
+			"name": "@aws-sdk/credential-provider-cognito-identity",
+			"version": "3.972.71",
+			"purl": "pkg:npm/%40aws-sdk%2Fcredential-provider-cognito-identity@3.972.71",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@aws-sdk/credential-provider-env",
 			"version": "3.972.34",
 			"purl": "pkg:npm/%40aws-sdk%2Fcredential-provider-env@3.972.34",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@aws-sdk/credential-provider-env",
+			"version": "3.972.72",
+			"purl": "pkg:npm/%40aws-sdk%2Fcredential-provider-env@3.972.72",
 			"licenses": [
 				{
 					"license": {
@@ -454,9 +574,49 @@
 		},
 		{
 			"type": "library",
+			"name": "@aws-sdk/credential-provider-http",
+			"version": "3.972.74",
+			"purl": "pkg:npm/%40aws-sdk%2Fcredential-provider-http@3.972.74",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@aws-sdk/credential-provider-ini",
 			"version": "3.972.38",
 			"purl": "pkg:npm/%40aws-sdk%2Fcredential-provider-ini@3.972.38",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@aws-sdk/credential-provider-ini",
+			"version": "3.973.17",
+			"purl": "pkg:npm/%40aws-sdk%2Fcredential-provider-ini@3.973.17",
 			"licenses": [
 				{
 					"license": {
@@ -494,9 +654,49 @@
 		},
 		{
 			"type": "library",
+			"name": "@aws-sdk/credential-provider-login",
+			"version": "3.972.79",
+			"purl": "pkg:npm/%40aws-sdk%2Fcredential-provider-login@3.972.79",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@aws-sdk/credential-provider-node",
 			"version": "3.972.39",
 			"purl": "pkg:npm/%40aws-sdk%2Fcredential-provider-node@3.972.39",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@aws-sdk/credential-provider-node",
+			"version": "3.972.84",
+			"purl": "pkg:npm/%40aws-sdk%2Fcredential-provider-node@3.972.84",
 			"licenses": [
 				{
 					"license": {
@@ -534,9 +734,49 @@
 		},
 		{
 			"type": "library",
+			"name": "@aws-sdk/credential-provider-process",
+			"version": "3.972.72",
+			"purl": "pkg:npm/%40aws-sdk%2Fcredential-provider-process@3.972.72",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@aws-sdk/credential-provider-sso",
 			"version": "3.972.38",
 			"purl": "pkg:npm/%40aws-sdk%2Fcredential-provider-sso@3.972.38",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@aws-sdk/credential-provider-sso",
+			"version": "3.973.16",
+			"purl": "pkg:npm/%40aws-sdk%2Fcredential-provider-sso@3.973.16",
 			"licenses": [
 				{
 					"license": {
@@ -574,9 +814,49 @@
 		},
 		{
 			"type": "library",
+			"name": "@aws-sdk/credential-provider-web-identity",
+			"version": "3.972.78",
+			"purl": "pkg:npm/%40aws-sdk%2Fcredential-provider-web-identity@3.972.78",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@aws-sdk/credential-providers",
 			"version": "3.1044.0",
 			"purl": "pkg:npm/%40aws-sdk%2Fcredential-providers@3.1044.0",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@aws-sdk/credential-providers",
+			"version": "3.1144.0",
+			"purl": "pkg:npm/%40aws-sdk%2Fcredential-providers@3.1144.0",
 			"licenses": [
 				{
 					"license": {
@@ -615,8 +895,8 @@
 		{
 			"type": "library",
 			"name": "@aws-sdk/ec2-metadata-service",
-			"version": "3.1044.0",
-			"purl": "pkg:npm/%40aws-sdk%2Fec2-metadata-service@3.1044.0",
+			"version": "3.1146.0",
+			"purl": "pkg:npm/%40aws-sdk%2Fec2-metadata-service@3.1146.0",
 			"licenses": [
 				{
 					"license": {
@@ -854,6 +1134,26 @@
 		},
 		{
 			"type": "library",
+			"name": "@aws-sdk/middleware-sdk-s3",
+			"version": "3.972.77",
+			"purl": "pkg:npm/%40aws-sdk%2Fmiddleware-sdk-s3@3.972.77",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@aws-sdk/middleware-ssec",
 			"version": "3.972.10",
 			"purl": "pkg:npm/%40aws-sdk%2Fmiddleware-ssec@3.972.10",
@@ -895,8 +1195,48 @@
 		{
 			"type": "library",
 			"name": "@aws-sdk/nested-clients",
+			"version": "3.997.46",
+			"purl": "pkg:npm/%40aws-sdk%2Fnested-clients@3.997.46",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@aws-sdk/nested-clients",
 			"version": "3.997.6",
 			"purl": "pkg:npm/%40aws-sdk%2Fnested-clients@3.997.6",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@aws-sdk/rds-signer",
+			"version": "3.1144.0",
+			"purl": "pkg:npm/%40aws-sdk%2Frds-signer@3.1144.0",
 			"licenses": [
 				{
 					"license": {
@@ -954,6 +1294,26 @@
 		},
 		{
 			"type": "library",
+			"name": "@aws-sdk/signature-v4-multi-region",
+			"version": "3.996.47",
+			"purl": "pkg:npm/%40aws-sdk%2Fsignature-v4-multi-region@3.996.47",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@aws-sdk/token-providers",
 			"version": "3.1041.0",
 			"purl": "pkg:npm/%40aws-sdk%2Ftoken-providers@3.1041.0",
@@ -974,9 +1334,49 @@
 		},
 		{
 			"type": "library",
+			"name": "@aws-sdk/token-providers",
+			"version": "3.1138.0",
+			"purl": "pkg:npm/%40aws-sdk%2Ftoken-providers@3.1138.0",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@aws-sdk/types",
 			"version": "3.973.8",
 			"purl": "pkg:npm/%40aws-sdk%2Ftypes@3.973.8",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@aws-sdk/types",
+			"version": "3.974.6",
+			"purl": "pkg:npm/%40aws-sdk%2Ftypes@3.974.6",
 			"licenses": [
 				{
 					"license": {
@@ -1134,9 +1534,49 @@
 		},
 		{
 			"type": "library",
+			"name": "@aws-sdk/xml-builder",
+			"version": "3.972.41",
+			"purl": "pkg:npm/%40aws-sdk%2Fxml-builder@3.972.41",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/aws/aws-sdk-js-v3"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@aws/lambda-invoke-store",
 			"version": "0.2.4",
 			"purl": "pkg:npm/%40aws%2Flambda-invoke-store@0.2.4",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "Amazon Web Services",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/awslabs/aws-lambda-invoke-store"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@aws/lambda-invoke-store",
+			"version": "0.3.0",
+			"purl": "pkg:npm/%40aws%2Flambda-invoke-store@0.3.0",
 			"licenses": [
 				{
 					"license": {
@@ -2885,8 +3325,8 @@
 		{
 			"type": "library",
 			"name": "@fastify/busboy",
-			"version": "3.2.0",
-			"purl": "pkg:npm/%40fastify%2Fbusboy@3.2.0",
+			"version": "3.2.2",
+			"purl": "pkg:npm/%40fastify%2Fbusboy@3.2.2",
 			"licenses": [
 				{
 					"license": {
@@ -4687,8 +5127,8 @@
 		{
 			"type": "library",
 			"name": "@modelcontextprotocol/sdk",
-			"version": "1.29.0",
-			"purl": "pkg:npm/%40modelcontextprotocol%2Fsdk@1.29.0",
+			"version": "1.32.0",
+			"purl": "pkg:npm/%40modelcontextprotocol%2Fsdk@1.32.0",
 			"licenses": [
 				{
 					"license": {
@@ -5743,9 +6183,49 @@
 		},
 		{
 			"type": "library",
+			"name": "@smithy/core",
+			"version": "3.35.1",
+			"purl": "pkg:npm/%40smithy%2Fcore@3.35.1",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS Smithy Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/smithy-lang/smithy-typescript"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@smithy/credential-provider-imds",
 			"version": "4.2.14",
 			"purl": "pkg:npm/%40smithy%2Fcredential-provider-imds@4.2.14",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/smithy-lang/smithy-typescript"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@smithy/credential-provider-imds",
+			"version": "4.5.2",
+			"purl": "pkg:npm/%40smithy%2Fcredential-provider-imds@4.5.2",
 			"licenses": [
 				{
 					"license": {
@@ -5866,6 +6346,26 @@
 			"name": "@smithy/fetch-http-handler",
 			"version": "5.3.17",
 			"purl": "pkg:npm/%40smithy%2Ffetch-http-handler@5.3.17",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/smithy-lang/smithy-typescript"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@smithy/fetch-http-handler",
+			"version": "5.8.0",
+			"purl": "pkg:npm/%40smithy%2Ffetch-http-handler@5.8.0",
 			"licenses": [
 				{
 					"license": {
@@ -6144,6 +6644,26 @@
 		{
 			"type": "library",
 			"name": "@smithy/node-http-handler",
+			"version": "4.12.1",
+			"purl": "pkg:npm/%40smithy%2Fnode-http-handler@4.12.1",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/smithy-lang/smithy-typescript"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@smithy/node-http-handler",
 			"version": "4.6.1",
 			"purl": "pkg:npm/%40smithy%2Fnode-http-handler@4.6.1",
 			"licenses": [
@@ -6303,6 +6823,26 @@
 		},
 		{
 			"type": "library",
+			"name": "@smithy/signature-v4",
+			"version": "5.7.4",
+			"purl": "pkg:npm/%40smithy%2Fsignature-v4@5.7.4",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS SDK for JavaScript Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/smithy-lang/smithy-typescript"
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "@smithy/smithy-client",
 			"version": "4.12.13",
 			"purl": "pkg:npm/%40smithy%2Fsmithy-client@4.12.13",
@@ -6326,6 +6866,26 @@
 			"name": "@smithy/types",
 			"version": "4.14.1",
 			"purl": "pkg:npm/%40smithy%2Ftypes@4.14.1",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache-2.0"
+					}
+				}
+			],
+			"publisher": "AWS Smithy Team",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/smithy-lang/smithy-typescript"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@smithy/types",
+			"version": "4.19.0",
+			"purl": "pkg:npm/%40smithy%2Ftypes@4.19.0",
 			"licenses": [
 				{
 					"license": {
@@ -9880,26 +10440,6 @@
 		},
 		{
 			"type": "library",
-			"name": "bn.js",
-			"version": "5.2.3",
-			"purl": "pkg:npm/bn.js@5.2.3",
-			"licenses": [
-				{
-					"license": {
-						"id": "MIT"
-					}
-				}
-			],
-			"publisher": "Fedor Indutny <fedor@indutny.com>",
-			"externalReferences": [
-				{
-					"type": "website",
-					"url": "https://github.com/indutny/bn.js"
-				}
-			]
-		},
-		{
-			"type": "library",
 			"name": "body-parser",
 			"version": "2.3.0",
 			"purl": "pkg:npm/body-parser@2.3.0",
@@ -10033,26 +10573,6 @@
 				{
 					"type": "website",
 					"url": "https://github.com/flexdinesh/browser-or-node"
-				}
-			]
-		},
-		{
-			"type": "library",
-			"name": "browser-request",
-			"version": "0.3.3",
-			"purl": "pkg:npm/browser-request@0.3.3",
-			"licenses": [
-				{
-					"license": {
-						"id": "Unknown"
-					}
-				}
-			],
-			"publisher": "Jason Smith",
-			"externalReferences": [
-				{
-					"type": "website",
-					"url": "https://github.com/iriscouch/browser-request"
 				}
 			]
 		},
@@ -15753,26 +16273,6 @@
 		{
 			"type": "library",
 			"name": "iconv-lite",
-			"version": "0.7.2",
-			"purl": "pkg:npm/iconv-lite@0.7.2",
-			"licenses": [
-				{
-					"license": {
-						"id": "MIT"
-					}
-				}
-			],
-			"publisher": "Alexander Shtuchkin <ashtuchkin@gmail.com>",
-			"externalReferences": [
-				{
-					"type": "website",
-					"url": "https://github.com/pillarjs/iconv-lite"
-				}
-			]
-		},
-		{
-			"type": "library",
-			"name": "iconv-lite",
 			"version": "0.7.3",
 			"purl": "pkg:npm/iconv-lite@0.7.3",
 			"licenses": [
@@ -17817,8 +18317,8 @@
 		{
 			"type": "library",
 			"name": "mariadb",
-			"version": "3.5.3",
-			"purl": "pkg:npm/mariadb@3.5.3",
+			"version": "3.5.4",
+			"purl": "pkg:npm/mariadb@3.5.4",
 			"licenses": [
 				{
 					"license": {
@@ -21496,6 +21996,25 @@
 		{
 			"type": "library",
 			"name": "prosemirror-model",
+			"version": "1.25.12",
+			"purl": "pkg:npm/prosemirror-model@1.25.12",
+			"licenses": [
+				{
+					"license": {
+						"id": "MIT"
+					}
+				}
+			],
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://code.haverbeke.berlin/prosemirror/prosemirror-model"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "prosemirror-model",
 			"version": "1.25.4",
 			"purl": "pkg:npm/prosemirror-model@1.25.4",
 			"licenses": [
@@ -21629,8 +22148,8 @@
 		{
 			"type": "library",
 			"name": "prosemirror-view",
-			"version": "1.41.8",
-			"purl": "pkg:npm/prosemirror-view@1.41.8",
+			"version": "1.42.6",
+			"purl": "pkg:npm/prosemirror-view@1.42.6",
 			"licenses": [
 				{
 					"license": {
@@ -21726,8 +22245,8 @@
 		{
 			"type": "library",
 			"name": "proxy-addr",
-			"version": "2.0.7",
-			"purl": "pkg:npm/proxy-addr@2.0.7",
+			"version": "2.0.8",
+			"purl": "pkg:npm/proxy-addr@2.0.8",
 			"licenses": [
 				{
 					"license": {
@@ -23676,8 +24195,8 @@
 		{
 			"type": "library",
 			"name": "snowflake-sdk",
-			"version": "2.3.4",
-			"purl": "pkg:npm/snowflake-sdk@2.3.4",
+			"version": "3.3.0",
+			"purl": "pkg:npm/snowflake-sdk@3.3.0",
 			"licenses": [
 				{
 					"license": {
@@ -25219,25 +25738,6 @@
 				{
 					"type": "website",
 					"url": "sindresorhus/type-fest"
-				}
-			]
-		},
-		{
-			"type": "library",
-			"name": "type-is",
-			"version": "2.0.1",
-			"purl": "pkg:npm/type-is@2.0.1",
-			"licenses": [
-				{
-					"license": {
-						"id": "MIT"
-					}
-				}
-			],
-			"externalReferences": [
-				{
-					"type": "website",
-					"url": "jshttp/type-is"
 				}
 			]
 		},

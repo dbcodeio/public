@@ -93,7 +93,6 @@
   "Connection options specific to the driver.": "Параметры подключения для данного драйвера.",
   "Tunnel Password (for password or key authentication.": "Пароль туннеля (для аутентификации по паролю или ключу).",
   "Number of records to store per database.": "Количество записей на базу данных.",
-  "Generate inline completions using AI (Uses Copilot if installed/enabled, otherwise DBCode's hosted llama 3).": "Генерация автодополнений с помощью ИИ (использует Copilot, если установлен/включен, иначе размещенную llama 3 от DBCode).",
   "Apply connection color to the active editor tab lower border.": "Применить цвет подключения к нижней границе активной вкладки редактора.",
   "Apply connection color to the active editor tab top border.": "Применить цвет подключения к верхней границе активной вкладки редактора.",
   "Apply connection color to the active editor tab background.": "Применить цвет подключения к фону активной вкладки редактора.",
@@ -442,5 +441,6 @@
   "Explore a table without SQL": "Исследуйте таблицу без SQL",
   "Pick a table from the sample and get charts, filters, and drill-down into related rows, all without writing SQL.\n[Explore the Sample](command:dbcode.walkthrough.explore)": "Выберите таблицу из примера и получите диаграммы, фильтры и переход к связанным строкам без написания SQL.\n[Исследовать пример](command:dbcode.walkthrough.explore)",
   "Syntax-highlight cell values in data grids (currently JSON, arrays and XML).": "Подсвечивать синтаксис значений ячеек в таблицах данных (сейчас JSON, массивы и XML).",
-  "Right-align numeric values in data grid cells.": "Выравнивать числовые значения по правому краю в ячейках таблиц данных."
+  "Right-align numeric values in data grid cells.": "Выравнивать числовые значения по правому краю в ячейках таблиц данных.",
+  "Generate inline completions using AI. Uses your custom model when it is the active AI provider, otherwise DBCode AI.": "Генерировать встроенные подсказки с помощью ИИ. Используется ваша пользовательская модель, если она выбрана активным поставщиком ИИ, иначе DBCode AI."
 }
