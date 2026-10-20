@@ -1,5 +1,26 @@
 # CHANGELOG
 
+## 1.38.11 - 2026-10-20
+
+### Changed
+
+- Explorer: Choose how a connection's tree is laid out: Standard, Simple, Flat or By object type (SSMS style), per connection or as a default.
+- Editor: Join suggestions include tables whose foreign keys point at a table already in the query.
+- Meilisearch: Preview support added. #1245
+- Oracle: Added an Edition picker for databases that use edition-based redefinition.
+- Editor: A subquery's column from the outer query is shown as a hint instead of an unknown-column warning.
+- Editor: Column completion offers `alias.column` only for columns shared by joined tables, or once you type a table name or alias.
+
+### Fixed
+
+- Editor: Fixed false syntax errors in Oracle, MariaDB, Databricks, Trino, SQLite and PartiQL.
+- Hive: Failed queries now show the server's error message instead of "The operation failed due to an error". #1261
+- Hive: Tables and views still list when the server can't load metadata for one of them, such as Spark Thrift Server with an Iceberg table. #1259
+- Oracle: Scripted and pasted DDL with EDITIONABLE or NONEDITIONABLE now runs correctly, including non-editionable objects in edition-enabled schemas.
+- Explorer: Refreshing a connection or database keeps the tree expanded and the selection in place. #1260
+- Editor: Fixed false column warnings for JOIN USING, NATURAL JOIN, upsert and trigger rows, and MariaDB CTEs.
+- Editor: Improved SQL completion and error checking for joins, subqueries, CTEs and unfinished statements.
+
 ## 1.38.10 - 2026-10-13
 
 ### Changed
