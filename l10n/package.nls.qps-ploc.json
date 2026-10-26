@@ -23,7 +23,7 @@
   "Get Started with DBCode": "Ɠḗḗŧ Şŧȧȧřŧḗḗḓ ẇīŧħ ḒƁƇǿǿḓḗḗ",
   "Connect a database, explore your data, and put your AI assistant to work.": "Ƈǿǿƞƞḗḗƈŧ ȧȧ ḓȧȧŧȧȧƀȧȧşḗḗ, ḗḗẋƥŀǿǿřḗḗ ẏǿǿŭŭř ḓȧȧŧȧȧ, ȧȧƞḓ ƥŭŭŧ ẏǿǿŭŭř ȦȦĪ ȧȧşşīşŧȧȧƞŧ ŧǿǿ ẇǿǿřķ.",
   "Connect your database": "Ƈǿǿƞƞḗḗƈŧ ẏǿǿŭŭř ḓȧȧŧȧȧƀȧȧşḗḗ",
-  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "ȦȦḓḓ ȧȧ ƈǿǿƞƞḗḗƈŧīǿǿƞ ƒǿǿř ȧȧƞẏ ǿǿƒ 90+ ḓȧȧŧȧȧƀȧȧşḗḗş - ǿǿř ĵŭŭşŧ ƥȧȧşŧḗḗ ȧȧ ƈǿǿƞƞḗḗƈŧīǿǿƞ şŧřīƞɠ ȧȧƞḓ ḒƁƇǿǿḓḗḗ ƒīŀŀş īƞ ŧħḗḗ ƒǿǿřḿ ƒǿǿř ẏǿǿŭŭ.\n[ȦȦḓḓ Ƈǿǿƞƞḗḗƈŧīǿǿƞ](command:dbcode.walkthrough.addConnection)",
+  "Add a connection for any of 100+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "ȦȦḓḓ ȧȧ ƈǿǿƞƞḗḗƈŧīǿǿƞ ƒǿǿř ȧȧƞẏ ǿǿƒ 100+ ḓȧȧŧȧȧƀȧȧşḗḗş - ǿǿř ĵŭŭşŧ ƥȧȧşŧḗḗ ȧȧ ƈǿǿƞƞḗḗƈŧīǿǿƞ şŧřīƞɠ ȧȧƞḓ ḒƁƇǿǿḓḗḗ ƒīŀŀş īƞ ŧħḗḗ ƒǿǿřḿ ƒǿǿř ẏǿǿŭŭ.\n[ȦȦḓḓ Ƈǿǿƞƞḗḗƈŧīǿǿƞ](command:dbcode.walkthrough.addConnection)",
   "No database handy? Explore a sample": "Ƞǿǿ ḓȧȧŧȧȧƀȧȧşḗḗ ħȧȧƞḓẏ? ḖḖẋƥŀǿǿřḗḗ ȧȧ şȧȧḿƥŀḗḗ",
   "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "ǾǾƥḗḗƞ ŧħḗḗ ƀŭŭƞḓŀḗḗḓ Şȧȧķīŀȧȧ şȧȧḿƥŀḗḗ ḓȧȧŧȧȧƀȧȧşḗḗ ȧȧƞḓ ŧřẏ ŧħḗḗ ḓȧȧŧȧȧ ɠřīḓ, ƒīŀŧḗḗřş, ȧȧƞḓ ŞɊĿ ḗḗḓīŧǿǿř ǿǿƞ řḗḗȧȧŀ ḓȧȧŧȧȧ.\n[ǾǾƥḗḗƞ Şȧȧḿƥŀḗḗ Ḓȧȧŧȧȧƀȧȧşḗḗ](command:dbcode.walkthrough.sample)",
   "Explore a table without SQL": "ḖḖẋƥŀǿǿřḗḗ ȧȧ ŧȧȧƀŀḗḗ ẇīŧħǿǿŭŭŧ ŞɊĿ",

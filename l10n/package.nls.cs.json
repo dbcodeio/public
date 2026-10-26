@@ -419,7 +419,6 @@
   "Get Started with DBCode": "Začínáme s DBCode",
   "Connect a database, explore your data, and put your AI assistant to work.": "Připojte databázi, prozkoumejte svá data a zapojte do práce svého asistenta AI.",
   "Connect your database": "Připojte svou databázi",
-  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "Přidejte připojení k libovolné z více než 90 databází - nebo jen vložte připojovací řetězec a DBCode formulář vyplní za vás.\n[Přidat připojení](command:dbcode.walkthrough.addConnection)",
   "No database handy? Explore a sample": "Nemáte po ruce databázi? Prozkoumejte ukázku",
   "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "Otevřete přibalenou ukázkovou databázi Sakila a vyzkoušejte datovou mřížku, filtry a editor SQL na skutečných datech.\n[Otevřít ukázkovou databázi](command:dbcode.walkthrough.sample)",
   "Put your AI assistant to work": "Zapojte do práce svého asistenta AI",
@@ -460,5 +459,6 @@
   "Tables and views listed directly under their schema, other types in folders. A lone schema folds into the database.": "Tabulky a pohledy jsou uvedeny přímo pod svým schématem, ostatní typy ve složkách. Jediné schéma se sloučí do databáze.",
   "Chosen object types listed directly, the rest in folders. A lone schema folds into the database.": "Vybrané typy objektů jsou uvedeny přímo, ostatní ve složkách. Jediné schéma se sloučí do databáze.",
   "No schema layer. Tables, Views, Functions and the rest under the database, items named schema.object, as in SSMS.": "Bez úrovně schémat. Tabulky, Pohledy, Funkce a ostatní přímo pod databází, položky pojmenované schema.object, jako v SSMS.",
-  "How the DB Explorer lays out a database's objects. Each connection can override this from its right-click menu or in the connection editor.": "Jak DB Explorer uspořádá objekty databáze. Každé připojení to může přepsat ve své místní nabídce nebo v editoru připojení."
+  "How the DB Explorer lays out a database's objects. Each connection can override this from its right-click menu or in the connection editor.": "Jak DB Explorer uspořádá objekty databáze. Každé připojení to může přepsat ve své místní nabídce nebo v editoru připojení.",
+  "Add a connection for any of 100+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "Přidejte připojení k libovolné z více než 100 databází - nebo jen vložte připojovací řetězec a DBCode formulář vyplní za vás.\n[Přidat připojení](command:dbcode.walkthrough.addConnection)"
 }

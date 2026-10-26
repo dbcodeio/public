@@ -419,7 +419,6 @@
   "Get Started with DBCode": "DBCode をはじめる",
   "Connect a database, explore your data, and put your AI assistant to work.": "データベースに接続し、データを探索し、AI アシスタントを活用しましょう。",
   "Connect your database": "データベースに接続する",
-  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "90 種類以上のデータベースへの接続を追加できます。接続文字列を貼り付けるだけで、DBCode がフォームに自動入力します。\n[接続を追加](command:dbcode.walkthrough.addConnection)",
   "No database handy? Explore a sample": "データベースが手元にない場合は、サンプルをお試しください",
   "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "同梱の Sakila サンプルデータベースを開いて、実際のデータでデータグリッド、フィルター、SQL エディターを試してみましょう。\n[サンプルデータベースを開く](command:dbcode.walkthrough.sample)",
   "Put your AI assistant to work": "AI アシスタントを活用する",
@@ -460,5 +459,6 @@
   "Tables and views listed directly under their schema, other types in folders. A lone schema folds into the database.": "テーブルとビューはスキーマの直下に表示し、その他の種類はフォルダーに入れます。スキーマが 1 つだけの場合はデータベースに統合されます。",
   "Chosen object types listed directly, the rest in folders. A lone schema folds into the database.": "選択したオブジェクトの種類は直接表示し、それ以外はフォルダーに入れます。スキーマが 1 つだけの場合はデータベースに統合されます。",
   "No schema layer. Tables, Views, Functions and the rest under the database, items named schema.object, as in SSMS.": "スキーマ階層なし。テーブル、ビュー、関数などをデータベースの直下に置き、項目名は SSMS と同様に schema.object になります。",
-  "How the DB Explorer lays out a database's objects. Each connection can override this from its right-click menu or in the connection editor.": "DB エクスプローラーでデータベースのオブジェクトをどのように配置するかを指定します。各接続は右クリック メニューまたは接続エディターでこの設定を上書きできます。"
+  "How the DB Explorer lays out a database's objects. Each connection can override this from its right-click menu or in the connection editor.": "DB エクスプローラーでデータベースのオブジェクトをどのように配置するかを指定します。各接続は右クリック メニューまたは接続エディターでこの設定を上書きできます。",
+  "Add a connection for any of 100+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "100 種類以上のデータベースへの接続を追加できます。接続文字列を貼り付けるだけで、DBCode がフォームに自動入力します。\n[接続を追加](command:dbcode.walkthrough.addConnection)"
 }

@@ -419,7 +419,6 @@
   "Get Started with DBCode": "Inizia con DBCode",
   "Connect a database, explore your data, and put your AI assistant to work.": "Collega un database, esplora i tuoi dati e metti al lavoro il tuo assistente IA.",
   "Connect your database": "Collega il tuo database",
-  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "Aggiungi una connessione per uno degli oltre 90 database supportati, oppure incolla una stringa di connessione e DBCode compilerà il modulo per te.\n[Aggiungi connessione](command:dbcode.walkthrough.addConnection)",
   "No database handy? Explore a sample": "Nessun database a portata di mano? Esplora un esempio",
   "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "Apri il database di esempio Sakila incluso e prova la griglia dati, i filtri e l'editor SQL su dati reali.\n[Apri database di esempio](command:dbcode.walkthrough.sample)",
   "Put your AI assistant to work": "Metti al lavoro il tuo assistente IA",
@@ -460,5 +459,6 @@
   "Tables and views listed directly under their schema, other types in folders. A lone schema folds into the database.": "Tabelle e viste elencate direttamente sotto il proprio schema, gli altri tipi in cartelle. Uno schema unico confluisce nel database.",
   "Chosen object types listed directly, the rest in folders. A lone schema folds into the database.": "Tipi di oggetto scelti elencati direttamente, gli altri in cartelle. Uno schema unico confluisce nel database.",
   "No schema layer. Tables, Views, Functions and the rest under the database, items named schema.object, as in SSMS.": "Nessun livello di schema. Tabelle, Viste, Funzioni e il resto sotto il database, elementi denominati schema.object, come in SSMS.",
-  "How the DB Explorer lays out a database's objects. Each connection can override this from its right-click menu or in the connection editor.": "Come l'Esplora database dispone gli oggetti di un database. Ogni connessione può sostituire questa impostazione dal menu di scelta rapida o nell'editor della connessione."
+  "How the DB Explorer lays out a database's objects. Each connection can override this from its right-click menu or in the connection editor.": "Come l'Esplora database dispone gli oggetti di un database. Ogni connessione può sostituire questa impostazione dal menu di scelta rapida o nell'editor della connessione.",
+  "Add a connection for any of 100+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "Aggiungi una connessione per uno degli oltre 100 database supportati, oppure incolla una stringa di connessione e DBCode compilerà il modulo per te.\n[Aggiungi connessione](command:dbcode.walkthrough.addConnection)"
 }

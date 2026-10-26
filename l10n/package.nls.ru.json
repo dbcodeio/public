@@ -419,7 +419,6 @@
   "Get Started with DBCode": "Начало работы с DBCode",
   "Connect a database, explore your data, and put your AI assistant to work.": "Подключите базу данных, изучите свои данные и поручите работу ИИ-ассистенту.",
   "Connect your database": "Подключите вашу базу данных",
-  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "Добавьте подключение к любой из 90+ баз данных - или просто вставьте строку подключения, и DBCode заполнит форму за вас.\n[Добавить подключение](command:dbcode.walkthrough.addConnection)",
   "No database handy? Explore a sample": "Нет базы данных под рукой? Изучите пример",
   "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "Откройте встроенную демонстрационную базу данных Sakila и попробуйте таблицу данных, фильтры и редактор SQL на реальных данных.\n[Открыть демо-базу](command:dbcode.walkthrough.sample)",
   "Put your AI assistant to work": "Поручите работу ИИ-ассистенту",
@@ -460,5 +459,6 @@
   "Tables and views listed directly under their schema, other types in folders. A lone schema folds into the database.": "Таблицы и представления перечислены прямо под своей схемой, остальные типы в папках. Единственная схема сворачивается в базу данных.",
   "Chosen object types listed directly, the rest in folders. A lone schema folds into the database.": "Выбранные типы объектов перечислены напрямую, остальные в папках. Единственная схема сворачивается в базу данных.",
   "No schema layer. Tables, Views, Functions and the rest under the database, items named schema.object, as in SSMS.": "Без уровня схем. Таблицы, Представления, Функции и остальное находятся под базой данных, элементы называются schema.object, как в SSMS.",
-  "How the DB Explorer lays out a database's objects. Each connection can override this from its right-click menu or in the connection editor.": "Как обозреватель баз данных располагает объекты базы данных. Каждое подключение может переопределить это в контекстном меню или в редакторе подключения."
+  "How the DB Explorer lays out a database's objects. Each connection can override this from its right-click menu or in the connection editor.": "Как обозреватель баз данных располагает объекты базы данных. Каждое подключение может переопределить это в контекстном меню или в редакторе подключения.",
+  "Add a connection for any of 100+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "Добавьте подключение к любой из 100+ баз данных - или просто вставьте строку подключения, и DBCode заполнит форму за вас.\n[Добавить подключение](command:dbcode.walkthrough.addConnection)"
 }

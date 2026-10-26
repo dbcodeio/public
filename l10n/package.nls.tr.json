@@ -419,7 +419,6 @@
   "Get Started with DBCode": "DBCode'a Başlarken",
   "Connect a database, explore your data, and put your AI assistant to work.": "Bir veritabanı bağlayın, verilerinizi keşfedin ve yapay zeka asistanınızı işe koyun.",
   "Connect your database": "Veritabanınızı bağlayın",
-  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "90'den fazla veritabanından herhangi biri için bağlantı ekleyin - veya yalnızca bir bağlantı dizesi yapıştırın, DBCode formu sizin için doldursun.\n[Bağlantı Ekle](command:dbcode.walkthrough.addConnection)",
   "No database handy? Explore a sample": "Elinizde veritabanı yok mu? Bir örneği keşfedin",
   "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "Paketle gelen Sakila örnek veritabanını açın ve veri tablosunu, filtreleri ve SQL düzenleyicisini gerçek verilerle deneyin.\n[Örnek Veritabanını Aç](command:dbcode.walkthrough.sample)",
   "Put your AI assistant to work": "Yapay zeka asistanınızı işe koyun",
@@ -460,5 +459,6 @@
   "Tables and views listed directly under their schema, other types in folders. A lone schema folds into the database.": "Tablolar ve görünümler doğrudan şemalarının altında, diğer türler klasörlerde listelenir. Tek bir şema veritabanının içine katlanır.",
   "Chosen object types listed directly, the rest in folders. A lone schema folds into the database.": "Seçilen nesne türleri doğrudan, geri kalanı klasörlerde listelenir. Tek bir şema veritabanının içine katlanır.",
   "No schema layer. Tables, Views, Functions and the rest under the database, items named schema.object, as in SSMS.": "Şema katmanı yok. Tablolar, Görünümler, Fonksiyonlar ve diğerleri veritabanının altında, öğeler SSMS'teki gibi schema.object olarak adlandırılır.",
-  "How the DB Explorer lays out a database's objects. Each connection can override this from its right-click menu or in the connection editor.": "DB Gezgini'nin bir veritabanının nesnelerini nasıl düzenleyeceği. Her bağlantı bunu sağ tıklama menüsünden veya bağlantı düzenleyicisinden geçersiz kılabilir."
+  "How the DB Explorer lays out a database's objects. Each connection can override this from its right-click menu or in the connection editor.": "DB Gezgini'nin bir veritabanının nesnelerini nasıl düzenleyeceği. Her bağlantı bunu sağ tıklama menüsünden veya bağlantı düzenleyicisinden geçersiz kılabilir.",
+  "Add a connection for any of 100+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "100'den fazla veritabanından herhangi biri için bağlantı ekleyin - veya yalnızca bir bağlantı dizesi yapıştırın, DBCode formu sizin için doldursun.\n[Bağlantı Ekle](command:dbcode.walkthrough.addConnection)"
 }

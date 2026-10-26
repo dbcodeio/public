@@ -1,16 +1,16 @@
 {
 	"bomFormat": "CycloneDX",
 	"specVersion": "1.6",
-	"serialNumber": "urn:uuid:2661ae7a-bdc7-eb19-e3c6-3447ddb71417",
+	"serialNumber": "urn:uuid:979e41a3-3374-0686-5fa8-96b5e5e8187d",
 	"version": 1,
 	"metadata": {
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.38.11",
+			"version": "1.38.12",
 			"publisher": "dbcode",
-			"description": "Database client for VS Code, Cursor, Windsurf, Antigravity & Kiro - and the database layer for your AI agent, with built-in MCP & Copilot tools. 90+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus.",
-			"purl": "pkg:generic/dbcode@1.38.11",
+			"description": "SQL & database client for Postgres, MySQL, SQL Server, SQLite, MongoDB, Oracle and 100+ more, in VS Code, Cursor and Windsurf. Query and edit data, ER diagrams, SQL notebooks. Built-in MCP and Copilot tools give your AI agent the same connections, with the permissions you set.",
+			"purl": "pkg:generic/dbcode@1.38.12",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -2894,8 +2894,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-api",
-			"version": "1.5.5-r.5",
-			"purl": "pkg:npm/%40duckdb%2Fnode-api@1.5.5-r.5",
+			"version": "2.0.0-r.1",
+			"purl": "pkg:npm/%40duckdb%2Fnode-api@2.0.0-r.1",
 			"licenses": [
 				{
 					"license": {
@@ -2913,8 +2913,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings",
-			"version": "1.5.5-r.5",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings@1.5.5-r.5",
+			"version": "2.0.0-r.1",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings@2.0.0-r.1",
 			"licenses": [
 				{
 					"license": {
@@ -2932,8 +2932,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-darwin-arm64",
-			"version": "1.5.5-r.5",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-darwin-arm64@1.5.5-r.5",
+			"version": "2.0.0-r.1",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-darwin-arm64@2.0.0-r.1",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -2962,8 +2962,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-darwin-x64",
-			"version": "1.5.5-r.5",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-darwin-x64@1.5.5-r.5",
+			"version": "2.0.0-r.1",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-darwin-x64@2.0.0-r.1",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -2992,8 +2992,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-linux-arm64",
-			"version": "1.5.5-r.5",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-arm64@1.5.5-r.5",
+			"version": "2.0.0-r.1",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-arm64@2.0.0-r.1",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -3026,8 +3026,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-linux-arm64-musl",
-			"version": "1.5.5-r.5",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-arm64-musl@1.5.5-r.5",
+			"version": "2.0.0-r.1",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-arm64-musl@2.0.0-r.1",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -3060,8 +3060,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-linux-x64",
-			"version": "1.5.5-r.5",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-x64@1.5.5-r.5",
+			"version": "2.0.0-r.1",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-x64@2.0.0-r.1",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -3094,8 +3094,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-linux-x64-musl",
-			"version": "1.5.5-r.5",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-x64-musl@1.5.5-r.5",
+			"version": "2.0.0-r.1",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-linux-x64-musl@2.0.0-r.1",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -3128,8 +3128,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-win32-arm64",
-			"version": "1.5.5-r.5",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-win32-arm64@1.5.5-r.5",
+			"version": "2.0.0-r.1",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-win32-arm64@2.0.0-r.1",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -3158,8 +3158,8 @@
 		{
 			"type": "library",
 			"name": "@duckdb/node-bindings-win32-x64",
-			"version": "1.5.5-r.5",
-			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-win32-x64@1.5.5-r.5",
+			"version": "2.0.0-r.1",
+			"purl": "pkg:npm/%40duckdb%2Fnode-bindings-win32-x64@2.0.0-r.1",
 			"scope": "optional",
 			"licenses": [
 				{
@@ -13049,8 +13049,8 @@
 		{
 			"type": "library",
 			"name": "dompurify",
-			"version": "3.4.16",
-			"purl": "pkg:npm/dompurify@3.4.16",
+			"version": "3.4.17",
+			"purl": "pkg:npm/dompurify@3.4.17",
 			"licenses": [
 				{
 					"expression": "(MPL-2.0 OR Apache-2.0)"
@@ -14437,8 +14437,8 @@
 		{
 			"type": "library",
 			"name": "follow-redirects",
-			"version": "1.16.0",
-			"purl": "pkg:npm/follow-redirects@1.16.0",
+			"version": "1.16.1",
+			"purl": "pkg:npm/follow-redirects@1.16.1",
 			"licenses": [
 				{
 					"license": {
@@ -15873,8 +15873,8 @@
 		{
 			"type": "library",
 			"name": "hono",
-			"version": "4.13.9",
-			"purl": "pkg:npm/hono@4.13.9",
+			"version": "4.13.13",
+			"purl": "pkg:npm/hono@4.13.13",
 			"licenses": [
 				{
 					"license": {
@@ -16451,8 +16451,8 @@
 		{
 			"type": "library",
 			"name": "ip-address",
-			"version": "10.7.2",
-			"purl": "pkg:npm/ip-address@10.7.2",
+			"version": "10.7.4",
+			"purl": "pkg:npm/ip-address@10.7.4",
 			"licenses": [
 				{
 					"license": {
@@ -18337,8 +18337,8 @@
 		{
 			"type": "library",
 			"name": "markdown-it",
-			"version": "14.3.2",
-			"purl": "pkg:npm/markdown-it@14.3.2",
+			"version": "14.3.3",
+			"purl": "pkg:npm/markdown-it@14.3.3",
 			"licenses": [
 				{
 					"license": {
@@ -25468,8 +25468,8 @@
 		{
 			"type": "library",
 			"name": "toml",
-			"version": "4.3.0",
-			"purl": "pkg:npm/toml@4.3.0",
+			"version": "5.0.1",
+			"purl": "pkg:npm/toml@5.0.1",
 			"licenses": [
 				{
 					"license": {
@@ -25902,8 +25902,8 @@
 		{
 			"type": "library",
 			"name": "undici",
-			"version": "6.28.1",
-			"purl": "pkg:npm/undici@6.28.1",
+			"version": "6.29.1",
+			"purl": "pkg:npm/undici@6.29.1",
 			"licenses": [
 				{
 					"license": {
@@ -25921,8 +25921,8 @@
 		{
 			"type": "library",
 			"name": "undici",
-			"version": "7.29.1",
-			"purl": "pkg:npm/undici@7.29.1",
+			"version": "7.30.1",
+			"purl": "pkg:npm/undici@7.30.1",
 			"licenses": [
 				{
 					"license": {

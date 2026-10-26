@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.38.12 - 2026-10-26
+
+### Changed
+
+- Connections: New connection settings layout.
+- DuckDB: Updated to version 2.0.
+- immudb: Run UPDATE and USE statements, drop indexes and rename tables.
+- immudb: Moved out of Preview.
+- Timeplus: Moved out of Preview.
+- Typesense: Preview support added. #1245
+
+### Fixed
+
+- Meilisearch: Invalid JSON errors underline the exact spot in the editor.
+- OpenSearch: SQL `DATE` results show as dates instead of shifted timestamps.
+
 ## 1.38.11 - 2026-10-20
 
 ### Changed

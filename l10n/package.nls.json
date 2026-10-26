@@ -23,7 +23,7 @@
     "Get Started with DBCode": "Get Started with DBCode",
     "Connect a database, explore your data, and put your AI assistant to work.": "Connect a database, explore your data, and put your AI assistant to work.",
     "Connect your database": "Connect your database",
-    "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)",
+    "Add a connection for any of 100+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "Add a connection for any of 100+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)",
     "No database handy? Explore a sample": "No database handy? Explore a sample",
     "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)",
     "Explore a table without SQL": "Explore a table without SQL",

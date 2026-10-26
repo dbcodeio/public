@@ -2,9 +2,9 @@
     "name": "dbcode",
     "displayName": "DBCode - SQL & Database Client for Postgres, MySQL, MongoDB & more",
     "pricing": "Free",
-    "description": "Database client for VS Code, Cursor, Windsurf, Antigravity & Kiro - and the database layer for your AI agent, with built-in MCP & Copilot tools. 90+ databases, SQL Notebooks, ER diagrams, data editing, secure sharing. A modern alternative to DBeaver, DataGrip & TablePlus.",
+    "description": "SQL & database client for Postgres, MySQL, SQL Server, SQLite, MongoDB, Oracle and 100+ more, in VS Code, Cursor and Windsurf. Query and edit data, ER diagrams, SQL notebooks. Built-in MCP and Copilot tools give your AI agent the same connections, with the permissions you set.",
     "publisher": "dbcode",
-    "version": "1.38.11",
+    "version": "1.38.12",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -48,11 +48,11 @@
         "dbeaver alternative",
         "datagrip alternative",
         "tableplus alternative",
-        "notebook",
-        "copilot",
+        "postgresql",
+        "mssql",
         "mcp",
-        "ai",
-        "cursor"
+        "csv",
+        "er diagram"
     ],
     "categories": [
         "Other",
@@ -656,7 +656,7 @@
                     {
                         "id": "connect",
                         "title": "%Connect your database%",
-                        "description": "%Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)%",
+                        "description": "%Add a connection for any of 100+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)%",
                         "media": {
                             "markdown": "walkthrough/connect.md"
                         },
@@ -5605,116 +5605,123 @@
                     "fontCharacter": "\\eace"
                 }
             },
+            "dbcode-typesense": {
+                "description": "Typesense",
+                "default": {
+                    "fontPath": "out/resources/icons.woff",
+                    "fontCharacter": "\\eacf"
+                }
+            },
             "dbcode-unique-constraint": {
                 "description": "Unique Constraint",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eacf"
+                    "fontCharacter": "\\ead0"
                 }
             },
             "dbcode-unknown": {
                 "description": "Unknown",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ead0"
+                    "fontCharacter": "\\ead1"
                 }
             },
             "dbcode-update": {
                 "description": "Update",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ead1"
+                    "fontCharacter": "\\ead2"
                 }
             },
             "dbcode-uuid": {
                 "description": "Uuid",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ead2"
+                    "fontCharacter": "\\ead3"
                 }
             },
             "dbcode-valkey": {
                 "description": "Valkey",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ead3"
+                    "fontCharacter": "\\ead4"
                 }
             },
             "dbcode-vector-search": {
                 "description": "Vector Search",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ead4"
+                    "fontCharacter": "\\ead5"
                 }
             },
             "dbcode-vector": {
                 "description": "Vector",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ead5"
+                    "fontCharacter": "\\ead6"
                 }
             },
             "dbcode-venn": {
                 "description": "Venn",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ead6"
+                    "fontCharacter": "\\ead7"
                 }
             },
             "dbcode-vertica": {
                 "description": "Vertica",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ead7"
+                    "fontCharacter": "\\ead8"
                 }
             },
             "dbcode-view": {
                 "description": "View",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ead8"
+                    "fontCharacter": "\\ead9"
                 }
             },
             "dbcode-vm": {
                 "description": "Vm",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\ead9"
+                    "fontCharacter": "\\eada"
                 }
             },
             "dbcode-void": {
                 "description": "Void",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eada"
+                    "fontCharacter": "\\eadb"
                 }
             },
             "dbcode-watched-folder": {
                 "description": "Watched Folder",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eadb"
+                    "fontCharacter": "\\eadc"
                 }
             },
             "dbcode-weaviate": {
                 "description": "Weaviate",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eadc"
+                    "fontCharacter": "\\eadd"
                 }
             },
             "dbcode-xml": {
                 "description": "Xml",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eadd"
+                    "fontCharacter": "\\eade"
                 }
             },
             "dbcode-yugabyte": {
                 "description": "Yugabyte",
                 "default": {
                     "fontPath": "out/resources/icons.woff",
-                    "fontCharacter": "\\eade"
+                    "fontCharacter": "\\eadf"
                 }
             }
         },
@@ -7549,6 +7556,7 @@
                                         "couchbase",
                                         "couchdb",
                                         "meilisearch",
+                                        "typesense",
                                         "druid",
                                         "surrealdb",
                                         "sybase",
@@ -8195,7 +8203,7 @@
         "@clickhouse/client": "^1.12.1",
         "@databricks/sql": "^1.12.0",
         "@date-fns/utc": "^2.1.0",
-        "@duckdb/node-api": "^1.5.5-r.5",
+        "@duckdb/node-api": "^2.0.0-r.1",
         "@elastic/elasticsearch": "^9.0.1",
         "@electric-sql/pglite": "^0.3.15",
         "@electric-sql/pglite-tools": "^0.2.20",

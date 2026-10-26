@@ -419,7 +419,6 @@
   "Get Started with DBCode": "DBCode 시작하기",
   "Connect a database, explore your data, and put your AI assistant to work.": "데이터베이스를 연결하고, 데이터를 탐색하고, AI 어시스턴트를 활용해 보세요.",
   "Connect your database": "데이터베이스 연결",
-  "Add a connection for any of 90+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "80개 이상의 데이터베이스 중 원하는 것에 대한 연결을 추가하세요. 연결 문자열을 붙여넣기만 하면 DBCode가 양식을 자동으로 채워줍니다.\n[연결 추가](command:dbcode.walkthrough.addConnection)",
   "No database handy? Explore a sample": "사용할 데이터베이스가 없나요? 샘플을 살펴보세요",
   "Open the bundled Sakila sample database and try the data grid, filters, and SQL editor on real data.\n[Open Sample Database](command:dbcode.walkthrough.sample)": "번들로 제공되는 Sakila 샘플 데이터베이스를 열고 실제 데이터로 데이터 그리드, 필터, SQL 편집기를 사용해 보세요.\n[샘플 데이터베이스 열기](command:dbcode.walkthrough.sample)",
   "Put your AI assistant to work": "AI 어시스턴트 활용하기",
@@ -460,5 +459,6 @@
   "Tables and views listed directly under their schema, other types in folders. A lone schema folds into the database.": "테이블과 뷰는 스키마 바로 아래에 나열되고 다른 유형은 폴더에 있습니다. 스키마가 하나뿐이면 데이터베이스에 합쳐집니다.",
   "Chosen object types listed directly, the rest in folders. A lone schema folds into the database.": "선택한 개체 유형은 바로 나열하고 나머지는 폴더에 넣습니다. 스키마가 하나뿐이면 데이터베이스에 합쳐집니다.",
   "No schema layer. Tables, Views, Functions and the rest under the database, items named schema.object, as in SSMS.": "스키마 계층이 없습니다. 테이블, 뷰, 함수 등이 데이터베이스 바로 아래에 있으며, 항목 이름은 SSMS처럼 schema.object입니다.",
-  "How the DB Explorer lays out a database's objects. Each connection can override this from its right-click menu or in the connection editor.": "DB 탐색기에서 데이터베이스 개체를 배치하는 방식입니다. 각 연결은 마우스 오른쪽 단추 메뉴나 연결 편집기에서 이 설정을 재정의할 수 있습니다."
+  "How the DB Explorer lays out a database's objects. Each connection can override this from its right-click menu or in the connection editor.": "DB 탐색기에서 데이터베이스 개체를 배치하는 방식입니다. 각 연결은 마우스 오른쪽 단추 메뉴나 연결 편집기에서 이 설정을 재정의할 수 있습니다.",
+  "Add a connection for any of 100+ databases - or just paste a connection string and DBCode fills in the form for you.\n[Add Connection](command:dbcode.walkthrough.addConnection)": "100개 이상의 데이터베이스 중 원하는 것에 대한 연결을 추가하세요. 연결 문자열을 붙여넣기만 하면 DBCode가 양식을 자동으로 채워줍니다.\n[연결 추가](command:dbcode.walkthrough.addConnection)"
 }
