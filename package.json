@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "SQL & database client for Postgres, MySQL, SQL Server, SQLite, MongoDB, Oracle and 100+ more, in VS Code, Cursor and Windsurf. Query and edit data, ER diagrams, SQL notebooks. Built-in MCP and Copilot tools give your AI agent the same connections, with the permissions you set.",
     "publisher": "dbcode",
-    "version": "1.38.12",
+    "version": "1.38.13",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",

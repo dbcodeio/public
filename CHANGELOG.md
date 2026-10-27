@@ -1,5 +1,40 @@
 # CHANGELOG
 
+## 1.38.13 - 2026-10-27
+
+### Changed
+
+- CLI: `dbcode open` and `dbcode introspect` work from a Dev Container, Remote-SSH or WSL terminal in VS Code.
+- DuckLake, Iceberg: Added the Extensions setting to pre-load DuckDB extensions on connect.
+- Connections: A failing startup SQL script now stops the connection from opening.
+- Power BI: Moved out of Preview.
+- Quick Open: Type at any level to search objects across connections, recently used connections first; schemas not loaded yet can be loaded from the list.
+- Connections: New tunnel and authentication profile settings layout.
+
+### Fixed
+
+- Appwrite: Fixed grid filters, sorting and paging returning the wrong rows.
+- BigQuery: Fixed BEGIN...END, IF, WHILE, LOOP and FOR blocks being split at their inner semicolons.
+- Execution: Fixed SQLite triggers and MySQL procedures containing CASE merging with the next statement.
+- Convex: Fixed grid filters, sorting and paging returning the wrong rows.
+- Databricks: Fixed BEGIN...END compound statements being split at their inner semicolons.
+- Db2: Fixed BEGIN ATOMIC blocks being split at their inner semicolons.
+- DuckDB: Fixed $$ strings and CREATE FUNCTION macros splitting into the wrong statements.
+- Firebird: Disconnecting no longer hangs on a running query or leaves a connection open.
+- Firebird: Added SET TERM support, and fixed EXECUTE BLOCK being split at its inner semicolons.
+- Ignite 3, GridGain 9: Writes are now visible right away on other connections.
+- DuckLake, Iceberg: SQL editors now find catalog tables without the catalog name.
+- MariaDB: Fixed BEGIN NOT ATOMIC blocks being split at their inner semicolons.
+- MySQL: Fixed a semicolon inside a # comment splitting the statement.
+- Oracle: Fixed compound triggers and TYPE BODY definitions being split at their inner END statements.
+- PostgreSQL: Fixed queries hanging when the connection pool is limited to one connection.
+- PostgreSQL: Fixed E'' strings and functions with a RETURN or quoted body splitting into the wrong statements.
+- Connections: Role permissions now apply to each statement inside a block or batch, not only to the block itself.
+- Snowflake: Fixed $$ procedure bodies and Snowflake Scripting blocks being split at their inner semicolons.
+- SQL Server: Fixed a ;WITH query running without the variables declared above it.
+- SQL Server: Fixed ALTER PROCEDURE, CREATE OR ALTER and PROC bodies without BEGIN...END being cut at the first semicolon.
+- SQL Server: Fixed TRY...CATCH, IF...ELSE without BEGIN, GO with a count and [bracketed] names splitting into the wrong statements.
+
 ## 1.38.12 - 2026-10-26
 
 ### Changed
