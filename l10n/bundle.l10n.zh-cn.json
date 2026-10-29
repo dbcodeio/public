@@ -6114,5 +6114,13 @@
   "Error running post-connection SQL for {0}. Error: {1}": "为 {0} 运行连接后 SQL 时出错。错误：{1}",
   "Power BI did not respond within {0} seconds.": "Power BI 在 {0} 秒内未响应。",
   "Convex cannot apply this filter: {0}": "Convex 无法应用此筛选器：{0}",
-  "Appwrite cannot apply this filter: {0}": "Appwrite 无法应用此筛选器：{0}"
+  "Appwrite cannot apply this filter: {0}": "Appwrite 无法应用此筛选器：{0}",
+  "The --order value is not valid: {0}.": "--order 的值无效：{0}。",
+  "Column {0} was not found in {1}.": "在 {1} 中未找到列 {0}。",
+  "--order cannot be combined with a --where that has its own ORDER BY, LIMIT or GROUP BY.": "--order 不能与自带 ORDER BY、LIMIT 或 GROUP BY 的 --where 一起使用。",
+  "The --where condition must be a single condition, not another statement.": "--where 条件必须是单个条件，而不是另一条语句。",
+  "--where and --order apply to tables and views.": "--where 和 --order 适用于表和视图。",
+  "A link wants to open {0} on {1} with this filter. Open it?": "某个链接要使用此筛选器在 {1} 上打开 {0}。要打开吗?",
+  "This version of DBCode cannot run \"{0}\" from the CLI.": "此版本的 DBCode 无法从 CLI 运行“{0}”。",
+  "Appwrite returned an unexpected response listing indexes": "Appwrite 在列出索引时返回了意外的响应"
 }

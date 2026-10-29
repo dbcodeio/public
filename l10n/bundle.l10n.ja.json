@@ -6114,5 +6114,13 @@
   "Error running post-connection SQL for {0}. Error: {1}": "{0} の接続後 SQL の実行中にエラーが発生しました。エラー: {1}",
   "Power BI did not respond within {0} seconds.": "Power BI が {0} 秒以内に応答しませんでした。",
   "Convex cannot apply this filter: {0}": "Convex はこのフィルターを適用できません: {0}",
-  "Appwrite cannot apply this filter: {0}": "Appwrite ではこのフィルターを適用できません: {0}"
+  "Appwrite cannot apply this filter: {0}": "Appwrite ではこのフィルターを適用できません: {0}",
+  "The --order value is not valid: {0}.": "--order の値が無効です: {0}。",
+  "Column {0} was not found in {1}.": "{1} に列 {0} が見つかりません。",
+  "--order cannot be combined with a --where that has its own ORDER BY, LIMIT or GROUP BY.": "--order は、独自の ORDER BY、LIMIT、GROUP BY を含む --where と組み合わせることはできません。",
+  "The --where condition must be a single condition, not another statement.": "--where の条件は別のステートメントではなく、単一の条件である必要があります。",
+  "--where and --order apply to tables and views.": "--where と --order はテーブルとビューに適用されます。",
+  "A link wants to open {0} on {1} with this filter. Open it?": "リンクがこのフィルターで {1} の {0} を開こうとしています。開きますか?",
+  "This version of DBCode cannot run \"{0}\" from the CLI.": "このバージョンの DBCode では CLI から「{0}」を実行できません。",
+  "Appwrite returned an unexpected response listing indexes": "インデックスの一覧取得中に Appwrite から予期しない応答が返されました"
 }

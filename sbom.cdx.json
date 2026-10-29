@@ -1,16 +1,16 @@
 {
 	"bomFormat": "CycloneDX",
 	"specVersion": "1.6",
-	"serialNumber": "urn:uuid:979e41a3-3374-0686-5fa8-96b5e5e8187d",
+	"serialNumber": "urn:uuid:24493c6a-2dce-084c-88c2-baaf6e32d2ef",
 	"version": 1,
 	"metadata": {
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.38.13",
+			"version": "1.38.14",
 			"publisher": "dbcode",
 			"description": "SQL & database client for Postgres, MySQL, SQL Server, SQLite, MongoDB, Oracle and 100+ more, in VS Code, Cursor and Windsurf. Query and edit data, ER diagrams, SQL notebooks. Built-in MCP and Copilot tools give your AI agent the same connections, with the permissions you set.",
-			"purl": "pkg:generic/dbcode@1.38.13",
+			"purl": "pkg:generic/dbcode@1.38.14",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -4025,8 +4025,8 @@
 		{
 			"type": "library",
 			"name": "@hono/node-server",
-			"version": "2.0.10",
-			"purl": "pkg:npm/%40hono%2Fnode-server@2.0.10",
+			"version": "2.1.5",
+			"purl": "pkg:npm/%40hono%2Fnode-server@2.1.5",
 			"licenses": [
 				{
 					"license": {
@@ -14057,8 +14057,8 @@
 		{
 			"type": "library",
 			"name": "fast-uri",
-			"version": "3.1.8",
-			"purl": "pkg:npm/fast-uri@3.1.8",
+			"version": "3.1.9",
+			"purl": "pkg:npm/fast-uri@3.1.9",
 			"licenses": [
 				{
 					"license": {
@@ -22465,8 +22465,8 @@
 		{
 			"type": "library",
 			"name": "qs",
-			"version": "6.16.0",
-			"purl": "pkg:npm/qs@6.16.0",
+			"version": "6.16.1",
+			"purl": "pkg:npm/qs@6.16.1",
 			"licenses": [
 				{
 					"license": {

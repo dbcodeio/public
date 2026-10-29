@@ -6114,5 +6114,13 @@
   "Error running post-connection SQL for {0}. Error: {1}": "{0} için bağlantı sonrası SQL çalıştırılırken hata oluştu. Hata: {1}",
   "Power BI did not respond within {0} seconds.": "Power BI {0} saniye içinde yanıt vermedi.",
   "Convex cannot apply this filter: {0}": "Convex bu filtreyi uygulayamıyor: {0}",
-  "Appwrite cannot apply this filter: {0}": "Appwrite bu filtreyi uygulayamıyor: {0}"
+  "Appwrite cannot apply this filter: {0}": "Appwrite bu filtreyi uygulayamıyor: {0}",
+  "The --order value is not valid: {0}.": "--order değeri geçersiz: {0}.",
+  "Column {0} was not found in {1}.": "{0} sütunu {1} içinde bulunamadı.",
+  "--order cannot be combined with a --where that has its own ORDER BY, LIMIT or GROUP BY.": "--order, kendi ORDER BY, LIMIT veya GROUP BY ifadesini içeren bir --where ile birlikte kullanılamaz.",
+  "The --where condition must be a single condition, not another statement.": "--where koşulu başka bir ifade değil, tek bir koşul olmalıdır.",
+  "--where and --order apply to tables and views.": "--where ve --order tablolara ve görünümlere uygulanır.",
+  "A link wants to open {0} on {1} with this filter. Open it?": "Bir bağlantı {0} öğesini {1} üzerinde bu filtreyle açmak istiyor. Açılsın mı?",
+  "This version of DBCode cannot run \"{0}\" from the CLI.": "DBCode’un bu sürümü CLI’dan \"{0}\" çalıştıramaz.",
+  "Appwrite returned an unexpected response listing indexes": "Appwrite, dizinler listelenirken beklenmeyen bir yanıt döndürdü"
 }

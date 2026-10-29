@@ -1,5 +1,33 @@
 # CHANGELOG
 
+## 1.38.14 - 2026-10-29
+
+### Changed
+
+- Appwrite: Moved out of Preview.
+- Appwrite: Tables now show their indexes and relationship foreign keys.
+- Appwrite: Added SSL/TLS settings, including a CA certificate and client certificates.
+- CLI: `dbcode open` takes `--where` and `--order` to open a table filtered and sorted.
+- CLI: `dbcode connections`, `query`, `open` and `introspect` work from a Dev Container, Remote-SSH or WSL window, including notebooks and scripts started there.
+- Convex: Moved out of Preview.
+- Convex: Added SSL/TLS settings, including a CA certificate and client certificates.
+
+### Fixed
+
+- Connections: A folder binding or workspace connection without a database now asks you to pick one, instead of leaving the editor with no database. #1263
+- Editor: Fixed tables showing as unknown until their schema was expanded in the explorer.
+- Convex: Fixed saving, sorting, and filtering 64-bit integers, and saving bytes and values in columns with no loaded data.
+- Kafka: Expanding a connection with thousands of topics no longer hangs; message counts load when a topic is expanded or opened.
+- MySQL: Connection roles now check a statement hidden in a string that the `NO_BACKSLASH_ESCAPES` SQL mode would run, such as `'a\'; DROP TABLE t; -- '`.
+- Transactions: The Auto-Commit status bar and its tooltip show how many rows pending changes affected.
+- Table: A saved WHERE filter keeps the primary-key sort when the table opens, and Refresh keeps the filter.
+- Table: A table opened sorted by its primary key shows the sort arrow again and keeps the sort when more rows load.
+- SQL Server: Connection roles now check a command that follows a query without a semicolon, such as `SELECT * FROM t SHUTDOWN`.
+- Transactions: Closing an untitled editor reports how many uncommitted changes it rolled back.
+- Transactions: Running BEGIN and COMMIT (or END and ABORT) in your own SQL no longer turns Auto-Commit off or leaves phantom pending statements.
+- Explorer: Renaming an object on a progressively loaded connection shows the new name right away.
+- Results: Applying a WHERE filter now shows the loading overlay and running timer.
+
 ## 1.38.13 - 2026-10-27
 
 ### Changed
