@@ -1,16 +1,16 @@
 {
 	"bomFormat": "CycloneDX",
 	"specVersion": "1.6",
-	"serialNumber": "urn:uuid:24493c6a-2dce-084c-88c2-baaf6e32d2ef",
+	"serialNumber": "urn:uuid:efaf2e70-45f5-da75-618c-ad317eaaa99e",
 	"version": 1,
 	"metadata": {
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.38.14",
+			"version": "1.38.15",
 			"publisher": "dbcode",
 			"description": "SQL & database client for Postgres, MySQL, SQL Server, SQLite, MongoDB, Oracle and 100+ more, in VS Code, Cursor and Windsurf. Query and edit data, ER diagrams, SQL notebooks. Built-in MCP and Copilot tools give your AI agent the same connections, with the permissions you set.",
-			"purl": "pkg:generic/dbcode@1.38.14",
+			"purl": "pkg:generic/dbcode@1.38.15",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -10441,8 +10441,8 @@
 		{
 			"type": "library",
 			"name": "body-parser",
-			"version": "2.3.0",
-			"purl": "pkg:npm/body-parser@2.3.0",
+			"version": "2.4.0",
+			"purl": "pkg:npm/body-parser@2.4.0",
 			"licenses": [
 				{
 					"license": {
@@ -11954,6 +11954,26 @@
 			"name": "content-type",
 			"version": "2.0.0",
 			"purl": "pkg:npm/content-type@2.0.0",
+			"licenses": [
+				{
+					"license": {
+						"id": "MIT"
+					}
+				}
+			],
+			"publisher": "Douglas Christopher Wilson <doug@somethingdoug.com>",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "jshttp/content-type"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "content-type",
+			"version": "2.1.0",
+			"purl": "pkg:npm/content-type@2.1.0",
 			"licenses": [
 				{
 					"license": {
@@ -14437,8 +14457,8 @@
 		{
 			"type": "library",
 			"name": "follow-redirects",
-			"version": "1.16.1",
-			"purl": "pkg:npm/follow-redirects@1.16.1",
+			"version": "1.16.2",
+			"purl": "pkg:npm/follow-redirects@1.16.2",
 			"licenses": [
 				{
 					"license": {

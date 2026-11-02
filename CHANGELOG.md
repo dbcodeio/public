@@ -1,5 +1,30 @@
 # CHANGELOG
 
+## 1.38.15 - 2026-11-02
+
+### Changed
+
+- AI: The output log now shows why an agent query needs approval, where it asked, and the answer.
+- ArcGIS: Moved out of Preview.
+- ArcGIS: The service list now includes your organization's feature services and is no longer capped at 100.
+- ArcGIS: Added SSL/TLS settings, including a CA certificate and client certificates.
+- Auth Profiles: OAuth2 profiles can send the ID token instead of the access token. #1266
+- Oracle: Added "Connect as the editor's schema" to the Authentication section of connection settings, for proxy users. #1264
+- PostgreSQL: Added DDL scripting for indexes.
+
+### Fixed
+
+- Editor: Column hover and Go to Definition now resolve against the tables in the query, and work on progressively loaded connections.
+- Editor: Fixed formatting SQL Server files with @variables before their connection opened.
+- Grid: Leaving a cell without changing it no longer marks it as edited.
+- Explorer: Fixed empty DDL when scripting indexes and triggers on progressively loaded connections.
+- MCP: Fixed approval prompts not showing in VS Code chat, which left agent queries waiting 10 minutes.
+- Connections: Re-authenticate now picks up Azure PIM elevation for Azure CLI auth profiles.
+- Trino: Auth profile connections now send the connection's Username instead of the OS username. #1265
+- Connections: Fixed discovery skipping web.config files that have no <location> element.
+- Table: A table opened with a WHERE filter, from a saved filter or `dbcode open --where`, always shows the condition in the WHERE box.
+- Table: A WHERE filter loads rows a page at a time, like an unfiltered table.
+
 ## 1.38.14 - 2026-10-29
 
 ### Changed
