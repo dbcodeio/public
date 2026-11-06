@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "SQL & database client for Postgres, MySQL, SQL Server, SQLite, MongoDB, Oracle and 100+ more, in VS Code, Cursor and Windsurf. Query and edit data, ER diagrams, SQL notebooks. Built-in MCP and Copilot tools give your AI agent the same connections, with the permissions you set.",
     "publisher": "dbcode",
-    "version": "1.38.15",
+    "version": "1.39.0",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -3333,62 +3333,62 @@
                 {
                     "command": "dbcode.table.import",
                     "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || viewItem =~ /^partition-/ || viewItem =~ /^synonym-/) && viewItem =~ /~import~/",
-                    "group": "2actoin@1"
+                    "group": "2action@1"
                 },
                 {
                     "command": "dbcode.export",
                     "when": "view == dbcode.connections.view && viewItem =~ /~export~/",
-                    "group": "2actoin@1"
+                    "group": "2action@1"
                 },
                 {
                     "command": "dbcode.table.search",
                     "when": "view == dbcode.connections.view && viewItem =~ /~search~/",
-                    "group": "2actoin@2"
+                    "group": "2action@2"
                 },
                 {
                     "command": "dbcode.table.compareWith",
                     "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || (viewItem =~ /^synonym-/ && viewItem =~ /~scriptSelect~/))",
-                    "group": "2actoin@3"
+                    "group": "2action@3"
                 },
                 {
                     "command": "dbcode.table.compareWith",
                     "when": "view == dbcode.connections.view && viewItem =~ /^view-/",
-                    "group": "2actoin@3"
+                    "group": "2action@3"
                 },
                 {
                     "command": "dbcode.table.compareWith",
                     "when": "view == dbcode.connections.view && viewItem =~ /^materializedView-/",
-                    "group": "2actoin@3"
+                    "group": "2action@3"
                 },
                 {
                     "command": "dbcode.table.joinWith",
                     "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || (viewItem =~ /^synonym-/ && viewItem =~ /~scriptSelect~/))",
-                    "group": "2actoin@4"
+                    "group": "2action@4"
                 },
                 {
                     "command": "dbcode.table.joinWith",
                     "when": "view == dbcode.connections.view && viewItem =~ /^view-/",
-                    "group": "2actoin@4"
+                    "group": "2action@4"
                 },
                 {
                     "command": "dbcode.table.joinWith",
                     "when": "view == dbcode.connections.view && viewItem =~ /^materializedView-/",
-                    "group": "2actoin@4"
+                    "group": "2action@4"
                 },
                 {
                     "command": "dbcode.table.unionWith",
                     "when": "view == dbcode.connections.view && (viewItem =~ /^table-/ || (viewItem =~ /^synonym-/ && viewItem =~ /~scriptSelect~/))",
-                    "group": "2actoin@5"
+                    "group": "2action@5"
                 },
                 {
                     "command": "dbcode.table.unionWith",
                     "when": "view == dbcode.connections.view && viewItem =~ /^view-/",
-                    "group": "2actoin@5"
+                    "group": "2action@5"
                 },
                 {
                     "command": "dbcode.table.unionWith",
                     "when": "view == dbcode.connections.view && viewItem =~ /^materializedView-/",
-                    "group": "2actoin@5"
+                    "group": "2action@5"
                 },
                 {
                     "command": "dbcode.table.explore",
@@ -3433,37 +3433,37 @@
                 {
                     "command": "dbcode.item.subscribe",
                     "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~subscribe~/",
-                    "group": "2actoin@6"
+                    "group": "2action@6"
                 },
                 {
                     "command": "dbcode.item.setEmbedding",
                     "when": "view == dbcode.connections.view && viewItem =~ /^table-/ && viewItem =~ /~setEmbedding~/",
-                    "group": "2actoin@7"
+                    "group": "2action@7"
                 },
                 {
                     "command": "dbcode.item.activate",
                     "when": "view == dbcode.connections.view && viewItem =~ /^partition-/ && viewItem =~ /~activate~/",
-                    "group": "2actoin@8"
+                    "group": "2action@8"
                 },
                 {
                     "command": "dbcode.item.enable",
                     "when": "view == dbcode.connections.view && viewItem =~ /^job-/ && viewItem =~ /~enable~/",
-                    "group": "2actoin@9"
+                    "group": "2action@9"
                 },
                 {
                     "command": "dbcode.item.disable",
                     "when": "view == dbcode.connections.view && viewItem =~ /^job-/ && viewItem =~ /~disable~/",
-                    "group": "2actoin@10"
+                    "group": "2action@10"
                 },
                 {
                     "command": "dbcode.item.deactivate",
                     "when": "view == dbcode.connections.view && viewItem =~ /^partition-/ && viewItem =~ /~deactivate~/",
-                    "group": "2actoin@9"
+                    "group": "2action@9"
                 },
                 {
                     "command": "dbcode.item.offload",
                     "when": "view == dbcode.connections.view && viewItem =~ /^partition-/ && viewItem =~ /~offload~/",
-                    "group": "2actoin@10"
+                    "group": "2action@10"
                 },
                 {
                     "command": "dbcode.item.truncate",
@@ -8090,8 +8090,8 @@
         "dev:build": "npm run esbuild -- --sourcemap --watch",
         "dev:server": "tsx ./scripts/dev-server.ts",
         "test": "NODE_OPTIONS='--max-old-space-size=8192' vitest run",
-        "test:unit": "NODE_OPTIONS='--max-old-space-size=8192' vitest run --project unit",
-        "test:unit:coverage": "NODE_OPTIONS='--max-old-space-size=8192' vitest run --project unit --project langserver --coverage",
+        "test:unit": "NODE_OPTIONS='--max-old-space-size=8192' vitest run --project unit --project unit-utc14",
+        "test:unit:coverage": "NODE_OPTIONS='--max-old-space-size=8192' vitest run --project unit --project langserver --coverage --project unit-utc14",
         "test:langserver": "NODE_OPTIONS='--max-old-space-size=8192' vitest run --project langserver",
         "test:integration": "NODE_OPTIONS='--max-old-space-size=8192' vitest run --project integration --project tunnels",
         "test:e2e": "vitest run --config vitest.e2e.config.ts",
@@ -8236,7 +8236,7 @@
         "@vscode/debugprotocol": "^1.68.0",
         "@vscode/l10n": "^0.0.18",
         "@xyflow/react": "^12.7.0",
-        "@zilliz/milvus2-sdk-node": "^3.0.0",
+        "@zilliz/milvus2-sdk-node": "3.0.6",
         "ag-charts-enterprise": "^12.2.0",
         "ag-grid-enterprise": "^34.3.1",
         "amqplib": "^0.10.9",
@@ -8327,7 +8327,6 @@
         "vscode-textmate": "^9.3.2",
         "weaviate-client": "^3.13.1",
         "ws": "8.21.0",
-        "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
         "yaml": "^2.7.0",
         "yjs": "^13.6.27",
         "zod": "^3.24.2"

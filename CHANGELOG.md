@@ -1,5 +1,41 @@
 # CHANGELOG
 
+## 1.39.0 - 2026-11-06
+
+### Changed
+
+- Table Designer: On PostgreSQL, SQL Server, MySQL and MariaDB, changing a key that foreign keys on other tables reference now drops and re-adds those keys instead of failing.
+- Table Designer: Reloads when its table changes in the database, and warns first when you have unsaved edits.
+- Excel: Opening an Excel 97-2003 (.xls) workbook now says to save it as .xlsx.
+- Apache Ignite and GridGain: Moved out of Preview, with server monitoring (running queries, sessions, nodes, transactions and Kill Query) and transactions on 3.x / 9.x.
+- Import: Rebuilt as one panel with file options, a live preview, the designer's column grid and the SQL shown before it runs.
+- Startup: Moved more modules out of initial loading, so DBCode starts faster.
+- Milvus: Graduated from Preview.
+- Notebooks: Added Auto-Commit to each SQL cell's status bar, and closing a notebook with uncommitted changes now asks to commit or discard them, including locked cells' changes.
+- Results: A successful CREATE TABLE or CREATE VIEW links to the new table or view.
+- Query Builder: Added Change table, a HAVING picker, removing a single join pair from the join line, and a Fully qualify names option.
+
+### Fixed
+
+- Auth profiles: OAuth2 Client Credentials now requires a Client Secret, and Entra SSO and Service Principal require a Tenant ID, before the profile saves.
+- MCP: DBCode's tools now work in VS Code's Copilot harness, where they showed as unsupported. #1269
+- Results: Data Lookup lists the columns of a table not yet expanded.
+- Explorer: Dropping a function or procedure now includes its parameter types.
+- DuckDB: Queries returning a MAP column no longer fail, and NULL items in a list no longer show blank or get dropped on save.
+- Excel: Workbooks whose path contains an apostrophe now open.
+- Explorer: Scripts for a table you have not expanded list its columns, and refreshing a folder or schema re-reads the objects you already expanded.
+- Apache Ignite and GridGain: Fixed connecting to GridGain 8.x, dates and times on servers not in UTC, TIME values losing their seconds, and query builder filters on GridGain 9.x.
+- Editor: INSERT parameter hints now work for views and synonyms.
+- Access, Aerospike, Apache Derby, H2, IBM i, Apache Ignite, GridGain and SAP ASE (Sybase): Stopping a query now shows the cancellation error.
+- SQL Server: Loading table details no longer waits on, or deadlocks with, schema changes to other tables.
+- Notebooks: A parameter defined with a value in one cell (`&{n||3||number}`) now fills in the same parameter used by name (`&n`) in later cells.
+- Notebooks: Running a cell from the keyboard keeps the cursor and selection in the cell.
+- Auth profiles: OAuth2 Client Credentials in manual mode no longer requires an Authorization Endpoint. #1267
+- Query Builder: Having conditions no longer disappear from the panel while still in the SQL.
+- Transactions: Changes that ran before a stopped or failed statement now count as uncommitted, so you are asked to commit or discard them.
+- Table Designer: Flags too-long names, and Unsigned or Zerofill on a MySQL/MariaDB type that cannot take it, before Apply; keeps MySQL/MariaDB fractional seconds; and reports SQL Server rollbacks correctly.
+- Zero Config: Fixed Redshift connections in .env and Spring config files being detected as MySQL or PostgreSQL. #1271
+
 ## 1.38.15 - 2026-11-02
 
 ### Changed
