@@ -4,7 +4,7 @@
     "pricing": "Free",
     "description": "SQL & database client for Postgres, MySQL, SQL Server, SQLite, MongoDB, Oracle and 100+ more, in VS Code, Cursor and Windsurf. Query and edit data, ER diagrams, SQL notebooks. Built-in MCP and Copilot tools give your AI agent the same connections, with the permissions you set.",
     "publisher": "dbcode",
-    "version": "1.39.0",
+    "version": "1.39.1",
     "icon": "out/resources/logos/logo.png",
     "galleryBanner": {
         "color": "#e4ddff",
@@ -946,6 +946,101 @@
                 "command": "dbcode.queryBuilder.open",
                 "title": "%Query Builder%",
                 "icon": "$(code-oss)",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.queryBuilder.run",
+                "title": "%Run Query Builder Query%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.save",
+                "title": "%Grid: Save Changes%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.refresh",
+                "title": "%Grid: Refresh%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.addRow",
+                "title": "%Grid: Add Row%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.duplicate",
+                "title": "%Grid: Duplicate Rows%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.deleteRows",
+                "title": "%Grid: Delete Rows%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.transpose",
+                "title": "%Grid: Transpose%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.focusFilter",
+                "title": "%Grid: Focus WHERE Filter%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.chart",
+                "title": "%Grid: Chart Selection%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.jumpToColumn",
+                "title": "%Grid: Jump to Column%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.quickSearch",
+                "title": "%Grid: Quick Search%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.selectRow",
+                "title": "%Grid: Select Row%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.selectColumn",
+                "title": "%Grid: Select Column%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.cellLeft",
+                "title": "%Grid: Move Left%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.cellDown",
+                "title": "%Grid: Move Down%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.cellUp",
+                "title": "%Grid: Move Up%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.grid.cellRight",
+                "title": "%Grid: Move Right%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.dataImport.apply",
+                "title": "%Apply Data Import%",
+                "category": "DBCode"
+            },
+            {
+                "command": "dbcode.monitoring.refresh",
+                "title": "%Refresh Monitoring%",
                 "category": "DBCode"
             },
             {
@@ -1918,6 +2013,124 @@
         ],
         "keybindings": [
             {
+                "command": "dbcode.queryBuilder.run",
+                "key": "ctrl+enter",
+                "when": "activeWebviewPanelId == 'queryBuilderWebView' && !sideBarFocus && !panelFocus && !auxiliaryBarFocus && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.save",
+                "key": "ctrl+s",
+                "mac": "cmd+s",
+                "when": "(focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.refresh",
+                "key": "ctrl+r",
+                "mac": "cmd+r",
+                "when": "(focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.addRow",
+                "key": "ctrl+n",
+                "mac": "cmd+n",
+                "when": "(focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.duplicate",
+                "key": "ctrl+shift+d",
+                "mac": "cmd+shift+d",
+                "when": "(focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.deleteRows",
+                "key": "ctrl+delete",
+                "mac": "cmd+delete",
+                "when": "(focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.deleteRows",
+                "key": "ctrl+backspace",
+                "mac": "cmd+backspace",
+                "when": "(focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.transpose",
+                "key": "ctrl+t",
+                "mac": "cmd+t",
+                "when": "(focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.focusFilter",
+                "key": "ctrl+shift+f",
+                "mac": "cmd+shift+f",
+                "when": "(focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.chart",
+                "key": "ctrl+g",
+                "mac": "cmd+g",
+                "when": "(focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.jumpToColumn",
+                "key": "ctrl+f12",
+                "mac": "cmd+f12",
+                "when": "(focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.jumpToColumn",
+                "key": "ctrl+shift+o",
+                "mac": "cmd+shift+o",
+                "when": "(focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.quickSearch",
+                "key": "ctrl+f",
+                "mac": "cmd+f",
+                "when": "(focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.selectRow",
+                "key": "shift+space",
+                "when": "(focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.selectColumn",
+                "key": "ctrl+space",
+                "when": "(focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.cellLeft",
+                "key": "ctrl+h",
+                "when": "isMac && (focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.cellDown",
+                "key": "ctrl+j",
+                "when": "isMac && (focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.cellUp",
+                "key": "ctrl+k",
+                "when": "isMac && (focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.grid.cellRight",
+                "key": "ctrl+l",
+                "when": "isMac && (focusedView == 'dbcode.panelView' || ((activeWebviewPanelId == 'dbcode.panelEditorView' || activeWebviewPanelId == 'tableDataWebView' || activeWebviewPanelId == 'dbcode.unionJoinWebView') && !sideBarFocus && !panelFocus && !auxiliaryBarFocus)) && !inputFocus"
+            },
+            {
+                "command": "dbcode.dataImport.apply",
+                "key": "ctrl+enter",
+                "when": "activeWebviewPanelId == 'dbcode.dataImportWebView' && !sideBarFocus && !panelFocus && !auxiliaryBarFocus && !inputFocus"
+            },
+            {
+                "command": "dbcode.monitoring.refresh",
+                "key": "ctrl+r",
+                "mac": "cmd+r",
+                "when": "activeWebviewPanelId == 'dbcode.monitoringWebView' && !sideBarFocus && !panelFocus && !auxiliaryBarFocus && !inputFocus"
+            },
+            {
                 "command": "dbcode.editor.execute",
                 "key": "ctrl+enter",
                 "mac": "ctrl+enter",
@@ -2105,6 +2318,82 @@
         ],
         "menus": {
             "commandPalette": [
+                {
+                    "command": "dbcode.queryBuilder.run",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.save",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.refresh",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.addRow",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.duplicate",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.deleteRows",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.transpose",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.focusFilter",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.chart",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.jumpToColumn",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.quickSearch",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.selectRow",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.selectColumn",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.cellLeft",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.cellDown",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.cellUp",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.grid.cellRight",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.dataImport.apply",
+                    "when": "false"
+                },
+                {
+                    "command": "dbcode.monitoring.refresh",
+                    "when": "false"
+                },
                 {
                     "command": "dbcode.item.click",
                     "when": "false"

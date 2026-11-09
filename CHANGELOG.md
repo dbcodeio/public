@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## 1.39.1 - 2026-11-09
+
+### Changed
+
+- IBM i: Graduated from Preview.
+- Zero Config: Laravel Sail MySQL, MariaDB, PostgreSQL, MongoDB, Redis and Valkey connections now use the forwarded ports on 127.0.0.1, and Valkey uses the Valkey driver. #1272
+- Connections: New connections load their schema progressively by default.
+- Teradata: Graduated from Preview.
+- Keyboard: DBCode panel shortcuts are listed in Keyboard Shortcuts and can be reassigned.
+
+### Fixed
+
+- Table Designer: Fixed drop-downs opening off-screen or showing the wrong choice, and nullable primary key columns failing on Apply.
+- Table Designer: Lossy marks only changes that can lose data.
+- Zero Config: Fixed Laravel's `REDIS_PASSWORD=null` being sent as the password `null`, which failed the connection.
+- Grid: Redo works right after undoing an added row, without clicking back into the grid.
+- Inspector: Fixed 0 and false values showing as empty in the form and JSON views.
+- Keyboard: Undo and redo in DBCode panels no longer act on the grid or Query Builder while typing in a text box, and Ctrl+Y redoes everywhere.
+
 ## 1.39.0 - 2026-11-06
 
 ### Changed
