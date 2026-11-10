@@ -479,5 +479,8 @@
   "Grid: Move Up": "グリッド: 上へ移動",
   "Grid: Move Right": "グリッド: 右へ移動",
   "Apply Data Import": "データインポートを適用",
-  "Refresh Monitoring": "モニタリングを更新"
+  "Refresh Monitoring": "モニタリングを更新",
+  "Copy Table Name": "テーブル名をコピー",
+  "Open on Map": "マップで開く",
+  "Show a link above each line of a `.env` file where DBCode found a database, to connect to it in one click. Needs `#dbcode.discovery.enabled#`.": "DBCode がデータベースを見つけた `.env` ファイルの各行の上にリンクを表示し、ワンクリックで接続できるようにします。`#dbcode.discovery.enabled#` が必要です。"
 }

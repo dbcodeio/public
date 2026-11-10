@@ -479,5 +479,8 @@
   "Grid: Move Up": "그리드: 위로 이동",
   "Grid: Move Right": "그리드: 오른쪽으로 이동",
   "Apply Data Import": "데이터 가져오기 적용",
-  "Refresh Monitoring": "모니터링 새로 고침"
+  "Refresh Monitoring": "모니터링 새로 고침",
+  "Copy Table Name": "테이블 이름 복사",
+  "Open on Map": "지도에서 열기",
+  "Show a link above each line of a `.env` file where DBCode found a database, to connect to it in one click. Needs `#dbcode.discovery.enabled#`.": "DBCode가 데이터베이스를 찾은 `.env` 파일의 각 줄 위에 링크를 표시하여 한 번의 클릭으로 연결할 수 있게 합니다. `#dbcode.discovery.enabled#`가 필요합니다."
 }

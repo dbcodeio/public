@@ -479,5 +479,8 @@
   "Grid: Move Up": "Таблица: Перейти вверх",
   "Grid: Move Right": "Таблица: Перейти вправо",
   "Apply Data Import": "Применить импорт данных",
-  "Refresh Monitoring": "Обновить мониторинг"
+  "Refresh Monitoring": "Обновить мониторинг",
+  "Copy Table Name": "Копировать имя таблицы",
+  "Open on Map": "Открыть на карте",
+  "Show a link above each line of a `.env` file where DBCode found a database, to connect to it in one click. Needs `#dbcode.discovery.enabled#`.": "Показывать ссылку над каждой строкой файла `.env`, где DBCode нашёл базу данных, чтобы подключиться к ней в один клик. Требуется `#dbcode.discovery.enabled#`."
 }

@@ -479,5 +479,8 @@
   "Grid: Move Up": "Mřížka: Posunout nahoru",
   "Grid: Move Right": "Mřížka: Posunout doprava",
   "Apply Data Import": "Použít import dat",
-  "Refresh Monitoring": "Obnovit sledování"
+  "Refresh Monitoring": "Obnovit sledování",
+  "Copy Table Name": "Kopírovat název tabulky",
+  "Open on Map": "Otevřít na mapě",
+  "Show a link above each line of a `.env` file where DBCode found a database, to connect to it in one click. Needs `#dbcode.discovery.enabled#`.": "Zobrazit odkaz nad každým řádkem souboru `.env`, kde DBCode našel databázi, pro připojení jedním kliknutím. Vyžaduje `#dbcode.discovery.enabled#`."
 }

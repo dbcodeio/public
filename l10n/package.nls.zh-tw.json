@@ -479,5 +479,8 @@
   "Grid: Move Up": "網格: 上移",
   "Grid: Move Right": "網格: 右移",
   "Apply Data Import": "套用資料匯入",
-  "Refresh Monitoring": "重新整理監控"
+  "Refresh Monitoring": "重新整理監控",
+  "Copy Table Name": "複製資料表名稱",
+  "Open on Map": "在地圖上開啟",
+  "Show a link above each line of a `.env` file where DBCode found a database, to connect to it in one click. Needs `#dbcode.discovery.enabled#`.": "在 `.env` 檔案中 DBCode 找到資料庫的每一行上方顯示連結，一鍵即可連線。需要啟用 `#dbcode.discovery.enabled#`。"
 }

@@ -479,5 +479,8 @@
   "Grid: Move Up": "Izgara: Yukarı Git",
   "Grid: Move Right": "Izgara: Sağa Git",
   "Apply Data Import": "Veri İçe Aktarmayı Uygula",
-  "Refresh Monitoring": "İzlemeyi Yenile"
+  "Refresh Monitoring": "İzlemeyi Yenile",
+  "Copy Table Name": "Tablo Adını Kopyala",
+  "Open on Map": "Haritada aç",
+  "Show a link above each line of a `.env` file where DBCode found a database, to connect to it in one click. Needs `#dbcode.discovery.enabled#`.": "DBCode'un veritabanı bulduğu `.env` dosyasındaki her satırın üstünde, tek tıkla bağlanmak için bir bağlantı gösterir. `#dbcode.discovery.enabled#` gerektirir."
 }

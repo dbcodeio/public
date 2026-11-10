@@ -1,16 +1,16 @@
 {
 	"bomFormat": "CycloneDX",
 	"specVersion": "1.6",
-	"serialNumber": "urn:uuid:baa2c044-fd79-d3f0-5f19-13a3496c1402",
+	"serialNumber": "urn:uuid:2a37283f-ad0d-11bd-dc07-7fb91f1c78c8",
 	"version": 1,
 	"metadata": {
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.39.1",
+			"version": "1.39.2",
 			"publisher": "dbcode",
 			"description": "SQL & database client for Postgres, MySQL, SQL Server, SQLite, MongoDB, Oracle and 100+ more, in VS Code, Cursor and Windsurf. Query and edit data, ER diagrams, SQL notebooks. Built-in MCP and Copilot tools give your AI agent the same connections, with the permissions you set.",
-			"purl": "pkg:generic/dbcode@1.39.1",
+			"purl": "pkg:generic/dbcode@1.39.2",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -20021,8 +20021,8 @@
 		{
 			"type": "library",
 			"name": "node-forge",
-			"version": "1.4.0",
-			"purl": "pkg:npm/node-forge@1.4.0",
+			"version": "1.4.2",
+			"purl": "pkg:npm/node-forge@1.4.2",
 			"licenses": [
 				{
 					"expression": "(BSD-3-Clause OR GPL-2.0)"

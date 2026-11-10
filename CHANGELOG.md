@@ -1,5 +1,43 @@
 # CHANGELOG
 
+## 1.39.2 - 2026-11-10
+
+### Changed
+
+- CLI: `dbcode open --group` opens in a chosen editor group, creating it to the right or, with `--below`, underneath.
+- ClickHouse: Added server monitoring: active queries, performance, merges, mutations and system info.
+- Results: Copy As > Selection > Only Headers copies the selected column names.
+- Results: Ctrl+Alt+C (Cmd+Option+C on Mac) copies the qualified name of the open table, or of the selected rows in the connections tree.
+- Connections: A database found in a workspace `.env` file shows a Connect with DBCode link on its line.
+- Explore: Rows preview selects a range of cells.
+- Connections: Favorites sit in one folder under the connection, labelled with the database.
+- Explorer: Tables in Favorites offer the Query Builder.
+- Map: Open any result or table on a full map with clusters, paths, lines, regions, heat maps and city/postcode placement.
+- MCP: Agents are told to look up the real schema in DBCode instead of guessing it from code.
+- Query Builder: HAVING conditions support AND/OR groups, like WHERE.
+- Query Builder: The canvas has a minimap and zooms out further.
+- Query Builder: Output table names accept {sourcetable}, {database}, {user} and {timestamp} placeholders.
+- Query Builder: New queries start with the connection's last Output and Options choices.
+- Explorer: Script > EXECUTE writes a ready-to-run call for PostgreSQL, MySQL, MariaDB, SQL Server and Oracle procedures and functions.
+
+### Fixed
+
+- Activity Bar: DBCode icon now matches the size and alignment of the built-in icons. #1273
+- CLI: `dbcode query --timeout` stops the query on every database, not only those with a Request Timeout setting.
+- ClickHouse: Queries longer than 30 seconds now run to completion, and Request Timeout is removed (cap queries with `max_execution_time` in ClickHouse settings). #508
+- Explore: Opening a result of a statement that changes data no longer runs it again.
+- SAP HANA: Queries longer than 30 seconds now run to completion, and Request Timeout is removed.
+- Monitoring: Long-running query alerts work on every database with monitoring, and their kill button stops the right session or query.
+- Explorer: Fixed Script > DELETE USING on SQL Server.
+- Inspector: Fixed SQL Server geometry drawing in the wrong place on the map.
+- Neo4j, Memgraph: Roles now treat a MATCH that creates, merges, sets or removes as a write.
+- Power BI: DAX queries longer than 30 seconds now run to completion, and Request Timeout is removed.
+- Query Builder: Join lines no longer disappear when a table is collapsed with Show less.
+- Query Builder: Removing the last aggregate now removes the GROUP BY it added.
+- Explorer: Overloaded PostgreSQL, PGlite and Snowflake routines now show as separate items, and Drop, Script and Debug act on the chosen one.
+- Sybase ASE: Queries longer than 30 seconds now run to completion, and Request Timeout is removed.
+- PostgreSQL: Functions and procedures with unnamed arguments now list every argument, so Drop and Execute scripts include them.
+
 ## 1.39.1 - 2026-11-09
 
 ### Changed

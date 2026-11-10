@@ -479,5 +479,8 @@
   "Grid: Move Up": "网格: 上移",
   "Grid: Move Right": "网格: 右移",
   "Apply Data Import": "应用数据导入",
-  "Refresh Monitoring": "刷新监控"
+  "Refresh Monitoring": "刷新监控",
+  "Copy Table Name": "复制表名",
+  "Open on Map": "在地图上打开",
+  "Show a link above each line of a `.env` file where DBCode found a database, to connect to it in one click. Needs `#dbcode.discovery.enabled#`.": "在 `.env` 文件中 DBCode 发现数据库的每一行上方显示一个链接，一键即可连接。需要启用 `#dbcode.discovery.enabled#`。"
 }

@@ -479,5 +479,8 @@
   "Grid: Move Up": "Raster: Nach oben",
   "Grid: Move Right": "Raster: Nach rechts",
   "Apply Data Import": "Datenimport anwenden",
-  "Refresh Monitoring": "Überwachung aktualisieren"
+  "Refresh Monitoring": "Überwachung aktualisieren",
+  "Copy Table Name": "Tabellennamen kopieren",
+  "Open on Map": "Auf Karte öffnen",
+  "Show a link above each line of a `.env` file where DBCode found a database, to connect to it in one click. Needs `#dbcode.discovery.enabled#`.": "Zeigt über jeder Zeile einer `.env`-Datei, in der DBCode eine Datenbank gefunden hat, einen Link, um sich mit einem Klick zu verbinden. Erfordert `#dbcode.discovery.enabled#`."
 }

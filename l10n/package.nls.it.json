@@ -479,5 +479,8 @@
   "Grid: Move Up": "Griglia: Sposta su",
   "Grid: Move Right": "Griglia: Sposta a destra",
   "Apply Data Import": "Applica importazione dati",
-  "Refresh Monitoring": "Aggiorna monitoraggio"
+  "Refresh Monitoring": "Aggiorna monitoraggio",
+  "Copy Table Name": "Copia nome tabella",
+  "Open on Map": "Apri sulla mappa",
+  "Show a link above each line of a `.env` file where DBCode found a database, to connect to it in one click. Needs `#dbcode.discovery.enabled#`.": "Mostra un link sopra ogni riga di un file `.env` in cui DBCode ha trovato un database, per connettersi con un clic. Richiede `#dbcode.discovery.enabled#`."
 }
