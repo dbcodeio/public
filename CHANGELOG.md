@@ -1,5 +1,36 @@
 # CHANGELOG
 
+## 1.39.3 - 2026-11-13
+
+### Changed
+
+- CLI: `dbcode history` prints your query history, and `dbcode open --query-builder` opens a table or view in the Query Builder. #803
+- DuckDB: Extension downloads now show progress.
+- Table Designer: DuckDB and DuckLake tables open in the Table Designer, and index comments can be edited on DuckDB and PostgreSQL.
+- Data Grid: Ctrl/Cmd+X cuts the selected cells, copying them and clearing them as one edit you can undo.
+- Hudi: Support added. #519
+- Map: Hovering a cluster or heat map shows what is under the cursor, clicking a region or heat map opens its rows, and the side panel has sample maps.
+- Query Builder: Views, materialized views, foreign tables and synonyms can be added to the canvas and opened in the Query Builder like tables.
+- Editor: Typing a schema name lists its tables even before the schema is expanded.
+
+### Fixed
+
+- AI: Agents ask before changing data or schema on connections with no AI role (the new Ask before changes default), and Copilot no longer asks before reads. #1274
+- CLI: Opening a connection to a MySQL server with many tables no longer waits minutes for database sizes.
+- Data Grid: Ctrl+Alt+C copies the table name on Windows instead of the cell value, and from the tab title too.
+- Editor: Column completion and Expand Star now work for tables not yet loaded, in another database, and after INSERT INTO and UPDATE SET.
+- Data Import: New DuckDB tables keep TIMESTAMP_S, TIMESTAMP_MS and TIMESTAMP_NS columns at their own precision.
+- DuckDB: TIMESTAMPTZ values in Raw mode now show their own offset across daylight saving changes.
+- Firebird: Connecting now stops after the connection timeout instead of hanging when the server drops the login.
+- Data Grid: The selected cell keeps the keyboard after leaving the table with F6 and coming back with Shift+F6.
+- Grid: Map and Explore show the rows a write returns (such as INSERT ... RETURNING) instead of none.
+- MongoDB: findOne, update and delete calls return their result instead of an error, a find applies its projection, and large documents no longer cut a result short of its row limit.
+- SQL Server: A view's columns show in their declared order.
+- MySQL: Fixed post-connection SQL being skipped on new connections after a server restart.
+- Roles: REPLACE, LOAD DATA, COPY ... FROM, SELECT ... INTO a new table and PostgreSQL DO blocks are now checked as the writes they make.
+- Trino: Editing and filtering date and time columns in the grid now works.
+- Data Grid: Dates and times typed without a time zone in edits, filters and the Query Builder now use your computer's time zone instead of the server's.
+
 ## 1.39.2 - 2026-11-10
 
 ### Changed

@@ -1,16 +1,16 @@
 {
 	"bomFormat": "CycloneDX",
 	"specVersion": "1.6",
-	"serialNumber": "urn:uuid:2a37283f-ad0d-11bd-dc07-7fb91f1c78c8",
+	"serialNumber": "urn:uuid:1d63531c-024c-427c-85bb-83d8f8ad99e8",
 	"version": 1,
 	"metadata": {
 		"component": {
 			"type": "application",
 			"name": "dbcode",
-			"version": "1.39.2",
+			"version": "1.39.3",
 			"publisher": "dbcode",
 			"description": "SQL & database client for Postgres, MySQL, SQL Server, SQLite, MongoDB, Oracle and 100+ more, in VS Code, Cursor and Windsurf. Query and edit data, ER diagrams, SQL notebooks. Built-in MCP and Copilot tools give your AI agent the same connections, with the permissions you set.",
-			"purl": "pkg:generic/dbcode@1.39.2",
+			"purl": "pkg:generic/dbcode@1.39.3",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -3806,8 +3806,8 @@
 		{
 			"type": "library",
 			"name": "@hono/node-server",
-			"version": "2.1.5",
-			"purl": "pkg:npm/%40hono%2Fnode-server@2.1.5",
+			"version": "2.1.6",
+			"purl": "pkg:npm/%40hono%2Fnode-server@2.1.6",
 			"licenses": [
 				{
 					"license": {
@@ -4990,6 +4990,26 @@
 			"name": "@nodable/entities",
 			"version": "2.1.0",
 			"purl": "pkg:npm/%40nodable%2Fentities@2.1.0",
+			"licenses": [
+				{
+					"license": {
+						"id": "MIT"
+					}
+				}
+			],
+			"publisher": "Amit Gupta (https://solothought.com)",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/nodable/val-parsers"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "@nodable/entities",
+			"version": "3.1.0",
+			"purl": "pkg:npm/%40nodable%2Fentities@3.1.0",
 			"licenses": [
 				{
 					"license": {
@@ -9164,6 +9184,26 @@
 				{
 					"type": "website",
 					"url": "https://github.com/mike-lischke/antlr4ng"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "anynum",
+			"version": "1.0.1",
+			"purl": "pkg:npm/anynum@1.0.1",
+			"licenses": [
+				{
+					"license": {
+						"id": "MIT"
+					}
+				}
+			],
+			"publisher": "Amit Gupta (https://solothought.work/)",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/NaturalIntelligence/anynum"
 				}
 			]
 		},
@@ -13677,8 +13717,8 @@
 		{
 			"type": "library",
 			"name": "fast-xml-builder",
-			"version": "1.1.9",
-			"purl": "pkg:npm/fast-xml-builder@1.1.9",
+			"version": "1.3.1",
+			"purl": "pkg:npm/fast-xml-builder@1.3.1",
 			"licenses": [
 				{
 					"license": {
@@ -13697,28 +13737,8 @@
 		{
 			"type": "library",
 			"name": "fast-xml-parser",
-			"version": "5.7.2",
-			"purl": "pkg:npm/fast-xml-parser@5.7.2",
-			"licenses": [
-				{
-					"license": {
-						"id": "MIT"
-					}
-				}
-			],
-			"publisher": "Amit Gupta (https://solothought.com)",
-			"externalReferences": [
-				{
-					"type": "website",
-					"url": "https://github.com/NaturalIntelligence/fast-xml-parser"
-				}
-			]
-		},
-		{
-			"type": "library",
-			"name": "fast-xml-parser",
-			"version": "5.7.3",
-			"purl": "pkg:npm/fast-xml-parser@5.7.3",
+			"version": "5.12.0",
+			"purl": "pkg:npm/fast-xml-parser@5.12.0",
 			"licenses": [
 				{
 					"license": {
@@ -15473,8 +15493,8 @@
 		{
 			"type": "library",
 			"name": "hono",
-			"version": "4.13.13",
-			"purl": "pkg:npm/hono@4.13.13",
+			"version": "4.13.16",
+			"purl": "pkg:npm/hono@4.13.16",
 			"licenses": [
 				{
 					"license": {
@@ -16365,6 +16385,26 @@
 				{
 					"type": "website",
 					"url": "sindresorhus/is-unicode-supported"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "is-unsafe",
+			"version": "2.0.3",
+			"purl": "pkg:npm/is-unsafe@2.0.3",
+			"licenses": [
+				{
+					"license": {
+						"id": "MIT"
+					}
+				}
+			],
+			"publisher": "Amit Gupta (https://solothought.com/)",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/NaturalIntelligence/is-unsafe"
 				}
 			]
 		},
@@ -20021,8 +20061,8 @@
 		{
 			"type": "library",
 			"name": "node-forge",
-			"version": "1.4.2",
-			"purl": "pkg:npm/node-forge@1.4.2",
+			"version": "1.4.3",
+			"purl": "pkg:npm/node-forge@1.4.3",
 			"licenses": [
 				{
 					"expression": "(BSD-3-Clause OR GPL-2.0)"
@@ -20889,8 +20929,8 @@
 		{
 			"type": "library",
 			"name": "path-expression-matcher",
-			"version": "1.5.0",
-			"purl": "pkg:npm/path-expression-matcher@1.5.0",
+			"version": "1.6.2",
+			"purl": "pkg:npm/path-expression-matcher@1.6.2",
 			"licenses": [
 				{
 					"license": {
@@ -24450,8 +24490,8 @@
 		{
 			"type": "library",
 			"name": "strnum",
-			"version": "2.2.3",
-			"purl": "pkg:npm/strnum@2.2.3",
+			"version": "2.5.1",
+			"purl": "pkg:npm/strnum@2.5.1",
 			"licenses": [
 				{
 					"license": {
@@ -24459,7 +24499,7 @@
 					}
 				}
 			],
-			"publisher": "Amit Gupta (https://amitkumargupta.work/)",
+			"publisher": "Amit Gupta (https://solothought.work/)",
 			"externalReferences": [
 				{
 					"type": "website",
@@ -26906,6 +26946,26 @@
 				{
 					"type": "website",
 					"url": "sindresorhus/wsl-utils"
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "xml-naming",
+			"version": "0.3.0",
+			"purl": "pkg:npm/xml-naming@0.3.0",
+			"licenses": [
+				{
+					"license": {
+						"id": "MIT"
+					}
+				}
+			],
+			"publisher": "Amit Gupta (https://solothought.com)",
+			"externalReferences": [
+				{
+					"type": "website",
+					"url": "https://github.com/NaturalIntelligence/xml-naming"
 				}
 			]
 		},
