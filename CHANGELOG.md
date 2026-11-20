@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.39.4 - 2026-11-20
+
+### Changed
+
+- Azure Queue Storage: Preview support added.
+- Table Designer: ClickHouse tables open in the Table Designer.
+- Grid: Subtly highlight the row of the focused cell.
+
+### Fixed
+
+- Cassandra: Fixed WHERE filters with more than one condition, or ending in ALLOW FILTERING, failing with a syntax error. #1280
+- ClickHouse: Running an ALTER TABLE UPDATE or DELETE with a WHERE clause no longer asks to confirm a missing WHERE clause.
+- Results: Fixed Ctrl+click on row numbers not selecting multiple rows on Windows and Linux.
+- H2: Picking an existing `.mv.db` file now opens that database instead of creating an empty `.mv.db.mv.db` next to it. #1278
+- Query Builder: IN list values with leading or trailing spaces or commas are kept when picked, and a quoted item such as 'A  ' is used as written.
+
 ## 1.39.3 - 2026-11-13
 
 ### Changed
